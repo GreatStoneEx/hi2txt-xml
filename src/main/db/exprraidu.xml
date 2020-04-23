@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Express Raider">
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:05fd:3:15:00
+                  0:0240:50:20:00</definition> <!-- exprraidu -->
+	  <definition>@:maincpu,program,0245,3,15,00
+                  @:maincpu,program,0240,50,20,00</definition> <!-- wexpress -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>83</size>
+    </check>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+    <loop count="10">
+      <elt size="2" type="int"  id="RANK" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:0240:50:20:00</definition> <!-- exprraid -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>80</size>
+    </check>
+    <loop count="10">
+      <elt size="2" type="int"  id="RANK" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <!--<field id="TOP SCORE" display="extra"/>-->
+  </output>
+</hi2txt>

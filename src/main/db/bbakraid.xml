@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: GreatStone
+  //-->
+  
+  <structure file="eeprom">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="2" type="raw"  id="UNKNOWN"/>
+    <loop count="20">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="CHARACTER1"/>
+      <elt size="1" type="raw"  id="CHARACTER2"/>
+      <elt size="1" type="raw"  id="CHARACTER3"/>
+      <elt size="2" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="ICON STAGE 1"/>
+      <elt size="1" type="int"  id="ICON STAGE 2"/>
+      <elt size="1" type="int"  id="ICON STAGE 3"/>
+      <elt size="1" type="int"  id="ICON STAGE 4"/>
+      <elt size="1" type="int"  id="ICON STAGE 5"/>
+      <elt size="1" type="int"  id="ICON STAGE 6"/>
+      <elt size="1" type="int"  id="ICON STAGE 7"/>
+      <elt size="1" type="int"  id="ICON STAGE 8"/>
+      <elt size="2" type="raw"  id="UNKNOWN2"/>
+    </loop>
+    <elt size="70" type="raw"  id="UNKNOWN3"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="INDEX" src="index" format="+1"/>
+      <column id="RANK" src="index" format="%5;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="CHARACTER1" format="character"/>
+      <column id="CHARACTER2" format="character"/>
+      <column id="CHARACTER3" format="character"/>
+      <column id="ICON STAGE 1"/>
+      <column id="ICON STAGE 2"/>
+      <column id="ICON STAGE 3"/>
+      <column id="ICON STAGE 4"/>
+      <column id="ICON STAGE 5"/>
+      <column id="ICON STAGE 6"/>
+      <column id="ICON STAGE 7"/>
+      <column id="ICON STAGE 8"/>
+      <column id="UNKNOWN2" format="0x" display="debug"/>
+    </table>
+    <field id="UNKNOWN"  format="0x" display="debug"/>
+  </output>
+  
+  <format id="mode">
+    <case src="7"  operator="&lt;" dst="training"/>
+    <case src="14" operator="&lt;" dst="normal"/>
+    <case src="21" operator="&lt;" dst="advanced"/>
+    <case src="28" operator="&lt;" dst="special"/>
+  </format>
+  <format id="character">
+    <case src="90" dst="SKY DRAGON (A)"/>
+    <case src="91" dst="SKY DRAGON (B)"/>
+    <case src="92" dst="SKY DRAGON (C)"/>
+    <case src="93" dst="SKY DRAGON (Start)"/>
+    <case src="94" dst="SABER TIGER (A)"/>
+    <case src="95" dst="SABER TIGER (B)"/>
+    <case src="96" dst="SABER TIGER (C)"/>
+    <case src="97" dst="SABER TIGER (Start)"/>
+    <case src="98" dst="LIGHTNING WOLF (A)"/>
+    <case src="99" dst="LIGHTNING WOLF (B)"/>
+    <case src="9A" dst="LIGHTNING WOLF (C)"/>
+    <case src="9B" dst="LIGHTNING WOLF (Start)"/>
+    <case src="9C" dst="HAMMER SHARK (A)"/>
+    <case src="9D" dst="HAMMER SHARK (B)"/>
+    <case src="9E" dst="HAMMER SHARK (C)"/>
+    <case src="9F" dst="HAMMER SHARK (Start)"/>
+    <case src="A0" dst="FLAME VIPER (A)"/>
+    <case src="A1" dst="FLAME VIPER (B)"/>
+    <case src="A2" dst="FLAME VIPER (C)"/>
+    <case src="A3" dst="FLAME VIPER (Start)"/>
+    <case src="A4" dst="STEEL BAT (A)"/>
+    <case src="A5" dst="STEEL BAT (B)"/>
+    <case src="A6" dst="STEEL BAT (C)"/>
+    <case src="A7" dst="STEEL BAT (Start)"/>
+    <case src="A8" dst="SOLIO RAY (A)"/>
+    <case src="A9" dst="SOLIO RAY (B)"/>
+    <case src="AA" dst="SOLIO RAY (C)"/>
+    <case src="AB" dst="SOLIO RAY (Start)"/>
+    <case src="AC" dst="BUSTER LIZARD (A)"/>
+    <case src="AD" dst="BUSTER LIZARD (B)"/>
+    <case src="AE" dst="BUSTER LIZARD (C)"/>
+    <case src="AF" dst="BUSTER LIZARD (Start)"/>
+    <case src="B0" dst="BLADE OWL (A)"/>
+    <case src="B1" dst="BLADE OWL (B)"/>
+    <case src="B2" dst="BLADE OWL (C)"/>
+    <case src="B3" dst="BLADE OWL (Start)"/>
+  </format>
+</hi2txt>

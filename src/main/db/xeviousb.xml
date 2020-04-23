@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Xevious">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8510:46:00:14
+                  0:8024:3:00:00
+                  0:8025:1:40:40</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>74</size>
+    </check>
+    <loop count="5" skip-last-bytes="10">
+      <elt size="3"  type="int"  id="SCORE"       endianness="little_endian" base="16"/>
+      <elt size="3"  type="text" id="NAME"        charset="xevious" ascii-offset="55"/>
+      <elt size="7"  type="raw"  id="LARGER NAME"/>
+      <elt size="3"  type="raw"  id="UNKNOWN"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <elt size="1" type="raw" id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="LARGER NAME" format="0x" display="debug"/>
+      <column id="UNKNOWN"     format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="CHECK"     format="0x"  display="debug"/>
+  </output>
+  
+  <charset id="xevious">
+    <char src="0x24" dst=" "/>
+    <char src="0x36" dst="a"/>
+    <char src="0x37" dst="b"/>
+    <char src="0x38" dst="c"/>
+    <char src="0x39" dst="d"/>
+    <char src="0x3A" dst="e"/>
+    <char src="0x3B" dst="f"/>
+    <char src="0x3C" dst="g"/>
+    <char src="0x3D" dst="h"/>
+    <char src="0x3E" dst="i"/>
+    <char src="0x3F" dst="j"/>
+    <char src="0x40" dst="k"/>
+    <char src="0x41" dst="l"/>
+    <char src="0x42" dst="m"/>
+    <char src="0x43" dst="n"/>
+    <char src="0x44" dst="o"/>
+    <char src="0x45" dst="p"/>
+    <char src="0x46" dst="q"/>
+    <char src="0x47" dst="r"/>
+    <char src="0x48" dst="s"/>
+    <char src="0x49" dst="t"/>
+    <char src="0x4A" dst="u"/>
+    <char src="0x4B" dst="v"/>
+    <char src="0x4C" dst="w"/>
+    <char src="0x4D" dst="x"/>
+    <char src="0x4E" dst="y"/>
+    <char src="0x4F" dst="z"/>
+    <char src="0x50" dst="."/>
+  </charset>
+</hi2txt>

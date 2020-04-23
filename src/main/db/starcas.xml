@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    untested as commented in hiscore.dat (0.148)
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1aa:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>4</size>
+    </check>
+    <loop count="1">
+      <elt size="2" type="int"  id="SCORE1"/>
+      <elt size="2" type="int"  id="SCORE2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="*10000"><multiply>10000</multiply></format>
+  <format id="score">
+    <concat>
+      <column id="SCORE1" format="*10000"/>
+      <column id="SCORE2" format="*10"/>
+    </concat>
+  </format>
+</hi2txt>

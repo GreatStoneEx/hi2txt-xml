@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.148 and hiscore.dat 2014-04-23
+      mame 0.153 and hiscore.dat 2014-08-22
+    source: HiToText (hi), GreatStone (nvram)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:184:45:0b:00
+                  0:95:1:02:02</definition> <!-- hiscore.dat 2014-04-23 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>70</size> <!-- hiscore.dat 2014-04-23 //-->
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="mhavoc" ascii-offset="54"/>
+    </loop>
+    <loop count="10" skip-last-bytes="1">
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <!-- hiscore.dat (fixed): last byte of last score is not dumped preventing to save/load a big enough score as 10th score //-->
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:184:46:0b:00
+                  0:95:1:02:02</definition> <!-- hiscore.dat 2014-08-22 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>71</size> <!-- hiscore.dat 2014-08-22 //-->
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="mhavoc" ascii-offset="54"/>
+    </loop>
+    <loop count="10">
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file="nvram"> <!-- 3 Best Scores //-->
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+                    <elt size="2"   type="raw"  id="UNKNOWN1_NV"/>
+    <loop count="3"><elt size="3"   type="text" id="NAME" charset="mhavoc" ascii-offset="54"/></loop>
+                    <elt size="1"   type="raw"  id="UNKNOWN2_NV"/>
+    <loop count="3"><elt size="4"   type="int"  id="SCORE" endianness="little_endian" base="16"/></loop>
+                    <elt size="488" type="raw"  id="UNKNOWN3_NV"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <field id="CHECK"       format="hexadecimal_string" display="debug"/>
+    <field id="UNKNOWN1_NV" format="hexadecimal_string" display="debug"/>
+    <field id="UNKNOWN2_NV" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="mhavoc">
+    <char src="0x0A" dst=" "/>
+  </charset>
+</hi2txt>

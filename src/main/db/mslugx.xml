@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (nvram), GreatStone (hi)
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="816" type="raw"  id="UNKNOWN"/>
+    <loop count="10">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10f010:47:00:50
+                  0:10e8f2:2:ff:ff</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>73</size>
+    </check>
+    <loop count="8">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+    </loop>
+    <loop count="1" start="8">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <!-- hiscore.dat: character of 9th score undumped, even if all data can be found from the nvram //-->
+    </loop>
+    <!-- hiscore.dat: 10th score undumped, even if all data can be found from the nvram //-->
+    <elt size="1" type="raw" id="UNKNOWN3"/>
+    <elt size="1" type="raw" id="UNKNOWN4"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER"        format="character"/>
+    </table>
+    <field id="UNKNOWN3"            format="hexadecimal_string" display="debug"/>
+    <field id="UNKNOWN4"            format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="character">
+    <case src="0" dst="MARCO"/>
+    <case src="1" dst="TARMA"/>
+    <case src="2" dst="ERI"/>
+    <case src="3" dst="FIO"/>
+  </format>
+</hi2txt>

@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+      
+      OK NAME
+      OK SCORE
+      OK RANK by SCORE
+      OK STAGE 1 to 6 + All
+      OK MAX CHAIN
+      OK RANK by MAX CHAIN
+      CHARACTER 
+        Shishin 
+        Kamono Gensuke
+        Hiiragi Kosame 
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:2024f0:140:00:10
+                  0:2024ac:4:00:00</definition>
+      <definition>0:2024fa:140:0:10
+                  0:2024b6:4:00:00</definition> <!-- guwanges //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>324</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="int" id="SCORE" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="4" type="int" id="MAX CHAIN" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="16" type="text" id="NAME H" byte-skip="odd" src-unit-size="16" charset="guwange"/>
+    </loop>
+    <loop count="10">
+      <elt size="2" type="int" id="UNKNOWN"/>
+    </loop>
+    <loop count="10">
+      <elt size="2" type="int" id="STAGE"/>
+    </loop>
+    <loop count="10">
+      <elt size="2" type="int" id="CHARACTER"/>
+    </loop>
+    <loop count="10">
+      <elt size="2" type="int" id="RANK / CHAIN"/>
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"      format="+romanji"/>
+      <column id="STAGE"     format="stage"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="MAX CHAIN"/>
+      <column id="RANK / CHAIN"/>
+      <column id="UNKNOWN"   format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+romanji">
+    <concat>
+      <column id="NAME H"/>
+      <column id="NAME H" format="transliteration;Capitalize;parenthesis"/>
+    </concat>
+  </format>
+  <format id="parenthesis">
+    <prefix> (</prefix>
+    <suffix>)</suffix>
+  </format>
+  <format id="transliteration" apply-to="char">
+    <!--
+    The following transliteration is adapted using the Hepburn romanization system.
+    
+    The Hepburn romanization system is named after James Curtis Hepburn,
+      who used it to transcribe the sounds of the Japanese language into the Latin alphabet
+      in the third edition of his Japanese–English dictionary, published in 1887.
+    The revised edition by Romaji-Hirome-kai in 1908 is called "standard style romanization" 
+      and this system has been used as the Hepburn system in Japan traditionally.
+    Although not officially approved, the original and revised variants of Hepburn
+      remain the most widely used methods of transcription of Japanese,
+      and are regarded as the best to render Japanese pronunciation for Western speakers.
+    As Hepburn is based on English and Italian phonology, an English or Latin-language
+      speaker unfamiliar with Japanese will generally pronounce a word romanized
+      in Hepburn more accurately than a word romanized in the competing Kunrei-shiki,
+      the official Cabinet-ordered romanization system.
+    http://en.wikipedia.org/wiki/Hepburn_romanization
+    //-->
+    <case src="&jp-h-i;"          dst="i"/>
+    <case src="&jp-h-ro;"         dst="ro"/>
+    <case src="&jp-h-ha;"         dst="ha"/>
+    <case src="&jp-h-ba;"         dst="ba"/>
+    <case src="&jp-h-pa;"         dst="pa"/>
+    <case src="&jp-h-ni;"         dst="ni"/>
+    <case src="&jp-h-ho;"         dst="ho"/>
+    <case src="&jp-h-bo;"         dst="bo"/>
+    <case src="&jp-h-po;"         dst="po"/>
+    <case src="&jp-h-he;"         dst="he"/>
+    <case src="&jp-h-be;"         dst="be"/>
+    <case src="&jp-h-pe;"         dst="pe"/>
+    <case src="&jp-h-to;"         dst="to"/>
+    <case src="&jp-h-do;"         dst="do"/>
+    <case src="&jp-h-ti;"         dst="chi"/>
+    <case src="&jp-h-di;"         dst="ji"/>
+    <case src="&jp-h-ri;"         dst="ri"/>
+    <case src="&jp-h-nu;"         dst="nu"/>
+    <case src="&jp-h-ru;"         dst="ru"/>
+    <case src="&jp-h-wo;"         dst="o"/>
+    <case src="&jp-h-wa;"         dst="wa"/>
+    <case src="&jp-h-ka;"         dst="ka"/>
+    <case src="&jp-h-ga;"         dst="ga"/>
+    <case src="&jp-h-yo;"         dst="yo"/>
+    <case src="&jp-h-ta;"         dst="ta"/>
+    <case src="&jp-h-da;"         dst="da"/>
+    <case src="&jp-h-re;"         dst="re"/>
+    <case src="&jp-h-so;"         dst="so"/>
+    <case src="&jp-h-zo;"         dst="zo"/>
+    <case src="&jp-h-tu;"         dst="tsu"/>
+    <case src="&jp-h-du;"         dst="zu"/>
+    <case src="&jp-h-ne;"         dst="ne"/>
+    <case src="&jp-h-na;"         dst="na"/>
+    <case src="&jp-h-ra;"         dst="ra"/>
+    <case src="&jp-h-mu;"         dst="mu"/>
+    <case src="&jp-h-u;"          dst="u"/>
+    <case src="&jp-h-vu;"         dst="vu"/>
+    <case src="&jp-h-wi;"         dst="i"/>
+    <case src="&jp-h-no;"         dst="no"/>
+    <case src="&jp-h-o;"          dst="o"/>
+    <case src="&jp-h-ku;"         dst="ku"/>
+    <case src="&jp-h-gu;"         dst="gu"/>
+    <case src="&jp-h-ya;"         dst="ya"/>
+    <case src="&jp-h-ma;"         dst="ma"/>
+    <case src="&jp-h-ke;"         dst="ke"/>
+    <case src="&jp-h-ge;"         dst="ge"/>
+    <case src="&jp-h-hu;"         dst="fu"/>
+    <case src="&jp-h-bu;"         dst="bu"/>
+    <case src="&jp-h-pu;"         dst="pu"/>
+    <case src="&jp-h-ko;"         dst="ko"/>
+    <case src="&jp-h-go;"         dst="go"/>
+    <case src="&jp-h-e;"          dst="e"/>
+    <case src="&jp-h-te;"         dst="te"/>
+    <case src="&jp-h-de;"         dst="de"/>
+    <case src="&jp-h-a;"          dst="a"/>
+    <case src="&jp-h-sa;"         dst="sa"/>
+    <case src="&jp-h-za;"         dst="za"/>
+    <case src="&jp-h-ki;"         dst="ki"/>
+    <case src="&jp-h-gi;"         dst="gi"/>
+    <case src="&jp-h-yu;"         dst="yu"/>
+    <case src="&jp-h-me;"         dst="me"/>
+    <case src="&jp-h-mi;"         dst="mi"/>
+    <case src="&jp-h-si;"         dst="shi"/>
+    <case src="&jp-h-zi;"         dst="ji"/>
+    <case src="&jp-h-we;"         dst="e"/>
+    <case src="&jp-h-hi;"         dst="hi"/>
+    <case src="&jp-h-bi;"         dst="bi"/>
+    <case src="&jp-h-pi;"         dst="pi"/>
+    <case src="&jp-h-mo;"         dst="mo"/>
+    <case src="&jp-h-se;"         dst="se"/>
+    <case src="&jp-h-ze;"         dst="ze"/>
+    <case src="&jp-h-su;"         dst="su"/>
+    <case src="&jp-h-zu;"         dst="zu"/>
+    <case src="&jp-h-dakuten;"    dst=""/>
+    <case src="&jp-h-handakuten;" dst=""/>        
+    <case src="&jp-h-sokuon;"     dst=""/>
+    <case src="&jp-h-youon-a;"    dst=""/>
+    <case src="&jp-h-youon-u;"    dst=""/>
+    <case src="&jp-h-youon-o;"    dst=""/>
+    <case src="&jp-h-n;"          dst="n"/>
+  </format>
+  
+  <format id="stage">
+    <case src="0"  dst="1"/>
+    <case src="2"  dst="2"/>
+    <case src="4"  dst="3"/>
+    <case src="6"  dst="4"/>
+    <case src="8"  dst="5"/>
+    <case src="10"  dst="5"/>
+    <case src="12"  dst="6"/>
+    <case src="14"  dst="All"/>
+  </format>
+  <format id="character">
+    <case src="0"  dst="Shishin (P1)"/>
+    <case src="2"  dst="Kamono Gensuke (P1)"/>
+    <case src="4"  dst="Hiiragi Kosame (P1)"/>
+    <case src="6"  dst="Shishin (P2)"/>
+    <case src="8"  dst="Kamono Gensuke (P2)"/>
+    <case src="10"  dst="Hiiragi Kosame (P2)"/>
+  </format>
+  
+  <charset id="guwange">
+    <char src="0x0000" dst=""/>
+    
+    <!--
+    The 'guwange' alphabet order is following the Iroha poem in its Hiragana Archaic form.
+    The direct transliteration of it leads to the japanese letters to use.
+    
+    The Iroha is a Japanese poem, probably written in the Heian era (AD 794–1179).
+    It is a perfect pangram (and in the same time an isogram),
+      containing each character of the Japanese syllabary exactly once.
+    Because of this, it is also used as an ordering for the syllabary,
+      in much the same way that the A, B, C, D... sequence traces
+      its origin back to the Phoenician alphabet and its Semitic predecessors.
+    http://en.wikipedia.org/wiki/Iroha
+    //-->
+     
+    <!-- Iro ha nihohe to //-->
+    <char src="0xA800" dst="&jp-h-i;"/>
+    <char src="0xA8D7" dst="&jp-h-i;&jp-h-dakuten;"/>
+    <char src="0xA8D8" dst="&jp-h-i;&jp-h-handakuten;"/>    
+    <char src="0xA900" dst="&jp-h-ro;"/>
+    <char src="0xA9D7" dst="&jp-h-ro;&jp-h-dakuten;"/>
+    <char src="0xA9D8" dst="&jp-h-ro;&jp-h-handakuten;"/>    
+    <char src="0xAA00" dst="&jp-h-ha;"/>
+    <char src="0xAAD7" dst="&jp-h-ba;"/>
+    <char src="0xAAD8" dst="&jp-h-pa;"/>
+    <char src="0xAB00" dst="&jp-h-ni;"/>
+    <char src="0xABD7" dst="&jp-h-ni;&jp-h-dakuten;"/>
+    <char src="0xABD8" dst="&jp-h-ni;&jp-h-handakuten;"/>
+    <char src="0xAC00" dst="&jp-h-ho;"/>
+    <char src="0xACD7" dst="&jp-h-bo;"/>
+    <char src="0xACD8" dst="&jp-h-po;"/>
+    <char src="0xAD00" dst="&jp-h-he;"/>
+    <char src="0xADD7" dst="&jp-h-be;"/>
+    <char src="0xADD8" dst="&jp-h-pe;"/>
+    <char src="0xAE00" dst="&jp-h-to;"/>
+    <char src="0xAED7" dst="&jp-h-do;"/>
+    <char src="0xAED8" dst="&jp-h-to;&jp-h-handakuten;"/>
+    
+    <!-- tirinuru wo //-->
+    <char src="0xAF00" dst="&jp-h-ti;"/>
+    <char src="0xAFD7" dst="&jp-h-di;"/>
+    <char src="0xAFD8" dst="&jp-h-ti;&jp-h-handakuten;"/>
+    <char src="0xB000" dst="&jp-h-ri;"/>
+    <char src="0xB0D7" dst="&jp-h-ri;&jp-h-dakuten;"/>
+    <char src="0xB0D8" dst="&jp-h-ri;&jp-h-handakuten;"/>
+    <char src="0xB100" dst="&jp-h-nu;"/>
+    <char src="0xB1D7" dst="&jp-h-nu;&jp-h-dakuten;"/>
+    <char src="0xB1D8" dst="&jp-h-nu;&jp-h-handakuten;"/>
+    <char src="0xB200" dst="&jp-h-ru;"/>
+    <char src="0xB2D7" dst="&jp-h-ru;&jp-h-dakuten;"/>
+    <char src="0xB2D8" dst="&jp-h-ru;&jp-h-handakuten;"/>
+    <char src="0xB300" dst="&jp-h-wo;"/>
+    <char src="0xB3D7" dst="&jp-h-wo;&jp-h-dakuten;"/>
+    <char src="0xB3D8" dst="&jp-h-wo;&jp-h-handakuten;"/>
+    
+    <!-- Wa ka yo tare so //-->
+    <char src="0xB400" dst="&jp-h-wa;"/>
+    <char src="0xB4D7" dst="&jp-h-wa;&jp-h-dakuten;"/>
+    <char src="0xB4D8" dst="&jp-h-wa;&jp-h-handakuten;"/>
+    <char src="0xB500" dst="&jp-h-ka;"/>
+    <char src="0xB5D7" dst="&jp-h-ga;"/>
+    <char src="0xB5D8" dst="&jp-h-ka;&jp-h-handakuten;"/>
+    <char src="0xB600" dst="&jp-h-yo;"/>
+    <char src="0xB6D7" dst="&jp-h-yo;&jp-h-dakuten;"/>
+    <char src="0xB6D8" dst="&jp-h-yo;&jp-h-handakuten;"/>
+    <char src="0xB700" dst="&jp-h-ta;"/>
+    <char src="0xB7D7" dst="&jp-h-da;"/>
+    <char src="0xB7D8" dst="&jp-h-ta;&jp-h-handakuten;"/>
+    <char src="0xB800" dst="&jp-h-re;"/>
+    <char src="0xB8D7" dst="&jp-h-re;&jp-h-dakuten;"/>
+    <char src="0xB8D8" dst="&jp-h-re;&jp-h-handakuten;"/>
+    <char src="0xB900" dst="&jp-h-so;"/>
+    <char src="0xB9D7" dst="&jp-h-zo;"/>
+    <char src="0xB9D8" dst="&jp-h-so;&jp-h-handakuten;"/>
+    
+    <!-- tune naramu //-->
+    <char src="0xBA00" dst="&jp-h-tu;"/>
+    <char src="0xBAD7" dst="&jp-h-du;"/>
+    <char src="0xBAD8" dst="&jp-h-tu;&jp-h-handakuten;"/>
+    <char src="0xBB00" dst="&jp-h-ne;"/>
+    <char src="0xBBD7" dst="&jp-h-ne;&jp-h-dakuten;"/>
+    <char src="0xBBD8" dst="&jp-h-ne;&jp-h-handakuten;"/>
+    <char src="0xBC00" dst="&jp-h-na;"/>
+    <char src="0xBCD7" dst="&jp-h-na;&jp-h-dakuten;"/>
+    <char src="0xBCD8" dst="&jp-h-na;&jp-h-handakuten;"/>
+    <char src="0xBD00" dst="&jp-h-ra;"/>
+    <char src="0xBDD7" dst="&jp-h-ra;&jp-h-dakuten;"/>
+    <char src="0xBDD8" dst="&jp-h-ra;&jp-h-handakuten;"/>
+    <char src="0xBE00" dst="&jp-h-mu;"/>
+    <char src="0xBED7" dst="&jp-h-mu;&jp-h-dakuten;"/>
+    <char src="0xBED8" dst="&jp-h-mu;&jp-h-handakuten;"/>
+    
+    <!-- Uwi no okuyama //-->
+    <char src="0xBF00" dst="&jp-h-u;"/>
+    <char src="0xBFD7" dst="&jp-h-vu;"/>
+    <char src="0xBFD8" dst="&jp-h-u;&jp-h-handakuten;"/>
+    <char src="0xC000" dst="&jp-h-wi;"/>
+    <char src="0xC0D7" dst="&jp-h-wi;&jp-h-dakuten;"/>
+    <char src="0xC0D8" dst="&jp-h-wi;&jp-h-handakuten;"/>
+    <char src="0xC100" dst="&jp-h-no;"/>
+    <char src="0xC1D7" dst="&jp-h-no;&jp-h-dakuten;"/>
+    <char src="0xC1D8" dst="&jp-h-no;&jp-h-handakuten;"/>
+    <char src="0xC200" dst="&jp-h-o;"/>
+    <char src="0xC2D7" dst="&jp-h-o;&jp-h-dakuten;"/>
+    <char src="0xC2D8" dst="&jp-h-o;&jp-h-handakuten;"/>
+    <char src="0xC300" dst="&jp-h-ku;"/>
+    <char src="0xC3D7" dst="&jp-h-gu;"/>
+    <char src="0xC3D8" dst="&jp-h-ku;&jp-h-handakuten;"/>
+    <char src="0xC400" dst="&jp-h-ya;"/>
+    <char src="0xC4D7" dst="&jp-h-ya;&jp-h-dakuten;"/>
+    <char src="0xC4D8" dst="&jp-h-ya;&jp-h-handakuten;"/>
+    <char src="0xC500" dst="&jp-h-ma;"/>
+    <char src="0xC5D7" dst="&jp-h-ma;&jp-h-dakuten;"/>
+    <char src="0xC5D8" dst="&jp-h-ma;&jp-h-handakuten;"/>
+    
+    <!-- kehu koete //-->
+    <char src="0xC600" dst="&jp-h-ke;"/>
+    <char src="0xC6D7" dst="&jp-h-ge;"/>
+    <char src="0xC6D8" dst="&jp-h-ke;&jp-h-handakuten;"/>
+    <char src="0xC700" dst="&jp-h-hu;"/>
+    <char src="0xC7D7" dst="&jp-h-bu;"/>
+    <char src="0xC7D8" dst="&jp-h-pu;"/>
+    <char src="0xC800" dst="&jp-h-ko;"/>
+    <char src="0xC8D7" dst="&jp-h-go;"/>
+    <char src="0xC8D8" dst="&jp-h-ko;&jp-h-handakuten;"/>
+    <char src="0xC900" dst="&jp-h-e;"/>
+    <char src="0xC9D7" dst="&jp-h-e;&jp-h-dakuten;"/>
+    <char src="0xC9D8" dst="&jp-h-e;&jp-h-handakuten;"/>
+    <char src="0xCA00" dst="&jp-h-te;"/>
+    <char src="0xCAD7" dst="&jp-h-de;"/>
+    <char src="0xCAD8" dst="&jp-h-te;&jp-h-handakuten;"/>
+    
+    <!-- Asaki yume misi //-->
+    <char src="0xCB00" dst="&jp-h-a;"/>
+    <char src="0xCBD7" dst="&jp-h-a;&jp-h-dakuten;"/>
+    <char src="0xCBD8" dst="&jp-h-a;&jp-h-handakuten;"/>
+    <char src="0xCC00" dst="&jp-h-sa;"/>
+    <char src="0xCCD7" dst="&jp-h-za;"/>
+    <char src="0xCCD8" dst="&jp-h-sa;&jp-h-handakuten;"/>
+    <char src="0xCD00" dst="&jp-h-ki;"/>
+    <char src="0xCDD7" dst="&jp-h-gi;"/>
+    <char src="0xCDD8" dst="&jp-h-ki;&jp-h-handakuten;"/>
+    <char src="0xCE00" dst="&jp-h-yu;"/>
+    <char src="0xCED7" dst="&jp-h-yu;&jp-h-dakuten;"/>
+    <char src="0xCED8" dst="&jp-h-yu;&jp-h-handakuten;"/>
+    <char src="0xCF00" dst="&jp-h-me;"/>
+    <char src="0xCFD7" dst="&jp-h-me;&jp-h-dakuten;"/>
+    <char src="0xCFD8" dst="&jp-h-me;&jp-h-handakuten;"/>
+    <char src="0xD000" dst="&jp-h-mi;"/>
+    <char src="0xD0D7" dst="&jp-h-mi;&jp-h-dakuten;"/>
+    <char src="0xD0D8" dst="&jp-h-mi;&jp-h-handakuten;"/>
+    <char src="0xD100" dst="&jp-h-si;"/>
+    <char src="0xD1D7" dst="&jp-h-zi;"/>
+    <char src="0xD1D8" dst="&jp-h-si;&jp-h-handakuten;"/>
+    
+    <!-- wehi mo sesu //-->
+    <char src="0xD200" dst="&jp-h-we;"/>
+    <char src="0xD2D7" dst="&jp-h-we;&jp-h-dakuten;"/>
+    <char src="0xD2D8" dst="&jp-h-we;&jp-h-handakuten;"/>
+    <char src="0xD300" dst="&jp-h-hi;"/>
+    <char src="0xD3D7" dst="&jp-h-bi;"/>
+    <char src="0xD3D8" dst="&jp-h-pi;"/>
+    <char src="0xD400" dst="&jp-h-mo;"/>
+    <char src="0xD4D7" dst="&jp-h-mo;&jp-h-dakuten;"/>
+    <char src="0xD4D8" dst="&jp-h-mo;&jp-h-handakuten;"/>
+    <char src="0xD500" dst="&jp-h-se;"/>
+    <char src="0xD5D7" dst="&jp-h-ze;"/>
+    <char src="0xD5D8" dst="&jp-h-se;&jp-h-handakuten;"/>
+    <char src="0xD600" dst="&jp-h-su;"/>
+    <char src="0xD6D7" dst="&jp-h-zu;"/>
+    <char src="0xD6D8" dst="&jp-h-su;&jp-h-handakuten;"/>
+    
+    <!-- +n +sokuon +youon-a +youon-u +youon-o //-->
+    <char src="0xD700" dst="&jp-h-dakuten;"/>
+    <char src="0xD7D7" dst="&jp-h-dakuten;"/>
+    <char src="0xD7D8" dst="&jp-h-handakuten;"/>
+    <char src="0xD800" dst="&jp-h-handakuten;"/>
+    <char src="0xD8D7" dst="&jp-h-dakuten;"/>
+    <char src="0xD8D8" dst="&jp-h-handakuten;"/>        
+    <char src="0xD900" dst="&jp-h-sokuon;"/>
+    <char src="0xD9D7" dst="&jp-h-sokuon;&jp-h-dakuten;"/>
+    <char src="0xD9D8" dst="&jp-h-sokuon;&jp-h-handakuten;"/>    
+    <char src="0xDA00" dst="&jp-h-youon-a;"/>
+    <char src="0xDAD7" dst="&jp-h-youon-a;&jp-h-dakuten;"/>
+    <char src="0xDAD8" dst="&jp-h-youon-a;&jp-h-handakuten;"/>
+    <char src="0xDB00" dst="&jp-h-youon-u;"/>
+    <char src="0xDBD7" dst="&jp-h-youon-u;&jp-h-dakuten;"/>
+    <char src="0xDBD8" dst="&jp-h-youon-u;&jp-h-handakuten;"/>
+    <char src="0xDC00" dst="&jp-h-youon-o;"/>
+    <char src="0xDCD7" dst="&jp-h-youon-o;&jp-h-dakuten;"/>
+    <char src="0xDCD8" dst="&jp-h-youon-o;&jp-h-handakuten;"/>    
+    <char src="0xDD00" dst="&jp-h-n;"/>
+    <char src="0xDDD7" dst="&jp-h-n;&jp-h-dakuten;"/>
+    <char src="0xDDD8" dst="&jp-h-n;&jp-h-handakuten;"/>
+  </charset>
+</hi2txt>

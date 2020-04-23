@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:f014e6:8c:00:14</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>140</size>
+    </check>
+    <loop count="10">
+      <elt size="8" type="int"  id="SCORE" table-index="loop_reverse_index" decoding-profile="bcd-le"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME"    table-index="loop_reverse_index" charset="metafox" ascii-offset="44"/>
+      <elt size="3" type="raw"  id="UNKNOWN" table-index="loop_reverse_index"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="metafox">
+    <char src="0x00" dst="0"/>
+    <char src="0x01" dst="1"/>
+    <char src="0x02" dst="2"/>
+    <char src="0x03" dst="3"/>
+    <char src="0x04" dst="4"/>
+    <char src="0x05" dst="5"/>
+    <char src="0x06" dst="6"/>
+    <char src="0x07" dst="7"/>
+    <char src="0x08" dst="8"/>
+    <char src="0x09" dst="9"/>
+    <char src="0x0B" dst="&airplane;"/>
+    <char src="0x0C" dst="."/>
+    <char src="0x0D" dst="!"/>
+    <char src="0x0E" dst="?"/>
+    <char src="0x0F" dst="&sun;"/>
+    <char src="0x10" dst="&black-spade;"/>
+    <char src="0x11" dst="&black-heart;"/>
+    <char src="0x12" dst="&black-club;"/>
+    <char src="0x13" dst="&black-diamond;"/>
+    <char src="0x14" dst=" "/>
+  </charset>
+</hi2txt>

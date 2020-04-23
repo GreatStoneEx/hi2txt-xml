@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MEDALS</col>
+    <row><cell>1</cell><cell>876000</cell><cell>GMC.NYAM</cell><cell>1234555</cell></row>
+    <row><cell>2</cell><cell>765000</cell><cell>ROKUJIZO</cell><cell>23444</cell></row>
+    <row><cell>3</cell><cell>654000</cell><cell>NYAE.</cell><cell>3455</cell></row>
+    <row><cell>4</cell><cell>543000</cell><cell>KYOKU</cell><cell>455</cell></row>
+    <row><cell>5</cell><cell>432000</cell><cell>YOSHIIE</cell><cell>545</cell></row>
+    <row><cell>6</cell><cell>321000</cell><cell>SCRAP</cell><cell>43515</cell></row>
+    <row><cell>7</cell><cell>299830</cell><cell>0&#183;9</cell><cell></cell></row>
+    <row><cell>8</cell><cell>210000</cell><cell>KIMURA</cell><cell>3251</cell></row>
+    <row><cell>9</cell><cell>198000</cell><cell>CM.SAVAG</cell><cell>2153</cell></row>
+    <row><cell>10</cell><cell>150000</cell><cell>NOOOOOOO</cell><cell>12535</cell></row>
+  </table>
+  <field id="TOP SCORE">876000</field>
+</hi2txt>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c983:1c4:41:0
+                  0:c023:2:0:0
+                  0:c025:1:03:03
+                  0:c026:1:0:0
+                  0:d06c:8:1:60</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>464</size>
+    </check>
+    <loop count="50">
+      <elt size="1" type="int"  id="GRADE"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"  charset="rygar"/>
+      <elt size="1" type="int"  id="STAGE"/>
+    </loop>
+    <elt size="1" type="int" id="ANOTHER GRADE"/>
+    <elt size="1" type="raw" id="UNKNOWN"/>
+    <elt size="4" type="int" id="TOP SCORE"      endianness="little_endian" base="16"/>
+    <elt size="8" type="int" id="TOP SCORE LONG" byte-skip="0x01" nibble-skip="odd" base="16"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="pad"/>
+      <column id="GRADE" format="grade"/>
+    </table>
+    <field id="ANOTHER GRADE" format="grade" display="debug"/>
+    <field id="UNKNOWN"                      display="debug"/>
+    <table id="TOP SCORE">
+      <field id="TOP SCORE"      display="extra"/>
+      <field id="TOP SCORE LONG" display="extra"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="pad"><pad direction="left" max="2">0</pad></format>
+  <format id="grade">
+    <case src="1"  dst="EAGLE RED II (1)"/>
+    <case src="2"  dst="EAGLE RED III (2)"/>
+    <case src="3"  dst="EAGLE RED IIII (3)"/>
+    <case src="4"  dst="CUP BLUE (4)"/>
+    <case src="5"  dst="CUP BLUE I (5)"/>
+    <case src="6"  dst="CUP BLUE II (6)"/>
+    <case src="7"  dst="CUP BLUE III (7)"/>
+    <case src="8"  dst="CUP BLUE IIII (8)"/>
+    <case src="9"  dst="PAWN YELLOW (9)"/>
+    <case src="10" dst="PAWN YELLOW I (10)"/>
+    <case src="11" dst="PAWN YELLOW II (11)"/>
+    <case src="12" dst="PAWN YELLOW III (12)"/>
+    <case src="13" dst="PAWN YELLOW IIII (13)"/>
+    <case src="14" dst="CELTIC RED (14)"/>
+    <case src="15" dst="CELTIC RED I (15)"/>
+    <case src="16" dst="CELTIC RED II (16)"/>
+    <case src="17" dst="CELTIC RED III (17)"/>
+    <case src="18" dst="CELTIC RED IIII (18)"/>
+    <case src="19" dst="CROSS BLUE (19)"/>
+    <case src="20" dst="CROSS BLUE I (20)"/>
+    <case src="21" dst="CROSS BLUE II (21)"/>
+    <case src="22" dst="CROSS BLUE III (22)"/>
+    <case src="23" dst="CROSS BLUE IIII (23)"/>
+    <case src="24" dst="RECT BLUE (24)"/>
+    <case src="25" dst="RECT BLUE I (25)"/>
+    <case src="26" dst="RECT BLUE II (26)"/>
+    <case src="27" dst="RECT BLUE III (27)"/>
+    <case src="28" dst="RECT BLUE IIII (28)"/>
+    <case src="64" operator="&lt;=" dst="BEST"/>
+    <case src="65" dst="EAGLE RED II (65)"/>
+  </format>
+  
+  <charset id="rygar">
+    <char src="0x5B" dst=" "/>
+    <char src="0x5C" dst="◉"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Golden Axe">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fffc00:38:02:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>56</size>
+    </check>
+    <elt size="18" type="raw"  id="UNKNOWN11"/>
+    <elt size="2"  type="int"  id="STRENGTH"/>
+    <elt size="8"  type="raw"  id="UNKNOWN12"/>
+    
+    <elt size="18" type="raw"  id="UNKNOWN21"/>
+    <elt size="2"  type="int"  id="STRENGTH2"/>
+    <elt size="8"  type="raw"  id="UNKNOWN22"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="STRENGTH"  format="dot10"/>
+      <column id="STRENGTH2" format="dot10" display="debug"/>
+    </table>
+  </output>
+  
+   <format id="dot10" formatter="%.1f"> <divide>10</divide></format>
+   
+</hi2txt>

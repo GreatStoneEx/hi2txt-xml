@@ -1,0 +1,7 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col>
+    <row><cell>1</cell><cell>900</cell></row>
+  </table>
+  <field id="HEADER">0x99</field>
+</hi2txt>

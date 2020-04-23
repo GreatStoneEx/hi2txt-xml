@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>1:40070:4:01:00
+                  1:40300:50:4a:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>84</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="hpuncher"/>
+      <elt size="1" type="raw"  id="STAGE"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="hpuncher">
+    <char src="0x5B" dst="."/>
+    <char src="0x5C" dst="?"/>
+    <char src="0x5D" dst=" "/>
+  </charset>
+</hi2txt>

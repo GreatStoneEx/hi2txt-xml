@@ -1,0 +1,16 @@
+RANK|SCORE|NAME|CHARACTER
+1|60800|.-2|Robo Keaton USA F-117
+2|10000|HIE|Hi-en Japan FS-X
+3|9000|MAO|Mao-Mao Japan F-15 Eagle
+4|8000|SLV|Silver USA A-10 Thunderbolt
+5|7000|WHT|Bobby Britain FRS.2
+6|6000|CIN|Cindy UN F-14 Tomcat
+7|5000|KTN|Robo Keaton USA F-117
+8|4000|ANJ|Steve France RAFALE
+9|3000|ARS|Spanky UN YF-23
+10|2000|ELN|Cindy UN F-14 Tomcat
+
+CHECK
+0x2020
+
+

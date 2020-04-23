@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TODAYS SCORE</col><col>TODAYS NAME</col>
+    <row><cell>1</cell><cell>19500</cell><cell>ABC</cell><cell></cell><cell></cell></row>
+    <row><cell>2</cell><cell>17500</cell><cell>DEF</cell><cell></cell><cell></cell></row>
+    <row><cell>3</cell><cell>15500</cell><cell>GHI</cell><cell></cell><cell></cell></row>
+    <row><cell>4</cell><cell>13500</cell><cell>JKL</cell><cell></cell><cell></cell></row>
+    <row><cell>5</cell><cell>11500</cell><cell>MNO</cell><cell></cell><cell></cell></row>
+    <row><cell>6</cell><cell>9500</cell><cell>PQR</cell><cell></cell><cell></cell></row>
+    <row><cell>7</cell><cell>7500</cell><cell>STU</cell><cell></cell><cell></cell></row>
+    <row><cell>8</cell><cell>5500</cell><cell>VWX</cell><cell></cell><cell></cell></row>
+  </table>
+</hi2txt>
+

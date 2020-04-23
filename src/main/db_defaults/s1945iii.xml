@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>70000</cell><cell>---</cell><cell>1-1</cell><cell>F/A-18 Super Hornet</cell></row>
+    <row><cell>2</cell><cell>60000</cell><cell>---</cell><cell>1-1</cell><cell>F-117 Stealth</cell></row>
+    <row><cell>3</cell><cell>50000</cell><cell>---</cell><cell>1-1</cell><cell>F-22 Raptor</cell></row>
+    <row><cell>4</cell><cell>40000</cell><cell>---</cell><cell>1-1</cell><cell>AV-8 Harrier</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>---</cell><cell>1-1</cell><cell>F-4 Phantom II</cell></row>
+    <row><cell>6</cell><cell>20000</cell><cell>---</cell><cell>1-1</cell><cell>F/A-18 Super Hornet</cell></row>
+    <row><cell>7</cell><cell>10000</cell><cell>---</cell><cell>1-1</cell><cell>F-117 Stealth</cell></row>
+  </table>
+</hi2txt>
+
+

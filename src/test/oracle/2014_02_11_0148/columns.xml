@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>JEWELS</col><col>HEADER</col><col>SEPARATOR</col><col>FOOTER</col>
+    <row><cell>1</cell><cell>10000</cell><cell>WNK</cell><cell>9</cell><cell>90</cell><cell>0x55</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>9000</cell><cell>AIA</cell><cell>8</cell><cell>80</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>7000</cell><cell>KMZ</cell><cell>7</cell><cell>70</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>6000</cell><cell>III</cell><cell>6</cell><cell>60</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>HYM</cell><cell>5</cell><cell>50</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>4000</cell><cell>AAO</cell><cell>4</cell><cell>40</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>7</cell><cell>3000</cell><cell>R.T</cell><cell>3</cell><cell>30</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>2000</cell><cell>AHO</cell><cell>2</cell><cell>20</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>1000</cell><cell>???</cell><cell>1</cell><cell>10</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+  </table>
+</hi2txt>

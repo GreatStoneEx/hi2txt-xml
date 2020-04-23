@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>MAX CHAIN</col><col>RANK / CHAIN</col>
+    <row><cell>1</cell><cell>200000</cell><cell>&#12365;&#12398;&#12360; (Kinoe)</cell><cell>4</cell><cell>Shishin (P1)</cell><cell>1000</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>180000</cell><cell>&#12365;&#12398;&#12392; (Kinoto)</cell><cell>3</cell><cell>Kamono Gensuke (P1)</cell><cell>900</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>160000</cell><cell>&#12402;&#12398;&#12360; (Hinoe)</cell><cell>3</cell><cell>Hiiragi Kosame (P1)</cell><cell>800</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>140000</cell><cell>&#12402;&#12398;&#12392; (Hinoto)</cell><cell>3</cell><cell>Shishin (P2)</cell><cell>700</cell><cell>4</cell></row>
+    <row><cell>5</cell><cell>120000</cell><cell>&#12388;&#12385;&#12398;&#12360; (Tsuchinoe)</cell><cell>3</cell><cell>Kamono Gensuke (P2)</cell><cell>600</cell><cell>5</cell></row>
+    <row><cell>6</cell><cell>100000</cell><cell>&#12388;&#12385;&#12398;&#12392; (Tsuchinoto)</cell><cell>2</cell><cell>Hiiragi Kosame (P2)</cell><cell>500</cell><cell>6</cell></row>
+    <row><cell>7</cell><cell>80000</cell><cell>&#12363;&#12398;&#12360; (Kanoe)</cell><cell>2</cell><cell>Shishin (P1)</cell><cell>400</cell><cell>7</cell></row>
+    <row><cell>8</cell><cell>60000</cell><cell>&#12363;&#12398;&#12392; (Kanoto)</cell><cell>2</cell><cell>Kamono Gensuke (P1)</cell><cell>300</cell><cell>8</cell></row>
+    <row><cell>9</cell><cell>40000</cell><cell>&#12415;&#12378;&#12398;&#12360; (Mizunoe)</cell><cell>1</cell><cell>Hiiragi Kosame (P1)</cell><cell>200</cell><cell>9</cell></row>
+    <row><cell>10</cell><cell>20000</cell><cell>&#12415;&#12378;&#12398;&#12392; (Mizunoto)</cell><cell>1</cell><cell>Shishin (P2)</cell><cell>100</cell><cell>16</cell></row>
+  </table>
+</hi2txt>
+
+

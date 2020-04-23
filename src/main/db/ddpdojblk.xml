@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:803824:8c:01:06</definition> <!-- version: new //-->
+      <definition>0:803824:8c:00:02</definition> <!-- version: old //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>140</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE1" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="12" type="text" id="NAME" byte-skip="0001" ascii-offset="65" ascii-step="4" charset="ddpdoj"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="UNKNOWN" base="16"/> <!-- empty? //-->
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="STAGE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="SHOT" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="MAX HIT" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="SCORE2" base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file="sram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>131072</size>
+    </check>
+    <elt size="14372" type="raw" id="DATA"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE1" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="12" type="text" id="NAME" byte-skip="0001" ascii-offset="65" ascii-step="4" charset="ddpdoj"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="UNKNOWN" base="16"/> <!-- empty? //-->
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="STAGE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="SHOT" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="MAX HIT" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="SCORE2" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"     format="score"/>
+      <column id="NAME"/>
+      <column id="STAGE"     format="+1"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SHOT"      format="shot"/>
+      <column id="MAX HIT"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10"/>
+      <column id="SCORE2"/>
+    </sum>
+  </format>
+  <format id="character">
+    <case src="0" dst="RED" default="yes"/>
+    <case src="2" dst="GREEN"/>
+    <case src="4" dst="BLUE"/>
+    <case src="6" dst="YELLOW"/>
+  </format>
+  <format id="shot">
+    <case src="2" dst="SHOT" default="yes"/>
+    <case src="4" dst="LASER"/>
+    <case src="6" dst="EXPERT"/>
+  </format>
+  
+  <charset id="ddpdoj">
+    <char src="0x68" dst="."/>
+    <char src="0x70" dst=""/>
+  </charset>
+</hi2txt>

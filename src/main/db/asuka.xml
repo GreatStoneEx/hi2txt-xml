@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Asuka and Asuka">
+  <!--
+    tested with mame 0.212 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,103458,66,41,01
+                  @:maincpu,program,1033c4,4,00,20</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>106</size>
+    </check>
+	<loop count="10">
+      <elt size="3" type="text" id="NAME"/>
+	  <elt size="3" type="raw"  id="PADDING"/>
+	</loop>
+	<elt size="2" type="raw" id="EMPTY"/>
+    <loop count="10">
+      <elt size="2" type="int"  id="SCORE" base="10"/>
+	</loop>
+	<loop count="10">
+      <elt size="2" type="int"  id="ROUND" base="10"/>
+	</loop>
+    <elt size="4" type="int" id="TOP SCORE" base="10"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*100"/>
+      <column id="NAME"/>
+	  <column id="ROUND"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+</hi2txt>

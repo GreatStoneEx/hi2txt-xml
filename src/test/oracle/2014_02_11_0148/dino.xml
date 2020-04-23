@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>STAGE</col><col>SPACE</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>2318023</cell><cell>PIE</cell><cell>MESS O&apos;BRADOVICH</cell><cell>8</cell><cell> </cell><cell>0x640000000000</cell></row>
+    <row><cell>2</cell><cell>100000</cell><cell>C P</cell><cell>JACK TENREC</cell><cell>8</cell><cell> </cell><cell>0x640000000000</cell></row>
+    <row><cell>3</cell><cell>90000</cell><cell>SYS</cell><cell>MUSTAPHA CAIRO</cell><cell>7</cell><cell> </cell><cell>0x620000000000</cell></row>
+    <row><cell>4</cell><cell>80000</cell><cell>TEM</cell><cell>HANNAH DUNDEE</cell><cell>6</cell><cell> </cell><cell>0x600000000000</cell></row>
+    <row><cell>5</cell><cell>70000</cell><cell>DA.</cell><cell>MESS O&apos;BRADOVICH</cell><cell>5</cell><cell> </cell><cell>0x5E0000000000</cell></row>
+    <row><cell>6</cell><cell>60000</cell><cell>YKI</cell><cell>JACK TENREC</cell><cell>4</cell><cell> </cell><cell>0x5C0000000000</cell></row>
+    <row><cell>7</cell><cell>50000</cell><cell>TEZ</cell><cell>MUSTAPHA CAIRO</cell><cell>3</cell><cell> </cell><cell>0x5A0000000000</cell></row>
+    <row><cell>8</cell><cell>40000</cell><cell>CKY</cell><cell>HANNAH DUNDEE</cell><cell>2</cell><cell> </cell><cell>0x580000000000</cell></row>
+    <row><cell>9</cell><cell>30000</cell><cell>DNA</cell><cell>MESS O&apos;BRADOVICH</cell><cell>1</cell><cell> </cell><cell>0x560000000000</cell></row>
+    <row><cell>10</cell><cell>20000</cell><cell>JRA</cell><cell>JACK TENREC</cell><cell>1</cell><cell> </cell><cell>0x540000000000</cell></row>
+    <row><cell>11</cell><cell>10000</cell><cell>SOM</cell><cell>MUSTAPHA CAIRO</cell><cell>1</cell><cell> </cell><cell>0x520000000000</cell></row>
+    <row><cell>12</cell><cell>0</cell><cell>CAP</cell><cell>HANNAH DUNDEE</cell><cell>1</cell><cell> </cell><cell>0x500000000000</cell></row>
+  </table>
+</hi2txt>

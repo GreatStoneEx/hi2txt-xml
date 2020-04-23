@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:1023b0:50:00:8c
+                  0:1022ec:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>84</size>
+    </check>
+    <loop count="5"><elt size="4" type="int"  id="SCORE1" base="16"/></loop>
+    <loop count="5"><elt size="6" type="text" id="NAME" byte-skip="odd" ascii-offset="-88" charset="esprade"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="STAGE" byte-skip="odd"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="CHARACTER"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="SCORE2"/></loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="STAGE" format="/2"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+    
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10"/>
+      <column id="SCORE2" format="-136"/>
+    </sum>
+  </format>
+  <format id="character">
+    <case src="0" dst="YUSUKE SAGAMI" default="yes"/>
+    <case src="1" dst="J-B 5TH"/>
+    <case src="2" dst="IRORI MIMASAKA"/>
+    <case src="3" dst="YUSUKE SAGAMI"/>
+    <case src="4" dst="J-B 5TH"/>
+    <case src="5" dst="IRORI MIMASAKA"/>
+  </format>
+  
+  <charset id="esprade">
+    <char src="0x00" dst=" "/>
+    <char src="0x86" dst="."/>
+  </charset>
+</hi2txt>

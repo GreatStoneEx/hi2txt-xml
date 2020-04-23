@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:84a1:2:d0:07
+                  0:8981:1:00:00
+                  0:89a1:1:00:00
+                  0:89c1:1:00:00
+                  0:89e1:1:00:00
+                  0:8a01:1:02:02
+                  0:8a21:1:10:10
+                  0:8a41:1:10:10
+                  0:8920:1:10:10
+                  0:8940:1:10:10
+                  0:8960:1:15:15
+                  0:8980:1:22:22
+                  0:89a0:1:1f:1f
+                  0:89c0:1:13:13
+                  0:89e0:1:23:23
+                  0:8a00:1:10:10
+                  0:8a20:1:18:18
+                  0:8a40:1:17:17
+                  0:8a60:1:19:19
+                  0:8a80:1:18:18
+                  0:8aa0:1:10:10
+                  0:8ac0:1:10:10
+                  0:8ae0:1:10:10</definition> <!-- mimonkey //--> 
+      <definition>0:44a1:2:d0:07
+                  0:4981:1:00:00
+                  0:49a1:1:00:00
+                  0:49c1:1:00:00
+                  0:49e1:1:00:00
+                  0:4a01:1:02:02
+                  0:4a21:1:10:10
+                  0:4a41:1:10:10
+                  0:4920:1:10:10
+                  0:4940:1:10:10
+                  0:4960:1:15:15
+                  0:4980:1:22:22
+                  0:49a0:1:1f:1f
+                  0:49c0:1:13:13
+                  0:49e0:1:23:23
+                  0:4a00:1:10:10
+                  0:4a20:1:18:18
+                  0:4a40:1:17:17
+                  0:4a60:1:19:19
+                  0:4a80:1:18:18
+                  0:4aa0:1:10:10
+                  0:4ac0:1:10:10
+                  0:4ae0:1:10:10</definition> <!-- mimonscr //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>24</size>
+    </check>
+    <loop count="1">
+      <elt size="2"  type="int"  id="SCORE"                                                endianness="little_endian"/>
+      <elt size="7"  type="text" id="SCORE ON SCREEN" charset="mimonkey" ascii-offset="48" endianness="little_endian"/>
+      <elt size="15" type="text" id="NAME"            charset="mimonkey" ascii-offset="48" endianness="little_endian"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="*10"/>
+      <column id="NAME"/>
+      <column id="SCORE ON SCREEN"  format="trim" display="extra"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="trim"><trim direction="left"> </trim></format>
+  
+  <charset id="mimonkey">
+    <char src="0x0D" dst=":"/>
+    <char src="0x0F" dst="."/>
+    <char src="0x10" dst=" "/>
+  </charset>
+</hi2txt>

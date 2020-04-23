@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: William Lash
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:f9e3:9A:01:00
+		              0:e00d:3:01:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>157</size>
+    </check>
+    <loop count="9">
+      <elt size="3" type="int"  id="SCORE"  base="16"/>
+      <elt size="3" type="text" id="NAME"   charset="pang"/>
+      <elt size="1" type="int"  id="STAGE"  base="16"/>
+      <elt size="1" type="int"  id="DEFAULT"/>    <!-- not sure //-->
+      <elt size="1" type="int"  id="STAGE1" base="16"/>
+      <elt size="1" type="int"  id="STAGE2" base="16"/>
+      <elt size="4" type="raw"  id="UNKNOWN"/>
+      <elt size="1" type="int"  id="RANK ALT"/>   <!-- why not? //-->
+      <elt size="1" type="int"  id="RANK ALT 2"/> <!-- why not? //-->
+    </loop>
+    <loop count="1" start="9">
+      <elt size="3" type="int"  id="SCORE"  base="16"/>
+      <elt size="3" type="text" id="NAME"   charset="pang"/>
+      <elt size="1" type="int"  id="STAGE"  base="16"/>
+      <elt size="1" type="int"  id="DEFAULT"/>    <!-- not sure //-->
+      <elt size="1" type="int"  id="STAGE1" base="16"/>
+      <elt size="1" type="int"  id="STAGE2" base="16"/>
+      <!-- hiscore.dat: last 6 bytes of last entry not dumped //-->
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"     format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE"     format="stage"/>
+      <column id="DEFAULT"   format="default" display="extra"/>
+      <column id="RANK ALT"                   display="debug"/>
+      <column id="RANK ALT 2"                 display="debug"/>
+      <column id="UNKNOWN"   format="0x"      display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+  
+  <format id="stage">
+    <concat>
+      <txt>STAGE</txt>
+      <column format="stage_part2;stage_zero"/>
+    </concat>
+  </format>
+  <format id="stage_part2">
+    <concat>
+      <txt> ( </txt>
+      <column id="STAGE1"/>
+      <txt>-</txt>
+      <column id="STAGE2"/>
+      <txt> )</txt>
+    </concat>
+  </format>
+  <format id="stage_zero">
+    <case src=" ( 0-0 )" dst=""/>
+  </format>
+  
+  <format id="default">
+    <case src="0" dst="yes" default="yes"/>
+    <case src="1" dst="no"/>
+  </format>
+  
+  <charset id="pang">
+    <char src="0x7B" dst="&mid-dot;"/>
+  </charset>
+</hi2txt>

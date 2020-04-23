@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ff3dcf:e5:20:04</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>229</size>
+    </check>
+    <elt size="100" type="raw"  id="UNKNOWN"/>
+    <loop count="4">
+      <elt size="3" type="int"  id="SCORE1" base="16"/>
+      <elt size="1" type="raw"  id="UNKNOWN2"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="3" type="int"  id="SCORE1" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="6" type="text"  id="NAME" byte-skip="odd" charset="progear"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="raw"  id="UNKNOWN3"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="STAGE"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER"/>
+      <elt size="2" type="int"  id="SHOT"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="SCORE2" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table lines-max="5">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="/2;+1"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SHOT" format="shot"/>
+      <column id="UNKNOWN2" format="0x" display="debug"/>
+      <column id="UNKNOWN3" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10"/>
+      <column id="SCORE2"/>
+    </sum>
+  </format>
+  <format id="character">
+    <case src="0"  dst="RING (P1)"/>
+    <case src="4"  dst="BOLT (P1)"/>
+    <case src="8"  dst="RING (2)"/>
+    <case src="12" dst="BOLT (2)"/>
+  </format>
+  <format id="shot">
+    <case src="0"  dst="CHAIN (P1)"/>
+    <case src="4"  dst="NAIL (P1)"/>
+    <case src="8"  dst="RIVET (P1)"/>
+    <case src="12" dst="CHAIN (P1)"/>
+    <case src="16" dst="NAIL (P1)"/>
+    <case src="20" dst="RIVET (P2)"/>
+  </format>
+  
+  <charset id="progear">
+    <char src="0x90" dst="A"/>
+    <char src="0x91" dst="B"/>
+    <char src="0x92" dst="C"/>
+    <char src="0x93" dst="D"/>
+    <char src="0x94" dst="E"/>
+    <char src="0x95" dst="F"/>
+    <char src="0x96" dst="G"/>
+    <char src="0x97" dst="H"/>
+    <char src="0x98" dst="I"/>
+    <char src="0x99" dst="J"/>
+    <char src="0x9A" dst="K"/>
+    <char src="0x9B" dst="L"/>
+    <char src="0x9C" dst="M"/>
+    <char src="0x9D" dst="N"/>
+    <char src="0xA0" dst="O"/>
+    <char src="0xA1" dst="P"/>
+    <char src="0xA2" dst="Q"/>
+    <char src="0xA3" dst="R"/>
+    <char src="0xA4" dst="S"/>
+    <char src="0xA5" dst="T"/>
+    <char src="0xA6" dst="U"/>
+    <char src="0xA7" dst="V"/>
+    <char src="0xA8" dst="W"/>
+    <char src="0xA9" dst="X"/>
+    <char src="0xAA" dst="Y"/>
+    <char src="0xAB" dst="Z"/>
+    <char src="0xAC" dst="."/>
+  </charset>
+</hi2txt>

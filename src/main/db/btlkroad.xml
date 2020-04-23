@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fe1af4:4e:00:04</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>78</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="6" type="text" id="NAME"  byte-skip="odd"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+      <elt size="2" type="int"  id="CHARACTER"/>
+      <elt size="2" type="raw"  id="SEPARATOR2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER"  format="character"/>
+      <column id="UNKNOWN"    format="0x" display="debug"/>
+      <column id="SEPARATOR"  format="0x" display="debug"/>
+      <column id="SEPARATOR2" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="Anthony"/>
+    <case src="1"  dst="Cyborg D-9F"/>
+    <case src="2"  dst="Rick"/>
+    <case src="3"  dst="Shinsaku"/>
+    <case src="4"  dst="Mitsuji"/>
+    <case src="5"  dst="Wolf"/>
+    <case src="6"  dst="Tyssa"/>
+    <case src="7"  dst="Kumachan"/> <!-- Mr. Bear //-->
+    <case src="8"  dst="Masamishi"/>
+    <case src="9"  dst="Cyborg T-8P"/>
+    <case src="10" dst="Jeff"/>
+    <case src="11" dst="John"/>
+    <case src="12" dst="Harimaoh"/>
+    <case src="13" dst="Dan"/>
+    <case src="14" dst="Yuki"/>
+    <case src="15" dst="Kumasama"/> <!-- Mr. Bear //-->
+  </format>
+</hi2txt>

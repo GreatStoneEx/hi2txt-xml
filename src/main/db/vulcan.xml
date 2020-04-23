@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:600a1:63:22:30
+                  0:60058:4:00:30
+                  0:60008:1:1d:1d</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>104</size>
+    </check>
+    <loop count="10" skip-last-bytes="1">
+      <elt size="1" type="int"  id="AGE"    base="16"        table-index="loop_reverse_index"/>
+      <elt size="1" type="int"  id="GENDER" base="16"        table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"   charset="vulcan" table-index="loop_reverse_index"/>
+      <elt size="4" type="int"  id="SCORE"  base="16"        table-index="loop_reverse_index"/>
+      <elt size="1" type="raw"  id="SEPARATOR"               table-index="loop_reverse_index"/>
+    </loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="AGE"/>
+      <column id="GENDER"    format="gender"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="CHECK"     format="0x"  display="debug"/>
+  </output>
+  
+  <format id="gender">
+    <case src="0" dst="MAN"/>
+    <case src="1" dst="WOMAN"/>
+  </format>
+  
+  <charset id="vulcan">
+    <char src="0x40" dst=" "/>
+    <char src="0x5B" dst="-"/>
+    <char src="0x5C" dst="."/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,8 @@
+RANK|SCORE|NAME|CHARACTER|SEPARATOR
+1|40400|019|Vorg|0x00
+2|34400|VBB|Kashon|0x00
+3|19300|6. |Tyora|0x00
+4|160|---|Kashon|0x00
+5|144|---|Vorg|0x00
+6|128|---|Tyora|0x00
+

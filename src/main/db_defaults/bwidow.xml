@@ -1,0 +1,27 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col>
+    <row><cell>1</cell><cell>0</cell><cell>   </cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>0</cell><cell>   </cell><cell>0</cell></row>
+    <row><cell>3</cell><cell>0</cell><cell>   </cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>10801</cell><cell>***</cell><cell>17</cell></row>
+    <row><cell>5</cell><cell>10101</cell><cell>BDM</cell><cell>17</cell></row>
+    <row><cell>6</cell><cell>10101</cell><cell>REO</cell><cell>17</cell></row>
+    <row><cell>7</cell><cell>10101</cell><cell>UNR</cell><cell>17</cell></row>
+    <row><cell>8</cell><cell>10101</cell><cell>CNG</cell><cell>17</cell></row>
+    <row><cell>9</cell><cell>10101</cell><cell>EIA</cell><cell>17</cell></row>
+    <row><cell>10</cell><cell>10101</cell><cell>*SN</cell><cell>17</cell></row>
+    <row><cell>11</cell><cell>10101</cell><cell>B*W</cell><cell>17</cell></row>
+    <row><cell>12</cell><cell>10101</cell><cell>L*I</cell><cell>17</cell></row>
+    <row><cell>13</cell><cell>10101</cell><cell>A*D</cell><cell>17</cell></row>
+    <row><cell>14</cell><cell>10101</cell><cell>C*O</cell><cell>17</cell></row>
+    <row><cell>15</cell><cell>10101</cell><cell>K*W</cell><cell>17</cell></row>
+    <row><cell>16</cell><cell>10101</cell><cell>A*G</cell><cell>17</cell></row>
+    <row><cell>17</cell><cell>10101</cell><cell>T*A</cell><cell>17</cell></row>
+    <row><cell>18</cell><cell>10101</cell><cell>A*M</cell><cell>17</cell></row>
+    <row><cell>19</cell><cell>10101</cell><cell>R*E</cell><cell>17</cell></row>
+    <row><cell>20</cell><cell>10101</cell><cell>I*S</cell><cell>17</cell></row>
+  </table>
+</hi2txt>
+
+

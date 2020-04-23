@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>RANK 2</col><col>SPACE 0</col><col>SCORE</col><col>SPACE 1</col><col>NAME</col><col>SPACE 2</col><col>UNKNOWN 1</col><col>UNKNOWN 2</col><col>UNKNOWN 3</col>
+    <row><cell>1</cell><cell></cell><cell>  </cell><cell>7650</cell><cell>      </cell><cell>HAM</cell><cell>     </cell><cell></cell><cell>0x3F00</cell><cell>0xF476</cell></row>
+    <row><cell>2</cell><cell>2ND</cell><cell>  </cell><cell>6100</cell><cell>      </cell><cell>MIY</cell><cell>     </cell><cell>0x9677</cell><cell>0x3F00</cell><cell>0xF676</cell></row>
+    <row><cell>3</cell><cell>3RD</cell><cell>  </cell><cell>5950</cell><cell>      </cell><cell>ZOO</cell><cell>     </cell><cell>0x9877</cell><cell>0x3F00</cell><cell>0xF876</cell></row>
+    <row><cell>4</cell><cell>4TH</cell><cell>  </cell><cell>5050</cell><cell>      </cell><cell>MSA</cell><cell>     </cell><cell>0x9A77</cell><cell>0x3F00</cell><cell>0xFA76</cell></row>
+    <row><cell>5</cell><cell>5TH</cell><cell>  </cell><cell>4300</cell><cell>      </cell><cell>SEP</cell><cell>     </cell><cell>0x9C77</cell><cell></cell><cell></cell></row>
+  </table>
+  <field id="TOP SCORE">7650</field>
+  <field id="TOP SCORE LONG">7650</field>
+  <field id="SPACE"> </field>
+</hi2txt>

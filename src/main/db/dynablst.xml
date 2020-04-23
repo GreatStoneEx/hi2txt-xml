@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Dynablaster">
+  <!--
+    tested with mame 0.204 and embedded hiscore.dat
+    source: T. Busse
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,a0b2c,8f,03,03
+                  @:maincpu,program,a0c0f,3,40,00</definition>
+	  <definition>@:maincpu,program,a0b1b,8c,03,63
+                  @:maincpu,program,a0bfe,3,40,00</definition> <!-- bombrman -->
+				  
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>146</size>
+	  <size>143</size> <!-- bombrman -->
+    </check>
+    <loop count="7" >
+      <elt size="1" type="int"  id="STAGEA" base="16"/>
+      <elt size="1" type="int"  id="STAGEB" base="16"/>
+      <elt size="3" type="int"  id="SCORE"  endianness="little_endian" base="16" />
+      <elt size="6" type="text" id="NAME"   charset="charconv" />
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="FORMAT_STAGE"/>
+    </table>
+  </output>
+  
+  <format id="FORMAT_STAGE">
+    <concat>
+      <column id="STAGEA" format="+1" />
+      <column>-</column>
+      <column id="STAGEB" format="+1" />
+    </concat>
+  </format>
+  
+  <charset id="charconv">
+     <char src="0x63" dst="&black-heart;"/>
+  </charset>
+
+</hi2txt>

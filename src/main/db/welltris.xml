@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Welltris">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ffb61c:50:0c:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>80</size>
+    </check>
+    <loop count="5">
+    	<elt size="3" type="text" id="NAME"  charset="welltris" ascii-offset="63"/>
+    	<elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="8" type="raw"  id="EMPTY2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="EMPTY" format="0x" display="debug"/>
+      <column id="EMPTY2" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="welltris">
+    <char src="0x00" dst="."/>
+    <char src="0x01" dst=" "/>
+  </charset>
+</hi2txt>

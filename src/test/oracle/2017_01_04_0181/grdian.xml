@@ -1,0 +1,18 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col>
+    <row><cell>1</cell><cell>379780</cell><cell>BAC</cell><cell>NIGHT</cell></row>
+    <row><cell>2</cell><cell>62320</cell><cell>AAA</cell><cell>ICE</cell></row>
+    <row><cell>3</cell><cell>43120</cell><cell>---</cell><cell>GREEN</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>SHI</cell><cell>SAND</cell></row>
+    <row><cell>5</cell><cell>18000</cell><cell>NJU</cell><cell>NEXT</cell></row>
+    <row><cell>6</cell><cell>17810</cell><cell>AAA</cell><cell>BASE</cell></row>
+    <row><cell>7</cell><cell>16000</cell><cell>KUK</cell><cell>BASE</cell></row>
+    <row><cell>8</cell><cell>14000</cell><cell>USH</cell><cell>BASE</cell></row>
+    <row><cell>9</cell><cell>13490</cell><cell> AA</cell><cell>BASE</cell></row>
+    <row><cell>10</cell><cell>12000</cell><cell>INJ</cell><cell>NIGHT</cell></row>
+  </table>
+  <field id="TOP SCORE">379780</field>
+  <field id="UNKNOWN">0x13</field>
+  <field id="UNKNOWN2">0x2D</field>
+</hi2txt>

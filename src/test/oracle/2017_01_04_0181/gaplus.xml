@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AGE</col><col>BLOOD</col>
+    <row><cell>1</cell><cell>50000</cell><cell>GAPLUS</cell><cell>20</cell><cell>AB</cell></row>
+    <row><cell>2</cell><cell>50000</cell><cell>GAPLUS</cell><cell>21</cell><cell> O</cell></row>
+    <row><cell>3</cell><cell>50000</cell><cell>GAPLUS</cell><cell>22</cell><cell> B</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>GAPLUS</cell><cell>23</cell><cell> A</cell></row>
+    <row><cell>5</cell><cell>50000</cell><cell>GAPLUS</cell><cell>24</cell><cell>AB</cell></row>
+  </table>
+</hi2txt>

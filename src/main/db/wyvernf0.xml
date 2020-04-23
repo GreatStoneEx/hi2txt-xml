@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Wyvern F0">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8800:190:00:26</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>400</size>
+    </check>
+    <loop count="50">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME" charset="wyvern" ascii-offset="55"/>
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="UNKNWON" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="wyvern">
+  	<char src="0x25" dst="?"/>
+  	<char src="0x26" dst="!"/>
+    <char src="0x27" dst="-"/>
+    <char src="0x28" dst="."/>
+    <char src="0x29" dst="="/>
+    <char src="0x2A" dst="+"/> <!-- only by hacking -->
+    <char src="0x2B" dst="@"/> <!-- only by hacking -->
+    <char src="0x2C" dst=" "/> <!-- only by hacking -->
+    <char src="0x2D" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,25 @@
+# SCORE
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|UNKNOWN|SEPARATOR
+1|100000|S.I|Kyo Kusanagi|Benimaru Nikaido|Goro Daimon|0|0xFF
+2|80000|ICH|Terry Bogard|Andy Bogard|Joe Higashi|1|0xFF
+3|60000|BIN|Ryo Sakazaki|Robert Garcia|Yuri Sakazaki|0|0xFF
+4|53900|AAA|Robert Garcia|Mai Shiranui|Chizuru Kagura|0|0xFF
+5|40000|EIN|Leona|Ralf|Clark|1|0xFF
+
+# WIN %
+RANK|CHARACTER|WIN %
+1|Robert Garcia|16.7%
+2|Mai Shiranui|16.7%
+3|Chizuru Kagura|16.7%
+4|Kyo Kusanagi|16.7%
+5|Benimaru Nikaido|16.7%
+6|Goro Daimon|16.7%
+7|Terry Bogard|00.0%
+8|Andy Bogard|00.0%
+9|Joe Higashi|00.0%
+10|Ralf|00.0%
+
+TOTAL WIN
+6
+
+

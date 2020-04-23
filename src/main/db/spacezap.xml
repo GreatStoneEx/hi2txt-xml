@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Space Zap">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+	modified for mame 0.212 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,d00f,1,ff,ff
+                  @:maincpu,program,d041,6,0,0
+                  @:maincpu,program,d01d,6,0,0</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>13</size>
+    </check>
+	<elt size="1" type="raw" id="UNKNOWN"/>
+    <loop count="3">
+      <elt size="2" type="int"  id="SCORE" endianness="little_endian"/>
+    </loop>
+	<loop count="3">
+      <elt size="2" type="int"  id="SCORE2" endianness="little_endian"/>
+    </loop>
+  </structure>
+
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,d041,6,0,0
+                  @:maincpu,:protected_ram/share,001d,6,00,00
+                  @:maincpu,:protected_ram/share,000f,1,ff,ff
+</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>13</size>
+    </check>
+    <loop count="3">
+      <elt size="2" type="int"  id="SCORE" endianness="little_endian"/>
+    </loop>
+	<loop count="3">
+      <elt size="2" type="int"  id="SCORE2" endianness="little_endian"/>
+    </loop>
+	<elt size="1" type="raw" id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"  format="*10"/>
+      <column id="SCORE2" format="*10" display="debug"/>
+    </table>
+    <field id="UNKNOWN" format="0x" display="debug"/>
+  </output>
+</hi2txt>

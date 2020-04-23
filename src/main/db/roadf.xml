@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Road Figther">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+	tested with mame 0.184 and related hiscore.dat (new location)
+    source: Thomas Busse
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:3bd0:10a:01:01
+                  0:3066:3:01:00</definition>
+	  <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>269</size>
+    </check>
+    <loop count="22">
+	  <elt size="3" type="int"  id="SCORE" base="16"/>
+	  <elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="0"/>
+	  <elt size="1" type="raw"  id="UNKNOWN 1"/>
+	  <elt size="1" type="int"  id="RANK2" base="10"/>
+    </loop>
+    <loop count="30">
+      <elt size="3" type="raw" id="ADDRESS"/>
+    </loop>
+    <elt size="3"  type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,3bd0,b0,01,20
+                  @:maincpu,program,3004,0,01,01</definition> <!-- from 0.184 -->
+	  <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>176</size>
+    </check>
+    <loop count="22">
+	  <elt size="3" type="int"  id="SCORE" base="16"/>
+	  <elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="0"/>
+	  <elt size="1" type="raw"  id="UNKNOWN 1"/>
+	  <elt size="1" type="int"  id="RANK2" base="10"/>
+    </loop>
+  </structure>
+ 
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN 1" display="debug"/>
+      <column id="RANK2"/>
+    </table>
+    <table>
+      <column id="ADDRESS" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x5B" dst="."/>
+    <char src="0x40" dst=" "/>
+  </charset>
+
+</hi2txt>
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:600c4ec:28:00:70
+                  0:600c514:3c:1e:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>100</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="int"  id="SCORE"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="s1945ii" ascii-offset="64"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="int"  id="PLANE"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="int"  id="STAGE_RAW"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="PLANE"            format="plane"/>
+      <column id="STAGE"            format="stage;stage_all"/>
+      <column id="SEPARATOR"        format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="plane">
+    <case src="0" dst="UNK"/>
+    <case src="1" dst="P38"/>
+    <case src="2" dst="Ki84"/>
+    <case src="3" dst="Ta152"/>
+    <case src="4" dst="F5U"/>
+    <case src="5" dst="J7W"/>
+    <case src="6" dst="DH98"/>
+  </format>
+  <format id="loop">
+    <case src="16" operator="&gt;=" dst="3"/>
+    <case src="8"  operator="&gt;=" dst="2"/>
+    <case src="8"  operator="&lt;"  dst="1"/>
+  </format>
+  <format id="level"><remainder>8</remainder></format>
+  <format id="stage">
+    <concat>
+      <column id="STAGE_LOOP"  src="STAGE_RAW" format="loop"/>
+      <column id="SEP">-</column>
+      <column id="STAGE_LEVEL" src="STAGE_RAW" format="level;+1"/>
+    </concat>
+  </format>
+  <format id="stage_all"><case src="3-1" dst="ALL"/></format>
+  
+  <charset id="s1945ii">
+    <char src="0x1B" dst="("/>
+    <char src="0x1C" dst=")"/>
+    <char src="0x1D" dst=","/>
+    <char src="0x1E" dst="-"/>
+    <char src="0x1F" dst="."/>
+    <char src="0x20" dst="/"/>
+    <char src="0x21" dst="0"/>
+    <char src="0x22" dst="1"/>
+    <char src="0x23" dst="2"/>
+    <char src="0x24" dst="3"/>
+    <char src="0x25" dst="4"/>
+    <char src="0x26" dst="5"/>
+    <char src="0x27" dst="6"/>
+    <char src="0x28" dst="7"/>
+    <char src="0x29" dst="8"/>
+    <char src="0x2A" dst="9"/>
+    <char src="0x2B" dst=":"/>
+    <char src="0x2C" dst=" "/>
+  </charset>
+</hi2txt>

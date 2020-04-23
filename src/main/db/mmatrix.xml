@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ff0104:140:43:00
+                  0:ff4988:6:00:90</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>326</size>
+    </check>
+    <loop count="20">
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="6" type="int"  id="SCORE" base="16"/>
+      <elt size="4" type="int"  id="EXP" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+    </loop>
+    <elt size="8" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="PadL120"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" display="debug"/>
+      <column id="EXP" format="PadL80"/>
+      <column id="STAGE"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="Mosquito 01 (red)"/>
+    <case src="1" dst="Mosquito 02 (blue)"/>
+  </format>
+</hi2txt>

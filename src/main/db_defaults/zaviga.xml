@@ -1,0 +1,27 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>NAME</col><col>SCORE</col>
+    <row><cell>1</cell><cell>T.FUKUDA</cell><cell>40000</cell></row>
+    <row><cell>2</cell><cell>KANEYASU</cell><cell>38000</cell></row>
+    <row><cell>3</cell><cell>KITAZAWA</cell><cell>37500</cell></row>
+    <row><cell>4</cell><cell>NAKAJIMA</cell><cell>35000</cell></row>
+    <row><cell>5</cell><cell>GONDOH  </cell><cell>34280</cell></row>
+    <row><cell>6</cell><cell>ITOH    </cell><cell>34260</cell></row>
+    <row><cell>7</cell><cell>KATOH   </cell><cell>34000</cell></row>
+    <row><cell>8</cell><cell>YAMAGISI</cell><cell>33840</cell></row>
+    <row><cell>9</cell><cell>KISIMOTO</cell><cell>30100</cell></row>
+    <row><cell>10</cell><cell>SAKUMA  </cell><cell>28080</cell></row>
+    <row><cell>11</cell><cell>KOBUNA  </cell><cell>27500</cell></row>
+    <row><cell>12</cell><cell>FUSHIKI </cell><cell>22000</cell></row>
+    <row><cell>13</cell><cell>OHSUNA  </cell><cell>21701</cell></row>
+    <row><cell>14</cell><cell>NISIKAWA</cell><cell>20520</cell></row>
+    <row><cell>15</cell><cell>KANDA   </cell><cell>20200</cell></row>
+    <row><cell>16</cell><cell>HOSHINO </cell><cell>20001</cell></row>
+    <row><cell>17</cell><cell>CHO     </cell><cell>19040</cell></row>
+    <row><cell>18</cell><cell>TAD     </cell><cell>17200</cell></row>
+    <row><cell>19</cell><cell>FUKUSIMA</cell><cell>17000</cell></row>
+    <row><cell>20</cell><cell>KOHAMA  </cell><cell>15020</cell></row>
+  </table>
+</hi2txt>
+
+

@@ -1,0 +1,10 @@
+RANK|SCORE|NAME|SPACE 1|SPACE 2
+1|20000|IMO|    | 
+2|18000|MKP|    | 
+3|16000|M.H|    | 
+4|14000|Y.K|    | 
+5|12000|Y.F|    | 
+
+TOP SCORE
+20000
+

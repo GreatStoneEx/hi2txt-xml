@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Operation Wolf">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:100a42:75:00:54
+                  0:100e28:3b:00:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>176</size>
+    </check>
+    <loop count="10" skip-last-bytes="3"> <!-- hiscore.dat: ROUND and STAGE for 10th entry not dumped -->
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="2" type="int"  id="HIT"   base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="ROUND" base="16"/>
+      <elt size="1" type="int"  id="STAGE" base="16"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="5"> <!-- hiscore.dat: ROUND and STAGE for 10th entry not dumped -->
+      <elt size="4" type="int"  id="SNIPER SCORE" base="16"/>
+      <elt size="2" type="int"  id="SNIPER HIT"   base="16"/>
+      <elt size="3" type="text" id="SNIPER NAME"/>
+      <elt size="1" type="int"  id="SNIPER ROUND" base="16"/>
+      <elt size="1" type="int"  id="SNIPER STAGE" base="16"/>
+      <elt size="1" type="raw"  id="SNIPER SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="HIT" format="hit"/>
+      <column id="ROUND"/>
+      <column id="STAGE"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <table id="TOP SNIPERS" sort="SNIPER HIT FLOAT" sort-order="desc">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SNIPER SCORE" display="debug"/>
+      <!-- cannot use it to sort the table because of % suffix -->
+      <column id="SNIPER HIT" format="hit;Suffix%"/>
+      <!-- so define the same value without %, but display it only in debug mode -->
+      <column id="SNIPER HIT FLOAT" src="SNIPER HIT" format="hit" display="debug"/>
+      <column id="SNIPER ROUND"/>
+      <column id="SNIPER STAGE"/>
+      <column id="SNIPER NAME"/>
+      <column id="SNIPER SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="hit" formatter="%.1f">
+    <divide>10</divide>
+  </format>
+</hi2txt>

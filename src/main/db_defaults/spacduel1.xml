@@ -1,0 +1,35 @@
+<hi2txt>
+  <table id="1 PLAYER">
+    <col>RANK 1P</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>5000</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>5000</cell><cell>ORR</cell></row>
+    <row><cell>3</cell><cell>5000</cell><cell>SRC</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>DES</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>JMR</cell></row>
+  </table>
+  <table id="2 PLAYERS">
+    <col>RANK 2P</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>5000</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>5000</cell><cell>ORR</cell></row>
+    <row><cell>3</cell><cell>5000</cell><cell>SRC</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>DES</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>JMR</cell></row>
+  </table>
+  <table id="1 PLAYER LINKED">
+    <col>RANK 1P LINKED</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>5000</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>5000</cell><cell>ORR</cell></row>
+    <row><cell>3</cell><cell>5000</cell><cell>SRC</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>DES</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>JMR</cell></row>
+  </table>
+  <table id="2 PLAYERS LINKED">
+    <col>RANK 2P LINKED</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>5000</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>5000</cell><cell>ORR</cell></row>
+    <row><cell>3</cell><cell>5000</cell><cell>SRC</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>DES</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>JMR</cell></row>
+  </table>
+</hi2txt>
+

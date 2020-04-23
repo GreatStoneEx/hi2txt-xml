@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>MAXHIT</col>
+    <row><cell>1</cell><cell>800000</cell><cell>TAR</cell><cell>1</cell><cell>Red (P1)</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>700000</cell><cell>ONE</cell><cell>1</cell><cell>Green (P1)</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>600000</cell><cell>A.V</cell><cell>1</cell><cell>Blue (P1)</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>500000</cell><cell>PFE</cell><cell>1</cell><cell>Yellow (P2)</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>400000</cell><cell>LOR</cell><cell>1</cell><cell>Purple (P2)</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Bosconian">
+
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+      source: Thomas Busse
+  //-->
+    
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8bc5:f:17:18
+                  0:8be4:10:00:00
+                  0:885c:4:00:00
+                  0:8060:8:00:02</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>43</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME" ascii-offset="55" charset="charconv"/>
+    </loop>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="4" type="int"  id="PART OF TOP SCORE" base="256"/>
+    <elt size="4" type="raw"  id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <field id="PART OF TOP SCORE" display="debug"/>
+    <field id="UNKNOWN" display="debug"/>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x34" dst="."/>
+    <char src="0x24" dst=" "/>
+  </charset>
+</hi2txt>

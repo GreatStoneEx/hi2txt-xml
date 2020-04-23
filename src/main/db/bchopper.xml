@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+      2015-05-08: hiscore.dat 20150131 completely extracts the last name, from hi2txt request
+    tested:
+      mame 0.153 and hiscore.dat 2014-08-22
+      mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:a37c0:77:63:73
+                  0:a37ba:03:63:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>122</size>
+    </check>
+    <loop count="10" skip-last-bytes="1">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <!-- hiscore.Dat < 20150131: last byte of 10th name is not extracted //-->
+      <elt size="9" type="text" id="NAME"  charset="bchopper" ascii-offset="-32"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:a37c0:78:63:60
+                  0:a37ba:03:63:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>123</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="9" type="text" id="NAME"  charset="bchopper" ascii-offset="-32"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"  format="TrimR "/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+  
+  <charset id="bchopper">
+    <char src="0x0B" dst="."/>
+    <char src="0x0D" dst="!"/>
+    <char src="0x0C" dst="?"/>
+    <char src="0x60" dst=" "/>
+    <char src="0x7D" dst="-"/>
+    <char src="0x7E" dst="&amp;"/>
+  </charset>
+</hi2txt>

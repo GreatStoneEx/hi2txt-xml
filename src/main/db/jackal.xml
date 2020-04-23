@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>1:72f8:27:00:1d
+                  1:7340:3:00:00
+                  1:7341:1:02:02</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>43</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME" charset="jackal" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+    <elt   size="2" type="int"  id="TOP SCORE" base="16"/>
+    <elt   size="1" type="raw"  id="UNKNOWN2"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+    <field id="UNKNOWN2" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="jackal">
+    <char src="0x0C" dst="-"/>
+    <char src="0x0D" dst="."/>
+    <char src="0x0E" dst=":"/>
+    <char src="0x0F" dst="!"/>
+    <char src="0x10" dst=" "/>
+  </charset>
+</hi2txt>

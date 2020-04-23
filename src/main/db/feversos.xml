@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:103eb4:16d:02:07</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>365</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int" id="SCORE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="6" type="text" id="NAME" byte-skip="odd" charset="feversos" ascii-offset="65"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int" id="RESCUED" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int" id="STAGE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="1" type="int" id="CHARACTER"/>
+      <elt size="1" type="int" id="SPEED"/>
+      <elt size="1" type="int" id="POWER"/>
+      <elt size="1" type="int" id="UNKNOWN"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int" id="CONTINUE"/>
+    </loop>
+    <elt size="20" type="raw" id="UNKNOWN2"/>
+    <loop count="5" start="5">
+      <elt size="4" type="int" id="SCORE" base="16"/>
+    </loop>
+    <loop count="5" start="5">
+      <elt size="6" type="text" id="NAME" byte-skip="odd" charset="feversos" ascii-offset="65"/>
+    </loop>
+    <loop count="5" start="5">
+      <elt size="2" type="int" id="RESCUED" base="16"/>
+    </loop>
+    <loop count="5" start="5">
+      <elt size="2" type="int" id="STAGE" base="16"/>
+    </loop>
+    <loop count="5" start="5">
+      <elt size="1" type="int" id="CHARACTER"/>
+      <elt size="1" type="int" id="SPEED"/>
+      <elt size="1" type="int" id="POWER"/>
+      <elt size="1" type="int" id="UNKNOWN"/>
+    </loop>
+    <loop count="5" start="5">
+      <elt size="2" type="int" id="CONTINUE"/>
+    </loop>
+    <elt size="20" type="raw" id="UNKNOWN3"/>
+    <elt size="6"  type="raw" id="UNKNOWN4"/>
+    <elt size="4" type="int" id="LAST RUN TOTAL" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int" id="LAST RUN SCORE" base="16"/>
+    </loop>
+    <elt size="4" type="raw" id="UNKNOWN5"/>
+    <elt size="4" type="int" id="SOME SCORE"   base="16"/> <!-- not the top score //-->
+    <elt size="4" type="int" id="SOME SCORE 2" base="16"/>
+    <elt size="4" type="int" id="SOME SCORE 3" base="16"/>
+    <elt size="4" type="int" id="SOME SCORE 4" base="16"/>
+    <elt size="4" type="int" id="SOME SCORE 5" base="16"/>
+    <elt size="4" type="int" id="SOME SCORE 6" base="16"/>
+    <elt size="4" type="int" id="SOME SCORE 7" base="16"/>
+    <elt size="8" type="raw" id="UNKNOWN6"/>
+    <loop count="5">
+      <elt size="4" type="int" id="STAGE HIGH SCORE" base="16"/>
+    </loop>
+    <elt size="4" type="raw" id="UNKNOWN7" base="16"/>
+    <elt size="4" type="raw" id="TOP SCORE TA ALT" base="16"/> <!-- not the top score //-->
+    <loop count="5">
+      <elt size="4" type="int" id="STAGE HIGH RESCUED" base="16"/>
+    </loop>
+    <elt size="4" type="raw" id="UNKNOWN8" base="16"/>
+    <elt size="3" type="raw" id="UNKNOWN9" base="16"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="LOCAL RANK" src="index" format="%5;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="RESCUED"/>
+      <column id="STAGE" format="stage"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SPEED" format="+1;speed"/>
+      <column id="POWER" format="power"/>
+      <column id="CONTINUE"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+    <field id="UNKNOWN2" display="debug"/>
+    <field id="UNKNOWN3" display="debug"/>
+    <field id="UNKNOWN4" display="debug"/>
+    <table id="LAST RUN SCORES">
+      <column id="RANK" src="index" format="+1" display="debug"/>
+      <column id="LAST RUN SCORE"               display="debug"/>
+    </table>
+    <field id="LAST RUN TOTAL" display="debug"/>
+    <field id="UNKNOWN5" display="debug"/>
+    <field id="SOME SCORE" display="debug"/>
+    <field id="SOME SCORE 2" display="debug"/>
+    <field id="SOME SCORE 3" display="debug"/>
+    <field id="SOME SCORE 4" display="debug"/>
+    <field id="SOME SCORE 5" display="debug"/>
+    <field id="SOME SCORE 6" display="debug"/>
+    <field id="SOME SCORE 7" display="debug"/>
+    <field id="UNKNOWN6" display="debug"/>
+    <table id="STAGE HIGH SCORES">
+      <column id="STAGE NUMBER" src="index" format="+1" display="extra"/>
+      <column id="STAGE HIGH SCORE" display="extra"/>
+      <column id="STAGE HIGH RESCUED" display="extra"/>
+    </table>
+    <field id="UNKNOWN7" display="debug"/>
+    <field id="TOP SCORE TA ALT" display="debug"/>
+    <field id="UNKNOWN8" display="debug"/>
+    <field id="UNKNOWN9" display="debug"/>
+  </output>
+  
+  <format id="mode">
+    <case src="5" operator="&lt;"  dst="Normal"/>
+    <case src="5" operator="&gt;=" dst="Time attack"/>
+  </format>
+  <format id="speed">
+    <case src="256" dst="Secret"/>
+  </format>
+  <format id="stage">
+    <case src="6" dst="All"/>
+  </format>
+  
+  <format id="character">
+    <case src="0"   dst="Type-A"/>
+    <case src="8"   dst="Type-B"/>
+    <case src="16"  dst="Type-C"/>
+    <case src="255" dst="Secret"/>
+  </format>
+  <format id="power">
+    <case src="0"   dst="LOCK-ON"/>
+    <case src="8"   dst="BOMB"/>
+    <case src="16"  dst="ROLL"/>
+    <case src="255" dst="Secret"/>
+  </format>
+  
+  <charset id="feversos">
+    <char src="0x1A" dst="."/>
+  </charset>
+</hi2txt>

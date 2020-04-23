@@ -1,0 +1,35 @@
+# 1 PLAYER
+RANK|SCORE|NAME|CHARACTER
+1|105600|- 3|Ellen and Cindy England Sword Fish
+2|10000|KTN|Mecha Keaton US F4F Corsair
+3|9000|HIE|Hien Japan Zero Fighter
+4|8000|C.P|Chaika and Pooshika Russia IL-2 Stormovik
+5|7000|MAL|Malcolm Germany DO-335 Pfiel
+6|6000|A.P|Alex and Pictus England Whirlwind
+
+# 2 PLAYERS
+RANK|2P SCORE|2P NAME|CHARACTER 1|CHARACTER 2
+1|20000|BLA|Mecha Keaton US F4F Corsair|Blazers US P-61 Black Widow
+2|18000|MAO|Hien Japan Zero Fighter|Mao Mao Japan Seiran
+3|16000|WHI|Chaika and Pooshika Russia IL-2 Stormovik|Spanky Russia Policarpov
+4|14000|K.R|Malcolm Germany DO-335 Pfiel|Lord River-n-White and Kowful Germany Ju87G Stuka
+5|12000|E.C|Alex and Pictus England Whirlwind|Ellen and Cindy England Sword Fish
+
+# 1 PLAYER BIS
+RANK|SCORE|NAME|CHARACTER
+1|105600|- 3|Ellen and Cindy England Sword Fish
+2|10000|KTN|Mecha Keaton US F4F Corsair
+3|9000|HIE|Hien Japan Zero Fighter
+4|8000|C.P|Chaika and Pooshika Russia IL-2 Stormovik
+5|7000|MAL|Malcolm Germany DO-335 Pfiel
+6|6000|A.P|Alex and Pictus England Whirlwind
+
+# 2 PLAYERS BIS
+RANK|2P SCORE 2|2P NAME 2|CHARACTER 1|CHARACTER 2
+1|20000|BLA|Mecha Keaton US F4F Corsair|Blazers US P-61 Black Widow
+2|18000|MAO|Hien Japan Zero Fighter|Mao Mao Japan Seiran
+3|16000|WHI|Chaika and Pooshika Russia IL-2 Stormovik|Spanky Russia Policarpov
+4|14000|K.R|Malcolm Germany DO-335 Pfiel|Lord River-n-White and Kowful Germany Ju87G Stuka
+5|12000|E.C|Alex and Pictus England Whirlwind|Ellen and Cindy England Sword Fish
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:400080:6b:00:99
+                  0:400081:1:45:45</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>108</size>
+    </check>
+    <loop count="7" skip-last-bytes="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="TIME_MN" base="16"/>
+      <elt size="1" type="int"  id="TIME_SC" base="16"/>
+      <elt size="1" type="int"  id="TIME_CS" base="16"/>
+      <elt size="5" type="raw"  id="EMPTY"/>
+    </loop>
+    <elt size="1" type="raw" id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="TIME"  format="time"/>
+      <column id="EMPTY" format="0x" display="debug"/>
+    </table>
+    <field id="CHECK" display="debug"/>
+  </output>
+  
+  <format id="time">
+    <concat>
+      <column id="TIME_MN" format="PadL01"/>
+      <txt>'</txt>
+      <column id="TIME_SC" format="PadL02"/>
+      <txt>''</txt>
+      <column id="TIME_CS" format="PadL02"/>
+    </concat>
+  </format>
+</hi2txt>

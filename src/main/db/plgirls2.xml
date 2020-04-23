@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:81e0:35:00:05</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>53</size>
+    </check>
+    <loop count="5">
+      <elt size="1" type="int" id="RANKPOINTER"/>
+    </loop>
+    <elt size="3" type="raw" id="EMPTY"/>
+    <loop count="5">
+      <elt size="6" type="int"  id="SCORE" table-index="RANKPOINTER:index_from_value" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="NAME"  table-index="RANKPOINTER:index_from_value" charset="CS_NUMBER[-22]" ascii-offset="65"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="RANKPOINTER" display="debug"/>
+    </table>
+  </output>
+</hi2txt>

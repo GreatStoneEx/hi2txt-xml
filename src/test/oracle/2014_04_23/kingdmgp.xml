@@ -1,0 +1,19 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>END</col>
+    <row><cell>1</cell><cell>100000</cell><cell>MAH</cell><cell>KICKLE &amp; LAYCLE on SORCER STRIKER</cell><cell>    </cell></row>
+    <row><cell>2</cell><cell>80000</cell><cell>RAY</cell><cell>MIYAMOTO</cell><cell>    </cell></row>
+    <row><cell>3</cell><cell>70740</cell><cell>&lt;. </cell><cell>NIRVANA</cell><cell>    </cell></row>
+    <row><cell>4</cell><cell>60000</cell><cell>RAI</cell><cell>BUL-GIN on GREAT GOBLIGAN-S</cell><cell>    </cell></row>
+    <row><cell>5</cell><cell>40000</cell><cell>NEB</cell><cell>GAIN on VALHALLYZER</cell><cell></cell></row>
+  </table>
+  <field id="UNKNOWN">0x0000000000000000000000000000000000000000</field>
+  <field id="UNKNOWN2">0x000000000000000000000000000000000000000000000000000000000000</field>
+  <table id="TOP LAP TIMES">
+    <col>LAP</col><col>LAP TIME</col><col>LAP NAME</col><col>LAP END</col><col>LAP UNKNOWN</col>
+    <row><cell>STAGE 1</cell><cell>01&apos;24&apos;&apos;16</cell><cell>&lt;. </cell><cell>0x00</cell><cell>0x10</cell></row>
+    <row><cell>STAGE 2A</cell><cell>03&apos;00&apos;&apos;00</cell><cell>TAC</cell><cell>0x00</cell><cell>0x0</cell></row>
+    <row><cell>STAGE 2B</cell><cell>03&apos;00&apos;&apos;00</cell><cell>MAT</cell><cell>0x00</cell><cell>0x0</cell></row>
+  </table>
+  <field id="TOP SCORE">100000</field>
+</hi2txt>

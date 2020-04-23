@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Vasara 2">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:5302:eb:01:0a</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>235</size>
+    </check>
+    <loop count="10">
+      <elt size="2" type="int"  id="RANK"          endianness="little_endian"/>
+      <elt size="8" type="text" id="NAME"          byte-swap="2" src-unit-size="16" charset="vasara"/>
+      <elt size="4" type="int"  id="SCORE"         endianness="little_endian"/>
+      <elt size="2" type="int"  id="NUMBER"        endianness="little_endian"/>
+      <elt size="2" type="int"  id="CHARACTER"     endianness="little_endian"/>
+      <elt size="2" type="int"  id="PRESTIGE KILL" endianness="little_endian"/>
+      <elt size="2" type="int"  id="STAGE"         endianness="little_endian"/>
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="PRESTIGE KILL"/> <!-- flags obtained -->
+      <column id="STAGE" format="+1"/>
+      <column id="NUMBER"              display="debug"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+  	<case src="1" dst="Takeda Nobukatsu"/>
+    <case src="2" dst="Momochi Sandayu"/>
+    <case src="3" dst="Seiryubo"/>
+    <case src="4" dst="Akechi Mitsuhide"/>
+    <case src="5" dst="Saika Magoichi"/> <!-- unlockable -->
+  </format>
+  
+  <charset id="vasara">
+  	<char src="0x0001" dst="&jp-k-a;"/>
+  	<char src="0x0002" dst="&jp-k-i;"/>
+  	<char src="0x0003" dst="&jp-k-u;"/>
+  	<char src="0x0004" dst="&jp-k-e;"/>
+  	<char src="0x0005" dst="&jp-k-o;"/>
+  	<char src="0x0006" dst="&jp-k-ka;"/>
+  	<char src="0x0007" dst="&jp-k-ki;"/>
+  	<char src="0x0008" dst="&jp-k-ku;"/>
+  	<char src="0x0009" dst="&jp-k-ke;"/>
+  	<char src="0x000A" dst="&jp-k-ko;"/>
+  	<char src="0x000B" dst="&jp-k-sa;"/>
+  	<char src="0x000C" dst="&jp-k-si;"/>
+  	<char src="0x000D" dst="&jp-k-su;"/>
+  	<char src="0x000E" dst="&jp-k-se;"/>
+  	<char src="0x000F" dst="&jp-k-so;"/>
+  	<char src="0x0010" dst="&jp-k-ta;"/>
+  	<char src="0x0011" dst="&jp-k-ti;"/>
+  	<char src="0x0012" dst="&jp-k-tu;"/>
+  	<char src="0x0013" dst="&jp-k-te;"/>
+  	<char src="0x0014" dst="&jp-k-to;"/>
+  	<char src="0x0015" dst="&jp-k-na;"/>
+  	<char src="0x0016" dst="&jp-k-ni;"/>
+  	<char src="0x0017" dst="&jp-k-nu;"/>
+  	<char src="0x0018" dst="&jp-k-ne;"/>
+  	<char src="0x0019" dst="&jp-k-no;"/>
+  	<char src="0x001A" dst="&jp-k-ha;"/>
+    <char src="0x001B" dst="&jp-k-hi;"/>
+    <char src="0x001C" dst="&jp-k-hu;"/>
+    <char src="0x001D" dst="&jp-k-he;"/>
+    <char src="0x001E" dst="&jp-k-ho;"/>
+    <char src="0x001F" dst="&jp-k-ma;"/>
+    <char src="0x0020" dst="&jp-k-mi;"/>
+    <char src="0x0021" dst="&jp-k-mu;"/>
+    <char src="0x0022" dst="&jp-k-me;"/>
+    <char src="0x0023" dst="&jp-k-mo;"/>
+    <char src="0x0024" dst="&jp-k-ya;"/>
+    <char src="0x0025" dst=" "/>
+    <char src="0x0026" dst="&jp-k-yu;"/>
+    <char src="0x0027" dst=" "/>
+    <char src="0x0028" dst="&jp-k-yo;"/>
+    <char src="0x0029" dst="&jp-k-ra;"/>
+    <char src="0x002A" dst="&jp-k-ri;"/>
+    <char src="0x002B" dst="&jp-k-ru;"/>
+    <char src="0x002C" dst="&jp-k-re;"/>
+    <char src="0x002D" dst="&jp-k-ro;"/>
+    <char src="0x002E" dst="&jp-k-wa;"/>
+    <char src="0x002F" dst="&jp-k-wo;"/>
+    <char src="0x0030" dst="&jp-k-n;"/>
+    <char src="0x0031" dst="°"/>
+    <char src="0x0032" dst="&rdquo;"/>
+    <char src="0x0033" dst="&jp-k-a-small;"/>
+    <char src="0x0034" dst="&jp-k-i-small;"/>
+    <char src="0x0035" dst="&jp-k-u-small;"/>
+    <char src="0x0036" dst="&jp-k-e-small;"/>
+    <char src="0x0037" dst="&jp-k-o-small;"/>
+    <char src="0x0038" dst="&jp-k-ya-small;"/>
+    <char src="0x0039" dst="&jp-k-yu-small;"/>
+    <char src="0x003A" dst="&jp-k-yo-small;"/>
+    <char src="0x003B" dst="&jp-k-tu-small;"/>
+    <char src="0x003C" dst=" "/>
+    
+    <char src="0x003D" dst="?"/>
+    <char src="0x003E" dst="?"/>
+    <char src="0x003F" dst="?"/>
+    <char src="0x0040" dst="?"/>
+    <char src="0x0041" dst="?"/>
+    <char src="0x0042" dst="?"/>
+    <char src="0x0043" dst="?"/>
+    <char src="0x0044" dst="?"/>
+    <char src="0x0045" dst="?"/>
+    <char src="0x0046" dst="?"/>
+    <char src="0x0047" dst="?"/>
+    <char src="0x0048" dst="?"/>
+    <char src="0x0049" dst="?"/>
+    <char src="0x004A" dst="?"/>
+    <char src="0x004B" dst="?"/>
+    <char src="0x004C" dst="?"/>
+    <char src="0x004D" dst="?"/>
+    <char src="0x004E" dst="?"/>
+    <char src="0x004F" dst="?"/>
+    <char src="0x0050" dst="?"/>
+    <char src="0x0051" dst="?"/>
+    <char src="0x0052" dst="?"/>
+    <char src="0x0053" dst="?"/>
+    <char src="0x0054" dst="?"/>
+    <char src="0x0055" dst="?"/>
+    <char src="0x0056" dst="?"/>
+    <char src="0x0057" dst="?"/>
+    <char src="0x0058" dst="?"/>
+    <char src="0x0059" dst="?"/>
+    <char src="0x005A" dst="?"/>
+    <char src="0x005B" dst="?"/>
+    <char src="0x005C" dst="?"/>
+    <char src="0x005D" dst="?"/>
+    <char src="0x005E" dst="?"/>
+    <char src="0x005F" dst="?"/>
+    <char src="0x0060" dst="?"/>
+    <char src="0x0061" dst="?"/>
+    <char src="0x0062" dst="?"/>
+    <char src="0x0063" dst="?"/>
+    <char src="0x0064" dst="?"/>
+    <char src="0x0065" dst="?"/>
+    <char src="0x0066" dst="?"/>
+    <char src="0x0067" dst="?"/>
+    <char src="0x0068" dst="?"/>
+    <char src="0x0069" dst="?"/>
+    <char src="0x006A" dst="?"/>
+    <char src="0x006B" dst="?"/>
+    <char src="0x006C" dst="?"/>
+    <char src="0x006D" dst="?"/>    
+    <char src="0x006E" dst="?"/>
+    
+    <char src="0x006F" dst="&jp-k-one;"/>
+    <char src="0x0070" dst="&jp-k-two;"/>
+    <char src="0x0071" dst="&jp-k-three;"/>
+    <char src="0x0072" dst="&jp-k-four;"/>
+    <char src="0x0073" dst="&jp-k-five;"/>
+    <char src="0x0074" dst="&jp-k-six;"/>
+    <char src="0x0075" dst="&jp-k-seven;"/>
+    <char src="0x0076" dst="&jp-k-height;"/>
+    <char src="0x0077" dst="&jp-k-nine;"/>
+    <char src="0x0078" dst="&jp-k-zero;"/>
+    
+    <char src="0x0079" dst="A"/>
+    <char src="0x007A" dst="B"/>
+    <char src="0x007B" dst="C"/>
+    <char src="0x007C" dst="D"/>
+    <char src="0x007D" dst="E"/>
+    <char src="0x007E" dst="F"/>
+    <char src="0x007F" dst="G"/>
+    <char src="0x0080" dst="H"/>
+    <char src="0x0081" dst="I"/>
+    <char src="0x0082" dst="J"/>
+    <char src="0x0083" dst="K"/>    
+    <char src="0x0084" dst="L"/>
+    <char src="0x0085" dst="M"/>
+    <char src="0x0086" dst="N"/>
+    <char src="0x0087" dst="O"/>
+    <char src="0x0088" dst="P"/>
+    <char src="0x0089" dst="Q"/>
+    <char src="0x008A" dst="R"/>
+    <char src="0x008B" dst="S"/>
+    <char src="0x008C" dst="T"/>
+    <char src="0x008D" dst="U"/>
+    <char src="0x008E" dst="V"/>
+    <char src="0x008F" dst="W"/>
+    <char src="0x0090" dst="X"/>
+    <char src="0x0091" dst="Y"/>
+    <char src="0x0092" dst="Z"/>
+    <char src="0x0093" dst="!"/>
+    <char src="0x0094" dst="?"/>
+    <char src="0x0095" dst="."/>
+    <char src="0x0096" dst="&amp;"/>
+    <char src="0x0097" dst="0"/>
+    <char src="0x0098" dst="1"/>
+    <char src="0x0099" dst="2"/>
+    <char src="0x009A" dst="3"/>
+    <char src="0x009B" dst="4"/>
+    <char src="0x009C" dst="5"/>
+    <char src="0x009D" dst="6"/>
+    <char src="0x009E" dst="7"/>
+    <char src="0x009F" dst="8"/>
+    <char src="0x00A0" dst="9"/>
+    
+    <char src="0x00A1" dst=" "/>
+    <char src="0x00A2" dst=" "/>
+    <char src="0x00A3" dst=" "/>
+    <char src="0x00A4" dst=" "/>
+    <char src="0x00A5" dst=" "/>
+    <char src="0x00A6" dst=" "/>
+    <char src="0x00A7" dst=" "/>
+    <char src="0x00A8" dst=" "/>
+    <char src="0x00A9" dst=" "/>
+    <char src="0x00AA" dst=" "/>
+    <char src="0x00AB" dst="&jp-k-ga;"/>
+    <char src="0x00AC" dst="&jp-k-gi;"/>
+    <char src="0x00AD" dst="&jp-k-gu;"/>
+    <char src="0x00AE" dst="&jp-k-ge;"/>
+    <char src="0x00AF" dst="&jp-k-go;"/>
+    <char src="0x00B0" dst="&jp-k-za;"/>
+    <char src="0x00B1" dst="&jp-k-zi;"/>
+    <char src="0x00B2" dst="&jp-k-zu;"/>
+    <char src="0x00B3" dst="&jp-k-ze;"/>
+    <char src="0x00B4" dst="&jp-k-zo;"/>
+    <char src="0x00B5" dst="&jp-k-da;"/>
+    <char src="0x00B6" dst="&jp-k-di;"/>
+    <char src="0x00B7" dst="&jp-k-du;"/>
+    <char src="0x00B8" dst="&jp-k-de;"/>
+    <char src="0x00B9" dst="&jp-k-do;"/>
+    <char src="0x00BA" dst="&jp-k-ba;"/>
+    <char src="0x00BB" dst="&jp-k-bi;"/>
+    <char src="0x00BC" dst="&jp-k-bu;"/>
+    <char src="0x00BD" dst="&jp-k-be;"/>
+    <char src="0x00BE" dst="&jp-k-bo;"/>
+    <char src="0x00BF" dst="&jp-k-pa;"/>
+    <char src="0x00C0" dst="&jp-k-pi;"/>
+    <char src="0x00C1" dst="&jp-k-pu;"/>
+    <char src="0x00C2" dst="&jp-k-pe;"/>
+    <char src="0x00C3" dst="&jp-k-po;"/>
+    <char src="0x00C4" dst=""/>
+  </charset>
+</hi2txt>

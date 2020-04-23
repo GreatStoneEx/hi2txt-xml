@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>SEPARATOR</col><col>STAGE</col>
+    <row><cell>1</cell><cell>20080</cell><cell>AAA</cell><cell>0x3C3C</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>1500</cell><cell>XYZ</cell><cell>0x3C3C</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>1400</cell><cell>OPQ</cell><cell>0x3C3C</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>900</cell><cell>RST</cell><cell>0x3C3C</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>900</cell><cell>UVW</cell><cell>0x3C3C</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>70</cell><cell>BBB</cell><cell>0x3C3C</cell><cell>5</cell></row>
+    <row><cell>7</cell><cell>60</cell><cell>CCC</cell><cell>0x3C3C</cell><cell>5</cell></row>
+    <row><cell>8</cell><cell>50</cell><cell>DDD</cell><cell>0x3C3C</cell><cell>4</cell></row>
+    <row><cell>9</cell><cell>40</cell><cell>EEE</cell><cell>0x3C3C</cell><cell>4</cell></row>
+    <row><cell>10</cell><cell>30</cell><cell>FFF</cell><cell>0x3C3C</cell><cell>4</cell></row>
+  </table>
+  <field id="TOP SCORE">1500</field>
+  <field id="UNKNOWN">0x20</field>
+</hi2txt>

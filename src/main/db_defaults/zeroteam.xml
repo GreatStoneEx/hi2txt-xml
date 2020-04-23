@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>1000000</cell><cell>SEI</cell><cell>ACE (red)</cell></row>
+    <row><cell>2</cell><cell>500000</cell><cell>BU</cell><cell>SPEED (blue)</cell></row>
+    <row><cell>3</cell><cell>300000</cell><cell>KAI</cell><cell>SPIN (yellow)</cell></row>
+    <row><cell>4</cell><cell>200000</cell><cell>HA</cell><cell>BIG-O (green)</cell></row>
+    <row><cell>5</cell><cell>100000</cell><cell>TSU</cell><cell>orange</cell></row>
+  </table>
+</hi2txt>

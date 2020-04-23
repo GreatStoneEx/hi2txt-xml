@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:cf41:45:00:46
+                  0:c026:3:00:00
+                  0:d241:1:40:40
+                  0:d221:1:40:40
+                  0:d201:1:35:35
+                  0:d1e1:1:30:30
+                  0:d1c1:1:30:30
+                  0:d1a1:1:30:30
+                  0:d181:1:30:30</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>79</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="10" skip-last-bytes="1">
+      <elt size="3" type="text" id="NAME"  endianness="little_endian" charset="gemini"/>
+      <elt size="1" type="int"  id="STAGE"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE"        endianness="little_endian" base="16"/>
+    <elt size="7" type="text" id="TOP SCORE STRING" charset="gemini"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+    </table>
+    <field id="TOP SCORE"        format="*10"    display="extra"/>
+    <field id="TOP SCORE STRING" format="TrimL " display="debug"/>
+  </output>
+  
+  <charset id="gemini">
+    <char src="0x40" dst=" "/>
+    <char src="0x5B" dst="-"/>
+    <char src="0x5C" dst="&mid-dot;"/>
+    <char src="0x5D" dst="."/>
+    <char src="0x5E" dst="?"/>
+    <char src="0x5F" dst="!"/>
+  </charset>
+</hi2txt>

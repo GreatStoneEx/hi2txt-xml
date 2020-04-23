@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>219800</cell><cell>-AZ-BDFH</cell><cell>0x00020000</cell></row>
+    <row><cell>2</cell><cell>14000</cell><cell>COMADAAA</cell><cell>0x00020000</cell></row>
+    <row><cell>3</cell><cell>13000</cell><cell>COMADABB</cell><cell>0x00010000</cell></row>
+    <row><cell>4</cell><cell>12200</cell><cell>COMADACC</cell><cell>0x00010000</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>COMADADD</cell><cell>0x00010000</cell></row>
+  </table>
+</hi2txt>

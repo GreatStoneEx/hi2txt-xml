@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>1669670</cell><cell>&amp;9A</cell><cell>&#949;</cell><cell>Silver Eagle</cell></row>
+    <row><cell>2</cell><cell>899840</cell><cell>!?&amp;</cell><cell>&#947;</cell><cell>Gold Swan</cell></row>
+    <row><cell>3</cell><cell>368330</cell><cell>AAA</cell><cell>&#945;</cell><cell>Gold Crow</cell></row>
+    <row><cell>4</cell><cell>292200</cell><cell>BCD</cell><cell>&#945;</cell><cell>Gold Crow</cell></row>
+    <row><cell>5</cell><cell>29200</cell><cell>AAA</cell><cell>&#945;</cell><cell>Iron Owl</cell></row>
+    <row><cell>6</cell><cell>16800</cell><cell>DAJ</cell><cell>&#945;</cell><cell>Gold Duck</cell></row>
+  </table>
+  <field id="UNKNOWN2">0xF2</field>
+</hi2txt>

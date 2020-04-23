@@ -1,0 +1,26 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>200000</cell><cell>TGR</cell><cell>40</cell><cell>RED</cell></row>
+    <row><cell>2</cell><cell>190000</cell><cell>TGR</cell><cell>38</cell><cell>BLUE</cell></row>
+    <row><cell>3</cell><cell>180000</cell><cell>TGR</cell><cell>36</cell><cell>RED</cell></row>
+    <row><cell>4</cell><cell>170000</cell><cell>TGR</cell><cell>34</cell><cell>BLUE</cell></row>
+    <row><cell>5</cell><cell>160000</cell><cell>TGR</cell><cell>32</cell><cell>RED</cell></row>
+    <row><cell>6</cell><cell>150000</cell><cell>TGR</cell><cell>30</cell><cell>BLUE</cell></row>
+    <row><cell>7</cell><cell>140000</cell><cell>TGR</cell><cell>28</cell><cell>RED</cell></row>
+    <row><cell>8</cell><cell>130000</cell><cell>TGR</cell><cell>26</cell><cell>BLUE</cell></row>
+    <row><cell>9</cell><cell>120000</cell><cell>TGR</cell><cell>24</cell><cell>RED</cell></row>
+    <row><cell>10</cell><cell>110000</cell><cell>TGR</cell><cell>22</cell><cell>BLUE</cell></row>
+    <row><cell>11</cell><cell>100000</cell><cell>TGR</cell><cell>20</cell><cell>RED</cell></row>
+    <row><cell>12</cell><cell>90000</cell><cell>TGR</cell><cell>18</cell><cell>BLUE</cell></row>
+    <row><cell>13</cell><cell>80000</cell><cell>TGR</cell><cell>16</cell><cell>RED</cell></row>
+    <row><cell>14</cell><cell>70000</cell><cell>TGR</cell><cell>14</cell><cell>BLUE</cell></row>
+    <row><cell>15</cell><cell>60000</cell><cell>TGR</cell><cell>12</cell><cell>RED</cell></row>
+    <row><cell>16</cell><cell>50000</cell><cell>TGR</cell><cell>10</cell><cell>BLUE</cell></row>
+    <row><cell>17</cell><cell>40000</cell><cell>TGR</cell><cell>8</cell><cell>RED</cell></row>
+    <row><cell>18</cell><cell>30000</cell><cell>TGR</cell><cell>6</cell><cell>BLUE</cell></row>
+    <row><cell>19</cell><cell>20000</cell><cell>TGR</cell><cell>4</cell><cell>RED</cell></row>
+    <row><cell>20</cell><cell>10000</cell><cell>TGR</cell><cell>2</cell><cell>BLUE</cell></row>
+  </table>
+</hi2txt>
+

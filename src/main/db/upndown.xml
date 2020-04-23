@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c93f:3f:01:00</definition> <!-- upndown //-->
+      <definition>0:c93f:3f:01:00
+                  0:c97b:1:01:01</definition> <!-- upndownu //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>63</size>
+      <size>64</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"  charset="upndown"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="upndown">
+    <char src="0x2E" dst="."/>
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt>

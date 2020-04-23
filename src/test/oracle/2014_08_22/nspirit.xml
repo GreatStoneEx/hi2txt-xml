@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>134500</cell><cell>TATSUNO.H</cell></row>
+    <row><cell>2</cell><cell>110300</cell><cell>AKIO.PAPA</cell></row>
+    <row><cell>3</cell><cell>91000</cell><cell>AAB..ZZ  </cell></row>
+    <row><cell>4</cell><cell>87900</cell><cell>HIROKI   </cell></row>
+    <row><cell>5</cell><cell>64400</cell><cell>KIYOSHI.K</cell></row>
+    <row><cell>6</cell><cell>61600</cell><cell>OHGI.....</cell></row>
+    <row><cell>7</cell><cell>52300</cell><cell>MOMOKO.T </cell></row>
+    <row><cell>8</cell><cell>47800</cell><cell>SUMI     </cell></row>
+    <row><cell>9</cell><cell>44800</cell><cell>MAKOTO.O </cell></row>
+    <row><cell>10</cell><cell>4500</cell><cell>!?, .Z</cell></row>
+  </table>
+  <field id="TOP SCORE">134500</field>
+</hi2txt>

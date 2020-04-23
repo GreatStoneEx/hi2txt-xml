@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>157600</cell><cell>-&#183;</cell></row>
+    <row><cell>2</cell><cell>128400</cell><cell>HIRO </cell></row>
+    <row><cell>3</cell><cell>110700</cell><cell>SAKOS</cell></row>
+    <row><cell>4</cell><cell>98600</cell><cell>U.W.F</cell></row>
+    <row><cell>5</cell><cell>84200</cell><cell>KOUTA</cell></row>
+    <row><cell>6</cell><cell>76300</cell><cell>FUMIN</cell></row>
+    <row><cell>7</cell><cell>64200</cell><cell>T.K.O</cell></row>
+  </table>
+  <field id="TOP SCORE">157600</field>
+  <field id="UNKNOWN">0x00000000000000</field>
+</hi2txt>

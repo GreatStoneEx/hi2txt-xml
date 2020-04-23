@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Twinhawk">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:f00132:40:00:aa</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>64</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="5">
+    	<elt size="2" type="int"  id="STAGE" byte-skip="odd"/>
+    </loop> 	
+    <loop count="5">
+      <elt size="6" type="text" id="NAME" byte-skip="odd" charset="twinhawk" ascii-offset="-91"/>
+    </loop>
+    
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+    
+  <charset id="twinhawk">
+    <char src="0xB6" dst="!"/>
+    <char src="0xB7" dst="?"/>
+    <char src="0xCE" dst=""/>
+  </charset>
+</hi2txt>

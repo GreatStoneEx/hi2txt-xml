@@ -1,0 +1,19 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>149830</cell><cell>ULMV</cell></row>
+    <row><cell>2</cell><cell>71040</cell><cell>ULKT</cell></row>
+    <row><cell>3</cell><cell>46030</cell><cell>VTKA</cell></row>
+    <row><cell>4</cell><cell>2070</cell><cell>?999</cell></row>
+    <row><cell>5</cell><cell>1010</cell><cell>!&#9834;&#9798;&#9835;</cell></row>
+  </table>
+  <table>
+    <col>RANK</col><col>TOTAL SCORE</col><col>TOTAL NAME 1</col><col>TOTAL NAME 2</col>
+    <row><cell>1</cell><cell>73180</cell><cell>ULKT</cell><cell>&#9734;&#9734;&#9734;&#9734;</cell></row>
+    <row><cell>2</cell><cell>31060</cell><cell>VDBK</cell><cell>WTKB</cell></row>
+    <row><cell>3</cell><cell>20000</cell><cell>@ CA</cell><cell>PCOM</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>@ CA</cell><cell>PCOM</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>@ CA</cell><cell>PCOM</cell></row>
+  </table>
+  <field id="HISCORE">00149830</field>
+</hi2txt>

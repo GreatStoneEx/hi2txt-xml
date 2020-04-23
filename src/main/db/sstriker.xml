@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10029a:a4:00:20</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>164</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="20" type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <elt size="30" type="raw"  id="UNKNOWN2"/>
+    <loop count="5">
+      <elt size="4" type="text" id="NAME1" byte-skip="0100" charset="sstriker"/>
+      <elt size="4" type="text" id="NAME2" byte-skip="0100" charset="sstriker"/>
+      <elt size="4" type="text" id="NAME3" byte-skip="0100" charset="sstriker"/>
+      <elt size="4" type="text" id="END"                    charset="sstriker"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"      format="name"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="END"       display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+    <field id="UNKNOWN"   format="0x" display="debug"/>
+    <field id="UNKNOWN2"  format="0x" display="debug"/>
+  </output>
+  
+  <format id="name">
+    <concat>
+      <column id="NAME1"/>
+      <column id="NAME2"/>
+      <column id="NAME3"/>
+    </concat>
+  </format>
+  <format id="character">
+    <case src="0" dst="GAIN"/>
+    <case src="1" dst="CHITTA"/>
+    <case src="2" dst="MIYAMOTO"/>
+    <case src="3" dst="BORNNAM"/>
+  </format>
+  
+  <charset id="sstriker">
+    <char src="0x00" dst=" "/>
+    <char src="0x5D" dst="&black-triangle-down;"/>
+    <char src="0x5E" dst="&cross-of-lorraine;"/> <!-- what is it exactly? //-->
+    <char src="0x5F" dst="&single-music-note;"/>
+    <char src="0x60" dst="&black-star;"/>
+    <char src="0x61" dst="&moon;"/>
+    <char src="0x62" dst="&sun;"/>
+  </charset>
+</hi2txt>

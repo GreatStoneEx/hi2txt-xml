@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>FLOOR</col><col>PARTNER</col>
+    <row><cell>1</cell><cell>500000</cell><cell>EGW</cell><cell>12</cell><cell>BIG MAN</cell></row>
+    <row><cell>2</cell><cell>450000</cell><cell>YAN</cell><cell>11</cell><cell>BIG MAN</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>HAC</cell><cell>10</cell><cell>BIG MAN</cell></row>
+    <row><cell>4</cell><cell>350000</cell><cell>GYO</cell><cell>9</cell><cell>BIG MAN</cell></row>
+    <row><cell>5</cell><cell>300000</cell><cell>HOS</cell><cell>8</cell><cell>THIEF</cell></row>
+    <row><cell>6</cell><cell>250000</cell><cell>CAP</cell><cell>7</cell><cell>THIEF</cell></row>
+    <row><cell>7</cell><cell>200000</cell><cell>COM</cell><cell>6</cell><cell>THIEF</cell></row>
+    <row><cell>8</cell><cell>200000</cell><cell>CAP</cell><cell>5</cell><cell>THIEF</cell></row>
+    <row><cell>9</cell><cell>200000</cell><cell>COM</cell><cell>4</cell><cell>THIEF</cell></row>
+    <row><cell>10</cell><cell>200000</cell><cell>CAP</cell><cell>4</cell><cell>THIEF</cell></row>
+  </table>
+</hi2txt>
+
+

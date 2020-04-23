@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Power Spikes 2">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="800" type="raw" id="UNKNOWN"/>
+    <loop count="5">
+    	<elt size="3" type="text" id="NAME"  charset="pspikes2" ascii-offset="65"/>
+    </loop>
+    <elt size="1" type="raw"  id="EMPTY"/>
+    <loop count="5">	
+      <elt size="4" type="int"  id="SCORE"/>
+    </loop>
+    <loop count="5">
+      <elt size="4" type="int"  id="CHARACTER"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="World Men - Japan"/>
+    <case src="1"  dst="World Men - U.S.A"/>
+    <case src="2"  dst="World Men - China"/>
+    <case src="3"  dst="World Men - Italia"/>
+    <case src="4"  dst="World Men - Brazil"/>
+    <case src="5"  dst="World Men - Slovenia"/>
+    <case src="6"  dst="World Men - Cuba"/>
+    <case src="7"  dst="World Men - Canada"/>
+    <case src="8"  dst="World Men - Mexico"/>
+    <case src="9"  dst="World Men - South Korea"/>
+    <case src="10" dst="World Men - Spain"/>
+    <case src="11" dst="World Men - Great Britain"/>
+    <case src="12" dst="World Men - Germany"/>
+    <case src="13" dst="World Men - France"/>
+    <case src="14" dst="World Men - Greece"/>
+    <case src="15" dst="World Men - Taiwan"/>
+    
+    <case src="16" dst="World Women - Japan"/>
+    <case src="17" dst="World Women - U.S.A"/>
+    <case src="18" dst="World Women - China"/>
+    <case src="19" dst="World Women - Italia"/>
+    <case src="20" dst="World Women - Brazil"/>
+    <case src="21" dst="World Women - Slovenia"/>
+    <case src="22" dst="World Women - Cuba"/>
+    <case src="23" dst="World Women - Canada"/>
+    <case src="24" dst="World Women - Mexico"/>
+    <case src="25" dst="World Women - South Korea"/>
+    <case src="26" dst="World Women - Spain"/>
+    <case src="27" dst="World Women - Great Britain"/>
+    <case src="28" dst="World Women - Germany"/>
+    <case src="29" dst="World Women - France"/>
+    <case src="30" dst="World Women - Greece"/>
+    <case src="31" dst="World Women - Taiwan"/>
+    
+    <case src="32" dst="Hyper League - Lethal Machines"/>
+    <case src="33" dst="Hyper League - Metal Breakers"/>
+    <case src="34" dst="Hyper League - Power Spikers"/>
+    <case src="35" dst="Hyper League - Turbo Force"/>
+    <case src="36" dst="Hyper League - Neo Crashers"/>
+    <case src="37" dst="Hyper League - Steel Strikers"/>
+    <case src="38" dst="Hyper League - Iron Fangs"/>
+    <case src="39" dst="Hyper League - Grooscaps"/>
+  </format>
+  
+  <charset id="pspikes2">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="10"/>
+    <char src="0x25" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6b00:aa:97:74
+                  0:6c00:3c:00:00
+                  0:6823:3:01:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>233</size>
+    </check>
+    <loop count="5">
+      <elt size="2"  type="raw"  id="UNKNOWN"/>
+      <elt size="1"  type="int"  id="RANK"/>
+      <elt size="2"  type="raw"  id="UNKNOWN2"/>
+      <elt size="2"  type="raw"  id="UNUSED"/>
+      <elt size="6"  type="int"  id="SCORE" nibble-skip="odd" base="16"/>
+      <elt size="2"  type="raw"  id="UNUSED2"/>
+      <elt size="3"  type="text" id="NAME" charset="mario" ascii-offset="48"/>
+      <elt size="9"  type="raw"  id="UNUSED2"/>
+      <elt size="2"  type="raw"  id="UNKNOWN3"/>
+      <elt size="3"  type="int"  id="SHORT SCORE" base="16" endianness="little_endian"/>
+      <elt size="2"  type="raw"  id="UNKNOWN4"/>
+    </loop>
+    <elt   size="60" type="raw"  id="UNKNOWN5"/>
+    <elt   size="3"  type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+      <column id="SHORT SCORE"                          display="extra"/>
+      <column id="UNKNOWN"  format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN2" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN3" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN4" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+    <field id="UNKNOWN5"  display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="score"><pad direction="left" max="6">0</pad></format>
+  
+  <charset id="mario">
+    <char src="0x0B" dst="-"/>
+    <char src="0x2C" dst="."/>
+  </charset>
+</hi2txt>

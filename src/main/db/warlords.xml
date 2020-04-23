@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Warlords">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+	  <definition>@:maincpu,program,f3,9,4d,61
+                  @:maincpu,program,126,2,75,75
+                  @:maincpu,program,12d,2,13,26
+                  @:maincpu,program,13a,2,00,00</definition>
+      <size>15</size>
+    </check>
+    <elt size="3" type="text" id="NAME"         ascii-offset="-10"/>
+	<elt size="3" type="text" id="TEAM NAME P1" ascii-offset="-10"/>
+	<elt size="3" type="text" id="TEAM NAME P2" ascii-offset="-10"/>
+	<elt size="1" type="int"  id="SCORE_1"      base="16"/>
+	<elt size="1" type="int"  id="TEAM_SCORE_1" base="16"/>
+	<elt size="1" type="int"  id="SCORE_2"      base="16"/>
+	<elt size="1" type="int"  id="TEAM_SCORE_2" base="16"/>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="SCORE"/>
+	  <column id="NAME"/>
+    </table>
+	
+	<table>
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="TEAM SCORE" format="TEAM_SCORE"/>
+      <column id="TEAM NAME P1"/>
+	  <column id="TEAM NAME P2"/>
+    </table>
+  </output>
+  
+  <format id="SCORE">
+    <sum>
+	  <column id="SCORE_1"/>
+	  <column id="SCORE_2" format="*100"/>
+	</sum>
+  </format>
+  
+  <format id="TEAM_SCORE">
+    <sum>
+	  <column id="TEAM_SCORE_1"/>
+	  <column id="TEAM_SCORE_2" format="*100"/>
+	</sum>
+  </format>
+</hi2txt>

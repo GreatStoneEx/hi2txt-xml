@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e008:2c:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>44</size>
+    </check>
+    <loop>
+      <elt size="3"  type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="1"  type="int"  id="STAGE_RAW"/>
+    </loop>
+    <!-- E J O T Z //-->
+    <elt size="2"  type="int"  id="Z" table-index="1" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="T" table-index="2" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="O" table-index="2" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="J" table-index="2" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="E" table-index="2" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="Z" table-index="2" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="T" table-index="3" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="O" table-index="3" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="J" table-index="3" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="E" table-index="3" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="Z" table-index="3" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="T" table-index="1" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="O" table-index="1" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="J" table-index="1" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="E" table-index="1" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="Z" table-index="0" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="T" table-index="0" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="O" table-index="0" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="J" table-index="0" endianness="little_endian" base="16"/>
+    <elt size="2"  type="int"  id="E" table-index="0" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="STAGE" format="stage"/>
+    </table>
+    <table id="TOP TIMES">
+      <column id="RANK" src="index" format="difficulty" display="extra"/>
+      <column id="E" format="time;not_set"              display="extra"/>
+      <column id="J" format="time;not_set"              display="extra"/>
+      <column id="O" format="time;not_set"              display="extra"/>
+      <column id="T" format="time;not_set"              display="extra"/>
+      <column id="Z" format="time;not_set"              display="extra"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="stage_prefix">
+    <case src="26" operator="&gt;"  dst="CHAMPION - "/>
+    <case src="26" operator="&lt;=" dst="BEGINNER - "/>
+  </format>
+  <format id="stage_letter_1"><remainder>26</remainder></format>
+  <format id="stage_letter_2">
+    <case src="1"  dst="A"/>
+    <case src="2"  dst="B"/>
+    <case src="3"  dst="C"/>
+    <case src="4"  dst="D"/>
+    <case src="5"  dst="E"/>
+    <case src="6"  dst="F"/>
+    <case src="7"  dst="G"/>
+    <case src="8"  dst="H"/>
+    <case src="9"  dst="I"/>
+    <case src="10" dst="J"/>
+    <case src="11" dst="K"/>
+    <case src="12" dst="L"/>
+    <case src="13" dst="M"/>
+    <case src="14" dst="N"/>
+    <case src="15" dst="O"/>
+    <case src="16" dst="P"/>
+    <case src="17" dst="Q"/>
+    <case src="18" dst="R"/>
+    <case src="19" dst="S"/>
+    <case src="20" dst="T"/>
+    <case src="21" dst="U"/>
+    <case src="22" dst="V"/>
+    <case src="23" dst="W"/>
+    <case src="24" dst="X"/>
+    <case src="25" dst="Y"/>
+    <case src="26" dst="Z"/>
+  </format>
+  <format id="stage">
+    <concat>
+      <column id="STAGE_RAW" format="stage_prefix"/>
+      <column id="STAGE_RAW" format="stage_letter_1;stage_letter_2"/>
+    </concat>
+  </format>
+  <format id="difficulty">
+    <case src="0" dst="BEGINNER"/>
+    <case src="1" dst="CHAMPION 1"/>
+    <case src="2" dst="CHAMPION 2"/>
+    <case src="3" dst="CHAMPION 3"/>
+  </format>
+  <format id="time"><suffix> sec</suffix></format>
+  <format id="not_set"><case src="0 sec" dst="NOT SET YET"/></format>
+</hi2txt>

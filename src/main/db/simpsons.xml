@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4980:50:42:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>80</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME"  charset="simpsons"/>
+      <elt size="2" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="2" type="raw"  id="PADDING"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="PADDING"   format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="character">
+    <case src="0" dst="MARGE"/>
+    <case src="1" dst="HOMER"/>
+    <case src="2" dst="BART"/>
+    <case src="3" dst="LISA"/>
+  </format>
+  
+  <charset id="simpsons">
+    <char src="0x40" dst=" "/>
+    <char src="0x5B" dst="."/>
+    <char src="0x5C" dst="-"/>
+    <char src="0x5D" dst="?"/>
+    <char src="0x5E" dst="!"/>
+    <char src="0x5F" dst="&amp;"/>
+    <char src="0x60" dst="@"/>
+    <char src="0x61" dst="&black-star;"/>
+    <char src="0x62" dst="$"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (Solo scores), GreatStone (Dual scores, stage)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:000bd7:b4:50:00</definition>
+      <definition>0:000c27:b3:50:2e</definition> <!-- raidenb //-->
+      <definition>0:000c47:b3:50:2e</definition> <!-- raidenua //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>180</size>
+      <size>179</size> <!-- raidenb, raidenua //-->
+    </check>
+    <loop count="18"> <!-- Solo: 1->9, Dual: 10->18 //-->
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="1" type="int"  id="STAGE_RAW"/>
+      <elt size="1" type="raw"  id="EMPTY2"/>
+      <elt size="3" type="text" id="NAME"  charset="raiden"/>
+      <elt size="1" type="raw"  id="EMPTY3"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="rank;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"            format="stage"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="EMPTY"            format="hexadecimal_string" display="debug"/>
+      <column id="EMPTY2"           format="hexadecimal_string" display="debug"/>
+      <column id="EMPTY3"           format="hexadecimal_string" display="debug"/>
+      <!-- empty3 for last dual score is not dumped for raidenb and raidenua //-->
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="rank"><remainder>9</remainder></format>
+  <format id="mode">
+    <case src="9" dst="SOLO" operator="&lt;"/>
+    <case src="9" dst="DUAL" operator="&gt;="/> 
+  </format>
+  <format id="-"><suffix>-</suffix></format>
+  <format id="stage_main"><divide_trunc>8</divide_trunc></format>
+  <format id="stage_sub"><remainder>8</remainder></format>
+  <format id="stage">
+    <concat>
+      <column id="STAGE_MAIN" src="STAGE_RAW" format="stage_main;+1;-"/>
+      <column id="STAGE_SUB"  src="STAGE_RAW" format="stage_sub"/>
+    </concat>
+  </format>
+  
+  <charset id="raiden">
+    <char src="0x00" dst=" "/>
+    <char src="0x2E" dst="."/>
+    <char src="0x5B" dst="!"/>
+    <char src="0x5C" dst="?"/>
+    <char src="0x5D" dst="-"/>
+  </charset>
+</hi2txt>

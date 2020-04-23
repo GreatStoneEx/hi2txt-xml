@@ -1,0 +1,67 @@
+<hi2txt>
+  <table id="ZONE LAMBDA">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>6000000</cell><cell>GDR</cell><cell>Iron Duck</cell></row>
+    <row><cell>2</cell><cell>5900000</cell><cell>MAT</cell><cell>Iron Duck</cell></row>
+    <row><cell>3</cell><cell>5800000</cell><cell>MAL</cell><cell>Iron Duck</cell></row>
+    <row><cell>4</cell><cell>5700000</cell><cell>WIN</cell><cell>Iron Duck</cell></row>
+    <row><cell>5</cell><cell>5600000</cell><cell>FJM</cell><cell>Iron Duck</cell></row>
+    <row><cell>6</cell><cell>5500000</cell><cell>NOB</cell><cell>Iron Duck</cell></row>
+    <row><cell>7</cell><cell>5400000</cell><cell>OTK</cell><cell>Iron Duck</cell></row>
+    <row><cell>8</cell><cell>5300000</cell><cell>MKT</cell><cell>Iron Duck</cell></row>
+    <row><cell>9</cell><cell>5200000</cell><cell>OSK</cell><cell>Iron Duck</cell></row>
+    <row><cell>10</cell><cell>5100000</cell><cell>JBY</cell><cell>Iron Duck</cell></row>
+  </table>
+  <table id="ZONE MU">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>6000000</cell><cell>GDR</cell><cell>Iron Duck</cell></row>
+    <row><cell>2</cell><cell>5900000</cell><cell>MAT</cell><cell>Iron Duck</cell></row>
+    <row><cell>3</cell><cell>5800000</cell><cell>MAL</cell><cell>Iron Duck</cell></row>
+    <row><cell>4</cell><cell>5700000</cell><cell>WIN</cell><cell>Iron Duck</cell></row>
+    <row><cell>5</cell><cell>5600000</cell><cell>FJM</cell><cell>Iron Duck</cell></row>
+    <row><cell>6</cell><cell>5500000</cell><cell>NOB</cell><cell>Iron Duck</cell></row>
+    <row><cell>7</cell><cell>5400000</cell><cell>OTK</cell><cell>Iron Duck</cell></row>
+    <row><cell>8</cell><cell>5300000</cell><cell>MKT</cell><cell>Iron Duck</cell></row>
+    <row><cell>9</cell><cell>5200000</cell><cell>OSK</cell><cell>Iron Duck</cell></row>
+    <row><cell>10</cell><cell>5100000</cell><cell>JBY</cell><cell>Iron Duck</cell></row>
+  </table>
+  <table id="ZONE NU">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>6000000</cell><cell>GDR</cell><cell>Iron Duck</cell></row>
+    <row><cell>2</cell><cell>5900000</cell><cell>MAT</cell><cell>Iron Duck</cell></row>
+    <row><cell>3</cell><cell>5800000</cell><cell>MAL</cell><cell>Iron Duck</cell></row>
+    <row><cell>4</cell><cell>5700000</cell><cell>WIN</cell><cell>Iron Duck</cell></row>
+    <row><cell>5</cell><cell>5600000</cell><cell>FJM</cell><cell>Iron Duck</cell></row>
+    <row><cell>6</cell><cell>5500000</cell><cell>NOB</cell><cell>Iron Duck</cell></row>
+    <row><cell>7</cell><cell>5400000</cell><cell>OTK</cell><cell>Iron Duck</cell></row>
+    <row><cell>8</cell><cell>5300000</cell><cell>MKT</cell><cell>Iron Duck</cell></row>
+    <row><cell>9</cell><cell>5200000</cell><cell>OSK</cell><cell>Iron Duck</cell></row>
+    <row><cell>10</cell><cell>5100000</cell><cell>JBY</cell><cell>Iron Duck</cell></row>
+  </table>
+  <table id="ZONE XI">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>6000000</cell><cell>GDR</cell><cell>Iron Duck</cell></row>
+    <row><cell>2</cell><cell>5900000</cell><cell>MAT</cell><cell>Iron Duck</cell></row>
+    <row><cell>3</cell><cell>5800000</cell><cell>MAL</cell><cell>Iron Duck</cell></row>
+    <row><cell>4</cell><cell>5700000</cell><cell>WIN</cell><cell>Iron Duck</cell></row>
+    <row><cell>5</cell><cell>5600000</cell><cell>FJM</cell><cell>Iron Duck</cell></row>
+    <row><cell>6</cell><cell>5500000</cell><cell>NOB</cell><cell>Iron Duck</cell></row>
+    <row><cell>7</cell><cell>5400000</cell><cell>OTK</cell><cell>Iron Duck</cell></row>
+    <row><cell>8</cell><cell>5300000</cell><cell>MKT</cell><cell>Iron Duck</cell></row>
+    <row><cell>9</cell><cell>5200000</cell><cell>OSK</cell><cell>Iron Duck</cell></row>
+    <row><cell>10</cell><cell>5100000</cell><cell>JBY</cell><cell>Iron Duck</cell></row>
+  </table>
+  <table id="ZONE OMICRON">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TECH-RANK</col>
+    <row><cell>1</cell><cell>6000000</cell><cell>GDR</cell><cell>Iron Duck</cell></row>
+    <row><cell>2</cell><cell>5900000</cell><cell>MAT</cell><cell>Iron Duck</cell></row>
+    <row><cell>3</cell><cell>5800000</cell><cell>MAL</cell><cell>Iron Duck</cell></row>
+    <row><cell>4</cell><cell>5700000</cell><cell>WIN</cell><cell>Iron Duck</cell></row>
+    <row><cell>5</cell><cell>5600000</cell><cell>FJM</cell><cell>Iron Duck</cell></row>
+    <row><cell>6</cell><cell>5500000</cell><cell>NOB</cell><cell>Iron Duck</cell></row>
+    <row><cell>7</cell><cell>5400000</cell><cell>OTK</cell><cell>Iron Duck</cell></row>
+    <row><cell>8</cell><cell>5300000</cell><cell>MKT</cell><cell>Iron Duck</cell></row>
+    <row><cell>9</cell><cell>5200000</cell><cell>OSK</cell><cell>Iron Duck</cell></row>
+    <row><cell>10</cell><cell>5100000</cell><cell>JBY</cell><cell>Iron Duck</cell></row>
+  </table>
+</hi2txt>

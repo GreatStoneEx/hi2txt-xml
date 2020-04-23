@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Blazing Star">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="832" type="raw"  id="DATA"/>
+    <loop count="25">
+      <elt size="8" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="RANKING"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR"  display="debug"/>
+      <column id="STAGE"     format="+1;stage"/>
+      <column id="RANKING"   format="ranking"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="?HELLHOUND"/>
+    <case src="1" dst="WINDINA"/>
+    <case src="2" dst="?ARYUSTAILM"/>
+    <case src="3" dst="?PEPLOS"/>
+    <case src="4" dst="?DINO135"/>
+    <case src="5" dst="DINO246"/>
+  </format>
+  
+  <format id="stage">
+    <case src="6" operator="&gt;=" dst="All"/>
+  </format>
+
+  <format id="ranking">
+    <case src="0" dst="A"/>
+    <case src="1" dst="B"/>
+    <case src="2" dst="C"/>
+    <case src="3" dst="D"/>
+    <case src="4" dst="E"/>
+    <case src="5" dst="F"/>
+  </format>
+</hi2txt>

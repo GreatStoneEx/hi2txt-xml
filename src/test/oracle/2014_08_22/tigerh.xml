@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>5620340</cell><cell>SHI</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>18000</cell><cell>NJU</cell><cell>5</cell></row>
+    <row><cell>3</cell><cell>16000</cell><cell>KUK</cell><cell>5</cell></row>
+    <row><cell>4</cell><cell>14000</cell><cell>USH</cell><cell>4</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>INJ</cell><cell>4</cell></row>
+    <row><cell>6</cell><cell>10000</cell><cell>UKU</cell><cell>4</cell></row>
+    <row><cell>7</cell><cell>8000</cell><cell>SAN</cell><cell>3</cell></row>
+    <row><cell>8</cell><cell>6000</cell><cell>CHO</cell><cell>3</cell></row>
+    <row><cell>9</cell><cell>840</cell><cell>?  </cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>790</cell><cell>+-&amp;</cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">5620340</field>
+  <field id="TOP SCORE STRING">20000</field>
+</hi2txt>

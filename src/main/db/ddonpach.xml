@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      data size: 104 bytes
+      source: HiToText, greatstone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:1016ea:64:00:05
+                  0:101626:4:00:06</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>104</size>
+    </check>
+    <loop count="5"><elt size="4" type="int"  id="SCORE1"    base="16"/></loop>
+    <loop count="5"><elt size="6" type="text" id="NAME"      byte-skip="odd" ascii-step="4" ascii-offset="32" charset="ddonpach"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="LOOP"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="AREA"/></loop>
+    <loop count="5"><elt size="1" type="int"  id="CHARACTER" base="16"/>
+                    <elt size="1" type="int"  id="POWERUP"   base="16"/></loop>    
+    <loop count="5"><elt size="2" type="int"  id="MAXHIT"    base="16"/></loop>
+    <loop count="5"><elt size="2" type="int"  id="SCORE2"    base="16"/></loop>
+                    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="score"/>
+      <column id="NAME"/>
+      <column id="STAGE"            format="area;area_all"/>
+      <column id="CHARACTER"        format="spaceship"/>
+      <column id="POWERUP"          format="powerup"/>
+      <column id="MAXHIT"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10"/>
+      <column id="SCORE2"/>
+    </sum>
+  </format>
+  <format id="default_loop">
+    <case src="0" dst=""/>
+    <case src="1" dst=""/>
+  </format>
+  <format id="-"><suffix>-</suffix></format>
+  <format id="default_stage"><case src="0" dst="1"/></format>
+  <format id="area">
+    <concat>
+      <column id="LOOP" format="default_loop;-"/>
+      <column id="AREA" format="default_stage"/>
+    </concat>
+  </format>
+  <format id="area_all"><case src="254-7" dst="ALL"/></format>
+  <format id="powerup">
+    <case src="0" dst="SHOT"/>
+    <case src="1" dst="LASER"/>
+  </format>
+  <format id="spaceship">
+    <case src="0" dst="RED"/>
+    <case src="1" dst="BLUE"/>
+    <case src="2" dst="GREEN"/>
+  </format>
+  
+  <charset id="ddonpach">
+    <char src="0x00" dst=" "/>
+    <char src="0x38" dst="."/>
+  </charset>
+</hi2txt>

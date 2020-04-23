@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ffd7aa:4e:00:02
+                  0:ff8081:1:01:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>79</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME" charset="sf2t" ascii-offset="65"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="raw"  id="UNKNOWN1"/> <!-- empty? //-->
+      <elt size="1" type="raw"  id="UNKNOWN2"/> <!-- if divided / 2, it can be the rank //-->
+      <elt size="1" type="int"  id="MODE"/>
+      <elt size="1" type="int"  id="MAX CHAIN"/>
+      <elt size="1" type="int"  id="MAX POWER GEM"/>
+      <elt size="2" type="raw"  id="FOOTER"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" format="hexadecimal_string" display="debug"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="UNKNOWN1"  format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN2"  format="hexadecimal_string" display="debug"/>
+      <column id="MODE"      format="mode"/>
+      <column id="MAX CHAIN"/>
+      <column id="MAX POWER GEM"/>
+      <column id="FOOTER"    format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <format id="mode">
+    <case src="0" dst="EASY"/>
+    <case src="1" dst="NORMAL"/>
+    <case src="2" dst="HARD"/>
+  </format>
+  <format id="character">
+    <case src="0"  dst="MORRIGAN"/>
+    <case src="1"  dst="CHUN-LI"/>
+    <case src="2"  dst="RYU"/>
+    <case src="3"  dst="KEN"/>
+    <case src="4"  dst="HSIEN-KO"/>
+    <case src="5"  dst="DONOVAN"/>
+    <case src="6"  dst="FELICIA"/>
+    <case src="7"  dst="SAKURA"/>
+    <case src="8"  dst="DEVILOT"/>
+    <case src="9"  dst="AKUMA"/>
+    <case src="10" dst="DAN"/>
+  </format>
+  
+  <charset id="sf2t">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="!"/>
+    <char src="0x25" dst="?"/>
+    <char src="0x26" dst="."/>
+    <char src="0x27" dst="-"/>
+    <char src="0x28" dst=","/>
+    <char src="0x29" dst="&black-heart;"/>
+    <char src="0x2A" dst="&left-arrow;"/>
+    <char src="0x2B" dst="&amp;"/>
+    <char src="0x2C" dst="="/>
+    <char src="0x2D" dst=" "/>
+  </charset>
+</hi2txt>

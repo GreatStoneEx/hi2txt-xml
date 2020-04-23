@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col><col>SEPARATOR</col><col>SEPARATOR2</col>
+    <row><cell>1</cell><cell>200000</cell><cell>???</cell><cell>0%</cell><cell>0x3F003F00</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>100000</cell><cell>???</cell><cell>0%</cell><cell>0x3F003F00</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>50000</cell><cell>???</cell><cell>0%</cell><cell>0x3F003F00</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>31690</cell><cell>7!$</cell><cell>3%</cell><cell>0x00000000</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>26850</cell><cell>Z$#</cell><cell>3%</cell><cell>0x00000000</cell><cell></cell></row>
+  </table>
+  <field id="TOP SCORE">200000</field>
+</hi2txt>

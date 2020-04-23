@@ -1,0 +1,29 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>36500</cell><cell>BMB</cell></row>
+    <row><cell>2</cell><cell>34900</cell><cell>RAD</cell></row>
+    <row><cell>3</cell><cell>33100</cell><cell>P.P</cell></row>
+    <row><cell>4</cell><cell>31700</cell><cell>FAL</cell></row>
+    <row><cell>5</cell><cell>29900</cell><cell>ZIB</cell></row>
+    <row><cell>6</cell><cell>28300</cell><cell>TOZ</cell></row>
+    <row><cell>7</cell><cell>27100</cell><cell>LWP</cell></row>
+    <row><cell>8</cell><cell>25700</cell><cell>JUF</cell></row>
+    <row><cell>9</cell><cell>24500</cell><cell>TCZ</cell></row>
+    <row><cell>10</cell><cell>22900</cell><cell>TCR</cell></row>
+    <row><cell>11</cell><cell>21300</cell><cell>FQN</cell></row>
+    <row><cell>12</cell><cell>19700</cell><cell>LWL</cell></row>
+    <row><cell>13</cell><cell>18700</cell><cell>BMP</cell></row>
+    <row><cell>14</cell><cell>18100</cell><cell>BMF</cell></row>
+    <row><cell>15</cell><cell>17300</cell><cell>XSD</cell></row>
+    <row><cell>16</cell><cell>16700</cell><cell>RAX</cell></row>
+    <row><cell>17</cell><cell>15700</cell><cell>RAP</cell></row>
+    <row><cell>18</cell><cell>14700</cell><cell>DOL</cell></row>
+    <row><cell>19</cell><cell>13700</cell><cell>HSH</cell></row>
+    <row><cell>20</cell><cell>13100</cell><cell>XGJ</cell></row>
+    <row><cell>21</cell><cell>12300</cell><cell>VEX</cell></row>
+    <row><cell>22</cell><cell>11700</cell><cell>NIT</cell></row>
+    <row><cell>23</cell><cell>10700</cell><cell>FQJ</cell></row>
+  </table>
+  <field id="TOP SCORE">36500</field>
+</hi2txt>

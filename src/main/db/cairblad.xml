@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Change Air Blade">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:580030:b1:a0:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>177</size>
+    </check>
+    <loop count="10">
+      <elt size="6" type="int"  id="SCORE"     byte-skip="even" endianness="little_endian"/>
+      <elt size="2" type="raw"  id="SEPARATOR" byte-skip="even"/>
+      <elt size="6" type="text" id="NAME"      byte-skip="even" ascii-offset="65" charset="cairblad"/>
+      <elt size="2" type="int"  id="CHARACTER" byte-skip="even"/>
+      <elt size="2" type="int"  id="STAGE"     byte-skip="even"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="F-36B Blaster"/>
+    <case src="1" dst="YF-222A Alpha Blade"/>
+    <case src="2" dst="???? ??????"/>
+    <case src="3" dst="AH-99IV Stone Golem"/>
+    <case src="4" dst="XF-48G Galeria"/>
+    <case src="5" dst="F/A-6&omega; Omega Arrow"/>
+    <case src="6" dst="?-58? ????"/>
+    <case src="7" dst="XH-10ix Sylph"/>
+  </format>
+  
+  <charset id="cairblad">
+    <char src="0x1A" dst=","/>
+    <char src="0x1B" dst="."/>
+    <char src="0x1C" dst="0"/>
+    <char src="0x1D" dst="1"/>
+    <char src="0x1E" dst="2"/>
+    <char src="0x1F" dst="3"/>
+    <char src="0x20" dst="4"/>
+    <char src="0x21" dst="5"/>
+    <char src="0x22" dst="6"/>
+    <char src="0x23" dst="7"/>
+    <char src="0x24" dst="8"/>
+    <char src="0x25" dst="9"/>
+    <char src="0x26" dst="!"/>
+    <char src="0x27" dst="?"/>
+    <char src="0x28" dst="-"/>
+    <char src="0x29" dst=" "/>
+  </charset>
+</hi2txt>

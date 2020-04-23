@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8020:7e:90:a1
+                  0:80bd:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>129</size>
+    </check>
+    <loop count="6">
+      <elt size="2" type="raw"  id="UNKNOWN 1"/>
+      <elt size="1" type="int"  id="RANK"/>
+      <elt size="1" type="text" id="SPACE 1" charset="congo" ascii-offset="48"/>
+      <elt size="6" type="int"  id="SCORE STRING" decoding-profile="bcd"/>
+      <elt size="1" type="text" id="SPACE 2" charset="congo" ascii-offset="48"/>
+      <elt size="3" type="text" id="NAME"    charset="congo" ascii-offset="48"/>
+      <elt size="2" type="raw"  id="UNKNOWN 2"/>
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="2" type="raw"  id="UNKNOWN 3"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="SCORE STRING"          display="debug"/>
+      <column id="NAME"/>
+      <column id="SPACE 1"               display="debug"/>
+      <column id="SPACE 2"               display="debug"/>
+      <column id="UNKNOWN 1" format="0x" display="debug"/>
+      <column id="UNKNOWN 2" format="0x" display="debug"/>
+      <column id="UNKNOWN 3" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="congo">
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+    <char src="0x2C" dst="-"/>
+    <char src="0x60" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,48 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>RESCUED</col><col>STAGE</col><col>CHARACTER</col><col>SPEED</col><col>POWER</col><col>CONTINUE</col><col>MODE</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>1</cell><cell>7434978</cell><cell>P.E</cell><cell>3261</cell><cell>All</cell><cell>Secret</cell><cell>Secret</cell><cell>Secret</cell><cell>0</cell><cell>Normal</cell><cell>0xff</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>2000000</cell><cell>BEA</cell><cell>1000</cell><cell>0</cell><cell>Type-A</cell><cell>4</cell><cell>ROLL</cell><cell>0</cell><cell>Normal</cell><cell>0x0</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>1800000</cell><cell>TAT</cell><cell>900</cell><cell>0</cell><cell>Type-B</cell><cell>3</cell><cell>BOMB</cell><cell>0</cell><cell>Normal</cell><cell>0x0</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>252289</cell><cell>CDE</cell><cell>1498</cell><cell>5</cell><cell>Type-C</cell><cell>4</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Normal</cell><cell>0x0</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>34748</cell><cell>JDC</cell><cell>193</cell><cell>2</cell><cell>Type-B</cell><cell>4</cell><cell>LOCK-ON</cell><cell>3</cell><cell>Normal</cell><cell>0x0</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>1548609</cell><cell>PIE</cell><cell>1374</cell><cell>All</cell><cell>Secret</cell><cell>Secret</cell><cell>Secret</cell><cell>0</cell><cell>Time attack</cell><cell>0xff</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>1000000</cell><cell>FSC</cell><cell>700</cell><cell>0</cell><cell>Type-C</cell><cell>1</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Time attack</cell><cell>0x0</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>900000</cell><cell>E.A</cell><cell>600</cell><cell>0</cell><cell>Type-B</cell><cell>2</cell><cell>BOMB</cell><cell>0</cell><cell>Time attack</cell><cell>0x0</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>800000</cell><cell>VOV</cell><cell>500</cell><cell>0</cell><cell>Type-A</cell><cell>3</cell><cell>ROLL</cell><cell>0</cell><cell>Time attack</cell><cell>0x0</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>700000</cell><cell>E.E</cell><cell>400</cell><cell>0</cell><cell>Type-C</cell><cell>4</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Time attack</cell><cell>0x0</cell></row>
+  </table>
+  <field id="UNKNOWN2">0000000000000000000000000000000000000000</field>
+  <field id="UNKNOWN3">0000000000000000000000000000000000000000</field>
+  <field id="UNKNOWN4">010000000100</field>
+  <table id="LAST RUN SCORES">
+    <col>RANK</col><col>LAST RUN SCORE</col>
+    <row><cell>1</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>0</cell></row>
+    <row><cell>5</cell><cell>0</cell></row>
+  </table>
+  <field id="LAST RUN TOTAL">0</field>
+  <field id="UNKNOWN5">00000000</field>
+  <field id="SOME SCORE">0</field>
+  <field id="SOME SCORE 2">243975</field>
+  <field id="SOME SCORE 3">122343</field>
+  <field id="SOME SCORE 4">84932</field>
+  <field id="SOME SCORE 5">30349</field>
+  <field id="SOME SCORE 6">6351</field>
+  <field id="SOME SCORE 7">8314</field>
+  <field id="UNKNOWN6">0000000000000000</field>
+  <table id="STAGE HIGH SCORES">
+    <col>STAGE NUMBER</col><col>STAGE HIGH SCORE</col><col>STAGE HIGH RESCUED</col>
+    <row><cell>1</cell><cell>174202</cell><cell>300</cell></row>
+    <row><cell>2</cell><cell>600000</cell><cell>647</cell></row>
+    <row><cell>3</cell><cell>800000</cell><cell>715</cell></row>
+    <row><cell>4</cell><cell>1000000</cell><cell>862</cell></row>
+    <row><cell>5</cell><cell>2961747</cell><cell>999</cell></row>
+  </table>
+  <field id="UNKNOWN7">00006006</field>
+  <field id="TOP SCORE TA ALT">01548609</field>
+  <field id="UNKNOWN8">00000606</field>
+  <field id="UNKNOWN9">000009</field>
+</hi2txt>

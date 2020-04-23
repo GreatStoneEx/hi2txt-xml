@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE TXT</col><col>NAME</col><col>UNKNOWN2</col><col>SPACE</col><col>END</col>
+    <row><cell>1</cell><cell>80000</cell><cell>080000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>60000</cell><cell>060000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>040000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>020000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>10000</cell><cell>010000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>6</cell><cell>5000</cell><cell>005000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>7</cell><cell>4000</cell><cell>004000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell>0xFF</cell></row>
+    <row><cell>8</cell><cell>3000</cell><cell>003000</cell><cell>JAM</cell><cell>0x0046</cell><cell>    </cell><cell></cell></row>
+  </table>
+</hi2txt>

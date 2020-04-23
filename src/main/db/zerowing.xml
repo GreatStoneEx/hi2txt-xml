@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:81a1e:68:00:10
+                  0:81a20:1:50:50</definition>
+      <definition>0:81776:68:00:10
+                  0:81778:1:50:50</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>105</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="6" type="text" id="NAME"       byte-skip="odd" charset="zerowing" ascii-offset="55"/>
+      <elt size="6" type="text" id="NAME SPACE" byte-skip="odd" charset="zerowing" ascii-offset="55"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="AREA1"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="AREA2"/>
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"  format="*10"/>
+      <column id="NAME"/>
+      <column id="NAME SPACE"          display="debug"/>
+      <column id="STAGE"  format="stage"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="CHECK"     format="0x"  display="debug"/>
+  </output>
+  
+  <format id="stage">
+    <concat>
+      <column id="AREA1"/>
+      <txt>-</txt>
+      <column id="AREA2" format="area_part"/>
+    </concat>
+  </format>
+  <format id="area_part"><pad direction="left" max="2"> </pad></format>
+  
+  <charset id="zerowing">
+    <char src="0x24" dst="!"/>
+    <char src="0x25" dst=","/>
+    <char src="0x26" dst="."/>
+    <char src="0x27" dst="+"/>
+    <char src="0x28" dst="-"/>
+    <char src="0x29" dst="&amp;"/>
+    <char src="0x2A" dst="?"/>
+    <char src="0x2D" dst=" "/>
+  </charset>
+</hi2txt>

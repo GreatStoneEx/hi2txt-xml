@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:ff70dc:170:00:01</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>368</size>
+    </check>
+                     <elt size="8" type="int"  id="TOP SCORE" base="16"/>
+    <loop count="20"><elt size="8" type="int"  id="SCORE"     base="16"/></loop>
+    <loop count="20"><elt size="6" type="text" id="NAME"      charset="gigawing" src-unit-size="16"/></loop>
+    <loop count="20"><elt size="2" type="int"  id="TYPE"      base="16"/></loop>
+    <loop count="20"><elt size="2" type="int"  id="STAGE"     base="16"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="TYPE" format="type"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="type">
+    <case src="0" dst="RAIJIN (SINNOSUKE)"/> <!-- purple //-->
+    <case src="1" dst="WIDERSTAND (STUCK)"/> <!-- green  //-->
+    <case src="2" dst="PORCHKA (ISHA)"/>     <!-- blue   //-->
+    <case src="3" dst="GARMINE (RUBY)"/>     <!-- red    //-->
+  </format>
+  
+  <charset id="gigawing">
+    <char src="0x0000" dst=" "/>
+    <char src="0x00C4" dst=" "/>
+    <char src="0x00C8" dst="!"/>
+    <char src="0x00FC" dst="."/>
+    <char src="0x0104" dst="0"/>
+    <char src="0x0108" dst="1"/>
+    <char src="0x010C" dst="2"/>
+    <char src="0x0110" dst="3"/>
+    <char src="0x0114" dst="4"/>
+    <char src="0x0118" dst="5"/>
+    <char src="0x011C" dst="6"/>
+    <char src="0x0120" dst="7"/>
+    <char src="0x0124" dst="8"/>
+    <char src="0x0128" dst="9"/>
+    <char src="0x01C4" dst=" "/>
+    <char src="0x0140" dst="?"/>
+    <char src="0x0148" dst="A"/>
+    <char src="0x014C" dst="B"/>
+    <char src="0x0150" dst="C"/>
+    <char src="0x0154" dst="D"/>
+    <char src="0x0158" dst="E"/>
+    <char src="0x015C" dst="F"/>
+    <char src="0x0160" dst="G"/>
+    <char src="0x0164" dst="H"/>
+    <char src="0x0168" dst="I"/>
+    <char src="0x016C" dst="J"/>
+    <char src="0x0170" dst="K"/>
+    <char src="0x0174" dst="L"/>
+    <char src="0x0178" dst="M"/>
+    <char src="0x017C" dst="N"/>
+    <char src="0x0180" dst="O"/>
+    <char src="0x0184" dst="P"/>
+    <char src="0x0188" dst="Q"/>
+    <char src="0x018C" dst="R"/>
+    <char src="0x0190" dst="S"/>
+    <char src="0x0194" dst="T"/>
+    <char src="0x0198" dst="U"/>
+    <char src="0x019C" dst="V"/>
+    <char src="0x01A0" dst="W"/>
+    <char src="0x01A4" dst="X"/>
+    <char src="0x01A8" dst="Y"/>
+    <char src="0x01AC" dst="Z"/>
+    <char src="0x063E" dst="Dr."/>
+    <char src="0x0642" dst=".Jr"/>
+    <char src="0x0646" dst="St."/>
+    <char src="0x07A6" dst="&smiley;"/>
+    <char src="0x07AA" dst="&angry-face;"/>
+    <char src="0x07AE" dst="&smiley;"/> <!-- ? //-->
+    <char src="0x07B2" dst="&black-smiley;"/>
+    <char src="0x07B6" dst="&black-heart;"/>
+    <char src="0x07BA" dst="&black-diamond;"/>
+    <char src="0x07BE" dst="&black-club;"/>
+    <char src="0x07C2" dst="&black-spade;"/>
+    <char src="0x07C6" dst="&black-star;"/>
+    <char src="0x0CB4" dst="&single-music-note;"/>
+    <char src="0x0CB8" dst="&double-music-note;"/>
+    <char src="0x0CBC" dst="&three-dots;"/>
+  </charset>
+</hi2txt>

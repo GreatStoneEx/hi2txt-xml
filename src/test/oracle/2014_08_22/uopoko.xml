@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ROUND</col><col>TIME</col><col>MAXIMUM</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>333400</cell><cell>.</cell><cell>2-1</cell><cell>5&apos;17</cell><cell>31-5</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>259800</cell><cell>UOPOKO</cell><cell>3-4</cell><cell>4&apos;07</cell><cell>29-5</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>100000</cell><cell>UOPOKO</cell><cell>2-5</cell><cell>10&apos;00</cell><cell>10-10</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>90000</cell><cell>UOPOKO</cell><cell>2-4</cell><cell>9&apos;00</cell><cell>9-9</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>80000</cell><cell>UOPOKO</cell><cell>2-3</cell><cell>8&apos;00</cell><cell>8-8</cell><cell>0x0000</cell></row>
+  </table>
+</hi2txt>

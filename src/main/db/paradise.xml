@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.148 and related hiscore.dat
+      mame 0.159 and hiscore.dat 20150701
+    source:
+      HiToText
+      GreatStone (20150701 format)
+  //-->
+  
+  <structure file=".hi" output="mame148">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e6c3:3:00:01</definition>
+      <definition>0:e6c3:3:00:01
+                  0:e6e3:22:41:00</definition> <!-- improved in hiscore.dat 20150701 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>3</size>
+      <size>37</size>
+    </check>
+    <elt size="3" type="int" id="SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <structure file=".hi" output="hiscoredat_20150701">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e6c3:3:00:01
+                  0:e6e3:22:41:00</definition> <!-- improved in hiscore.dat 20150701 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>37</size>
+    </check>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="5"><elt size="3" type="text" id="NAME"/></loop>
+    <loop count="5"><elt size="3" type="int" id="SCORE" endianness="little_endian" base="16"/>
+    	            <elt size="1" type="raw" id="SEPARATOR"/></loop>
+  </structure>
+  
+  <output id="mame148">
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+  
+  <output id="hiscoredat_20150701">
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="PadL60"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="PadL60" display="extra"/>
+  </output>
+</hi2txt>

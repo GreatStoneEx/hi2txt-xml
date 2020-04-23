@@ -1,0 +1,15 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>RANK TEXT</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>PLAY</col><col>UNKNOWN 1</col><col>UNKNOWN 2</col>
+    <row><cell>1</cell><cell> 1ST </cell><cell>2592020</cell><cell>TAK</cell><cell>4</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>2</cell><cell> 2ND </cell><cell>2357330</cell><cell>ESH</cell><cell>4</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>3</cell><cell> 3RD </cell><cell>1576170</cell><cell>I.I</cell><cell>3</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>4</cell><cell> 4TH </cell><cell>1465910</cell><cell>SHI</cell><cell>3</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>5</cell><cell> 5TH </cell><cell>1025920</cell><cell>ZA </cell><cell>2</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>6</cell><cell> 6TH </cell><cell>940370</cell><cell>SHI</cell><cell>2</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>7</cell><cell> 7TH </cell><cell>772040</cell><cell>A.I</cell><cell>2</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>8</cell><cell> 8TH </cell><cell>511400</cell><cell>WAT</cell><cell>1</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>9</cell><cell> 9TH </cell><cell>495620</cell><cell>I.I</cell><cell>1</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+    <row><cell>10</cell><cell>10TH </cell><cell>474730</cell><cell>SDR</cell><cell>1</cell><cell>1</cell><cell>0x24</cell><cell>0x24</cell></row>
+  </table>
+</hi2txt>

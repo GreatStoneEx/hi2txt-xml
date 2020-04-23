@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>412300</cell><cell>RIP</cell></row>
+    <row><cell>2</cell><cell>389950</cell><cell>EDR</cell></row>
+    <row><cell>3</cell><cell>284100</cell><cell>BIF</cell></row>
+    <row><cell>4</cell><cell>262100</cell><cell>DIB</cell></row>
+    <row><cell>5</cell><cell>157250</cell><cell>LVR</cell></row>
+    <row><cell>6</cell><cell>134650</cell><cell>RAT</cell></row>
+    <row><cell>7</cell><cell>128500</cell><cell>COW</cell></row>
+    <row><cell>8</cell><cell>107500</cell><cell>ANT</cell></row>
+    <row><cell>9</cell><cell>94000</cell><cell>DOG</cell></row>
+    <row><cell>10</cell><cell>68500</cell><cell>ARF</cell></row>
+  </table>
+</hi2txt>
+
+

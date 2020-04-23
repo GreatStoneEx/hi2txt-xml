@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Alien vs. Predator">
+  <!--
+    tested with mame 0.212 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,ffeac0,31d,01,01
+                  @:maincpu,program,ffedda,1,44,44</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>798</size>
+    </check>
+    <loop count="50">
+      <elt size="1" type="int"  id="RANK_INT" base="16"/>
+	  <elt size="2" type="text" id="RANK_SUFFIX"/>
+	  <elt size="1" type="raw"  id="PADDING"/>
+	  <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="CHARACTER" base="16"/>
+	  <elt size="1" type="int"  id="ROUND" base="16"/>
+	  <elt size="3" type="raw"  id="PADDING2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="rank"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+	  <column id="ROUND" format="Suffix-R"/>
+    </table>
+  </output>
+  
+  <format id="rank">
+    <concat>
+	  <column id="RANK_INT"/>
+	  <column id="RANK_SUFFIX"/>
+	</concat>
+  </format>
+  
+  <format id="character">
+    <case src="0" dst="PREDATOR WARRIOR"/>
+    <case src="1" dst="Maj. D. SCHAEFER"/>
+    <case src="2" dst="PREDATOR HUNTER"/>
+    <case src="3" dst="Lt. LINN KUROSAWA"/>
+  </format>
+</hi2txt>

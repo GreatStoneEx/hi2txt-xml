@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ROUND</col><col>UNUSED</col><col>UNUSED2</col><col>UNUSED3</col>
+    <row><cell>1</cell><cell>80000</cell><cell>PUMPKIN</cell><cell>5</cell><cell>0x2B2B2B2B2B</cell><cell>0x2B2B2B</cell><cell>0xFFB4</cell></row>
+    <row><cell>2</cell><cell>64000</cell><cell>PARSLEY</cell><cell>4</cell><cell>0x2B2B2B2B2B</cell><cell>0x2B2B2B</cell><cell>0xFFB4</cell></row>
+    <row><cell>3</cell><cell>51200</cell><cell>LETTUCE</cell><cell>3</cell><cell>0x2B2B2B2B2B</cell><cell>0x2B2B2B</cell><cell>0xFFB4</cell></row>
+    <row><cell>4</cell><cell>38400</cell><cell>SPINACH</cell><cell>2</cell><cell>0x2B2B2B2B2B</cell><cell>0x2B2B2B</cell><cell>0xFFB4</cell></row>
+    <row><cell>5</cell><cell>25600</cell><cell>CABBAGE</cell><cell>1</cell><cell>0x2B2B2B2B2B</cell><cell>0x2B2B2B</cell><cell></cell></row>
+  </table>
+  <field id="TOP SCORE SHORT">80000</field>
+  <field id="TOP SCORE">80000</field>
+</hi2txt>

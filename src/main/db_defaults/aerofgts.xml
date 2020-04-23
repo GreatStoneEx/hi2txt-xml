@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>200000</cell><cell>DAP</cell><cell>Robo Keaton USA F-117 Sea Hawk</cell></row>
+    <row><cell>2</cell><cell>150000</cell><cell>KAW</cell><cell>Captain Silver USA A-10 Thunder Bolt II</cell></row>
+    <row><cell>3</cell><cell>100000</cell><cell>GRO</cell><cell>Hien Japan FS-X</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>MIT</cell><cell>Mao Mao Japan F-15 DJ Eagle</cell></row>
+    <row><cell>5</cell><cell>10000</cell><cell>MBA</cell><cell>Volk the No Dead Russia Ka-50 Hokum</cell></row>
+  </table>
+</hi2txt>
+
+

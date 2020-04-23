@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-02-18 initial version
+    tested: mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4107ba:50:00:f8
+                  0:40d176:4:00:50</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>84</size>
+    </check>
+    <loop count="5"><elt size="4"  type="int"  id="SCORE" base="16"/></loop>
+    <loop count="5"><elt size="12" type="text" id="NAME"  byte-skip="0011" src-unit-size="16" ascii-offset="-3514" ascii-step="2" charset="gseeker"/></loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="gseeker">
+  	 <char src="0x1C2A" dst="["/>
+     <char src="0x1C2C" dst="`"/>
+     <char src="0x1C2E" dst="]"/>
+     <char src="0x1C30" dst="”"/>
+     <char src="0x1C32" dst="0"/>
+     <char src="0x1C34" dst="1"/>
+     <char src="0x1C36" dst="2"/>
+     <char src="0x1C38" dst="3"/>
+     <char src="0x1C3A" dst="4"/>
+     <char src="0x1C3C" dst="5"/>
+     <char src="0x1C3E" dst="6"/>
+     <char src="0x1C40" dst="7"/>
+     <char src="0x1C42" dst="8"/>
+     <char src="0x1C44" dst="9"/>
+     <char src="0x1C46" dst="&cancer;"/> <!-- ?? //-->
+     <char src="0x1C48" dst="&leo;"/>    <!-- ?? //-->
+     <char src="0x1C4A" dst="&black-star;"/>
+     <char src="0x1C4C" dst="&black-heart;"/>   
+     <char src="0x1C4E" dst="&#241;"/> <!-- Character: F-14X  //-->
+     <char src="0x1C50" dst="x"/>      <!-- Character: AH-64F //-->
+     <char src="0x1C52" dst="^"/>      <!-- Character: B-2AT  //-->
+     <char src="0x1C54" dst="&amp;"/>
+     <char src="0x1C56" dst="?"/>
+     <char src="0x1C58" dst="!"/>
+     <char src="0x1C5A" dst="-"/>
+     <char src="0x1C5C" dst="."/>
+     <char src="0x1C5E" dst="/"/>
+     <char src="0x1C60" dst=":"/>
+     <char src="0x1C62" dst=";"/>
+     <char src="0x1C64" dst="&lt;"/>
+     <char src="0x1C66" dst="="/>
+     <char src="0x1C68" dst="&gt;"/>
+     <char src="0x1C6A" dst="“"/>
+     <char src="0x1C6C" dst="@"/>
+     <char src="0x1C6E" dst="#"/>
+     <char src="0x1C6E" dst="$"/>
+     <char src="0x1C6E" dst="%"/>
+     <char src="0x1C6E" dst=","/>
+     <char src="0x1C6E" dst="'"/>
+     <char src="0x1C6E" dst="("/>
+     <char src="0x1C6E" dst=")"/>
+     <char src="0x1C6E" dst="*"/>
+     <char src="0x1C6E" dst="+"/>
+  </charset>
+</hi2txt>

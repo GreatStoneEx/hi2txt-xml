@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6023:4:00:00
+                  0:6320:6:23:1d</definition> <!-- redclash 0.148 //-->
+	  <definition>@:maincpu,program,6023,4,00,00
+                  @:maincpu,program,6320,6,1a,1e
+                  @:maincpu,program,41bd,01,00,00
+                  @:maincpu,program,41dd,01,00,00
+                  @:maincpu,program,41fd,01,06,06
+                  @:maincpu,program,421d,01,01,01
+                  @:maincpu,program,423d,01,01,01
+                  @:maincpu,program,425d,01,01,01</definition> <!-- redclash 0.204 //-->
+      <definition>0:6023:4:00:00
+                  0:6320:6:1a:1e</definition> <!-- redclashk //-->
+	  <definition>@:maincpu,program,6023,4,00,00
+                  @:maincpu,program,6320,6,23,1d
+                  @:maincpu,program,41bd,01,00,00
+                  @:maincpu,program,41dd,01,00,00
+                  @:maincpu,program,41fd,01,06,06
+                  @:maincpu,program,421d,01,01,01
+                  @:maincpu,program,423d,01,01,01
+                  @:maincpu,program,425d,01,01,01</definition> <!-- redclasht 0.204 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>10</size> <!-- 0.148 //-->
+	  <size>16</size> <!-- 0.204 //-->
+    </check>
+    <loop count="1">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="6" type="text" id="NAME"  charset="redclash" ascii-offset="49"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="redclash">
+    <char src="0x00" dst=" "/>
+    <char src="0x2D" dst="."/>
+  </charset>
+</hi2txt>

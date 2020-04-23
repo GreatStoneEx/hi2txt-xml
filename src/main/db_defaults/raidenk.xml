@@ -1,0 +1,24 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>MODE</col>
+    <row><cell>1</cell><cell>50000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>4</cell><cell>35000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>7</cell><cell>20000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>8</cell><cell>15000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>9</cell><cell>10000</cell><cell>...</cell><cell>1-1</cell><cell>SOLO</cell></row>
+    <row><cell>1</cell><cell>50000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>4</cell><cell>35000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>7</cell><cell>20000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>8</cell><cell>15000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+    <row><cell>9</cell><cell>10000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell></row>
+  </table>
+</hi2txt>
+

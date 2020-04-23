@@ -1,0 +1,8 @@
+RANK|SCORE
+1|CPU 10 vs DEF  0
+2|CPU  0 vs BZM  0
+3|TAM  0 vs TAM  0
+4|TAM  0 vs TAM  0
+5|TAM  0 vs TAM  0
+
+

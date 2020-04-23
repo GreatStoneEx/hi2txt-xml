@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col><col>SEPARATOR</col>
+    <row><cell>1</cell><cell>50000</cell><cell>JON</cell><cell>0000</cell><cell>00</cell></row>
+    <row><cell>2</cell><cell>40000</cell><cell>MES</cell><cell>0200</cell><cell>00</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>BNA</cell><cell>0400</cell><cell>00</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>PON</cell><cell>0600</cell><cell>00</cell></row>
+    <row><cell>5</cell><cell>10000</cell><cell>HAC</cell><cell>0800</cell><cell>00</cell></row>
+  </table>
+  <table id="VS TOP SCORES">
+    <col>RANK</col><col>VS WINS</col><col>VS NAME</col><col>VS UNKNOWN</col><col>VS SEPARATOR_1</col><col>VS SEPARATOR_2</col>
+    <row><cell>1</cell><cell>2 WINS</cell><cell>ISI</cell><cell>1200</cell><cell>0000</cell><cell>00</cell></row>
+    <row><cell>2</cell><cell>2 WINS</cell><cell>KWA</cell><cell>1400</cell><cell>0000</cell><cell>00</cell></row>
+    <row><cell>3</cell><cell>2 WINS</cell><cell>YUM</cell><cell>1600</cell><cell>0000</cell><cell>00</cell></row>
+    <row><cell>4</cell><cell>2 WINS</cell><cell>HRS</cell><cell>1800</cell><cell>0000</cell><cell>00</cell></row>
+    <row><cell>5</cell><cell>2 WINS</cell><cell>MOF</cell><cell>1A00</cell><cell>0000</cell><cell></cell></row>
+  </table>
+</hi2txt>

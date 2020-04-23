@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Akai Katana">
+  <!--
+    tested with mame 0.204 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi"> <!-- today scores only, other in nvram -->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,cb2fa9c,343,00,52
+                  @:maincpu,program,cb30e4c,343,00,4a
+                  @:maincpu,program,cb30474,343,00,44</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2505</size>
+    </check>
+    <loop count="10" skip-first-bytes="4" skip-last-bytes="1">
+	  <elt size="4"  type="raw"  id="CHAR1_EMPTY_1"/>
+      <elt size="24" type="int"  id="CHAR1_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="CHAR1_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="CHAR1_VAL_1"/>
+	  <elt size="4"  type="int"  id="CHAR1_VAL_2"/>
+	  <elt size="4"  type="int"  id="CHAR1_VAL_3"/>
+	  <elt size="4"  type="int"  id="CHAR1_VAL_4"/>
+	  <elt size="4"  type="int"  id="CHAR1_STAGE"/>
+	  <elt size="4"  type="raw"  id="CHAR1_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="CHAR1_BOSS"/>
+	  <elt size="8"  type="raw"  id="CHAR1_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="CHAR1_CONTINUE"/>
+      <elt size="3"  type="text" id="CHAR1_NAME"/>
+	  <elt size="1"  type="raw"  id="CHAR1_EMPTY_2"/>
+    </loop>
+	<loop count="10" skip-first-bytes="4" skip-last-bytes="1">
+      <elt size="4"  type="raw"  id="CHAR2_EMPTY_1"/>
+      <elt size="24" type="int"  id="CHAR2_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="CHAR2_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="CHAR2_VAL_1"/>
+	  <elt size="4"  type="int"  id="CHAR2_VAL_2"/>
+	  <elt size="4"  type="int"  id="CHAR2_VAL_3"/>
+	  <elt size="4"  type="int"  id="CHAR2_VAL_4"/>
+	  <elt size="4"  type="int"  id="CHAR2_STAGE"/>
+	  <elt size="4"  type="raw"  id="CHAR2_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="CHAR2_BOSS"/>
+	  <elt size="8"  type="raw"  id="CHAR2_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="CHAR2_CONTINUE"/>
+      <elt size="3"  type="text" id="CHAR2_NAME"/>
+	  <elt size="1"  type="raw"  id="CHAR2_EMPTY_2"/>
+    </loop>
+	<loop count="10" skip-first-bytes="4" skip-last-bytes="1">
+      <elt size="4"  type="raw"  id="CHAR3_EMPTY_1"/>
+      <elt size="24" type="int"  id="CHAR3_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="CHAR3_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="CHAR3_VAL_1"/>
+	  <elt size="4"  type="int"  id="CHAR3_VAL_2"/>
+	  <elt size="4"  type="int"  id="CHAR3_VAL_3"/>
+	  <elt size="4"  type="int"  id="CHAR3_VAL_4"/>
+	  <elt size="4"  type="int"  id="CHAR3_STAGE"/>
+	  <elt size="4"  type="raw"  id="CHAR3_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="CHAR3_BOSS"/>
+	  <elt size="8"  type="raw"  id="CHAR3_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="CHAR3_CONTINUE"/>
+      <elt size="3"  type="text" id="CHAR3_NAME"/>
+	  <elt size="1"  type="raw"  id="CHAR3_EMPTY_2"/>
+    </loop>
+  </structure>
+  <structure file="game"> <!-- hi scores in nvram -->
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>8468</size>
+    </check>
+	<elt size="28"  type="raw"  id="HI_CHAR1_UNKNOWN"/>
+    <loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR1_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR1_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR1_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR1_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR1_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR1_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR1_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR1_EMPTY_2"/>
+    </loop>
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR12_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR12_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR12_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR12_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR12_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR12_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR12_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR12_EMPTY_2"/>
+    </loop>
+	<elt size="844"  type="raw"  id="HI_CHAR13_RAW"/>
+	<!--<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR13_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR13_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR13_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR13_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR13_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR13_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR13_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR13_EMPTY_2"/>
+    </loop>-->
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR2_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR2_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR2_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR2_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR2_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR2_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR2_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR2_EMPTY_2"/>
+    </loop>
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR22_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR22_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR22_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR22_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR22_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR22_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR22_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR22_EMPTY_2"/>
+    </loop>
+	<elt size="4"  type="raw"  id="HI_CHAR23_RAW"/>
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR23_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR23_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR23_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR23_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR23_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR23_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR23_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR23_EMPTY_2"/>
+    </loop>
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR3_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR3_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR3_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR3_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR3_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR3_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR3_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR3_EMPTY_2"/>
+    </loop>
+	<elt size="844"  type="raw"  id="HI_CHAR32_RAW"/>
+	<!--<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR32_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR32_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR32_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR32_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR32_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR32_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR32_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR32_EMPTY_2"/>
+    </loop>-->
+	<loop count="10">
+	  <elt size="4"  type="raw"  id="HI_CHAR33_EMPTY_1"/>
+      <elt size="24" type="int"  id="HI_CHAR33_SCORE" nibble-skip="odd" endianness="little_endian" base="16"/>
+	  <elt size="12" type="raw"  id="HI_CHAR33_EMPTY_5"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_VAL_1"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_VAL_2"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_VAL_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_VAL_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_STAGE"/>
+	  <elt size="4"  type="raw"  id="HI_CHAR33_EMPTY_3"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_BOSS"/>
+	  <elt size="8"  type="raw"  id="HI_CHAR33_EMPTY_4"/>
+	  <elt size="4"  type="int"  id="HI_CHAR33_CONTINUE"/>
+      <elt size="3"  type="text" id="HI_CHAR33_NAME"/>
+	  <elt size="1"  type="raw"  id="HI_CHAR33_EMPTY_2"/>
+    </loop>
+  </structure>
+  <output>
+    <table id="CHARACTERS_1">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR1_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR1_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR1_VAL_1" display="debug"/>
+	  <column id="HI_CHAR1_VAL_2" display="debug"/>
+	  <column id="HI_CHAR1_VAL_3" display="debug"/>
+	  <column id="HI_CHAR1_VAL_4" display="debug"/>
+	  <column id="HI_CHAR1_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR1_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR1_NAME"/>
+	  <column id="SCORE" src="HI_CHAR1_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR1_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR1_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR1_CONTINUE"/>
+	  <column id="HI_CHAR1_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<!--<table id="CHARACTERS_12">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR12_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR12_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR12_VAL_1" display="debug"/>
+	  <column id="HI_CHAR12_VAL_2" display="debug"/>
+	  <column id="HI_CHAR12_VAL_3" display="debug"/>
+	  <column id="HI_CHAR12_VAL_4" display="debug"/>
+	  <column id="HI_CHAR12_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR12_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR12_NAME"/>
+	  <column id="SCORE" src="HI_CHAR12_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR12_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR12_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR12_CONTINUE"/>
+	  <column id="HI_CHAR12_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<table id="CHARACTERS_13">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR13_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR13_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR13_VAL_1" display="debug"/>
+	  <column id="HI_CHAR13_VAL_2" display="debug"/>
+	  <column id="HI_CHAR13_VAL_3" display="debug"/>
+	  <column id="HI_CHAR13_VAL_4" display="debug"/>
+	  <column id="HI_CHAR13_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR13_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR13_NAME"/>
+	  <column id="SCORE" src="HI_CHAR13_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR13_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR13_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR13_CONTINUE"/>
+	  <column id="HI_CHAR13_EMPTY_2" format="0x" display="debug"/>
+    </table>-->
+	<table id="CHARACTERS_2">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR3_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR3_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR3_VAL_1" display="debug"/>
+	  <column id="HI_CHAR3_VAL_2" display="debug"/>
+	  <column id="HI_CHAR3_VAL_3" display="debug"/>
+	  <column id="HI_CHAR3_VAL_4" display="debug"/>
+	  <column id="HI_CHAR3_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR3_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR3_NAME"/>
+	  <column id="SCORE" src="HI_CHAR3_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR3_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR3_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR3_CONTINUE"/>
+	  <column id="HI_CHAR3_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<!--<table id="CHARACTERS_22">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR22_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR22_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR22_VAL_1" display="debug"/>
+	  <column id="HI_CHAR22_VAL_2" display="debug"/>
+	  <column id="HI_CHAR22_VAL_3" display="debug"/>
+	  <column id="HI_CHAR22_VAL_4" display="debug"/>
+	  <column id="HI_CHAR22_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR22_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR22_NAME"/>
+	  <column id="SCORE" src="HI_CHAR22_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR22_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR22_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR22_CONTINUE"/>
+	  <column id="HI_CHAR22_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<table id="CHARACTERS_23">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR23_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR23_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR23_VAL_1" display="debug"/>
+	  <column id="HI_CHAR23_VAL_2" display="debug"/>
+	  <column id="HI_CHAR23_VAL_3" display="debug"/>
+	  <column id="HI_CHAR23_VAL_4" display="debug"/>
+	  <column id="HI_CHAR23_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR23_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR23_NAME"/>
+	  <column id="SCORE" src="HI_CHAR23_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR23_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR23_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR23_CONTINUE"/>
+	  <column id="HI_CHAR23_EMPTY_2" format="0x" display="debug"/>
+    </table>-->
+	<table id="CHARACTERS_3">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR2_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR2_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR2_VAL_1" display="debug"/>
+	  <column id="HI_CHAR2_VAL_2" display="debug"/>
+	  <column id="HI_CHAR2_VAL_3" display="debug"/>
+	  <column id="HI_CHAR2_VAL_4" display="debug"/>
+	  <column id="HI_CHAR2_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR2_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR2_NAME"/>
+	  <column id="SCORE" src="HI_CHAR2_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR2_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR2_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR2_CONTINUE"/>
+	  <column id="HI_CHAR2_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<!--<table id="CHARACTERS_32">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR32_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR32_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR32_VAL_1" display="debug"/>
+	  <column id="HI_CHAR32_VAL_2" display="debug"/>
+	  <column id="HI_CHAR32_VAL_3" display="debug"/>
+	  <column id="HI_CHAR32_VAL_4" display="debug"/>
+	  <column id="HI_CHAR32_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR32_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR32_NAME"/>
+	  <column id="SCORE" src="HI_CHAR32_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR32_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR32_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR32_CONTINUE"/>
+	  <column id="HI_CHAR32_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<table id="CHARACTERS_33">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="HI_CHAR33_EMPTY_1" format="0x" display="debug"/>
+	  <column id="HI_CHAR33_EMPTY_5" format="0x" display="debug"/>
+	  <column id="HI_CHAR33_VAL_1" display="debug"/>
+	  <column id="HI_CHAR33_VAL_2" display="debug"/>
+	  <column id="HI_CHAR33_VAL_3" display="debug"/>
+	  <column id="HI_CHAR33_VAL_4" display="debug"/>
+	  <column id="HI_CHAR33_EMPTY_3" format="0x" display="debug"/>
+	  <column id="HI_CHAR33_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="HI_CHAR33_NAME"/>
+	  <column id="SCORE" src="HI_CHAR33_SCORE"/>
+	  <column id="STAGE" src="HI_CHAR33_STAGE" format="+1"/>
+	  <column id="BOSS" src="HI_CHAR33_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="HI_CHAR33_CONTINUE"/>
+	  <column id="HI_CHAR33_EMPTY_2" format="0x" display="debug"/>
+    </table>-->
+	<table id="TODAYS_CHARACTERS_1">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="CHAR1_EMPTY_1" format="0x" display="debug"/>
+	  <column id="CHAR1_EMPTY_5" format="0x" display="debug"/>
+	  <column id="CHAR1_VAL_1" display="debug"/>
+	  <column id="CHAR1_VAL_2" display="debug"/>
+	  <column id="CHAR1_VAL_3" display="debug"/>
+	  <column id="CHAR1_VAL_4" display="debug"/>
+	  <column id="CHAR1_EMPTY_3" format="0x" display="debug"/>
+	  <column id="CHAR1_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="CHAR1_NAME"/>
+	  <column id="SCORE" src="CHAR1_SCORE"/>
+	  <column id="STAGE" src="CHAR1_STAGE" format="+1"/>
+	  <column id="BOSS" src="CHAR1_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="CHAR1_CONTINUE"/>
+	  <column id="CHAR1_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<table id="TODAYS_CHARACTERS_2">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="CHAR2_EMPTY_1" format="0x" display="debug"/>
+	  <column id="CHAR2_EMPTY_5" format="0x" display="debug"/>
+	  <column id="CHAR2_VAL_1" display="debug"/>
+	  <column id="CHAR2_VAL_2" display="debug"/>
+	  <column id="CHAR2_VAL_3" display="debug"/>
+	  <column id="CHAR2_VAL_4" display="debug"/>
+	  <column id="CHAR2_EMPTY_3" format="0x" display="debug"/>
+	  <column id="CHAR2_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="CHAR2_NAME"/>
+	  <column id="SCORE" src="CHAR2_SCORE"/>
+	  <column id="STAGE" src="CHAR2_STAGE" format="+1"/>
+	  <column id="BOSS" src="CHAR2_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="CHAR2_CONTINUE"/>
+	  <column id="CHAR2_EMPTY_2" format="0x" display="debug"/>
+    </table>
+	<table id="TODAYS_CHARACTERS_3">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="CHAR3_EMPTY_1" format="0x" display="debug"/>
+	  <column id="CHAR3_EMPTY_5" format="0x" display="debug"/>
+	  <column id="CHAR3_VAL_1" display="debug"/>
+	  <column id="CHAR3_VAL_2" display="debug"/>
+	  <column id="CHAR3_VAL_3" display="debug"/>
+	  <column id="CHAR3_VAL_4" display="debug"/>
+	  <column id="CHAR3_EMPTY_3" format="0x" display="debug"/>
+	  <column id="CHAR3_EMPTY_4" format="0x" display="debug"/>
+      <column id="NAME" src="CHAR3_NAME"/>
+	  <column id="SCORE" src="CHAR3_SCORE"/>
+	  <column id="STAGE" src="CHAR3_STAGE" format="+1"/>
+	  <column id="BOSS" src="CHAR3_BOSS" format="boss"/>
+	  <column id="CONTINUE" src="CHAR3_CONTINUE"/>
+	  <column id="CHAR3_EMPTY_2" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="boss">
+    <case src="0" dst="" default="yes"/>
+    <case src="1" dst="boss"/>
+  </format>
+  
+</hi2txt>

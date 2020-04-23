@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-05-26 initial version
+    tested: 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10922c:54:00:30
+                  0:10922e:1:c3:c3</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>85</size>
+    </check>
+    <loop count="6">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="2" type="text" id="STAGE"/>
+      <elt size="1" type="text" id="SPACE"/>
+      <elt size="1" type="raw"  id="SEPARATOR1"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR2"/>
+    </loop>
+    <elt size="4" type="raw"  id="UNKNOWN"/>
+    <elt size="8" type="text" id="TOP SCORE"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"      format="TrimL "/>
+      <column id="SPACE"                  display="debug"/>
+      <column id="SEPARATOR1" format="0x" display="debug"/>
+      <column id="SEPARATOR2" format="0x" display="debug"/>
+    </table>
+    <field id="UNKNOWN"   format="0x"     display="debug"/>
+    <field id="TOP SCORE" format="TrimL " display="extra"/>
+    <field id="CHECK"     format="0x"     display="debug"/>
+  </output>
+</hi2txt>

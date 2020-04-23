@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c093:51:07:00
+                  0:c12f:27:48:4b</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>120</size>
+    </check>
+    <loop count="10"><elt size="8" type="int"  id="SCORE" endianness="little_endian" nibble-skip="odd" base="16"/></loop>
+                     <elt size="1" type="raw"  id="UNKNOWN"/>
+    <loop count="10"><elt size="3" type="text" id="NAME" charset="pbaction"/>
+                     <elt size="1" type="raw"  id="SEPARATOR"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="pbaction">
+    <char src="0x3A" dst="."/>
+  </charset>
+</hi2txt>

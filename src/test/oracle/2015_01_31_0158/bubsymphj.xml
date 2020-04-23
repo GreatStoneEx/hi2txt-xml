@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>292870</cell><cell>GUNFRONT</cell><cell>B-03</cell><cell>KULULUN (ORANGE)</cell></row>
+    <row><cell>2</cell><cell>30000</cell><cell>KEPPEL  </cell><cell>F-06</cell><cell>BUBBLUN (GREEN)</cell></row>
+    <row><cell>3</cell><cell>25000</cell><cell>HARUMI K</cell><cell>E-05</cell><cell>BOBBLUN (BLUE)</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>KUZUKAWA</cell><cell>D-04</cell><cell>BUBBY (BOY)</cell></row>
+    <row><cell>5</cell><cell>15000</cell><cell>MARIRIN </cell><cell>C-03</cell><cell>CORORON (PURPLE)</cell></row>
+    <row><cell>6</cell><cell>10000</cell><cell>NATSUKO </cell><cell>B-02</cell><cell>KULUN (GIRL)</cell></row>
+  </table>
+  <field id="UNKNOWN1">0x0001000000000000000000000002000000030000FFFFFFFF000800000000FFFF0000000100000700</field>
+  <field id="UNKNOWN2">0x02</field>
+  <field id="UNKNOWN3">0x00000000000000000000000000080000004049C80040494800404948004049C80000015F0000000000051B800000000000C90000000000000000000000000000004100000000FF000358000A000A01B61C2E56001800000600030000010100010000000003061A0E12000001000007000000000000000000000000000000000000000000</field>
+</hi2txt>

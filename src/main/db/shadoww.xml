@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:62e34:d0:2e:00
+                  0:62e47:1:09:09</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>209</size>
+    </check>
+    <elt size="2" type="int" id="RANK POINTER"/> <!-- just for reference //-->
+    <elt size="2" type="int" id="RANK POINTER SPARE"/> <!-- just for reference //-->
+    <elt size="6" type="int"  id="SCORE P1" nibble-skip="odd" base="16"/>
+    <elt size="6" type="int"  id="SCORE P2" nibble-skip="odd" base="16"/>
+    <loop count="10">
+      <elt size="2" type="int"  id="NEXT RANK POINTER"/> <!-- just for reference //-->
+      <elt size="2" type="int"  id="RANK"  table-index="itself" nibble-skip="odd" base="16"/>
+      <elt size="6" type="int"  id="SCORE" table-index="last"   nibble-skip="odd" base="16"/>
+      <elt size="6" type="text" id="NAME"  table-index="last"   charset="shadoww"/>
+    </loop>
+    <loop count="2" start="10">
+      <elt size="2" type="int"  id="EMPTY NEXT RANK POINTER"/> <!-- just for reference //-->
+      <elt size="2" type="int"  id="EMPTY RANK"  table-index="itself" nibble-skip="odd" base="16"/> <!-- just for reference //-->
+      <elt size="6" type="int"  id="EMPTY SCORE" table-index="last"   nibble-skip="odd" base="16"/> <!-- just for reference //-->
+      <elt size="6" type="text" id="EMPTY NAME"  table-index="last"   charset="shadoww"/> <!-- just for reference //-->
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <table>
+      <field id="SCORE P1" display="extra"/>
+      <field id="SCORE P2" display="extra"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="shadoww">
+    <char src="0x5B" dst=" "/>
+    <char src="0x5C" dst="."/>
+  </charset>
+</hi2txt>

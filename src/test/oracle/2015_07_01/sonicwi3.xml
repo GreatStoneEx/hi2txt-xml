@@ -1,0 +1,36 @@
+<hi2txt>
+  <table id="1 PLAYER">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>105600</cell><cell>- 3</cell><cell>Ellen and Cindy England Sword Fish</cell></row>
+    <row><cell>2</cell><cell>10000</cell><cell>KTN</cell><cell>Mecha Keaton US F4F Corsair</cell></row>
+    <row><cell>3</cell><cell>9000</cell><cell>HIE</cell><cell>Hien Japan Zero Fighter</cell></row>
+    <row><cell>4</cell><cell>8000</cell><cell>C.P</cell><cell>Chaika and Pooshika Russia IL-2 Stormovik</cell></row>
+    <row><cell>5</cell><cell>7000</cell><cell>MAL</cell><cell>Malcolm Germany DO-335 Pfiel</cell></row>
+    <row><cell>6</cell><cell>6000</cell><cell>A.P</cell><cell>Alex and Pictus England Whirlwind</cell></row>
+  </table>
+  <table id="2 PLAYERS">
+    <col>RANK</col><col>2P SCORE</col><col>2P NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col>
+    <row><cell>1</cell><cell>20000</cell><cell>BLA</cell><cell>Mecha Keaton US F4F Corsair</cell><cell>Blazers US P-61 Black Widow</cell></row>
+    <row><cell>2</cell><cell>18000</cell><cell>MAO</cell><cell>Hien Japan Zero Fighter</cell><cell>Mao Mao Japan Seiran</cell></row>
+    <row><cell>3</cell><cell>16000</cell><cell>WHI</cell><cell>Chaika and Pooshika Russia IL-2 Stormovik</cell><cell>Spanky Russia Policarpov</cell></row>
+    <row><cell>4</cell><cell>14000</cell><cell>K.R</cell><cell>Malcolm Germany DO-335 Pfiel</cell><cell>Lord River-n-White and Kowful Germany Ju87G Stuka</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>E.C</cell><cell>Alex and Pictus England Whirlwind</cell><cell>Ellen and Cindy England Sword Fish</cell></row>
+  </table>
+  <table id="1 PLAYER BIS">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>105600</cell><cell>- 3</cell><cell>Ellen and Cindy England Sword Fish</cell></row>
+    <row><cell>2</cell><cell>10000</cell><cell>KTN</cell><cell>Mecha Keaton US F4F Corsair</cell></row>
+    <row><cell>3</cell><cell>9000</cell><cell>HIE</cell><cell>Hien Japan Zero Fighter</cell></row>
+    <row><cell>4</cell><cell>8000</cell><cell>C.P</cell><cell>Chaika and Pooshika Russia IL-2 Stormovik</cell></row>
+    <row><cell>5</cell><cell>7000</cell><cell>MAL</cell><cell>Malcolm Germany DO-335 Pfiel</cell></row>
+    <row><cell>6</cell><cell>6000</cell><cell>A.P</cell><cell>Alex and Pictus England Whirlwind</cell></row>
+  </table>
+  <table id="2 PLAYERS BIS">
+    <col>RANK</col><col>2P SCORE 2</col><col>2P NAME 2</col><col>CHARACTER 1</col><col>CHARACTER 2</col>
+    <row><cell>1</cell><cell>20000</cell><cell>BLA</cell><cell>Mecha Keaton US F4F Corsair</cell><cell>Blazers US P-61 Black Widow</cell></row>
+    <row><cell>2</cell><cell>18000</cell><cell>MAO</cell><cell>Hien Japan Zero Fighter</cell><cell>Mao Mao Japan Seiran</cell></row>
+    <row><cell>3</cell><cell>16000</cell><cell>WHI</cell><cell>Chaika and Pooshika Russia IL-2 Stormovik</cell><cell>Spanky Russia Policarpov</cell></row>
+    <row><cell>4</cell><cell>14000</cell><cell>K.R</cell><cell>Malcolm Germany DO-335 Pfiel</cell><cell>Lord River-n-White and Kowful Germany Ju87G Stuka</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>E.C</cell><cell>Alex and Pictus England Whirlwind</cell><cell>Ellen and Cindy England Sword Fish</cell></row>
+  </table>
+</hi2txt>

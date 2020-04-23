@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:600c904:64:00:00
+                  0:600c95d:1:01:01</definition>
+      <definition>0:600c900:64:00:00
+                  0:600c959:1:01:01</definition> <!-- sbombera //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>101</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="int" id="SCORE"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="CS_NUMBER[-14];sbomber" ascii-offset="64"/>
+      <elt size="1" type="raw"  id="NAME END"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="int" id="PLAYER"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="int" id="STAGE"/>
+    </loop>
+    <elt size="1" type="raw" id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"   format="stage"/>
+      <column id="PLAYER"  format="player"/>
+    </table>
+    <field id="CHECK" display="debug"/>
+  </output>
+  
+  <format id="stage" input-as-subcolumns-input="yes">
+    <concat>
+      <column format="world"/>
+      <txt>-</txt>
+      <column format="level"/>
+    </concat>
+  </format>
+  <format id="world">
+    <add>1</add>
+    <divide_trunc>4</divide_trunc>
+  </format>
+  <format id="level">
+    <add>1</add>
+    <remainder>4</remainder>
+  </format>
+  
+  <format id="player">
+    <case src="1"  dst="P1" default="yes"/>
+    <case src="2"  dst="P2"/>
+  </format>
+  
+  <charset id="sbomber">
+    <char src="0x00" dst=""/>
+    <char src="0x1B" dst="("/>
+    <char src="0x1C" dst=")"/>
+    <char src="0x1D" dst=","/>
+    <char src="0x1E" dst="-"/>
+    <char src="0x1F" dst="."/>
+    <char src="0x20" dst="/"/>
+    <char src="0x21" dst=":"/>
+    <char src="0x2C" dst=" "/>
+  </charset>
+</hi2txt>

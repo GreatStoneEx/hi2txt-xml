@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+	  modifications: T.Busse (2020, reduce to only 5 usable scores)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:e600:60:00:00
+                  0:e110:8:00:00
+                  0:d1be:1:24:24
+                  0:d1de:1:24:24
+                  0:d1fe:1:02:02
+                  0:d21e:1:00:00
+                  0:d23e:1:00:00
+                  0:d25e:1:00:00
+                  0:d27e:1:00:00</definition>
+      <definition>0:e600:60:00:00
+                  0:e110:8:00:00
+                  0:d1be:1:24:24
+                  0:d1de:1:02:02
+                  0:d1fe:1:00:00
+                  0:d21e:1:00:00
+                  0:d23e:1:00:00
+                  0:d25e:1:00:00
+                  0:d27e:1:00:00</definition> <!-- 1943kai //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>111</size>
+    </check>
+	<loop count="5">
+      <elt size="8" type="int"  id="SCORE"          decoding-profile="bcd"/>
+      <elt size="3" type="text" id="NAME"           ascii-offset="55" charset="cs1943"/>
+      <elt size="5" type="text" id="PADDING"        ascii-offset="55" charset="cs1943"/>
+	</loop>
+	<elt size="16" type="raw" id="PADDING2"/>
+    <elt size="8" type="int"  id="TOP SCORE"        decoding-profile="bcd"/>
+    <elt size="7" type="text" id="TOP SCORE STRING" ascii-offset="48" charset="cs1943"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="PADDING" display="extra"/>
+    </table>
+    <field  id="TOP SCORE"        display="extra"/>
+    <field  id="TOP SCORE STRING" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="cs1943">
+    <char src="0x24" dst=" "/>
+    <char src="0x2B" dst="."/>
+    <char src="0x2C" dst=":"/>
+    <char src="0x3A" dst="&amp;"/>
+    <char src="0x62" dst="&black-heart;"/>
+    <char src="0x64" dst="&black-star;"/>
+    <char src="0x66" dst="!"/>
+  </charset>
+</hi2txt>

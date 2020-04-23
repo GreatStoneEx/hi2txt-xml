@@ -1,0 +1,48 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>15710</cell><cell>VQM</cell></row>
+  </table>
+  <table id="100M TOP SCORES">
+    <col>RANK</col><col>100M SCORE</col><col>100M NAME</col>
+    <row><cell>1</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00sec</cell><cell>   </cell></row>
+  </table>
+  <table id="LONG JUMP TOP SCORES">
+    <col>RANK</col><col>LONG JUMP SCORE</col><col>LONG JUMP NAME</col>
+    <row><cell>1</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00m</cell><cell>   </cell></row>
+  </table>
+  <table id="JAVELIN TOP SCORES">
+    <col>RANK</col><col>JAVELIN SCORE</col><col>JAVELIN NAME</col>
+    <row><cell>1</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00m</cell><cell>   </cell></row>
+  </table>
+  <table id="100M HURDLES TOP SCORES">
+    <col>RANK</col><col>100M HURDLES SCORE</col><col>100M HURDLES NAME</col>
+    <row><cell>1</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00sec</cell><cell>   </cell></row>
+  </table>
+  <table id="HAMMER TOP SCORES">
+    <col>RANK</col><col>HAMMER SCORE</col><col>HAMMER NAME</col>
+    <row><cell>1</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00m</cell><cell>   </cell></row>
+  </table>
+  <table id="HIGH JUMP TOP SCORES">
+    <col>RANK</col><col>HIGH JUMP SCORE</col><col>HIGH JUMP NAME</col>
+    <row><cell>1</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00m</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00m</cell><cell>   </cell></row>
+  </table>
+</hi2txt>

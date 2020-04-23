@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>4096</size>
+    </check>
+    <!-- from hitotext: Qberqub has a checksum in the score tables, but the first one (Noser Elite) is always reset
+         when you run the machine. It does not matter that this score table and the checksum is
+         correctly saved in the nvram //-->
+    <elt size="815" type="raw" id="UNKNOWN"/>
+    <loop count="20">
+      <elt size="3" type="int"  id="COORD"     table-index="loop_reverse_index" base="16"/> <!-- what is this coord? //-->
+      <elt size="8" type="int"  id="SCORE"     table-index="loop_reverse_index" nibble-skip="odd" base="16"/>
+      <elt size="1" type="raw"  id="SEPARATOR" table-index="loop_reverse_index" />
+      <elt size="3" type="text" id="NAME"      table-index="loop_reverse_index" charset="qbertqub" ascii-offset="55"/>
+    </loop>
+    <elt size="1"    type="raw" id="UNKNOWN2"/>
+    <elt size="2"    type="raw" id="CHECKSUM"/>
+    <elt size="2978" type="raw" id="UNKNOWN2"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="COORD"     format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="CHECKSUM"     format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="qbertqub">
+    <char src="0xFF" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-05-20 initial version, still lot of unknown parts
+    tested: mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:40ed6c:96:00:07
+                  0:40ed8d:1:06:06
+                  0:40ea20:84:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>283</size>
+    </check>
+    <loop count="6">
+      <elt size="4" type="int" id="SCORE"/>
+    </loop>
+    <elt size="8"  type="raw" id="UNKNOWN1"/>
+    <loop count="6">
+      <elt size="2" type="int" id="STAGE_LETTER"/>
+    </loop>
+    <loop count="6">
+      <elt size="2" type="int" id="STAGE_NUMBER"/>
+    </loop>
+    <elt size="40" type="raw" id="UNKNOWN1"/>
+    <loop count="6">
+      <elt size="8" type="text" id="NAME" ascii-offset="63" charset="bubsymphj"/>
+    </loop>
+    <loop count="6">
+      <elt size="1" type="int" id="CHARACTER"/>
+    </loop>
+    <elt size="1"   type="raw" id="UNKNOWN2"/>
+    <elt size="132" type="raw" id="UNKNOWN3"/>
+    <!--<elt size="132" type="text" id="UNKNOWN3" charset="bubsymphj"/>-->
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="UNKNOWN1" format="0x" display="debug"/>
+    <field id="UNKNOWN2" format="0x" display="debug"/>
+    <field id="UNKNOWN3" format="0x" display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="BUBBLUN (GREEN)"/>
+    <case src="1" dst="BOBBLUN (BLUE)"/>
+    <case src="2" dst="KULULUN (ORANGE)"/>
+    <case src="3" dst="CORORON (PURPLE)"/>
+    <case src="4" dst="BUBBY (BOY)"/>
+    <case src="5" dst="BOBBY (BOY)"/>
+    <case src="6" dst="KULUN (GIRL)"/>
+    <case src="7" dst="CORON (GIRL)"/>
+  </format>
+  
+  <format id="stage">
+    <concat>
+      <column id="STAGE_LETTER" format="toLetter"/>
+      <txt>-</txt>
+      <column id="STAGE_NUMBER" format="PadL20"/>
+    </concat>
+  </format>
+  <format id="toLetter">
+    <case src="1" dst="A"/>
+    <case src="2" dst="B"/>
+    <case src="3" dst="C"/>
+    <case src="4" dst="D"/>
+    <case src="5" dst="E"/>
+    <case src="6" dst="F"/>
+    <case src="7" dst="G"/>
+    <case src="8" dst="H"/>
+    <case src="9" dst="I"/>
+    <case src="10" dst="J"/>
+    <case src="11" dst="K"/>
+    <case src="12" dst="L"/>
+    <case src="13" dst="M"/>
+    <case src="14" dst="N"/>
+    <case src="15" dst="O"/>
+    <case src="16" dst="P"/>
+    <case src="17" dst="Q"/>
+    <case src="18" dst="R"/>
+  </format>
+  
+  <charset id="bubsymphj">
+    <char src="0x00" dst=" "/>
+    <char src="0x01" dst=" "/>
+    <char src="0x1C" dst="!"/>
+    <char src="0x1D" dst="?"/>
+  </charset>
+</hi2txt>

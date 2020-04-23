@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fef558:288:5a:ff</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>648</size>
+    </check>
+    <loop count="36">
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="UNUSED_1"/>
+      <elt size="3" type="int"  id="SCORE"/>
+      <elt size="1" type="raw"  id="UNUSED_2"/>
+      <elt size="1" type="int"  id="SAN REMO"/>
+      <elt size="1" type="raw"  id="UNUSED_3"/>
+      <elt size="1" type="int"  id="MONTECARLO"/>
+      <elt size="1" type="raw"  id="UNUSED_4"/>
+      <elt size="1" type="int"  id="ACROPOLIS"/>
+      <elt size="1" type="raw"  id="UNUSED_5"/>
+      <elt size="1" type="int"  id="1000 LAKES"/>
+      <elt size="1" type="raw"  id="UNUSED_6"/>
+      <elt size="1" type="int"  id="TOTAL"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SAN REMO"   format="--"/>
+      <column id="MONTECARLO" format="--"/>
+      <column id="ACROPOLIS"  format="--"/>
+      <column id="1000 LAKES" format="--"/>
+      <column id="TOTAL"      format="--"/>
+      <column id="UNUSED_1" display="debug"/>
+      <column id="UNUSED_2" display="debug"/>
+      <column id="UNUSED_3" display="debug"/>
+      <column id="UNUSED_4" display="debug"/>
+      <column id="UNUSED_5" display="debug"/>
+      <column id="UNUSED_6" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="--">
+    <case src="255" dst="--"/>
+  </format>
+</hi2txt>

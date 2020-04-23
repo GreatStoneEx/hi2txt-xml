@@ -1,0 +1,68 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>MODE</col><col>CONTINUE</col><col>CHARACTER</col><col>SHOT</col><col>UNKNOWN</col><col>EMPTY</col>
+    <row><cell>1</cell><cell>1</cell><cell>22018060</cell><cell>PIE</cell><cell>3</cell><cell>ORIGINAL</cell><cell>1</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>8661481</cell><cell>PIE</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>6880571</cell><cell>KDK</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>4000000</cell><cell>NMR</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>3000000</cell><cell>TNK</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>26936097</cell><cell>SWY</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>10000000</cell><cell>INO</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>9000000</cell><cell>ICM</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>8000000</cell><cell>ODZ</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>7000000</cell><cell>IMI</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>14556343</cell><cell>K.K</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>10000000</cell><cell>ITT</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>9000000</cell><cell>FGH</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>8000000</cell><cell>U.V</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>7000000</cell><cell>U.V</cell><cell>2</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>16</cell><cell>1</cell><cell>6771041</cell><cell>ISO</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>17</cell><cell>2</cell><cell>4000000</cell><cell>YUI</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>18</cell><cell>3</cell><cell>3000000</cell><cell>NAI</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>19</cell><cell>4</cell><cell>2000000</cell><cell>SMR</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>20</cell><cell>5</cell><cell>1000000</cell><cell>UEK</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>21</cell><cell>1</cell><cell>10217205</cell><cell>TAC</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>22</cell><cell>2</cell><cell>10000000</cell><cell>ITM</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>23</cell><cell>3</cell><cell>9000000</cell><cell>FRH</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>24</cell><cell>4</cell><cell>8000000</cell><cell>TOM</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>25</cell><cell>5</cell><cell>7000000</cell><cell>SBH</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>26</cell><cell>1</cell><cell>22746122</cell><cell>OAM</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>27</cell><cell>2</cell><cell>10000000</cell><cell>ULT</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>28</cell><cell>3</cell><cell>9000000</cell><cell>UCA</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>29</cell><cell>4</cell><cell>8000000</cell><cell>U.A</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>30</cell><cell>5</cell><cell>7000000</cell><cell>U.A</cell><cell>2</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+  </table>
+  <table id="TODAYS TOP SCORES">
+    <col>TODAYS RANK</col><col>TODAYS LOCAL RANK</col><col>TODAYS SCORE</col><col>TODAYS NAME</col><col>TODAYS STAGE</col><col>TODAYS MODE</col><col>TODAYS CONTINUE</col><col>TODAYS CHARACTER</col><col>TODAYS SHOT</col><col>TODAYS UNKNOWN</col><col>TODAYS EMPTY</col>
+    <row><cell>1</cell><cell>1</cell><cell>22018060</cell><cell>PIE</cell><cell>3</cell><cell>ORIGINAL</cell><cell>1</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>8661481</cell><cell>PIE</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>6880571</cell><cell>KDK</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>4000000</cell><cell>NMR</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>3000000</cell><cell>TNK</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>26936097</cell><cell>SWY</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>10000000</cell><cell>INO</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>9000000</cell><cell>ICM</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>8000000</cell><cell>ODZ</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>7000000</cell><cell>IMI</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>14556343</cell><cell>K.K</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>10000000</cell><cell>ITT</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>9000000</cell><cell>FGH</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>8000000</cell><cell>U.V</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>7000000</cell><cell>U.V</cell><cell>2</cell><cell>ULTRA</cell><cell>0</cell><cell>RECO</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>16</cell><cell>1</cell><cell>6771041</cell><cell>ISO</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>17</cell><cell>2</cell><cell>4000000</cell><cell>YUI</cell><cell>4</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>18</cell><cell>3</cell><cell>3000000</cell><cell>NAI</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>19</cell><cell>4</cell><cell>2000000</cell><cell>SMR</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>20</cell><cell>5</cell><cell>1000000</cell><cell>UEK</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>21</cell><cell>1</cell><cell>10217205</cell><cell>TAC</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>22</cell><cell>2</cell><cell>10000000</cell><cell>ITM</cell><cell>4</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>23</cell><cell>3</cell><cell>9000000</cell><cell>FRH</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>24</cell><cell>4</cell><cell>8000000</cell><cell>TOM</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>25</cell><cell>5</cell><cell>7000000</cell><cell>SBH</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>26</cell><cell>1</cell><cell>22746122</cell><cell>OAM</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>27</cell><cell>2</cell><cell>10000000</cell><cell>ULT</cell><cell>4</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>0</cell><cell>0x0000</cell></row>
+    <row><cell>28</cell><cell>3</cell><cell>9000000</cell><cell>UCA</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>29</cell><cell>4</cell><cell>8000000</cell><cell>U.A</cell><cell>3</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>ABNORMAL</cell><cell>1</cell><cell>0x0000</cell></row>
+    <row><cell>30</cell><cell>5</cell><cell>7000000</cell><cell>U.A</cell><cell>2</cell><cell>ULTRA</cell><cell>0</cell><cell>PALM</cell><cell>NORMAL</cell><cell>1</cell><cell></cell></row>
+  </table>
+</hi2txt>

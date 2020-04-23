@@ -1,0 +1,64 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>88700</cell><cell>NOA</cell></row>
+    <row><cell>2</cell><cell>87700</cell><cell>JNQ</cell></row>
+    <row><cell>3</cell><cell>86700</cell><cell>GEO</cell></row>
+    <row><cell>4</cell><cell>85700</cell><cell>DNF</cell></row>
+    <row><cell>5</cell><cell>84700</cell><cell>NNT</cell></row>
+    <row><cell>6</cell><cell>83700</cell><cell>UDQ</cell></row>
+    <row><cell>7</cell><cell>82700</cell><cell>ZYT</cell></row>
+    <row><cell>8</cell><cell>81700</cell><cell>HIN</cell></row>
+    <row><cell>9</cell><cell>80700</cell><cell>GQO</cell></row>
+    <row><cell>10</cell><cell>79700</cell><cell>AIC</cell></row>
+    <row><cell>11</cell><cell>78700</cell><cell>OBG</cell></row>
+    <row><cell>12</cell><cell>77700</cell><cell>YPB</cell></row>
+    <row><cell>13</cell><cell>76700</cell><cell>HNE</cell></row>
+    <row><cell>14</cell><cell>75700</cell><cell>VNQ</cell></row>
+    <row><cell>15</cell><cell>74700</cell><cell>BXR</cell></row>
+    <row><cell>16</cell><cell>73700</cell><cell>SWB</cell></row>
+    <row><cell>17</cell><cell>72700</cell><cell>DAN</cell></row>
+    <row><cell>18</cell><cell>71700</cell><cell>QOT</cell></row>
+    <row><cell>19</cell><cell>70700</cell><cell>ODN</cell></row>
+    <row><cell>20</cell><cell>69700</cell><cell>QSA</cell></row>
+  </table>
+  <table id="BEST HIT AVERAGES">
+    <col>RANK</col><col>BEST HIT AVERAGE NAME</col><col>BEST HIT AVERAGE PERCENTAGE</col>
+    <row><cell>1</cell><cell>SAQ</cell><cell>49.26%</cell></row>
+    <row><cell>2</cell><cell>SWQ</cell><cell>32.18%</cell></row>
+    <row><cell>3</cell><cell>JBR</cell><cell>21.44%</cell></row>
+    <row><cell>4</cell><cell>QHA</cell><cell>17.53%</cell></row>
+    <row><cell>5</cell><cell>RNH</cell><cell>10.22%</cell></row>
+  </table>
+  <table id="BEST KOS WITH BEAR HUGGER">
+    <col>RANK</col><col>BEST KO BEAR HUGGER NAME</col><col>BEST KO BEAR HUGGER TIME</col>
+    <row><cell>1</cell><cell>DWD</cell><cell>0&apos;59&apos;&apos;03</cell></row>
+    <row><cell>2</cell><cell>NTU</cell><cell>1&apos;13&apos;&apos;45</cell></row>
+    <row><cell>3</cell><cell>QHP</cell><cell>2&apos;21&apos;&apos;10</cell></row>
+  </table>
+  <table id="BEST KOS WITH DRAGON CHAN">
+    <col>RANK</col><col>BEST KO DRAGON CHAN NAME</col><col>BEST KO DRAGON CHAN TIME</col>
+    <row><cell>1</cell><cell>HBP</cell><cell>1&apos;15&apos;&apos;00</cell></row>
+    <row><cell>2</cell><cell>BTU</cell><cell>1&apos;43&apos;&apos;83</cell></row>
+    <row><cell>3</cell><cell>JRQ</cell><cell>2&apos;59&apos;&apos;72</cell></row>
+  </table>
+  <table id="BEST KOS WITH VODKA DRUNKENSKI">
+    <col>RANK</col><col>BEST KO VODKA DRUNKENSKI NAME</col><col>BEST KO VODKA DRUNKENSKI TIME</col>
+    <row><cell>1</cell><cell>SDO</cell><cell>1&apos;54&apos;&apos;10</cell></row>
+    <row><cell>2</cell><cell>PLB</cell><cell>2&apos;29&apos;&apos;29</cell></row>
+    <row><cell>3</cell><cell>OBS</cell><cell>2&apos;56&apos;&apos;50</cell></row>
+  </table>
+  <table id="BEST KOS WITH GREAT TIGER">
+    <col>RANK</col><col>BEST KO GREAT TIGER NAME</col><col>BEST KO GREAT TIGER TIME</col>
+    <row><cell>1</cell><cell>ZDE</cell><cell>1&apos;30&apos;&apos;67</cell></row>
+    <row><cell>2</cell><cell>OCN</cell><cell>1&apos;57&apos;&apos;99</cell></row>
+    <row><cell>3</cell><cell>QOC</cell><cell>2&apos;48&apos;&apos;55</cell></row>
+  </table>
+  <table id="BEST KOS WITH SUPER MACHO MAN">
+    <col>RANK</col><col>BEST KO SUPER MACHO MAN NAME</col><col>BEST KO SUPER MACHO MAN TIME</col>
+    <row><cell>1</cell><cell>RSN</cell><cell>1&apos;59&apos;&apos;99</cell></row>
+    <row><cell>2</cell><cell>QSP</cell><cell>2&apos;11&apos;&apos;01</cell></row>
+    <row><cell>3</cell><cell>SGQ</cell><cell>2&apos;59&apos;&apos;99</cell></row>
+  </table>
+</hi2txt>
+

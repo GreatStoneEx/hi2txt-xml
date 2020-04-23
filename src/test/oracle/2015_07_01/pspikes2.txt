@@ -1,0 +1,8 @@
+RANK|SCORE|NAME|CHARACTER
+1|12230|0 10|40
+2|11220|129|41
+3|2000|ANY|Hyper League - Turbo Force
+4|1500|WIN|Hyper League - Neo Crashers
+5|1000|VZT|Hyper League - Steel Strikers
+
+

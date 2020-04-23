@@ -1,0 +1,467 @@
+<!ELEMENT hi2txt ((structure*,bitmask*,output*,format*,charset*)|sameas)>
+<!ATTLIST hi2txt label CDATA #IMPLIED>
+<!ATTLIST hi2txt ingame-score (true|false) "true">
+<!ELEMENT structure (check*,(elt|loop)+)>
+<!ATTLIST structure file CDATA #REQUIRED>
+<!ATTLIST structure output CDATA #IMPLIED> <!-- ref //-->
+<!ATTLIST structure byte-swap CDATA #IMPLIED> <!-- integer //-->
+<!ELEMENT check (definition*, size*)>
+<!ELEMENT definition (#PCDATA)>
+<!ELEMENT size (#PCDATA)> <!-- integer //-->
+<!ELEMENT loop (elt+)>
+<!ATTLIST loop count CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST loop start CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST loop step CDATA #IMPLIED>  <!-- integer //-->
+<!ATTLIST loop skip-last-bytes CDATA #IMPLIED>  <!-- integer //-->
+<!ATTLIST loop skip-first-bytes CDATA #IMPLIED>  <!-- integer //-->
+<!ELEMENT elt EMPTY>
+<!ATTLIST elt size CDATA #REQUIRED> <!-- integer //-->
+<!ATTLIST elt type (text|int|raw) "raw">
+<!ATTLIST elt id CDATA #REQUIRED>
+<!ATTLIST elt charset CDATA #IMPLIED>
+<!ATTLIST elt base CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST elt table-index CDATA #IMPLIED> <!-- index, loop_index, loop_reverse_index, last, itself, column:index_from_value, column:value_from_index //-->
+<!ATTLIST elt decoding-profile (base-40|base-32|bcd|bcd-le|null) "null">
+<!ATTLIST elt ascii-offset CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST elt endianness (big_endian|little_endian|default) "default">
+<!ATTLIST elt swap-skip-order CDATA #IMPLIED>
+<!ATTLIST elt byte-skip CDATA #IMPLIED> <!-- odd|even|0xXY //-->
+<!ATTLIST elt byte-trim CDATA #IMPLIED> <!-- 0xXY //-->
+<!ATTLIST elt byte-trunc CDATA #IMPLIED> <!-- 0xXY //-->
+<!ATTLIST elt nibble-skip (odd|even|null) "null">
+<!ATTLIST elt nibble-trim CDATA #IMPLIED> <!-- 0xX //-->
+<!ATTLIST elt byte-swap CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST elt bit-swap (0|no|false|1|yes|true) "0">
+<!ATTLIST elt table-index-format CDATA #IMPLIED>
+<!ATTLIST elt bitmask IDREF #IMPLIED>
+<!ATTLIST elt src-unit-size CDATA #IMPLIED> <!-- integer, in bits //-->
+<!ATTLIST elt dst-unit-size CDATA #IMPLIED> <!-- integer, in bytes //-->
+<!ATTLIST elt ascii-step CDATA #IMPLIED> <!-- integer //-->
+<!ATTLIST elt format CDATA #IMPLIED> <!-- reference //-->
+<!ELEMENT output (table|field)+>
+<!ATTLIST output id CDATA #IMPLIED> <!-- id //-->
+<!ELEMENT table (column|field)+>
+<!ATTLIST table id CDATA #IMPLIED> <!-- description for XML output //-->
+<!ATTLIST table line-ignore CDATA #IMPLIED> <!-- column:value //-->
+<!ATTLIST table line-ignore-operator CDATA #IMPLIED>
+<!ATTLIST table sort CDATA #IMPLIED> <!-- column //-->
+<!ATTLIST table sort-order (asc|desc) "asc">
+<!ATTLIST table sort-format CDATA #IMPLIED>
+<!ATTLIST table lines-max CDATA #IMPLIED>
+<!ATTLIST table display (always|extra|debug) "always">
+<!ELEMENT column (#PCDATA)>
+<!ATTLIST column id      CDATA #IMPLIED>
+<!ATTLIST column src     CDATA #IMPLIED> <!-- column //-->
+<!ATTLIST column format  CDATA #IMPLIED> <!-- reference or hexadecimal_string //-->
+<!ATTLIST column display (always|extra|debug) "always">
+<!ELEMENT field  (#PCDATA)>
+<!ATTLIST field  id      CDATA #IMPLIED>
+<!ATTLIST field  src     CDATA #IMPLIED> <!-- column //-->
+<!ATTLIST field  format  CDATA #IMPLIED> <!-- reference or hexadecimal_string //-->
+<!ATTLIST field  display (always|extra|debug) "always">
+<!ELEMENT txt  (#PCDATA)>
+<!ELEMENT format (add|prefix|multiply|case|divide|suffix|postfix|sum|concat|min|max|pad|trim|increment|substract|decrement|remainder|trunc|divide_trunc|replace|shift|uppercase|lowercase|capitalize)+>
+<!ATTLIST format id       CDATA #REQUIRED>
+<!ATTLIST format formatter CDATA #IMPLIED> <!-- regex //-->
+<!ATTLIST format apply-to (char|value) "value">
+<!ATTLIST format input-as-subcolumns-input (0|no|false|1|yes|true) "0">
+<!ELEMENT add          (#PCDATA|field|column)*>
+<!ELEMENT increment    (#PCDATA|field|column)*>
+<!ELEMENT prefix       (#PCDATA|field|column)*>
+<!ATTLIST prefix empty  CDATA #IMPLIED>
+<!ATTLIST prefix consume (0|no|false|1|yes|true) "0">
+<!ELEMENT multiply     (#PCDATA|field|column)*>
+<!ELEMENT divide       (#PCDATA|field|column)*>
+<!ELEMENT suffix       (#PCDATA|field|column)*>
+<!ATTLIST suffix empty  CDATA #IMPLIED>
+<!ATTLIST suffix consume (0|no|false|1|yes|true) "0">
+<!ELEMENT postfix      (#PCDATA|field|column)*>
+<!ELEMENT sum          (#PCDATA|field|column)*>
+<!ELEMENT concat       (#PCDATA|field|column|txt)*>
+<!ELEMENT min          (#PCDATA|field|column)*>
+<!ELEMENT max          (#PCDATA|field|column)*>
+<!ELEMENT pad          (#PCDATA|field|column)*>
+<!ATTLIST pad direction (left|right) "right">
+<!ATTLIST pad max       CDATA #REQUIRED>
+<!ELEMENT trim         (#PCDATA|field|column)*>
+<!ATTLIST trim direction (left|right|both) "right">
+<!ELEMENT substract    (#PCDATA|field|column)*>
+<!ELEMENT decrement    (#PCDATA|field|column)*>
+<!ELEMENT remainder    (#PCDATA|field|column)*>
+<!ELEMENT trunc        (#PCDATA|field|column)*>
+<!ELEMENT divide_trunc (#PCDATA|field|column)*>
+<!ELEMENT divide_round (#PCDATA|field|column)*>
+<!ELEMENT round        (#PCDATA|field|column)*>
+<!ELEMENT shift        (#PCDATA|field|column)*>
+<!ELEMENT replace      (#PCDATA|field|column)*>
+<!ATTLIST replace src CDATA #REQUIRED>
+<!ATTLIST replace dst CDATA #REQUIRED>
+<!ELEMENT uppercase    (#PCDATA|field|column)*>
+<!ELEMENT lowercase    (#PCDATA|field|column)*>
+<!ELEMENT capitalize   (#PCDATA|field|column)*>
+<!ELEMENT case EMPTY>
+<!ATTLIST case src      CDATA #REQUIRED>
+<!ATTLIST case operator CDATA #IMPLIED>
+<!ATTLIST case operator-format CDATA #IMPLIED>
+<!ATTLIST case dst      CDATA #IMPLIED>
+<!ATTLIST case format   CDATA #IMPLIED>
+<!ATTLIST case default  (0|no|false|1|yes|true) "0">
+<!ELEMENT charset (char)+>
+<!ATTLIST charset id ID #REQUIRED>
+<!ELEMENT char EMPTY>
+<!ATTLIST char src     CDATA #REQUIRED>
+<!ATTLIST char dst     CDATA #IMPLIED>
+<!ATTLIST char default (0|no|false|1|yes|true) "0">
+<!ELEMENT bitmask (character)+>
+<!ATTLIST bitmask id ID #REQUIRED>
+<!ATTLIST bitmask byte-completion (0|no|false|1|yes|true) "1">
+<!ELEMENT character EMPTY>
+<!ATTLIST character mask CDATA #REQUIRED>
+<!ELEMENT sameas EMPTY>
+<!ATTLIST sameas id CDATA #REQUIRED>
+
+<!-- entities //-->
+<!ENTITY quot                 "&#34;">
+<!ENTITY big-mid-dot          "&#149;">
+<!ENTITY copyright            "&#169;">
+<!ENTITY mid-dot              "&#183;">
+<!ENTITY one-on-two           "&#189;">
+<!ENTITY ring                 "&#214;">
+<!ENTITY acute                "&#225;">
+<!ENTITY y-strike             "&#590;">
+<!ENTITY bridge1              "&#761;">
+<!ENTITY bridge2              "&#765;">
+<!ENTITY bridge3              "&#766;">
+<!ENTITY alpha                "&#945;">
+<!ENTITY beta                 "&#946;">
+<!ENTITY gamma                "&#947;">
+<!ENTITY delta                "&#948;">
+<!ENTITY epsilon              "&#949;">
+<!ENTITY zeta                 "&#950;">
+<!ENTITY eta                  "&#951;">
+<!ENTITY theta                "&#952;">
+<!ENTITY iota                 "&#953;">
+<!ENTITY kappa                "&#954;">
+<!ENTITY lambda               "&#955;">
+<!ENTITY mu                   "&#956;">
+<!ENTITY nu                   "&#957;">
+<!ENTITY xi                   "&#958;">
+<!ENTITY omicron              "&#959;">
+<!ENTITY pi                   "&#960;">
+<!ENTITY rho                  "&#961;">
+<!ENTITY sigmaf               "&#962;">
+<!ENTITY sigma                "&#963;">
+<!ENTITY tau                  "&#964;">
+<!ENTITY upsilon              "&#965;">
+<!ENTITY phi                  "&#966;">
+<!ENTITY chi                  "&#967;">
+<!ENTITY psi                  "&#968;">
+<!ENTITY omega                "&#969;">
+<!ENTITY circle-line          "&#984;">
+<!ENTITY two-dots             "&#1417;">
+<!ENTITY inverted-question    "&#1567;">
+<!ENTITY rdquo                "&#8221;">
+<!ENTITY big-dot              "&#8226;">
+<!ENTITY three-dots           "&#8230;">
+<!ENTITY two-exclamations     "&#8252;">
+<!ENTITY broken-question      "&#8253;">
+<!ENTITY asterism             "&#8258;">
+<!ENTITY w-double-strike      "&#8361;">
+<!ENTITY square-2             "&#8414;">
+<!ENTITY roman-numeral-1      "&#8544;">
+<!ENTITY roman-numeral-2      "&#8545;">
+<!ENTITY roman-numeral-3      "&#8546;">
+<!ENTITY roman-numeral-4      "&#8547;">
+<!ENTITY roman-numeral-5      "&#8548;">
+<!ENTITY roman-numeral-6      "&#8549;">
+<!ENTITY roman-numeral-7      "&#8550;">
+<!ENTITY roman-numeral-8      "&#8551;">
+<!ENTITY roman-numeral-9      "&#8552;">
+<!ENTITY roman-numeral-10     "&#8553;">
+<!ENTITY roman-numeral-11     "&#8554;">
+<!ENTITY roman-numeral-12     "&#8555;">
+<!ENTITY small-roman-numeral-1  "&#8560;">
+<!ENTITY small-roman-numeral-2  "&#8561;">
+<!ENTITY small-roman-numeral-3  "&#8562;">
+<!ENTITY small-roman-numeral-4  "&#8563;">
+<!ENTITY small-roman-numeral-5  "&#8564;">
+<!ENTITY small-roman-numeral-6  "&#8565;">
+<!ENTITY small-roman-numeral-7  "&#8566;">
+<!ENTITY small-roman-numeral-8  "&#8567;">
+<!ENTITY small-roman-numeral-9  "&#8568;">
+<!ENTITY small-roman-numeral-10 "&#8569;">
+<!ENTITY small-roman-numeral-11 "&#8570;">
+<!ENTITY small-roman-numeral-12 "&#8571;">
+<!ENTITY left-arrow           "&#8592;">
+<!ENTITY right-double-arrow   "&#8658;">
+<!ENTITY four-lines           "&#8803;">
+<!ENTITY three-mid-dots       "&#8943;">
+<!ENTITY left-foot            "&#8968;">
+<!ENTITY right-foot           "&#8968;">
+<!ENTITY round-7              "&#9318;">
+<!ENTITY square               "&#9633;">
+<!ENTITY dot-in-square        "&#9635;">
+<!ENTITY h-lines-in-square    "&#9636;">
+<!ENTITY v-lines-in-square    "&#9637;">
+<!ENTITY slash-in-square      "&#9639;">
+<!ENTITY antislash-in-square  "&#9640;">
+<!ENTITY black-triangle-right "&#9658;">
+<!ENTITY black-triangle-down  "&#9660;">
+<!ENTITY two-cubes            "&#9707;"> 
+<!ENTITY umbrella             "&#9730;">
+<!ENTITY snowman              "&#9731;"> 
+<!ENTITY black-star           "&#9733;">
+<!ENTITY star                 "&#9734;">
+<!ENTITY headset              "&#9738;">
+<!ENTITY phone                "&#9742;">
+<!ENTITY hot-beverage         "&#9749;">
+<!ENTITY skull                "&#9760;">
+<!ENTITY ankh                 "&#9765;">
+<!ENTITY cross-of-lorraine    "&#9768;">
+<!ENTITY cross-of-jerusalem   "&#9769;">
+<!ENTITY peace                "&#9774;">
+<!ENTITY angry-face           "&#9785;">
+<!ENTITY smiley               "&#9786;">
+<!ENTITY black-smiley         "&#9787;">
+<!ENTITY sun                  "&#9788;">
+<!ENTITY moon                 "&#9789;">
+<!ENTITY crescent-moon        "&#9790;">
+<!ENTITY woman                "&#9792;">
+<!ENTITY man                  "&#9794;">
+<!ENTITY spaceship            "&#9798;">
+<!ENTITY aries                "&#9800;">
+<!ENTITY taurus               "&#9801;">
+<!ENTITY gemini               "&#9802;">
+<!ENTITY cancer               "&#9803;">
+<!ENTITY leo                  "&#9804;">
+<!ENTITY virgo                "&#9805;">
+<!ENTITY libra                "&#9806;">
+<!ENTITY scorpio              "&#9807;">
+<!ENTITY sagitarius           "&#9808;">
+<!ENTITY capricorn            "&#9809;">
+<!ENTITY aquarius             "&#9810;">
+<!ENTITY pisces               "&#9811;">
+<!ENTITY amber                "&#9816;"> <!-- chess: horse   //-->
+<!ENTITY black-spade          "&#9824;"> <!-- carte: pique   //-->
+<!ENTITY heart                "&#9825;"> <!-- carte: coeur   //-->
+<!ENTITY black-club           "&#9827;"> <!-- carte: trefle  //-->
+<!ENTITY black-heart          "&#9829;"> <!-- carte: coeur   //-->
+<!ENTITY black-diamond        "&#9830;"> <!-- carte: carreau //-->
+<!ENTITY single-music-note    "&#9834;">
+<!ENTITY double-music-note    "&#9835;">
+<!ENTITY crossed-swords       "&#9876;">
+<!ENTITY baseball             "&#9918;">
+<!ENTITY boat                 "&#9973;">
+<!ENTITY scissors             "&#9988;">
+<!ENTITY airplane             "&#9992;">
+<!ENTITY multiplication       "&#10005;">
+<!ENTITY big-exclamation      "&#10082;">
+<!ENTITY left-black-heart     "&#10085;">
+<!ENTITY black-right-arrow-large "&#10152;">
+<!ENTITY up-arrow-with-stroke "&#10505;">
+<!ENTITY jp-h-a-small         "&#12353;">
+<!ENTITY jp-h-a               "&#12354;">
+<!ENTITY jp-h-i-small         "&#12355;">
+<!ENTITY jp-h-i               "&#12356;">
+<!ENTITY jp-h-u-small         "&#12357;">
+<!ENTITY jp-h-u               "&#12358;">
+<!ENTITY jp-h-e-small         "&#12359;">
+<!ENTITY jp-h-e               "&#12360;">
+<!ENTITY jp-h-o-small         "&#12361;">
+<!ENTITY jp-h-o               "&#12362;">
+<!ENTITY jp-h-ka              "&#12363;">
+<!ENTITY jp-h-ga              "&#12364;">
+<!ENTITY jp-h-ki              "&#12365;">
+<!ENTITY jp-h-gi              "&#12366;">
+<!ENTITY jp-h-ku              "&#12367;">
+<!ENTITY jp-h-gu              "&#12368;">
+<!ENTITY jp-h-ke              "&#12369;">
+<!ENTITY jp-h-ge              "&#12370;">
+<!ENTITY jp-h-ko              "&#12371;">
+<!ENTITY jp-h-go              "&#12372;">
+<!ENTITY jp-h-sa              "&#12373;">
+<!ENTITY jp-h-za              "&#12374;">
+<!ENTITY jp-h-si              "&#12375;">
+<!ENTITY jp-h-zi              "&#12376;">
+<!ENTITY jp-h-su              "&#12377;">
+<!ENTITY jp-h-zu              "&#12378;">
+<!ENTITY jp-h-se              "&#12379;">
+<!ENTITY jp-h-ze              "&#12380;">
+<!ENTITY jp-h-so              "&#12381;">
+<!ENTITY jp-h-zo              "&#12382;">
+<!ENTITY jp-h-ta              "&#12383;">
+<!ENTITY jp-h-da              "&#12384;">
+<!ENTITY jp-h-ti              "&#12385;">
+<!ENTITY jp-h-di              "&#12386;">
+<!ENTITY jp-h-tu-small        "&#12387;">
+<!ENTITY jp-h-sokuon          "&#12387;">
+<!ENTITY jp-h-tu              "&#12388;">
+<!ENTITY jp-h-du              "&#12389;">
+<!ENTITY jp-h-te              "&#12390;">
+<!ENTITY jp-h-de              "&#12391;">
+<!ENTITY jp-h-to              "&#12392;">
+<!ENTITY jp-h-do              "&#12393;">
+<!ENTITY jp-h-na              "&#12394;">
+<!ENTITY jp-h-ni              "&#12395;">
+<!ENTITY jp-h-nu              "&#12396;">
+<!ENTITY jp-h-ne              "&#12397;">
+<!ENTITY jp-h-no              "&#12398;">
+<!ENTITY jp-h-ha              "&#12399;">
+<!ENTITY jp-h-ba              "&#12400;">
+<!ENTITY jp-h-pa              "&#12401;">
+<!ENTITY jp-h-hi              "&#12402;">
+<!ENTITY jp-h-bi              "&#12403;">
+<!ENTITY jp-h-pi              "&#12404;">
+<!ENTITY jp-h-hu              "&#12405;">
+<!ENTITY jp-h-bu              "&#12406;">
+<!ENTITY jp-h-pu              "&#12407;">
+<!ENTITY jp-h-he              "&#12408;">
+<!ENTITY jp-h-be              "&#12409;">
+<!ENTITY jp-h-pe              "&#12410;">
+<!ENTITY jp-h-ho              "&#12411;">
+<!ENTITY jp-h-bo              "&#12412;">
+<!ENTITY jp-h-po              "&#12413;">
+<!ENTITY jp-h-ma              "&#12414;">
+<!ENTITY jp-h-mi              "&#12415;">
+<!ENTITY jp-h-mu              "&#12416;">
+<!ENTITY jp-h-me              "&#12417;">
+<!ENTITY jp-h-mo              "&#12418;">
+<!ENTITY jp-h-ya-small        "&#12419;">
+<!ENTITY jp-h-youon-a         "&#12419;">
+<!ENTITY jp-h-ya              "&#12420;">
+<!ENTITY jp-h-yu-small        "&#12421;">
+<!ENTITY jp-h-youon-u         "&#12421;">
+<!ENTITY jp-h-yu              "&#12422;">
+<!ENTITY jp-h-yo-small        "&#12423;">
+<!ENTITY jp-h-youon-o         "&#12423;">
+<!ENTITY jp-h-yo              "&#12424;">
+<!ENTITY jp-h-ra              "&#12425;">
+<!ENTITY jp-h-ri              "&#12426;">
+<!ENTITY jp-h-ru              "&#12427;">
+<!ENTITY jp-h-re              "&#12428;">
+<!ENTITY jp-h-ro              "&#12429;">
+<!ENTITY jp-h-wa-small        "&#12430;">
+<!ENTITY jp-h-wa              "&#12431;">
+<!ENTITY jp-h-wi              "&#12432;">
+<!ENTITY jp-h-we              "&#12433;">
+<!ENTITY jp-h-wo              "&#12434;">
+<!ENTITY jp-h-n               "&#12435;">
+<!ENTITY jp-h-vu              "&#12436;">
+<!ENTITY jp-h-ka-small        "&#12437;">
+<!ENTITY jp-h-ke-small        "&#12438;">
+<!ENTITY jp-h-dakuten         "&#12443;">
+<!ENTITY jp-h-handakuten      "&#12444;">
+<!ENTITY jp-k-a-small         "&#12449;">
+<!ENTITY jp-k-a               "&#12450;">
+<!ENTITY jp-k-i-small         "&#12451;">
+<!ENTITY jp-k-i               "&#12452;">
+<!ENTITY jp-k-u-small         "&#12453;">
+<!ENTITY jp-k-u               "&#12454;">
+<!ENTITY jp-k-e-small         "&#12455;">
+<!ENTITY jp-k-e               "&#12456;">
+<!ENTITY jp-k-o-small         "&#12457;">
+<!ENTITY jp-k-o               "&#12458;">
+<!ENTITY jp-k-ka              "&#12459;">
+<!ENTITY jp-k-ga              "&#12460;">
+<!ENTITY jp-k-ki              "&#12461;">
+<!ENTITY jp-k-gi              "&#12462;">
+<!ENTITY jp-k-ku              "&#12463;">
+<!ENTITY jp-k-gu              "&#12464;">
+<!ENTITY jp-k-ke              "&#12465;">
+<!ENTITY jp-k-ge              "&#12466;">
+<!ENTITY jp-k-ko              "&#12467;">
+<!ENTITY jp-k-go              "&#12468;">
+<!ENTITY jp-k-sa              "&#12469;">
+<!ENTITY jp-k-za              "&#12470;">
+<!ENTITY jp-k-si              "&#12471;">
+<!ENTITY jp-k-zi              "&#12472;">
+<!ENTITY jp-k-su              "&#12473;">
+<!ENTITY jp-k-zu              "&#12474;">
+<!ENTITY jp-k-se              "&#12475;">
+<!ENTITY jp-k-ze              "&#12476;">
+<!ENTITY jp-k-so              "&#12477;">
+<!ENTITY jp-k-zo              "&#12478;">
+<!ENTITY jp-k-ta              "&#12479;">
+<!ENTITY jp-k-da              "&#12480;">
+<!ENTITY jp-k-ti              "&#12481;">
+<!ENTITY jp-k-di              "&#12482;">
+<!ENTITY jp-k-tu-small        "&#12483;">
+<!ENTITY jp-k-tu              "&#12484;">
+<!ENTITY jp-k-du              "&#12485;">
+<!ENTITY jp-k-te              "&#12486;">
+<!ENTITY jp-k-de              "&#12487;">
+<!ENTITY jp-k-to              "&#12488;">
+<!ENTITY jp-k-do              "&#12489;">
+<!ENTITY jp-k-na              "&#12490;">
+<!ENTITY jp-k-ni              "&#12491;">
+<!ENTITY jp-k-nu              "&#12492;">
+<!ENTITY jp-k-ne              "&#12493;">
+<!ENTITY jp-k-no              "&#12494;">
+<!ENTITY jp-k-ha              "&#12495;">
+<!ENTITY jp-k-ba              "&#12496;">
+<!ENTITY jp-k-pa              "&#12497;">
+<!ENTITY jp-k-hi              "&#12498;">
+<!ENTITY jp-k-bi              "&#12499;">
+<!ENTITY jp-k-pi              "&#12500;">
+<!ENTITY jp-k-hu              "&#12501;">
+<!ENTITY jp-k-bu              "&#12502;">
+<!ENTITY jp-k-pu              "&#12503;">
+<!ENTITY jp-k-he              "&#12504;">
+<!ENTITY jp-k-be              "&#12505;">
+<!ENTITY jp-k-pe              "&#12506;">
+<!ENTITY jp-k-ho              "&#12507;">
+<!ENTITY jp-k-bo              "&#12508;">
+<!ENTITY jp-k-po              "&#12509;">
+<!ENTITY jp-k-ma              "&#12510;">
+<!ENTITY jp-k-mi              "&#12511;">
+<!ENTITY jp-k-mu              "&#12512;">
+<!ENTITY jp-k-me              "&#12513;">
+<!ENTITY jp-k-mo              "&#12514;">
+<!ENTITY jp-k-ya-small        "&#12515;">
+<!ENTITY jp-k-ya              "&#12516;">
+<!ENTITY jp-k-yu-small        "&#12517;">
+<!ENTITY jp-k-yu              "&#12518;">
+<!ENTITY jp-k-yo-small        "&#12519;">
+<!ENTITY jp-k-yo              "&#12520;">
+<!ENTITY jp-k-ra              "&#12521;">
+<!ENTITY jp-k-ri              "&#12522;">
+<!ENTITY jp-k-ru              "&#12523;">
+<!ENTITY jp-k-re              "&#12524;">
+<!ENTITY jp-k-ro              "&#12525;">
+<!ENTITY jp-k-wa-small        "&#12526;">
+<!ENTITY jp-k-wa              "&#12527;">
+<!ENTITY jp-k-wi              "&#12528;">
+<!ENTITY jp-k-we              "&#12529;">
+<!ENTITY jp-k-wo              "&#12530;">
+<!ENTITY jp-k-n               "&#12531;">
+<!ENTITY jp-k-vu              "&#12532;">
+<!ENTITY jp-k-ka-small        "&#12533;">
+<!ENTITY jp-k-ke-small        "&#12534;">
+<!ENTITY jp-k-va              "&#12535;">
+<!ENTITY jp-k-vi              "&#12536;">
+<!ENTITY jp-k-ve              "&#12537;">
+<!ENTITY jp-k-vo              "&#12538;">
+
+<!ENTITY jp-k-zero            "&#38646;">
+<!ENTITY jp-k-one             "&#19968;">
+<!ENTITY jp-k-two             "&#20108;">
+<!ENTITY jp-k-three           "&#19977;">
+<!ENTITY jp-k-four            "&#22235;">
+<!ENTITY jp-k-five            "&#20116;">
+<!ENTITY jp-k-six             "&#20845;">
+<!ENTITY jp-k-seven           "&#19971;">
+<!ENTITY jp-k-height          "&#20843;">
+<!ENTITY jp-k-nine            "&#20061;">
+
+<!ENTITY lama                 "x">       <!-- 128042 -->
+<!ENTITY cat-face             "&#9786;"> <!-- 128049 -->
+<!ENTITY whale                "x">       <!-- 128051 -->
+<!ENTITY thumbs-up            "&#8730;"> <!-- 128077 -->
+<!ENTITY shoe                 "x">       <!-- 128095 -->
+<!ENTITY kiss                 "&#9786;"> <!-- 128139 -->
+<!ENTITY heart-with-arrow     "&#9829;"> <!-- 128152 -->
+<!ENTITY car-side             "&#9936;"> <!-- 128663 -->
+<!ENTITY car-front            "&#9936;"> <!-- 128664 -->
+<!ENTITY mens-symbol          "&#9794;"> <!-- 128697 -->
+<!ENTITY womens-symbol        "&#9792;"> <!-- 128698 -->
+<!ENTITY feet                 "&#128062;">

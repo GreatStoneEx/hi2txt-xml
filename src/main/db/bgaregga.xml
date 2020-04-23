@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10ca4d:ea:0f:2a
+                  0:100030:1:72:72</definition> <!-- bgaregga //-->
+      <definition>0:10ca4f:ea:0f:2a
+                  0:100030:1:72:72</definition> <!-- bgaregganv //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>235</size>
+    </check>
+    <loop count="1">
+      <!-- hiscore.dat: 1st byte of 1st score not dumped //-->
+      <elt size="3" type="int"  id="SCORE"/>
+      <elt size="7" type="text" id="SCORE ALT"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="raw"  id="EMPTY2"/>
+      <elt size="1" type="int"  id="CHARACTER"/> 
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="DEFAULT"/>
+      <elt size="1" type="int"  id="PLAYER" nibble-skip="odd"/>
+    </loop>
+    <loop count="8" start="1">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="7" type="text" id="SCORE ALT"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="raw"  id="EMPTY2"/>
+      <elt size="1" type="int"  id="CHARACTER"/> 
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="DEFAULT"/>
+      <elt size="1" type="int"  id="PLAYER" nibble-skip="odd"/>
+    </loop>
+    <loop count="1" start="9">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="7" type="text" id="SCORE ALT"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="raw"  id="EMPTY2"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <!-- hiscore.dat: last 5 bytes not dumped //-->
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="SCORE ALT" format="trim" display="debug"/>
+      <column id="EMPTY"     format="0x"   display="debug"/>
+      <column id="NAME"/>
+      <column id="EMPTY2"    format="0x"   display="debug"/>
+      <column id="UNKNOWN"   format="0x"   display="debug"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="STAGE"/>                      <!-- not sure, just a guess //-->
+      <column id="PLAYER"    format="player"/>  <!-- not sure, just a guess //-->
+      <column id="DEFAULT"   format="default"/> <!-- not sure, just a guess //-->
+    </table>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src="42"  dst="*"/>
+    <case src="96"  dst="SILVER SWORD"/>
+    <case src="97"  dst="GRASS HOPPER"/>
+    <case src="98"  dst="FLYING BARON"/>
+    <case src="99"  dst="WILD SNAIL"/>
+    <case src="100" dst="GAIN"/>
+    <case src="101" dst="CHITTA"/>
+    <case src="102" dst="MIYAMOTO"/>
+    <case src="103" dst="BORNNAM"/>
+  </format>
+  <format id="player">
+    <case src="0" dst="P1"/>
+    <case src="1" dst="P2"/>
+    <case src="2" dst="*"/>
+  </format>
+  <format id="default">
+    <case src="0" dst="yes"/>
+    <case src="1" dst="no"/>
+  </format>
+  <format id="trim">
+    <trim direction="left"> </trim>
+  </format>
+</hi2txt>

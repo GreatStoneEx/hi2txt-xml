@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>TIME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>200000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>SILPH</cell></row>
+    <row><cell>2</cell><cell>190000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>VALKYRIE</cell></row>
+    <row><cell>3</cell><cell>180000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>SEYLEN</cell></row>
+    <row><cell>4</cell><cell>170000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>VALKYRIE</cell></row>
+    <row><cell>5</cell><cell>168710</cell><cell> $-</cell><cell>2</cell><cell>05:32</cell><cell>SILPH</cell></row>
+    <row><cell>6</cell><cell>160000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>SILPH</cell></row>
+    <row><cell>7</cell><cell>150000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>SILPH</cell></row>
+    <row><cell>8</cell><cell>140000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>SEYLEN</cell></row>
+    <row><cell>9</cell><cell>130000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>VALKYRIE</cell></row>
+    <row><cell>10</cell><cell>120000</cell><cell>...</cell><cell>1</cell><cell>00:00</cell><cell>VALKYRIE</cell></row>
+  </table>
+  <field id="TOP SCORE">20000</field>
+</hi2txt>

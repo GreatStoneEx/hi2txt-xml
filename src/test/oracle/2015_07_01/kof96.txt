@@ -1,0 +1,17 @@
+# 1 PLAYER
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|UNKNOWN|SEPARATOR
+1|100000|S.S|Chizuru Kagura|Goenitz|29|0|0xFF
+2|80000|SNK|Ryo Sakazaki|Robert Garcia|Yuri Sakazaki|1|0xFF
+3|60000|SNK|Terry Bogard|Andy Bogard|Joe Higashi|0|0xFF
+4|40000|SNK|Athena Asamiya|Sie Kensou|Chin Gentsai|1|0xFF
+5|20000|SNK|Leona|Ralf|Clark|0|0xFF
+
+# 2 PLAYERS
+RANK|VS SCORE|VS NAME|VS CHARACTER 1|VS CHARACTER 2|VS CHARACTER 3|VS UNKNOWN|VS SEPARATOR
+1|15|S.S|30|31|32|0|0xFF
+2|10|SNK|Ryo Sakazaki|Robert Garcia|Yuri Sakazaki|1|0xFF
+3|8|SNK|Terry Bogard|Andy Bogard|Joe Higashi|0|0xFF
+4|6|SNK|Athena Asamiya|Sie Kensou|Chin Gentsai|1|0xFF
+5|4|SNK|Leona|Ralf|Clark|0|0xFF
+
+

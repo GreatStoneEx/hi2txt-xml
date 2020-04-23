@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col>
+    <row><cell>1</cell><cell>765000</cell><cell>KOH</cell><cell>7</cell></row>
+    <row><cell>2</cell><cell>500000</cell><cell>Y.K</cell><cell>6</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>FKD</cell><cell>5</cell></row>
+    <row><cell>4</cell><cell>300000</cell><cell>HRM</cell><cell>4</cell></row>
+    <row><cell>5</cell><cell>200000</cell><cell>MTK</cell><cell>3</cell></row>
+  </table>
+</hi2txt>
+

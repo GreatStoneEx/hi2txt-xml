@@ -1,0 +1,15 @@
+RANK|SCORE|NAME|STAGE|CHARACTER|MAX CHAIN|RANK / CHAIN|UNKNOWN
+1|21191351|いろはに (Irohani)|All|Shishin (P2)|3440|1|0x0
+2|2321183|ほへとそ (Hohetoso)|6|Kamono Gensuke (P2)|3375|1|0x0
+3|539186|゜゛゜っ|5|Shishin (P1)|755|1|0x0
+4|483576|ゃゅょょ゜|11|Hiiragi Kosame (P1)|407|1|0x0
+5|470133|んん゜ん゛し (Nnnshi)|6|Shishin (P1)|327|1|0x0
+6|236291|いい゛い゜ょ゜ (Iii)|2|Shishin (P1)|383|1|0x0
+7|228204||2|Kamono Gensuke (P1)|251|1|0x0
+8|200000|きのえ (Kinoe)|4|Shishin (P1)|1000|1|0x0
+9|180000|きのと (Kinoto)|3|Kamono Gensuke (P1)|900|2|0x0
+10|160000|ひのえ (Hinoe)|3|Hiiragi Kosame (P1)|800|3|0x0
+
+TOP SCORE
+21191351
+

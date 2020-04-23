@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c889b1c:2cff:06:4e</definition>
+      <definition>0:c88877c:2cff:06:4e</definition> <!-- ddpdfk10 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>11519</size>
+    </check>
+    <loop count="90">
+      <elt size="14" type="int"  id="TODAYS SCORE" nibble-skip="odd" base="16" endianness="little_endian"/>
+      <elt size="24" type="raw"  id="TODAYS EMPTY"/>
+      <elt size="2"  type="int"  id="TODAYS CHARACTER"/>
+      <elt size="2"  type="raw"  id="TODAYS EMPTY2"/>
+      <elt size="2"  type="int"  id="TODAYS STAGE ONLY"/>
+      <elt size="4"  type="raw"  id="TODAYS EMPTY3"/>
+      <elt size="2"  type="int"  id="TODAYS BOSS"/>
+      <elt size="4"  type="raw"  id="TODAYS EMPTY4"/>
+      <elt size="2"  type="int"  id="TODAYS STYLE"/>
+      <elt size="2"  type="raw"  id="TODAYS EMPTY5"/>
+      <elt size="2"  type="int"  id="TODAYS CONTINUE"/>
+      <elt size="3"  type="text" id="TODAYS NAME" charset="ddpdfk"/>
+      <elt size="1"  type="raw"  id="TODAYS EMPTY6"/>
+    </loop>
+    <loop count="90">
+      <elt size="14" type="int"  id="SCORE" nibble-skip="odd" base="16" endianness="little_endian"/>
+      <elt size="24" type="raw"  id="EMPTY"/>
+      <elt size="2"  type="int"  id="CHARACTER"/>
+      <elt size="2"  type="raw"  id="EMPTY2"/>
+      <elt size="2"  type="int"  id="STAGE ONLY"/>
+      <elt size="4"  type="raw"  id="EMPTY3"/>
+      <elt size="2"  type="int"  id="BOSS"/>
+      <elt size="4"  type="raw"  id="EMPTY4"/>
+      <elt size="2"  type="int"  id="STYLE"/>
+      <elt size="2"  type="raw"  id="EMPTY5"/>
+      <elt size="2"  type="int"  id="CONTINUE"/>
+      <elt size="3"  type="text" id="NAME" charset="ddpdfk"/>
+      <elt size="1"  type="raw"  id="EMPTY6"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="LOCAL RANK" src="index" format="%10;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage_boss"/>
+      <column id="CONTINUE"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="STYLE" format="style"/>
+      <column id="EMPTY"  format="0x" display="debug"/>
+      <column id="EMPTY2" format="0x" display="debug"/>
+      <column id="EMPTY3" format="0x" display="debug"/>
+      <column id="EMPTY4" format="0x" display="debug"/>
+      <column id="EMPTY5" format="0x" display="debug"/>
+      <column id="EMPTY6" format="0x" display="debug"/>
+    </table>
+    <table id="TODAYS TOP SCORES">
+      <column id="TODAYS RANK" src="index" format="+1"           display="extra"/>
+      <column id="TODAYS LOCAL RANK" src="index" format="%10;+1" display="extra"/>
+      <column id="TODAYS SCORE"                                  display="extra"/>
+      <column id="TODAYS NAME"                                   display="extra"/>
+      <column id="TODAYS STAGE" format="todays_stage_boss"       display="extra"/>
+      <column id="TODAYS CONTINUE"                               display="extra"/>
+      <column id="TODAYS CHARACTER" format="character"           display="extra"/>
+      <column id="TODAYS STYLE" format="style"                   display="extra"/>
+      <column id="TODAYS EMPTY"  format="0x" display="debug"/>
+      <column id="TODAYS EMPTY2" format="0x" display="debug"/>
+      <column id="TODAYS EMPTY3" format="0x" display="debug"/>
+      <column id="TODAYS EMPTY4" format="0x" display="debug"/>
+      <column id="TODAYS EMPTY5" format="0x" display="debug"/>
+      <column id="TODAYS EMPTY6" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="RED"/>
+    <case src="1" dst="GREEN"/>
+    <case src="2" dst="BLUE"/>
+  </format>
+  <format id="style">
+    <case src="0" dst="BOMB"/>
+    <case src="1" dst="POWER"/>
+    <case src="2" dst="STRONG"/>
+  </format>
+  <format id="stage_boss">
+    <concat>
+      <column id="STAGE ONLY" format="+1;stage_all"/>
+      <column id="BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="todays_stage_boss">
+    <concat>
+      <column id="TODAYS STAGE ONLY" format="+1;stage_all"/>
+      <column id="TODAYS BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="stage_all">
+    <case src="5"  operator="&gt;" dst="All"/>
+  </format>
+  <format id="boss">
+    <case src="0" dst="" default="yes"/>
+    <case src="1" dst=" boss"/>
+  </format>
+  
+  <charset id="ddpdfk">
+    <char src="0x00" dst=""/>
+    <char src="0x2E" dst="."/>
+    <char src="0xFE" dst=""/>
+  </charset>
+</hi2txt>

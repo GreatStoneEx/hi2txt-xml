@@ -1,0 +1,88 @@
+<hi2txt>
+  <field id="UNKNOWN">2E252957520000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002</field>
+  <table id="DAILY TOP SCORES">
+    <col>RANK</col><col>DAILY SCORE</col><col>DAILY BUZZARD</col><col>DAILY CHECKSUM</col>
+    <row><cell>1</cell><cell>44210</cell><cell>JRN</cell><cell>240</cell></row>
+    <row><cell>2</cell><cell>43217</cell><cell>JOE</cell><cell>240</cell></row>
+    <row><cell>3</cell><cell>42999</cell><cell>KVD</cell><cell>240</cell></row>
+    <row><cell>4</cell><cell>41011</cell><cell>WBD</cell><cell>240</cell></row>
+    <row><cell>5</cell><cell>40523</cell><cell>ML </cell><cell>240</cell></row>
+    <row><cell>6</cell><cell>39909</cell><cell>C G</cell><cell>240</cell></row>
+  </table>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>BUZZARD</col><col>CHECKSUM</col>
+    <row><cell>1</cell><cell>12500</cell><cell> A </cell><cell>ZXW</cell><cell>254</cell></row>
+    <row><cell>2</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>3</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>4</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>5</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>6</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>7</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>8</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>9</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>10</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>11</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>12</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>13</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>14</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>15</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>16</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>17</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>18</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>19</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>20</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>21</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>22</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>23</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>24</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>25</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>26</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>27</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>28</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>29</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>30</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>31</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>32</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>33</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>34</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>35</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>36</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>37</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>38</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>39</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>40</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+    <row><cell>41</cell><cell>4000</cell><cell>   </cell><cell></cell><cell>242</cell></row>
+  </table>
+  <field id="COPYRIGHT_1">       PRESENTED BY:</field>
+  <field id="COPYRIGHT_2">     WILLIAMS ELECTRONICS INC</field>
+  <field id="EXTRA MAN EVERY">25000</field>
+  <field id="MEN FOR 1 CREDIT GAME">5</field>
+  <field id="HIGH SCORE TO DATE ALLOWED">YES</field>
+  <field id="SOUND IN ATTRACT MODE ALLOWED">YES</field>
+  <field id="PRICING SELECTION">3</field>
+  <field id="LEFT SLOT UNITS">1</field>
+  <field id="CENTER SLOT UNITS">4</field>
+  <field id="RIGHT SLOT UNITS">1</field>
+  <field id="UNITS REQUIRED FOR CREDIT">1</field>
+  <field id="UNITS REQUIRED FOR BONUS CREDIT">0</field>
+  <field id="MINIMUM UNITS FOR ANY CREDIT">0</field>
+  <field id="DIFFICULTY OF PLAY">5</field>
+  <field id="LETTERS FOR HIGHEST SCORE">3</field>
+  <field id="RESTORE FACTORY SETTINGS">NO</field>
+  <field id="CLEAR BOOKKEEPING TOTALS">NO</field>
+  <field id="HIGH SCORE TABLE RESET">NO</field>
+  <field id="AUTO CYCLE">NO</field>
+  <field id="SET ATTRACT MODE MESSAGE">NO</field>
+  <field id="SET HIGHEST SCORE NAME">NO</field>
+  <field id="LEFT SLOT COINS">3</field>
+  <field id="CENTER SLOT COINS">0</field>
+  <field id="RIGHT SLOT COINS">0</field>
+  <field id="PAID CREDITS">3</field>
+  <field id="FREE MEN">0</field>
+  <field id="TOTAL TIME IN MINUTES">2</field>
+  <field id="TOTAL MEN PLAYED">5</field>
+  <field id="TOTAL BUY-INS">0</field>
+  <field id="TOTAL SINGLE PLAYER">1</field>
+  <field id="TOTAL DUAL PLAYER">0</field>
+  <field id="TOTAL CREDITS PLAYED">1</field>
+</hi2txt>

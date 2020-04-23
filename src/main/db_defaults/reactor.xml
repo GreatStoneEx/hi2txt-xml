@@ -1,0 +1,26 @@
+<hi2txt>
+  <table id="3 LIVES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>10000</cell><cell>AAA</cell></row>
+    <row><cell>2</cell><cell>9000</cell><cell>BBB</cell></row>
+    <row><cell>3</cell><cell>8000</cell><cell>CCC</cell></row>
+    <row><cell>4</cell><cell>7000</cell><cell>DDD</cell></row>
+    <row><cell>5</cell><cell>6000</cell><cell>EEE</cell></row>
+    <row><cell>6</cell><cell>5000</cell><cell>FFF</cell></row>
+    <row><cell>7</cell><cell>4000</cell><cell>GGG</cell></row>
+    <row><cell>8</cell><cell>3000</cell><cell>HHH</cell></row>
+  </table>
+  <table id="7 LIVES">
+    <col>RANK</col><col>7 LIVES SCORE</col><col>7 LIVES NAME</col>
+    <row><cell>1</cell><cell>20000</cell><cell>III</cell></row>
+    <row><cell>2</cell><cell>18000</cell><cell>JJJ</cell></row>
+    <row><cell>3</cell><cell>16000</cell><cell>KKK</cell></row>
+    <row><cell>4</cell><cell>14000</cell><cell>LLL</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>MMM</cell></row>
+    <row><cell>6</cell><cell>10000</cell><cell>NNN</cell></row>
+    <row><cell>7</cell><cell>8000</cell><cell>OOO</cell></row>
+    <row><cell>8</cell><cell>6000</cell><cell>PPP</cell></row>
+  </table>
+</hi2txt>
+
+

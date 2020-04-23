@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>33000</cell><cell>ATN</cell></row>
+    <row><cell>2</cell><cell>30000</cell><cell>KDI</cell></row>
+    <row><cell>3</cell><cell>29000</cell><cell>KEF</cell></row>
+    <row><cell>4</cell><cell>26000</cell><cell>OFS</cell></row>
+    <row><cell>5</cell><cell>23000</cell><cell>BAW</cell></row>
+    <row><cell>6</cell><cell>20000</cell><cell>CBX</cell></row>
+    <row><cell>7</cell><cell>19000</cell><cell>IMF</cell></row>
+    <row><cell>8</cell><cell>16000</cell><cell>TUA</cell></row>
+    <row><cell>9</cell><cell>13000</cell><cell>YIK</cell></row>
+    <row><cell>10</cell><cell>10000</cell><cell>ECC</cell></row>
+  </table>
+  <field id="TOP SCORE">33000</field>
+</hi2txt>

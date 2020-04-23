@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="The Empire Strikes Back">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+    source: Thomas Busse (+minor modifications from GreatStone)
+  //-->
+      
+  <!-- only the first 10 entries are stored into the official nvram file -->
+  <!-- even if the .hi file is also storing them, we keep such structure here, --> 
+  <!-- in case there is no .hi file generated -->
+  <structure file="x2212">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>256</size>
+    </check>
+    <elt size="8" type="text"  id="NVRAM UNKNOWN 1" charset="charconv" ascii-offset="64"/>
+    <loop count="10">
+	  <elt size="6" type="text" id="NAME"  nibble-skip="odd" charset="charconv" ascii-offset="64"/>
+	  <elt size="8" type="int"  id="SCORE" nibble-skip="odd" base="16"/>
+    </loop>
+      <elt size="96" type="raw"  id="NVRAM UNKNOWN 2" nibble-skip="odd"/>
+      <elt size="8"  type="text" id="NVRAM UNKNOWN 1 BIS" charset="charconv" ascii-offset="64"/>
+      <elt size="4"  type="raw"  id="NVRAM FILLER"/>
+  </structure>
+ 
+  <!-- first 10 entries are the same than the one found in the official nvram file -->
+  <!-- remaining 15 entries are also stored here, but not in the nvram file -->
+  <!-- so, the .hi file is storing all entries -->
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4b3f:af:0f:90</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>175</size>
+    </check>  
+    <loop count="25">
+	  <elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="64" bitmask="bmhi"/>
+	  <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <!-- remaining 15 entries are also stored here, but not in the nvram file -->
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,4b85,69,00,90</definition> <!-- from 0.184 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>105</size>
+    </check>  
+    <loop count="15" start="10">
+	  <elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="64" bitmask="bmhi"/>
+	  <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+
+  <bitmask id="bmhi">
+  	<character mask="00011111 00000000 00000000"/>
+	<character mask="00000000 00011111 00000000"/>
+	<character mask="00000000 00000000 00011111"/>
+  </bitmask> 
+  
+  <output>
+    <field id="NVRAM UNKNOWN 1"                 display="debug"/>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <field id="NVRAM UNKNOWN 2"     format="0x" display="debug"/>
+    <field id="NVRAM UNKNOWN 1 BIS"             display="debug"/>
+    <field id="NVRAM FILLER"        format="0x" display="debug"/>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x00" dst=" "/>
+  </charset>
+
+</hi2txt>
+

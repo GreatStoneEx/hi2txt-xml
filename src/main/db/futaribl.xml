@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+      2015-05-09: support modified definition from hiscore.dat 20150131, dumping the 1st score correctly, from hi2txt report
+    tested:
+      mame 0.153 and hiscore.dat 2014-04-23
+      mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi"> <!-- for TODAY's high scores //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c5193ad:274:00:44</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>628</size>
+    </check>
+    <loop count="30" skip-first-bytes="1">
+      <!-- hiscore.dat: 1st byte of the 1st high score is not dumped? //-->
+      <elt size="11" type="int"  id="TODAYS SCORE" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="TODAYS DEFAULT"/>
+      <elt size="1"  type="int"  id="TODAYS CHARACTER"/>
+      <elt size="1"  type="int"  id="TODAYS STAGE ONLY" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="TODAYS BOSS"/>
+      <elt size="1"  type="raw"  id="TODAYS UNKNOWN"/>
+      <elt size="1"  type="int"  id="TODAYS CONTINUE"/>
+      <elt size="4"  type="text" id="TODAYS NAME" charset="futaribl"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi"> <!-- for TODAY's high scores //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c5193ac:275:00:44</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>629</size>
+    </check>
+    <loop count="30">
+      <elt size="11" type="int"  id="TODAYS SCORE" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="TODAYS DEFAULT"/>
+      <elt size="1"  type="int"  id="TODAYS CHARACTER"/>
+      <elt size="1"  type="int"  id="TODAYS STAGE ONLY" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="TODAYS BOSS"/>
+      <elt size="1"  type="raw"  id="TODAYS UNKNOWN"/>
+      <elt size="1"  type="int"  id="TODAYS CONTINUE"/>
+      <elt size="4"  type="text" id="TODAYS NAME" charset="futaribl"/>
+    </loop>
+  </structure>
+  
+  <structure file="game">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2120</size>
+    </check>
+    <elt size="32" type="raw"  id="DATA UNKNOWN"/>
+    <loop count="30">
+      <elt size="11" type="int"  id="SCORE" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="DEFAULT"/>
+      <elt size="1"  type="int"  id="CHARACTER"/>
+      <elt size="1"  type="int"  id="STAGE ONLY" decoding-profile="bcd"/>
+      <elt size="1"  type="int"  id="BOSS"/>
+      <elt size="1"  type="raw"  id="UNKNOWN"/>
+      <elt size="1"  type="int"  id="CONTINUE"/>
+      <elt size="4"  type="text" id="NAME" charset="futaribl"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index"        format="+1"/>
+      <column id="LOCAL RANK" src="index"  format="%5;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"                   format="stage_boss"/>
+      <column id="CONTINUE"/>
+      <column id="CHARACTER"               format="character"/>
+      <column id="DEFAULT"                 format="default"/>
+      <column id="TODAYS MODE" src="index" format="mode" />
+      <column id="UNKNOWN"                 format="0x" display="debug"/>
+    </table>
+    
+    <table id="TODAYS TOP SCORES">
+      <column id="TODAYS RANK" src="index"        format="+1"/>
+      <column id="TODAYS LOCAL RANK" src="index"  format="%5;+1"/>
+      <column id="TODAYS SCORE"/>
+      <column id="TODAYS NAME"/>
+      <column id="TODAYS STAGE"            format="todays_stage_boss"/>
+      <column id="TODAYS CONTINUE"/>
+      <column id="TODAYS CHARACTER"        format="character"/>
+      <column id="TODAYS DEFAULT"          format="default"/>
+      <column id="TODAYS MODE" src="index" format="mode"/>
+      <column id="TODAYS UNKNOWN"          format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="mode">
+    <case src="5"  operator="&lt;" dst="original"/>
+    <case src="10" operator="&lt;" dst="maniac"/>
+    <case src="15" operator="&lt;" dst="god"/>
+    <case src="20" operator="&lt;" dst="original"/>
+    <case src="25" operator="&lt;" dst="maniac"/>
+    <case src="30" operator="&lt;" dst="god"/>
+  </format>
+  <format id="default">
+    <case src="0" dst="no" default="yes"/>
+    <case src="1" dst="yes"/>
+  </format>
+  <format id="character">
+    <case src="0" dst="RECO" default="yes"/>
+    <case src="1" dst="PALM"/>
+  </format>
+  <format id="stage_boss">
+    <concat>
+      <column id="STAGE ONLY" format="+1;stage_all"/>
+      <column id="BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="todays_stage_boss">
+    <concat>
+      <column id="TODAYS STAGE ONLY" format="+1;stage_all"/>
+      <column id="TODAYS BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="stage_all">
+    <case src="5"  operator="&gt;" dst="All"/>
+  </format>
+  <format id="boss">
+    <case src="0" dst="" default="yes"/>
+    <case src="1" dst=" boss"/>
+  </format>
+  <charset id="futaribl">
+    <char src="00" dst=""/>
+    <char src="2D" dst="."/>
+    <char src="FE" dst=""/>
+  </charset>
+</hi2txt>

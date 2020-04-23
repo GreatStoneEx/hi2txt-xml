@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8042:54:00:24</definition> <!-- mooncsrt //-->
+      <definition>0:4042:54:00:24</definition> <!-- mooncrgx //-->
+      <definition>0:8045:54:00:24</definition> <!-- mooncrstg //-->
+      <definition>0:8042:54:00:24
+                  0:804f:1:50:50</definition> <!-- mooncsrto //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>84</size>
+      <size>85</size> <!-- mooncsrto //-->
+    </check>
+    <loop count="5">
+      <elt size="3"  type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="3" type="raw" id="UNKNOWN"/>
+    <loop count="4">
+      <elt size="10" type="text" id="NAME" charset="mooncrst" ascii-offset="55"/>
+      <elt size="1" type="raw" id="SEPARATOR"/>
+      <elt size="1" type="raw" id="RANK2"/>
+      <elt size="2" type="raw" id="UNKNOWN2"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="10" type="text" id="NAME" charset="mooncrst" ascii-offset="55"/>
+      <!-- last items not dumped. Hiscore.dat can be fixed? //-->
+    </loop>
+    <elt size="1" type="raw" id="UNKNOWN3"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"      format="nichibutsu;trim"/>
+      <column id="RANK2"                                 display="extra"/>
+      <column id="UNKNOWN2"  format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="UNKNOWN"  format="hexadecimal_string" display="debug"/>
+    <field id="UNKNOWN3" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="nichibutsu"><case src="usqomkig  " dst="Nichibutsu"/></format>
+  <format id="trim"><trim direction="right"> </trim></format>
+  
+  <charset id="mooncrst">
+    <char src="0x24" dst=" "/>
+    <char src="0x2C" dst="."/>
+    <char src="0xFF" dst=""/> <!-- 'end of name' indicator specific to mooncrstg //-->
+  </charset>
+</hi2txt>

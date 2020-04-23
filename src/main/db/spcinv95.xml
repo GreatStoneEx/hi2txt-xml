@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-05-21 initial version, finding a hiscore.dat inconsistency for 1st byte
+    tested: 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:417485:6b:00:00
+                  0:4174e7:1:55:55
+                  0:410b82:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>112</size>
+    </check>
+    <!-- 1st byte of 1st entry is not dumped, preventing to store player info. hiscore.dat should be improved. //-->
+    <loop count="10" skip-first-bytes="1">
+      <elt size="1" type="int"  id="PLAYER"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME" charset="spcinv95"/>
+    </loop>
+    <elt size="8" type="raw"  id="UNKNOWN"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="PLAYER"    format="player"/>
+    </table>
+    <field id="UNKNOWN"   format="0x" display="debug"/>
+    <field id="CHECK"                 display="debug"/>
+    <field id="TOP SCORE"             display="extra"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="TEKE-TEKE"/>
+    <case src="1" dst="AMULET"/>
+    <case src="2" dst="SILVER HAWK"/>
+    <case src="3" dst="BUCET/CORRUGATED CARTOON"/>
+    <case src="4" dst="TOILET"/>
+  </format>
+  
+  <format id="player">
+    <case src="0" dst="P1"/>
+    <case src="1" dst="P2"/>
+  </format>
+  
+  <charset id="spcinv95">
+    <char src="0x3A" dst="."/>
+    <char src="0x3B" dst=" "/>
+  </charset>
+</hi2txt>

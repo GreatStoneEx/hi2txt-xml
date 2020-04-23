@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+       2015-05-10: support new grindstm, grindstam definitions from hiscore.dat 20150131 and hi2txt report
+    tested:
+       mame 0.153 and hiscore.dat 2014-04-23
+       mame 0.153 and hiscore.dat 2014-08-22 (vfive)
+       mame 0.153 and hiscore.dat 2015-01-31 (grindstm, grindstma)
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1004fa:80:00:2d
+                  0:100436:4:00:00</definition> <!-- vfive hiscore.dat 2014-04-23 //-->
+      <definition>0:100500:80:00:2d
+                  0:10043c:4:00:00</definition> <!-- grindstm //-->
+      <definition>0:1004fc:80:00:2d
+                  0:100438:4:00:00</definition> <!-- grindstma //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>132</size> <!-- hiscore.dat 2014-04-23 //-->
+    </check>
+    <loop count="8">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="12" type="text" id="NAME" byte-skip="odd" charset="vfive"/>
+    </loop>
+    <!-- hiscore.dat (fixed): AREA is missing //-->
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1004fa:90:00:00
+                  0:100436:4:00:00
+                  0:100579:1:2d:2d</definition> <!-- vfive hiscore.dat 2014-08-22 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>149</size> <!-- hiscore.dat 2014-08-22+ //-->
+    </check>
+    <loop count="8">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="12" type="text" id="NAME" byte-skip="odd" charset="vfive"/>
+    </loop>
+    <loop count="8">
+      <elt size="2" type="int"  id="AREA"/>
+    </loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:100500:90:00:00
+                  0:10057f:1:2d:2d
+                  0:10043c:4:00:00</definition> <!-- grindstm hiscore.dat 2015-01-31 //-->
+      <definition>0:1004fc:90:00:00
+                  0:10057b:1:2d:2d
+                  0:100438:4:00:00</definition> <!-- grindstma hiscore.dat 2015-01-31 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>149</size> <!-- hiscore.dat 2015-01-31 //-->
+    </check>
+    <loop count="8">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="12" type="text" id="NAME" byte-skip="odd" charset="vfive"/>
+    </loop>
+    <loop count="8">
+      <elt size="2" type="int"  id="AREA"/>
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>      
+      <column id="NAME"/>
+      <column id="AREA" format="percent"/>
+    </table>
+    <field id="TOP SCORE"         display="extra"/>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="percent"><suffix>%</suffix></format>
+  
+  <charset id="vfive">
+    <char src="0x00" dst=""/>
+  </charset>
+</hi2txt>

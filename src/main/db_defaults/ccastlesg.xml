@@ -1,0 +1,257 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>30000</cell><cell>FXL</cell></row>
+    <row><cell>2</cell><cell>30000</cell><cell>FXL</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>FXL</cell></row>
+    <row><cell>4</cell><cell>29800</cell><cell>CTC</cell></row>
+    <row><cell>5</cell><cell>29700</cell><cell>LEB</cell></row>
+    <row><cell>6</cell><cell>29600</cell><cell>PCT</cell></row>
+    <row><cell>7</cell><cell>29500</cell><cell>CTC</cell></row>
+    <row><cell>8</cell><cell>29400</cell><cell>ED </cell></row>
+    <row><cell>9</cell><cell>29300</cell><cell>REX</cell></row>
+    <row><cell>10</cell><cell>29200</cell><cell>DAR</cell></row>
+    <row><cell>11</cell><cell>29100</cell><cell>T W</cell></row>
+    <row><cell>12</cell><cell>29000</cell><cell>REX</cell></row>
+    <row><cell>13</cell><cell>28900</cell><cell>RAY</cell></row>
+    <row><cell>14</cell><cell>28800</cell><cell>S L</cell></row>
+    <row><cell>15</cell><cell>28700</cell><cell>ORR</cell></row>
+    <row><cell>16</cell><cell>28600</cell><cell>JSF</cell></row>
+    <row><cell>17</cell><cell>28500</cell><cell>T W</cell></row>
+    <row><cell>18</cell><cell>28400</cell><cell>MFP</cell></row>
+    <row><cell>19</cell><cell>28300</cell><cell>BUB</cell></row>
+    <row><cell>20</cell><cell>28200</cell><cell>RAY</cell></row>
+    <row><cell>21</cell><cell>28100</cell><cell>CLT</cell></row>
+    <row><cell>22</cell><cell>28000</cell><cell>ED </cell></row>
+    <row><cell>23</cell><cell>27900</cell><cell>PDM</cell></row>
+    <row><cell>24</cell><cell>27800</cell><cell>ED </cell></row>
+    <row><cell>25</cell><cell>27700</cell><cell>CLT</cell></row>
+    <row><cell>26</cell><cell>27600</cell><cell>FXL</cell></row>
+    <row><cell>27</cell><cell>27500</cell><cell>REX</cell></row>
+    <row><cell>28</cell><cell>27400</cell><cell>RAY</cell></row>
+    <row><cell>29</cell><cell>27300</cell><cell>SMB</cell></row>
+    <row><cell>30</cell><cell>27200</cell><cell>S L</cell></row>
+    <row><cell>31</cell><cell>27100</cell><cell>GJR</cell></row>
+    <row><cell>32</cell><cell>27000</cell><cell>FXL</cell></row>
+    <row><cell>33</cell><cell>26900</cell><cell>GJR</cell></row>
+    <row><cell>34</cell><cell>26800</cell><cell>REM</cell></row>
+    <row><cell>35</cell><cell>26700</cell><cell>ED </cell></row>
+    <row><cell>36</cell><cell>26600</cell><cell>ORR</cell></row>
+    <row><cell>37</cell><cell>26500</cell><cell>BUB</cell></row>
+    <row><cell>38</cell><cell>26400</cell><cell>REM</cell></row>
+    <row><cell>39</cell><cell>26300</cell><cell>RAY</cell></row>
+    <row><cell>40</cell><cell>26200</cell><cell>B B</cell></row>
+    <row><cell>41</cell><cell>26100</cell><cell>T W</cell></row>
+    <row><cell>42</cell><cell>26000</cell><cell>BAS</cell></row>
+    <row><cell>43</cell><cell>25900</cell><cell>T W</cell></row>
+    <row><cell>44</cell><cell>25800</cell><cell>RBD</cell></row>
+    <row><cell>45</cell><cell>25700</cell><cell>JSF</cell></row>
+    <row><cell>46</cell><cell>25600</cell><cell>S L</cell></row>
+    <row><cell>47</cell><cell>25500</cell><cell>BUB</cell></row>
+    <row><cell>48</cell><cell>25400</cell><cell>T W</cell></row>
+    <row><cell>49</cell><cell>25300</cell><cell>MEC</cell></row>
+    <row><cell>50</cell><cell>25200</cell><cell>BEN</cell></row>
+    <row><cell>51</cell><cell>25100</cell><cell>REM</cell></row>
+    <row><cell>52</cell><cell>25000</cell><cell>S L</cell></row>
+    <row><cell>53</cell><cell>24900</cell><cell>MEC</cell></row>
+    <row><cell>54</cell><cell>24800</cell><cell>CLT</cell></row>
+    <row><cell>55</cell><cell>24700</cell><cell>REM</cell></row>
+    <row><cell>56</cell><cell>24600</cell><cell>FXL</cell></row>
+    <row><cell>57</cell><cell>24500</cell><cell>STM</cell></row>
+    <row><cell>58</cell><cell>24400</cell><cell>SMB</cell></row>
+    <row><cell>59</cell><cell>24300</cell><cell>CLT</cell></row>
+    <row><cell>60</cell><cell>24200</cell><cell>MFP</cell></row>
+    <row><cell>61</cell><cell>24100</cell><cell>MFP</cell></row>
+    <row><cell>62</cell><cell>24000</cell><cell>STM</cell></row>
+    <row><cell>63</cell><cell>23900</cell><cell>DAT</cell></row>
+    <row><cell>64</cell><cell>23800</cell><cell>SMB</cell></row>
+    <row><cell>65</cell><cell>23700</cell><cell>ORR</cell></row>
+    <row><cell>66</cell><cell>23600</cell><cell>REX</cell></row>
+    <row><cell>67</cell><cell>23500</cell><cell>DAR</cell></row>
+    <row><cell>68</cell><cell>23400</cell><cell>WGC</cell></row>
+    <row><cell>69</cell><cell>23300</cell><cell>LEB</cell></row>
+    <row><cell>70</cell><cell>23200</cell><cell>JSF</cell></row>
+    <row><cell>71</cell><cell>23100</cell><cell>ED </cell></row>
+    <row><cell>72</cell><cell>23000</cell><cell>JSF</cell></row>
+    <row><cell>73</cell><cell>22900</cell><cell>GDS</cell></row>
+    <row><cell>74</cell><cell>22800</cell><cell>JSF</cell></row>
+    <row><cell>75</cell><cell>22700</cell><cell>LEB</cell></row>
+    <row><cell>76</cell><cell>22600</cell><cell>FXL</cell></row>
+    <row><cell>77</cell><cell>22500</cell><cell>BEN</cell></row>
+    <row><cell>78</cell><cell>22400</cell><cell>GJR</cell></row>
+    <row><cell>79</cell><cell>22300</cell><cell>JSF</cell></row>
+    <row><cell>80</cell><cell>22200</cell><cell>LEB</cell></row>
+    <row><cell>81</cell><cell>22100</cell><cell>PCT</cell></row>
+    <row><cell>82</cell><cell>22000</cell><cell>JSF</cell></row>
+    <row><cell>83</cell><cell>21900</cell><cell>T W</cell></row>
+    <row><cell>84</cell><cell>21800</cell><cell>BBM</cell></row>
+    <row><cell>85</cell><cell>21700</cell><cell>GJR</cell></row>
+    <row><cell>86</cell><cell>21600</cell><cell>REX</cell></row>
+    <row><cell>87</cell><cell>21500</cell><cell>GJR</cell></row>
+    <row><cell>88</cell><cell>21400</cell><cell>BUB</cell></row>
+    <row><cell>89</cell><cell>21300</cell><cell>PCT</cell></row>
+    <row><cell>90</cell><cell>21200</cell><cell>BEN</cell></row>
+    <row><cell>91</cell><cell>21100</cell><cell>LEB</cell></row>
+    <row><cell>92</cell><cell>21000</cell><cell>CLT</cell></row>
+    <row><cell>93</cell><cell>20900</cell><cell>ORR</cell></row>
+    <row><cell>94</cell><cell>20800</cell><cell>DAR</cell></row>
+    <row><cell>95</cell><cell>20700</cell><cell>BBM</cell></row>
+    <row><cell>96</cell><cell>20600</cell><cell>EDG</cell></row>
+    <row><cell>97</cell><cell>20500</cell><cell>BAS</cell></row>
+    <row><cell>98</cell><cell>20400</cell><cell>GJR</cell></row>
+    <row><cell>99</cell><cell>20300</cell><cell>BUB</cell></row>
+    <row><cell>100</cell><cell>20200</cell><cell>DAR</cell></row>
+    <row><cell>101</cell><cell>20100</cell><cell>PDM</cell></row>
+    <row><cell>102</cell><cell>20000</cell><cell>PCT</cell></row>
+    <row><cell>103</cell><cell>19900</cell><cell>GDS</cell></row>
+    <row><cell>104</cell><cell>19800</cell><cell>STM</cell></row>
+    <row><cell>105</cell><cell>19700</cell><cell>B B</cell></row>
+    <row><cell>106</cell><cell>19600</cell><cell>BEN</cell></row>
+    <row><cell>107</cell><cell>19500</cell><cell>ORR</cell></row>
+    <row><cell>108</cell><cell>19400</cell><cell>DAR</cell></row>
+    <row><cell>109</cell><cell>19300</cell><cell>SMB</cell></row>
+    <row><cell>110</cell><cell>19200</cell><cell>RBD</cell></row>
+    <row><cell>111</cell><cell>19100</cell><cell>PCT</cell></row>
+    <row><cell>112</cell><cell>19000</cell><cell>PDM</cell></row>
+    <row><cell>113</cell><cell>18900</cell><cell>REX</cell></row>
+    <row><cell>114</cell><cell>18800</cell><cell>MAR</cell></row>
+    <row><cell>115</cell><cell>18700</cell><cell>T W</cell></row>
+    <row><cell>116</cell><cell>18600</cell><cell>ED </cell></row>
+    <row><cell>117</cell><cell>18500</cell><cell>T W</cell></row>
+    <row><cell>118</cell><cell>18400</cell><cell>STM</cell></row>
+    <row><cell>119</cell><cell>18300</cell><cell>RBD</cell></row>
+    <row><cell>120</cell><cell>18200</cell><cell>CTC</cell></row>
+    <row><cell>121</cell><cell>18100</cell><cell>SMB</cell></row>
+    <row><cell>122</cell><cell>18000</cell><cell>LEB</cell></row>
+    <row><cell>123</cell><cell>17900</cell><cell>DAT</cell></row>
+    <row><cell>124</cell><cell>17800</cell><cell>JSF</cell></row>
+    <row><cell>125</cell><cell>17700</cell><cell>SMB</cell></row>
+    <row><cell>126</cell><cell>17600</cell><cell>BUB</cell></row>
+    <row><cell>127</cell><cell>17500</cell><cell>BAS</cell></row>
+    <row><cell>128</cell><cell>17400</cell><cell>BAS</cell></row>
+    <row><cell>129</cell><cell>17300</cell><cell>ORR</cell></row>
+    <row><cell>130</cell><cell>17200</cell><cell>ED </cell></row>
+    <row><cell>131</cell><cell>17100</cell><cell>MAR</cell></row>
+    <row><cell>132</cell><cell>17000</cell><cell>EDG</cell></row>
+    <row><cell>133</cell><cell>16900</cell><cell>SMB</cell></row>
+    <row><cell>134</cell><cell>16800</cell><cell>BBM</cell></row>
+    <row><cell>135</cell><cell>16700</cell><cell>SMB</cell></row>
+    <row><cell>136</cell><cell>16600</cell><cell>BAS</cell></row>
+    <row><cell>137</cell><cell>16500</cell><cell>CLT</cell></row>
+    <row><cell>138</cell><cell>16400</cell><cell>EDG</cell></row>
+    <row><cell>139</cell><cell>16300</cell><cell>REX</cell></row>
+    <row><cell>140</cell><cell>16200</cell><cell>FXL</cell></row>
+    <row><cell>141</cell><cell>16100</cell><cell>CLT</cell></row>
+    <row><cell>142</cell><cell>16000</cell><cell>BAS</cell></row>
+    <row><cell>143</cell><cell>15900</cell><cell>ORR</cell></row>
+    <row><cell>144</cell><cell>15800</cell><cell>WGC</cell></row>
+    <row><cell>145</cell><cell>15700</cell><cell>RBD</cell></row>
+    <row><cell>146</cell><cell>15600</cell><cell>GJR</cell></row>
+    <row><cell>147</cell><cell>15500</cell><cell>PCT</cell></row>
+    <row><cell>148</cell><cell>15400</cell><cell>B B</cell></row>
+    <row><cell>149</cell><cell>15300</cell><cell>MEC</cell></row>
+    <row><cell>150</cell><cell>15200</cell><cell>RAY</cell></row>
+    <row><cell>151</cell><cell>15100</cell><cell>BAS</cell></row>
+    <row><cell>152</cell><cell>15000</cell><cell>GDS</cell></row>
+    <row><cell>153</cell><cell>14900</cell><cell>RBD</cell></row>
+    <row><cell>154</cell><cell>14800</cell><cell>EDG</cell></row>
+    <row><cell>155</cell><cell>14700</cell><cell>MFP</cell></row>
+    <row><cell>156</cell><cell>14600</cell><cell>CLT</cell></row>
+    <row><cell>157</cell><cell>14500</cell><cell>FXL</cell></row>
+    <row><cell>158</cell><cell>14400</cell><cell>PCT</cell></row>
+    <row><cell>159</cell><cell>14300</cell><cell>GDS</cell></row>
+    <row><cell>160</cell><cell>14200</cell><cell>ED </cell></row>
+    <row><cell>161</cell><cell>14100</cell><cell>BEN</cell></row>
+    <row><cell>162</cell><cell>14000</cell><cell>ORR</cell></row>
+    <row><cell>163</cell><cell>13900</cell><cell>PDM</cell></row>
+    <row><cell>164</cell><cell>13800</cell><cell>SMB</cell></row>
+    <row><cell>165</cell><cell>13700</cell><cell>MAR</cell></row>
+    <row><cell>166</cell><cell>13600</cell><cell>T W</cell></row>
+    <row><cell>167</cell><cell>13500</cell><cell>GJR</cell></row>
+    <row><cell>168</cell><cell>13400</cell><cell>SMB</cell></row>
+    <row><cell>169</cell><cell>13300</cell><cell>CTC</cell></row>
+    <row><cell>170</cell><cell>13200</cell><cell>REM</cell></row>
+    <row><cell>171</cell><cell>13100</cell><cell>BUB</cell></row>
+    <row><cell>172</cell><cell>13000</cell><cell>DAR</cell></row>
+    <row><cell>173</cell><cell>12900</cell><cell>CTC</cell></row>
+    <row><cell>174</cell><cell>12800</cell><cell>CLT</cell></row>
+    <row><cell>175</cell><cell>12700</cell><cell>CTC</cell></row>
+    <row><cell>176</cell><cell>12600</cell><cell>BAS</cell></row>
+    <row><cell>177</cell><cell>12500</cell><cell>S L</cell></row>
+    <row><cell>178</cell><cell>12400</cell><cell>T W</cell></row>
+    <row><cell>179</cell><cell>12300</cell><cell>SMB</cell></row>
+    <row><cell>180</cell><cell>12200</cell><cell>MEC</cell></row>
+    <row><cell>181</cell><cell>12100</cell><cell>PCT</cell></row>
+    <row><cell>182</cell><cell>12000</cell><cell>RAY</cell></row>
+    <row><cell>183</cell><cell>11900</cell><cell>SMB</cell></row>
+    <row><cell>184</cell><cell>11800</cell><cell>EDG</cell></row>
+    <row><cell>185</cell><cell>11700</cell><cell>RAY</cell></row>
+    <row><cell>186</cell><cell>11600</cell><cell>DAT</cell></row>
+    <row><cell>187</cell><cell>11500</cell><cell>ED </cell></row>
+    <row><cell>188</cell><cell>11400</cell><cell>MEC</cell></row>
+    <row><cell>189</cell><cell>11300</cell><cell>ED </cell></row>
+    <row><cell>190</cell><cell>11200</cell><cell>BEN</cell></row>
+    <row><cell>191</cell><cell>11100</cell><cell>PDM</cell></row>
+    <row><cell>192</cell><cell>11000</cell><cell>CTC</cell></row>
+    <row><cell>193</cell><cell>10900</cell><cell>WGC</cell></row>
+    <row><cell>194</cell><cell>10800</cell><cell>REX</cell></row>
+    <row><cell>195</cell><cell>10700</cell><cell>ORR</cell></row>
+    <row><cell>196</cell><cell>10600</cell><cell>CLT</cell></row>
+    <row><cell>197</cell><cell>10500</cell><cell>T W</cell></row>
+    <row><cell>198</cell><cell>10400</cell><cell>T W</cell></row>
+    <row><cell>199</cell><cell>10300</cell><cell>MEC</cell></row>
+    <row><cell>200</cell><cell>10200</cell><cell>REX</cell></row>
+    <row><cell>201</cell><cell>10100</cell><cell>ORR</cell></row>
+    <row><cell>202</cell><cell>10000</cell><cell>DAT</cell></row>
+    <row><cell>203</cell><cell>9900</cell><cell>CTC</cell></row>
+    <row><cell>204</cell><cell>9800</cell><cell>DAT</cell></row>
+    <row><cell>205</cell><cell>9700</cell><cell>DAT</cell></row>
+    <row><cell>206</cell><cell>9600</cell><cell>BAS</cell></row>
+    <row><cell>207</cell><cell>9500</cell><cell>SMB</cell></row>
+    <row><cell>208</cell><cell>9400</cell><cell>MAR</cell></row>
+    <row><cell>209</cell><cell>9300</cell><cell>MAR</cell></row>
+    <row><cell>210</cell><cell>9200</cell><cell>MEC</cell></row>
+    <row><cell>211</cell><cell>9100</cell><cell>BAS</cell></row>
+    <row><cell>212</cell><cell>9000</cell><cell>EDG</cell></row>
+    <row><cell>213</cell><cell>8900</cell><cell>S L</cell></row>
+    <row><cell>214</cell><cell>8800</cell><cell>PDM</cell></row>
+    <row><cell>215</cell><cell>8700</cell><cell>T W</cell></row>
+    <row><cell>216</cell><cell>8600</cell><cell>JSF</cell></row>
+    <row><cell>217</cell><cell>8500</cell><cell>SMB</cell></row>
+    <row><cell>218</cell><cell>8400</cell><cell>SMB</cell></row>
+    <row><cell>219</cell><cell>8300</cell><cell>B B</cell></row>
+    <row><cell>220</cell><cell>8200</cell><cell>FXL</cell></row>
+    <row><cell>221</cell><cell>8100</cell><cell>BEN</cell></row>
+    <row><cell>222</cell><cell>8000</cell><cell>STM</cell></row>
+    <row><cell>223</cell><cell>7900</cell><cell>PCT</cell></row>
+    <row><cell>224</cell><cell>7800</cell><cell>ED </cell></row>
+    <row><cell>225</cell><cell>7700</cell><cell>REX</cell></row>
+    <row><cell>226</cell><cell>7600</cell><cell>RBD</cell></row>
+    <row><cell>227</cell><cell>7500</cell><cell>GJR</cell></row>
+    <row><cell>228</cell><cell>7400</cell><cell>LEB</cell></row>
+    <row><cell>229</cell><cell>7300</cell><cell>GDS</cell></row>
+    <row><cell>230</cell><cell>7200</cell><cell>MEC</cell></row>
+    <row><cell>231</cell><cell>7100</cell><cell>MFP</cell></row>
+    <row><cell>232</cell><cell>7000</cell><cell>CTC</cell></row>
+    <row><cell>233</cell><cell>6900</cell><cell>S L</cell></row>
+    <row><cell>234</cell><cell>6800</cell><cell>PDM</cell></row>
+    <row><cell>235</cell><cell>6700</cell><cell>GDS</cell></row>
+    <row><cell>236</cell><cell>6600</cell><cell>REM</cell></row>
+    <row><cell>237</cell><cell>6500</cell><cell>CLT</cell></row>
+    <row><cell>238</cell><cell>6400</cell><cell>MFP</cell></row>
+    <row><cell>239</cell><cell>6300</cell><cell>B B</cell></row>
+    <row><cell>240</cell><cell>6200</cell><cell>MAR</cell></row>
+    <row><cell>241</cell><cell>6100</cell><cell>REX</cell></row>
+    <row><cell>242</cell><cell>6000</cell><cell>B B</cell></row>
+    <row><cell>243</cell><cell>5900</cell><cell>LEB</cell></row>
+    <row><cell>244</cell><cell>5800</cell><cell>GDS</cell></row>
+    <row><cell>245</cell><cell>5700</cell><cell>GDS</cell></row>
+    <row><cell>246</cell><cell>5600</cell><cell>MFP</cell></row>
+    <row><cell>247</cell><cell>5500</cell><cell>ED </cell></row>
+    <row><cell>248</cell><cell>5400</cell><cell>PCT</cell></row>
+    <row><cell>249</cell><cell>5300</cell><cell>RAY</cell></row>
+    <row><cell>250</cell><cell>5200</cell><cell>DAT</cell></row>
+  </table>
+</hi2txt>
+
+

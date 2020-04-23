@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="King of Fighters 2001">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="804" type="raw" id="DATA"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="CHARACTER 1"/>
+      <elt size="1" type="int"  id="CHARACTER 2"/>
+      <elt size="1" type="int"  id="CHARACTER 3"/>
+      <elt size="1" type="int"  id="CHARACTER 4"/>
+    </loop>
+    <elt size="102" type="raw" id="DATA2"/>
+    <elt size="6"   type="raw" id="DATA3"/>
+    <loop count="20">
+      <elt size="1" type="int" id="WIN CHARACTER" table-index="loop_index" table-index-format="*2"/>
+      <elt size="1" type="int" id="WIN CHARACTER" table-index="loop_index" table-index-format="*2;+1"/>
+      <elt size="1" type="int" id="WIN UNKNOWN"   table-index="loop_index" table-index-format="*2;+1"/>
+    </loop>
+    <elt size="4"   type="int"  id="TOP SCORE" base="16"/>
+    <elt size="3"   type="text" id="TOP NAME"/>
+    <elt size="1"   type="raw"  id="TOP SEPARATOR"/>
+  </structure>
+  
+  <output>
+    <table id="SCORE">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER 1" format="character"/>
+      <column id="CHARACTER 2" format="character"/>
+      <column id="CHARACTER 3" format="character"/>
+      <column id="CHARACTER 4" format="character"/>
+      <column id="SEPARATOR"   format="0x" display="debug"/>
+      <column id="SEPARATOR2"  format="0x" display="debug"/>
+    </table>
+    <table id="TOP SCORE" display="extra">
+      <column id="TOP SCORE"/>
+      <column id="TOP NAME"/>
+      <column id="TOP SEPARATOR" format="0x"/>
+    </table>
+    <field id="DATA3" display="debug"/>
+    <table id="WINS" sort="WIN %" sort-format="TrimR%" sort-order="desc">
+      <column id="CHARACTER"  src="unsorted_index" format="character"/>
+      <column id="WIN %"      src="WIN CHARACTER"  format="win;Suffix%"/>
+    </table>
+  </output>
+  
+  <format id="win_total">
+    <sum><column id="WIN CHARACTER"/></sum>
+  </format>
+  
+  <format id="win">
+    <divide><field format="win_total"/></divide>
+    <multiply>1000</multiply>
+    <trunc/>
+    <divide>10</divide>
+  </format>
+  
+  <format id="character">
+    <case src="0"  dst="K'"/>
+    <case src="1"  dst="Maxima"/>
+    <case src="2"  dst="Whip"/>
+    <case src="3"  dst="Lin"/>
+    <case src="4"  dst="Kyo Kusanagi"/>
+    <case src="5"  dst="Benimaru Nikaido"/>
+    <case src="6"  dst="Goro Daimon"/>
+    <case src="7"  dst="Shingo Yabuki"/>
+    <case src="8"  dst="Iori Yagami"/>
+    <case src="9"  dst="Vanessa"/>
+    <case src="10" dst="Seth"/>
+    <case src="11" dst="Ramon"/>
+    <case src="12" dst="Leona"/>
+    <case src="13" dst="Ralf Jones"/>
+    <case src="14" dst="Clark Steel"/>
+    <case src="15" dst="Heidern"/>
+    <case src="16" dst="Terry Bogard"/>
+    <case src="17" dst="Andy Bogard"/>
+    <case src="18" dst="Joe Higashi"/>
+    <case src="19" dst="Blue Mary"/>
+    <case src="20" dst="Ryo Sakazaki"/>
+    <case src="21" dst="Robert Garcia"/>
+    <case src="22" dst="Yuri Sakazaki"/>
+    <case src="23" dst="Takuma Sakazaki"/>
+    <case src="24" dst="King"/>
+    <case src="25" dst="Mai Shiranui"/>
+    <case src="26" dst="Hinako Shijou"/>
+    <case src="27" dst="Li XiangFei"/>
+    <case src="28" dst="Kula Diamond"/>
+    <case src="29" dst="Foxy"/>
+    <case src="30" dst="K9999"/>
+    <case src="31" dst="Angel"/>
+    <case src="32" dst="Athena Asamiya"/>
+    <case src="33" dst="Sie Kensou"/>
+    <case src="34" dst="Chin Gentsai"/>
+    <case src="35" dst="Bao"/>
+    <case src="36" dst="Kim Kaphwan"/>
+    <case src="37" dst="Chang Koehan"/>
+    <case src="38" dst="Choi Bounge"/>
+    <case src="39" dst="May Lee"/>
+    <case src="40" dst="Original Zero"/>
+    <case src="41" dst="Igniz"/>
+  </format>
+</hi2txt>

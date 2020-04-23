@@ -1,0 +1,7 @@
+RANK|SCORE|NAME
+1|5000|YACHIYO         
+2|5000|YACHIYO         
+3|5000|YACHIYO         
+4|5000|YACHIYO         
+5|5000|YACHIYO         
+

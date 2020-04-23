@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:66b5e:b4:00:03
+                  0:60008:4:00:00
+                  0:6000a:1:20:20</definition> <!-- toki //-->
+      <definition>0:66b66:b4:00:03
+                  0:60008:4:00:00</definition> <!-- tokia //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>185</size> <!-- toki //-->
+      <size>184</size> <!-- tokia //-->
+    </check>
+    <loop count="20">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="20">
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+      <elt size="3" type="text" id="NAME" charset="toki"/>
+    </loop>
+    <loop count="20">
+      <elt size="1" type="int"  id="AREA" base="16"/>
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="AREA" format="area"/>
+      <column id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="area">
+    <case src="0"  dst="1-A"/>
+    <case src="1"  dst="1-B"/>
+    <case src="2"  dst="1-C"/>
+    <case src="3"  dst="1-D"/>
+    <case src="4"  dst="1-E"/>
+    <case src="5"  dst="1-F"/>
+    <case src="6"  dst="1-G"/>
+    <case src="7"  dst="1-H"/>
+    <case src="8"  dst="1-I"/>
+    <case src="9"  dst="1-J"/>
+    <case src="10" dst="2-A"/>
+    <case src="11" dst="2-B"/>
+    <case src="12" dst="2-C"/>
+    <case src="13" dst="2-D"/>
+    <case src="14" dst="2-E"/>
+    <case src="15" dst="2-F"/>
+    <case src="16" dst="2-G"/>
+    <case src="17" dst="2-H"/>
+    <case src="18" dst="3-A"/>
+    <case src="19" dst="3-B"/>
+    <case src="20" dst="3-C"/>
+    <case src="21" dst="3-D"/>
+    <case src="22" dst="3-E"/>
+    <case src="23" dst="3-F"/>
+    <case src="24" dst="3-G"/>
+    <case src="25" dst="3-H"/>
+    <case src="26" dst="3-I"/>
+    <case src="27" dst="3-J"/>
+    <case src="28" dst="3-K"/>
+    <case src="29" dst="3-L"/>
+    <case src="30" dst="3-M"/>
+    <case src="31" dst="3-N"/>
+    <case src="32" dst="3-O"/>
+    <case src="33" dst="3-P"/>
+    <case src="34" dst="3-Q"/>
+    <case src="35" dst="4-A"/>
+    <case src="36" dst="4-B"/>
+    <case src="37" dst="4-C"/>
+    <case src="38" dst="4-D"/>
+    <case src="39" dst="4-E"/>
+    <case src="40" dst="4-F"/>
+    <case src="41" dst="4-G"/>
+    <case src="42" dst="4-H"/>
+    <case src="43" dst="4-I"/>
+    <case src="44" dst="4-J"/>
+    <case src="45" dst="4-K"/>
+    <case src="46" dst="4-L"/>
+    <case src="47" dst="5-A"/>
+    <case src="48" dst="5-B"/>
+    <case src="49" dst="5-C"/>
+    <case src="50" dst="5-D"/>
+    <case src="51" dst="5-E"/>
+    <case src="52" dst="5-F"/>
+    <case src="53" dst="5-G"/>
+    <case src="54" dst="5-H"/>
+    <case src="55" dst="5-I"/>
+    <case src="56" dst="5-J"/>
+    <case src="57" dst="5-K"/>
+    <case src="58" dst="5-L"/>
+    <case src="59" dst="5-M"/>
+    <case src="60" dst="6-A"/>
+    <case src="61" dst="6-B"/>
+    <case src="62" dst="6-C"/>
+    <case src="63" dst="6-D"/>
+    <case src="64" dst="6-E"/>
+  </format>
+  
+  <charset id="toki">
+    <char src="0x00" dst=" "/>
+    <char src="0x20" dst=" "/>
+    <char src="0x5B" dst="["/>
+    <char src="0x5C" dst="\"/>
+    <char src="0x5D" dst="]"/>
+  </charset>
+</hi2txt>

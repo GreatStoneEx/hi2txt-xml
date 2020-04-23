@@ -1,0 +1,35 @@
+<hi2txt>
+  <table id="FIGTHER">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>taraba</cell><cell>120</cell><cell>650</cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>taikunn</cell><cell>90</cell><cell>500</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>sugawara</cell><cell>60</cell><cell>350</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>huziwara</cell><cell>40</cell><cell>200</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>kouyama</cell><cell>30</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="MAGE">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>tuzino</cell><cell>130</cell><cell>650</cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>daisuke</cell><cell>70</cell><cell>660</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>kouyama</cell><cell>50</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>yagi</cell><cell>30</cell><cell>250</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>taikunn</cell><cell>20</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="PRIEST">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>oniziya</cell><cell>130</cell><cell>650</cell><cell>2</cell></row>
+    <row><cell>2</cell><cell>yagi</cell><cell>100</cell><cell>500</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>mari</cell><cell>80</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>taikunn</cell><cell>60</cell><cell>200</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>poti</cell><cell>40</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="NINJA">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>kusiro</cell><cell>120</cell><cell>650</cell><cell>2</cell></row>
+    <row><cell>2</cell><cell>tooru</cell><cell>110</cell><cell>450</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>hori</cell><cell>100</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>eiiti</cell><cell>80</cell><cell>300</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>hirosige</cell><cell>60</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+

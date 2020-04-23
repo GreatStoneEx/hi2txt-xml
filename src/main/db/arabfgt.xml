@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+      2015-08-05: support new definition from hiscore.dat 20150131, 5th score fully extracted, characters added
+    tested:
+      mame 0.148 and related hiscore.dat
+      mame 0.153 and hiscore.dat 20150131
+    source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:208300:47:53:00
+                  0:208345:1:17:17</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>72</size>
+    </check>
+    <loop count="4">
+      <elt size="3" type="text" id="NAME"  charset="arabfgt"/>
+      <elt size="1" type="text" id="SPACE"/>
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="7" type="raw"  id="EMPTY"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="3" type="text" id="NAME"  charset="arabfgt"/>
+      <elt size="1" type="raw"  id="UNUSED"/>
+      <!-- Warning: hiscore.dat < 20150131: last byte of 5th score is not extracted //-->
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian"/>
+      <!-- Warning: hiscore.dat < 20150131: byte of 5th character is not extracted //-->
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:208300:49:53:00
+                  0:208345:1:17:17</definition> <!-- hiscore.dat 20150131, from hi2txt report //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>74</size>
+    </check>
+    <loop count="4">
+      <elt size="3" type="text" id="NAME"  charset="arabfgt"/>
+      <elt size="1" type="raw"  id="DEFAULT"/>
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="7" type="raw"  id="EMPTY"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="3" type="text" id="NAME"  charset="arabfgt"/>
+      <elt size="1" type="raw"  id="DEFAULT"/>
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <!-- Warning: last empty 7th bytes are not extracted //-->
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"  src="index" format="+1"/>      
+      <column id="SCORE" format="PadL80"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="characters"/>
+      <column id="DEFAULT"   format="0x" display="debug"/>
+      <column id="EMPTY"     format="0x" display="debug"/>
+    </table>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="characters">
+    <case src="0" dst="SINBAT"/>
+    <case src="1" dst="RAMAYA"/>
+    <case src="2" dst="GOLDOR"/>
+    <case src="3" dst="DATTA"/>
+  </format>
+  <charset id="arabfgt">
+    <char src="0x00" dst=" "/>
+    <char src="0x2E" dst="."/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>NAME</col><col>SCORE</col>
+    <row><cell>1</cell><cell>EJD</cell><cell>10101</cell></row>
+    <row><cell>2</cell><cell>DES</cell><cell>10101</cell></row>
+    <row><cell>3</cell><cell>RRR</cell><cell>10101</cell></row>
+    <row><cell>4</cell><cell>MPH</cell><cell>10101</cell></row>
+    <row><cell>5</cell><cell>DFT</cell><cell>10101</cell></row>
+    <row><cell>6</cell><cell>SDL</cell><cell>10101</cell></row>
+    <row><cell>7</cell><cell>MJP</cell><cell>10101</cell></row>
+    <row><cell>8</cell><cell>BEH</cell><cell>10101</cell></row>
+    <row><cell>9</cell><cell></cell><cell>4200</cell></row>
+  </table>
+  <field id="HEADER">0x0309</field>
+  <field id="SEPARATOR">0x00</field>
+  <field id="FOOTER">0x00</field>
+</hi2txt>

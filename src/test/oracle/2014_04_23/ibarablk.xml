@@ -1,0 +1,45 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col><col>CHARACTER</col><col>UNKNOWN</col><col>EMPTY</col>
+    <row><cell>1</cell><cell>1</cell><cell>10000000</cell><cell>CAV</cell><cell>normal</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>9000000</cell><cell>CAV</cell><cell>normal</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>8000000</cell><cell>CAV</cell><cell>normal</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>7000000</cell><cell>CAV</cell><cell>normal</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>6000000</cell><cell>CAV</cell><cell>normal</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>6</cell><cell>5000000</cell><cell>CAV</cell><cell>normal</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>7</cell><cell>7</cell><cell>4000000</cell><cell>CAV</cell><cell>normal</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>8</cell><cell>3000000</cell><cell>CAV</cell><cell>normal</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>9</cell><cell>2000000</cell><cell>CAV</cell><cell>normal</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>10</cell><cell>10</cell><cell>1000000</cell><cell>CAV</cell><cell>normal</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>20000000</cell><cell>CAV</cell><cell>harder</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>18000000</cell><cell>CAV</cell><cell>harder</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>16000000</cell><cell>CAV</cell><cell>harder</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>14000000</cell><cell>CAV</cell><cell>harder</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>12000000</cell><cell>CAV</cell><cell>harder</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>16</cell><cell>6</cell><cell>10000000</cell><cell>CAV</cell><cell>harder</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>17</cell><cell>7</cell><cell>8000000</cell><cell>CAV</cell><cell>harder</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>18</cell><cell>8</cell><cell>6000000</cell><cell>CAV</cell><cell>harder</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>19</cell><cell>9</cell><cell>4000000</cell><cell>CAV</cell><cell>harder</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>20</cell><cell>10</cell><cell>2000000</cell><cell>CAV</cell><cell>harder</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>21</cell><cell>1</cell><cell>30000000</cell><cell>CAV</cell><cell>extended</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>22</cell><cell>2</cell><cell>27000000</cell><cell>CAV</cell><cell>extended</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>23</cell><cell>3</cell><cell>24000000</cell><cell>CAV</cell><cell>extended</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>24</cell><cell>4</cell><cell>21000000</cell><cell>CAV</cell><cell>extended</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>25</cell><cell>5</cell><cell>18000000</cell><cell>CAV</cell><cell>extended</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>26</cell><cell>6</cell><cell>15000000</cell><cell>CAV</cell><cell>extended</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>27</cell><cell>7</cell><cell>12000000</cell><cell>CAV</cell><cell>extended</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>28</cell><cell>8</cell><cell>9000000</cell><cell>CAV</cell><cell>extended</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>29</cell><cell>9</cell><cell>6000000</cell><cell>CAV</cell><cell>extended</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>30</cell><cell>10</cell><cell>3000000</cell><cell>CAV</cell><cell>extended</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>31</cell><cell>1</cell><cell>40000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>32</cell><cell>2</cell><cell>36000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>33</cell><cell>3</cell><cell>32000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>34</cell><cell>4</cell><cell>28000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>35</cell><cell>5</cell><cell>24000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>36</cell><cell>6</cell><cell>20000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>37</cell><cell>7</cell><cell>16000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Bond ORANGE C</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>38</cell><cell>8</cell><cell>12000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Dyne YELLOW D</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>39</cell><cell>9</cell><cell>8000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Bond RED A</cell><cell>0x2</cell><cell>0x00</cell></row>
+    <row><cell>40</cell><cell>10</cell><cell>4000000</cell><cell>CAV</cell><cell>score attack</cell><cell>Dyne BLUE B</cell><cell>0x2</cell><cell>0x00</cell></row>
+  </table>
+</hi2txt>

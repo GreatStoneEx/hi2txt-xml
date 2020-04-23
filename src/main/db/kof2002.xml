@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="King of Fighters 2002">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="804" type="raw" id="DATA"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="CHARACTER 1"/>
+      <elt size="1" type="int"  id="CHARACTER 2"/>
+      <elt size="1" type="int"  id="CHARACTER 3"/>
+      <elt size="1" type="int"  id="CHARACTER 4"/>
+    </loop>
+    <elt size="102" type="raw" id="DATA2"/>
+    <elt size="6"   type="raw" id="DATA3"/>
+    <elt size="4"   type="int"  id="TOP SCORE" base="16"/>
+    <elt size="3"   type="text" id="TOP NAME"/>
+    <elt size="1"   type="raw"  id="TOP SEPARATOR"/>
+  </structure>
+  
+  <output>
+    <table id="SCORE">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER 1" format="character" display="debug"/>
+      <column id="CHARACTER 2" format="character" display="debug"/>
+      <column id="CHARACTER 3" format="character" display="debug"/>
+      <column id="CHARACTER 4" format="character" display="debug"/>
+      <column id="SEPARATOR"   format="0x" display="debug"/>
+      <column id="SEPARATOR2"  format="0x" display="debug"/>
+    </table>
+    <table id="TOP SCORE" display="extra">
+      <column id="TOP SCORE"/>
+      <column id="TOP NAME"/>
+      <column id="TOP SEPARATOR" format="0x"/>
+    </table>
+    <field id="DATA3" display="debug"/>
+  </output>
+  <format id="character">
+    <case src="0" dst="0"/>
+  </format>
+</hi2txt>

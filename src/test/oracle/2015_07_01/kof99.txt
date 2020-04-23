@@ -1,0 +1,8 @@
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|CHARACTER 4|SEPARATOR|SEPARATOR2
+5|100|TAK|Jhun Hoon|Kyo Kusanagi|Kyo Kusanagi 2|Iori Yagami|0xFF|0xFF
+4|90|ICH|31|32|33|34|0xFF|0xFF
+3|80|KON|Ryo Sakazaki|Robert Garcia|Yuri Sakazaki|Takuma Sakazaki|0xFF|0xFF
+2|70|DON|Leona|Ralf|Clark|Whip|0xFF|0xFF
+1|60|MAT|Athena Asamiya|Sie Kensou|Chin Gentsai|Bao|0xFF|0xFF
+
+

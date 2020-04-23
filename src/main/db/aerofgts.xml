@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Aero Fighters Special">
+  <!--
+    tested with mame 0.159
+    source: GreatStone
+  //-->
+  
+  <structure file="at28c16">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2080</size>
+    </check>
+	<elt size="8" type="raw" id="UNKNOWN"/>
+    <loop count="5">
+	  <elt size="4" type="int"  id="SCORE" endianness="little_endian"/>
+	  <elt size="3" type="text" id="NAME"/>
+	  <elt size="1" type="text" id="NAME END"/>
+	  <elt size="1" type="int"  id="CHARACTER"/>
+	  <elt size="3" type="raw"  id="SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+	  <column id="NAME END"              display="debug"/>
+      <column id="CHARACTER" format="character"/>
+	  <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="Robo Keaton USA F-117 Sea Hawk"/>
+    <case src="1"  dst="Captain Silver USA A-10 Thunder Bolt II"/>
+    <case src="2"  dst="Hien Japan FS-X"/>
+    <case src="3"  dst="Mao Mao Japan F-15 DJ Eagle"/>
+	<case src="4"  dst="Volk the No Dead Russia Ka-50 Hokum"/>
+	<case src="5"  dst="Chaika and Pooshika Russia IL-102 Stormovik II"/>
+	<case src="6"  dst="Angela NATO Rafale M"/>
+	<case src="7"  dst="Ellen and Cincia NATO F-14 Tomcat"/>
+	<case src="8"  dst="Kowful the Viking Sweden AJ-37 Viggen"/>
+	<case src="9"  dst="T.B. A 10 Sweden F-104 Star Fighter"/>
+	<case src="10" dst="Lord River-n-White Peace Keeping Force AV-SB Harrier II Plus"/>
+	<case src="11" dst="Whity Peace Keeping Force YF-23A"/>
+	<case src="12" dst="Kotomi Aka Usagi"/> <!-- value? -->
+	<case src="13" dst="The Man Diabloon"/> <!-- value? -->
+  </format>
+</hi2txt>

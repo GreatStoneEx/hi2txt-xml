@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:7116:5d:00:01
+                  0:711a:1:20:20</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>94</size>
+    </check>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="10">
+      <elt size="3" type="int" id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="wardner"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="int"  id="STAGE"/>
+    </loop>
+    <elt size="1" type="raw"  id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" format="0x"  display="debug"/>
+      <column id="STAGE" format="+1"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="UNKNOWN"   format="0x"  display="debug"/>
+  </output>
+  
+  <charset id="wardner">
+    <char src="0x20" dst="A"/>
+    <char src="0x21" dst="H"/>
+    <char src="0x22" dst="O"/>
+    <char src="0x23" dst="V"/>
+    <char src="0x24" dst="B"/>
+    <char src="0x25" dst="I"/>
+    <char src="0x26" dst="P"/>
+    <char src="0x27" dst="W"/>
+    <char src="0x28" dst="C"/>
+    <char src="0x29" dst="J"/>
+    <char src="0x2A" dst="Q"/>
+    <char src="0x2B" dst="X"/>
+    <char src="0x2C" dst="D"/>
+    <char src="0x2D" dst="K"/>
+    <char src="0x2E" dst="R"/>
+    <char src="0x2F" dst="Y"/>
+    <char src="0x30" dst="E"/>
+    <char src="0x31" dst="L"/>
+    <char src="0x32" dst="S"/>
+    <char src="0x33" dst="Z"/>
+    <char src="0x34" dst="F"/>
+    <char src="0x35" dst="M"/>
+    <char src="0x36" dst="T"/>
+    <char src="0x38" dst="G"/>
+    <char src="0x39" dst="N"/>
+    <char src="0x3A" dst="U"/>
+  </charset>
+</hi2txt>

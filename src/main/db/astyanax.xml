@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:f8909:97:00:4e
+                  0:f885d:f:00:00
+                  0:f8863:1:02:02</definition>
+      <definition>0:f8921:97:00:4e
+                  0:f8875:f:00:00
+                  0:f887b:1:02:02</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>167</size>
+    </check>
+  	<loop count="1"> <!-- hiscore.dat: 1st entry is only partially dumped into the hiscore: no UNKNOWN, no RANK TEXT. //-->
+  	  <elt size="15" type="int"  id="SCORE"     byte-skip="even" nibble-skip="odd" base="16"/>
+        <!-- hiscore.dat: only 15 bytes: 1st score is truncated.
+  	         the 1st byte is missing, which is not too annoying
+  	         as only 1 byte per 2 bytes is significant //-->
+  	  <elt size="2"  type="text" id="STAGE"     byte-skip="odd"/>
+  	  <elt size="6"  type="text" id="NAME"      byte-skip="odd"/>
+  	</loop>
+  	<loop count="4" start="1">
+  		<elt size="2"  type="raw"  id="UNKNOWN"/> <!-- What is that? //-->
+  		<elt size="6"  type="text" id="RANK TEXT" byte-skip="odd"/>
+  	  <elt size="16" type="int"  id="SCORE"     byte-skip="odd" nibble-skip="odd" base="16"/>
+  	  <elt size="2"  type="text" id="STAGE"     byte-skip="odd"/>
+  	  <elt size="6"  type="text" id="NAME"      byte-skip="odd"/>
+    </loop>
+  	<elt size="15" type="int" id="TOP SCORE"    byte-skip="even" nibble-skip="odd" base="16"/>
+  	<elt size="1"  type="raw" id="UNKNOWN 2"/>
+  </structure>
+  
+  <output>
+    <table>
+    	<column id="RANK" src="index" format="+1"/>
+      <column id="RANK TEXT" format="first_rank_missing"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="first_rank_missing">
+  	<case src="" dst="1ST"/>
+  </format>
+</hi2txt>

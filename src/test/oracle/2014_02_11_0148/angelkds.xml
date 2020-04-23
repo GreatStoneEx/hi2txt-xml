@@ -1,0 +1,26 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>10000</cell><cell>PRESENT   </cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>9800</cell><cell>BY        </cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>9600</cell><cell>SEGA      </cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>9400</cell><cell>AND       </cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>9200</cell><cell>EXA       </cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>9000</cell><cell>ELECA     </cell><cell>1</cell></row>
+    <row><cell>7</cell><cell>8800</cell><cell>INOUE     </cell><cell>1</cell></row>
+    <row><cell>8</cell><cell>8600</cell><cell>HAMADA    </cell><cell>1</cell></row>
+    <row><cell>9</cell><cell>8400</cell><cell>OHTA      </cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>8200</cell><cell>IIZUKA    </cell><cell>1</cell></row>
+    <row><cell>11</cell><cell>8000</cell><cell>SATOH     </cell><cell>1</cell></row>
+    <row><cell>12</cell><cell>7800</cell><cell>SUGOH     </cell><cell>1</cell></row>
+    <row><cell>13</cell><cell>7600</cell><cell>TAKASUGI  </cell><cell>1</cell></row>
+    <row><cell>14</cell><cell>7400</cell><cell>HIRANO    </cell><cell>1</cell></row>
+    <row><cell>15</cell><cell>7200</cell><cell>          </cell><cell>1</cell></row>
+    <row><cell>16</cell><cell>7000</cell><cell>VERY      </cell><cell>1</cell></row>
+    <row><cell>17</cell><cell>6800</cell><cell>THANKS    </cell><cell>1</cell></row>
+    <row><cell>18</cell><cell>6600</cell><cell>FOR       </cell><cell>1</cell></row>
+    <row><cell>19</cell><cell>6400</cell><cell>YOUR      </cell><cell>1</cell></row>
+    <row><cell>20</cell><cell>1</cell><cell>PLAYING   </cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">10000</field>
+</hi2txt>

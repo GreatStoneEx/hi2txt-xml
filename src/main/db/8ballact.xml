@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1d28:06:00:1b
+                  0:1d46:0a:00:00
+                  0:1d2e:06:00:1b
+                  0:1d50:0a:00:00
+                  0:1d34:06:00:1b
+                  0:1d5a:0a:00:00
+                  0:1d3a:06:00:1b
+                  0:1d64:0a:00:00
+                  0:1d40:06:00:1b
+                  0:1d6e:0a:00:00</definition> <!-- 8ballact //-->
+      <definition>0:1c6c:06:00:1b
+                  0:1c8a:0a:00:00
+                  0:1c72:06:00:1b
+                  0:1c94:0a:00:00
+                  0:1c78:06:00:1b
+                  0:1c9e:0a:00:00
+                  0:1c7e:06:00:1b
+                  0:1ca8:0a:00:00
+                  0:1c84:06:00:1b
+                  0:1cb2:0a:00:00</definition> <!-- 8bpm //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>80</size>
+    </check>
+    <loop count="5">
+      <elt size="6" type="text" id="SCORE" charset="cs8ballact_score"/>
+      <elt size="3" type="text" id="NAME"  charset="cs8ballact" ascii-offset="64"/>
+      <elt size="7" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="cs8ballact_score">
+    <char src="0x00" dst="0"/>
+    <char src="0x1B" dst="0"/>
+    <char src="0x1C" dst="1"/>
+    <char src="0x1D" dst="2"/>
+    <char src="0x1E" dst="3"/>
+    <char src="0x1F" dst="4"/>
+    <char src="0x20" dst="5"/>
+    <char src="0x21" dst="6"/>
+    <char src="0x22" dst="7"/>
+    <char src="0x23" dst="8"/>
+    <char src="0x24" dst="9"/>
+  </charset>
+  <charset id="cs8ballact">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

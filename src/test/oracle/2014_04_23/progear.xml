@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>SHOT</col><col>UNKNOWN2</col><col>UNKNOWN3</col>
+    <row><cell>1</cell><cell>2000000</cell><cell>KOU</cell><cell>4</cell><cell>RING (P1)</cell><cell>CHAIN (P1)</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>1800001</cell><cell>ITI</cell><cell>3</cell><cell>BOLT (P1)</cell><cell>CHAIN (P1)</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>1600002</cell><cell>WTR</cell><cell>3</cell><cell>RING (P1)</cell><cell>NAIL (P1)</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>1400003</cell><cell>ARI</cell><cell>3</cell><cell>BOLT (P1)</cell><cell>NAIL (P1)</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>1200004</cell><cell>TNK</cell><cell>3</cell><cell>RING (P1)</cell><cell>RIVET (P1)</cell><cell></cell><cell>0x0000</cell></row>
+  </table>
+</hi2txt>

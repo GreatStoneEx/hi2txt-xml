@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: greatstone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:100a2d:63:03:88</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>99</size>
+    </check>
+    <loop count="10">
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME" ascii-offset="65" charset="cs1945kiii"/>
+      <elt size="1" type="text" id="NEXT LETTER" ascii-offset="65"/> <!-- store next letter to be displayed by the cursor when inserting a name //-->
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+    <!-- elt of the last iteration has no unused byte, but it is more elegant to write the structure like that //-->
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="NEXT LETTER" display="debug"/>
+      <column id="UNKNOWN"     display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="cs1945kiii">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="-"/>
+    <char src="0x25" dst="!"/>
+    <char src="0x26" dst="$"/>
+    <char src="0x27" dst="^"/>
+    <char src="0x28" dst="&amp;"/>
+    <char src="0x29" dst="."/>
+    <char src="0x2A" dst=";"/>
+    <char src="0x2B" dst="?"/>
+    <char src="0x2C" dst="?"/>
+    <char src="0x2D" dst="+"/>
+    <char src="0x2E" dst="-"/>
+    <char src="0x2F" dst="-"/>
+    <char src="0x30" dst="="/>
+    <char src="0x31" dst=","/>
+    <char src="0x32" dst="."/>
+    <char src="0x33" dst="/"/>
+    <char src="0x34" dst="?"/>
+    <char src="0x35" dst="&lt;"/>
+    <char src="0x36" dst="&gt;"/>
+    <char src="0x37" dst=";"/>
+    <char src="0x38" dst=":"/>
+    <char src="0x39" dst="|"/>
+    <char src="0x3A" dst="&w-double-strike;"/>
+    <char src="0x3B" dst="&y-strike;"/>
+    <char src="0x3C" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,27 @@
+<hi2txt>
+  <table id="DAILY 1C">
+    <col>RANK</col><col>SCORE 1C</col><col>NAME 1C</col>
+    <row><cell>1</cell><cell>31350</cell><cell>DLM</cell></row>
+    <row><cell>2</cell><cell>30500</cell><cell>MIC</cell></row>
+    <row><cell>3</cell><cell>23350</cell><cell>LRS</cell></row>
+    <row><cell>4</cell><cell>22400</cell><cell>JAC</cell></row>
+    <row><cell>5</cell><cell>19550</cell><cell>RDH</cell></row>
+  </table>
+  <table id="ALLTIME 1C">
+    <col>RANK</col><col>ALLTIME SCORE 1C</col><col>ALLTIME NAME 1C</col>
+    <row><cell>1</cell><cell>38250</cell><cell>AE </cell></row>
+  </table>
+  <table id="DAILY 2C">
+    <col>RANK</col><col>SCORE 2C</col><col>NAME 2C</col>
+    <row><cell>1</cell><cell>31350</cell><cell>DLM</cell></row>
+    <row><cell>2</cell><cell>30500</cell><cell>MIC</cell></row>
+    <row><cell>3</cell><cell>23350</cell><cell>LRS</cell></row>
+    <row><cell>4</cell><cell>22400</cell><cell>JAC</cell></row>
+    <row><cell>5</cell><cell>19550</cell><cell>RDH</cell></row>
+  </table>
+  <table id="ALLTIME 2C">
+    <col>RANK</col><col>ALLTIME SCORE 2C</col><col>ALLTIME NAME 2C</col>
+    <row><cell>1</cell><cell>38250</cell><cell>AE </cell></row>
+  </table>
+</hi2txt>
+

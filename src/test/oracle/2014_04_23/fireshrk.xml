@@ -1,0 +1,28 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>SPACE</col><col>STAGE</col>
+    <row><cell>1</cell><cell>95220</cell><cell>VWX</cell><cell>   </cell><cell>02-01</cell></row>
+    <row><cell>2</cell><cell>83740</cell><cell>! ,</cell><cell>   </cell><cell>02-04</cell></row>
+    <row><cell>3</cell><cell>70000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>4</cell><cell>68000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>5</cell><cell>66000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>6</cell><cell>64270</cell><cell>+&amp;?</cell><cell>   </cell><cell>01-09</cell></row>
+    <row><cell>7</cell><cell>64000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>8</cell><cell>62000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>9</cell><cell>60000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>10</cell><cell>58000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>11</cell><cell>56000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>12</cell><cell>54000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>13</cell><cell>52000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>14</cell><cell>50000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>15</cell><cell>48000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>16</cell><cell>46000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>17</cell><cell>44000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>18</cell><cell>42000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>19</cell><cell>40000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+    <row><cell>20</cell><cell>38000</cell><cell>---</cell><cell>   </cell><cell>01-01</cell></row>
+  </table>
+  <field id="TOP SCORE">95220</field>
+  <field id="TOP SCORE STRING">   95220</field>
+  <field id="CHECK">0x2D</field>
+</hi2txt>

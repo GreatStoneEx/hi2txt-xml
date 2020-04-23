@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>10000</cell><cell>N.N</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>10000</cell><cell>A.A</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>10000</cell><cell>M.M</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>10000</cell><cell>C.C</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>10000</cell><cell>O.O</cell><cell>1</cell></row>
+  </table>
+  <field id="UNKNOWN 1">0x00</field>
+  <field id="UNKNOWN 2">0x00</field>
+</hi2txt>

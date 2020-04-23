@@ -1,0 +1,7 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>5300</cell><cell>AA </cell></row>
+  </table>
+  <field id="SEPARATOR">0x00FFFF</field>
+</hi2txt>

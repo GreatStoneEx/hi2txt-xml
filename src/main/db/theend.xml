@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.148 and related hiscore.dat
+	history:
+      2020-04-12: add new definition for hiscore.dat in mame 0.221
+    source: HiToText (top score), GreatStone (scores table)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:43c0:0f:00:00
+                  0:40a8:03:00:00</definition> <!-- before mame 0.219 -->
+	  <definition>@:maincpu,program,43c0,0f,00,00
+                  @:maincpu,program,40a8,03,00,00
+                  @:maincpu,program,4da1,01,00,00
+                  @:maincpu,program,4dc1,01,00,00
+                  @:maincpu,program,4de1,01,10,10
+                  @:maincpu,program,4e01,01,10,10
+                  @:maincpu,program,4e21,01,10,10
+                  @:maincpu,program,4e41,01,10,10</definition> <!-- mame 0.219+ -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>18</size>
+	  <size>24</size>
+    </check>
+    <loop count="5"><elt size="3" type="int" id="SCORE"     endianness="little_endian" base="16"/></loop>
+                    <elt size="8" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+</hi2txt>

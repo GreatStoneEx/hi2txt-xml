@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE STRING</col><col>NAME</col>
+    <row><cell>1</cell><cell>3800</cell><cell>003800</cell><cell></cell></row>
+    <row><cell>2</cell><cell>1600</cell><cell>001600</cell><cell></cell></row>
+    <row><cell>3</cell><cell>1100</cell><cell>001100</cell><cell></cell></row>
+    <row><cell>4</cell><cell>800</cell><cell>000800</cell><cell></cell></row>
+    <row><cell>5</cell><cell>400</cell><cell>000400</cell><cell></cell></row>
+  </table>
+  <field id="LAST SCORE">800</field>
+</hi2txt>

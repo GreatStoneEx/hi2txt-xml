@@ -1,0 +1,7 @@
+RANK|SCORE|NAME
+1|20000|Nichibutsu
+2|20000|Nichibutsu
+3|20000|Nichibutsu
+4|20000|Nichibutsu
+5|20000|Nichibutsu
+

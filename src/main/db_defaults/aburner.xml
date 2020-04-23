@@ -1,0 +1,27 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>HIT</col><col>MEDALS</col>
+    <row><cell>1</cell><cell>500000</cell><cell>YU. </cell><cell>1000</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>450000</cell><cell>KIMU</cell><cell>900</cell><cell>4</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>BIN </cell><cell>800</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>350000</cell><cell>SADA</cell><cell>700</cell><cell>2</cell></row>
+    <row><cell>5</cell><cell>300000</cell><cell>KIYO</cell><cell>600</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>250000</cell><cell>HIRO</cell><cell>500</cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>200000</cell><cell>YASU</cell><cell>400</cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>200000</cell><cell>TAKA</cell><cell>300</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>200000</cell><cell>TO 3</cell><cell>200</cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>150000</cell><cell>RU 4</cell><cell>100</cell><cell>0</cell></row>
+    <row><cell>11</cell><cell>140000</cell><cell>KUMA</cell><cell>90</cell><cell>0</cell></row>
+    <row><cell>12</cell><cell>130000</cell><cell>OHTA</cell><cell>80</cell><cell>0</cell></row>
+    <row><cell>13</cell><cell>120000</cell><cell>YAMA</cell><cell>70</cell><cell>0</cell></row>
+    <row><cell>14</cell><cell>110000</cell><cell>WAKA</cell><cell>60</cell><cell>0</cell></row>
+    <row><cell>15</cell><cell>100000</cell><cell>KATA</cell><cell>50</cell><cell>0</cell></row>
+    <row><cell>16</cell><cell>90000</cell><cell>GOKI</cell><cell>40</cell><cell>0</cell></row>
+    <row><cell>17</cell><cell>80000</cell><cell>SEGA</cell><cell>30</cell><cell>0</cell></row>
+    <row><cell>18</cell><cell>70000</cell><cell>C KO</cell><cell>20</cell><cell>0</cell></row>
+    <row><cell>19</cell><cell>60000</cell><cell>MAMI</cell><cell>10</cell><cell>0</cell></row>
+    <row><cell>20</cell><cell>50000</cell><cell>MOMO</cell><cell>0</cell><cell>0</cell></row>
+  </table>
+</hi2txt>
+
+

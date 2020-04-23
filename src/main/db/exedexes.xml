@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Exed Exes">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,e680,50,00,19
+                  @:maincpu,program,e600,8,00,00</definition>
+	  <definition>@:maincpu,program,e680,50,00,24
+                  @:maincpu,program,e600,8,00,00</definition><!-- savgbees -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>88</size>
+    </check>
+    <loop count="5">
+      <elt size="8" type="int" id="SCORE" nibble-skip="odd" base="16"/>
+      <elt size="8" type="text" id="NAME" ascii-offset="55" charset="CS_NUMBER[-48];charconv"/>
+    </loop>
+	<elt size="8" type="int" id="TOP SCORE" nibble-skip="odd" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*100"/>
+      <column id="NAME"/>
+    </table>
+	<field id="TOP SCORE" format="*100" display="extra"/>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x24" dst=" "/>
+	<char src="0x27" dst="&antislash-in-square;"/>
+	<char src="0x26" dst="&slash-in-square;"/>
+	<char src="0x25" dst="&h-lines-in-square;"/>
+	<char src="0x93" dst="&black-diamond;"/>
+	<char src="0x92" dst="&black-heart;"/>
+	<char src="0x8B" dst="&amp;"/>
+	<char src="0x80" dst="*"/>
+	<char src="0x81" dst="#"/>
+	<char src="0x90" dst="&mens-symbol;"/>
+	<char src="0x91" dst="&womens-symbol;"/>
+	<char src="0x83" dst="?"/>
+  </charset>
+</hi2txt>

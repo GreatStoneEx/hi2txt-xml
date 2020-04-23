@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+      
+      tips:
+        activate high scores saving in nvram: go into service mode, then activate it
+        select ship P1: Start P1
+        select ship P2: Start P2
+  //-->
+  
+  <structure file="eeprom" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="96" type="raw"  id="DATA"/>
+    <loop count="40">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME" charset="pinkswts"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="LOCAL RANK" src="index" format="%10;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="mode">
+    <case src="10" operator="&lt;" dst="normal"/>
+    <case src="20" operator="&lt;" dst="harder"/>
+    <case src="30" operator="&lt;" dst="extended"/>
+    <case src="40" operator="&lt;" dst="score attack"/>
+  </format>
+  <format id="character">
+    <case src="0"  dst="MOMO (PINK) P1"/>
+    <case src="4"  dst="IKUO (BLUE) P1"/>
+    <case src="8"  dst="RAFUTE (YELLOW) P1"/>
+    <case src="32" dst="MOMO (PINK) P2"/>
+    <case src="36" dst="IKUO (BLUE) P2"/>
+    <case src="40" dst="RAFUTE (YELLOW) P2"/>
+    <case src="76" dst="-"/>
+  </format>
+  <format id="stage">
+    <case src="0" dst="-"/>
+  </format>
+  
+  <charset id="pinkswts">
+    <char src="0x00" dst=""/>
+    <char src="0x24" dst="&single-music-note;"/>
+    <char src="0x5C" dst="&#165;"/>
+  </charset>
+</hi2txt>

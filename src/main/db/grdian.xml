@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Guardian">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,c0d2,48,00,00
+                  @:maincpu,program,c110,1,0a,0a
+                  @:maincpu,program,c0ca,1,17,17</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>74</size>
+    </check>
+	<elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+	</loop>
+	<loop count="10">
+      <elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="55"/>
+	</loop>
+	<loop count="9"> <!-- AREA of last hiscore is missing... -->
+	  <elt size="1" type="int"  id="AREA"/>
+    </loop>
+	<elt size="1" type="raw" id="UNKNOWN"/>
+	<elt size="1" type="raw" id="UNKNOWN2"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="AREA" format="character"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+	<field id="UNKNOWN"   format="0x"  display="debug"/>
+	<field id="UNKNOWN2"  format="0x"  display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src=""                    dst="NIGHT"/>
+    <case src="7"  operator="&lt;=" dst="NIGHT"/>
+    <case src="15" operator="&lt;=" dst="ICE"/>
+	<case src="23" operator="&lt;=" dst="GREEN"/>
+	<case src="31" operator="&lt;=" dst="SAND"/>
+	<case src="39" operator="&lt;=" dst="NEXT"/>
+    <case src="40" operator="&gt;=" dst="BASE"/>
+  </format>
+  
+  <charset id="charconv">
+    <char src="0x24" dst="!"/>
+    <char src="0x25" dst=","/>
+	<char src="0x26" dst="."/>
+	<char src="0x27" dst="+"/>
+	<char src="0x28" dst="-"/>
+	<char src="0x29" dst="&amp;"/>
+	<char src="0x2A" dst="?"/>
+	<char src="0x2D" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Two Tigers">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file="nvram">
+    <check>
+      <size>2048</size>
+    </check>
+    <elt size="7"  type="raw"  id="UNKNOWN"/>
+    <elt size="4"  type="int"  id="ALL TIME SCORE" base="16"/>
+    <elt size="11" type="raw"  id="UNKNOWN"/>
+    <elt size="3"  type="text" id="ALL TIME NAME"/>
+    <elt size="65" type="raw"  id="UNKNOWN"/>
+    <!-- TODO: number of boats sunk -->
+    <!-- mame doesn't appear to be able to keep the hiscore when reloading the game  -->
+    <loop count="10">
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="text" id="NAME2"/>
+    </loop>
+    <loop count="10">
+      <elt size="1" type="text"  id="MODE"/>
+    </loop>
+    <loop count="10">
+      <elt size="4" type="int" id="SCORE" base="16"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table id="ALL TIME">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"  src="ALL TIME NAME"/>
+      <column id="SCORE" src="ALL TIME SCORE"/>
+    </table>
+    <table display="debug">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="NAME2"/>
+      <column id="SCORE"/>
+      <column id="MODE" format="mode"/>
+    </table>
+  </output>
+  
+  <format id="mode">
+    <case src="H" dst="ONE PILOT"/>
+    <case src="P" dst="TEAM PLAY"/>
+    <case src="X" dst="DOGFIGHT"/>
+  </format>
+</hi2txt>

@@ -1,0 +1,8 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>6000</cell><cell>A Z</cell></row>
+    <row><cell>2</cell><cell>1000</cell><cell>AAB</cell></row>
+  </table>
+  <field id="UNKNOWN">0x0000</field>
+</hi2txt>

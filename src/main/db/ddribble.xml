@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4800:70:1d:03</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>112</size>
+    </check>
+    <loop count="8">
+      <elt size="3" type="text" id="NAME"  charset="ddribble" ascii-offset="48"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int" id="BIRTHDATE A" base="16"/>
+      <elt size="1" type="int" id="BIRTHDATE B" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="2" type="int" id="POINTS" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="2" type="int" id="FIELD GOAL" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="2" type="int" id="FREE THROW" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int" id="REBOUNDS" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int" id="ASSISTS" base="16"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int" id="PERSONAL FOULS" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="BIRTHDATE" format="birthdate"/>
+      <column id="POINTS"/>
+      <column id="FIELD GOAL" format="percent"/>
+      <column id="FREE THROW" format="percent"/>
+      <column id="REBOUNDS"/>
+      <column id="ASSISTS"/>
+      <column id="PERSONAL FOULS"/>
+    </table>
+  </output>
+  
+  <format id="birthdate">
+    <concat>
+      <column id="BIRTHDATE A"/>
+      <column>/</column>
+      <column id="BIRTHDATE B"/>
+    </concat>
+  </format>
+  <format id="."><prefix>.</prefix></format>
+  <format id="percent">
+    <case src="9999" operator="&gt;"  dst="Perfect"/>
+    <case src="9999" operator="&lt;=" format="."/>
+  </format>
+  
+  <charset id="ddribble">
+    <char src="0x0A" dst="."/>
+  </charset>
+</hi2txt>

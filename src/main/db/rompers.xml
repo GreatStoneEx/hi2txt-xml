@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone (duplicate scores and top score)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:401:4f:00:01
+                  0:143:3:00:88
+                  0:13a:8:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>90</size>
+    </check>
+    <loop count="4">
+      <elt size="3" type="int"  id="SCORE SHORT"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="3" type="int"  id="SCORE SHORT"/>
+    </loop>
+    <loop count="5">
+      <elt size="8" type="int"  id="SCORE" decoding-profile="bcd"/>
+    </loop>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME"/>
+    </loop>
+    <loop count="5">
+      <elt size="1" type="int"  id="STAGE"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE SHORT"/>
+    <elt size="8" type="int" id="TOP SCORE" decoding-profile="bcd"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="SCORE SHORT" format="*10" display="debug"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE"         format="*10" display="extra"/>
+    <field id="TOP SCORE SHORT"   format="*10" display="debug"/>
+  </output>
+</hi2txt>

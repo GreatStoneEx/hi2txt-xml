@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4288:3:00:00
+                  0:5180:1:40:40
+                  0:51a0:1:40:40
+                  0:51c0:1:40:40
+                  0:51e0:1:40:40
+                  0:5200:1:40:40
+                  0:5230:1:10:10</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>9</size>
+    </check>
+    <elt size="3" type="int"  id="SCORE"        endianness="little_endian" base="16"/>
+    <elt size="5" type="text" id="SCORE STRING" endianness="little_endian" charset="streakng" ascii-offset="48"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <field id="RANK" src="index" format="+1"/>
+      <field id="SCORE"/>
+      <field id="SCORE STRING"                      display="debug"/>
+      <field id="CHECK" format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="streakng">
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt>

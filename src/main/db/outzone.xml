@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:2401de:18:00:00
+                  0:240503:4f:3f:3f
+                  0:240372:a:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>113</size>
+    </check>
+    <elt   size="4"  type="int"  id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4"  type="int"  id="SCORE"     base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="12" type="text" id="NAME" bitmask="bm_outzone" charset="cs_outzone"/>
+      <elt size="4"  type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="5">
+      <elt size="1"  type="int"  id="AREA"/>
+      <elt size="1"  type="raw"  id="SEPARATOR2"/>
+      <!-- separator of last area not dumped //-->
+    </loop>
+  </structure>
+  
+  <bitmask id="bm_outzone">
+  	<character mask="11111111 00000000 00000000 00000000 11111111 00000000 00000000 00000000 11111111 00000000 00000000 00000000"/>
+  </bitmask>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="AREA"       format="area"/>
+      <column id="SEPARATOR"  format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR2" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="area"><suffix>%</suffix></format>
+  
+  <charset id="cs_outzone">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

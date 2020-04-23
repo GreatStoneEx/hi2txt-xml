@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ab08:28:00:f1
+                  0:a98b:3:00:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>43</size>
+    </check>
+    <loop count="5">
+      <elt size="1" type="int"  id="RANK"  base="16"/>
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="3" type="text" id="NAME"  charset="timeplt"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="timeplt">
+    <char src="0x74" dst="A"/>
+    <char src="0xA5" dst="A"/>
+    <char src="0xB1" dst="B"/>
+    <char src="0xCC" dst="C"/>
+    <char src="0x77" dst="C"/>
+    <char src="0xEC" dst="D"/>
+    <char src="0x5C" dst="E"/>
+    <char src="0x34" dst="E"/>
+    <char src="0x16" dst="F"/>
+    <char src="0x39" dst="G"/>
+    <char src="0x50" dst="H"/>
+    <char src="0x67" dst="I"/>
+    <char src="0xFD" dst="I"/>
+    <char src="0x21" dst="J"/>
+    <char src="0x7A" dst="K"/>
+    <char src="0x7C" dst="K"/>
+    <char src="0xC5" dst="L"/>
+    <char src="0xF7" dst="M"/>
+    <char src="0x38" dst="M"/>
+    <char src="0xBE" dst="N"/>
+    <char src="0x3B" dst="N"/>
+    <char src="0x54" dst="O"/>
+    <char src="0x68" dst="O"/>
+    <char src="0x80" dst="P"/>
+    <char src="0x2F" dst="Q"/>
+    <char src="0x5F" dst="R"/>
+    <char src="0xD7" dst="R"/>
+    <char src="0x9F" dst="S"/>
+    <char src="0xED" dst="S"/>
+    <char src="0x6D" dst="T"/>
+    <char src="0xDC" dst="T"/>
+    <char src="0x44" dst="U"/>
+    <char src="0x0D" dst="U"/>
+    <char src="0xB8" dst="V"/>
+    <char src="0xE7" dst="W"/>
+    <char src="0xBD" dst="X"/>
+    <char src="0x89" dst="Y"/>
+    <char src="0xBF" dst="Y"/>
+    <char src="0x59" dst="Z"/>
+    <char src="0x1A" dst="."/>
+    <char src="0x11" dst="."/>
+  </charset>
+</hi2txt>

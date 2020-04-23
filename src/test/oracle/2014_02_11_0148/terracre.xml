@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>25000</cell><cell>S.FUJIWARA</cell></row>
+    <row><cell>2</cell><cell>23500</cell><cell>B-?@A?.,*&amp;</cell></row>
+    <row><cell>3</cell><cell>20000</cell><cell>I.SHIKI   </cell></row>
+    <row><cell>4</cell><cell>15000</cell><cell>H.TSUTSUI </cell></row>
+    <row><cell>5</cell><cell>10000</cell><cell>K.YOSHIDA </cell></row>
+  </table>
+  <field id="TOP SCORE">25000</field>
+  <field id="UNKNOWN">0x50</field>
+</hi2txt>

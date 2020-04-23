@@ -1,0 +1,10 @@
+RANK|SCORE|CHARACTER
+1|30|Cat
+2|28|Rat
+3|26|Cat
+4|24|Rat
+5|22|Cat
+
+UNKNOWN
+0x2
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Psycho Soldier">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:dd05:f5:31:ff
+                  0:fe66:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>248</size>
+    </check>
+    <loop count="10" skip-first-bytes="1" skip-last-bytes="4">
+      <elt size="2" type="text" id="RANK"/>
+      <elt size="1" type="text" id="SEPARATOR"/>
+      <elt size="7" type="text" id="SCORE"/>
+      <elt size="1" type="text" id="SEPARATOR2"/>
+      <elt size="9" type="text" id="NAME" charset="psychos"/>
+      <elt size="5" type="raw" id="UNKNOWN"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="TrimL "/>
+      <column id="SEPARATOR"  display="debug"/>
+      <column id="SCORE" format="TrimL "/>
+      <column id="SEPARATOR2" display="debug"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+    
+  <charset id="psychos">
+    <char src="0x5B" dst="."/>
+    <char src="0x5C" dst=" "/>
+  </charset>
+</hi2txt>

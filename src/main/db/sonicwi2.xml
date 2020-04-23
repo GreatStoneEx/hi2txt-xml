@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Aero Fighters 2 / Sonic Wings 2">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10000e:52:48:03</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>82</size>
+    </check>
+    <loop count="10">
+	  <elt size="3" type="text" id="NAME"/>
+	  <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="2" type="int" id="CHECK"/>
+  </structure>
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+	<elt size="814" type="raw" id="UNKNOWN"/>
+    <loop count="10">
+	  <elt size="3" type="text" id="NAME"/>
+	  <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="2" type="int" id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="Hi-en Japan FS-X"/>
+    <case src="1" dst="Mao-Mao Japan F-15 Eagle"/>
+    <case src="2" dst="Silver USA A-10 Thunderbolt"/>
+    <case src="3" dst="Bobby Britain FRS.2"/>
+	<case src="4" dst="Cindy UN F-14 Tomcat"/>
+	<case src="5" dst="Robo Keaton USA F-117"/>
+	<case src="6" dst="Steve France RAFALE"/>
+	<case src="7" dst="Spanky UN YF-23"/>
+  </format>
+</hi2txt>

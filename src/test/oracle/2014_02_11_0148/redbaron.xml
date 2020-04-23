@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHECKSUM</col>
+    <row><cell>1</cell><cell>610</cell><cell>JAA</cell><cell>0xB5</cell></row>
+    <row><cell>2</cell><cell>360</cell><cell>BCA</cell><cell>0x7E</cell></row>
+    <row><cell>3</cell><cell>330</cell><cell>[AD</cell><cell>0xAF</cell></row>
+    <row><cell>4</cell><cell>260</cell><cell>GBA</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>60</cell><cell>AAA</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>40</cell><cell>AGA</cell><cell>0x00</cell></row>
+  </table>
+</hi2txt>

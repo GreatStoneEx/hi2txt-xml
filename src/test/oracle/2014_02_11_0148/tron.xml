@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col>
+    <row><cell>1</cell><cell>2000</cell><cell>JP</cell><cell>OS</cell></row>
+    <row><cell>2</cell><cell>2000</cell><cell>BA</cell><cell>JCL</cell></row>
+    <row><cell>3</cell><cell>2000</cell><cell>GG</cell><cell>USER</cell></row>
+    <row><cell>4</cell><cell>2000</cell><cell>EV</cell><cell>USER</cell></row>
+    <row><cell>5</cell><cell>2000</cell><cell>AG</cell><cell>USER</cell></row>
+    <row><cell>6</cell><cell>2000</cell><cell>JM</cell><cell>SNOBOL</cell></row>
+    <row><cell>7</cell><cell>2000</cell><cell>TL</cell><cell>PL1</cell></row>
+    <row><cell>8</cell><cell>2000</cell><cell>SB</cell><cell>PASCAL</cell></row>
+    <row><cell>9</cell><cell>2000</cell><cell>MJ</cell><cell>ALGOL</cell></row>
+    <row><cell>10</cell><cell>2000</cell><cell>JJ</cell><cell>ASSEMBLY</cell></row>
+  </table>
+  <field id="TOP SCORE">2000</field>
+  <field id="UNKNOWN2">0x00113603000151</field>
+</hi2txt>

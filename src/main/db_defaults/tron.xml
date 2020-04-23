@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col>
+    <row><cell>1</cell><cell>2000</cell><cell>JP</cell><cell>RPG</cell></row>
+    <row><cell>2</cell><cell>2000</cell><cell>BA</cell><cell>RPG</cell></row>
+    <row><cell>3</cell><cell>2000</cell><cell>GG</cell><cell>RPG</cell></row>
+    <row><cell>4</cell><cell>2000</cell><cell>EV</cell><cell>RPG</cell></row>
+    <row><cell>5</cell><cell>2000</cell><cell>AG</cell><cell>RPG</cell></row>
+    <row><cell>6</cell><cell>2000</cell><cell>JM</cell><cell>RPG</cell></row>
+    <row><cell>7</cell><cell>2000</cell><cell>TL</cell><cell>RPG</cell></row>
+    <row><cell>8</cell><cell>2000</cell><cell>SB</cell><cell>RPG</cell></row>
+    <row><cell>9</cell><cell>2000</cell><cell>MJ</cell><cell>RPG</cell></row>
+    <row><cell>10</cell><cell>2000</cell><cell>JJ</cell><cell>RPG</cell></row>
+  </table>
+</hi2txt>
+

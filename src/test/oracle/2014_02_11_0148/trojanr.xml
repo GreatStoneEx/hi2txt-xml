@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>23600</cell><cell>TOSHI.....</cell></row>
+    <row><cell>2</cell><cell>20000</cell><cell>YOUICHI...</cell></row>
+    <row><cell>3</cell><cell>18000</cell><cell>YUMIKO....</cell></row>
+    <row><cell>4</cell><cell>16000</cell><cell>HIROYUKI..</cell></row>
+    <row><cell>5</cell><cell>12000</cell><cell>MIDORI....</cell></row>
+    <row><cell>6</cell><cell>10000</cell><cell>HATSUMI...</cell></row>
+    <row><cell>7</cell><cell>8000</cell><cell>ATSUSI....</cell></row>
+  </table>
+  <field id="TOP SCORE">23600</field>
+</hi2txt>

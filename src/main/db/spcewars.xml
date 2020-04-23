@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219 and embedded hiscore.dat
+	  mame 0.188 and embedded hiscore.dat
+	history:
+	  2020-04-19 rework all "space invaders" games as they needs score to have either *1, *10 or *100
+	source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,20f4,02,00,00
+                  @:maincpu,program,2e3e,1,7f,7f
+                  @:maincpu,program,2e5e,1,08,08
+                  @:maincpu,program,2e7e,1,08,08
+                  @:maincpu,program,2e9e,1,08,08
+                  @:maincpu,program,2ebe,1,7f,7f
+                  @:maincpu,program,2f3e,1,00,00
+                  @:maincpu,program,2f5e,1,41,41
+                  @:maincpu,program,2f7e,1,7f,7f
+                  @:maincpu,program,2f9e,1,41,41
+                  @:maincpu,program,2fbe,1,00,00
+                  @:maincpu,program,303e,1,08,08
+                  @:maincpu,program,305e,1,08,08
+                  @:maincpu,program,307e,1,08,08
+                  @:maincpu,program,309e,1,08,08
+                  @:maincpu,program,30be,1,08,08
+                  @:maincpu,program,313e,1,32,32
+                  @:maincpu,program,315e,1,49,49
+                  @:maincpu,program,317e,1,49,49
+                  @:maincpu,program,319e,1,49,49
+                  @:maincpu,program,31be,1,26,26
+                  @:maincpu,program,323e,1,3e,3e
+                  @:maincpu,program,325e,1,41,41
+                  @:maincpu,program,327e,1,41,41
+                  @:maincpu,program,329e,1,41,41
+                  @:maincpu,program,32be,1,22,22
+                  @:maincpu,program,333e,1,3e,3e
+                  @:maincpu,program,335e,1,41,41
+                  @:maincpu,program,337e,1,41,41
+                  @:maincpu,program,339e,1,41,41
+                  @:maincpu,program,33be,1,3e,3e
+                  @:maincpu,program,343e,1,7f,7f
+                  @:maincpu,program,345e,1,48,48
+                  @:maincpu,program,347e,1,4c,4c
+                  @:maincpu,program,349e,1,4a,4a
+                  @:maincpu,program,34be,1,31,31
+                  @:maincpu,program,353e,1,7f,7f
+                  @:maincpu,program,355e,1,49,49
+                  @:maincpu,program,357e,1,49,49
+                  @:maincpu,program,359e,1,49,49
+                  @:maincpu,program,35be,1,41,41</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>42</size>
+    </check>
+    <loop count="1">
+      <elt size="2" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="*10"/>
+    </table>
+  </output>
+</hi2txt>

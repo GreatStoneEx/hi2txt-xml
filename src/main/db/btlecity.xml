@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Vs. Battle City">
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: thomas busse
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:3e:6:00:00
+                  0:3f:1:02:02</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>7</size>
+    </check>
+    <elt size="1" type="int" id="SCORE1" endianness="big_endian" base="256"/>
+	<elt size="1" id="RAW" /> 
+	<elt size="4" type="int" id="SCORE3" endianness="big_endian" base="256"/>
+	<elt size="1" type="int" id="SCORE2" endianness="big_endian" base="256"/>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+    </table>
+  </output>
+ 
+  <format id="score">
+	<sum>
+	  <column id="SCORE1" format="*100000"/>
+	  <column id="SCORE2" format="*10000"/>
+	  <column id="SCORE3"/>
+	</sum>
+  </format> 
+  
+</hi2txt>
+

@@ -1,0 +1,179 @@
+task createEmptyOracles {
+    group "Internal"
+    doLast {
+        needEmptyOracles.forEach({
+            def txtOracle = "$projectDir/src/test/oracle/${it}.txt"
+            if (!file(txtOracle).parentFile.exists()) {
+                file(txtOracle).parentFile.mkdir()
+            }
+            if (!file(txtOracle).exists()) {
+                println "Creating empty oracle: "+ file(txtOracle).getName()
+                file(txtOracle).createNewFile()
+            }
+            def xmlOracle = "$projectDir/src/test/oracle/${it}.xml"
+            if (!file(xmlOracle).exists()) {
+                println "Creating empty oracle: "+ file(xmlOracle).getName()
+                file(xmlOracle).createNewFile()
+            }
+        })
+    }
+}
+
+def static isAllowedForIntegrationTests(List<String> arr, game) {
+    return (arr.size() > 0) ? arr.contains(game) : true;
+}
+
+Set<String> testOracleForBinary(binaryLocation, List<String> arr) {
+    File srcDir
+    FileCollection collection
+    Set<String> gamesInError = new TreeSet<String>();
+
+    println("BINARY: "+binaryLocation)
+    FileCollection oracleFolders = layout.files(file("$projectDir/src/test/oracle").listFiles());
+    oracleFolders.collect().sort().forEach({
+        println("ORACLE repository: "+it.name+"\n______")
+        def dateFolder = it.name
+        FileCollection oracleFolderItems =  layout.files(file("$projectDir/src/test/oracle/"+dateFolder).listFiles());
+        oracleFolderItems.collect().sort().forEach({
+            def itemname = it.name.take(it.name.lastIndexOf('.'))
+            if (isAllowedForIntegrationTests(arr, itemname)) {
+                def itemext = it.name.substring(it.name.lastIndexOf('.') + 1);
+                println(itemname + " (" + itemext + ")")
+                def stdout = new ByteArrayOutputStream()
+                exec {
+                    ignoreExitValue true
+                    standardOutput stdout
+                    commandLine binaryLocation, (itemext.equals("xml") ? "-xml" : ""), "-hiscoredat", "$projectDir/src/test/input/$dateFolder/hiscore.dat", "-descr", "$projectDir/src/main/db", "-rd", "-notrace", "$projectDir/src/test/input/$dateFolder/hi/$itemname"
+                }
+                def stdString = stdout.toString("UTF-8").trim()
+                String oracleContent = it.getText("UTF-8").trim();
+                if (!stdString.equals(oracleContent)) {
+                    gamesInError.add(file(binaryLocation).getName()+":"+dateFolder + "/" + it.name)
+                    println("====>> Expected <<====\n" + oracleContent)
+                    println("====>> Found <<====\n" + stdString)
+                }
+            }
+        })
+    })
+    return gamesInError
+}
+
+task launchIntegrationTests {
+    group "Internal"
+    doLast {
+        Set<String> allErrors = new TreeSet<String>();
+        binaryLocations.forEach({
+            def errors = testOracleForBinary(it, allowedForIntegrationTests)
+            allErrors.addAll(errors)
+        })
+        if (allErrors != null && allErrors.size() > 0) {
+            def msg = allErrors.size() + " issues detected on " + allErrors.toString()
+            println msg
+            Set<String> gamesOnlyErrors = new TreeSet<String>();
+            allErrors.forEach({
+                def name = it.substring(it.lastIndexOf("/")+1)
+                def basename = name.take(name.lastIndexOf('.'))
+                gamesOnlyErrors.add(basename)
+            })
+            def simpleMsg = gamesOnlyErrors.size() + " impacted games:" + gamesOnlyErrors.toString()
+            println simpleMsg
+            throw new GradleException(msg)
+        }
+    }
+}
+
+task forceOracles {
+    group "Internal"
+    doLast {
+        forceOraclesFor.forEach({
+            def binaryLocation = binaryLocations.get(0)
+            def folder_name_ext = it
+            def dateFolder = file(folder_name_ext).getParentFile().getName()
+            def itemname = file(folder_name_ext).name.take(file(folder_name_ext).name.lastIndexOf('.'))
+            def itemext = file(folder_name_ext).name.substring(file(folder_name_ext).name.lastIndexOf('.') + 1);
+            println(itemname + " (" + itemext + ")")
+            def stdout = new ByteArrayOutputStream()
+            exec {
+                ignoreExitValue true
+                standardOutput stdout
+                commandLine binaryLocation, (itemext.equals("xml") ? "-xml" : ""), "-hiscoredat", "$projectDir/src/test/input/$dateFolder/hiscore.dat", "-descr", "$projectDir/src/main/db", "-rd", "-notrace", "$projectDir/src/test/input/$dateFolder/hi/$itemname"
+            }
+            def stdString = stdout.toString("UTF-8").trim()
+            def oracle = "$projectDir/src/test/oracle/$folder_name_ext"
+            def oracle_date = file(oracle).parent
+            if (!file(oracle_date).exists()) {
+                file(oracle_date).mkdir()
+            }
+            println(stdString)
+            file(oracle).setText(stdString, "UTF-8")
+        })
+    }
+}
+
+task generateDefaultHiscoresXML {
+    group "Internal"
+    doLast {
+        def mameInstallationFolder = file(mameLocation).parent
+        println "mame: $mameLocation"
+        generateDefaultHiscoresXMLFor.forEach({
+            def game = it
+            println game
+            def binaryLocation = binaryLocations.get(0)
+            def hiFile = file("$mameInstallationFolder/hi/${game}.hi")
+            // delete mame_install/hi/<game>.hi
+            if (hiFile.exists()) { hiFile.delete() }
+            def nvramFolder = file("$mameInstallationFolder/nvram/$game")
+            // delete mame_install/nvram/<game>/
+            if (nvramFolder.exists()) { nvramFolder.deleteDir() }
+            // launch "mame_install/mame64.exe -bench 180 <game>"
+            exec {
+                workingDir mameInstallationFolder
+                commandLine mameLocation, "-bench", "180", game
+            }
+            // launch hi2txt -xml
+            def stdout = new ByteArrayOutputStream()
+            exec {
+                ignoreExitValue true
+                standardOutput stdout
+                commandLine binaryLocation, "-xml", "-hiscoredat", "$mameInstallationFolder/plugins/hiscore/hiscore.dat", "-descr", "$projectDir/src/main/db", "-r", "$mameInstallationFolder/hi/$game"
+            }
+            // write hi2txt output into db_defaults/<game>.xml
+            def stdString = stdout.toString("UTF-8").trim()
+            println(stdString)
+            file("$projectDir/src/main/db_defaults/${game}.xml").setText(stdString, "UTF-8")
+        })
+    }
+}
+
+def getDate() { new Date().format('yyyy-MM-dd HH-mm-ss') }
+task packageXML(type: Zip) {
+    group "Internal"
+    archiveFileName = "hi2txt.zip"
+    destinationDirectory = file("$projectDir/dist")
+    from("$projectDir/src/main/db") {
+        include("*.xml")
+        include("*.dtd")
+    }
+}
+task packageDefaultsXML(type: Zip) {
+    group "Internal"
+    archiveFileName = "hi2txt_defaults.zip"
+    destinationDirectory = file("$projectDir/dist")
+    from("$projectDir/src/main/db_defaults") {
+        include("*.xml")
+        include("*.dtd")
+    }
+}
+task versionFile() {
+    group "Internal"
+    doLast {
+        printf "${getDate()}"
+        new File("$projectDir/dist", "hi2txt_xml.version").text = "${getDate()}"
+    }
+}
+task packageSolution {
+    group "Internal"
+    dependsOn 'packageXML'
+    dependsOn 'packageDefaultsXML'
+    dependsOn 'versionFile'
+}

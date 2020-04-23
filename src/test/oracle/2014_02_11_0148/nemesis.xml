@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>GENDER</col><col>ZODIAC</col><col>DOT</col>
+    <row><cell>1</cell><cell>57300</cell><cell>H.M</cell><cell>MALE</cell><cell>&#9806; LIBRA</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>2</cell><cell>48530</cell><cell>S.T</cell><cell>MALE</cell><cell>&#9800; ARIES</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>3</cell><cell>33300</cell><cell>K.Y</cell><cell>MALE</cell><cell>&#9805; VIRGO</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>4</cell><cell>25700</cell><cell>K.K</cell><cell>MALE</cell><cell>&#9807; SCORPIO</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>5</cell><cell>21500</cell><cell>K.N</cell><cell>MALE</cell><cell>&#9803; CANCER</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>6</cell><cell>17700</cell><cell>M.N</cell><cell>FEMALE</cell><cell>&#9810; AQUARIUS</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>7</cell><cell>13200</cell><cell>K.O</cell><cell>FEMALE</cell><cell>&#9801; TAURUS</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>8</cell><cell>10000</cell><cell>M.I</cell><cell>FEMALE</cell><cell>&#9802; GEMINI</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>9</cell><cell>9500</cell><cell>T.K</cell><cell>MALE</cell><cell>&#9805; VIRGO</cell><cell>0x1C1C1C1C1C</cell></row>
+    <row><cell>10</cell><cell>7600</cell><cell>M.D</cell><cell>FEMALE</cell><cell>&#9808; SAGITARIUS</cell><cell>0x1C1C1C1C1C</cell></row>
+  </table>
+  <field id="TOP SCORE">573</field>
+  <field id="UNKNOWN">0x76</field>
+</hi2txt>

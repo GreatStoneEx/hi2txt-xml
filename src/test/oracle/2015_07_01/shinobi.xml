@@ -1,0 +1,50 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>COIN</col>
+    <row><cell>1</cell><cell>100000</cell><cell>AAA</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>BBB</cell><cell>5</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>CCC</cell><cell>5</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>DDD</cell><cell>4</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>EEE</cell><cell>4</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>FFF</cell><cell>3</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>GGG</cell><cell>3</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>HHH</cell><cell>3</cell></row>
+    <row><cell>9</cell><cell>26350</cell><cell>&#183;&apos; </cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>25000</cell><cell>III</cell><cell>3</cell></row>
+    <row><cell>11</cell><cell>20000</cell><cell>JJJ</cell><cell>2</cell></row>
+    <row><cell>12</cell><cell>19010</cell><cell>&#9794;&#9792;0</cell><cell>1</cell></row>
+    <row><cell>13</cell><cell>17330</cell><cell>-=.</cell><cell>1</cell></row>
+    <row><cell>14</cell><cell>15970</cell><cell>/()</cell><cell>1</cell></row>
+    <row><cell>15</cell><cell>15000</cell><cell>KKK</cell><cell>2</cell></row>
+    <row><cell>16</cell><cell>14000</cell><cell>LLL</cell><cell>2</cell></row>
+    <row><cell>17</cell><cell>13000</cell><cell>MMM</cell><cell>2</cell></row>
+    <row><cell>18</cell><cell>12000</cell><cell>NNN</cell><cell>2</cell></row>
+    <row><cell>19</cell><cell>11000</cell><cell>OOO</cell><cell>2</cell></row>
+    <row><cell>20</cell><cell>10000</cell><cell>PPP</cell><cell>2</cell></row>
+  </table>
+  <table>
+    <col>RANK</col><col>SCORE 2</col><col>NAME 2</col><col>COIN 2</col>
+    <row><cell>1</cell><cell>100000</cell><cell>AAA</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>BBB</cell><cell>5</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>CCC</cell><cell>5</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>DDD</cell><cell>4</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>EEE</cell><cell>4</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>FFF</cell><cell>3</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>GGG</cell><cell>3</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>HHH</cell><cell>3</cell></row>
+    <row><cell>9</cell><cell>26350</cell><cell>&#183;&apos; </cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>25000</cell><cell>III</cell><cell>3</cell></row>
+    <row><cell>11</cell><cell>20000</cell><cell>JJJ</cell><cell>2</cell></row>
+    <row><cell>12</cell><cell>19010</cell><cell>&#9794;&#9792;0</cell><cell>1</cell></row>
+    <row><cell>13</cell><cell>17330</cell><cell>-=.</cell><cell>1</cell></row>
+    <row><cell>14</cell><cell>15970</cell><cell>/()</cell><cell>1</cell></row>
+    <row><cell>15</cell><cell>15000</cell><cell>KKK</cell><cell>2</cell></row>
+    <row><cell>16</cell><cell>14000</cell><cell>LLL</cell><cell>2</cell></row>
+    <row><cell>17</cell><cell>13000</cell><cell>MMM</cell><cell>2</cell></row>
+    <row><cell>18</cell><cell>12000</cell><cell>NNN</cell><cell>2</cell></row>
+    <row><cell>19</cell><cell>11000</cell><cell>OOO</cell><cell>2</cell></row>
+    <row><cell>20</cell><cell>10000</cell><cell>PPP</cell><cell>2</cell></row>
+  </table>
+  <field id="TOP SCORE">100000</field>
+  <field id="UNKNOWN">0xFEF2</field>
+</hi2txt>

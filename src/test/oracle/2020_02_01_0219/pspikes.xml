@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>SEPARATOR</col><col>LAST CHAR</col><col>EMPTY</col>
+    <row><cell>1</cell><cell>608200</cell><cell>MAS</cell><cell>Japan</cell><cell>0x01</cell><cell>0xF300</cell><cell>0x000000</cell></row>
+    <row><cell>2</cell><cell>10000</cell><cell>ABC</cell><cell>U.R.S.S</cell><cell>0x01</cell><cell>0x0000</cell><cell>0x000000</cell></row>
+    <row><cell>3</cell><cell>3000</cell><cell>DEF</cell><cell>Cuba</cell><cell>0x01</cell><cell>0x0000</cell><cell>0x000000</cell></row>
+    <row><cell>4</cell><cell>1500</cell><cell>GHI</cell><cell>U.S.A</cell><cell>0x01</cell><cell>0x0000</cell><cell>0x000000</cell></row>
+    <row><cell>5</cell><cell>1000</cell><cell>JKL</cell><cell>Japan</cell><cell>0x01</cell><cell>0x0000</cell><cell></cell></row>
+  </table>
+</hi2txt>

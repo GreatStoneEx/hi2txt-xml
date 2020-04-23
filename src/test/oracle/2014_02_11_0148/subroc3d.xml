@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>12350</cell><cell>.ZO</cell></row>
+    <row><cell>2</cell><cell>7600</cell><cell>DFH</cell></row>
+    <row><cell>3</cell><cell>6050</cell><cell>BCD</cell></row>
+  </table>
+  <field id="UNUSED">0x0000</field>
+  <field id="CHECK">0x14</field>
+</hi2txt>

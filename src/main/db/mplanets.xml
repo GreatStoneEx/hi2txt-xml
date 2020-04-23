@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Mad Planets">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>4096</size>
+    </check>
+	<elt size="1344" type="raw" id="RAW1"/>
+	<loop count="20">
+	  <elt size="2" type="raw"  id="UNKNOWN1" table-index="loop_reverse_index"/>
+      <elt size="7" type="int"  id="SCORE1"   nibble-skip="odd" base="16" byte-skip="0xF9" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN12" table-index="loop_reverse_index"/>
+	  <elt size="3" type="text" id="NAME1"    charset="charconv" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN13" table-index="loop_reverse_index"/>
+	</loop>
+	<elt size="14" type="raw" id="RAW2"/>
+	<loop count="20">
+      <elt size="2" type="raw"  id="UNKNOWN2" table-index="loop_reverse_index"/>
+      <elt size="7" type="int"  id="SCORE2"   nibble-skip="odd" base="16" byte-skip="0xF9" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN22" table-index="loop_reverse_index"/>
+	  <elt size="3" type="text" id="NAME2"    charset="charconv" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN23" table-index="loop_reverse_index"/>
+	</loop>
+	<elt size="14" type="raw" id="RAW3"/>
+	<loop count="20">
+      <elt size="2" type="raw"  id="UNKNOWN3" table-index="loop_reverse_index"/>
+      <elt size="7" type="int"  id="SCORE3"   nibble-skip="odd" base="16" byte-skip="0xF9" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN32" table-index="loop_reverse_index"/>
+	  <elt size="3" type="text" id="NAME3"    charset="charconv" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN33" table-index="loop_reverse_index"/>
+	</loop>
+	<elt size="14" type="raw" id="RAW4"/>
+	<loop count="20">
+      <elt size="2" type="raw"  id="UNKNOWN4" table-index="loop_reverse_index"/>
+      <elt size="7" type="int"  id="SCORE4"   nibble-skip="odd" base="16" byte-skip="0xF9" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN42" table-index="loop_reverse_index"/>
+	  <elt size="3" type="text" id="NAME4"    charset="charconv" table-index="loop_reverse_index"/>
+	  <elt size="1" type="raw"  id="UNKNOWN43" table-index="loop_reverse_index"/>
+	</loop>
+	<elt size="14"   type="raw" id="RAW5"/>
+	<elt size="1560" type="raw" id="RAW6"/>
+  </structure>
+  
+  <output>
+	<table id="GALACTIC HALL OF FAME">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="UNKNOWN2"  format="0x" display="debug"/>
+      <column id="SCORE" src="SCORE2"/>
+	  <column id="UNKNOWN22" format="0x" display="debug"/>
+	  <column id="NAME" src="NAME2"/>
+	  <column id="UNKNOWN23" format="0x" display="debug"/>
+    </table>
+	
+	<table id="ULTRA SCORES">
+      <column id="RANK" src="index" format="+1"/>
+	  <column id="UNKNOWN1"  format="0x" display="debug"/>
+      <column id="DAILY SCORE" src="SCORE1"/>
+	  <column id="UNKNOWN12" format="0x" display="debug"/>
+	  <column id="DAILY NAME" src="NAME1"/>
+	  <column id="UNKNOWN13" format="0x" display="debug"/>
+    </table>
+	
+	<table id="ULTRA SCORES 2" display="debug">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="UNKNOWN3"  format="0x"/>
+      <column id="SCORE3"/>
+	  <column id="UNKNOWN32" format="0x"/>
+	  <column id="NAME3"/>
+	  <column id="UNKNOWN33" format="0x"/>
+    </table>
+	
+	<table id="ULTRA SCORES 3" display="debug">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="UNKNOWN4"  format="0x"/>
+      <column id="SCORE4"/>
+	  <column id="UNKNOWN42" format="0x"/>
+	  <column id="NAME4"/>
+	  <column id="UNKNOWN43" format="0x"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x0A" dst="A"/>
+	<char src="0x0B" dst="B"/>
+	<char src="0x0C" dst="C"/>
+	<char src="0x0D" dst="D"/>
+	<char src="0x0E" dst="E"/>
+	<char src="0x0F" dst="F"/>
+	<char src="0x1A" dst="G"/>
+	<char src="0x1B" dst="H"/>
+	<char src="0x1C" dst="I"/>
+	<char src="0x1D" dst="J"/>
+	<char src="0x1E" dst="K"/>
+	<char src="0x1F" dst="L"/>
+	<char src="0x2A" dst="M"/>
+	<char src="0x2B" dst="N"/>
+	<char src="0x2C" dst="O"/>
+	<char src="0x2D" dst="P"/>
+	<char src="0x2E" dst="Q"/>
+	<char src="0x2F" dst="R"/>
+	<char src="0x3A" dst="S"/>
+	<char src="0x3B" dst="T"/>
+	<char src="0x3C" dst="U"/>
+	<char src="0x3D" dst="V"/>
+	<char src="0x3E" dst="W"/>
+	<char src="0x3F" dst="X"/>
+	<char src="0x57" dst="Y"/>
+	<char src="0x5F" dst="Z"/>
+	<char src="0xF9" dst=" "/>
+  </charset>
+</hi2txt>
+

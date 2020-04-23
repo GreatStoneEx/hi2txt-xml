@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>2048</size>
+    </check>
+    <!-- Triple Jump World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="TRIPLE JUMP SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="TRIPLE JUMP NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Skeet Shooting World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="SKEET SHOOTING SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="SKEET SHOOTING NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Pole Vault World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="POLE VAULT SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="POLE VAULT NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Free Style World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="FREE STYLE SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="FREE STYLE NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Weight Lifting World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="WEIGHT LIFTING SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="WEIGHT LIFTING NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Archery World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="ARCHERY SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="ARCHERY NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <!-- Long Horse World Records //-->    
+    <loop count="4">
+      <elt size="5" type="int"  id="LONG HORSE SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="LONG HORSE NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <elt size="6" type="raw"  id="PADDING"/>
+    <loop count="3">
+      <elt size="3" type="int"  id="TODAYS SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="TODAYS NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+    <loop count="20">
+      <elt size="3" type="int"  id="SCORE" nibble-skip="odd" base="16"/>
+      <elt size="3" type="text" id="NAME" charset="hyperspt" ascii-offset="48"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+    <table id="TODAYS TOP SCORES">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="TODAYS SCORE"                 display="extra"/>
+      <column id="TODAYS NAME"                  display="extra"/>
+    </table>
+    <table id="TRIPLE JUMP TOP SCORES">
+      <column id="RANK" src="index" format="+1"        display="extra"/>
+      <column id="TRIPLE JUMP SCORE" format="distance" display="extra"/>
+      <column id="TRIPLE JUMP NAME"                    display="extra"/>
+    </table>
+    <table id="SKEET SHOOTING TOP SCORES">
+      <column id="RANK" src="index" format="+1"        display="extra"/>
+      <column id="SKEET SHOOTING SCORE"                display="extra"/>
+      <column id="SKEET SHOOTING NAME"                 display="extra"/>
+    </table>
+    <table id="POLE VAULT TOP SCORES">
+      <column id="RANK" src="index" format="+1"       display="extra"/>
+      <column id="POLE VAULT SCORE" format="distance" display="extra"/>
+      <column id="POLE VAULT NAME"                    display="extra"/>
+    </table>
+    <table id="FREE STYLE TOP SCORES">
+      <column id="RANK" src="index" format="+1"       display="extra"/>
+      <column id="FREE STYLE SCORE" format="time"     display="extra"/>
+      <column id="FREE STYLE NAME"                    display="extra"/>
+    </table>
+    <table id="WEIGHT LIFTING TOP SCORES">
+      <column id="RANK" src="index" format="+1"         display="extra"/>
+      <column id="WEIGHT LIFTING SCORE" format="weight" display="extra"/>
+      <column id="WEIGHT LIFTING NAME"                  display="extra"/>
+    </table>
+    <table id="ARCHERY TOP SCORES">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="ARCHERY SCORE"                display="extra"/>
+      <column id="ARCHERY NAME"                 display="extra"/>
+    </table>
+    <table id="LONG HORSE TOP SCORES">
+      <column id="RANK" src="index" format="+1"  display="extra"/>
+      <column id="LONG HORSE SCORE" format=".00" display="extra"/>
+      <column id="LONG HORSE NAME"               display="extra"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="distance" formatter="%.2fm">  <divide>100</divide></format>
+  <format id="time"     formatter="%.2fsec"><divide>100</divide></format>
+  <format id="weight"   formatter="%.1fkg"> <divide>10</divide></format>
+  <format id=".00"      formatter="%.2f">   <divide>100</divide></format>
+  
+  <charset id="hyperspt">
+    <char src="0x00" dst=" "/>
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+  </charset>
+</hi2txt>

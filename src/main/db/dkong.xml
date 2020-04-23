@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6100:AA:94:76
+                  0:60B8:03:50:00
+                  0:7641:01:00:00
+                  0:7621:01:00:00
+                  0:7601:01:07:07
+                  0:75e1:01:06:06
+                  0:75c1:01:05:05
+                  0:75a1:01:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>179</size>
+    </check>
+    <loop count="5">
+      <elt size="2"  type="raw"  id="UNKNOWN 1"/>
+      <elt size="1"  type="int"  id="RANK"       base="16"/>
+      <elt size="4"  type="raw"  id="UNKNOWN 2"/>
+      <elt size="6"  type="int"  id="SCORE LONG" decoding-profile="bcd"/>
+      <elt size="2"  type="raw"  id="UNKNOWN 3"/>
+      <elt size="3"  type="text" id="NAME"       charset="dkong" ascii-offset="48"/>
+      <elt size="11" type="raw"  id="UNKNOWN 4"/>
+      <elt size="3"  type="int"  id="SCORE"      endianness="little_endian" base="16"/>
+      <elt size="2"  type="raw"  id="UNKNOWN 5"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE"      endianness="little_endian" base="16"/>
+    <elt size="6" type="int" id="TOP SCORE LONG" decoding-profile="bcd"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="SCORE LONG" display="debug"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN 1" format="0x" display="debug"/>
+      <column id="UNKNOWN 2" format="0x" display="debug"/>
+      <column id="UNKNOWN 3" format="0x" display="debug"/>
+      <column id="UNKNOWN 4" format="0x" display="debug"/>
+      <column id="UNKNOWN 5" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE"      display="extra"/>
+    <field id="TOP SCORE LONG" display="debug"/>
+  </output>
+  
+  <charset id="dkong">
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+    <char src="0x2C" dst="-"/>
+  </charset>
+</hi2txt>

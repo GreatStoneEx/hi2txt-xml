@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:f300:45:00:0b
+                  0:94e2:1:01:01
+                  0:94a2:1:01:01
+                  0:9462:1:03:03
+                  0:9422:1:06:06
+                  0:93e2:1:04:04
+                  0:93a2:1:00:00
+                  0:9362:1:00:00
+                  0:9322:1:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>77</size>
+    </check>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="6">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="6">
+      <elt size="8" type="text" id="NAME" charset="gyrodine" ascii-offset="54"/>
+    </loop>
+    <elt size="8" type="raw"  id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME" format="TrimR "/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="UNKNOWN"   format="0x"  display="debug"/>
+  </output>
+  
+  <charset id="gyrodine">
+    <char src="0x00" dst=" "/>
+    <char src="0x29" dst="."/>
+    <char src="0x2A" dst="-"/>
+    <char src="0x2B" dst="!"/>
+  </charset>
+</hi2txt>

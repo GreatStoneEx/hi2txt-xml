@@ -1,0 +1,88 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHECKSUM</col>
+    <row><cell>1</cell><cell>39250</cell><cell>IJB</cell><cell>0x02</cell></row>
+    <row><cell>2</cell><cell>35600</cell><cell>   </cell><cell>0x05</cell></row>
+    <row><cell>3</cell><cell>27800</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>4</cell><cell>18550</cell><cell>XZV</cell><cell>0x0A</cell></row>
+    <row><cell>5</cell><cell>16275</cell><cell>AED</cell><cell>0x0B</cell></row>
+    <row><cell>6</cell><cell>15450</cell><cell>AOS</cell><cell>0x0F</cell></row>
+    <row><cell>7</cell><cell>14400</cell><cell> CF</cell><cell>0x07</cell></row>
+    <row><cell>8</cell><cell>14350</cell><cell>   </cell><cell>0x04</cell></row>
+    <row><cell>9</cell><cell>12250</cell><cell>COC</cell><cell>0x0B</cell></row>
+    <row><cell>10</cell><cell>12025</cell><cell> AF</cell><cell>0x06</cell></row>
+    <row><cell>11</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>12</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>13</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>14</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>15</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>16</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>17</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>18</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>19</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>20</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>21</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>22</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>23</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>24</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>25</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>26</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>27</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>28</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>29</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>30</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>31</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>32</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>33</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>34</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>35</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>36</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>37</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>38</cell><cell>10000</cell><cell>   </cell><cell>0x08</cell></row>
+  </table>
+  <table id="HEROES SCORES">
+    <col>RANK</col><col>HEROES SCORE</col><col>HEROES NAME</col><col>HEROES CHECKSUM</col>
+    <row><cell>1</cell><cell>52127</cell><cell>DRJ</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>50218</cell><cell>LED</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>41255</cell><cell>EPJ</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>41250</cell><cell>JER</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>39250</cell><cell>IJB</cell><cell>0x04</cell></row>
+    <row><cell>6</cell><cell>35600</cell><cell>   </cell><cell>0x05</cell></row>
+    <row><cell>7</cell><cell>31920</cell><cell>KID</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>31919</cell><cell>MLG</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>27800</cell><cell>   </cell><cell>0x08</cell></row>
+    <row><cell>10</cell><cell>26645</cell><cell>SSR</cell><cell>0x00</cell></row>
+  </table>
+  <table>
+    <col>COPYRIGHT_1</col><col>COPYRIGHT_2</col>
+    <row><cell>     PRESENTED BY        </cell><cell>WILLIAMS ELECTRONICS INC</cell></row>
+  </table>
+  <field id="EXTRA MAN EVERY">25000</field>
+  <field id="TURNS PER PLAYER">3</field>
+  <field id="PRICING SELECTION">3</field>
+  <field id="LEFT SLOT UNITS">1</field>
+  <field id="CENTER SLOT UNITS">4</field>
+  <field id="RIGHT SLOT UNITS">1</field>
+  <field id="UNITS REQUIRED FOR CREDIT">1</field>
+  <field id="UNITS REQUIRED FOR BONUS CREDIT">0</field>
+  <field id="MINIMUM UNITS FOR ANY CREDIT">0</field>
+  <field id="FANCY ATTRACT MODE">YES</field>
+  <field id="DIFFICULTY OF PLAY">3</field>
+  <field id="LETTERS FOR HIGHEST SCORE NAME">3</field>
+  <field id="RESTORE FACTORY SETTINGS">NO</field>
+  <field id="CLEAR BOOKKEEPING TOTALS">NO</field>
+  <field id="HIGH SCORE TABLE RESET">NO</field>
+  <field id="AUTO CYCLE">NO</field>
+  <field id="SET ATTRACT MODE MESSAGE">NO</field>
+  <field id="SET HIGHEST SCORE NAME">NO</field>
+  <field id="LEFT SLOT COINS">11</field>
+  <field id="CENTER SLOT COINS">0</field>
+  <field id="RIGHT SLOT COINS">0</field>
+  <field id="PAID CREDITS">11</field>
+  <field id="EXTRA MEN EARNED">3</field>
+  <field id="PLAY TIME IN MINUTES">99</field>
+  <field id="MEN PLAYED">36</field>
+  <field id="CREDITS PLAYED">11</field>
+  <field id="UNKNOWN2">0x3D2F2852EC000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</field>
+  <field id="PADDING">0x000000</field>
+</hi2txt>

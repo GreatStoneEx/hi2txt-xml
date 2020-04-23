@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE ALT</col><col>EMPTY</col><col>NAME</col><col>EMPTY2</col><col>UNKNOWN</col><col>CHARACTER</col><col>STAGE</col><col>PLAYER</col><col>DEFAULT</col>
+    <row><cell>1</cell><cell>1000000</cell><cell>1000000</cell><cell>0x00</cell><cell>***</cell><cell>0x000000</cell><cell>0x0000</cell><cell>*</cell><cell>0</cell><cell>*</cell><cell>yes</cell></row>
+    <row><cell>2</cell><cell>900000</cell><cell>900000</cell><cell>0x00</cell><cell>***</cell><cell>0x000000</cell><cell>0x0000</cell><cell>*</cell><cell>0</cell><cell>*</cell><cell>yes</cell></row>
+    <row><cell>3</cell><cell>813250</cell><cell>813250</cell><cell>0x00</cell><cell>?&gt;1</cell><cell>0x000000</cell><cell>0x0000</cell><cell>BORNNAM</cell><cell>3</cell><cell>P1</cell><cell>no</cell></row>
+    <row><cell>4</cell><cell>800000</cell><cell>800000</cell><cell>0x00</cell><cell>***</cell><cell>0x000000</cell><cell>0x0000</cell><cell>*</cell><cell>0</cell><cell>*</cell><cell>yes</cell></row>
+    <row><cell>5</cell><cell>700000</cell><cell>700000</cell><cell>0x00</cell><cell>***</cell><cell>0x000000</cell><cell>0x0000</cell><cell>*</cell><cell>0</cell><cell>*</cell><cell>yes</cell></row>
+    <row><cell>6</cell><cell>600000</cell><cell>600000</cell><cell>0x00</cell><cell>***</cell><cell>0x000000</cell><cell>0x0000</cell><cell>*</cell><cell>0</cell><cell>*</cell><cell>yes</cell></row>
+    <row><cell>7</cell><cell>576160</cell><cell>576160</cell><cell>0x00</cell><cell>222</cell><cell>0x000000</cell><cell>0x0000</cell><cell>WILD SNAIL</cell><cell>3</cell><cell>P2</cell><cell>no</cell></row>
+    <row><cell>8</cell><cell>241150</cell><cell>241150</cell><cell>0x00</cell><cell>BBB</cell><cell>0x000000</cell><cell>0x0000</cell><cell>GRASS HOPPER</cell><cell>2</cell><cell>P1</cell><cell>no</cell></row>
+    <row><cell>9</cell><cell>134720</cell><cell>134720</cell><cell>0x00</cell><cell>111</cell><cell>0x000000</cell><cell>0x0000</cell><cell>GRASS HOPPER</cell><cell>1</cell><cell>P1</cell><cell>no</cell></row>
+    <row><cell>10</cell><cell>132100</cell><cell>132100</cell><cell>0x00</cell><cell>1P2</cell><cell>0x000000</cell><cell></cell><cell>GRASS HOPPER</cell><cell></cell><cell></cell><cell></cell></row>
+  </table>
+  <field id="CHECK">0xAA</field>
+</hi2txt>

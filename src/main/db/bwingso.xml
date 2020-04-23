@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="B-Wings (older)">
+  <!--
+    tested with mame 0.204 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+	  <definition>@:maincpu,program,0d,3,00,04
+                  @:maincpu,program,d00,f0,34,20</definition>
+      <size>243</size>
+    </check>
+    <elt size="3" type="raw"  id="UNKNOWN"/>
+    <loop count="20">
+      <elt size="8" type="text" id="NAME" ascii-offset="32" charset="charconv"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int" id="SCORE" base="16"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x3C" dst="&amp;"/>
+	<char src="0x3D" dst="&woman;"/>
+	<char src="0x3E" dst="&man;"/>
+  </charset>
+</hi2txt>

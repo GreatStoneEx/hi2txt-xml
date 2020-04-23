@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Dungeons &amp; Dragons: Shadow over Mystara">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ff0fd0:8b:12:09</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>139</size>
+    </check>
+    <loop count="10">
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="6" type="text" id="NAME"  charset="ddsom" ascii-offset="-16"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="RANK"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="Fighter P2"/>
+    <case src="1"  dst="Fighter P1"/>
+    <case src="2"  dst="Cleric P2"/>
+    <case src="3"  dst="Cleric P1"/>
+    <case src="4"  dst="Elf P1"/>
+    <case src="5"  dst="Elf P2"/>
+    <case src="6"  dst="Dwarf P2"/>
+    <case src="7"  dst="Dwarf P1"/>
+    <case src="8"  dst="Magic-User P1"/>
+    <case src="9"  dst="Magic-User P2"/>
+    <case src="10" dst="Thief P2"/>
+    <case src="11" dst="Thief P1"/>
+  </format>
+  
+  <charset id="ddsom">
+  	<char src="0x6C" dst="&amp;"/>
+  	<char src="0x6D" dst="!"/>
+    <char src="0x6E" dst="?"/>
+    <char src="0x6F" dst="-"/>
+    <char src="0x72" dst="&roman-numeral-1;"/>
+    <char src="0x73" dst="&roman-numeral-2;"/>
+    <char src="0x74" dst="&roman-numeral-3;"/>
+    <char src="0x77" dst="0"/>
+    <char src="0x78" dst="1"/>
+    <char src="0x79" dst="2"/>
+    <char src="0x7A" dst="3"/>
+    <char src="0x7B" dst="3"/>
+    <char src="0x7C" dst="3"/>
+    <char src="0x7D" dst="3"/>
+    <char src="0x7E" dst="3"/>
+    <char src="0x7F" dst="3"/>
+    <char src="0x80" dst="9"/>
+    <char src="0x81" dst=" "/>
+    <char src="0xFF" dst=""/>
+  </charset>
+</hi2txt>

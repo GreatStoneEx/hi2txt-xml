@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>52720</cell><cell>RMM</cell></row>
+    <row><cell>2</cell><cell>39060</cell><cell>WHO</cell></row>
+    <row><cell>3</cell><cell>25290</cell><cell>MCP</cell></row>
+    <row><cell>4</cell><cell>14270</cell><cell>JEJ</cell></row>
+    <row><cell>5</cell><cell>9770</cell><cell>PJS</cell></row>
+  </table>
+  <field id="UNKNOWN">0x11</field>
+</hi2txt>

@@ -1,0 +1,28 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>3000</cell><cell>TJC</cell></row>
+    <row><cell>2</cell><cell>2500</cell><cell>JML</cell></row>
+    <row><cell>3</cell><cell>2000</cell><cell>JAH</cell></row>
+    <row><cell>4</cell><cell>1750</cell><cell>MJS</cell></row>
+    <row><cell>5</cell><cell>1500</cell><cell>ECW</cell></row>
+    <row><cell>6</cell><cell>1250</cell><cell>BLT</cell></row>
+    <row><cell>7</cell><cell>1000</cell><cell>BMW</cell></row>
+    <row><cell>8</cell><cell>950</cell><cell>DMV</cell></row>
+    <row><cell>9</cell><cell>900</cell><cell>FDA</cell></row>
+    <row><cell>10</cell><cell>825</cell><cell>LMG</cell></row>
+    <row><cell>11</cell><cell>800</cell><cell>DDT</cell></row>
+    <row><cell>12</cell><cell>775</cell><cell>JCM</cell></row>
+    <row><cell>13</cell><cell>750</cell><cell>ZAP</cell></row>
+    <row><cell>14</cell><cell>725</cell><cell>NAB</cell></row>
+    <row><cell>15</cell><cell>700</cell><cell>JUN</cell></row>
+    <row><cell>16</cell><cell>675</cell><cell>HFR</cell></row>
+    <row><cell>17</cell><cell>650</cell><cell>RON</cell></row>
+    <row><cell>18</cell><cell>625</cell><cell>FXS</cell></row>
+    <row><cell>19</cell><cell>600</cell><cell>DLB</cell></row>
+    <row><cell>20</cell><cell>575</cell><cell>LEE</cell></row>
+    <row><cell>21</cell><cell>550</cell><cell>CPB</cell></row>
+    <row><cell>22</cell><cell>525</cell><cell>WBD</cell></row>
+    <row><cell>23</cell><cell>500</cell><cell>SAM</cell></row>
+  </table>
+</hi2txt>

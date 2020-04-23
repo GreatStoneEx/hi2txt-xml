@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE STRING</col><col>NAME</col><col>SPACE 1</col><col>SPACE 2</col><col>UNKNOWN 1</col><col>UNKNOWN 2</col><col>UNKNOWN 3</col>
+    <row><cell>1</cell><cell>15910</cell><cell>15910</cell><cell>Z-.</cell><cell> </cell><cell> </cell><cell>0x90A3</cell><cell>0x3F00</cell><cell>0x50A3</cell></row>
+    <row><cell>2</cell><cell>8900</cell><cell>8900</cell><cell>   </cell><cell> </cell><cell> </cell><cell>0x92A3</cell><cell>0x3F00</cell><cell>0x52A3</cell></row>
+    <row><cell>3</cell><cell>7400</cell><cell>7400</cell><cell>   </cell><cell> </cell><cell> </cell><cell>0x94A3</cell><cell>0x3F00</cell><cell>0x54A3</cell></row>
+    <row><cell>4</cell><cell>6600</cell><cell>6600</cell><cell>   </cell><cell> </cell><cell> </cell><cell>0xD0A1</cell><cell>0x3F00</cell><cell>0x90A1</cell></row>
+    <row><cell>5</cell><cell>5100</cell><cell>5100</cell><cell>   </cell><cell> </cell><cell> </cell><cell>0xD2A1</cell><cell>0x3F00</cell><cell>0x92A1</cell></row>
+    <row><cell>6</cell><cell>4300</cell><cell>4300</cell><cell>   </cell><cell> </cell><cell> </cell><cell>0xD4A1</cell><cell>0x3F00</cell><cell>0x94A1</cell></row>
+  </table>
+  <field id="TOP SCORE">15910</field>
+</hi2txt>

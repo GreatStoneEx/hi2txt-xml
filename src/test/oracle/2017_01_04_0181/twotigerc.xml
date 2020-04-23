@@ -1,0 +1,19 @@
+<hi2txt>
+  <table id="ALL TIME">
+    <col>RANK</col><col>NAME</col><col>SCORE</col>
+    <row><cell>1</cell><cell>DXT</cell><cell>137350</cell></row>
+  </table>
+  <table>
+    <col>RANK</col><col>NAME</col><col>NAME2</col><col>SCORE</col><col>MODE</col>
+    <row><cell>1</cell><cell>DES</cell><cell></cell><cell>0</cell><cell>ONE PILOT</cell></row>
+    <row><cell>2</cell><cell>IGN</cell><cell></cell><cell>0</cell><cell>ONE PILOT</cell></row>
+    <row><cell>3</cell><cell>ED</cell><cell></cell><cell>0</cell><cell>ONE PILOT</cell></row>
+    <row><cell>4</cell><cell>BY</cell><cell>ARC</cell><cell>0</cell><cell>TEAM PLAY</cell></row>
+    <row><cell>5</cell><cell>ADE</cell><cell>ENG</cell><cell>0</cell><cell>TEAM PLAY</cell></row>
+    <row><cell>6</cell><cell>INE</cell><cell>ER</cell><cell>0</cell><cell>TEAM PLAY</cell></row>
+    <row><cell>7</cell><cell>ING</cell><cell></cell><cell>0</cell><cell>DOGFIGHT</cell></row>
+    <row><cell>8</cell><cell>INC</cell><cell></cell><cell>0</cell><cell>DOGFIGHT</cell></row>
+    <row><cell>9</cell><cell>FTL</cell><cell></cell><cell>0</cell><cell>DOGFIGHT</cell></row>
+    <row><cell>10</cell><cell>FLA</cell><cell></cell><cell>0</cell><cell>DOGFIGHT</cell></row>
+  </table>
+</hi2txt>

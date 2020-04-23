@@ -1,0 +1,25 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHECKSUM</col>
+    <row><cell>1</cell><cell>1000001</cell><cell>JEH</cell><cell>26</cell></row>
+    <row><cell>2</cell><cell>925221</cell><cell>JRN</cell><cell>10</cell></row>
+    <row><cell>3</cell><cell>888888</cell><cell>TJE</cell><cell>84</cell></row>
+    <row><cell>4</cell><cell>798218</cell><cell>LIN</cell><cell>9</cell></row>
+    <row><cell>5</cell><cell>777777</cell><cell>ML </cell><cell>141</cell></row>
+    <row><cell>6</cell><cell>696996</cell><cell>GWS</cell><cell>106</cell></row>
+    <row><cell>7</cell><cell>666666</cell><cell>AL </cell><cell>20</cell></row>
+    <row><cell>8</cell><cell>651008</cell><cell>BLS</cell><cell>101</cell></row>
+    <row><cell>9</cell><cell>570218</cell><cell>JRH</cell><cell>1010</cell></row>
+    <row><cell>10</cell><cell>555555</cell><cell>J P</cell><cell>46</cell></row>
+    <row><cell>11</cell><cell>550127</cell><cell>DTW</cell><cell>93</cell></row>
+    <row><cell>12</cell><cell>511115</cell><cell>D P</cell><cell>134</cell></row>
+    <row><cell>13</cell><cell>484847</cell><cell>RAY</cell><cell>312</cell></row>
+    <row><cell>14</cell><cell>444444</cell><cell>WBD</cell><cell>56</cell></row>
+    <row><cell>15</cell><cell>418280</cell><cell>KJF</cell><cell>141</cell></row>
+    <row><cell>16</cell><cell>392035</cell><cell>NDN</cell><cell>91</cell></row>
+    <row><cell>17</cell><cell>381090</cell><cell>J B</cell><cell>711</cell></row>
+    <row><cell>18</cell><cell>360213</cell><cell>SSR</cell><cell>1112</cell></row>
+    <row><cell>19</cell><cell>330960</cell><cell>MR </cell><cell>104</cell></row>
+    <row><cell>20</cell><cell>326666</cell><cell>BIG</cell><cell>215</cell></row>
+  </table>
+</hi2txt>

@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>6635220</cell><cell>NAOMI.S</cell></row>
+    <row><cell>2</cell><cell>58940</cell><cell>-!. ZSTU</cell></row>
+    <row><cell>3</cell><cell>30100</cell><cell>K.T</cell></row>
+    <row><cell>4</cell><cell>27000</cell><cell>MIKI KUN</cell></row>
+    <row><cell>5</cell><cell>24000</cell><cell>NICE Y.N</cell></row>
+    <row><cell>6</cell><cell>21000</cell><cell>POP KAWA</cell></row>
+  </table>
+  <field id="TOP SCORE">6635220</field>
+  <field id="UNKNOWN">0x0103030604070700</field>
+</hi2txt>

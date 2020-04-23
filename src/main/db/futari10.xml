@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c51c0b0:18d:00:48</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>397</size>
+    </check>
+    <loop count="25">
+      <elt size="4" type="int"  id="TODAYS SCORE"/>
+      <elt size="1" type="int"  id="TODAYS UNKNOWN"/> <!-- Mystery: what is it? sometimes 0, sometimes 1... //-->
+      <elt size="1" type="int"  id="TODAYS CHARACTER"/>
+      <elt size="1" type="int"  id="TODAYS STAGE ONLY"/>
+      <elt size="1" type="raw"  id="TODAYS BOSS"/>
+      <elt size="1" type="int"  id="TODAYS SHOT"/>
+      <elt size="1" type="int"  id="TODAYS CONTINUE"/>
+      <elt size="4" type="text" id="TODAYS NAME" charset="futari"/>
+      <elt size="2" type="raw"  id="TODAYS EMPTY"/>
+    </loop>
+  </structure>
+  
+  <structure file="eeprom" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="28" type="raw"  id="DATA"/>
+    <loop count="30">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="1" type="int"  id="UNKNOWN"/> <!-- Mystery: what is it? sometimes 0, sometimes 1... //-->
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="int"  id="STAGE ONLY"/>
+      <elt size="1" type="raw"  id="BOSS"/>
+      <elt size="1" type="int"  id="SHOT"/>
+      <elt size="1" type="int"  id="CONTINUE"/>
+      <elt size="4" type="text" id="NAME" charset="futari"/>
+      <elt size="2" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES" line-ignore="MODE:ULTRA">
+      <column id="RANK" src="index" format="no_ultra;+1"/>
+      <column id="LOCAL RANK" src="index" format="%5;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage_boss"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="CONTINUE"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SHOT" format="shot"/>
+      <column id="UNKNOWN"             display="debug"/>
+      <column id="EMPTY"   format="0x" display="debug"/>
+    </table>
+    <table id="TODAYS TOP SCORES" line-ignore="TODAYS MODE:ULTRA">
+      <column id="TODAYS RANK" src="index" format="no_ultra;+1" display="extra"/>
+      <column id="TODAYS LOCAL RANK" src="index" format="%5;+1" display="extra"/>
+      <column id="TODAYS SCORE"                                 display="extra"/>
+      <column id="TODAYS NAME"                                  display="extra"/>
+      <column id="TODAYS STAGE" format="stage_boss"             display="extra"/>
+      <column id="TODAYS MODE" src="index" format="mode"        display="extra"/>
+      <column id="TODAYS CONTINUE"                              display="extra"/>
+      <column id="TODAYS CHARACTER" format="character"          display="extra"/>
+      <column id="TODAYS SHOT" format="shot"                    display="extra"/>
+      <column id="TODAYS UNKNOWN"             display="debug"/>
+      <column id="TODAYS EMPTY"   format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="no_ultra">
+    <case src="10" operator="&gt;=" format="-5"/>
+  </format>
+  <format id="mode">
+    <case src="5"  operator="&lt;" dst="ORIGINAL" default="yes"/>
+    <case src="10" operator="&lt;" dst="MANIAC"/>
+    <case src="15" operator="&lt;" dst="ULTRA"/>
+    <case src="20" operator="&lt;" dst="ORIGINAL"/>
+    <case src="25" operator="&lt;" dst="MANIAC"/>
+    <case src="30" operator="&lt;" dst="ULTRA"/>
+  </format>
+  <format id="shot">
+    <case src="0" dst="NORMAL" default="yes"/>
+    <case src="1" dst="ABNORMAL"/>
+  </format>
+  <format id="character">
+    <case src="0" dst="RECO" default="yes"/>
+    <case src="1" dst="PALM"/>
+  </format>
+  <format id="stage_boss">
+    <concat>
+      <column id="STAGE ONLY" format="+1;stage_all"/>
+      <column id="BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="todays_stage_boss">
+    <concat>
+      <column id="TODAYS STAGE ONLY" format="+1;stage_all"/>
+      <column id="TODAYS BOSS" format="boss"/>
+    </concat>
+  </format>
+  <format id="stage_all">
+    <case src="5"  operator="&gt;" dst="All"/>
+  </format>
+  <format id="boss">
+    <case src="0" dst="" default="yes"/>
+    <case src="1" dst=" boss"/>
+  </format>
+  
+  <charset id="futari">
+    <char src="0x00" dst=""/>
+    <char src="0x2D" dst="."/>
+    <char src="0xFE" dst=""/>
+  </charset>
+</hi2txt>

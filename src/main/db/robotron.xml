@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (all time heroes), GreatStone (Robotron heroes, settings)
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>1024</size>
+    </check>
+    <!-- GAME ADJUSTEMENT //-->
+    <elt size="2"   type="int"  id="EXTRA MAN EVERY"                 nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="TURNS PER PLAYER"                nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="PRICING SELECTION"               nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="LEFT SLOT UNITS"                 nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="CENTER SLOT UNITS"               nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="RIGHT SLOT UNITS"                nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="UNITS REQUIRED FOR CREDIT"       nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="UNITS REQUIRED FOR BONUS CREDIT" nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="MINIMUM UNITS FOR ANY CREDIT"    nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="FANCY ATTRACT MODE"              nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="DIFFICULTY OF PLAY"              nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="LETTERS FOR HIGHEST SCORE NAME"  nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="RESTORE FACTORY SETTINGS"        nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="CLEAR BOOKKEEPING TOTALS"        nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="HIGH SCORE TABLE RESET"          nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="AUTO CYCLE"                      nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="SET ATTRACT MODE MESSAGE"        nibble-skip="odd" base="16"/>
+    <elt size="2"   type="int"  id="SET HIGHEST SCORE NAME"          nibble-skip="odd" base="16"/>
+    
+    <elt size="50"  type="text" id="COPYRIGHT_1" nibble-skip="odd" charset="robotron"/>
+    <elt size="48"  type="text" id="COPYRIGHT_2" nibble-skip="odd" charset="robotron"/>
+    <elt size="124" type="raw"  id="UNKNOWN2"    nibble-skip="odd"/>
+    
+    <!-- BOOKKEEPING TOTALS //-->
+    <elt size="6"   type="int"  id="LEFT SLOT COINS"      nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="CENTER SLOT COINS"    nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="RIGHT SLOT COINS"     nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="PAID CREDITS"         nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="EXTRA MEN EARNED"     nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="PLAY TIME IN MINUTES" nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="MEN PLAYED"           nibble-skip="odd" base="16"/>
+    <elt size="6"   type="int"  id="CREDITS PLAYED"       nibble-skip="odd" base="16"/>
+    
+    <loop count="1">
+      <elt size="6"  type="text" id="NAME"       nibble-skip="odd" charset="robotron"/>
+      <elt size="40" type="raw"  id="NAME_LONG"  nibble-skip="odd"/>
+      <elt size="1"  type="raw"  id="CHECKSUM"   nibble-skip="odd"/>
+      <elt size="7"  type="int"  id="SCORE"      nibble-skip="odd" base="16"/>
+    </loop>
+    <loop count="37" start="1">
+      <elt size="6"  type="text" id="NAME"       nibble-skip="odd" charset="robotron"/>
+      <elt size="1"  type="raw"  id="CHECKSUM"   nibble-skip="odd"/>
+      <elt size="7"  type="int"  id="SCORE"      nibble-skip="odd" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="6"  type="text" id="HEROES NAME"      nibble-skip="odd" charset="robotron"/>
+      <elt size="1"  type="raw"  id="HEROES CHECKSUM"  nibble-skip="odd"/>
+      <elt size="7"  type="int"  id="HEROES SCORE"     nibble-skip="odd" base="16"/>
+    </loop>
+    <elt size="6" type="raw" id="PADDING"    nibble-skip="odd"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHECKSUM" format="hexadecimal_string" display="debug"/>
+    </table>
+    <table id="HEROES SCORES">
+      <column id="RANK" src="index" format="+1"                 display="extra"/>
+      <column id="HEROES SCORE"                                 display="extra"/>
+      <column id="HEROES NAME"                                  display="extra"/>
+      <column id="HEROES CHECKSUM"  format="hexadecimal_string" display="debug"/>
+    </table>
+    <table>
+      <field id="COPYRIGHT_1" display="extra"/>
+      <field id="COPYRIGHT_2" display="extra"/>
+    </table>
+    
+    <!-- GAME ADJUSTEMENT //-->
+    <field id="EXTRA MAN EVERY"                 display="extra" format="*1000"/>
+    <field id="TURNS PER PLAYER"                display="extra"/>
+    <field id="PRICING SELECTION"               display="extra"/>
+    <field id="LEFT SLOT UNITS"                 display="extra"/>
+    <field id="CENTER SLOT UNITS"               display="extra"/>
+    <field id="RIGHT SLOT UNITS"                display="extra"/>
+    <field id="UNITS REQUIRED FOR CREDIT"       display="extra"/>
+    <field id="UNITS REQUIRED FOR BONUS CREDIT" display="extra"/>
+    <field id="MINIMUM UNITS FOR ANY CREDIT"    display="extra"/>
+    <field id="FANCY ATTRACT MODE"              display="extra" format="yes_no"/>
+    <field id="DIFFICULTY OF PLAY"              display="extra"/>
+    <field id="LETTERS FOR HIGHEST SCORE NAME"  display="extra"/>
+    <field id="RESTORE FACTORY SETTINGS"        display="extra" format="yes_no"/>
+    <field id="CLEAR BOOKKEEPING TOTALS"        display="extra" format="yes_no"/>
+    <field id="HIGH SCORE TABLE RESET"          display="extra" format="yes_no"/>
+    <field id="AUTO CYCLE"                      display="extra" format="yes_no"/>
+    <field id="SET ATTRACT MODE MESSAGE"        display="extra" format="yes_no"/>
+    <field id="SET HIGHEST SCORE NAME"          display="extra" format="yes_no"/>
+    
+    <!-- BOOKKEEPING TOTALS //-->
+    <field id="LEFT SLOT COINS"                 display="extra"/>
+    <field id="CENTER SLOT COINS"               display="extra"/>
+    <field id="RIGHT SLOT COINS"                display="extra"/>
+    <field id="PAID CREDITS"                    display="extra"/>
+    <field id="EXTRA MEN EARNED"                display="extra"/>
+    <field id="PLAY TIME IN MINUTES"            display="extra"/>
+    <field id="MEN PLAYED"                      display="extra"/>
+    <field id="CREDITS PLAYED"                  display="extra"/>
+    
+    <field id="UNKNOWN2" format="hexadecimal_string" display="debug"/>
+    <field id="PADDING"  format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*1000"><multiply>1000</multiply></format>
+  <format id="yes_no">
+    <case src="0" dst="NO"/>
+    <case src="1" dst="YES"/>
+  </format>
+  
+  <charset id="robotron">
+    <char src="0x3A" dst=" "/>
+  </charset>
+</hi2txt>

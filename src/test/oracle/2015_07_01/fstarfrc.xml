@@ -1,0 +1,22 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>106500</cell><cell>&#9829;&#9830;&#9827;</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>69100</cell><cell>.09</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>63200</cell><cell>&#9733;&#8258;&#9824;</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>56600</cell><cell>&#9834;Z </cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>40000</cell><cell>OYA</cell><cell>0</cell></row>
+    <row><cell>6</cell><cell>38000</cell><cell>KAT</cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>36000</cell><cell>SAT</cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>34000</cell><cell>JUN</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>32000</cell><cell>MAE</cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>30000</cell><cell>YAN</cell><cell>0</cell></row>
+    <row><cell>11</cell><cell>28000</cell><cell>TM </cell><cell>0</cell></row>
+    <row><cell>12</cell><cell>26000</cell><cell>DIS</cell><cell>0</cell></row>
+    <row><cell>13</cell><cell>24000</cell><cell>PEL</cell><cell>0</cell></row>
+    <row><cell>14</cell><cell>22000</cell><cell>MIT</cell><cell>0</cell></row>
+    <row><cell>15</cell><cell>10000</cell><cell>E..</cell><cell>0</cell></row>
+    <row><cell>16</cell><cell>8000</cell><cell>WAK</cell><cell>0</cell></row>
+  </table>
+  <field id="TOP SCORE">106500</field>
+</hi2txt>

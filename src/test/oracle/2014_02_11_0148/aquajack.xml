@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ROUND</col><col>PLAY</col>
+    <row><cell>1</cell><cell>19999</cell><cell>TAK</cell><cell>3</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>17000</cell><cell>KOB</cell><cell>3</cell><cell>3</cell></row>
+    <row><cell>3</cell><cell>15000</cell><cell>TOS</cell><cell>3</cell><cell>8</cell></row>
+    <row><cell>4</cell><cell>13000</cell><cell>KBO</cell><cell>3</cell><cell>10</cell></row>
+    <row><cell>5</cell><cell>11000</cell><cell>MNM</cell><cell>2</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>10000</cell><cell>OKI</cell><cell>2</cell><cell>2</cell></row>
+    <row><cell>7</cell><cell>7770</cell><cell>REV</cell><cell>2</cell><cell>4</cell></row>
+    <row><cell>8</cell><cell>6800</cell><cell>ENG</cell><cell>2</cell><cell>6</cell></row>
+    <row><cell>9</cell><cell>6510</cell><cell>ER.</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>5953</cell><cell>BW3</cell><cell>1</cell><cell>2</cell></row>
+  </table>
+  <field id="TOP SCORE">19999</field>
+</hi2txt>

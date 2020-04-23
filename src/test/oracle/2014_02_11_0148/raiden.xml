@@ -1,0 +1,23 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>MODE</col><col>EMPTY</col><col>EMPTY2</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>50000</cell><cell>...</cell><cell>2-0</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>...</cell><cell>2-1</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>43870</cell><cell>?!X</cell><cell>2-2</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>40000</cell><cell>...</cell><cell>11-5</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>35000</cell><cell>...</cell><cell>3-0</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>30000</cell><cell>...</cell><cell>4-1</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>7</cell><cell>25000</cell><cell>...</cell><cell>4-7</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>20000</cell><cell>...</cell><cell>6-7</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>15000</cell><cell>...</cell><cell>7-5</cell><cell>SOLO</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>1</cell><cell>50000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>35000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>7</cell><cell>20000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>15000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>10000</cell><cell>...</cell><cell>1-1</cell><cell>DUAL</cell><cell>0x00</cell><cell>0x00</cell><cell>0x00</cell></row>
+  </table>
+</hi2txt>

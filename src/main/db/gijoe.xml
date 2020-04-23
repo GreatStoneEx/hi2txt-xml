@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:18f900:f8:41:01</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>248</size>
+    </check>
+    <loop count="31">
+      <elt size="3" type="text" id="NAME"      table-index="loop_reverse_index"/>
+      <elt size="2" type="int"  id="SCORE"     table-index="loop_reverse_index" base="16"/>
+      <elt size="1" type="int"  id="CHARACTER" table-index="loop_reverse_index" base="16"/>
+      <elt size="1" type="int"  id="STAGE1"    table-index="loop_reverse_index" base="16"/>
+      <elt size="1" type="int"  id="STAGE2"    table-index="loop_reverse_index" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="STAGE" format="stage"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="separator"><prefix>-</prefix></format>
+  <format id="stage">
+    <concat>
+      <column id="STAGE1" format="+1"/>
+      <column id="STAGE2" format="+1;separator"/>
+    </concat>
+  </format>
+  <format id="character">
+    <case src="0" dst="DUKE"/>
+    <case src="1" dst="SNAKE-EYES"/>
+    <case src="2" dst="SCARLETT"/>
+    <case src="3" dst="ROADBLOCK"/>
+  </format>
+</hi2txt>

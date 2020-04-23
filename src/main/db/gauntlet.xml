@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:904010:2:0:7
+                  0:904DE8:C8:00:50</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>202</size>
+    </check>
+    <elt size="2"  type="int"  id="LAST LEVEL PLAYED"/>
+    <!-- texts are encoded using a "byte-40 packing" algorithm
+         http://www.drdobbs.com/embedded-systems/slimming-strings-with-custom-base-40-pac/229400732
+         decoding-profile="base-40" is equivalent to
+         src-unit-size="16" base="40" dst-unit-size="3" ascii-offset="64"
+     //-->
+    <loop count="10">
+      <elt size="3" type="int"  id="WARRIOR SCORE"/>
+      <elt size="2" type="text" id="WARRIOR NAME" decoding-profile="base-40" charset="gauntlet"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="int"  id="VALKYRIE SCORE"/>
+      <elt size="2" type="text" id="VALKYRIE NAME" decoding-profile="base-40" charset="gauntlet"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="int"  id="WIZARD SCORE"/>
+      <elt size="2" type="text" id="WIZARD NAME" decoding-profile="base-40" charset="gauntlet"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="int"  id="ELF SCORE"/>
+      <elt size="2" type="text" id="ELF NAME" decoding-profile="base-40" charset="gauntlet"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="WARRIOR SCORE"/>
+      <column id="WARRIOR NAME"/>
+      <column id="VALKYRIE SCORE"/>
+      <column id="VALKYRIE NAME"/>
+      <column id="WIZARD SCORE"/>
+      <column id="WIZARD NAME"/>
+      <column id="ELF SCORE"/>
+      <column id="ELF NAME"/>
+    </table>
+    <field id="LAST LEVEL PLAYED"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="gauntlet">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

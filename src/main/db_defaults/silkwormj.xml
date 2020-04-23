@@ -1,0 +1,17 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>TIME</col><col>MODE</col>
+    <row><cell>1</cell><cell>30000</cell><cell>T.Y</cell><cell>R-01</cell><cell>T-00:16</cell><cell>HELI</cell></row>
+    <row><cell>2</cell><cell>30000</cell><cell>E..</cell><cell>R-01</cell><cell>T-00:16</cell><cell>HELI</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>C.O</cell><cell>R-01</cell><cell>T-00:16</cell><cell>HELI</cell></row>
+    <row><cell>4</cell><cell>30000</cell><cell>M.T</cell><cell>R-01</cell><cell>T-00:16</cell><cell>HELI</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>O.O</cell><cell>R-01</cell><cell>T-00:16</cell><cell>HELI</cell></row>
+    <row><cell>6</cell><cell>30000</cell><cell>T.M</cell><cell>R-01</cell><cell>T-00:16</cell><cell>JEEP</cell></row>
+    <row><cell>7</cell><cell>30000</cell><cell>E.I</cell><cell>R-01</cell><cell>T-00:16</cell><cell>JEEP</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>C.R</cell><cell>R-01</cell><cell>T-00:16</cell><cell>JEEP</cell></row>
+    <row><cell>9</cell><cell>30000</cell><cell>M.A</cell><cell>R-01</cell><cell>T-00:16</cell><cell>JEEP</cell></row>
+    <row><cell>10</cell><cell>30000</cell><cell>O.H</cell><cell>R-01</cell><cell>T-00:16</cell><cell>JEEP</cell></row>
+  </table>
+</hi2txt>
+
+

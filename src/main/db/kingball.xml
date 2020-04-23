@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8305:3:00:00
+                  0:800d:3:00:00
+                  0:8302:1:01:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>7</size>
+    </check>
+    <loop count="1"><elt size="3" type="int" id="SCORE" base="16"/></loop>
+                    <elt size="3" type="int" id="P1 LAST SCORE" base="16"/>
+                    <elt size="1" type="raw" id="P2 PLAYED"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+    <field id="P1 LAST SCORE" display="extra"/>
+    <field id="P2 PLAYED"     display="extra"/>
+  </output>
+</hi2txt>

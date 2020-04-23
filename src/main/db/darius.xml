@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+      2015-05-08: new size for dariusj from hiscore.dat 20150131, after hi2txt report
+    tested:
+      mame 0.153 and hiscore.dat 2014-08-22
+      mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:822f2:729:00:2e</definition>
+      <definition>0:822ec:723:00:41</definition> <!-- dariusj //-->
+      <definition>0:822ec:729:00:00
+                  0:82666:1:41:41</definition> <!-- dariusj, from hiscore.dat 20150131 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>1833</size>
+      <size>1827</size> <!-- dariusj //-->
+      <size>1834</size> <!-- dariusj, from hiscore.dat 20150131 //-->
+    </check>
+    <loop count="102">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="7" type="text" id="STAGE" charset="darius"/>
+      <elt size="3" type="raw"  id="SEPARATOR2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR"  format="0x" display="debug"/>
+      <column id="STAGE" format="TrimR "/>
+      <column id="SEPARATOR2" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="darius">
+    <char src="0x00" dst=""/>
+  </charset>
+</hi2txt>

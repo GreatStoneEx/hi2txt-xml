@@ -1,0 +1,22 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>GRADE</col>
+    <row><cell>1</cell><cell>10000000</cell><cell>MIY</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>9500000</cell><cell>SIM</cell><cell>0</cell></row>
+    <row><cell>3</cell><cell>9000000</cell><cell>TFF</cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>8500000</cell><cell>KMA</cell><cell>0</cell></row>
+    <row><cell>5</cell><cell>8000000</cell><cell>WIN</cell><cell>0</cell></row>
+    <row><cell>6</cell><cell>7500000</cell><cell>JIN</cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>7000000</cell><cell>TNM</cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>6500000</cell><cell>BAB</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>6000000</cell><cell>IKE</cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>5500000</cell><cell>KOY</cell><cell>0</cell></row>
+    <row><cell>11</cell><cell>5000000</cell><cell>TKO</cell><cell>0</cell></row>
+    <row><cell>12</cell><cell>4500000</cell><cell>AKA</cell><cell>0</cell></row>
+    <row><cell>13</cell><cell>4000000</cell><cell>KWT</cell><cell>0</cell></row>
+    <row><cell>14</cell><cell>3500000</cell><cell>REI</cell><cell>0</cell></row>
+    <row><cell>15</cell><cell>3000000</cell><cell>MIM</cell><cell>0</cell></row>
+  </table>
+</hi2txt>
+
+

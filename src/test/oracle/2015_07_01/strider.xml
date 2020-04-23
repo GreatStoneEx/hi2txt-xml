@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ADDRESS</col>
+    <row><cell>1</cell><cell>20000</cell><cell>CAP </cell><cell>4294937042</cell></row>
+    <row><cell>2</cell><cell>19000</cell><cell>COM </cell><cell>4294937050</cell></row>
+    <row><cell>3</cell><cell>18000</cell><cell>CAP </cell><cell>4294937058</cell></row>
+    <row><cell>4</cell><cell>17550</cell><cell>09&#9829; </cell><cell>4294937066</cell></row>
+    <row><cell>5</cell><cell>17000</cell><cell>COM </cell><cell>4294937074</cell></row>
+    <row><cell>6</cell><cell>16000</cell><cell>CAP </cell><cell>4294937082</cell></row>
+    <row><cell>7</cell><cell>15000</cell><cell>COM </cell><cell>4294937090</cell></row>
+    <row><cell>8</cell><cell>14000</cell><cell>CAP </cell><cell>4294937098</cell></row>
+    <row><cell>9</cell><cell>13000</cell><cell>COM </cell><cell>4294937106</cell></row>
+    <row><cell>10</cell><cell>2000</cell><cell>09. </cell><cell>4294937114</cell></row>
+  </table>
+  <field id="TOP SCORE">20000</field>
+</hi2txt>

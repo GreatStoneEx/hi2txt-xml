@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      data understood: 100%
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:100160:7c:00:02</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>124</size>
+    </check>
+  	                 <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <loop count="10"><elt size="4" type="int"  id="SCORE"     base="16"/></loop>
+	  <loop count="10"><elt size="2" type="int"  id="ROUND"     base="16"/></loop>
+	  <loop count="10"><elt size="3" type="text" id="NAME"      charset="aquajack"/>
+	                   <elt size="1" type="raw"  id="SEPARATOR"/></loop>
+	  <loop count="10"><elt size="2" type="int"  id="PLAY"      base="16"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="ROUND" format="+1"/>
+      <column id="PLAY"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="aquajack">
+    <char src="0x5E" dst="&left-arrow;"/>
+  </charset>
+</hi2txt>

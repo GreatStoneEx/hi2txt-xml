@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Rally X">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8060:8:00:02</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>8</size>
+    </check>
+    <elt size="8" type="text" id="TOP SCORE" ascii-offset="48" charset="rallyx" bitmask="half_invert"/>
+  </structure>
+  
+  <bitmask id="half_invert"> <!-- bytes re-ordering: 4 - 5 - 6 - 7 - 0 - 1 - 2 - 3 //-->
+    <character mask="00000000 00000000 00000000 00000000 11111111 00000000 00000000 00000000"/>
+    <character mask="00000000 00000000 00000000 00000000 00000000 11111111 00000000 00000000"/>
+    <character mask="00000000 00000000 00000000 00000000 00000000 00000000 11111111 00000000"/>
+	<character mask="00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111"/>
+	<character mask="11111111 00000000 00000000 00000000 00000000 00000000 00000000 00000000"/>
+	<character mask="00000000 11111111 00000000 00000000 00000000 00000000 00000000 00000000"/>
+	<character mask="00000000 00000000 11111111 00000000 00000000 00000000 00000000 00000000"/>
+	<character mask="00000000 00000000 00000000 11111111 00000000 00000000 00000000 00000000"/>
+  </bitmask>
+  
+  <output>
+    <field id="TOP SCORE" format="TrimL "/>
+  </output>
+  
+  <charset id="rallyx">
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt>

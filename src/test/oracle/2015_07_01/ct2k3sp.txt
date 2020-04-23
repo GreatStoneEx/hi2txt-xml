@@ -1,0 +1,59 @@
+# SCORE
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|CHARACTER 4|SEPARATOR|SEPARATOR2
+1|100000|NOP|Takuma Sakazaki|Maxima|Whip|Athena Asamiya|0xFF|
+2|80000|LEA|Blue Mary|Kyo Kusanagi|Benimaru Nikaido|Maxima|0xFF|
+3|60000|NEG|Goro Daimon|Vanessa|Iori Yagami|King|0xFF|
+4|40000|JSR|Mai Shiranui|Seth|Ramon|Maxima|0xFF|
+5|32000|.AA|Andy Bogard|Joe Higashi|Blue Mary|Takuma Sakazaki|0xFF|
+
+# TOP SCORE
+TOP SCORE|TOP NAME|TOP SEPARATOR
+1553300|AAA|0xFF
+
+DATA3
+000303010510
+
+# WINS
+CHARACTER|WIN %
+Maxima|15.6%
+K'|15.6%
+Ramon|14%
+Vanessa|14%
+Takuma Sakazaki|5.4%
+Terry Bogard|4.6%
+Iori Yagami|4.6%
+Kyo Kusanagi|4.6%
+Li XiangFei|2.3%
+Hinako Shijou|2.3%
+Heidern|2.3%
+Ryo Sakazaki|1.5%
+Blue Mary|1.5%
+Joe Higashi|1.5%
+Andy Bogard|1.5%
+Lin|1.5%
+Whip|1.5%
+Athena Asamiya|0.7%
+Angel|0.7%
+Mai Shiranui|0.7%
+King|0.7%
+Yuri Sakazaki|0.7%
+Robert Garcia|0.7%
+May Lee|0%
+Choi Bounge|0%
+Chang Koehan|0%
+Kim Kaphwan|0%
+Bao|0%
+Chin Gentsai|0%
+Sie Kensou|0%
+K9999|0%
+Foxy|0%
+Kula Diamond|0%
+Clark Steel|0%
+Ralf Jones|0%
+Leona|0%
+Seth|0%
+Shingo Yabuki|0%
+Goro Daimon|0%
+Benimaru Nikaido|0%
+
+

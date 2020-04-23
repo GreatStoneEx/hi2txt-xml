@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>8005</cell><cell>A Z</cell><cell>2</cell></row>
+    <row><cell>2</cell><cell>1580</cell><cell>ZZZ</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>209</cell><cell>AAA</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>100</cell><cell>MEG</cell><cell>1</cell></row>
+  </table>
+  <field id="HIGHER LEVEL">2</field>
+  <field id="UNKNOWN">4F</field>
+</hi2txt>

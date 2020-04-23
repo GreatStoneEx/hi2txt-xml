@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>PLAYER</col>
+    <row><cell>1</cell><cell>3520</cell><cell>ADC</cell><cell>1</cell><cell>SILVER HAWK</cell><cell></cell></row>
+    <row><cell>2</cell><cell>950</cell><cell>BHG</cell><cell>3</cell><cell>BUCET/CORRUGATED CARTOON</cell><cell>P1</cell></row>
+    <row><cell>3</cell><cell>130</cell><cell>015</cell><cell>2</cell><cell>TOILET</cell><cell>P1</cell></row>
+    <row><cell>4</cell><cell>110</cell><cell>X X</cell><cell>2</cell><cell>TEKE-TEKE</cell><cell>P1</cell></row>
+    <row><cell>5</cell><cell>140</cell><cell> .9</cell><cell>1</cell><cell>AMULET</cell><cell>P1</cell></row>
+  </table>
+  <field id="UNKNOWN">0x0010000000050000</field>
+  <field id="CHECK">55</field>
+  <field id="TOP SCORE">125950</field>
+</hi2txt>

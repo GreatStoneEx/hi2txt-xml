@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>CONTINUE</col><col>EMPTY</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>5000000</cell><cell>WKB</cell><cell>3</cell><cell>P1 TIGER (WAY SHOT) ORANGE</cell><cell>0</cell><cell>0x0000</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>4384797</cell><cell>Z.</cell><cell>2</cell><cell>P1 TIGER (WAY SHOT) ORANGE</cell><cell>1</cell><cell>0x0000</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>4000000</cell><cell>NMR</cell><cell>2</cell><cell>P1 PANZER (LINEAR SHOT) PURPLE</cell><cell>0</cell><cell>0x0000</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>3000000</cell><cell>ARI</cell><cell>2</cell><cell>P2 TIGER (WAY SHOT) GREEN</cell><cell>0</cell><cell>0x0000</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>2000000</cell><cell>TNK</cell><cell>1</cell><cell>P2 PANZER (LINEAR SHOT) BLUE</cell><cell>0</cell><cell>0x0000</cell><cell>0x0000</cell></row>
+  </table>
+  <field id="CHECK">0x28</field>
+</hi2txt>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="The Ninja Warriors">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+	  <definition>@:maincpu,program,c4645,3f8,01,47</definition>
+      <size>1016</size>
+    </check>
+    <loop count="50">
+      <elt size="3" type="int" id="SCORE"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="4" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+</hi2txt>

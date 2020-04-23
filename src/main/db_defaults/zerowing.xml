@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>50000</cell><cell>...</cell><cell>6-20</cell></row>
+    <row><cell>2</cell><cell>48000</cell><cell>...</cell><cell>5-19</cell></row>
+    <row><cell>3</cell><cell>46000</cell><cell>...</cell><cell>4-18</cell></row>
+    <row><cell>4</cell><cell>44000</cell><cell>...</cell><cell>3-17</cell></row>
+    <row><cell>5</cell><cell>42000</cell><cell>...</cell><cell>2-16</cell></row>
+  </table>
+</hi2txt>
+
+

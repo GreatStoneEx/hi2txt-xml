@@ -1,0 +1,11 @@
+RANK|SCORE|NAME|STAGE|TECH-RANK
+1|1669670|&9A|ε|Silver Eagle
+2|899840|!?&|γ|Gold Swan
+3|368330|AAA|α|Gold Crow
+4|292200|BCD|α|Gold Crow
+5|29200|AAA|α|Iron Owl
+6|16800|DAJ|α|Gold Duck
+
+UNKNOWN2
+0xF2
+

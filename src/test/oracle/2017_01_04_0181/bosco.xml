@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>39430</cell><cell> ZC</cell></row>
+    <row><cell>2</cell><cell>20000</cell><cell>N.N</cell></row>
+    <row><cell>3</cell><cell>20000</cell><cell>A.A</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>M.M</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>C.C</cell></row>
+  </table>
+  <field id="PART OF TOP SCORE">9430</field>
+  <field id="UNKNOWN">24000003</field>
+</hi2txt>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Avengers In Galactic Storm">
+  <!--
+    tested with mame 0.212 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,108909,4e,01,52</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>78</size>
+	</check>
+    <loop count="5" skip-first-bytes="2">
+      <elt size="2" type="int"  id="VS_CHARACTER" base="16"/>
+	  <elt size="3" type="int"  id="VS_SCORE"     base="10"/>
+      <elt size="3" type="text" id="VS_NAME"/>
+    </loop>
+	<loop count="5">
+      <elt size="2" type="int"  id="STORY_CHARACTER" base="16"/>
+	  <elt size="3" type="int"  id="STORY_SCORE"     base="10"/>
+      <elt size="3" type="text" id="STORY_NAME"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="STORY MODE">
+      <column id="RANK"      src="index" format="+1"/>
+      <column id="SCORE"     src="STORY_SCORE"/>
+	  <column id="NAME"      src="STORY_NAME"/>
+      <column id="CHARACTER" src="STORY_CHARACTER" format="character"/>
+    </table>
+	<table id="VS MODE">
+      <column id="RANK"      src="index" format="+1"/>
+      <column id="SCORE"     src="VS_SCORE"/>
+	  <column id="NAME"      src="VS_NAME"/>
+      <column id="CHARACTER" src="VS_CHARACTER" format="character"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="10" dst="CAPTAIN AMERICA" default="yes"/>
+    <case src="20" dst="THUNDERSTRIKE"/>
+    <case src="30" dst="CRYSTAL"/>
+	<case src="40" dst="BLACK KNIGHT"/>
+	<case src="50" dst="SHATTERAX"/>
+	<case src="60" dst="KORATH-THAK"/>
+	<case src="70" dst="MINERVA"/>
+	<case src="80" dst="SUPREMOR"/>
+	<case src="90" dst="GALEN KOR"/>
+  </format>
+</hi2txt>

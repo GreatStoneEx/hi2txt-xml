@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:928586:3C:00:40</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>60</size>
+    </check>
+    <loop count="5">
+      <elt size="1" type="int"  id="UNKNOWN"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="ITEM"/>
+      <elt size="3" type="text" id="NAME"  charset="CS_NUMBER[-48];dimahoo" ascii-offset="55"/>
+      <elt size="1" type="raw"  id="CHAR CURSOR"/>
+      <elt size="4" type="int"  id="SCORE"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="UNKNOWN"     format="0x" display="debug"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"       format="+1"/>
+      <column id="ITEM"        format="PadL30;Suffix/108"/>
+      <column id="CHARACTER"   format="character"/>
+      <column id="CHAR CURSOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="Solo-Bang"/>
+    <case src="1" dst="Karte"/>
+    <case src="2" dst="Miyamoto"/>
+    <case src="3" dst="Grimlen"/>
+    <case src="4" dst="Gain"/> <!-- hidden character //-->
+    <case src="5" dst="Chitta"/> <!-- hidden character //-->
+    <case src="6" dst="Birthday"/> <!-- hidden character //-->
+    <case src="7" dst="Golden"/> <!-- hidden character //-->
+  </format>
+  
+  <charset id="dimahoo">
+    <char src="0x24" dst="."/>
+    <char src="0x25" dst=":"/>
+    <char src="0x26" dst="?"/>
+    <char src="0x27" dst="!"/>
+    <char src="0x28" dst="-"/>
+    <char src="0x29" dst="&three-mid-dots;"/>
+    <char src="0x2A" dst="&amp;"/>
+    <char src="0x2B" dst=","/>
+    <char src="0x2C" dst="end"/> <!-- only by hacking //-->
+    <char src="0x2D" dst="&black-heart;"/>
+    <char src="0x2E" dst="&black-club;"/>
+    <char src="0x2F" dst="&black-spade;"/>
+    <char src="0x3A" dst=""/>
+  </charset>
+</hi2txt>

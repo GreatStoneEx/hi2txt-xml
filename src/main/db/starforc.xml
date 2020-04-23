@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Star Force">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,8038,70,00,00
+                  @:maincpu,program,8348,4,00,00
+                  @:maincpu,program,9261,1,23,23
+                  @:maincpu,program,9241,1,23,23
+                  @:maincpu,program,9221,1,23,23
+                  @:maincpu,program,9201,1,1d,1d
+                  @:maincpu,program,91e1,1,18,18
+                  @:maincpu,program,91c1,1,21,21
+                  @:maincpu,program,91a1,1,18,18
+                  @:maincpu,program,9181,1,18,18</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>124</size>
+    </check>
+    <loop count="10">
+	  <elt size="2" type="raw"  id="UNKNOWN"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+	  <elt size="1" type="int"  id="AREA"/>
+      <elt size="3" type="text" id="NAME" charset="charconv"/>
+	  <elt size="1" type="raw"  id="UNKNOWN3"/>
+    </loop>
+	<elt size="2" type="raw"  id="UNKNOWN4"/>
+	<elt size="4" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+	<elt size="8" type="text" id="TOP SCORE STRING" ascii-offset="24" byte-skip="0x23"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index"  format="+1"/>
+	  <column id="UNKNOWN"           format="0x" display="debug"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+	  <column id="LETTER" src="AREA" format="greek"/>
+	  <column id="AREA"              format="infinite"/>
+	  <column id="UNKNOWN3"          format="0x" display="debug"/>
+    </table>
+	<field id="UNKNOWN4"                         display="debug"/>
+    <field id="TOP SCORE"                        display="extra"/>
+	<field id="TOP SCORE STRING"                 display="debug"/>
+  </output>
+    
+  <format id="greek">
+    <case src="1"  dst="ALPHA"/>
+    <case src="2"  dst="BETA"/>
+    <case src="3"  dst="GAMMA"/>
+    <case src="4"  dst="DELTA"/>
+    <case src="5"  dst="EPSILON"/>
+    <case src="6"  dst="ZETA"/>
+    <case src="7"  dst="ETA"/>
+	<case src="8"  dst="THETA"/>
+	<case src="9"  dst="IOTA"/>
+	<case src="10" dst="KAPPA"/>
+	<case src="11" dst="LAMBDA"/>
+	<case src="12" dst="MU"/>
+	<case src="13" dst="NU"/>
+	<case src="14" dst="KSI"/>
+	<case src="15" dst="OMICRON"/>
+	<case src="16" dst="PI"/>
+	<case src="17" dst="RHO"/>
+	<case src="18" dst="SIGMA"/>
+	<case src="19" dst="TAU"/>
+	<case src="20" dst="UPSILON"/>
+	<case src="21" dst="PHI"/>
+	<case src="22" dst="KHI"/>
+	<case src="23" dst="PSI"/>
+	<case src="24" dst="OMEGA"/>
+	<case src="25" dst="INFINITE" operator="&gt;="/>
+  </format>
+  
+  <format id="infinite">
+	<case src="25" dst="!!" operator="&gt;="/>
+  </format>
+    
+  <charset id="charconv">
+    <char src="0x2E" dst="."/>
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt> 

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi"> <!-- scores from 21 to 50 //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:d5c0:f0:21:04</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>240</size>
+    </check>
+    <loop count="30" start="20">
+      <elt size="2" type="int"  id="RANK_HI" endianness="little_endian" base="16"/>
+      <elt size="3" type="text" id="NAME"    ascii-offset="55" charset="punchout"/>
+      <elt size="3" type="int"  id="SCORE"   endianness="little_endian" base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file="nvram"> <!-- 20 scores in nvram + best, remaining 30 in hi file //-->
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>1024</size>
+    </check>
+    <elt size="2"  type="raw" id="UNUSED"   nibble-skip="odd"/>
+    <elt size="4"  type="raw" id="CHECKSUM" nibble-skip="odd"/>
+    <elt size="24" type="raw" id="EMPTY"    nibble-skip="odd"/>
+    <loop count="20">
+      <elt size="6" type="text" id="NAME"   nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="SCORE"  nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="6" type="text" id="BEST HIT AVERAGE NAME"       nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST HIT AVERAGE PERCENTAGE" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO BEAR HUGGER NAME" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO BEAR HUGGER TIME" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO DRAGON CHAN NAME" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO DRAGON CHAN TIME" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO VODKA DRUNKENSKI NAME" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO VODKA DRUNKENSKI TIME" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO GREAT TIGER NAME" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO GREAT TIGER TIME" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO SUPER MACHO MAN NAME" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO SUPER MACHO MAN TIME" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <elt size="2"  type="raw" id="UNUSED2"      nibble-skip="odd"/>
+    
+    <elt size="2"  type="raw" id="UNUSED ALT"   nibble-skip="odd"/>
+    <elt size="4"  type="raw" id="CHECKSUM ALT" nibble-skip="odd"/>
+    <elt size="24" type="raw" id="EMPTY ALT"    nibble-skip="odd"/>
+    <loop count="20">
+      <elt size="6" type="text" id="NAME ALT"   nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="SCORE ALT"  nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="6" type="text" id="BEST HIT AVERAGE NAME ALT"       nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST HIT AVERAGE PERCENTAGE ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO BEAR HUGGER NAME ALT" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO BEAR HUGGER TIME ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO DRAGON CHAN NAME ALT" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO DRAGON CHAN TIME ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO VODKA DRUNKENSKI NAME ALT" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO VODKA DRUNKENSKI TIME ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO GREAT TIGER NAME ALT" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO GREAT TIGER TIME ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="3">
+      <elt size="6" type="text" id="BEST KO SUPER MACHO MAN NAME ALT" nibble-skip="odd" byte-swap="2" ascii-offset="55" charset="punchout"/>
+      <elt size="6" type="int"  id="BEST KO SUPER MACHO MAN TIME ALT" nibble-skip="odd" endianness="little_endian" base="16"/>
+    </loop>
+    <elt size="2"  type="raw" id="UNUSED2 ALT"      nibble-skip="odd"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="RANK_HI"   display="debug"/>
+      <column id="SCORE"/>
+      <column id="SCORE ALT" display="debug"/>
+      <column id="NAME"/>
+      <column id="NAME ALT"  display="debug"/>
+    </table>
+    
+    <table id="BEST HIT AVERAGES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST HIT AVERAGE NAME"/>
+      <column id="BEST HIT AVERAGE NAME ALT"                           display="debug"/>
+      <column id="BEST HIT AVERAGE PERCENTAGE"     format="percentage"/>
+      <column id="BEST HIT AVERAGE PERCENTAGE ALT" format="percentage" display="debug"/>
+    </table>
+    
+    <table id="BEST KOS WITH BEAR HUGGER">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST KO BEAR HUGGER NAME"/>
+      <column id="BEST KO BEAR HUGGER NAME ALT"               display="debug"/>
+      <column id="BEST KO BEAR HUGGER TIME"     format="time"/>
+      <column id="BEST KO BEAR HUGGER TIME ALT" format="time" display="debug"/>
+    </table>
+    
+    <table id="BEST KOS WITH DRAGON CHAN">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST KO DRAGON CHAN NAME"/>
+      <column id="BEST KO DRAGON CHAN NAME ALT"               display="debug"/>
+      <column id="BEST KO DRAGON CHAN TIME"     format="time"/>
+      <column id="BEST KO DRAGON CHAN TIME ALT" format="time" display="debug"/>
+    </table>
+    
+    <table id="BEST KOS WITH VODKA DRUNKENSKI">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST KO VODKA DRUNKENSKI NAME"/>
+      <column id="BEST KO VODKA DRUNKENSKI NAME ALT"               display="debug"/>
+      <column id="BEST KO VODKA DRUNKENSKI TIME"     format="time"/>
+      <column id="BEST KO VODKA DRUNKENSKI TIME ALT" format="time" display="debug"/>
+    </table>
+    
+    <table id="BEST KOS WITH GREAT TIGER">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST KO GREAT TIGER NAME"/>
+      <column id="BEST KO GREAT TIGER NAME ALT"               display="debug"/>
+      <column id="BEST KO GREAT TIGER TIME"     format="time"/>
+      <column id="BEST KO GREAT TIGER TIME ALT" format="time" display="debug"/>
+    </table>
+    
+    <table id="BEST KOS WITH SUPER MACHO MAN">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="BEST KO SUPER MACHO MAN NAME"/>
+      <column id="BEST KO SUPER MACHO MAN NAME ALT"               display="debug"/>
+      <column id="BEST KO SUPER MACHO MAN TIME"     format="time"/>
+      <column id="BEST KO SUPER MACHO MAN TIME ALT" format="time" display="debug"/>
+    </table>
+    
+    <table id="UNUSED">
+      <field id="UNUSED"       format="hexadecimal_string" display="debug"/>
+      <field id="UNUSED ALT"   format="hexadecimal_string" display="debug"/>
+      <field id="UNUSED2"      format="hexadecimal_string" display="debug"/>
+      <field id="UNUSED2 ALT"  format="hexadecimal_string" display="debug"/>
+    </table>
+    <table id="CHECKSUM">
+      <field id="CHECKSUM"     format="hexadecimal_string" display="debug"/>
+      <field id="CHECKSUM ALT" format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="mn"><divide_trunc>10000</divide_trunc></format>
+  <format id="sec">
+    <remainder>10000</remainder>
+    <divide_trunc>100</divide_trunc>
+    <pad direction="left" max="2">0</pad>
+  </format>
+  <format id="ms">
+    <remainder>100</remainder>
+    <pad direction="left" max="2">0</pad>
+  </format>
+  <format id="time" input-as-subcolumns-input="true">
+    <concat>
+      <column format="mn"/>
+      <column>'</column>
+      <column format="sec"/>
+      <column>''</column>
+      <column format="ms"/>
+    </concat>
+  </format>
+  <format id="integer">
+    <divide_trunc>100</divide_trunc>
+    <pad direction="left" max="2">0</pad>
+  </format>
+  <format id="decimal">
+    <remainder>100</remainder>
+    <pad direction="right" max="2">0</pad>
+  </format>
+  <format id="percentage" input-as-subcolumns-input="true">
+    <concat>
+      <column format="integer"/>
+      <column>.</column>
+      <column format="decimal"/>
+      <column>%</column>
+    </concat>
+  </format>
+  
+  <charset id="punchout">
+    <char src="0x24" dst="-"/>
+    <char src="0x25" dst=":"/>
+    <char src="0x26" dst="&black-heart;"/>
+    <char src="0x27" dst="."/>
+  </charset>
+</hi2txt>

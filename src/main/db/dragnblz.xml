@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (hi), GreatStone (nv)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:60824B4:dd:00:00
+                  0:60825d4:4d:00:03</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>298</size>
+    </check>
+    <loop count="7" skip-last-bytes="3">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="1" type="text" id="NAME1" ascii-offset="65" charset="dragnblz"/>
+      <elt size="2" type="raw"  id="SEPARATOR1"/>
+      <elt size="1" type="raw"  id="UNKNOWN1"/>
+      <elt size="1" type="text" id="NAME2" ascii-offset="65" charset="dragnblz"/>
+      <elt size="2" type="raw"  id="SEPARATOR2"/>
+      <elt size="1" type="raw"  id="UNKNOWN2"/>
+      <elt size="1" type="text" id="NAME3" ascii-offset="65" charset="dragnblz"/>
+      <elt size="2" type="raw"  id="SEPARATOR3"/>
+      <elt size="1" type="raw"  id="UNKNOWN3"/>
+      <elt size="1" type="raw"  id="UNKNOWN4"/>
+      <elt size="3" type="raw"  id="SEPARATOR4"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="2" type="raw"  id="SEPARATOR5"/>
+      <elt size="1" type="raw"  id="UNKNOWN5"/>
+      <elt size="1" type="int"  id="LEVEL"/>
+      <elt size="2" type="raw"  id="SEPARATOR6"/>
+      <elt size="1" type="raw"  id="UNKNOWN6"/>
+      <elt size="1" type="raw"  id="UNKNOWN7"/>
+      <elt size="1" type="raw"  id="UNKNOWN8"/>
+      <elt size="2" type="raw"  id="SEPARATOR7"/>
+    </loop>
+    <!-- hiscore.dat (minor): last 3 bytes not dumped (UNKNOWN8, SEPARATOR7) //-->
+    <loop count="7">
+      <elt size="4" type="int"  id="SCORE DUPLICATE"/>
+    </loop>
+    <loop count="7">
+      <elt size="1" type="int"  id="LEVEL DUPLICATE"/>
+    </loop>
+    <loop count="7">
+      <elt size="3" type="text" id="NAME DUPLICATE" ascii-offset="65" charset="dragnblz"/>
+      <elt size="2" type="raw"  id="SEPARATOR DUPLICATE"/>
+    </loop>
+    <loop count="7">
+      <elt size="1" type="int"  id="CHARACTER DUPLICATE"/>
+    </loop>
+  </structure>
+  
+  <structure file="eeprom">
+    <check><size>256</size></check>
+    <elt size="240" type="raw"  id="CHAMPION UNKNOWN"/>
+    <loop count="1">
+      <elt size="4" type="int"  id="CHAMPION SCORE"/>
+      <elt size="3" type="text" id="CHAMPION NAME" ascii-offset="65" charset="dragnblz"/>
+      <elt size="1" type="raw"  id="CHAMPION UNKNOWN2"/>
+      <elt size="1" type="int"  id="CHAMPION CHARACTER"/>
+      <elt size="1" type="int"  id="CHAMPION LEVEL"/>
+      <elt size="2" type="int"  id="CHECKSUM"/>
+      <elt size="4" type="raw"  id="CHAMPION UNKNOWN3"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index"    format="+1"/>
+      <column id="SCORE"/>
+      <column id="SCORE DUPLICATE"                        display="debug"/>
+      <column id="NAME"                format="name"/>
+      <column id="NAME DUPLICATE"                         display="debug"/>
+      <column id="CHARACTER"           format="character"/>
+      <column id="CHARACTER DUPLICATE" format="character" display="debug"/>
+      <column id="LEVEL"               format="level"/>
+      <column id="LEVEL DUPLICATE"     format="level"     display="debug"/>
+      <column id="SEPARATOR1"                             display="debug"/>
+      <column id="SEPARATOR2"                             display="debug"/>
+      <column id="SEPARATOR3"                             display="debug"/>
+      <column id="SEPARATOR4"                             display="debug"/>
+      <column id="SEPARATOR5"                             display="debug"/>
+      <column id="SEPARATOR6"                             display="debug"/>
+      <column id="SEPARATOR7"                             display="debug"/>
+      <column id="SEPARATOR DUPLICATE"                    display="debug"/>
+      <column id="UNKNOWN1"                               display="debug"/>
+      <column id="UNKNOWN2"                               display="debug"/>
+      <column id="UNKNOWN3"                               display="debug"/>
+      <column id="UNKNOWN4"                               display="debug"/>
+      <column id="UNKNOWN5"                               display="debug"/>
+      <column id="UNKNOWN6"                               display="debug"/>
+      <column id="UNKNOWN7"                               display="debug"/>
+      <column id="UNKNOWN8"                               display="debug"/>
+    </table>
+    <!--<field    id="CHAMPION UNKNOWN"                       display="debug"/>//-->
+    <table id="CHAMPIONS">
+      <column id="CHAMPION SCORE"                         display="extra"/>
+      <column id="CHAMPION NAME"                          display="extra"/>
+      <column id="CHAMPION UNKNOWN2"                      display="debug"/>
+      <column id="CHAMPION CHARACTER" format="character"  display="extra"/>
+      <column id="CHAMPION LEVEL"     format="level"      display="extra"/>
+      <column id="CHECKSUM"                               display="debug"/>
+      <column id="CHAMPION UNKNOWN3"                      display="debug"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="name">
+    <concat>
+      <column id="NAME1"/>
+      <column id="NAME2"/>
+      <column id="NAME3"/>
+    </concat>
+  </format>
+  <format id="character">
+    <case src="1" dst="QUAID"/>
+    <case src="2" dst="SONIA"/>
+    <case src="3" dst="ROB"/>
+    <case src="4" dst="IAN"/>
+  </format>
+  <format id="level">
+    <case src="0"  dst="1-1"/>
+    <case src="1"  dst="1-2"/>
+    <case src="2"  dst="1-3"/>
+    <case src="3"  dst="1-4"/>
+    <case src="4"  dst="1-5"/>
+    <case src="5"  dst="1-6"/>
+    <case src="6"  dst="1-7"/>
+    <case src="7"  dst="2-1"/>
+    <case src="8"  dst="2-2"/>
+    <case src="9"  dst="2-3"/>
+    <case src="10" dst="2-4"/>
+    <case src="11" dst="2-5"/>
+    <case src="12" dst="2-6"/>
+    <case src="13" dst="2-7"/>
+    <case src="14" dst="ALL"/>
+  </format>
+  
+  <charset id="dragnblz">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst=","/>
+    <char src="0x25" dst="~"/>
+    <char src="0x26" dst="."/>
+    <char src="0x27" dst="/"/>
+    <char src="0x28" dst="["/>
+    <char src="0x29" dst="]"/>
+    <char src="0xFF" dst=" "/>
+  </charset>
+</hi2txt>

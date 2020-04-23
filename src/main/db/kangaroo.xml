@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+	  2020-29-03: support new definition from hiscore.dat embedded into mame 0.219
+      2015-05-11: support new definition from hiscore.dat 20150131 and hi2txt report
+    tested:
+      mame 0.219 and embedded hiscore.dat
+	  mame 0.153 and hiscore.dat 2015-01-31
+	  mame 0.153 and hiscore.dat 2014-08-22
+	  mame 0.148 and hiscore.dat 2014-04-23
+    source: HiToText, GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:e1a4:02:50:00
+                  0:e1da:02:50:00
+                  0:e1a0:3c:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>64</size>
+    </check>
+    <elt   size="2" type="raw"  id="BYPASS1"/> <!-- truncated hiscore? //-->
+    <elt   size="2" type="raw"  id="BYPASS2"/> <!-- another truncated score? //-->
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="kangaroo" ascii-offset="55"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:e1a0:3c:00:00
+                  0:e1da:1:50:50</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>61</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="kangaroo" ascii-offset="55"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt   size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi"> <!-- mame 0.219 -->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>@:maincpu,program,e1a0,3c,00,00
+                  @:maincpu,program,e300,6,00,00
+                  @:maincpu,program,e302,1,05,05</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>67</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME" charset="kangaroo" ascii-offset="55"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+	<elt   size="6" type="raw"  id="HISCORE_TXT"/>
+    <elt   size="1" type="raw"  id="CHECK"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/> <!-- format="score" -->
+      <column id="NAME"/>
+    </table>
+    <field id="BYPASS1" format="0x" display="debug"/>
+    <field id="BYPASS2" format="0x" display="debug"/>
+    <field id="CHECK"   format="0x" display="debug"/>
+  </output>
+    
+  <!-- it mimics the game hiscores but complexify the scores comparison
+  <format id="score">
+    <pad direction="left" max="6">0</pad>
+  </format>
+  -->
+  
+  <charset id="kangaroo">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

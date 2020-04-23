@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone (nvram)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ffc8b8:28:4c:00
+                  0:ffc8de:1:30:30</definition> <!-- wb3 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>41</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME"  charset="wb3"/>
+      <elt size="1" type="int"  id="STAGE" nibble-skip="odd"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="1" type="raw" id="UNKNOWN"/>
+  </structure>
+  
+  <structure file="nvram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>16384</size>
+    </check>
+    <elt size="2232" type="raw" id="UNKNOWN_HUGE"/>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME"  charset="wb3"/>
+      <elt size="1" type="int"  id="STAGE" nibble-skip="odd"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="wb3">
+    <char src="0x5B" dst="."/>
+  </charset>
+</hi2txt>

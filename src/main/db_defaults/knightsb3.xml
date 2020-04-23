@@ -1,0 +1,57 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>80000</cell><cell>CAP</cell><cell>ARTHUR</cell><cell>L-5</cell></row>
+    <row><cell>2</cell><cell>79000</cell><cell>COM</cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>3</cell><cell>78000</cell><cell>CPS</cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>4</cell><cell>77000</cell><cell>YST</cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>5</cell><cell>76000</cell><cell>EM </cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>6</cell><cell>75000</cell><cell>KNI</cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>7</cell><cell>74000</cell><cell>GHT</cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>8</cell><cell>73000</cell><cell>S  </cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>9</cell><cell>72000</cell><cell>OF </cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>10</cell><cell>71000</cell><cell>THE</cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>11</cell><cell>70000</cell><cell>ROU</cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>12</cell><cell>69000</cell><cell>ND&#183;</cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>13</cell><cell>68000</cell><cell>PLE</cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>14</cell><cell>67000</cell><cell>ASE</cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>15</cell><cell>66000</cell><cell>CHA</cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>16</cell><cell>65000</cell><cell>LEN</cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>17</cell><cell>64000</cell><cell>GE </cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>18</cell><cell>63000</cell><cell>THI</cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>19</cell><cell>62000</cell><cell>S  </cell><cell>ARTHUR</cell><cell>L-4</cell></row>
+    <row><cell>20</cell><cell>61000</cell><cell>GAM</cell><cell>LANCELOT</cell><cell>L-4</cell></row>
+    <row><cell>21</cell><cell>60000</cell><cell>E  </cell><cell>PERCEVAL</cell><cell>L-4</cell></row>
+    <row><cell>22</cell><cell>59000</cell><cell>WIT</cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>23</cell><cell>58000</cell><cell>H  </cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>24</cell><cell>57000</cell><cell>YOU</cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>25</cell><cell>56000</cell><cell>R  </cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>26</cell><cell>55000</cell><cell>FRI</cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>27</cell><cell>54000</cell><cell>END</cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>28</cell><cell>53000</cell><cell>S! </cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>29</cell><cell>52000</cell><cell>FRO</cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>30</cell><cell>51000</cell><cell>M  </cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>31</cell><cell>50000</cell><cell>KNI</cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>32</cell><cell>49000</cell><cell>GHT</cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>33</cell><cell>48000</cell><cell>S  </cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>34</cell><cell>47000</cell><cell>OF </cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>35</cell><cell>46000</cell><cell>THE</cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>36</cell><cell>45000</cell><cell>ROU</cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>37</cell><cell>44000</cell><cell>ND </cell><cell>ARTHUR</cell><cell>L-3</cell></row>
+    <row><cell>38</cell><cell>43000</cell><cell>DEV</cell><cell>LANCELOT</cell><cell>L-3</cell></row>
+    <row><cell>39</cell><cell>42000</cell><cell>ELO</cell><cell>PERCEVAL</cell><cell>L-3</cell></row>
+    <row><cell>40</cell><cell>41000</cell><cell>PME</cell><cell>ARTHUR</cell><cell>L-2</cell></row>
+    <row><cell>41</cell><cell>40000</cell><cell>NT </cell><cell>LANCELOT</cell><cell>L-2</cell></row>
+    <row><cell>42</cell><cell>39000</cell><cell>STA</cell><cell>PERCEVAL</cell><cell>L-2</cell></row>
+    <row><cell>43</cell><cell>38000</cell><cell>FF </cell><cell>ARTHUR</cell><cell>L-2</cell></row>
+    <row><cell>44</cell><cell>37000</cell><cell>TO </cell><cell>LANCELOT</cell><cell>L-2</cell></row>
+    <row><cell>45</cell><cell>36000</cell><cell>PLA</cell><cell>PERCEVAL</cell><cell>L-2</cell></row>
+    <row><cell>46</cell><cell>35000</cell><cell>YER</cell><cell>ARTHUR</cell><cell>L-2</cell></row>
+    <row><cell>47</cell><cell>34000</cell><cell>S&#183; </cell><cell>LANCELOT</cell><cell>L-2</cell></row>
+    <row><cell>48</cell><cell>33000</cell><cell>THA</cell><cell>PERCEVAL</cell><cell>L-2</cell></row>
+    <row><cell>49</cell><cell>32000</cell><cell>NK </cell><cell>ARTHUR</cell><cell>L-2</cell></row>
+    <row><cell>50</cell><cell>31000</cell><cell>YOU</cell><cell>LANCELOT</cell><cell>L-2</cell></row>
+  </table>
+</hi2txt>
+
+

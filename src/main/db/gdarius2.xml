@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	history:
+	  2020-04-23 use a specific algorithm for gdarius2 instead of relying on gdarius
+    source: GreatStone
+  //-->
+  
+  <structure file="fm1208s">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="48" type="raw"  id="UNKNOWN"/>
+    <elt size="1"  type="raw"  id="UNKNOWN2"/>
+    <loop count="10">
+      <elt size="1" type="int"  id="L_TECH-RANK"/>
+      <elt size="4" type="int"  id="L_SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="L_NAME"/>
+    </loop>
+	<loop count="10">
+      <elt size="1" type="int"  id="M_TECH-RANK"/>
+      <elt size="4" type="int"  id="M_SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="M_NAME"/>
+    </loop>
+	<loop count="10">
+      <elt size="1" type="int"  id="N_TECH-RANK"/>
+      <elt size="4" type="int"  id="N_SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="N_NAME"/>
+    </loop>
+	<loop count="10">
+      <elt size="1" type="int"  id="X_TECH-RANK"/>
+      <elt size="4" type="int"  id="X_SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="X_NAME"/>
+    </loop>
+	<loop count="10">
+      <elt size="1" type="int"  id="O_TECH-RANK"/>
+      <elt size="4" type="int"  id="O_SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="O_NAME"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="ZONE LAMBDA" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"       format="+1"/>
+      <column id="SCORE"     src="L_SCORE"/>
+      <column id="NAME"      src="L_NAME"/>
+      <column id="TECH-RANK" src="L_TECH-RANK" format="tech"/>
+    </table>
+	<table id="ZONE MU" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"       format="+1"/>
+      <column id="SCORE"     src="M_SCORE"/>
+      <column id="NAME"      src="M_NAME"/>
+      <column id="TECH-RANK" src="M_TECH-RANK" format="tech"/>
+    </table>
+	<table id="ZONE NU" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"       format="+1"/>
+      <column id="SCORE"     src="N_SCORE"/>
+      <column id="NAME"      src="N_NAME"/>
+      <column id="TECH-RANK" src="N_TECH-RANK" format="tech"/>
+    </table>
+	<table id="ZONE XI" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"       format="+1"/>
+      <column id="SCORE"     src="X_SCORE"/>
+      <column id="NAME"      src="X_NAME"/>
+      <column id="TECH-RANK" src="X_TECH-RANK" format="tech"/>
+    </table>
+	<table id="ZONE OMICRON" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"       format="+1"/>
+      <column id="SCORE"     src="O_SCORE"/>
+      <column id="NAME"      src="O_NAME"/>
+      <column id="TECH-RANK" src="O_TECH-RANK" format="tech"/>
+    </table>
+  </output>
+  
+  <!-- Huge thanks to the author of the following page,
+       the only one in the big Internet to describe
+       the percentage associated to each tech-rank
+       http://www5a.biglobe.ne.jp/~R-GRAY0/g/system.htm //-->
+  <format id="tech">
+    <case operator="&lt;=" src="5"    dst="Iron Duck"/>
+    <case operator="&lt;=" src="10"   dst="Silver Duck"/>
+    <case operator="&lt;=" src="15"   dst="Gold Duck"/>
+    <case operator="&lt;=" src="20"   dst="Iron Owl"/>
+    <case operator="&lt;=" src="25"   dst="Silver Owl"/>
+    <case operator="&lt;=" src="30"   dst="Gold Owl"/>
+    <case operator="&lt;=" src="35"   dst="Iron Crow"/>
+    <case operator="&lt;=" src="40"   dst="Silver Crow"/>
+    <case operator="&lt;=" src="45"   dst="Gold Crow"/>
+    <case operator="&lt;=" src="50"   dst="Iron Swan"/>
+    <case operator="&lt;=" src="55"   dst="Silver Swan"/>
+    <case operator="&lt;=" src="60"   dst="Gold Swan"/>
+    <case operator="&lt;=" src="65"   dst="Iron Eagle"/>
+    <case operator="&lt;=" src="70"   dst="Silver Eagle"/>
+    <case operator="&lt;=" src="75"   dst="Gold Eagle"/>
+    <case operator="&lt;=" src="80"   dst="Iron Condor"/>
+    <case operator="&lt;=" src="85"   dst="Silver Condor"/>
+    <case operator="&lt;=" src="90"   dst="Gold Condor"/>
+    <case operator="&lt;=" src="95"   dst="Iron Hawk"/>
+    <case operator="&lt;=" src="100"  dst="Silver Hawk"/>
+    <case operator="&lt;=" src="105"  dst="Gold Hawk"/>
+  </format>
+</hi2txt>

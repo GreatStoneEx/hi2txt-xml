@@ -1,0 +1,17 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>RESCUED</col><col>STAGE</col><col>CHARACTER</col><col>SPEED</col><col>POWER</col><col>CONTINUE</col><col>MODE</col>
+    <row><cell>1</cell><cell>1</cell><cell>2000000</cell><cell>BEA</cell><cell>1000</cell><cell>0</cell><cell>Type-A</cell><cell>4</cell><cell>ROLL</cell><cell>0</cell><cell>Normal</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>1800000</cell><cell>TAT</cell><cell>900</cell><cell>0</cell><cell>Type-B</cell><cell>3</cell><cell>BOMB</cell><cell>0</cell><cell>Normal</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>1600000</cell><cell>TAC</cell><cell>800</cell><cell>0</cell><cell>Type-C</cell><cell>2</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Normal</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>1400000</cell><cell>KCA</cell><cell>700</cell><cell>0</cell><cell>Type-A</cell><cell>1</cell><cell>ROLL</cell><cell>0</cell><cell>Normal</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>1200000</cell><cell>VEA</cell><cell>600</cell><cell>0</cell><cell>Type-B</cell><cell>4</cell><cell>BOMB</cell><cell>0</cell><cell>Normal</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>1000000</cell><cell>FSC</cell><cell>700</cell><cell>0</cell><cell>Type-C</cell><cell>1</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Time attack</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>900000</cell><cell>E.A</cell><cell>600</cell><cell>0</cell><cell>Type-B</cell><cell>2</cell><cell>BOMB</cell><cell>0</cell><cell>Time attack</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>800000</cell><cell>VOV</cell><cell>500</cell><cell>0</cell><cell>Type-A</cell><cell>3</cell><cell>ROLL</cell><cell>0</cell><cell>Time attack</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>700000</cell><cell>E.E</cell><cell>400</cell><cell>0</cell><cell>Type-C</cell><cell>4</cell><cell>LOCK-ON</cell><cell>0</cell><cell>Time attack</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>600000</cell><cell>RSA</cell><cell>300</cell><cell>0</cell><cell>Type-B</cell><cell>1</cell><cell>BOMB</cell><cell>0</cell><cell>Time attack</cell></row>
+  </table>
+</hi2txt>
+
+

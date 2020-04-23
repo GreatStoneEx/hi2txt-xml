@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Asteroids Deluxe">
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+	modified for mame 0.204 and related hiscore.dat
+      source: GreatStone
+  //-->
+  
+  <structure file="earom">
+    <check>
+      <size>64</size>
+    </check>
+    <loop count="3">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="3" type="text" id="NAME"  charset="astdelux" ascii-offset="54"/>
+      <elt size="1" type="raw"  id="CHECKSUM"/>
+    </loop>
+  </structure>
+  
+  <structure file="hi">
+    <check>
+	  <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,2c,15,00,00
+                  @:maincpu,program,4d,15,00,00
+                  @:maincpu,program,76,01,4d,4d</definition> <!-- 0.204 --> 
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>43</size>
+    </check>
+    <loop count="7" start="3">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+	<loop count="7" start="3">
+      <elt size="3" type="text" id="NAME"  charset="astdelux" ascii-offset="54"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHECKSUM" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="astdelux">
+    <char src="0x00" dst=" "/>
+    <char src="0xFF" dst=" "/>
+  </charset>
+</hi2txt>

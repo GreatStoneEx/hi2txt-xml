@@ -1,0 +1,15 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>0</cell><cell>AAA</cell></row>
+    <row><cell>2</cell><cell>0</cell><cell>BBB</cell></row>
+    <row><cell>3</cell><cell>0</cell><cell>CCC</cell></row>
+    <row><cell>4</cell><cell>0</cell><cell>DDD</cell></row>
+    <row><cell>5</cell><cell>0</cell><cell>EEE</cell></row>
+    <row><cell>6</cell><cell>0</cell><cell>FFF</cell></row>
+    <row><cell>7</cell><cell>0</cell><cell>GGG</cell></row>
+    <row><cell>8</cell><cell>0</cell><cell>HHH</cell></row>
+  </table>
+</hi2txt>
+
+

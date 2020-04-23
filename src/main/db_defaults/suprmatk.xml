@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>7500</cell><cell>XMI</cell></row>
+    <row><cell>2</cell><cell>7410</cell><cell>DBM</cell></row>
+    <row><cell>3</cell><cell>7370</cell><cell>SEG</cell></row>
+    <row><cell>4</cell><cell>7220</cell><cell>LRD</cell></row>
+    <row><cell>5</cell><cell>7180</cell><cell>JT </cell></row>
+    <row><cell>6</cell><cell>7100</cell><cell>KGC</cell></row>
+    <row><cell>7</cell><cell>7050</cell><cell>CSR</cell></row>
+    <row><cell>8</cell><cell>6950</cell><cell>GCC</cell></row>
+  </table>
+</hi2txt>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c380:60:0a:00
+                  0:f620:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>99</size>
+    </check>
+    <loop count="5">
+      <elt size="2"  type="int"  id="RANK"/>
+      <elt size="10" type="text" id="SCORE" charset="vangrd2"/>
+      <elt size="3"  type="text" id="NAME"/>
+      <elt size="1"  type="raw"  id="END"/>
+    </loop>
+    <elt size="1"  type="raw"  id="END2"/>
+    <loop count="5">
+      <elt size="3" type="int" id="SCORE ALT" base="16"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="rank"     display="debug"/>
+      <column id="SCORE"/>
+      <column id="SCORE ALT" format="*10" display="debug"/>
+      <column id="NAME"/>
+      <column id="END" format="0x"        display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="END2"                   display="debug"/>
+  </output>
+  
+  <format id="rank">
+    <substract>2578</substract>
+    <divide>2</divide>
+    <multiply>-1</multiply>
+    <add>1</add>
+  </format>
+  
+  <charset id="vangrd2">
+    <char src="0x20" dst=""/>
+  </charset>
+</hi2txt>

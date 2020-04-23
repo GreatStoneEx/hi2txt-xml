@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:921d90:b8:01:18</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>184</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="10">
+      <elt size="4" type="int" id="SCORE" base="16" table-index="loop_index"/>
+    </loop>
+    <elt size="1" type="raw" id="UNUSED"/>
+    <loop count="10">
+      <elt size="2" type="raw" id="UNUSED 2"/>
+      <elt size="1" type="int" id="STAGE"       base="16"/>
+      <elt size="1" type="int" id="START STAGE" base="16"/>
+    </loop>
+    <loop count="10">
+      <elt size="3" type="int" id="DESTROY RATE" base="16" nibble-skip="odd"/>
+      <elt size="1" type="raw" id="PADDING"/>
+    </loop>
+    <loop count="10">
+      <elt size="6" type="text" id="NAME" ascii-offset="65" charset="cs1944" byte-skip="even" ascii-step="2"/>
+      <!-- elt of the last iteration has only 5 bytes, without last padding dumped, but it is more elegant to write the structure like that //-->
+    </loop>
+  </structure>
+  
+  <output>    
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="START STAGE" format="+1"/>
+      <column id="DESTROY RATE" format="Suffix%"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="cs1944">
+    <char src="0x34" dst="!"/>
+    <char src="0x36" dst="&amp;"/>
+    <char src="0x38" dst="."/>
+    <char src="0x3a" dst="@"/>
+    <char src="0x3c" dst="&man;"/>
+    <char src="0x3e" dst="&woman;"/>
+    <char src="0x40" dst="&black-heart;"/>
+    <char src="0x42" dst="&smiley;"/>
+    <char src="0x44" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Zero Team">
+  <!--
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.159 and hiscore.dat 2015-07-01
+	history
+	  2020-04-19 fix score (on 4 bytes only)
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:9212:4b:40:55</definition>
+      <definition>0:925c:4b:40:55</definition> <!-- nzeroteam -->
+      <definition>0:924e:4b:40:55</definition> <!-- zerotm2k -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>75</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"     endianness="little_endian"/>
+	  <elt size="2" type="text" id="UNKNOWN"/>
+      <elt size="2" type="int"  id="CHARACTER" endianness="little_endian"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="5" type="raw"  id="SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME" format="TrimR "/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="ACE (red)"/>
+    <case src="1" dst="SPEED (blue)"/>
+    <case src="2" dst="SPIN (yellow)"/>
+    <case src="3" dst="BIG-O (green)"/>
+    <case src="4" dst="orange"/>
+  </format>
+</hi2txt>

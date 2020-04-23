@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.153 and hiscore.dat 2014-04-23
+      mame 0.153 and hiscore.dat 2014-08-22
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:80107e:7c:00:00
+                  0:8010f5:1:30:30</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>125</size>
+    </check>
+    <loop count="5" skip-last-bytes="6">
+      <elt size="4"  type="int"  id="SCORE"/>
+      <elt size="12" type="text" id="NAME"  byte-skip="0001" ascii-offset="65" ascii-step="4" charset="espgal"/>
+      <elt size="2"  type="raw"  id="UNKNOWN"/>
+      <elt size="2"  type="int"  id="STAGE"/>
+      <elt size="2"  type="int"  id="CHARACTER"/>
+      <elt size="2"  type="int"  id="CONTINUE"/>
+      <elt size="2"  type="raw"  id="UNKNOWN2"/>
+      <!-- hiscore.dat (fixed): last 6 bytes of last score is not dumped, including CHARACTER and CONTINUE //-->
+    </loop>
+    <elt size="1"  type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:80107e:80:00:00
+                  0:8010f5:1:30:30</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>129</size>
+    </check>
+    <loop count="5" skip-last-bytes="2">
+      <elt size="4"  type="int"  id="SCORE"/>
+      <elt size="12" type="text" id="NAME"  byte-skip="0001" ascii-offset="65" ascii-step="4" charset="espgal"/>
+      <elt size="2"  type="raw"  id="UNKNOWN"/>
+      <elt size="2"  type="int"  id="STAGE"/>
+      <elt size="2"  type="int"  id="CHARACTER"/>
+      <elt size="2"  type="int"  id="CONTINUE"/>
+      <elt size="2"  type="raw"  id="UNKNOWN2"/>
+      <!-- hiscore.dat (minor): last 2 bytes of last score is not dumped (UNKNOWN2) //-->
+    </loop>
+    <elt size="1"  type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file="sram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>131072</size>
+    </check>
+    <elt size="4222"  type="raw"  id="DATA"/>
+    <loop count="5">
+      <elt size="4"  type="int"  id="SCORE"/>
+      <elt size="12" type="text" id="NAME"  byte-skip="0001" ascii-offset="65" ascii-step="4" charset="espgal"/>
+      <elt size="2"  type="raw"  id="UNKNOWN"/>
+      <elt size="2"  type="int"  id="STAGE"/>
+      <elt size="2"  type="int"  id="CHARACTER"/>
+      <elt size="2"  type="int"  id="CONTINUE"/>
+      <elt size="2"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="CONTINUE"/>
+      <column id="UNKNOWN"  format="0x" display="debug"/>
+      <column id="UNKNOWN2" format="0x" display="debug"/>
+    </table>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="AGEHA" default="yes"/>
+    <case src="2" dst="TATEHA"/>
+    <case src="4" dst="AGEHA"/>
+    <case src="6" dst="TATEHA"/>
+  </format>
+  
+  <charset id="espgal">
+    <char src="0x68" dst="."/>
+    <char src="0xFE" dst=""/>
+  </charset>
+</hi2txt>

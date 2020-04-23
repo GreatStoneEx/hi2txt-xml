@@ -1,0 +1,13 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>STAGE</col>
+    <row><cell>1</cell><cell>6550</cell><cell>BEGINNER - F</cell></row>
+  </table>
+  <table id="TOP TIMES">
+    <col>RANK</col><col>E</col><col>J</col><col>O</col><col>T</col><col>Z</col>
+    <row><cell>BEGINNER</cell><cell>67 sec</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell></row>
+    <row><cell>CHAMPION 1</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell></row>
+    <row><cell>CHAMPION 2</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell></row>
+    <row><cell>CHAMPION 3</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell><cell>NOT SET YET</cell></row>
+  </table>
+</hi2txt>

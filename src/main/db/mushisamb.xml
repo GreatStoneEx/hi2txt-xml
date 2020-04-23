@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c244dec:9d:00:4e</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>157</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="int"  id="TODAYS SCORE"/>
+      <elt size="1" type="raw"  id="TODAYS EMPTY"/>
+      <elt size="1" type="int"  id="TODAYS DEFAULT"/>
+      <elt size="1" type="int"  id="TODAYS STAGE"/>
+      <elt size="1" type="raw"  id="TODAYS EMPTY2"/>
+      <elt size="1" type="int"  id="TODAYS START SHOT"/>
+      <elt size="1" type="int"  id="TODAYS CONTINUE"/>
+      <elt size="3" type="text" id="TODAYS NAME" charset="mushisam"/>
+      <elt size="3" type="raw"  id="TODAYS EMPTY3"/>
+    </loop>
+  </structure>
+  
+  <structure file="eeprom" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="100" type="raw"  id="DATA"/>
+    <loop count="15"> <!-- 5 last scores are not used as this version as no 'ultra' mode //-->
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="1" type="int"  id="DEFAULT"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="raw"  id="EMPTY2"/>
+      <elt size="1" type="int"  id="START SHOT"/>
+      <elt size="1" type="int"  id="CONTINUE"/>
+      <elt size="3" type="text" id="NAME" charset="mushisam"/>
+      <elt size="3" type="raw"  id="EMPTY3"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES" lines-max="10">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="LOCAL RANK" src="index" format="%5;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="CONTINUE"/>
+      <column id="START SHOT" format="shot"/>
+      <column id="DEFAULT" format="default"/>
+      <column id="EMPTY"  format="0x" display="debug"/>
+      <column id="EMPTY2" format="0x" display="debug"/>
+      <column id="EMPTY3" format="0x" display="debug"/>
+    </table>
+    <table id="TODAYS TOP SCORES">
+      <column id="TODAYS RANK" src="index" format="+1"          display="extra"/>
+      <column id="TODAYS LOCAL RANK" src="index" format="%5;+1" display="extra"/>
+      <column id="TODAYS SCORE"                                 display="extra"/>
+      <column id="TODAYS NAME"                                  display="extra"/>
+      <column id="TODAYS STAGE" format="+1"                     display="extra"/>
+      <column id="TODAYS MODE" src="index" format="mode"        display="extra"/>
+      <column id="TODAYS CONTINUE"                              display="extra"/>
+      <column id="TODAYS START SHOT" format="shot"              display="extra"/>
+      <column id="TODAYS DEFAULT" format="default"              display="extra"/>
+      <column id="TODAYS EMPTY"  format="0x" display="debug"/>
+      <column id="TODAYS EMPTY2" format="0x" display="debug"/>
+      <column id="TODAYS EMPTY3" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="mode">
+    <case src="5"  operator="&lt;" dst="ORIGINAL" default="yes"/>
+    <case src="10" operator="&lt;" dst="MANIAC"/>
+    <case src="15" operator="&lt;" dst="ULTRA"/>
+  </format>
+  <format id="default">
+    <case src="0" dst="yes" default="yes"/>
+    <case src="1" dst="no"/>
+  </format>
+  <format id="shot">
+    <case src="0" dst="M-POWER" default="yes"/>
+    <case src="1" dst="W-POWER"/>
+    <case src="2" dst="S-POWER"/>
+  </format>
+  
+  <charset id="mushisam">
+    <char src="0x2D" dst="."/>
+    <char src="0xFE" dst=""/>
+  </charset>
+</hi2txt>

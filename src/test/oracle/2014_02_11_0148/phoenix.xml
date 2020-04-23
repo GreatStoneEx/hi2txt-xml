@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="SCORE">
+    <col>RANK</col><col>SCORE</col>
+    <row><cell>1</cell><cell>880</cell></row>
+  </table>
+  <table id="TOP SCORE">
+    <col>TOP SCORE</col><col>TOP SCORE ALT</col>
+    <row><cell>880</cell><cell>880</cell></row>
+  </table>
+  <table id="SCORE 1">
+    <col>SCORE 1</col><col>SCORE 1 ALT</col>
+    <row><cell>540</cell><cell>540</cell></row>
+  </table>
+  <table id="SCORE 2">
+    <col>SCORE 2</col><col>SCORE 2 ALT</col>
+    <row><cell>300</cell><cell>300</cell></row>
+  </table>
+</hi2txt>

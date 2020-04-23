@@ -1,0 +1,42 @@
+RANK|LOCAL RANK|SCORE|NAME|STAGE|CHARACTER|MODE|UNKNOWN
+1|1|4702650|333|2|IKUO (BLUE) P1|normal|0x00
+2|2|4525820|BBB|2|MOMO (PINK) P1|normal|0x00
+3|3|1591740|222|2|RAFUTE (YELLOW) P1|normal|0x00
+4|4|1199370|444|2|MOMO (PINK) P2|normal|0x00
+5|5|1000000|CAV|-|-|normal|0x00
+6|6|900000|CAV|-|-|normal|0x00
+7|7|881740|111|2|MOMO (PINK) P1|normal|0x00
+8|8|800000|CAV|-|-|normal|0x00
+9|9|700000|CAV|-|-|normal|0x00
+10|10|600000|CAV|-|-|normal|0x00
+11|1|2000000|CAV|-|-|harder|0x00
+12|2|1800000|CAV|-|-|harder|0x00
+13|3|1600000|CAV|-|-|harder|0x00
+14|4|1400000|CAV|-|-|harder|0x00
+15|5|1200000|CAV|-|-|harder|0x00
+16|6|1000000|CAV|-|-|harder|0x00
+17|7|800000|CAV|-|-|harder|0x00
+18|8|600000|CAV|-|-|harder|0x00
+19|9|400000|CAV|-|-|harder|0x00
+20|10|200000|CAV|-|-|harder|0x00
+21|1|3000000|CAV|-|-|extended|0x00
+22|2|2700000|CAV|-|-|extended|0x00
+23|3|2400000|CAV|-|-|extended|0x00
+24|4|2100000|CAV|-|-|extended|0x00
+25|5|1800000|CAV|-|-|extended|0x00
+26|6|1500000|CAV|-|-|extended|0x00
+27|7|1200000|CAV|-|-|extended|0x00
+28|8|900000|CAV|-|-|extended|0x00
+29|9|600000|CAV|-|-|extended|0x00
+30|10|300000|CAV|-|-|extended|0x00
+31|1|4000000|CAV|-|-|score attack|0x00
+32|2|3600000|CAV|-|-|score attack|0x00
+33|3|3200000|CAV|-|-|score attack|0x00
+34|4|2800000|CAV|-|-|score attack|0x00
+35|5|2400000|CAV|-|-|score attack|0x00
+36|6|2000000|CAV|-|-|score attack|0x00
+37|7|1600000|CAV|-|-|score attack|0x00
+38|8|1200000|CAV|-|-|score attack|0x00
+39|9|800000|CAV|-|-|score attack|0x00
+40|10|400000|CAV|-|-|score attack|0x00
+

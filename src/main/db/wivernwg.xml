@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Wivern Wings">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c79fb:f9:24:40</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>249</size>
+    </check>
+    <loop count="8">
+    	<elt size="12" type="text" id="NAME"  byte-skip="1000" charset="CS_NUMBER[-48];wivernwg" ascii-offset="55"/>
+    	<elt size="4"  type="int"  id="STAGE_MAJOR" byte-skip="1000"/>
+    	<elt size="4"  type="int"  id="STAGE_MINOR" byte-skip="1000"/>
+    	<elt size="2"  type="int"  id="CHARACTER" byte-skip="even"/>
+    	<elt size="3"  type="int"  id="SCORE"/>
+    	<elt size="3"  type="raw"  id="SEPARATOR"/>
+    </loop>
+    <elt size="12" type="text" id="BEST NAME"  byte-skip="1000" charset="CS_NUMBER[-48];wivernwg" ascii-offset="55"/>
+    <elt size="4"  type="int"  id="BEST STAGE_MAJOR" byte-skip="1000"/>
+    <elt size="4"  type="int"  id="BEST STAGE_MINOR" byte-skip="1000"/>
+    <elt size="2"  type="int"  id="BEST CHARACTER" byte-skip="even"/>
+    <elt size="3"  type="int"  id="BEST SCORE"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <table id="BEST SCORE">
+      <column id="BEST SCORE"                         display="extra"/>
+      <column id="BEST NAME"                          display="extra"/>
+      <column id="BEST STAGE"     format="best stage" display="extra"/>
+      <column id="BEST CHARACTER" format="character"  display="extra"/>
+    </table>
+  </output>
+  
+  <format id="stage">
+  	<concat>
+  		<column id="STAGE_MAJOR" format="+1"/>
+  		<txt>-</txt>
+  	  <column id="STAGE_MINOR" format="+1"/>
+  	</concat>
+  	<case src="3-8" dst="---"/> <!-- 2 loops all -->
+  </format>
+  
+  <format id="best stage">
+  	<concat>
+  		<column id="BEST STAGE_MAJOR" format="+1"/>
+  		<txt>-</txt>
+  	  <column id="BEST STAGE_MINOR" format="+1"/>
+  	</concat>
+  	<case src="3-8" dst="---"/> <!-- 2 loops all -->
+  </format>
+  
+  <format id="character">
+    <case src="0" dst="XY-01" default="yes"/>
+    <case src="1" dst="XYF-01B"/>
+    <case src="2" dst="XB6-XB"/>
+    <case src="3" dst="XRA-2B"/>
+    <case src="4" dst="XX-010"/>
+  </format>
+  
+  <charset id="wivernwg">
+    <char src="0x24" dst="."/>
+  </charset>
+</hi2txt>

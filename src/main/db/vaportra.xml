@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fff5d4:78:2e:00
+                  0:ffc024:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>124</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="STAGE"     base="16"/>
+      <elt size="4" type="int"  id="SCORE"     base="16"/>
+      <elt size="1" type="int"  id="MN"        base="16"/>
+      <elt size="1" type="int"  id="SEC"       base="16"/>
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="TIME" format="time"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="SILPH"/>
+    <case src="4" dst="VALKYRIE"/>
+    <case src="8" dst="SEYLEN"/>
+  </format>
+  <format id="time">
+    <concat>
+      <column id="MN" format="mn"/>
+      <column>:</column>
+      <column id="SEC" format="sec"/>
+    </concat>
+  </format>
+  <format id="mn"><pad direction="left" max="2">0</pad></format>
+  <format id="sec"><pad direction="right" max="2">0</pad></format>
+</hi2txt>

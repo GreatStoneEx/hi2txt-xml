@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="1 PLAYER">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col><col>CHARACTER 3</col><col>UNKNOWN</col><col>SEPARATOR</col>
+    <row><cell>1</cell><cell>100000</cell><cell>S.S</cell><cell>Chizuru Kagura</cell><cell>Goenitz</cell><cell>29</cell><cell>0</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>80000</cell><cell>SNK</cell><cell>Ryo Sakazaki</cell><cell>Robert Garcia</cell><cell>Yuri Sakazaki</cell><cell>1</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>60000</cell><cell>SNK</cell><cell>Terry Bogard</cell><cell>Andy Bogard</cell><cell>Joe Higashi</cell><cell>0</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>40000</cell><cell>SNK</cell><cell>Athena Asamiya</cell><cell>Sie Kensou</cell><cell>Chin Gentsai</cell><cell>1</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>SNK</cell><cell>Leona</cell><cell>Ralf</cell><cell>Clark</cell><cell>0</cell><cell>0xFF</cell></row>
+  </table>
+  <table id="2 PLAYERS">
+    <col>RANK</col><col>VS SCORE</col><col>VS NAME</col><col>VS CHARACTER 1</col><col>VS CHARACTER 2</col><col>VS CHARACTER 3</col><col>VS UNKNOWN</col><col>VS SEPARATOR</col>
+    <row><cell>1</cell><cell>15</cell><cell>S.S</cell><cell>30</cell><cell>31</cell><cell>32</cell><cell>0</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>10</cell><cell>SNK</cell><cell>Ryo Sakazaki</cell><cell>Robert Garcia</cell><cell>Yuri Sakazaki</cell><cell>1</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>8</cell><cell>SNK</cell><cell>Terry Bogard</cell><cell>Andy Bogard</cell><cell>Joe Higashi</cell><cell>0</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>6</cell><cell>SNK</cell><cell>Athena Asamiya</cell><cell>Sie Kensou</cell><cell>Chin Gentsai</cell><cell>1</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>4</cell><cell>SNK</cell><cell>Leona</cell><cell>Ralf</cell><cell>Clark</cell><cell>0</cell><cell>0xFF</cell></row>
+  </table>
+</hi2txt>

@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>SEPARATOR</col><col>CHARACTER</col><col>UNKNOWN1</col><col>UNKNOWN2</col><col>MODE</col><col>MAX CHAIN</col><col>MAX POWER GEM</col><col>FOOTER</col>
+    <row><cell>1</cell><cell>5000</cell><cell>HAC</cell><cell>0x2D</cell><cell>MORRIGAN</cell><cell>0x00</cell><cell>0x00</cell><cell>HARD</cell><cell>2</cell><cell>10</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>4000</cell><cell>GIU</cell><cell>0x2D</cell><cell>CHUN-LI</cell><cell>0x00</cell><cell>0x02</cell><cell>NORMAL</cell><cell>1</cell><cell>8</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>3000</cell><cell>HRS</cell><cell>0x2D</cell><cell>RYU</cell><cell>0x00</cell><cell>0x04</cell><cell>EASY</cell><cell>1</cell><cell>6</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>2000</cell><cell>NIC</cell><cell>0x2D</cell><cell>KEN</cell><cell>0x00</cell><cell>0x06</cell><cell>NORMAL</cell><cell>1</cell><cell>4</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>1000</cell><cell>DEF</cell><cell>0x2D</cell><cell>HSIEN-KO</cell><cell>0x00</cell><cell>0x08</cell><cell>EASY</cell><cell>1</cell><cell>2</cell><cell>0xE4</cell></row>
+  </table>
+</hi2txt>

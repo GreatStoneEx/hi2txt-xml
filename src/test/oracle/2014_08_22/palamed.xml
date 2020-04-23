@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>123520</cell><cell>..A</cell><cell>14</cell></row>
+    <row><cell>2</cell><cell>22660</cell><cell>XX!</cell><cell>3</cell></row>
+    <row><cell>3</cell><cell>20000</cell><cell>IFH</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>OTB</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>SRO</cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">123520</field>
+  <field id="TOP SCORE STRING">20000</field>
+  <field id="UNKNOWN">0x00</field>
+</hi2txt>

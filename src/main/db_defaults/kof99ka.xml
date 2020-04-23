@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col><col>CHARACTER 3</col><col>CHARACTER 4</col>
+    <row><cell>5</cell><cell>100</cell><cell>TAK</cell><cell>K&apos;</cell><cell>Maxima</cell><cell>Benimaru Nikaido</cell><cell>Shingo Yabuki</cell></row>
+    <row><cell>4</cell><cell>90</cell><cell>ICH</cell><cell>Terry Bogard</cell><cell>Andy Bogard</cell><cell>Joe Higashi</cell><cell>Mai Shiranui</cell></row>
+    <row><cell>3</cell><cell>80</cell><cell>KON</cell><cell>Ryo Sakazaki</cell><cell>Robert Garcia</cell><cell>Yuri Sakazaki</cell><cell>Takuma Sakazaki</cell></row>
+    <row><cell>2</cell><cell>70</cell><cell>DON</cell><cell>Leona</cell><cell>Ralf</cell><cell>Clark</cell><cell>Whip</cell></row>
+    <row><cell>1</cell><cell>60</cell><cell>MAT</cell><cell>Athena Asamiya</cell><cell>Sie Kensou</cell><cell>Chin Gentsai</cell><cell>Bao</cell></row>
+  </table>
+</hi2txt>
+
+

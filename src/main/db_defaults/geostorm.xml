@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>GRADE</col>
+    <row><cell>1</cell><cell>5000</cell><cell>EAS</cell><cell>MARSHAL</cell></row>
+    <row><cell>2</cell><cell>4000</cell><cell>WES</cell><cell>COLONEL</cell></row>
+    <row><cell>3</cell><cell>3000</cell><cell>SOU</cell><cell>MAJOR</cell></row>
+    <row><cell>4</cell><cell>2000</cell><cell>NOR</cell><cell>CAPTAIN</cell></row>
+    <row><cell>5</cell><cell>1000</cell><cell>YA!</cell><cell>PRIVATE</cell></row>
+  </table>
+</hi2txt>
+
+

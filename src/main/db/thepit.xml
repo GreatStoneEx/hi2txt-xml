@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="The Pit">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+    source: T. busse
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,8283,17,10,0
+                  @:maincpu,program,8039,f,10,0</definition> <!-- thepit, thepitj, thepitu1 -->
+	  <definition>@:maincpu,program,8283,17,14,0
+                  @:maincpu,program,8039,f,14,0</definition> <!-- thepitm -->
+	  <definition>@:maincpu,program,8283,17,10,00
+                  @:maincpu,program,8037,f,10,00</definition> <!-- thepitu2 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>38</size>
+    </check>
+	<elt size="23" type="raw" id="UNKNOWN"/> <!-- names and scores, duplicated -->
+    <loop count="3">
+	  <elt size="3" type="text" id="NAME" ascii-offset="55" charset="charconv"/>
+	  <elt size="2" type="int" base="16" endianness="little_endian" id="SCORE"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,8283,19,10,0
+                  @:maincpu,program,8039,f,10,0</definition> <!-- thepit, thepitj, thepitu1 fixed -->
+	  <definition>@:maincpu,program,8283,19,14,0
+                  @:maincpu,program,8039,f,14,0</definition> <!-- thepitm fixed -->
+	  <definition>@:maincpu,program,8283,19,10,00
+                  @:maincpu,program,8037,f,10,00</definition> <!-- thepitu2 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>40</size>
+    </check>
+	<elt size="25" type="raw" id="UNKNOWN"/> <!-- names and scores, duplicated -->
+    <loop count="3">
+	  <elt size="3" type="text" id="NAME" ascii-offset="55" charset="charconv"/>
+	  <elt size="2" type="int" base="16" endianness="little_endian" id="SCORE"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*100"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0xFF" dst="."/>
+  </charset>
+
+</hi2txt>
+

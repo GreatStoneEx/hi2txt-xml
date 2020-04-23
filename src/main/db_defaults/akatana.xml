@@ -1,0 +1,43 @@
+<hi2txt>
+  <table id="TODAYS_CHARACTERS_1">
+    <col>RANK</col><col>NAME</col><col>SCORE</col><col>STAGE</col><col>BOSS</col><col>CONTINUE</col>
+    <row><cell>1</cell><cell>IKE</cell><cell>50000000</cell><cell>3</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>YAG</cell><cell>40000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>3</cell><cell>KOI</cell><cell>30000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>SER</cell><cell>20000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>5</cell><cell>ICH</cell><cell>10000000</cell><cell>2</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>6</cell><cell>INO</cell><cell>5000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>NOM</cell><cell>4000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>TAN</cell><cell>3000000</cell><cell>1</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>ISO</cell><cell>2000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>KUR</cell><cell>1000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+  </table>
+  <table id="TODAYS_CHARACTERS_2">
+    <col>RANK</col><col>NAME</col><col>SCORE</col><col>STAGE</col><col>BOSS</col><col>CONTINUE</col>
+    <row><cell>1</cell><cell>ITA</cell><cell>50000000</cell><cell>3</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>SAT</cell><cell>40000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>3</cell><cell>OGI</cell><cell>30000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>SKN</cell><cell>20000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>5</cell><cell>NIH</cell><cell>10000000</cell><cell>2</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>6</cell><cell>SUZ</cell><cell>5000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>TUN</cell><cell>4000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>SHI</cell><cell>3000000</cell><cell>1</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>TAK</cell><cell>2000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>YUJ</cell><cell>1000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+  </table>
+  <table id="TODAYS_CHARACTERS_3">
+    <col>RANK</col><col>NAME</col><col>SCORE</col><col>STAGE</col><col>BOSS</col><col>CONTINUE</col>
+    <row><cell>1</cell><cell>WAK</cell><cell>50000000</cell><cell>3</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>MAT</cell><cell>40000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>3</cell><cell>IWA</cell><cell>30000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>ASA</cell><cell>20000000</cell><cell>3</cell><cell></cell><cell>0</cell></row>
+    <row><cell>5</cell><cell>MAS</cell><cell>10000000</cell><cell>2</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>6</cell><cell>FUR</cell><cell>5000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>7</cell><cell>HIR</cell><cell>4000000</cell><cell>2</cell><cell></cell><cell>0</cell></row>
+    <row><cell>8</cell><cell>NIS</cell><cell>3000000</cell><cell>1</cell><cell>boss</cell><cell>0</cell></row>
+    <row><cell>9</cell><cell>TMY</cell><cell>2000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+    <row><cell>10</cell><cell>NOD</cell><cell>1000000</cell><cell>1</cell><cell></cell><cell>0</cell></row>
+  </table>
+</hi2txt>
+
+

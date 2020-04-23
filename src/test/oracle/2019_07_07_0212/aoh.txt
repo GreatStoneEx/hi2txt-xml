@@ -1,0 +1,11 @@
+RANK|NAME|SCORE|LEVEL|CHARACTER|COIN
+1|Aaa?###|300620|6'-2-3|Fighter|1
+2|Chamuku|100|6'-2-4|Wizard|1
+3|Dnsssrf|8|111|Assassin|1
+4|A!#=/08|7|6'-2-2|Warrior|1
+5|Kai|6|3-1|Fighter|1
+6|Shue|5|3-2|Assassin|1
+7|Chamuku|4|3-4|Assassin|3
+8|Kputsee|3|43|Assassin|1
+
+

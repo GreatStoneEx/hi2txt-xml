@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>WORLD</col>
+    <row><cell>1</cell><cell>221100</cell><cell>AAA</cell><cell>5W-4</cell></row>
+    <row><cell>2</cell><cell>220200</cell><cell>BBB</cell><cell>5W-3</cell></row>
+    <row><cell>3</cell><cell>218800</cell><cell>CCC</cell><cell>5W-3</cell></row>
+    <row><cell>4</cell><cell>214500</cell><cell>DDD</cell><cell>3W-4</cell></row>
+    <row><cell>5</cell><cell>199550</cell><cell>EEE</cell><cell>2W-1</cell></row>
+    <row><cell>6</cell><cell>187000</cell><cell>FFF</cell><cell>2W-1</cell></row>
+    <row><cell>7</cell><cell>184050</cell><cell>GGG</cell><cell>1W-2</cell></row>
+    <row><cell>8</cell><cell>152000</cell><cell>HHH</cell><cell>1W-3</cell></row>
+    <row><cell>9</cell><cell>141000</cell><cell>III</cell><cell>1W-2</cell></row>
+    <row><cell>10</cell><cell>120550</cell><cell>JKL</cell><cell>1W-1</cell></row>
+  </table>
+</hi2txt>
+
+

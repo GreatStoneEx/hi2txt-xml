@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:f660:5f:00:ff</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>95</size>
+    </check>
+    <loop count="5">
+      <elt size="7"  type="text" id="SCORE" charset="CS_NUMBER[-47];repulse"/>
+      <elt size="1"  type="raw"  id="SEPARATOR"/>
+      <elt size="10" type="text" id="NAME"  charset="repulse"/>
+      <elt size="1"  type="raw"  id="SEPARATOR2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="SEPARATOR"  format="0x" display="debug"/>
+      <column id="NAME"       format="trim"/>
+      <column id="SEPARATOR2" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="trim">
+    <trim direction="right"> </trim>
+  </format>
+  
+  <charset id="repulse">
+    <char src="0x00" dst=""/>
+    <char src="0x40" dst=" "/>
+    <char src="0x5B" dst="."/>
+    <char src="0x5C" dst=","/>
+    <char src="0x5D" dst=";"/>
+    <char src="0x5E" dst="&quot;"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Jump Bug">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,4222,15,00,97
+                  @:maincpu,program,4208,6,00,00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>27</size>
+    </check>
+    <loop count="1" start="1">
+      <elt size="6" type="int"  id="SCORE" endianness="little_endian" base="16" nibble-skip="odd"/>
+	</loop>
+	<loop count="1" start="2">
+      <elt size="6" type="int"  id="SCORE" endianness="little_endian" base="16" nibble-skip="odd"/>
+	</loop>
+	<loop count="3">
+      <elt size="3" type="text"  id="NAME" endianness="little_endian" charset="charconv" ascii-offset="-63"/>
+	</loop>
+	<loop count="1">
+      <elt size="6" type="int"  id="SCORE" endianness="little_endian" base="16" nibble-skip="odd"/>
+	</loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x5E" dst=""/>
+  </charset>
+</hi2txt>

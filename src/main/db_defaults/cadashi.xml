@@ -1,0 +1,36 @@
+<hi2txt>
+  <table id="FIGTHER">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>FTR</cell><cell>120</cell><cell>650</cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>TAI</cell><cell>90</cell><cell>500</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>SGW</cell><cell>60</cell><cell>350</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>MHR</cell><cell>40</cell><cell>200</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>KYM</cell><cell>30</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="MAGE">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>ONJ</cell><cell>130</cell><cell>650</cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>WIZ</cell><cell>70</cell><cell>660</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>KYM</cell><cell>50</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>MYG</cell><cell>30</cell><cell>250</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>TAI</cell><cell>20</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="PRIEST">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>ONJ</cell><cell>130</cell><cell>650</cell><cell>2</cell></row>
+    <row><cell>2</cell><cell>MYG</cell><cell>100</cell><cell>500</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>PRI</cell><cell>80</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>TAI</cell><cell>60</cell><cell>200</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>SGW</cell><cell>40</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+  <table id="NINJA">
+    <col>RANK</col><col>NAME</col><col>EXP</col><col>GOLD</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>ONJ</cell><cell>120</cell><cell>650</cell><cell>2</cell></row>
+    <row><cell>2</cell><cell>SGW</cell><cell>110</cell><cell>450</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>MHR</cell><cell>100</cell><cell>400</cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>NIN</cell><cell>80</cell><cell>300</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>KYM</cell><cell>60</cell><cell>100</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+
+

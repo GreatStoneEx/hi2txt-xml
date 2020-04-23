@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:a036:3:0:0
+                  0:a266:23:0:0</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>38</size>
+    </check>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="5">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME"  charset="battlex" ascii-offset="38"/>
+      <elt size="1" type="raw"  id="UNUSED"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNUSED" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="battlex">
+    <char src="0x00" dst=" "/>
+    <char src="0x37" dst="="/>
+    <char src="0x39" dst="."/>
+    <char src="0x3A" dst=","/>
+  </charset>
+</hi2txt>

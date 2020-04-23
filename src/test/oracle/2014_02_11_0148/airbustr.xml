@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>PHASE</col>
+    <row><cell>1</cell><cell>168000</cell><cell>TO-Y</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>148000</cell><cell>TOMO</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>128000</cell><cell>MLM </cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>108000</cell><cell>OIC </cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>88000</cell><cell>TACO</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>68000</cell><cell>MOMO</cell><cell>1</cell></row>
+    <row><cell>7</cell><cell>48000</cell><cell>MTY </cell><cell>1</cell></row>
+    <row><cell>8</cell><cell>28000</cell><cell>NEKO</cell><cell>1</cell></row>
+  </table>
+  <field id="UNUSED">0x4F</field>
+</hi2txt>

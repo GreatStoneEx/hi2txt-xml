@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col><col>CHARACTER 3</col><col>CHARACTER 4</col><col>SEPARATOR</col><col>SEPARATOR2</col>
+    <row><cell>1</cell><cell>100</cell><cell>ICH</cell><cell>Kula Diamond</cell><cell>Clone Zero</cell><cell>36</cell><cell>37</cell><cell>0xFF</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>90</cell><cell>TAK</cell><cell>Chin Gentsai</cell><cell>Bao</cell><cell>Kasumi Todoh</cell><cell>Hinako Shijou</cell><cell>0xFF</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>80</cell><cell>BOK</cell><cell>Kim Kaphwan</cell><cell>Chang Koehan</cell><cell>Choi Bounge</cell><cell>Jhun Hoon</cell><cell>0xFF</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>70</cell><cell>KON</cell><cell>Kyo Kusanagi</cell><cell>Iori Yagami</cell><cell>Kula Diamond</cell><cell>Clone Zero</cell><cell>0xFF</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>60</cell><cell>MAT</cell><cell>Leona</cell><cell>Ralf Jones</cell><cell>Clark Steel</cell><cell>Whip</cell><cell>0xFF</cell><cell>0xFF</cell></row>
+  </table>
+</hi2txt>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e0:8:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>8</size>
+    </check>
+    <loop count="2">
+      <elt size="2" type="int"  id="SCORE2"/>
+      <elt size="2" type="int"  id="SCORE1"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"  src="index" format="rank;+1"/>
+      <column id="SCORE"             format="score"/>
+      <column id="MODE"  src="index" format="mode"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="*10000"><multiply>10000</multiply></format>
+  <format id="rank"><remainder>1</remainder></format>
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10000"/>
+      <column id="SCORE2" format="*10"/>
+    </sum>
+  </format>
+  <format id="mode">
+    <case src="1" operator="&lt;"  dst="SOLO"/>
+    <case src="1" operator="&gt;=" dst="TEAM"/>
+  </format>
+</hi2txt>

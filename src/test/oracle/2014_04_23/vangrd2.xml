@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE ALT</col><col>NAME</col><col>END</col>
+    <row><cell>1</cell><cell>15110</cell><cell>15110</cell><cell>.X </cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>5000</cell><cell>5000</cell><cell>SNK</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>5000</cell><cell>5000</cell><cell>SNK</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>5000</cell><cell>SNK</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>5000</cell><cell>SNK</cell><cell>0xFF</cell></row>
+  </table>
+  <field id="TOP SCORE">30000</field>
+  <field id="END2">FF</field>
+</hi2txt>

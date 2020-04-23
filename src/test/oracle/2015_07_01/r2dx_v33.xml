@@ -1,0 +1,80 @@
+<hi2txt>
+  <table id="1 PLAYER">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>100000</cell><cell>***</cell><cell>1-8</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>***</cell><cell>1-7</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>***</cell><cell>1-6</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>9</cell><cell>20000</cell><cell>***</cell><cell>1-1</cell></row>
+    <row><cell>10</cell><cell>10000</cell><cell>***</cell><cell>1-1</cell></row>
+  </table>
+  <table id="2 PLAYERS">
+    <col>RANK</col><col>SCORE DUAL</col><col>NAME DUAL</col><col>STAGE DUAL</col>
+    <row><cell>1</cell><cell>100000</cell><cell>***</cell><cell>1-8</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>***</cell><cell>1-7</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>***</cell><cell>1-6</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>9</cell><cell>20000</cell><cell>***</cell><cell>1-1</cell></row>
+    <row><cell>10</cell><cell>10000</cell><cell>***</cell><cell>1-1</cell></row>
+  </table>
+  <table id="1 PLAYER BRAVO">
+    <col>RANK</col><col>SCORE BRAVO</col><col>NAME BRAVO</col><col>STAGE BRAVO</col>
+    <row><cell>1</cell><cell>50000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>4</cell><cell>35000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>7</cell><cell>20000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>8</cell><cell>15000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>9</cell><cell>10000</cell><cell>***</cell><cell>1-1</cell></row>
+    <row><cell>10</cell><cell>5000</cell><cell>***</cell><cell>1-1</cell></row>
+  </table>
+  <table id="2 PLAYERS BRAVO">
+    <col>RANK</col><col>SCORE BRAVO DUAL</col><col>NAME BRAVO DUAL</col><col>STAGE BRAVO DUAL</col>
+    <row><cell>1</cell><cell>50000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>2</cell><cell>45000</cell><cell>***</cell><cell>1-5</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>4</cell><cell>35000</cell><cell>***</cell><cell>1-4</cell></row>
+    <row><cell>5</cell><cell>30000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>***</cell><cell>1-3</cell></row>
+    <row><cell>7</cell><cell>20000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>8</cell><cell>15000</cell><cell>***</cell><cell>1-2</cell></row>
+    <row><cell>9</cell><cell>10000</cell><cell>***</cell><cell>1-1</cell></row>
+    <row><cell>10</cell><cell>5000</cell><cell>***</cell><cell>1-1</cell></row>
+  </table>
+  <table id="1 PLAYER ALPHA">
+    <col>RANK</col><col>SCORE ALPHA</col><col>NAME ALPHA</col><col>STAGE ALPHA</col>
+    <row><cell>1</cell><cell>100000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>9</cell><cell>20000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>10</cell><cell>10000</cell><cell>***</cell><cell>1-0</cell></row>
+  </table>
+  <table id="2 PLAYERS ALPHA">
+    <col>RANK</col><col>SCORE ALPHA DUAL</col><col>NAME ALPHA DUAL</col><col>STAGE ALPHA DUAL</col>
+    <row><cell>1</cell><cell>100000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>2</cell><cell>90000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>3</cell><cell>80000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>4</cell><cell>70000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>5</cell><cell>60000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>7</cell><cell>40000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>8</cell><cell>30000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>9</cell><cell>20000</cell><cell>***</cell><cell>1-0</cell></row>
+    <row><cell>10</cell><cell>10000</cell><cell>***</cell><cell>1-0</cell></row>
+  </table>
+</hi2txt>

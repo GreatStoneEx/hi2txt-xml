@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.148 and related hiscore.dat
+    source: HiToText
+	history:
+	  2020-03-30: new size for mame 0.219
+  //-->
+  
+  <structure file="eeprom">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>4096</size>
+    </check>
+    <elt size="126"  type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="7"  type="int"  id="BEST PER CREDIT AVG SCORE" table-index="loop_index" table-index-format="*2"   bitmask="score_odd"/>
+      <elt size="6"  type="text" id="BEST PER CREDIT AVG NAME"  table-index="loop_index" table-index-format="*2"   bitmask="name_odd"  decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="6"  type="int"  id="BEST PER CREDIT AVG SCORE" table-index="loop_index" table-index-format="*2+1" bitmask="score_even"/>
+      <elt size="4"  type="text" id="BEST PER CREDIT AVG NAME"  table-index="loop_index" table-index-format="*2+1" bitmask="name_even" decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="7"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+    <loop count="5">
+      <elt size="7"  type="int"  id="SCORE"                     table-index="loop_index" table-index-format="*2"   bitmask="score_odd"/>
+      <elt size="6"  type="text" id="NAME"                      table-index="loop_index" table-index-format="*2"   bitmask="name_odd"  decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="6"  type="int"  id="SCORE"                     table-index="loop_index" table-index-format="*2+1" bitmask="score_even"/>
+      <elt size="4"  type="text" id="NAME"                      table-index="loop_index" table-index-format="*2+1" bitmask="name_even" decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="7"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+    <elt size="3670" type="raw"  id="UNKNOWN3"/>
+  </structure>
+  
+  <structure file="eeprom">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2048</size> <!-- klax mame 0.219 -->
+    </check>
+    <elt size="63"  type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="4"  type="int"  id="BEST PER CREDIT AVG SCORE" table-index="loop_index" table-index-format="*2"   bitmask="score_2048"/>
+      <elt size="3"  type="text" id="BEST PER CREDIT AVG NAME"  table-index="loop_index" table-index-format="*2"   bitmask="name_2048"   decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="int"  id="BEST PER CREDIT AVG SCORE" table-index="loop_index" table-index-format="*2+1"/>
+      <elt size="2"  type="text" id="BEST PER CREDIT AVG NAME"  table-index="loop_index" table-index-format="*2+1"                       decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="raw"  id="BEST PER CREDIT AVG UNKNOWN2"/>
+    </loop>
+    <loop count="5">
+      <elt size="4"  type="int"  id="SCORE"                     table-index="loop_index" table-index-format="*2"   bitmask="score_2048"/>
+      <elt size="3"  type="text" id="NAME"                      table-index="loop_index" table-index-format="*2"   bitmask="name_2048"   decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="int"  id="SCORE"                     table-index="loop_index" table-index-format="*2+1"/>
+      <elt size="2"  type="text" id="NAME"                      table-index="loop_index" table-index-format="*2+1"                       decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+  </structure>
+  
+  <structure file="eeprom" output="512">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size> <!-- klaxp1, klaxp2 mame 0.219 -->
+    </check>
+    <elt size="63"  type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="4"  type="int"  id="SCORE" table-index="loop_index" table-index-format="*2"   bitmask="score_2048"/>
+      <elt size="3"  type="text" id="NAME"  table-index="loop_index" table-index-format="*2"   bitmask="name_2048"   decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="int"  id="SCORE" table-index="loop_index" table-index-format="*2+1"/>
+      <elt size="2"  type="text" id="NAME"  table-index="loop_index" table-index-format="*2+1"                       decoding-profile="base-40" charset="klax" format="+dot"/>
+      <elt size="3"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+  </structure>
+  
+  <bitmask id="score_odd">   <!-- 6        7        8        9       10       11       12 //-->
+  	<character       mask="11111111 00000000 00000000 00000000 11111111 00000000 11111111"/>
+  </bitmask>  
+  <bitmask id="name_odd">   <!-- 13       14       15       16       17       18 //-->
+  	<character       mask="00000000 11111111 00000000 00000000 00000000 11111111"/>
+  </bitmask>
+  <bitmask id="score_even"> <!-- 19       20       21       22       23       24 //-->
+  	<character       mask="00000000 11111111 00000000 11111111 00000000 11111111"/>
+  </bitmask>
+  <bitmask id="name_even">  <!-- 25       26       27       28 //-->
+  	<character       mask="00000000 11111111 00000000 11111111"/>
+  </bitmask>
+  <bitmask id="score_2048">
+  	<character       mask="11111111 00000000 11111111 11111111"/>
+  </bitmask>  
+  <bitmask id="name_2048">
+  	<character       mask="11111111 00000000 11111111"/>
+  </bitmask>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="BEST PER CREDIT AVG SCORE"/>
+      <column id="BEST PER CREDIT AVG NAME"/>
+    </table>
+    <!-- <field    id="UNKNOWN"          format="hexadecimal_string" display="debug"/> //--> <!-- too long to display //-->
+    <table id="BEST PER CREDIT">
+      <column id="UNKNOWN2"                     format="hexadecimal_string" display="debug"/>
+      <column id="BEST PER CREDIT AVG UNKNOWN2" format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <output id="512">
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*2"><multiply>2</multiply></format>
+  <format id="*2+1">
+    <multiply>2</multiply>
+    <add>1</add>
+  </format>
+  <format id="+dot" apply-to="char"><suffix>.</suffix></format>
+  
+  <charset id="klax">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

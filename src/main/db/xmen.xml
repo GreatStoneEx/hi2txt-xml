@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:113300:168:00:10</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>360</size>
+    </check>
+    <loop count="10"> <!-- CYCLOPS //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+    <loop count="10" start="10"> <!-- COLOSSUS //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+    <loop count="10" start="20"> <!-- WOLVERINE //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+    <loop count="10" start="30"> <!-- STORM //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+    <loop count="10" start="40"> <!-- NIGHTCRAWLER //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+    <loop count="10" start="50"> <!-- DAZZLER //-->
+      <elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index"/>
+      <elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="xmen" ascii-offset="65"/>
+      <elt size="2" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"      src="index" format="rank"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"                 format="+1"/>
+      <column id="CHARACTER" src="index" format="character"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <format id="rank">
+    <remainder>10</remainder>
+    <add>1</add>
+  </format>
+  <format id="character">
+    <case src="10" operator="&lt;" dst="CYCLOPS"/>
+    <case src="20" operator="&lt;" dst="COLOSSUS"/>
+    <case src="30" operator="&lt;" dst="WOLVERINE"/>
+    <case src="40" operator="&lt;" dst="STORM"/>
+    <case src="50" operator="&lt;" dst="NIGHTCRAWLER"/>
+    <case src="60" operator="&lt;" dst="DAZZLER"/>
+  </format>
+  
+  <charset id="xmen">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="!"/>
+    <char src="0x25" dst="?"/>
+    <char src="0x26" dst=":"/>
+    <char src="0x27" dst=","/>
+    <char src="0x28" dst="."/>
+    <char src="0x29" dst="-"/>
+    <char src="0x2A" dst="·"/>
+  </charset>
+</hi2txt>

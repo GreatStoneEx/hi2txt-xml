@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014_04_23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:3C10:04:00:00
+                  0:2d5d:01:00:00
+                  0:2d7d:01:00:00
+                  0:2d9d:01:00:00
+                  0:2dbd:01:00:00
+                  0:2ddd:01:00:00
+                  0:2e5d:01:00:00
+                  0:2e7d:01:00:00
+                  0:2e9d:01:00:00
+                  0:2ebd:01:00:00
+                  0:2edd:01:00:00
+                  0:2f5d:01:00:00
+                  0:2f7d:01:00:00
+                  0:2f9d:01:00:00
+                  0:2fad:01:00:00
+                  0:2fbd:01:00:00
+                  0:2fdd:01:00:00
+                  0:305d:01:00:00
+                  0:307d:01:00:00
+                  0:309d:01:00:00
+                  0:30bd:01:00:00
+                  0:30dd:01:00:00
+                  0:315d:01:00:00
+                  0:317d:01:00:00
+                  0:319d:01:00:00
+                  0:31bd:01:00:00
+                  0:31dd:01:00:00
+                  0:325d:01:7c:7c
+                  0:327d:01:82:82
+                  0:329d:01:82:82
+                  0:32bd:01:82:82
+                  0:32dd:01:7c:7c</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>35</size>
+    </check>
+    <elt size="4"  type="int" id="SCORE"/>
+    <elt size="31" type="raw" id="UNKNOWN"/>
+  </structure>
+  
+  <structure file=".hi"> <!-- this definition doesn't work, but who knows? //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:3C10:04:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>4</size>
+    </check>
+    <elt size="4"  type="int" id="SCORE"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+    </table>
+    <field id="UNKNOWN" display="extra"/>
+  </output>
+</hi2txt>

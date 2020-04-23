@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (hi), GreatStone (nvram)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:100000:2c:00:58</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>44</size>
+    </check>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME" charset="pulstar"/>
+    </loop>
+  </structure>
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="800" type="raw" id="UNKNOWN"/>
+    <elt size="4"   type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME" charset="pulstar"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="pulstar">
+    <char src="0x20" dst=" "/>
+    <char src="0x21" dst="!"/>
+    <char src="0x22" dst="&quot;"/>
+    <char src="0x23" dst="#"/>
+    <char src="0x24" dst="$"/>
+    <char src="0x25" dst="%"/>
+    <char src="0x26" dst="&amp;"/>
+    <char src="0x27" dst="\"/>
+    <char src="0x28" dst="("/>
+    <char src="0x29" dst=")"/>
+    <char src="0x2A" dst="*"/>
+    <char src="0x2B" dst="+"/>
+    <char src="0x2C" dst=","/>
+    <char src="0x2D" dst="-"/>
+    <char src="0x2E" dst="."/>
+    <char src="0x2F" dst="/"/>
+    <char src="0x30" dst="0"/>
+    <char src="0x31" dst="1"/>
+    <char src="0x32" dst="2"/>
+    <char src="0x33" dst="3"/>
+    <char src="0x34" dst="4"/>
+    <char src="0x35" dst="5"/>
+    <char src="0x36" dst="6"/>
+    <char src="0x37" dst="7"/>
+    <char src="0x38" dst="8"/>
+    <char src="0x39" dst="9"/>
+    <char src="0x3A" dst=":"/>
+    <char src="0x3B" dst=";"/>
+    <char src="0x3C" dst="&lt;"/>
+    <char src="0x3D" dst="="/>
+    <char src="0x3E" dst="&gt;"/>
+    <char src="0x3F" dst="?"/>
+    <char src="0x40" dst="@"/>
+    <char src="0x5B" dst="["/>
+    <char src="0x5C" dst="£"/>
+    <char src="0x5D" dst="]"/>
+  </charset>
+</hi2txt>

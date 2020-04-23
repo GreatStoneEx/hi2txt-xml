@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.148 and hiscore.dat 2014-04-23
+      mame 0.153 and hiscore.dat 2014-08-22
+    source: HiToText (nvram), GreatStone (hi)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:105da4:3a:00:41</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>58</size>
+    </check>
+    <elt size="2" type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="4" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="STAGE1"/>
+      <elt size="1" type="int"  id="STAGE2"/>
+      <!-- hiscore.dat (fixed): SEPARATOR and STAGEs for 5th score is not dumped //-->
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:105da4:3e:00:00
+                  0:105ddd:1:41:41</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>63</size>
+    </check>
+    <elt size="2" type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="4" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="STAGE1"/>
+      <elt size="1" type="int"  id="STAGE2"/>
+    </loop>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="1222" type="raw" id="UNUSED"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="4" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+      <elt size="1" type="int"  id="STAGE1"/>
+      <elt size="1" type="int"  id="STAGE2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"     format="stage"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+    
+  <format id="separator"><suffix>-</suffix></format>
+  <format id="stage">
+    <concat>
+      <column id="STAGE1" format="+1;separator"/>
+      <column id="STAGE2" format="+1"/>
+    </concat>
+  </format>
+</hi2txt>

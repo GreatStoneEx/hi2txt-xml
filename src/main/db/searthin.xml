@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219 and embedded hiscore.dat
+	  mame 0.188 and embedded hiscore.dat, adding clones structure and output
+	  mame 0.148 and related hiscore.dat
+	history:
+      2020-04-19 rework all "space invaders" games as they needs score to have either *1, *10 or *100
+    source: HiToText, GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:20f4:02:00:00</definition>
+	  <size>2</size>
+    </check>
+    <loop count="1">
+      <elt size="2" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="*100"/>
+    </table>
+  </output>
+</hi2txt>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+      
+      tips:
+        activate high scores saving in nvram: go into service mode, then activate it
+        select mode harder: up+coin
+        select mode extended: down+coin
+        select mode score attack: ?
+        select ship 1,2,3 or 4 type A:     go on ship 1,2,3 or 4 then P1/P2 Button 1
+        select ship 1,2,3 or 4 type B:     go on ship 1,2,3 or 4 then P1/P2 Button 2
+        select ship 1,2,3 or 4 type Start: go on ship 1,2,3 or 4 then P1/P2 Start
+        select ship 1,2,3 or 4 type A+B:   go on ship 1,2,3 or 4 then P1/P2 Button 1+2
+        select ship P1: Start P1
+        select ship P2: Start P2
+  //-->
+  
+  <structure file="eeprom" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="96" type="raw"  id="DATA"/>
+    <loop count="40">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME" charset="pinkswts"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="LOCAL RANK" src="index" format="%10;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="mode">
+    <case src="10" operator="&lt;" dst="normal"/>
+    <case src="20" operator="&lt;" dst="harder"/>
+    <case src="30" operator="&lt;" dst="extended"/>
+    <case src="40" operator="&lt;" dst="score attack"/>
+  </format>
+  <format id="character">
+    <case src="0"  dst="MEIDI &amp; MIDI (A) P1"/>
+    <case src="1"  dst="MEIDI &amp; MIDI (B) P1"/>
+    <case src="2"  dst="MEIDI &amp; MIDI (A+B) P1"/>
+    <case src="3"  dst="MEIDI &amp; MIDI (Start) P1"/>
+    <case src="4"  dst="KASUMI (A) P1"/>
+    <case src="5"  dst="KASUMI (B) P1"/>
+    <case src="6"  dst="KASUMI (A+B) P1"/>
+    <case src="7"  dst="KASUMI (Start) P1"/>
+    <case src="8"  dst="SHASTA (A) P1"/>
+    <case src="9"  dst="SHASTA (B) P1"/>
+    <case src="10" dst="SHASTA (A+B) P1"/>
+    <case src="11" dst="SHASTA (Start) P1"/>
+    <case src="12" dst="LACE (A) P1"/>
+    <case src="13" dst="LACE (B) P1"/>
+    <case src="14" dst="LACE (A+B) P1"/>
+    <case src="15" dst="LACE (Start) P1"/>
+    <case src="32"  dst="MEIDI &amp; MIDI (A) P2"/>
+    <case src="33"  dst="MEIDI &amp; MIDI (B) P2"/>
+    <case src="34"  dst="MEIDI &amp; MIDI (A+B) P2"/>
+    <case src="35"  dst="MEIDI &amp; MIDI (Start) P2"/>
+    <case src="36"  dst="KASUMI (A) P2"/>
+    <case src="37"  dst="KASUMI (B) P2"/>
+    <case src="38"  dst="KASUMI (A+B) P2"/>
+    <case src="39"  dst="KASUMI (Start) P2"/>
+    <case src="40"  dst="SHASTA (A) P2"/>
+    <case src="41"  dst="SHASTA (B) P2"/>
+    <case src="42"  dst="SHASTA (A+B) P2"/>
+    <case src="43"  dst="SHASTA (Start) P2"/>
+    <case src="44" dst="LACE (A) P2"/>
+    <case src="45" dst="LACE (B) P2"/>
+    <case src="46" dst="LACE (A+B) P2"/>
+    <case src="47" dst="LACE (Start) P2"/>
+    <case src="80" dst="-"/>
+  </format>
+  <format id="stage">
+    <case src="0" dst="-"/>
+  </format>
+  
+  <charset id="pinkswts">
+    <char src="0x00" dst=""/>
+    <char src="0x24" dst="&single-music-note;"/>
+    <char src="0x5C" dst="&#165;"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Act-Fancer Cybernetick Hyper Weapon">
+  <!--
+    tested with mame 0.204 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,1f0ce6,1e,05,45
+                  @:maincpu,program,1f00be,3,00,00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>33</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int" id="SCORE" format="*10" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME" charset="charconv"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x79" dst="&black-diamond;"/>
+	<char src="0x7A" dst="&black-heart;"/>
+	<char src="0x7B" dst="&black-star;"/>
+	<char src="0x7C" dst="&black-smiley;"/>
+	<char src="0x7D" dst="&peace;"/>
+	<char src="0x7E" dst="&woman;"/>
+	<char src="0x7F" dst="&man;"/>
+	<char src="0x80" dst="&multiplication;"/>
+	<char src="0x81" dst="&crossed-swords;"/>
+	<char src="0x82" dst="&cross-of-jerusalem;"/>
+	
+  </charset>
+</hi2txt>

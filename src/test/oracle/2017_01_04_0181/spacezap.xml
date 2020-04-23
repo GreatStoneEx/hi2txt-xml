@@ -1,0 +1,9 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE2</col>
+    <row><cell>1</cell><cell>105750</cell><cell>105750</cell></row>
+    <row><cell>2</cell><cell>65750</cell><cell>65750</cell></row>
+    <row><cell>3</cell><cell>45250</cell><cell>45250</cell></row>
+  </table>
+  <field id="UNKNOWN">0xFF</field>
+</hi2txt>

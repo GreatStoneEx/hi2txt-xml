@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>SEPARATOR</col>
+    <row><cell>1</cell><cell>95270</cell><cell>HAJ</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>91540</cell><cell>BOO</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>89710</cell><cell>H.Y</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>86970</cell><cell>MAR</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>85480</cell><cell>K.O</cell><cell>0xFF</cell></row>
+    <row><cell>6</cell><cell>83530</cell><cell>R.Y</cell><cell>0xFF</cell></row>
+    <row><cell>7</cell><cell>76810</cell><cell>T.M</cell><cell>0xFF</cell></row>
+    <row><cell>8</cell><cell>75590</cell><cell>BON</cell><cell>0xFF</cell></row>
+    <row><cell>9</cell><cell>68410</cell><cell>K.K</cell><cell>0xFF</cell></row>
+    <row><cell>10</cell><cell>55000</cell><cell>LNK</cell><cell></cell></row>
+  </table>
+  <field id="UNKNOWN">0x01</field>
+</hi2txt>

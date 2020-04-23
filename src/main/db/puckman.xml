@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>00:4E88:04:00:00
+                  00:43ED:06:40:40
+                  00:43D1:01:48:48</definition> <!-- puckman and clones //-->
+      <definition>00:4E88:04:00:00
+                  00:43ED:06:40:40
+                  00:43D1:01:45:45</definition> <!-- pacuman //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>11</size>
+    </check>
+    <elt size="3" type="int" id="SCORE" endianness="little_endian" base="16"/>
+    <elt size="1" type="raw" id="UNKNOWN"/>
+    <elt size="6" type="int" id="SCORE STRING" endianness="little_endian" nibble-skip="odd" base="16"/>
+    <elt size="1" type="raw" id="UNKNOWN2"/>
+  </structure>
+  
+  <output>
+    <table>
+      <field id="RANK" src="index" format="+1"/>
+      <field id="SCORE"/>
+      <field id="SCORE STRING"                             display="extra"/>
+      <field id="UNKNOWN"      format="hexadecimal_string" display="debug"/>
+      <field id="UNKNOWN2"     format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+</hi2txt>

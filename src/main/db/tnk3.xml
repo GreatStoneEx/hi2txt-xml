@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="T.N.K III">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fed1:82:13:20
+                  0:fc59:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>133</size>
+    </check>
+    <loop count="10">
+      <elt size="2"  type="int"  id="SCORE"     endianness="little_endian" base="16"/>
+      <elt size="1"  type="raw"  id="SEPARATOR"/>
+      <elt size="10" type="text" id="NAME" charset="tnk3"/>
+    </loop>
+    <elt size="2" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+    <elt size="1" type="raw" id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="RAW"       format="0x"  display="debug"/>
+  </output>
+  
+  <charset id="tnk3">
+    <char src="0x23" dst="&lt;boy1&gt;"/>
+    <char src="0x24" dst="&lt;boy2&gt;"/>
+    <char src="0x25" dst="&lt;boy3&gt;"/>
+    <char src="0x27" dst="&lt;cat&gt;"/>
+    <char src="0x2C" dst="&lt;boy4&gt;"/>
+    <char src="0x2F" dst="&lt;boy5&gt;"/>
+    <char src="0x3B" dst="'"/>
+    <char src="0x5B" dst="&lt;girl&gt;"/>
+    <char src="0x5C" dst="&lt;boy6&gt;"/>
+    <char src="0x5F" dst="&lt;boy7&gt;"/>
+  </charset>
+</hi2txt>

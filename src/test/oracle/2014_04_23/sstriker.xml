@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>END</col>
+    <row><cell>1</cell><cell>655000</cell><cell>YOK</cell><cell>CHITTA</cell><cell>    </cell></row>
+    <row><cell>2</cell><cell>422000</cell><cell>YAS</cell><cell>MIYAMOTO</cell><cell>    </cell></row>
+    <row><cell>3</cell><cell>346000</cell><cell>Z&#9768;&#9834;</cell><cell>GAIN</cell><cell>    </cell></row>
+    <row><cell>4</cell><cell>257130</cell><cell>&#9788;&#9789;&#9733;</cell><cell>MIYAMOTO</cell><cell>    </cell></row>
+    <row><cell>5</cell><cell>10910</cell><cell>!&#9660; </cell><cell>GAIN</cell><cell>    </cell></row>
+  </table>
+  <field id="TOP SCORE">655000</field>
+  <field id="UNKNOWN">0x0000000000000000000000000000000000000000</field>
+  <field id="UNKNOWN2">0x000000000000000000000000000000000000000000000000000000000000</field>
+</hi2txt>

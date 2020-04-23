@@ -1,0 +1,47 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col><col>CHARACTER</col><col>PLAYER</col>
+    <row><cell>1</cell><cell>1</cell><cell>1000000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>900000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>800000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>700000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>600000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>6</cell><cell>6</cell><cell>500000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>7</cell><cell>7</cell><cell>400000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>8</cell><cell>8</cell><cell>300000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>9</cell><cell>9</cell><cell>200000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>10</cell><cell>10</cell><cell>100000</cell><cell>CAV</cell><cell>normal</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>2000000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>1800000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>1600000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>1400000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>1200000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>16</cell><cell>6</cell><cell>1000000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>17</cell><cell>7</cell><cell>800000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>18</cell><cell>8</cell><cell>600000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>19</cell><cell>9</cell><cell>400000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>20</cell><cell>10</cell><cell>200000</cell><cell>CAV</cell><cell>harder</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>21</cell><cell>1</cell><cell>3000000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>22</cell><cell>2</cell><cell>2700000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>23</cell><cell>3</cell><cell>2400000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>24</cell><cell>4</cell><cell>2100000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>25</cell><cell>5</cell><cell>1800000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>26</cell><cell>6</cell><cell>1500000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>27</cell><cell>7</cell><cell>1200000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>28</cell><cell>8</cell><cell>900000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>29</cell><cell>9</cell><cell>600000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>30</cell><cell>10</cell><cell>300000</cell><cell>CAV</cell><cell>extended</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>31</cell><cell>1</cell><cell>4000000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>32</cell><cell>2</cell><cell>3600000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>33</cell><cell>3</cell><cell>3200000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>34</cell><cell>4</cell><cell>2800000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>35</cell><cell>5</cell><cell>2400000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>36</cell><cell>6</cell><cell>2000000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>37</cell><cell>7</cell><cell>1600000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>38</cell><cell>8</cell><cell>1200000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>39</cell><cell>9</cell><cell>800000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+    <row><cell>40</cell><cell>10</cell><cell>400000</cell><cell>CAV</cell><cell>score attack</cell><cell>-</cell><cell>-</cell></row>
+  </table>
+</hi2txt>
+
+

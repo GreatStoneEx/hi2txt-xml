@@ -1,0 +1,35 @@
+<hi2txt>
+  <table id="TOP SECTION TIMES">
+    <col>RANK</col><col>SECTIONTIME NAME</col><col>SECTIONTIME UNKNOWN</col><col>SECTIONTIME CLASS</col><col>SECTIONTIME TIME</col>
+    <row><cell>1</cell><cell>T.A</cell><cell>0x00</cell><cell>9</cell><cell>01:30:00</cell></row>
+    <row><cell>2</cell><cell>T.A</cell><cell>0x00</cell><cell>8</cell><cell>01:30:00</cell></row>
+    <row><cell>3</cell><cell>T.A</cell><cell>0x00</cell><cell>7</cell><cell>01:30:00</cell></row>
+    <row><cell>4</cell><cell>T.A</cell><cell>0x00</cell><cell>6</cell><cell>01:30:00</cell></row>
+    <row><cell>5</cell><cell>T.A</cell><cell>0x00</cell><cell>5</cell><cell>01:30:00</cell></row>
+    <row><cell>6</cell><cell>T.A</cell><cell>0x00</cell><cell>4</cell><cell>01:30:00</cell></row>
+    <row><cell>7</cell><cell>T.A</cell><cell>0x00</cell><cell>3</cell><cell>01:30:00</cell></row>
+    <row><cell>8</cell><cell>T.A</cell><cell>0x00</cell><cell>2</cell><cell>01:30:00</cell></row>
+    <row><cell>9</cell><cell>T.A</cell><cell>0x00</cell><cell>1</cell><cell>01:30:00</cell></row>
+    <row><cell>10</cell><cell>T.A</cell><cell>0x00</cell><cell>S1</cell><cell>01:30:00</cell></row>
+  </table>
+  <table id="GRANDMASTER TOP">
+    <col>RANK</col><col>GRANDMASTER NAME</col><col>GRANDMASTER UNKNOWN</col><col>GRANDMASTER CLASS</col><col>GRANDMASTER TIME</col><col>GRANDMASTER MEDALS</col>
+    <row><cell>1</cell><cell>T.A</cell><cell>0x00</cell><cell>S1</cell><cell>20:00:00</cell><cell></cell></row>
+    <row><cell>2</cell><cell>CFJ</cell><cell>0x00</cell><cell>2</cell><cell>06:27:96</cell><cell>AC3 ST2 SK2 CO1</cell></row>
+    <row><cell>3</cell><cell>CFG</cell><cell>0x00</cell><cell>3</cell><cell>05:06:06</cell><cell>AC2 ST1 SK1 RE1 CO1</cell></row>
+  </table>
+  <table id="NORMAL TOP">
+    <col>RANK</col><col>NORMAL NAME</col><col>NORMAL UNKNOWN</col><col>NORMAL SCORE</col>
+    <row><cell>1</cell><cell>T.A</cell><cell>0x0010</cell><cell>5000</cell></row>
+    <row><cell>2</cell><cell>T.A</cell><cell>0x0008</cell><cell>4000</cell></row>
+    <row><cell>3</cell><cell>T.A</cell><cell>0x0000</cell><cell>3000</cell></row>
+  </table>
+  <table id="DOUBLES TOP">
+    <col>RANK</col><col>DOUBLES NAME 1</col><col>DOUBLES UNKNOWN 2</col><col>DOUBLES LEVEL 1</col><col>DOUBLES NAME 2</col><col>DOUBLES LEVEL 2</col><col>DOUBLES UNKNOWN</col><col>DOUBLES TIME</col>
+    <row><cell>1</cell><cell>T.A</cell><cell>0x00</cell><cell>150</cell><cell>T.A</cell><cell>140</cell><cell>0x0018</cell><cell>20:00:00</cell></row>
+    <row><cell>2</cell><cell>T.A</cell><cell>0x00</cell><cell>100</cell><cell>T.A</cell><cell>90</cell><cell>0x0010</cell><cell>15:00:00</cell></row>
+    <row><cell>3</cell><cell>T.A</cell><cell>0x00</cell><cell>50</cell><cell>T.A</cell><cell>40</cell><cell>0x0008</cell><cell>10:00:00</cell></row>
+  </table>
+  <field id="CHECKSUM">606B</field>
+  <field id="UNKNOWN2">0x00000000</field>
+</hi2txt>

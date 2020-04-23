@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText,greatstone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:a2:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>4</size>
+    </check>
+  	<loop count="2"><elt size="2" type="int"  id="SCORE"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="MODE" src="index" format="mode"/>
+      <column id="SCORE" format="*10"/>
+    </table>
+  </output>
+  
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="mode">
+    <case src="0" dst="TEAM"/>
+    <case src="1" dst="SOLO"/>
+  </format>
+  
+</hi2txt>

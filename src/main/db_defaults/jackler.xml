@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>20000</cell><cell>A MORIOKA    </cell></row>
+    <row><cell>2</cell><cell>19980</cell><cell>H SHIO       </cell></row>
+    <row><cell>3</cell><cell>18850</cell><cell>H KOTANI     </cell></row>
+    <row><cell>4</cell><cell>16400</cell><cell>M OZAWA      </cell></row>
+    <row><cell>5</cell><cell>11310</cell><cell>M YOSHIDA    </cell></row>
+    <row><cell>6</cell><cell>10560</cell><cell>H YAMASHITA  </cell></row>
+    <row><cell>7</cell><cell>9090</cell><cell>H FUJIWARA   </cell></row>
+    <row><cell>8</cell><cell>9030</cell><cell>H MIYAMOTO   </cell></row>
+    <row><cell>9</cell><cell>8690</cell><cell>M SEKIGUCHI  </cell></row>
+    <row><cell>10</cell><cell>8210</cell><cell>M SIMIZU     </cell></row>
+  </table>
+</hi2txt>
+

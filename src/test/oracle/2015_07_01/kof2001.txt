@@ -1,0 +1,59 @@
+# SCORE
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|CHARACTER 4|SEPARATOR|SEPARATOR2
+1|100000|NOP|Takuma Sakazaki|Maxima|Whip|Athena Asamiya|0xFF|
+2|80000|LEA|Blue Mary|Kyo Kusanagi|Benimaru Nikaido|Maxima|0xFF|
+3|60000|NEG|Goro Daimon|Vanessa|Iori Yagami|King|0xFF|
+4|40000|JSR|Mai Shiranui|Seth|Ramon|Maxima|0xFF|
+5|32800|AAA|Kula Diamond|Chang Koehan|Iori Yagami|Vanessa|0xFF|
+
+# TOP SCORE
+TOP SCORE|TOP NAME|TOP SEPARATOR
+100000|NOP|0xFF
+
+DATA3
+010303011204
+
+# WINS
+CHARACTER|WIN %
+Benimaru Nikaido|19%
+Kyo Kusanagi|16.6%
+Goro Daimon|14.2%
+Shingo Yabuki|11.9%
+Chang Koehan|9.5%
+Kula Diamond|9.5%
+Vanessa|9.5%
+Iori Yagami|9.5%
+May Lee|0%
+Choi Bounge|0%
+Kim Kaphwan|0%
+Bao|0%
+Chin Gentsai|0%
+Sie Kensou|0%
+Athena Asamiya|0%
+Angel|0%
+K9999|0%
+Foxy|0%
+Li XiangFei|0%
+Hinako Shijou|0%
+Mai Shiranui|0%
+King|0%
+Takuma Sakazaki|0%
+Yuri Sakazaki|0%
+Robert Garcia|0%
+Ryo Sakazaki|0%
+Blue Mary|0%
+Joe Higashi|0%
+Andy Bogard|0%
+Terry Bogard|0%
+Heidern|0%
+Clark Steel|0%
+Ralf Jones|0%
+Leona|0%
+Ramon|0%
+Seth|0%
+Lin|0%
+Whip|0%
+Maxima|0%
+K'|0%
+
+

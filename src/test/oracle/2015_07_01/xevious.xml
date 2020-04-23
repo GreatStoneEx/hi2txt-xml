@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>67260</cell><cell> AXZD  ABC</cell><cell>0xBABEEF</cell></row>
+    <row><cell>2</cell><cell>40000</cell><cell>M.Nakamura</cell><cell>0x000000</cell></row>
+    <row><cell>3</cell><cell>35000</cell><cell>Eirry Mou.</cell><cell>0x000000</cell></row>
+    <row><cell>4</cell><cell>30000</cell><cell>Evezoo End</cell><cell>0x000000</cell></row>
+    <row><cell>5</cell><cell>25000</cell><cell>S.Okamoto </cell><cell></cell></row>
+  </table>
+  <field id="TOP SCORE">67260</field>
+  <field id="CHECK">0x67</field>
+</hi2txt>

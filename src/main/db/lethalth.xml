@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e0086:b7:00:08</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>183</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="1" type="int"  id="MEDAL1"/>
+      <elt size="1" type="int"  id="MEDAL2"/>
+      <elt size="1" type="int"  id="MEDAL3"/>
+      <elt size="1" type="int"  id="MEDAL4"/>
+      <elt size="1" type="int"  id="MEDAL5"/>
+      <elt size="1" type="int"  id="MEDAL6"/>
+      <elt size="1" type="int"  id="MEDAL7"/>
+      <elt size="8" type="text" id="NAME" charset="lethalth"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"  format="*10"/>
+      <column id="NAME" format="TrimR "/>
+      <column id="MEDALS" format="medals"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+  
+  <format id="medals">
+    <concat>
+      <column id="MEDAL1"/>
+      <column id="MEDAL2"/>
+      <column id="MEDAL3"/>
+      <column id="MEDAL4"/>
+      <column id="MEDAL5"/>
+      <column id="MEDAL6"/>
+      <column id="MEDAL7"/>
+    </concat>
+    <trim direction="right">0</trim>
+  </format>
+  
+  <charset id="lethalth">
+    <char src="0x2F" dst="&mid-dot;"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>4050</cell><cell>ABC</cell></row>
+    <row><cell>2</cell><cell>2900</cell><cell>EED</cell></row>
+    <row><cell>3</cell><cell>1600</cell><cell>A Z</cell></row>
+  </table>
+  <field id="TOP SCORE">4050</field>
+  <field id="TOP SCORE DUPLICATE">4050</field>
+</hi2txt>

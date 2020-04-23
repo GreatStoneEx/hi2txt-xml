@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Cadash">
+  <!--
+    tested with mame 0.204 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,103646,185,00,4d</definition>
+	  <definition>@:maincpu,program,103646,18a,00,65</definition> <!-- cadashj -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>389</size>
+	  <size>394</size>
+    </check>
+    <loop count="5">
+	  <elt size="2" type="int"  id="F_EXP"/>
+      <elt size="2" type="int"  id="F_GOLD"/>
+	  <elt size="2" type="int"  id="F_LEVEL"/>
+	  <elt size="8" type="text" id="F_NAME"/>
+      <elt size="6" type="raw"  id="F_EMPTY"/>
+    </loop>
+	<loop count="5">
+	  <elt size="2" type="int"  id="M_EXP"/>
+      <elt size="2" type="int"  id="M_GOLD"/>
+	  <elt size="2" type="int"  id="M_LEVEL"/>
+	  <elt size="8" type="text" id="M_NAME"/>
+      <elt size="6" type="raw"  id="M_EMPTY"/>
+    </loop>
+	<loop count="5">
+	  <elt size="2" type="int"  id="P_EXP"/>
+      <elt size="2" type="int"  id="P_GOLD"/>
+	  <elt size="2" type="int"  id="P_LEVEL"/>
+	  <elt size="8" type="text" id="P_NAME"/>
+      <elt size="6" type="raw"  id="P_EMPTY"/>
+    </loop>
+	<loop count="5">
+	  <elt size="2" type="int"  id="N_EXP"/>
+      <elt size="2" type="int"  id="N_GOLD"/>
+	  <elt size="2" type="int"  id="N_LEVEL"/>
+	  <elt size="8" type="text" id="N_NAME"/>
+      <elt size="6" type="raw"  id="N_EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="FIGTHER">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="NAME"  src="F_NAME" format="TrimR "/>
+	  <column id="EXP"   src="F_EXP"/>
+	  <column id="GOLD"  src="F_GOLD"/>
+	  <column id="LEVEL" src="F_LEVEL"/>
+	  <column id="EMPTY" src="F_EMPTY" display="debug"/>
+    </table>
+	<table id="MAGE">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="NAME"  src="M_NAME" format="TrimR "/>
+	  <column id="EXP"   src="M_EXP"/>
+	  <column id="GOLD"  src="M_GOLD"/>
+	  <column id="LEVEL" src="M_LEVEL"/>
+	  <column id="EMPTY" src="M_EMPTY" display="debug"/>
+    </table>
+	<table id="PRIEST">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="NAME"  src="P_NAME" format="TrimR "/>
+	  <column id="EXP"   src="P_EXP"/>
+	  <column id="GOLD"  src="P_GOLD"/>
+	  <column id="LEVEL" src="P_LEVEL"/>
+	  <column id="EMPTY" src="P_EMPTY" display="debug"/>
+    </table>
+	<table id="NINJA">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="NAME"  src="N_NAME" format="TrimR "/>
+	  <column id="EXP"   src="N_EXP"/>
+	  <column id="GOLD"  src="N_GOLD"/>
+	  <column id="LEVEL" src="N_LEVEL"/>
+	  <column id="EMPTY" src="N_EMPTY" display="debug"/>
+    </table>
+  </output>
+</hi2txt>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:919b:4:18:0a
+                  0:91ba:6:00:00
+                  0:921b:4:18:0a
+                  0:923a:6:00:00
+                  0:929b:4:18:0a
+                  0:92ba:6:00:00</definition> <!-- rpatrol //-->
+      <definition>0:919b:4:11:18
+                  0:91ba:6:00:00
+                  0:921b:4:11:18
+                  0:923a:6:00:00
+                  0:929b:4:11:18
+                  0:92ba:6:00:00</definition> <!-- rpatrolb //-->
+      <definition>0:919b:4:0f:26
+                  0:91ba:6:00:00
+                  0:921b:4:0c:26
+                  0:923a:6:00:00
+                  0:929b:4:15:26
+                  0:92ba:6:00:00</definition> <!-- silvland //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>30</size>
+    </check>
+    <loop count="3">
+      <elt size="4" type="text" id="NAME"  charset="rpatrol" ascii-offset="55"/>
+      <elt size="6" type="int"  id="SCORE" nibble-skip="odd" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="rpatrol">
+    <char src="0x24" dst=" "/>
+    <char src="0x26" dst="."/>
+  </charset>
+</hi2txt>

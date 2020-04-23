@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with: mame 0.159 and hiscore.dat 20150701
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:9dd4:ef:50:2a</definition>
+      <definition>0:9de4:ef:50:2a</definition> <!-- raiden2g //-->
+	  <definition>0:9e46:ef:50:2a</definition> <!-- r2dx_v33_r2 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>239</size>
+    </check>
+    <loop count="10"> <!-- solo //-->
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="LEVEL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="LOOP"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="NAME"  charset="raiden2"/>
+    </loop>
+    <loop count="10"> <!-- dual //-->
+      <elt size="4" type="int"  id="SCORE DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="LEVEL DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="LOOP DUAL"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="NAME DUAL"  charset="raiden2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="1 PLAYER TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="solo"/>
+    </table>
+	<table id="2 PLAYERS TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE DUAL" format="score"/>
+      <column id="NAME DUAL"/>
+      <column id="STAGE DUAL" format="dual"/>
+    </table>
+  </output>
+  
+  <format id="score">
+    <!-- last number of the score can be != 0 for user score, but is always displayed as a 0 //-->
+    <divide_trunc>10</divide_trunc>
+    <multiply>10</multiply>
+    <!-- it is possible to store a very high score, but not to display it entirely //-->
+    <!-- <remainder>100000000</remainder> //-->
+  </format>
+  
+  <format id="solo">
+    <concat>
+      <column id="LOOP" format="+1"/><txt>-</txt><column id="LEVEL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="dual">
+    <concat>
+      <column id="LOOP DUAL" format="+1"/><txt>-</txt><column id="LEVEL DUAL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="stage minor">
+    <case src="0"  dst="0" default="yes"/>
+    <case src="1"  dst="1"/>
+    <case src="2"  dst="2"/>
+    <case src="3"  dst="3"/>
+    <case src="4"  dst="4"/>
+    <case src="5"  dst="5"/>
+    <case src="6"  dst="5"/>
+    <case src="7"  dst="6"/>
+    <case src="8"  dst="7"/>
+    <case src="9"  dst="8"/>
+    <case src="10" dst="8"/>
+  </format>
+  
+  <charset id="raiden2">
+  	<char src="0x00" dst=""/>
+    <char src="0x5B" dst="!"/>
+    <char src="0x5C" dst="?"/>
+    <char src="0x5D" dst="-"/>
+    <char src="0x5E" dst="."/>
+    <char src="0x5F" dst=" "/>
+  </charset>
+</hi2txt>

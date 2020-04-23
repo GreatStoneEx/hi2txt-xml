@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c625:27:00:52
+                  0:e471:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>42</size>
+    </check>
+    <loop count="5" skip-last-bytes="1">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="STAGE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="EMPTY" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+  
+  <format id="stage" input-as-subcolumns-input="yes">
+    <concat>
+      <column format="+1;d10;+1"/>
+      <txt>-</txt>
+      <column format="+1;%10"/>
+    </concat>
+    
+    <!--
+    <case src="0"  dst="1-1"/>
+    <case src="1"  dst="1-2"/>
+    <case src="2"  dst="1-3"/>
+    <case src="3"  dst="1-4"/>
+    <case src="4"  dst="1-5"/>
+    <case src="5"  dst="1-6"/>
+    <case src="6"  dst="1-7"/>
+    <case src="7"  dst="1-8"/>
+    <case src="8"  dst="1-9"/>
+    <case src="9"  dst="2-0"/>
+    <case src="10" dst="2-1"/>
+    <case src="11" dst="2-2"/>
+    <case src="12" dst="2-3"/>
+    <case src="13" dst="2-4"/>
+    <case src="14" dst="2-5"/>
+    <case src="15" dst="2-6"/>
+    <case src="16" dst="2-7"/>
+    <case src="17" dst="2-8"/>
+    <case src="18" dst="2-9"/>
+    <case src="19" dst="3-0"/>
+    //-->
+  </format>
+</hi2txt>

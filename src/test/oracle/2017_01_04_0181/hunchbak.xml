@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>EMPTY</col>
+    <row><cell>1</cell><cell>145500</cell><cell>AMU</cell><cell>00000000000000</cell></row>
+    <row><cell>2</cell><cell>108500</cell><cell>Z .</cell><cell>00000000000000</cell></row>
+    <row><cell>3</cell><cell>57400</cell><cell>HIJ</cell><cell>00000000000000</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>   </cell><cell>00000000000000</cell></row>
+    <row><cell>5</cell><cell>50000</cell><cell>   </cell><cell>00000000000000</cell></row>
+  </table>
+  <field id="LAST SCORE">57400</field>
+  <field id="CHECK">0x20</field>
+</hi2txt>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Gradius III">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+	  <definition>@:maincpu,program,43f00,64,00,08
+                  @:maincpu,program,40058,4,00,00
+                  @:maincpu,program,4005a,1,73,73</definition>
+      <size>105</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME" charset="chars"/>
+      <elt size="1" type="text" id="SEX"/>
+	  <elt size="1" type="int"  id="CONSTELLATION"/>
+	  <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+	<elt size="4" type="int" id="TOP SCORE" base="16"/>
+	<elt size="1" type="raw" id="CHECK"/>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+	  <column id="SEX"           format="sex"/>
+	  <column id="CONSTELLATION" format="constellation"/>
+	  <column id="UNKNOWN"/>
+    </table>
+	<field id="TOP SCORE" display="extra"/>
+	<field id="CHECK"     display="debug"/>
+  </output>
+  
+  <format id="sex">
+    <case src="0x0C" dst="Male"/>
+    <case src="0x0D" dst="Female"/>
+  </format>
+  
+  <format id="constellation">
+    <case src="0"  dst="&aries;"/>
+    <case src="1"  dst="&taurus;"/>
+	<case src="2"  dst="&gemini;"/>
+    <case src="3"  dst="&cancer;"/>
+    <case src="4"  dst="&leo;"/>
+    <case src="5"  dst="&virgo;"/>
+    <case src="6"  dst="&libra;"/>
+    <case src="7"  dst="&scorpio;"/>
+    <case src="8"  dst="&sagitarius;"/>
+    <case src="9"  dst="&capricorn;"/>
+    <case src="10" dst="&aquarius;"/>
+    <case src="11" dst="&pisces;"/>
+  </format>
+  
+  <charset id="chars">
+    <char src="0x40" dst=" "/>
+    <char src="0x5B" dst="-"/>
+    <char src="0x5C" dst="."/>
+  </charset>
+</hi2txt>

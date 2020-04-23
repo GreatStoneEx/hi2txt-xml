@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:804A:03:00:00
+                  0:9221:01:24:24
+                  0:9201:01:24:24
+                  0:91E1:01:24:24
+                  0:91C1:01:24:24
+                  0:91A1:01:24:24
+                  0:9181:01:00:00</definition> <!-- suprmous //-->
+      <definition>0:8050:03:00:00
+                  0:9621:01:24:24
+                  0:9601:01:24:24
+                  0:95E1:01:24:24
+                  0:95C1:01:24:24
+                  0:95A1:01:24:24
+                  0:9581:01:00:00</definition> <!-- fitter //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>9</size>
+    </check>
+    <loop count="1">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="6" type="int" id="TOP SCORE" byte-trim="0x24" nibble-skip="odd" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+</hi2txt>

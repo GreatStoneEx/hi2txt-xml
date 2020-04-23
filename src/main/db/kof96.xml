@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="King of Fighters '96">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+	<elt size="808" type="raw" id="DATA"/>
+    <loop count="6">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+	  <elt size="1" type="int"  id="CHARACTER 1"/>
+	  <elt size="1" type="int"  id="CHARACTER 2"/>
+	  <elt size="1" type="int"  id="CHARACTER 3"/>
+	  <elt size="1" type="int"  id="UNKNOWN"/>
+    </loop>
+	<elt size="4" type="raw" id="DATA2"/>
+	<loop count="6">
+      <elt size="2" type="int"  id="VS SCORE" base="16"/>
+      <elt size="3" type="text" id="VS NAME"/>
+      <elt size="1" type="raw"  id="VS SEPARATOR"/>
+	  <elt size="1" type="int"  id="VS CHARACTER 1"/>
+	  <elt size="1" type="int"  id="VS CHARACTER 2"/>
+	  <elt size="1" type="int"  id="VS CHARACTER 3"/>
+	  <elt size="1" type="int"  id="VS UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="1 PLAYER" lines-max="5">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+	  <column id="CHARACTER 1" format="character"/>
+	  <column id="CHARACTER 2" format="character"/>
+	  <column id="CHARACTER 3" format="character"/>
+	  <column id="UNKNOWN"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+	<table id="2 PLAYERS" lines-max="5">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="VS SCORE"/>
+      <column id="VS NAME"/>
+	  <column id="VS CHARACTER 1" format="character"/>
+	  <column id="VS CHARACTER 2" format="character"/>
+	  <column id="VS CHARACTER 3" format="character"/>
+	  <column id="VS UNKNOWN"/>
+      <column id="VS SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="Kyo Kusanagi"/>
+	<case src="1"  dst="Benimaru Nikaido"/>
+	<case src="2"  dst="Goro Daimon"/>
+	<case src="3"  dst="Ryo Sakazaki"/>
+	<case src="4"  dst="Robert Garcia"/>
+	<case src="5"  dst="Yuri Sakazaki"/>
+	<case src="6"  dst="Terry Bogard"/>
+	<case src="7"  dst="Andy Bogard"/>
+	<case src="8"  dst="Joe Higashi"/>
+	<case src="9"  dst="Athena Asamiya"/>
+	<case src="10" dst="Sie Kensou"/>
+	<case src="11" dst="Chin Gentsai"/>
+	<case src="12" dst="Leona"/>
+	<case src="13" dst="Ralf"/>
+	<case src="14" dst="Clark"/>
+	<case src="15" dst="Kim Kaphwan"/>
+	<case src="16" dst="Chang Koehan"/>
+	<case src="17" dst="Choi Bounge"/>
+	<case src="18" dst="Kasumi Todo"/>
+	<case src="19" dst="Mai Shiranui"/>
+	<case src="20" dst="King"/>
+	<case src="21" dst="Geese Howard"/>
+	<case src="22" dst="Wolfgang Krauser"/>
+	<case src="23" dst="Mr.Big"/>
+	<case src="24" dst="Iori Yagami"/>
+	<case src="25" dst="Mature"/>
+	<case src="26" dst="Vice"/>
+	<case src="27" dst="Chizuru Kagura"/>
+	<case src="28" dst="Goenitz"/>
+	<case src="29" dst="29"/>
+	<case src="30" dst="30"/>
+  </format>
+</hi2txt>

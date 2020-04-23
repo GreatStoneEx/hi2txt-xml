@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (nvram), GreatStone (nvram, hi)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:cfaa:54:f1:f9</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>84</size>
+    </check>
+    <loop count="6">
+      <elt size="6" type="text" id="DAILY BUZZARD" nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="1" type="raw"  id="DAILY CHECKSUM"/>
+      <elt size="7" type="int"  id="DAILY SCORE"   nibble-skip="odd" base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>1024</size>
+    </check>
+    <elt size="2"    type="int"  id="EXTRA MAN EVERY"                 nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="MEN FOR 1 CREDIT GAME"           nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="HIGH SCORE TO DATE ALLOWED"      nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="SOUND IN ATTRACT MODE ALLOWED"   nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="PRICING SELECTION"               nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="LEFT SLOT UNITS"                 nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="CENTER SLOT UNITS"               nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="RIGHT SLOT UNITS"                nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="UNITS REQUIRED FOR CREDIT"       nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="UNITS REQUIRED FOR BONUS CREDIT" nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="MINIMUM UNITS FOR ANY CREDIT"    nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="DIFFICULTY OF PLAY"              nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="LETTERS FOR HIGHEST SCORE"       nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="RESTORE FACTORY SETTINGS"        nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="CLEAR BOOKKEEPING TOTALS"        nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="HIGH SCORE TABLE RESET"          nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="AUTO CYCLE"                      nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="SET ATTRACT MODE MESSAGE"        nibble-skip="odd" base="16"/>
+    <elt size="2"    type="int"  id="SET HIGHEST SCORE NAME"          nibble-skip="odd" base="16"/>
+    <elt size="40"   type="text" id="COPYRIGHT_1"                     nibble-skip="odd" charset="joust" ascii-offset="54"/>
+    <elt size="58"   type="text" id="COPYRIGHT_2"                     nibble-skip="odd" charset="joust" ascii-offset="54"/>
+    <elt size="122"  type="raw"  id="UNKNOWN"                         nibble-skip="odd"/>
+    <elt size="6"    type="int"  id="LEFT SLOT COINS"                 nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="CENTER SLOT COINS"               nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="RIGHT SLOT COINS"                nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="PAID CREDITS"                    nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="FREE MEN"                        nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL TIME IN MINUTES"           nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL MEN PLAYED"                nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL BUY-INS"                   nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL SINGLE PLAYER"             nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL DUAL PLAYER"               nibble-skip="odd" base="16"/>
+    <elt size="6"    type="int"  id="TOTAL CREDITS PLAYED"            nibble-skip="odd" base="16"/>
+    <loop count="1"> <!-- 1st special item of the loop after //-->
+      <elt size="6"  type="text" id="NAME"           nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="34" type="text" id="NAME_REMAINDER" nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="6"  type="text" id="BUZZARD"        nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="1"  type="int"  id="CHECKSUM"/>
+      <elt size="7"  type="int"  id="SCORE"          nibble-skip="odd" base="16"/>
+    </loop>
+    <loop count="40" start="1">
+      <elt size="6"  type="text" id="NAME"           nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="1"  type="int"  id="CHECKSUM"/>
+      <elt size="7"  type="int"  id="SCORE"          nibble-skip="odd" base="16"/>
+    </loop>
+    <loop count="6"> <!-- duplicate info versus hi file //-->
+      <elt size="6"  type="text" id="DAILY BUZZARD"  nibble-skip="odd" charset="joust" ascii-offset="54"/>
+      <elt size="1"  type="int"  id="DAILY CHECKSUM"/>
+      <elt size="7"  type="int"  id="DAILY SCORE"    nibble-skip="odd" base="16"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <field id="UNKNOWN" display="debug"/>
+    <table id="DAILY TOP SCORES">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="DAILY SCORE"                  display="extra"/>
+      <column id="DAILY BUZZARD"                display="extra"/>
+      <column id="DAILY CHECKSUM"               display="debug"/>
+    </table>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="BUZZARD"  display="extra"/>
+      <column id="CHECKSUM" display="debug"/>
+    </table>
+    <!-- COPYRIGHT //-->
+    <field id="COPYRIGHT_1"                                    display="extra"/>
+    <field id="COPYRIGHT_2"                                    display="extra"/>
+    <!-- GAME ADJUSTEMENTS //-->
+    <field id="EXTRA MAN EVERY"                 format="*1000" display="extra"/>
+    <field id="MEN FOR 1 CREDIT GAME"                          display="extra"/>
+    <field id="HIGH SCORE TO DATE ALLOWED"      format="yesno" display="extra"/>
+    <field id="SOUND IN ATTRACT MODE ALLOWED"   format="yesno" display="extra"/>
+    <field id="PRICING SELECTION"                              display="extra"/>
+    <field id="LEFT SLOT UNITS"                                display="extra"/>
+    <field id="CENTER SLOT UNITS"                              display="extra"/>
+    <field id="RIGHT SLOT UNITS"                               display="extra"/>
+    <field id="UNITS REQUIRED FOR CREDIT"                      display="extra"/>
+    <field id="UNITS REQUIRED FOR BONUS CREDIT"                display="extra"/>
+    <field id="MINIMUM UNITS FOR ANY CREDIT"                   display="extra"/>
+    <field id="DIFFICULTY OF PLAY"                             display="extra"/>
+    <field id="LETTERS FOR HIGHEST SCORE"                      display="extra"/>
+    <field id="RESTORE FACTORY SETTINGS"        format="yesno" display="extra"/>
+    <field id="CLEAR BOOKKEEPING TOTALS"        format="yesno" display="extra"/>
+    <field id="HIGH SCORE TABLE RESET"          format="yesno" display="extra"/>
+    <field id="AUTO CYCLE"                      format="yesno" display="extra"/>
+    <field id="SET ATTRACT MODE MESSAGE"        format="yesno" display="extra"/>
+    <field id="SET HIGHEST SCORE NAME"          format="yesno" display="extra"/>
+    <!-- BOOKEEPING TOTAL //-->
+    <field id="LEFT SLOT COINS"                                display="extra"/>
+    <field id="CENTER SLOT COINS"                              display="extra"/>
+    <field id="RIGHT SLOT COINS"                               display="extra"/>
+    <field id="PAID CREDITS"                                   display="extra"/>
+    <field id="FREE MEN"                                       display="extra"/>
+    <field id="TOTAL TIME IN MINUTES"                          display="extra"/>
+    <field id="TOTAL MEN PLAYED"                               display="extra"/>
+    <field id="TOTAL BUY-INS"                                  display="extra"/>
+    <field id="TOTAL SINGLE PLAYER"                            display="extra"/>
+    <field id="TOTAL DUAL PLAYER"                              display="extra"/>
+    <field id="TOTAL CREDITS PLAYED"                           display="extra"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*1000"><multiply>1000</multiply></format>
+  <format id="yesno">
+    <case src="0" dst="NO"/>
+    <case src="1" dst="YES"/>
+  </format>
+  
+  <charset id="joust">
+    <char src="0x0A" dst=" "/>
+    <char src="0x32" dst=":"/>
+  </charset>
+</hi2txt>

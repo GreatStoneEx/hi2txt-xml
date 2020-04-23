@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <size>65536</size>
+    </check>
+    <elt size="804" type="raw" id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="1" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME" charset="turfmast"/>
+      <elt size="1" type="int"  id="COURSE"/>
+    </loop>
+    <elt size="8" type="int"  id="TOP SCORE"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"  format="score"/>
+      <column id="NAME"/>
+      <column id="COURSE" format="course"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <format id="+"><prefix>+</prefix></format>
+  <format id="-">
+    <multiply>-1</multiply>
+    <add>256</add>
+    <prefix>-</prefix>
+  </format>
+  <format id="score">
+    <case src="0"                    dst="EVEN"/>
+    <case src="240" operator="&lt;"  format="+"/>
+    <case src="240" operator="&gt;=" format="-"/>
+  </format>
+  
+  <format id="course">
+    <case src="0" dst="G.CANYON"/>
+    <case src="1" dst="WOODY"/>
+    <case src="2" dst="FUJIYAMA"/>
+    <case src="3" dst="SEASIDE"/>
+  </format>
+  
+  <charset id="turfmast">
+    <char src="0x00" dst="A"/>
+    <char src="0x02" dst="B"/>
+    <char src="0x04" dst="C"/>
+    <char src="0x06" dst="D"/>
+    <char src="0x08" dst="E"/>
+    <char src="0x0A" dst="F"/>
+    <char src="0x0C" dst="G"/>
+    <char src="0x0E" dst="H"/>
+    <char src="0x20" dst="I"/>
+    <char src="0x22" dst="J"/>
+    <char src="0x24" dst="K"/>
+    <char src="0x26" dst="L"/>
+    <char src="0x28" dst="M"/>
+    <char src="0x2A" dst="N"/>
+    <char src="0x2C" dst="O"/>
+    <char src="0x2E" dst="P"/>
+    <char src="0x40" dst="Q"/>
+    <char src="0x42" dst="R"/>
+    <char src="0x44" dst="S"/>
+    <char src="0x46" dst="T"/>
+    <char src="0x48" dst="U"/>
+    <char src="0x4A" dst="V"/>
+    <char src="0x4C" dst="W"/>
+    <char src="0x4E" dst="X"/>
+    <char src="0x60" dst="Y"/>
+    <char src="0x62" dst="Z"/>
+    <char src="0x64" dst="1"/>
+    <char src="0x66" dst="2"/>
+    <char src="0x68" dst="3"/>
+    <char src="0x6A" dst="4"/>
+    <char src="0x6C" dst="5"/>
+    <char src="0x6E" dst="6"/>
+    <char src="0x80" dst="7"/>
+    <char src="0x82" dst="8"/>
+    <char src="0x84" dst="9"/>
+    <char src="0x86" dst="0"/>
+    <char src="0x88" dst="!"/>
+    <char src="0x8A" dst="?"/>
+    <char src="0x8C" dst="$"/>
+    <char src="0xE6" dst=" "/>
+  </charset>
+</hi2txt>

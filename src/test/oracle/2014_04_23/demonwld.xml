@@ -1,0 +1,26 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>40000</cell><cell>ABC</cell></row>
+    <row><cell>2</cell><cell>38000</cell><cell>---</cell></row>
+    <row><cell>3</cell><cell>36000</cell><cell>---</cell></row>
+    <row><cell>4</cell><cell>34000</cell><cell>---</cell></row>
+    <row><cell>5</cell><cell>32000</cell><cell>---</cell></row>
+    <row><cell>6</cell><cell>30000</cell><cell>---</cell></row>
+    <row><cell>7</cell><cell>28000</cell><cell>---</cell></row>
+    <row><cell>8</cell><cell>26000</cell><cell>---</cell></row>
+    <row><cell>9</cell><cell>24000</cell><cell>---</cell></row>
+    <row><cell>10</cell><cell>22000</cell><cell>---</cell></row>
+    <row><cell>11</cell><cell>2750</cell><cell>190</cell></row>
+    <row><cell>12</cell><cell>1250</cell><cell>&amp;&amp; </cell></row>
+    <row><cell>13</cell><cell>1000</cell><cell>?!&#9829;</cell></row>
+    <row><cell>14</cell><cell>1000</cell><cell>&amp;.#</cell></row>
+    <row><cell>15</cell><cell>500</cell><cell>---</cell></row>
+    <row><cell>16</cell><cell>400</cell><cell>---</cell></row>
+    <row><cell>17</cell><cell>300</cell><cell>---</cell></row>
+    <row><cell>18</cell><cell>200</cell><cell>---</cell></row>
+    <row><cell>19</cell><cell>100</cell><cell>---</cell></row>
+    <row><cell>20</cell><cell>0</cell><cell>---</cell></row>
+  </table>
+  <field id="TOP SCORE">40000</field>
+</hi2txt>

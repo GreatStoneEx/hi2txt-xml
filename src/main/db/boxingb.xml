@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:e0:30:00:f4</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>48</size>
+    </check>
+    
+    <loop count="6">
+	    <elt size="4" type="text" id="NAME" bitmask="bm4to3" ascii-offset="65"/>
+	    <elt size="2" type="int"  id="SCORE1"/>
+	    <elt size="2" type="int"  id="SCORE2"/>
+    </loop>
+  </structure>
+  
+  <bitmask id="bm4to3">
+  	<character mask="00001111 11000000 00000000 00000000"/> <!-- how to extract the 1st character from the initial 4 bytes text read //-->
+  	<character mask="00000000 00111111 00000000 00000000"/> <!-- how to extract the 2nd... //-->
+  	<character mask="00000000 00000000 00000000 00111111"/> <!-- how to extract the 3rd... //-->
+  </bitmask>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+      <column id="RATING" format="score;rating"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="*10000"><multiply>10000</multiply></format>
+  <format id="score">
+    <sum>
+  		<column id="SCORE1" format="*10000"/>
+  		<column id="SCORE2" format="*10"/>
+  	</sum>
+  </format>
+  <format id="rating">
+  	<case operator="&lt;"  src="10000" dst=""/>
+  	<case operator="&lt;"  src="20000" dst="S"/>
+  	<case operator="&lt;"  src="30000" dst="B"/>
+  	<case operator="&lt;"  src="60000" dst="F"/>
+  	<case operator="&lt;" src="120000" dst="L"/>
+  	<case operator="&lt;" src="200000" dst="W"/>
+  	<case operator="&lt;" src="300000" dst="M"/>
+  </format>
+</hi2txt>

@@ -1,0 +1,8 @@
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|CHARACTER 4|SEPARATOR|SEPARATOR2
+1|100|ICH|Kula Diamond|Clone Zero|36|37|0xFF|0xFF
+2|90|TAK|Chin Gentsai|Bao|Kasumi Todoh|Hinako Shijou|0xFF|0xFF
+3|80|BOK|Kim Kaphwan|Chang Koehan|Choi Bounge|Jhun Hoon|0xFF|0xFF
+4|70|KON|Kyo Kusanagi|Iori Yagami|Kula Diamond|Clone Zero|0xFF|0xFF
+5|60|MAT|Leona|Ralf Jones|Clark Steel|Whip|0xFF|0xFF
+
+

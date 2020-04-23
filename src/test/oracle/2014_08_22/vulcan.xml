@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AGE</col><col>GENDER</col><col>SEPARATOR</col>
+    <row><cell>1</cell><cell>57300</cell><cell>H.M</cell><cell>27</cell><cell>MAN</cell><cell></cell></row>
+    <row><cell>2</cell><cell>37500</cell><cell>T.T</cell><cell>24</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>M.Y</cell><cell>23</cell><cell>WOMAN</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>25000</cell><cell>K.T</cell><cell>22</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>T.H</cell><cell>23</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>6</cell><cell>15000</cell><cell>H.A</cell><cell>23</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>7</cell><cell>14500</cell><cell>-. </cell><cell>20</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>8</cell><cell>10000</cell><cell>A.S</cell><cell>23</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>9</cell><cell>9000</cell><cell>T.F</cell><cell>22</cell><cell>MAN</cell><cell>0x00</cell></row>
+    <row><cell>10</cell><cell>8000</cell><cell>M.I</cell><cell>21</cell><cell>WOMAN</cell><cell>0x00</cell></row>
+  </table>
+  <field id="TOP SCORE">57300</field>
+  <field id="CHECK">0xF8</field>
+</hi2txt>

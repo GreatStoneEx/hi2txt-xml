@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ff256e:63:00:05</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>99</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="2" type="raw"  id="UNKNOWN"/> <!-- sort of rank? //-->
+      <elt size="3" type="text" id="NAME"  charset="xmvsf" ascii-offset="65"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="VS WINS"  base="16"/>
+      <elt size="2" type="raw"  id="VS SEPARATOR_1"/>
+      <elt size="2" type="raw"  id="VS UNKNOWN"/> <!-- sort of rank? //-->
+      <elt size="3" type="text" id="VS NAME"  charset="xmvsf" ascii-offset="65"/>
+      <elt size="1" type="raw"  id="VS SEPARATOR_2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN"   display="debug"/>
+      <column id="SEPARATOR" display="debug"/>
+    </table>
+    <table id="VS TOP SCORES">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="VS WINS" format="wins"        display="extra"/>
+      <column id="VS NAME"                      display="extra"/>
+      <column id="VS UNKNOWN"     display="debug"/>
+      <column id="VS SEPARATOR_1" display="debug"/>
+      <column id="VS SEPARATOR_2" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="wins"><concat> WINS</concat></format>
+  
+  <charset id="xmvsf">
+    <char src="0x1A" dst="0"/>
+    <char src="0x1B" dst="1"/>
+    <char src="0x1C" dst="2"/>
+    <char src="0x1D" dst="3"/>
+    <char src="0x1E" dst="4"/>
+    <char src="0x1F" dst="5"/>
+    <char src="0x20" dst="6"/>
+    <char src="0x21" dst="7"/>
+    <char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="!"/>
+    <char src="0x25" dst="&amp;"/>
+    <char src="0x26" dst="-"/>
+    <char src="0x27" dst="."/>
+    <char src="0x28" dst="/"/>
+    <char src="0x29" dst="&black-heart;"/>
+    <char src="0x2A" dst="?"/>
+    <char src="0x2B" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,12 @@
+RANK|SCORE|NAME|CHARACTER
+1|101000000|AAA|Altair (red)
+2|900000|BBB|Vais (orange)
+3|800000|CCC|Serene (yellow)
+4|700000|DDD|Altair (red)
+5|600000|EEE|Schwarz (cyan)
+6|542090|.ZA|Altair (red)
+7|500000|FFF|Serene (yellow)
+8|400000|GGG|Vega (purple)
+9|300000|HHH|Vais (orange)
+10|200000|III|Serene (yellow)
+

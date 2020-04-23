@@ -1,0 +1,27 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col>
+    <row><cell>1</cell><cell>30000</cell><cell>......</cell><cell>10</cell></row>
+    <row><cell>2</cell><cell>29000</cell><cell>......</cell><cell>10</cell></row>
+    <row><cell>3</cell><cell>28000</cell><cell>......</cell><cell>9</cell></row>
+    <row><cell>4</cell><cell>27000</cell><cell>......</cell><cell>9</cell></row>
+    <row><cell>5</cell><cell>26000</cell><cell>......</cell><cell>8</cell></row>
+    <row><cell>6</cell><cell>25000</cell><cell>......</cell><cell>8</cell></row>
+    <row><cell>7</cell><cell>24000</cell><cell>......</cell><cell>7</cell></row>
+    <row><cell>8</cell><cell>23000</cell><cell>......</cell><cell>7</cell></row>
+    <row><cell>9</cell><cell>22000</cell><cell>......</cell><cell>6</cell></row>
+    <row><cell>10</cell><cell>21000</cell><cell>......</cell><cell>6</cell></row>
+    <row><cell>11</cell><cell>20000</cell><cell>......</cell><cell>5</cell></row>
+    <row><cell>12</cell><cell>19000</cell><cell>......</cell><cell>5</cell></row>
+    <row><cell>13</cell><cell>18000</cell><cell>......</cell><cell>4</cell></row>
+    <row><cell>14</cell><cell>17000</cell><cell>......</cell><cell>4</cell></row>
+    <row><cell>15</cell><cell>16000</cell><cell>......</cell><cell>3</cell></row>
+    <row><cell>16</cell><cell>15000</cell><cell>......</cell><cell>3</cell></row>
+    <row><cell>17</cell><cell>14000</cell><cell>......</cell><cell>2</cell></row>
+    <row><cell>18</cell><cell>13000</cell><cell>......</cell><cell>2</cell></row>
+    <row><cell>19</cell><cell>12000</cell><cell>......</cell><cell>1</cell></row>
+    <row><cell>20</cell><cell>11000</cell><cell>......</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+
+

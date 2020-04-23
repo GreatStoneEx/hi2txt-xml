@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Solar Fox">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file="nvram">
+    <check>
+      <size>2048</size>
+    </check>
+    <elt size="11"  type="raw"  id="UNKNOWN"/>
+    <elt size="4"   type="int"  id="SCORE" base="16"/>
+    <elt size="114" type="raw"  id="UNKNOWN"/>
+    <elt size="3"   type="text" id="NAME"/>
+  </structure>
+
+  <output>
+    <field id="SCORE"/>
+    <field id="NAME"/>
+  </output>
+</hi2txt>

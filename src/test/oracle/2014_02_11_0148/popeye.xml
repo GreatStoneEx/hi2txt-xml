@@ -1,0 +1,15 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>32600</cell><cell>GET</cell></row>
+    <row><cell>2</cell><cell>29700</cell><cell>TJI</cell></row>
+    <row><cell>3</cell><cell>24150</cell><cell>HAM</cell></row>
+    <row><cell>4</cell><cell>23500</cell><cell>S*F</cell></row>
+    <row><cell>5</cell><cell>21150</cell><cell>YOK</cell></row>
+  </table>
+  <table id="TOP SCORE">
+    <col>TOP SCORE</col><col>TOP SCORE LONG</col>
+    <row><cell>32600</cell><cell>32600</cell></row>
+  </table>
+  <field id="LAST SCORE MODIFIED">0</field>
+</hi2txt>

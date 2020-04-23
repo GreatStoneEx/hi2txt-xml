@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.148 and hiscore.dat 2014-04-23
+      mame 0.153 and hiscore.dat 2014-08-22
+    source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:e800:190:00:00
+                  0:e9c0:1:1e:1e
+                  0:e040:8:00:00
+                  0:e028:1:01:01</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>410</size>
+    </check>
+	  <loop count="25">
+      <elt size="1" type="int"  id="RANK"    table-index="itself"/>
+	    <elt size="4" type="int"  id="SCORE"   table-index="last" base="16"/>
+	    <elt size="8" type="text" id="NAME"    table-index="last" ascii-offset="55" charset="cs1942"/>
+	    <elt size="1" type="int"  id="STAGE"   table-index="last"/>
+      <elt size="2" type="raw"  id="EMPTY"   table-index="last"/>
+	  </loop>
+    <elt size="1" type="int" id="TODAY TOP SHOOT PERCENT"/> <!-- Today's top shooting down percentage //-->
+    <elt size="8" type="int" id="TOP SCORE STRING" decoding-profile="bcd"/>
+    <elt size="1" type="raw" id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="EMPTY" format="0x" display="debug"/>
+    </table>
+    <field  id="TODAY TOP SHOOT PERCENT" format="Suffix%" display="extra"/>
+    <field  id="TOP SCORE STRING"                         display="extra"/>
+    <field  id="UNKNOWN"                 format="0x"      display="debug"/>
+  </output>
+  
+  <charset id="cs1942">
+    <char src="0x24" dst="."/>
+    <char src="0x25" dst="-"/>
+    <char src="0x26" dst="&amp;"/>
+    <char src="0x27" dst="?"/>
+    <char src="0x28" dst="!"/>
+    <char src="0x29" dst="%"/>
+    <char src="0x2a" dst="("/>
+    <char src="0x2b" dst=")"/>
+    <char src="0x2c" dst="&man;"/>
+    <char src="0x2d" dst="&woman;"/>
+    <char src="0x2e" dst="&black-heart;"/>
+    <char src="0x30" dst=" "/>
+    <char src="0x38" dst="&copyright;"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Power Spikes">
+  <!--
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.159 and hiscore.dat 2015-07-01
+	history:
+	  2020-04-17 user letters are encoded differently than default letters
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1023f1:4d:00:03</definition> <!-- pspikes -->
+      <definition>0:1023f1:4d:00:07</definition> <!-- pspikesk -->
+      <definition>0:1023f1:4d:00:06</definition> <!-- pspikesu -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>77</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int"  id="SCORE"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>      
+      <elt size="6" type="text" id="NAME" charset="pspikes" src-unit-size="16"/>
+      <elt size="2" type="raw"  id="LAST CHAR"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="3" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+      <column id="LAST CHAR" format="0x" display="debug"/>
+      <column id="EMPTY"     format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+  	<case src="0"  dst="Japan"/>
+  	<case src="1"  dst="U.S.A"/>
+    <case src="2"  dst="U.R.S.S"/>
+    <case src="3"  dst="China"/>
+    <case src="4"  dst="South Korea"/>
+    <case src="5"  dst="Italia"/>
+    <case src="6"  dst="France"/>
+    <case src="7"  dst="Germany"/>
+    <case src="8"  dst="Great Britain"/>
+    <case src="9"  dst="Spain"/>
+    <case src="10" dst="Sweden"/>
+    <case src="11" dst="Norway"/>
+    <case src="12" dst="Denmark"/>
+    <case src="13" dst="Brazil"/>
+    <case src="14" dst="Peru"/>
+    <case src="15" dst="Cuba"/>
+  </format>
+  
+  <charset id="pspikes">
+  	<char src="0x0000" dst=" "/>
+	<char src="0x0D00" dst="."/>
+    <char src="0x0D01" dst="."/>
+  	<char src="0x0D02" dst="."/>
+	<char src="0x0E00" dst="-"/>
+  	<char src="0x0E01" dst="-"/>
+	<char src="0x0E02" dst="-"/>
+	<char src="0xF300" dst="A"/>
+    <char src="0xF301" dst="A"/>
+	<char src="0xF302" dst="A"/>
+	<char src="0xF400" dst="B"/>
+    <char src="0xF401" dst="B"/>
+	<char src="0xF402" dst="B"/>
+    <char src="0xF500" dst="C"/>
+	<char src="0xF501" dst="C"/>
+	<char src="0xF502" dst="C"/>
+    <char src="0xF600" dst="D"/>
+	<char src="0xF601" dst="D"/>
+	<char src="0xF602" dst="D"/>
+    <char src="0xF700" dst="E"/>
+	<char src="0xF701" dst="E"/>
+	<char src="0xF702" dst="E"/>
+    <char src="0xF800" dst="F"/>
+	<char src="0xF801" dst="F"/>
+	<char src="0xF802" dst="F"/>
+    <char src="0xF900" dst="G"/>
+	<char src="0xF901" dst="G"/>
+	<char src="0xF902" dst="G"/>
+    <char src="0xFA00" dst="H"/>
+	<char src="0xFA01" dst="H"/>
+	<char src="0xFA03" dst="H"/>
+    <char src="0xFB00" dst="I"/>
+	<char src="0xFB01" dst="I"/>
+	<char src="0xFB02" dst="I"/>
+    <char src="0xFC00" dst="J"/>
+	<char src="0xFC01" dst="J"/>
+	<char src="0xFC02" dst="J"/>
+    <char src="0xFD00" dst="K"/>
+	<char src="0xFD01" dst="K"/>
+	<char src="0xFD02" dst="K"/>
+    <char src="0xFE00" dst="L"/>
+	<char src="0xFE01" dst="L"/>
+	<char src="0xFE02" dst="L"/>
+	<char src="0xFF00" dst="M"/>
+	<char src="0xFF01" dst="M"/>
+    <char src="0xFF02" dst="M"/>
+	<char src="0x0001" dst="N"/>
+    <char src="0x0002" dst="N"/>
+    <char src="0x0100" dst="O"/>
+	<char src="0x0101" dst="O"/>
+	<char src="0x0102" dst="O"/>
+    <char src="0x0200" dst="P"/>
+	<char src="0x0201" dst="P"/>
+	<char src="0x0202" dst="P"/>
+	<char src="0x0300" dst="Q"/>
+	<char src="0x0301" dst="Q"/>
+    <char src="0x0302" dst="Q"/>
+    <char src="0x0400" dst="R"/>
+	<char src="0x0401" dst="R"/>
+	<char src="0x0402" dst="R"/>
+	<char src="0x0500" dst="S"/>
+	<char src="0x0501" dst="S"/>
+    <char src="0x0502" dst="S"/>
+	<char src="0x0600" dst="T"/>
+	<char src="0x0601" dst="T"/>
+    <char src="0x0602" dst="T"/>
+    <char src="0x0700" dst="U"/>
+	<char src="0x0701" dst="U"/>
+	<char src="0x0702" dst="U"/>
+    <char src="0x0800" dst="V"/>
+	<char src="0x0801" dst="V"/>
+	<char src="0x0802" dst="V"/>
+	<char src="0x0900" dst="W"/>
+	<char src="0x0901" dst="W"/>
+    <char src="0x0902" dst="W"/>
+    <char src="0x0A00" dst="X"/>
+	<char src="0x0A01" dst="X"/>
+	<char src="0x0A02" dst="X"/>
+    <char src="0x0B00" dst="Y"/>
+	<char src="0x0B01" dst="Y"/>
+	<char src="0x0B02" dst="Y"/>
+	<char src="0x0C00" dst="Z"/>
+	<char src="0x0C01" dst="Z"/>
+    <char src="0x0C02" dst="Z"/>
+  </charset>
+</hi2txt>

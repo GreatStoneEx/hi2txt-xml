@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Armored Warriors">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ff27d6:256:00:04</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>598</size>
+    </check>
+    <loop count="50">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="5" type="text" id="NAME"  charset="CS_NUMBER[4,1];armwar" ascii-offset="65" ascii-step="2"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="RASH"/>
+    <case src="4"  dst="JUSTICE"/>
+    <case src="8"  dst="GRAY"/>
+    <case src="12" dst="SIREN"/>
+  </format>
+  
+  <charset id="armwar">
+  	<char src="0x48" dst="."/>
+  	<char src="0x4A" dst=":"/>
+  	<char src="0x4C" dst="!"/>
+    <char src="0x4E" dst="?"/>
+    <char src="0x50" dst="&amp;"/>
+    <char src="0x52" dst=" "/>
+  </charset>
+</hi2txt>

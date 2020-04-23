@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>LINES</col>
+    <row><cell>1</cell><cell>10000</cell><cell>E.M</cell><cell>32</cell></row>
+    <row><cell>2</cell><cell>9000</cell><cell>UCI</cell><cell>30</cell></row>
+    <row><cell>3</cell><cell>8000</cell><cell>MAT</cell><cell>28</cell></row>
+    <row><cell>4</cell><cell>7000</cell><cell>MAK</cell><cell>26</cell></row>
+    <row><cell>5</cell><cell>6000</cell><cell>KOI</cell><cell>24</cell></row>
+    <row><cell>6</cell><cell>5000</cell><cell>KAW</cell><cell>20</cell></row>
+    <row><cell>7</cell><cell>4000</cell><cell>TET</cell><cell>18</cell></row>
+    <row><cell>8</cell><cell>3000</cell><cell>RIS</cell><cell>16</cell></row>
+    <row><cell>9</cell><cell>2000</cell><cell>DAS</cell><cell>12</cell></row>
+    <row><cell>10</cell><cell>1000</cell><cell>NAK</cell><cell>8</cell></row>
+  </table>
+</hi2txt>
+
+

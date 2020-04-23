@@ -1,0 +1,34 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>10000</cell><cell>DFT</cell></row>
+    <row><cell>2</cell><cell>9500</cell><cell>MLH</cell></row>
+    <row><cell>3</cell><cell>9000</cell><cell>AJM</cell></row>
+    <row><cell>4</cell><cell>8500</cell><cell>MLW</cell></row>
+    <row><cell>5</cell><cell>8000</cell><cell>BAF</cell></row>
+    <row><cell>6</cell><cell>7500</cell><cell>HLC</cell></row>
+    <row><cell>7</cell><cell>7000</cell><cell>EAR</cell></row>
+    <row><cell>8</cell><cell>6500</cell><cell>RBD</cell></row>
+    <row><cell>9</cell><cell>6500</cell><cell>DFT</cell></row>
+    <row><cell>10</cell><cell>6250</cell><cell>MLH</cell></row>
+    <row><cell>11</cell><cell>6000</cell><cell>AJM</cell></row>
+    <row><cell>12</cell><cell>5750</cell><cell>MLW</cell></row>
+    <row><cell>13</cell><cell>5500</cell><cell>BAF</cell></row>
+    <row><cell>14</cell><cell>5250</cell><cell>HLC</cell></row>
+    <row><cell>15</cell><cell>5000</cell><cell>EAR</cell></row>
+    <row><cell>16</cell><cell>4750</cell><cell>CJD</cell></row>
+    <row><cell>17</cell><cell>4500</cell><cell>RBD</cell></row>
+    <row><cell>18</cell><cell>4250</cell><cell>JFS</cell></row>
+    <row><cell>19</cell><cell>4000</cell><cell>ROB</cell></row>
+    <row><cell>20</cell><cell>3750</cell><cell>LIB</cell></row>
+    <row><cell>21</cell><cell>3500</cell><cell>CAD</cell></row>
+    <row><cell>22</cell><cell>3250</cell><cell>GAS</cell></row>
+    <row><cell>23</cell><cell>3000</cell><cell>DAN</cell></row>
+    <row><cell>24</cell><cell>2750</cell><cell>LYL</cell></row>
+    <row><cell>25</cell><cell>2500</cell><cell>RCM</cell></row>
+  </table>
+  <field id="UNUSED">0x0000000000000000000000000000000000000000000000000000</field>
+  <field id="UNUSED 2">0x0000</field>
+  <field id="UNUSED 3">0x00</field>
+  <field id="UNUSED 4">0x00</field>
+</hi2txt>

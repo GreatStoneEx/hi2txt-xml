@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Dyger">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:c0d0:23:37:06
+                  0:c086:2:37:37</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>37</size>
+    </check>
+    <loop count="7">
+      <elt size="1" type="int"  id="SCORE2"/>
+      <elt size="1" type="int"  id="SCORE1"/>
+      <elt size="3" type="text" id="NAME" charset="dyger" ascii-offset="65"/>
+    </loop>
+    <elt size="1" type="int" id="TOPSCORE2"/>
+    <elt size="1" type="int" id="TOPSCORE1"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"/>
+    </table>
+    <field id="TOP SCORE" format="topscore" display="extra"/>
+  </output>
+  
+  <format id="score">
+  	<sum>
+      <column id="SCORE1" format="*100"/>
+      <column id="SCORE2"/>
+    </sum>
+    <multiply>100</multiply>
+  </format>
+  <format id="topscore">
+  	<sum>
+      <column id="TOPSCORE1" format="*100"/>
+      <column id="TOPSCORE2"/>
+    </sum>
+    <multiply>100</multiply>
+  </format>
+  
+  <charset id="dyger">
+  	<char src="0x1A" dst="0"/>
+  	<char src="0x1B" dst="1"/>
+  	<char src="0x1C" dst="2"/>
+  	<char src="0x1D" dst="3"/>
+  	<char src="0x1E" dst="4"/>
+  	<char src="0x1F" dst="5"/>
+  	<char src="0x20" dst="6"/>
+  	<char src="0x21" dst="7"/>
+  	<char src="0x22" dst="8"/>
+    <char src="0x23" dst="9"/>
+    <char src="0x24" dst="&heart-with-arrow;"/>
+    <char src="0x25" dst="&skull;"/>
+    <char src="0x26" dst="&scissors;"/>
+    <char src="0x27" dst="&umbrella;"/>
+    <char src="0x28" dst="&snowman;"/>
+    <char src="0x29" dst="&shoe;"/>
+    <char src="0x2A" dst="&crossed-swords;"/>
+    <char src="0x2B" dst="&baseball;"/>
+    <char src="0x2C" dst="&thumbs-up;"/>
+    <char src="0x2D" dst="&left-foot;"/>
+    <char src="0x2E" dst="&right-foot;"/>
+  </charset>
+</hi2txt>

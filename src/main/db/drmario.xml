@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Vs. Dr. Mario">
+  <!--
+    tested with mame 0.156 and related hiscore.dat
+    tested with mame 0.181 and related hiscore.dat
+      source: Japi
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:120:9b:00:15</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>155</size>
+    </check>
+    <loop count="10">
+      <elt size="6" type="int"  id="SCORE" base="256"/>
+      <elt size="1" type="int"  id="SPEED"/>
+      <elt size="1" type="int"  id="UNKNOWN"/>
+      <elt size="3" type="text" id="NAME" ascii-offset="64" charset="drmario"/>
+      <elt size="5" type="int"  id="EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="SCORE" format="*10"/>
+      <column id="SPEED" format="speed_mapping"/>
+      <column id="UNKNOWN" display="debug"/>
+    </table>
+  </output>
+
+  <format id="speed_mapping">
+    <case src="1" dst="NORM"/>
+    <case src="2" dst="HIGH"/>
+  </format>
+
+  <charset id="drmario">
+    <char src="0x00" dst=" "/>
+    <char src="0x1B" dst="0"/>
+    <char src="0x1C" dst="1"/>
+    <char src="0x1D" dst="2"/>
+    <char src="0x1E" dst="3"/>
+    <char src="0x1F" dst="4"/>
+    <char src="0x20" dst="5"/>
+    <char src="0x21" dst="6"/>
+    <char src="0x22" dst="7"/>
+    <char src="0x23" dst="8"/>
+    <char src="0x24" dst="9"/>
+    <char src="0x25" dst="-"/>
+    <char src="0x26" dst=","/>
+    <char src="0x27" dst="'"/>
+    <char src="0x28" dst="&black-right-arrow-large;"/>
+    <char src="0x29" dst="!"/>
+    <char src="0x2A" dst="&black-heart;"/>
+    <char src="0x2B" dst="."/>
+  </charset>
+
+</hi2txt>

@@ -1,0 +1,27 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>TYPE</col><col>STAGE</col>
+    <row><cell>1</cell><cell>20000000</cell><cell>CAP</cell><cell>RAIJIN (SINNOSUKE)</cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>19000000</cell><cell>COM</cell><cell>WIDERSTAND (STUCK)</cell><cell>3</cell></row>
+    <row><cell>3</cell><cell>18000000</cell><cell>RYU</cell><cell>PORCHKA (ISHA)</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>17000000</cell><cell>KEN</cell><cell>GARMINE (RUBY)</cell><cell>3</cell></row>
+    <row><cell>5</cell><cell>16000000</cell><cell>A.K</cell><cell>RAIJIN (SINNOSUKE)</cell><cell>3</cell></row>
+    <row><cell>6</cell><cell>15000000</cell><cell>S.S</cell><cell>WIDERSTAND (STUCK)</cell><cell>3</cell></row>
+    <row><cell>7</cell><cell>14000000</cell><cell>S.I</cell><cell>PORCHKA (ISHA)</cell><cell>2</cell></row>
+    <row><cell>8</cell><cell>13000000</cell><cell>SIN</cell><cell>GARMINE (RUBY)</cell><cell>2</cell></row>
+    <row><cell>9</cell><cell>12000000</cell><cell>S.G</cell><cell>RAIJIN (SINNOSUKE)</cell><cell>2</cell></row>
+    <row><cell>10</cell><cell>11000000</cell><cell>M.S</cell><cell>WIDERSTAND (STUCK)</cell><cell>2</cell></row>
+    <row><cell>11</cell><cell>10000000</cell><cell>JUN</cell><cell>PORCHKA (ISHA)</cell><cell>2</cell></row>
+    <row><cell>12</cell><cell>9000000</cell><cell>AI </cell><cell>GARMINE (RUBY)</cell><cell>2</cell></row>
+    <row><cell>13</cell><cell>8000000</cell><cell>Y.M</cell><cell>RAIJIN (SINNOSUKE)</cell><cell>2</cell></row>
+    <row><cell>14</cell><cell>7000000</cell><cell>ASA</cell><cell>WIDERSTAND (STUCK)</cell><cell>2</cell></row>
+    <row><cell>15</cell><cell>6000000</cell><cell>YUK</cell><cell>PORCHKA (ISHA)</cell><cell>1</cell></row>
+    <row><cell>16</cell><cell>5000000</cell><cell>ODA</cell><cell>GARMINE (RUBY)</cell><cell>1</cell></row>
+    <row><cell>17</cell><cell>4000000</cell><cell>YUK</cell><cell>RAIJIN (SINNOSUKE)</cell><cell>1</cell></row>
+    <row><cell>18</cell><cell>3000000</cell><cell>M.T</cell><cell>WIDERSTAND (STUCK)</cell><cell>1</cell></row>
+    <row><cell>19</cell><cell>2000000</cell><cell>TIZ</cell><cell>PORCHKA (ISHA)</cell><cell>1</cell></row>
+    <row><cell>20</cell><cell>1000000</cell><cell>URA</cell><cell>GARMINE (RUBY)</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+
+

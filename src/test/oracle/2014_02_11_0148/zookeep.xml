@@ -1,0 +1,25 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>61756</cell><cell>JON</cell></row>
+    <row><cell>2</cell><cell>53157</cell><cell>MOR</cell></row>
+    <row><cell>3</cell><cell>42237</cell><cell>GAN</cell></row>
+    <row><cell>4</cell><cell>33157</cell><cell>EVY</cell></row>
+    <row><cell>5</cell><cell>22528</cell><cell>KJE</cell></row>
+    <row><cell>6</cell><cell>14868</cell><cell>MAB</cell></row>
+    <row><cell>7</cell><cell>12599</cell><cell>RJH</cell></row>
+    <row><cell>8</cell><cell>8723</cell><cell>DLP</cell></row>
+    <row><cell>9</cell><cell>7578</cell><cell>PJR</cell></row>
+    <row><cell>10</cell><cell>6383</cell><cell>CDS</cell></row>
+    <row><cell>11</cell><cell>5833</cell><cell>RRP</cell></row>
+    <row><cell>12</cell><cell>4729</cell><cell>RJP</cell></row>
+    <row><cell>13</cell><cell>4294</cell><cell>DAN</cell></row>
+    <row><cell>14</cell><cell>3955</cell><cell>LUP</cell></row>
+    <row><cell>15</cell><cell>3428</cell><cell>REX</cell></row>
+    <row><cell>16</cell><cell>2755</cell><cell>GJL</cell></row>
+    <row><cell>17</cell><cell>2228</cell><cell>RAE</cell></row>
+    <row><cell>18</cell><cell>1845</cell><cell>TGF</cell></row>
+    <row><cell>19</cell><cell>1748</cell><cell>BFM</cell></row>
+    <row><cell>20</cell><cell>1305</cell><cell>WLM</cell></row>
+  </table>
+</hi2txt>

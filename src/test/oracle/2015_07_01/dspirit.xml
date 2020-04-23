@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>80000</cell><cell>SARMND</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>60000</cell><cell>GRADUS</cell><cell>4</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>USO   </cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>20000</cell><cell>T CLST</cell><cell>2</cell></row>
+    <row><cell>5</cell><cell>5790</cell><cell>. Z</cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">80000</field>
+</hi2txt>

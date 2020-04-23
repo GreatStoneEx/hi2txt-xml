@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file="eeprom">
+    <check>
+      <size>256</size>
+    </check>
+    <elt size="68" type="raw"  id="UNKNOWN"/>
+    <loop count="10">
+      <elt size="3" type="text" id="SECTIONTIME NAME"/>
+      <elt size="1" type="raw"  id="SECTIONTIME UNKNOWN"/>
+      <elt size="1" type="int"  id="SECTIONTIME CLASS"/>
+      <elt size="3" type="int"  id="SECTIONTIME TIME"/>
+    </loop>
+    <loop count="3">
+      <elt size="3" type="text" id="GRANDMASTER NAME"/>
+      <elt size="1" type="raw"  id="GRANDMASTER UNKNOWN"/>
+      <elt size="1" type="int"  id="GRANDMASTER CLASS"/>
+      <elt size="3" type="int"  id="GRANDMASTER TIME"/>
+    </loop>
+    <loop count="3">
+      <elt size="3" type="text" id="NORMAL NAME"/>
+      <elt size="2" type="raw"  id="NORMAL UNKNOWN"/>
+      <elt size="3" type="int"  id="NORMAL SCORE"/>
+    </loop>
+    <loop count="3">
+      <elt size="3" type="text" id="DOUBLES NAME 1"/>
+      <elt size="2" type="raw"  id="DOUBLES UNKNOWN"/>
+      <elt size="3" type="int"  id="DOUBLES TIME"/>
+    </loop>
+    <loop count="3">
+      <elt size="3" type="text" id="DOUBLES NAME 2"/>
+      <elt size="1" type="raw"  id="DOUBLES UNKNOWN 2"/>
+      <elt size="2" type="int"  id="DOUBLES LEVEL 1"/>
+      <elt size="2" type="int"  id="DOUBLES LEVEL 2"/>
+    </loop>
+    <loop count="3">
+      <elt size="2" type="int"  id="GRANDMASTER MEDALS"/>
+    </loop>
+    <elt size="2" type="raw"  id="CHECKSUM"/> <!-- ?? //-->
+    <elt size="4" type="raw"  id="UNKNOWN2"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SECTION TIMES">
+      <column id="RANK" src="index"    format="+1"/>
+      <column id="SECTIONTIME NAME"/>
+      <column id="SECTIONTIME UNKNOWN" format="0x" display="debug"/>
+      <column id="SECTIONTIME CLASS"   format="class"/>
+      <column id="SECTIONTIME TIME"    format="time"/>
+    </table>
+    <table id="GRANDMASTER TOP">
+      <column id="RANK" src="index"    format="+1"/>
+      <column id="GRANDMASTER NAME"/>
+      <column id="GRANDMASTER UNKNOWN" format="0x" display="debug"/>
+      <column id="GRANDMASTER CLASS"   format="class"/>
+      <column id="GRANDMASTER TIME"    format="time"/>
+      <column id="GRANDMASTER MEDALS"  format="medal"/>
+    </table>
+    <table id="NORMAL TOP">
+      <column id="RANK" src="index"    format="+1"/>
+      <column id="NORMAL NAME"/>
+      <column id="NORMAL UNKNOWN"      format="0x" display="debug"/>
+      <column id="NORMAL SCORE"/>
+    </table>
+    <table id="DOUBLES TOP">
+      <column id="RANK" src="index"  format="+1"/>
+      <column id="DOUBLES NAME 1"/>
+      <column id="DOUBLES UNKNOWN 2" format="0x" display="debug"/>
+      <column id="DOUBLES LEVEL 1"/>
+      <column id="DOUBLES NAME 2"/>
+      <column id="DOUBLES LEVEL 2"/>
+      <column id="DOUBLES UNKNOWN"   format="0x" display="debug"/>
+      <column id="DOUBLES TIME"      format="time"/>
+    </table>
+    <field id="CHECKSUM"             display="debug"/>
+    <field id="UNKNOWN2" format="0x" display="debug"/>
+  </output>
+  
+  <format id="class">
+    <case src="8"   operator="&lt;"  dst="9"/>
+    <case src="16"  operator="&lt;"  dst="8"/>
+    <case src="24"  operator="&lt;"  dst="7"/>
+    <case src="32"  operator="&lt;"  dst="6"/>
+    <case src="40"  operator="&lt;"  dst="5"/>
+    <case src="48"  operator="&lt;"  dst="4"/>
+    <case src="56"  operator="&lt;"  dst="3"/>
+    <case src="64"  operator="&lt;"  dst="2"/>
+    <case src="72"  operator="&lt;"  dst="1"/>
+    <case src="80"  operator="&lt;"  dst="S1"/>
+    <case src="88"  operator="&lt;"  dst="S2"/>
+    <case src="96"  operator="&lt;"  dst="S3"/>
+    <case src="104" operator="&lt;"  dst="S4"/>
+    <case src="112" operator="&lt;"  dst="S5"/>
+    <case src="120" operator="&lt;"  dst="S6"/>
+    <case src="128" operator="&lt;"  dst="S7"/>
+    <case src="136" operator="&lt;"  dst="S8"/>
+    <case src="144" operator="&lt;"  dst="S9"/>
+    <case src="144" operator="&gt;=" dst="GM"/>
+  </format>
+  <format id="time" input-as-subcolumns-input="yes">
+    <concat>
+      <column format="d60;d60;pad"/>
+      <txt>:</txt>
+      <column format="d60;%60;pad"/>
+      <txt>:</txt>
+      <column format="%60;*100;d60;pad"/>
+    </concat>
+  </format>
+  <format id="pad"><pad direction="left" max="2">0</pad></format>
+  <format id="medal" input-as-subcolumns-input="yes">
+    <concat>
+      <column format="%4;medal_ac"/>
+      <column format="&gt;2;%4;medal_st"/>
+      <column format="&gt;4;%4;medal_sk"/>
+      <column format="&gt;6;%4;medal_re"/>
+      <column format="&gt;8;%4;medal_ro"/>
+      <column format="&gt;10;%4;medal_co"/>
+    </concat>
+    <trim direction="left"> </trim>
+  </format>
+  <format id="medal_ac"><prefix empty="0" consume="yes"> AC</prefix></format>
+  <format id="medal_st"><prefix empty="0" consume="yes"> ST</prefix></format>
+  <format id="medal_sk"><prefix empty="0" consume="yes"> SK</prefix></format>
+  <format id="medal_re"><prefix empty="0" consume="yes"> RE</prefix></format>
+  <format id="medal_ro"><prefix empty="0" consume="yes"> RO</prefix></format>
+  <format id="medal_co"><prefix empty="0" consume="yes"> CO</prefix></format>
+</hi2txt>

@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>NAME FOLLOW-UP</col>
+    <row><cell>1</cell><cell>20000</cell><cell>RIC</cell><cell>K FLASH   </cell></row>
+    <row><cell>2</cell><cell>19000</cell><cell>GOL</cell><cell>UZAMU     </cell></row>
+    <row><cell>3</cell><cell>18000</cell><cell>SPO</cell><cell>KER       </cell></row>
+    <row><cell>4</cell><cell>17000</cell><cell>BIL</cell><cell>UBO       </cell></row>
+    <row><cell>5</cell><cell>16000</cell><cell>ZYA</cell><cell>ILEMU     </cell></row>
+    <row><cell>6</cell><cell>15000</cell><cell>DAL</cell><cell>U         </cell></row>
+    <row><cell>7</cell><cell>14000</cell><cell>DOL</cell><cell>OMER      </cell></row>
+    <row><cell>8</cell><cell>13000</cell><cell>EBI</cell><cell>LU JIBAGO </cell></row>
+    <row><cell>9</cell><cell>12000</cell><cell>DER</cell><cell>GY        </cell></row>
+    <row><cell>10</cell><cell>11000</cell><cell>GIN</cell><cell>GA GONGA  </cell></row>
+  </table>
+  <field id="TOP SCORE">20000</field>
+</hi2txt>

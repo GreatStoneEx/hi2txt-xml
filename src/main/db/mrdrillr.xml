@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText (hi), GreatStone (nvram)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:201038:288:76:76</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>648</size>
+    </check>
+    <loop count="40">
+      <elt size="4" type="raw"  id="UNUSED"/>
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="2" type="int"  id="DEPTH" endianness="little_endian"/>
+      <elt size="2" type="raw"  id="SEPARATOR2"/>
+      <elt size="3" type="text" id="NAME"  charset="mrdrillr" ascii-offset="65"/>
+      <elt size="1" type="raw"  id="SEPARATOR3"/>
+    </loop>
+    <elt   size="8" type="raw"  id="FOOTER"/>
+  </structure>
+  
+  <structure file="at28c16">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2080</size>
+    </check>
+    <elt size="1280" type="raw" id="HEADER"/>
+    <loop count="40">
+      <elt size="4" type="raw"  id="UNUSED"/>
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="1" type="raw"  id="SEPARATOR"/>
+      <elt size="2" type="int"  id="DEPTH" endianness="little_endian"/>
+      <elt size="2" type="raw"  id="SEPARATOR2"/>
+      <elt size="3" type="text" id="NAME"  charset="mrdrillr" ascii-offset="65"/>
+      <elt size="1" type="raw"  id="SEPARATOR3"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index"  format="rank;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="DEPTH"             format="depth"/>
+      <column id="MODE" src="index"  format="mode"/>
+      <column id="UNUSED"            format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR"         format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR2"        format="hexadecimal_string" display="debug"/>
+      <column id="SEPARATOR3"        format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="FOOTER" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="rank"><remainder>20</remainder></format>
+  <format id="depth"><suffix>m</suffix></format>
+  <format id="mode">
+    <case src="20" operator="&lt;"  dst="500m"/>
+    <case src="20" operator="&gt;="  dst="1000m"/>
+  </format>
+  
+  <charset id="mrdrillr">
+    <char src="0x1A" dst="?"/>
+    <char src="0x1B" dst="!"/>
+    <char src="0x1C" dst="-"/>
+    <char src="0x1D" dst="/"/>
+    <char src="0x1E" dst="."/>
+    <char src="0x1F" dst="0"/>
+    <char src="0x20" dst="1"/>
+    <char src="0x21" dst="2"/>
+    <char src="0x22" dst="3"/>
+    <char src="0x23" dst="4"/>
+    <char src="0x24" dst="5"/>
+    <char src="0x25" dst="6"/>
+    <char src="0x26" dst="7"/>
+    <char src="0x27" dst="8"/>
+    <char src="0x28" dst="9"/>
+    <char src="0x29" dst=" "/>
+  </charset>
+</hi2txt>

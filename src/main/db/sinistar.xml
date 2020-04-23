@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Sinitar">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>1024</size>
+    </check>
+	<elt size="306" type="raw"  id="UNKNOWN"/>
+    <loop count="30">
+      <elt size="8" type="int"  id="SCORE" decoding-profile="bcd"/>
+      <elt size="6" type="text" id="NAME"  nibble-skip="odd" charset="CS_NUMBER[-48];charconv" ascii-offset="54"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="SINIMMORTALS">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x0A" dst=" "/>
+    <char src="0x26" dst="="/>
+	<char src="0x27" dst="-"/>
+	<char src="0x28" dst="?"/>
+	<char src="0x29" dst="!"/>
+	<char src="0x2A" dst="&lt;"/>
+	<char src="0x2B" dst="&gt;"/>
+	<char src="0x2C" dst="'"/>
+	<char src="0x2D" dst=","/>
+	<char src="0x2E" dst="."/>
+  </charset>
+</hi2txt>

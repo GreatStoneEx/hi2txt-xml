@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>100000</cell><cell>R.HAGIWARA   </cell></row>
+    <row><cell>2</cell><cell>85000</cell><cell>MIYUKI.OHASHI</cell></row>
+    <row><cell>3</cell><cell>71000</cell><cell>KAORI.OHTA   </cell></row>
+    <row><cell>4</cell><cell>69000</cell><cell>BUG!NISHIMURA</cell></row>
+    <row><cell>5</cell><cell>52000</cell><cell>KYOICHI.HARA</cell></row>
+  </table>
+  <field id="CHECK">0x01</field>
+</hi2txt>

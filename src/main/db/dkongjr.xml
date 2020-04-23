@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6105:9e:10:10
+                  0:60b8:3:50:00
+                  0:7661:1:10:10
+                  0:7641:1:00:00
+                  0:7621:1:00:00
+                  0:7601:1:07:07
+                  0:75e1:1:06:06
+                  0:75c1:1:05:05
+                  0:75a1:1:00:00</definition> <!-- dkongjr //-->
+      <definition>0:6105:9e:10:10
+                  0:60b8:3:00:01
+                  0:7661:1:10:10
+                  0:7641:1:00:00
+                  0:7621:1:01:01
+                  0:7601:1:01:01
+                  0:75e1:1:08:08
+                  0:75c1:1:00:00
+                  0:75a1:1:00:00</definition> <!-- dkongjrj //-->
+      <definition>0:6105:9e:10:10
+                  0:60b8:3:00:01
+                  0:9261:1:10:10
+                  0:9241:1:00:00
+                  0:9221:1:01:01
+                  0:9201:1:01:01
+                  0:91e1:1:08:08
+                  0:91c1:1:00:00
+                  0:91a1:1:00:00</definition> <!-- dkongjrm //-->
+	  <definition>0:6105:9e:10:10
+                  0:60b8:3:00:01</definition> <!-- dkongjrmc //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>168</size>
+	  <size>161</size> <!-- dkongjrmc //-->
+    </check>
+    <loop count="1">
+      <elt size="2" type="text" id="SPACE 0"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="6" type="int"  id="SCORE"        decoding-profile="bcd"/>
+      <elt size="6" type="text" id="SPACE 1"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="3" type="text" id="NAME"         charset="dkongjr" ascii-offset="48"/>
+      <elt size="5" type="text" id="SPACE 2"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="2" type="raw"  id="UNKNOWN 2"/>
+      <elt size="3" type="int"  id="SCORE SHORT"  endianness="little_endian" base="16"/>
+      <elt size="2" type="raw"  id="UNKNOWN 3"/>
+    </loop>
+    <loop count="3" start="1">
+      <elt size="2" type="raw"  id="UNKNOWN 1"/>
+      <elt size="3" type="text" id="RANK 2"       charset="dkongjr" ascii-offset="48"/>
+      <elt size="2" type="text" id="SPACE 0"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="6" type="int"  id="SCORE"        decoding-profile="bcd"/>
+      <elt size="6" type="text" id="SPACE 1"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="3" type="text" id="NAME"         charset="dkongjr" ascii-offset="48"/>
+      <elt size="5" type="text" id="SPACE 2"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="2" type="raw"  id="UNKNOWN 2"/>
+      <elt size="3" type="int"  id="SCORE SHORT"  endianness="little_endian" base="16"/>
+      <elt size="2" type="raw"  id="UNKNOWN 3"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="2" type="raw"  id="UNKNOWN 1"/>
+      <elt size="3" type="text" id="RANK 2"       charset="dkongjr" ascii-offset="48"/>
+      <elt size="2" type="text" id="SPACE 0"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="6" type="int"  id="SCORE"        decoding-profile="bcd"/>
+      <elt size="6" type="text" id="SPACE 1"      charset="dkongjr" ascii-offset="48"/>
+      <elt size="3" type="text" id="NAME"         charset="dkongjr" ascii-offset="48"/>
+      <elt size="5" type="text" id="SPACE 2"      charset="dkongjr" ascii-offset="48"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE"      endianness="little_endian" base="16"/>
+    <elt size="1" type="text" id="SPACE"          charset="dkongjr" ascii-offset="48"/>
+    <elt size="6" type="int"  id="TOP SCORE LONG" decoding-profile="bcd"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="RANK 2"                display="debug"/>
+      <column id="SPACE 0"               display="debug"/>
+      <column id="SCORE"/>
+      <column id="SPACE 1"               display="debug"/>
+      <column id="NAME"/>
+      <column id="SPACE 2"               display="debug"/>
+      <column id="UNKNOWN 1" format="0x" display="debug"/>
+      <column id="UNKNOWN 2" format="0x" display="debug"/>
+      <column id="UNKNOWN 3" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE"      display="extra"/>
+    <field id="TOP SCORE LONG" display="debug"/>
+    <field id="SPACE"          display="debug"/>
+  </output>
+  
+  <charset id="dkongjr">
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+    <char src="0x2C" dst="-"/>
+  </charset>
+</hi2txt>

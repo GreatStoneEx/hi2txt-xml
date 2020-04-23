@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:101782:4:00:00
+                  0:101846:5a:00:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>94</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="6" type="text" id="NAME" byte-skip="odd" charset="donpachi" ascii-offset="-9" ascii-step="2"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="STAGE" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="raw"  id="DEFAULT" base="16"/> <!-- not sure //-->
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="2" type="int"  id="MAXHIT"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="MAXHIT"/>
+      <column id="DEFAULT" format="default" display="extra"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="Red (P1)"/>
+    <case src="1" dst="Green (P1)"/>
+    <case src="2" dst="Blue (P1)"/>
+    <case src="3" dst="Yellow (P2)"/>
+    <case src="4" dst="Purple (P2)"/>
+    <case src="5" dst="Grey (P2)"/>
+  </format>
+  <format id="default">
+    <case src="0" dst="yes"/>
+    <case src="2" dst="no"/>
+  </format>
+  
+  <charset id="donpachi">
+    <char src="0x00" dst=" "/>
+    <char src="0x38" dst="."/>
+  </charset>
+</hi2txt>

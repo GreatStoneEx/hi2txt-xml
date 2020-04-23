@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Gravitar">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,41e,30,50,05</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>48</size>
+    </check>
+	<loop count="8"><elt size="1" type="int"  id="SCORE_LOW"  base="16"                            table-index="loop_reverse_index"/></loop>
+	<loop count="8"><elt size="1" type="int"  id="SCORE_HIGH" base="16"                            table-index="loop_reverse_index"/></loop>
+	                <elt size="8" type="raw"  id="EMPTY"/>
+	<loop count="8"><elt size="1" type="text" id="NAME_L1"    ascii-offset="64" charset="charconv" table-index="loop_reverse_index"/></loop>
+	<loop count="8"><elt size="1" type="text" id="NAME_L2"    ascii-offset="64" charset="charconv" table-index="loop_reverse_index"/></loop>
+	<loop count="8"><elt size="1" type="text" id="NAME_L3"    ascii-offset="64" charset="charconv" table-index="loop_reverse_index"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+      <column id="NAME"  format="name"/>
+    </table>
+  </output>
+  
+  <format id="score">
+    <sum>
+      <column id="SCORE_HIGH" format="*100"/>
+      <column id="SCORE_LOW"/>
+    </sum>
+  </format>
+  
+  <format id="name">
+    <concat>
+      <column id="NAME_L1"/>
+      <column id="NAME_L2"/>
+	  <column id="NAME_L3"/>
+    </concat>
+  </format>
+  
+  <charset id="charconv">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

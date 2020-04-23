@@ -1,0 +1,26 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>55630</cell><cell>GON</cell></row>
+    <row><cell>2</cell><cell>51680</cell><cell>SAK</cell></row>
+    <row><cell>3</cell><cell>50970</cell><cell>SIN</cell></row>
+    <row><cell>4</cell><cell>50060</cell><cell>KOB</cell></row>
+    <row><cell>5</cell><cell>49000</cell><cell>TAK</cell></row>
+    <row><cell>6</cell><cell>47040</cell><cell>MOH</cell></row>
+    <row><cell>7</cell><cell>41100</cell><cell>TEN</cell></row>
+    <row><cell>8</cell><cell>40990</cell><cell>AZU</cell></row>
+    <row><cell>9</cell><cell>40090</cell><cell>NAK</cell></row>
+    <row><cell>10</cell><cell>39550</cell><cell>KAT</cell></row>
+    <row><cell>11</cell><cell>39510</cell><cell>NIS</cell></row>
+    <row><cell>12</cell><cell>38860</cell><cell>KIT</cell></row>
+    <row><cell>13</cell><cell>35400</cell><cell>YUM</cell></row>
+    <row><cell>14</cell><cell>34020</cell><cell>MAR</cell></row>
+    <row><cell>15</cell><cell>33900</cell><cell>SAC</cell></row>
+    <row><cell>16</cell><cell>31880</cell><cell>KOU</cell></row>
+    <row><cell>17</cell><cell>30020</cell><cell>YOS</cell></row>
+    <row><cell>18</cell><cell>29100</cell><cell>YAS</cell></row>
+    <row><cell>19</cell><cell>26710</cell><cell>SAC</cell></row>
+    <row><cell>20</cell><cell>25040</cell><cell>VOF</cell></row>
+  </table>
+  <field id="TOP SCORE">55630</field>
+</hi2txt>

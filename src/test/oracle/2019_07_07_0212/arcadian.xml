@@ -1,0 +1,8 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>10020</cell><cell>.HP</cell><cell>0x00014000000001C8904000000D550001B0220000000100</cell></row>
+    <row><cell>2</cell><cell>7310</cell><cell> 01</cell><cell>0x00024000000001C8EC4000000D550001B0220000000100</cell></row>
+    <row><cell>3</cell><cell>5780</cell><cell>ABC</cell><cell>0x00034000000001C8508000000D550001B022</cell></row>
+  </table>
+</hi2txt>

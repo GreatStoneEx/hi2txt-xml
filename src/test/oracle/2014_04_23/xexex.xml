@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>114400</cell><cell>ZGY</cell><cell>0x040000</cell></row>
+    <row><cell>2</cell><cell>114400</cell><cell>AAA</cell><cell>0x040000</cell></row>
+    <row><cell>3</cell><cell>57300</cell><cell>T.T</cell><cell>0x040C00</cell></row>
+    <row><cell>4</cell><cell>38300</cell><cell>AAA</cell><cell>0x040000</cell></row>
+    <row><cell>5</cell><cell>31700</cell><cell>AAA</cell><cell>0x040000</cell></row>
+    <row><cell>6</cell><cell>17400</cell><cell>AAA</cell><cell>0x040000</cell></row>
+    <row><cell>7</cell><cell>15700</cell><cell>AAA</cell><cell>0x040000</cell></row>
+    <row><cell>8</cell><cell>10000</cell><cell>M.M</cell><cell>0x001400</cell></row>
+    <row><cell>9</cell><cell>9000</cell><cell>K.K</cell><cell>0x041400</cell></row>
+    <row><cell>10</cell><cell>8000</cell><cell>T.F</cell><cell>0x0414</cell></row>
+  </table>
+  <field id="TOP SCORE">114400</field>
+</hi2txt>

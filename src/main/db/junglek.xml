@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-05-26 add piratpet
+    tested:
+      junglek:  mame 0.148 and related hiscore.dat
+      piratpet: mame 0.153 and hiscore.dat 2015-01-31
+    source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:816b:1:00:00
+                  0:816c:1:50:50
+                  0:816d:1:00:00</definition>
+      <definition>0:816c:1:00:00
+                  0:816d:1:50:50
+                  0:816e:1:00:00</definition> <!-- piratpet //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>3</size>
+    </check>
+    <loop count="1">
+      <elt size="3"  type="int"  id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+</hi2txt>

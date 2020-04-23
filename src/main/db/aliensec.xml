@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:280:49:00:20
+                  0:74:3:00:65</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>76</size>
+    </check>
+    <loop count="4">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="FLOOR" base="16"/>
+      <elt size="5" type="text" id="NAME"  charset="aliensec"/>
+      <elt size="7" type="raw"  id="UNUSED"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="FLOOR" base="16"/>
+      <elt size="5" type="text" id="NAME"  charset="aliensec"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="FLOOR"/>
+      <column id="UNUSED" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="aliensec">
+    <char src="0x62" dst="&snowman;"/> <!-- alien head //-->
+  </charset>
+</hi2txt>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+      
+      tech-rank
+101      Gold Hawk
+         Silver Hawk
+         Iron Hawk
+         Gold Condor
+         Silver Condor
+         Iron Condor
+         Gold Eagle
+67  0x43 Silver Eagle
+         Iron Eagle
+60  0x3C Gold Swan
+         Silver Swan
+         Iron Swan
+45  0x2D Gold Crow
+         Silver Crow
+         Iron Crow
+         Gold Owl
+         Silver Owl
+16  0x10 Iron Owl
+12  0x0C Gold Duck
+         Silver Duck
+0   0x00 Iron Duck
+
+  //-->
+  
+  <structure file="fm1208s">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>512</size>
+    </check>
+    <elt size="48" type="raw"  id="UNKNOWN"/>
+    <elt size="1"  type="raw"  id="UNKNOWN2"/>
+    <loop count="10">
+      <elt size="1" type="int"  id="TECH-RANK"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="3" type="text" id="NAME"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"     format="stage"/>
+      <column id="TECH-RANK" format="tech"/>
+    </table>
+    <field id="UNKNOWN2" format="0x" display="debug"/>
+  </output>
+  
+  <!-- Huge thanks to the author of the following page,
+       the only one in the big Internet to describe
+       the percentage associated to each tech-rank
+       http://www5a.biglobe.ne.jp/~R-GRAY0/g/system.htm //-->
+  <format id="tech">
+    <case operator="&lt;=" src="5"    dst="Iron Duck"/>
+    <case operator="&lt;=" src="10"   dst="Silver Duck"/>
+    <case operator="&lt;=" src="15"   dst="Gold Duck"/>
+    <case operator="&lt;=" src="20"   dst="Iron Owl"/>
+    <case operator="&lt;=" src="25"   dst="Silver Owl"/>
+    <case operator="&lt;=" src="30"   dst="Gold Owl"/>
+    <case operator="&lt;=" src="35"   dst="Iron Crow"/>
+    <case operator="&lt;=" src="40"   dst="Silver Crow"/>
+    <case operator="&lt;=" src="45"   dst="Gold Crow"/>
+    <case operator="&lt;=" src="50"   dst="Iron Swan"/>
+    <case operator="&lt;=" src="55"   dst="Silver Swan"/>
+    <case operator="&lt;=" src="60"   dst="Gold Swan"/>
+    <case operator="&lt;=" src="65"   dst="Iron Eagle"/>
+    <case operator="&lt;=" src="70"   dst="Silver Eagle"/>
+    <case operator="&lt;=" src="75"   dst="Gold Eagle"/>
+    <case operator="&lt;=" src="80"   dst="Iron Condor"/>
+    <case operator="&lt;=" src="85"   dst="Silver Condor"/>
+    <case operator="&lt;=" src="90"   dst="Gold Condor"/>
+    <case operator="&lt;=" src="95"   dst="Iron Hawk"/>
+    <case operator="&lt;=" src="100"  dst="Silver Hawk"/>
+    <case operator="&lt;=" src="105"  dst="Gold Hawk"/>
+  </format>
+
+  <format id="stage">
+    <case src="0"  dst=""/>
+    <case src="1"  dst="&alpha;"/>
+    <case src="2"  dst="&beta;"/>
+    <case src="3"  dst="&gamma;"/>
+    <case src="4"  dst="&delta;"/>
+    <case src="5"  dst="&epsilon;"/>
+    <case src="6"  dst="&zeta;"/>
+    <case src="7"  dst="&eta;"/>
+    <case src="8"  dst="&theta;"/>
+    <case src="9"  dst="&iota;"/>
+    <case src="10" dst="&kappa;"/>
+    <case src="11" dst="&lambda;"/>
+    <case src="12" dst="&mu;"/>
+    <case src="13" dst="&nu;"/>
+    <case src="14" dst="&xi;"/>
+    <case src="15" dst="&omicron;"/>
+  </format>
+</hi2txt>

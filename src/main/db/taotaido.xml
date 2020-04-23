@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Tao Taido">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:fe91e4:4e:14:02</definition>
+      <definition>0:fe9340:4e:01:02</definition> <!-- taotaidoa -->
+      <definition>0:fe91d4:4e:01:02</definition> <!-- taotaido3 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>78</size>
+    </check>
+    <loop count="10">
+    	<elt size="3" type="text" id="NAME" charset="taotaido" ascii-offset="64"/>
+    	<elt size="2" type="raw"  id="EMPTY"/>
+      <elt size="1" type="int"  id="WINS" base="16"/>
+      <elt size="1" type="raw"  id="EMPTY2"/>
+      <elt size="1" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="WINS"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+      <column id="EMPTY"   format="0x" display="debug"/>
+      <column id="EMPTY2"  format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="taotaido">
+    <char src="0x00" dst=" "/>
+    <char src="0x1B" dst="-"/>
+    <char src="0x1C" dst="."/>
+  </charset>
+</hi2txt>

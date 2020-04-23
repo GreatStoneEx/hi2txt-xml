@@ -1,0 +1,14 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>89175</cell><cell>BBM</cell></row>
+    <row><cell>2</cell><cell>88254</cell><cell>FXL</cell></row>
+    <row><cell>3</cell><cell>87830</cell><cell>MEC</cell></row>
+    <row><cell>4</cell><cell>86520</cell><cell>ED </cell></row>
+    <row><cell>5</cell><cell>75478</cell><cell>DUG</cell></row>
+    <row><cell>6</cell><cell>63084</cell><cell>DCB</cell></row>
+    <row><cell>7</cell><cell>52227</cell><cell>DEW</cell></row>
+    <row><cell>8</cell><cell>47671</cell><cell>AAA</cell></row>
+  </table>
+  <field id="UNKNOWN">0x14</field>
+</hi2txt>

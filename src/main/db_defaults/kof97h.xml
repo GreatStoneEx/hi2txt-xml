@@ -1,0 +1,25 @@
+<hi2txt>
+  <table id="SCORE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col><col>CHARACTER 3</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>100000</cell><cell>S.I</cell><cell>Kyo Kusanagi</cell><cell>Benimaru Nikaido</cell><cell>Goro Daimon</cell><cell>0</cell></row>
+    <row><cell>2</cell><cell>80000</cell><cell>ICH</cell><cell>Terry Bogard</cell><cell>Andy Bogard</cell><cell>Joe Higashi</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>60000</cell><cell>BIN</cell><cell>Ryo Sakazaki</cell><cell>Robert Garcia</cell><cell>Yuri Sakazaki</cell><cell>0</cell></row>
+    <row><cell>4</cell><cell>40000</cell><cell>EIN</cell><cell>Leona</cell><cell>Ralf</cell><cell>Clark</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>BOY</cell><cell>Athena Asamiya</cell><cell>Sie Kensou</cell><cell>Chin Gentsai</cell><cell>0</cell></row>
+  </table>
+  <table id="WIN %">
+    <col>RANK</col><col>CHARACTER</col><col>WIN %</col>
+    <row><cell>1</cell><cell>Benimaru Nikaido</cell><cell>00.0%</cell></row>
+    <row><cell>2</cell><cell>Goro Daimon</cell><cell>00.0%</cell></row>
+    <row><cell>3</cell><cell>Terry Bogard</cell><cell>00.0%</cell></row>
+    <row><cell>4</cell><cell>Andy Bogard</cell><cell>00.0%</cell></row>
+    <row><cell>5</cell><cell>Joe Higashi</cell><cell>00.0%</cell></row>
+    <row><cell>6</cell><cell>Ralf</cell><cell>00.0%</cell></row>
+    <row><cell>7</cell><cell>Leona</cell><cell>00.0%</cell></row>
+    <row><cell>8</cell><cell>Yuri Sakazaki</cell><cell>00.0%</cell></row>
+    <row><cell>9</cell><cell>Robert Garcia</cell><cell>00.0%</cell></row>
+    <row><cell>10</cell><cell>Ryo Sakazaki</cell><cell>00.0%</cell></row>
+  </table>
+</hi2txt>
+
+

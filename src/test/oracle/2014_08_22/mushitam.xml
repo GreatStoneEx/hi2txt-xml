@@ -1,0 +1,16 @@
+<hi2txt>
+  <field id="UNKNOWN2">0x0074006F0070</field>
+  <table>
+    <col>INDEX</col><col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>TIME</col><col>PATH</col><col>MODE</col>
+    <row><cell>1</cell><cell>1</cell><cell>3147914</cell><cell>Z&#12383;&#12414;&#12383;&#12414;</cell><cell>5-6</cell><cell>59:22:02</cell><cell>---4-</cell><cell>1P</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>2500000</cell><cell>UOT</cell><cell>5-5</cell><cell>30:00:00</cell><cell>----5</cell><cell>1P</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>2000000</cell><cell>ARO</cell><cell>5-1</cell><cell>25:00:00</cell><cell>-2---</cell><cell>1P</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>1500000</cell><cell>.AN</cell><cell>4-6</cell><cell>20:00:00</cell><cell>1---</cell><cell>1P</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>1000000</cell><cell>D.P</cell><cell>3-4</cell><cell>15:00:00</cell><cell>--3</cell><cell>1P</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>2500000</cell><cell>UOT</cell><cell>5-5</cell><cell>30:00:00</cell><cell>----5</cell><cell>2P</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>2000000</cell><cell>ARO</cell><cell>5-1</cell><cell>25:00:00</cell><cell>-2---</cell><cell>2P</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>1500000</cell><cell>.AN</cell><cell>4-6</cell><cell>20:00:00</cell><cell>1---</cell><cell>2P</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>1000000</cell><cell>D.P</cell><cell>3-4</cell><cell>15:00:00</cell><cell>--3</cell><cell>2P</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>500000</cell><cell>OKO</cell><cell>2-3</cell><cell>10:00:00</cell><cell>1-</cell><cell>2P</cell></row>
+  </table>
+</hi2txt>

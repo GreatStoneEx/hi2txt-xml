@@ -1,0 +1,18 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>94532</cell><cell>AUK</cell></row>
+    <row><cell>2</cell><cell>88217</cell><cell>AUK</cell></row>
+    <row><cell>3</cell><cell>77285</cell><cell>AUK</cell></row>
+    <row><cell>4</cell><cell>61122</cell><cell>ORR</cell></row>
+    <row><cell>5</cell><cell>57072</cell><cell>MEC</cell></row>
+    <row><cell>6</cell><cell>45852</cell><cell>M H</cell></row>
+    <row><cell>7</cell><cell>31554</cell><cell>DES</cell></row>
+    <row><cell>8</cell><cell>29365</cell><cell>G C</cell></row>
+    <row><cell>9</cell><cell>8109</cell><cell>BAW</cell></row>
+    <row><cell>10</cell><cell>5240</cell><cell>SYN</cell></row>
+  </table>
+  <field id="CHECK">0xCE</field>
+  <field id="UNKNOWN1_NV">0xFFFF</field>
+  <field id="UNKNOWN2_NV">0xBD</field>
+</hi2txt>

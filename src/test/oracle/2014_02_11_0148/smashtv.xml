@@ -1,0 +1,28 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>3051048</cell><cell>JON</cell><cell>0xB800</cell></row>
+    <row><cell>2</cell><cell>1848000</cell><cell>TIM</cell><cell>0x1000</cell></row>
+    <row><cell>3</cell><cell>1798218</cell><cell>TJE</cell><cell>0x0800</cell></row>
+    <row><cell>4</cell><cell>1750072</cell><cell>LIP</cell><cell>0x3200</cell></row>
+    <row><cell>5</cell><cell>1691196</cell><cell>MLZ</cell><cell>0xFB00</cell></row>
+    <row><cell>6</cell><cell>1651008</cell><cell>GWS</cell><cell>0x9000</cell></row>
+    <row><cell>7</cell><cell>1606233</cell><cell>ALT</cell><cell>0x2800</cell></row>
+    <row><cell>8</cell><cell>570218</cell><cell>BLS</cell><cell>0xAD00</cell></row>
+    <row><cell>9</cell><cell>500001</cell><cell>JON</cell><cell>0xC700</cell></row>
+    <row><cell>10</cell><cell>456571</cell><cell>HEY</cell><cell>0xFE00</cell></row>
+  </table>
+  <table id="TODAYS TOP SCORES">
+    <col>TODAYS RANK</col><col>TODAYS SCORE</col><col>TODAYS NAME</col><col>TODAYS UNKNOWN</col>
+    <row><cell>1</cell><cell>200127</cell><cell>MJT</cell><cell>0xCC00</cell></row>
+    <row><cell>2</cell><cell>190169</cell><cell>DRJ</cell><cell>0x9C00</cell></row>
+    <row><cell>3</cell><cell>100865</cell><cell>DJT</cell><cell>0xA000</cell></row>
+    <row><cell>4</cell><cell>82164</cell><cell>NLN</cell><cell>0x8A00</cell></row>
+    <row><cell>5</cell><cell>57218</cell><cell>MTN</cell><cell>0x8100</cell></row>
+    <row><cell>6</cell><cell>51255</cell><cell>TLC</cell><cell>0xB000</cell></row>
+    <row><cell>7</cell><cell>41250</cell><cell>FAW</cell><cell>0xBB00</cell></row>
+    <row><cell>8</cell><cell>31920</cell><cell>FOO</cell><cell>0xDF00</cell></row>
+    <row><cell>9</cell><cell>29944</cell><cell>BAT</cell><cell>0x4900</cell></row>
+    <row><cell>10</cell><cell>25738</cell><cell>MAN</cell><cell>0x9200</cell></row>
+  </table>
+</hi2txt>

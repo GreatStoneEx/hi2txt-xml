@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.148 and related hiscore.dat
+	  mame 0.219 and related hiscore.dat
+	history:
+	  2020-04-16 put the nvram with a higher priority so that if existing it will overwrite hi file as it is no more updated after a 2nd hiscore
+    source: HiToText (hi), GreatStone (nvram)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:89A0:25:01:01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>37</size>
+    </check>
+    <loop count="5"><elt size="3" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/></loop>
+                    <elt size="1" type="raw"  id="UNKNOWN 1"/>
+    <loop count="5"><elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="digdug" ascii-offset="39"/></loop>
+                    <elt size="1" type="raw"  id="UNKNOWN 2"/>
+    <loop count="5"><elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index" base="16"/></loop>
+  </structure>
+  
+  <structure file="earom">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>64</size>
+    </check>
+    <loop count="5"><elt size="3" type="int"  id="SCORE" table-index="loop_reverse_index" base="16"/></loop>
+                    <elt size="1" type="raw"  id="UNKNOWN 1"/>
+    <loop count="5"><elt size="3" type="text" id="NAME"  table-index="loop_reverse_index" charset="digdug" ascii-offset="39"/></loop>
+                    <elt size="1" type="raw"  id="UNKNOWN 2"/>
+    <loop count="5"><elt size="1" type="int"  id="STAGE" table-index="loop_reverse_index" base="16"/></loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="UNKNOWN 1" format="0x" display="debug"/>
+    <field id="UNKNOWN 2" format="0x" display="debug"/>
+  </output>
+  
+  <charset id="digdug">
+    <char src="0x35" dst="."/>
+    <char src="0x37" dst=" "/>
+  </charset>
+</hi2txt>

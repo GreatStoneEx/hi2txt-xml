@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Hunchback">
+  <!--
+    tested with:
+	  mame 0.221 and embedded hiscore.dat
+	  mame 0.219 and embedded hiscore.dat
+	  mame 0.181 and embedded hiscore.dat
+	history:
+	  2020-04-12 add specific decoding to fix the last name issue, thanks to Leezer
+	  2020-04-11 add specific decoding for some clones
+	notes:
+	  hiscores saved form the '4f' clones are not stored the 1st letter of the last name: 0x4f size should be 0x50
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,1c07,68,00,00
+                  @:maincpu,program,1c34,1,20,20</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>105</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int"  id="SCORE"/>
+    </loop>
+	<elt size="3"  type="int"  id="LAST SCORE"/>
+	<elt size="36" type="raw"  id="UNKNOWN"/>
+	<loop count="5">
+      <elt size="7" type="raw"  id="EMPTY"/>
+	  <elt size="3" type="text" id="NAME" endianness="little_endian" charset="charconv" ascii-offset="64"/>
+    </loop>
+	<elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi" output="4f_50">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+	  <definition>@:maincpu,program,1c23,50,1b,00
+                  @:maincpu,program,1c73,1,01,01</definition> <!-- hunchbkd in mame 0.221 -->
+	  <definition>@:maincpu,program,1c0a,50,1b,00
+                  @:maincpu,program,1c0f,1,00,00
+                  @:maincpu,program,1c0d,1,20,20</definition> <!-- hunchbkg in mame 0.221 -->
+	  <definition>@:maincpu,program,3c0a,50,1b,00
+                  @:maincpu,program,3c25,1,20,20</definition> <!-- hunchbks,hunchbks2 in mame 0.221 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>81</size>
+	  <size>82</size>
+    </check>
+    <loop count="5">
+      <elt size="6" type="text"  id="SCORE" endianness="little_endian" ascii-offset="21"/>
+    </loop>
+	<loop count="5">
+      <elt size="7" type="raw"  id="EMPTY"/>
+	  <elt size="3" type="text" id="NAME" endianness="little_endian" charset="charconv" ascii-offset="64"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi" output="4f_50">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+	  <definition>@:maincpu,program,1c23,4f,1b,00
+                  @:maincpu,program,1c73,1,01,01</definition> <!-- hunchbkd -->
+      <definition>@:maincpu,program,1c0a,4f,1b,00
+                  @:maincpu,program,1c0f,1,00,00
+                  @:maincpu,program,1c0d,1,20,20</definition> <!-- hunchbkg -->
+      <definition>@:maincpu,program,3c0a,4f,1b,00
+                  @:maincpu,program,3c25,1,20,20</definition> <!-- hunchbks,hunchbks2 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>80</size>
+	  <size>81</size>
+    </check>
+    <loop count="5">
+      <elt size="6" type="text"  id="SCORE" endianness="little_endian" ascii-offset="21"/>
+    </loop>
+	<loop count="5" skip-last-bytes="1">
+      <elt size="7" type="raw"  id="EMPTY"/>
+	  <elt size="3" type="text" id="NAME" endianness="little_endian" charset="charconv" ascii-offset="64"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*100"/>
+      <column id="NAME"/>
+	  <column id="EMPTY" display="debug"/>
+    </table>
+	<field id="LAST SCORE" format="*100"/>
+	<field id="CHECK"      format="0x" display="debug"/>
+  </output>
+  
+  <output id="4f_50">
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x00" dst=" "/>
+	<char src="0x28" dst="."/>
+  </charset>
+</hi2txt>

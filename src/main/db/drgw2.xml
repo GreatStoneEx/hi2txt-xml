@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Dragon World II">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:80caf8:46:49:40</definition>
+      <definition>0:80f13a:46:49:40</definition> <!-- drgw2hk -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>70</size>
+    </check>
+    <loop count="5">
+    	<elt size="4" type="text" id="NAME" charset="drgw2"/>
+    	<elt size="6" type="raw"  id="SEPARATOR"/>
+    </loop>	
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"/>
+    </loop>	
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="drgw2">
+  	<char src="0x00" dst=""/>
+  </charset>
+</hi2txt>

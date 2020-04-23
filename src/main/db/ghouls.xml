@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Ghouls'n Ghosts">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ffbf4c:78:48:a8
+                  0:ff087a:04:00:00</definition>
+	  <definition>@:maincpu,program,ffbf4c,78,48,a8
+                  @:maincpu,program,ff087a,04,00,00
+                  @:maincpu,program,ffbfa9,01,01,01</definition> <!-- from 0.190 -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>124</size>
+	  <size>125</size> <!-- from 0.190 -->
+    </check>
+    <loop count="6">
+    	<elt size="8" type="text" id="NAME" charset="ghouls"/>
+    </loop>
+    <loop count="6">
+      <elt size="4" type="int"  id="NAME ADDRESS"/>	
+    </loop>
+    <loop count="6">
+      <elt size="4" type="int"  id="SCORE" base="16"/>	
+    </loop>
+    <loop count="6">
+      <elt size="4" type="int"  id="SCORE ADDRESS"/>	
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table sort="RANK" lines-max="5">
+      <column id="RANK" src="NAME ADDRESS" format="-16760652;/8;+1"/>
+      <column id="SCORE"/>
+      <column id="NAME" format="TrimR "/>
+      <column id="SCORE ADDRESS" format="-16760724;/4" display="debug"/>
+      <column id="NAME ADDRESS"  format="-16760652;/8" display="debug"/>
+      <column id="SEPARATOR" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="ghouls">
+  	<char src="0x3E" dst="&black-heart;"/>
+  	<char src="0x3F" dst="/"/>
+    <char src="0x7E" dst="&two-exclamations;"/>
+    <char src="0x7F" dst="?"/>
+  </charset>
+</hi2txt>

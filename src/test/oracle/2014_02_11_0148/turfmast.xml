@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>COURSE</col>
+    <row><cell>1</cell><cell>-3</cell><cell>M!K</cell><cell>SEASIDE</cell></row>
+    <row><cell>2</cell><cell>-1</cell><cell>AAA</cell><cell>G.CANYON</cell></row>
+    <row><cell>3</cell><cell>EVEN</cell><cell>XYZ</cell><cell>FUJIYAMA</cell></row>
+    <row><cell>4</cell><cell>+1</cell><cell>R0Y</cell><cell>WOODY</cell></row>
+    <row><cell>5</cell><cell>+4</cell><cell>!!?</cell><cell>SEASIDE</cell></row>
+  </table>
+</hi2txt>

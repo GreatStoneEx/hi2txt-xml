@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.189 and embedded hiscore.dat
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+	  <definition>@:maincpu,program,e626,23,00,48
+                  @:maincpu,program,e64d,3,1f,13
+                  @:maincpu,program,e623,3,00,00
+                  @:maincpu,program,e5ef,1,00,00
+                  @:maincpu,program,e5f0,1,00,00
+                  @:maincpu,program,e5f2,1,00,00
+                  @:maincpu,program,e5f3,1,00,00
+                  @:maincpu,program,e5f4,1,00,00
+                  @:maincpu,program,e5f5,1,00,00
+                  @:maincpu,program,e5f6,1,00,00
+                  @:maincpu,program,e5f7,1,00,00
+                  @:maincpu,program,e5f8,1,00,00
+                  @:maincpu,program,e5f9,1,00,00
+                  @:maincpu,program,e5fa,1,00,00
+                  @:maincpu,program,e5fb,1,00,00
+                  @:maincpu,program,e5fc,1,00,00
+                  @:maincpu,program,e5fd,1,00,00
+                  @:maincpu,program,e5fe,1,00,00
+                  @:maincpu,program,e5ff,1,00,00
+                  @:maincpu,program,e600,1,00,00
+                  @:maincpu,program,e601,1,00,00
+                  @:maincpu,program,e602,1,00,00
+                  @:maincpu,program,e603,1,00,00
+                  @:maincpu,program,e606,1,00,00
+                  @:maincpu,program,e607,1,00,00
+                  @:maincpu,program,e609,1,00,00
+                  @:maincpu,program,e60a,1,00,00
+                  @:maincpu,program,cfc6,1,60,60
+                  @:maincpu,program,d006,1,60,60
+                  @:maincpu,program,d046,1,60,60
+                  @:maincpu,program,d086,1,7e,7e
+                  @:maincpu,program,d0c6,1,7b,7b
+                  @:maincpu,program,d106,1,7b,7b
+                  @:maincpu,program,d146,1,7b,7b
+                  @:maincpu,program,d186,1,7b,7b</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>73</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME"  charset="bublbobl"/>
+    </loop>
+    <elt size="3" type="raw"  id="UNKNOWN"/>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="32">
+      <elt size="1" type="int"  id="SPECIAL ITEM COUNTERS" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <table id="SPECIAL ITEMS">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="SPECIAL ITEM COUNTERS" display="extra"/>
+    </table>
+    <field id="UNKNOWN"    format="0x" display="debug"/>
+  </output>
+  
+  <charset id="bublbobl">
+    <char src="0x20" dst=" "/>
+    <char src="0x2E" dst="."/>
+  </charset>
+</hi2txt>

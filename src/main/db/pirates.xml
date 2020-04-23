@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+	tested with mame 0.181 and related hiscore.dat  
+	  source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10a544:80:4e:00</definition>
+	  <definition>0:10a544:76:4e:10
+                  0:10a5b0:1:4e:4e</definition> <!-- hiscore.dat 2017-01-04 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>128</size>
+	  <size>119</size>
+    </check>
+    <loop count="10">
+      <elt size="4" type="text" id="NAME" charset="pirates"/>
+      <elt size="2" type="int"  id="STAGE"/>
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="2" type="raw"  id="PADDING"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+      <column id="PADDING" format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="pirates">
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt>

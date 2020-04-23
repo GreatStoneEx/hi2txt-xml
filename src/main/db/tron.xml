@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone (mode)
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2048</size>
+    </check>
+    <elt size="1284" type="raw" id="UNKNOWN"/>
+    <loop count="10">
+      <elt size="2" type="text" id="NAME"/>
+      <elt size="1" type="int"  id="MODE" base="16"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+    <elt size="7" type="raw" id="UNKNOWN2"/>
+    <loop count="10">
+      <elt size="3" type="int" id="SCORE" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="MODE" format="level"/>
+    </table>
+    <field id="TOP SCORE"                             display="extra"/>
+    <field id="UNKNOWN2"  format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="level">
+    <case src="0"  dst="RPG"/>
+    <case src="1"  dst="COBOL"/>
+    <case src="2"  dst="BASIC"/>
+    <case src="3"  dst="FORTRAN"/>
+    <case src="4"  dst="SNOBOL"/>
+    <case src="5"  dst="PL1"/>
+    <case src="6"  dst="PASCAL"/>
+    <case src="7"  dst="ALGOL"/>
+    <case src="8"  dst="ASSEMBLY"/>
+    <case src="9"  dst="OS"/>
+    <case src="10" dst="JCL"/>
+    <case src="11" dst="USER" operator="&gt;="/>
+  </format>
+</hi2txt>

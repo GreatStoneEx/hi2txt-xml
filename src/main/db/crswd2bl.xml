@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Crossed Swords 2">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+      source: GreatStone
+  //-->
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+    <elt size="3168" type="raw"  id="DATA"/>
+    <loop count="50">
+      <elt size="4"    type="int"  id="SCORE"/>
+	  <elt size="3"    type="text" id="NAME" ascii-offset="65" charset="charconv"/>
+	  <elt size="5"    type="raw"  id="EMPTY1"/>
+      <elt size="1"    type="int"  id="CHARACTER"/>
+      <elt size="1"    type="int"  id="BEST_PLAYER"/> <!-- ? -->
+      <elt size="1"    type="int"  id="RANK"/>
+      <elt size="1"    type="int"  id="LAST_SCORE"/>  <!-- ? -->
+    </loop>
+  </structure>
+  
+  <output>
+    <table sort="RANK">
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+	  <column id="EMPTY1"      format="0x"   display="debug"/>
+	  <column id="CHARACTER"   format="character"/>
+      <column id="BEST_PLAYER"               display="debug"/>
+      <column id="LAST_SCORE"                display="debug"/>
+    </table>
+  </output>
+    
+  <format id="character">
+    <case src="0"  dst="KNIGHT"/>
+	<case src="1"  dst="WARRIOR"/>
+	<case src="2"  dst="NINJA"/>
+	<case src="3"  dst="NPC"/>
+  </format> 
+  
+  <charset id="charconv">
+    <char src="0x1A" dst="."/>
+	<char src="0x1B" dst=" "/>
+	<char src="0x1C" dst=" "/>
+	<char src="0x1D" dst=" "/>
+	<char src="0x1E" dst=" "/>
+	<char src="0x1F" dst=" "/>
+  </charset>
+  
+</hi2txt>

@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>STAGE</col>
+    <row><cell>1</cell><cell>3000000</cell><cell>AER</cell><cell>YUSUKE SAGAMI</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>2500001</cell><cell>YUE</cell><cell>J-B 5TH</cell><cell>4</cell></row>
+    <row><cell>3</cell><cell>2000002</cell><cell>NOK</cell><cell>IRORI MIMASAKA</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>1500003</cell><cell>UNO</cell><cell>YUSUKE SAGAMI</cell><cell>2</cell></row>
+    <row><cell>5</cell><cell>1000004</cell><cell>JIJ</cell><cell>J-B 5TH</cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">3000000</field>
+</hi2txt>

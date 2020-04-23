@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:ff9680:78:ff:00
+                  0:ff0d98:04:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>124</size>
+    </check>
+    <loop count="10">
+	    <elt size="4" type="raw" id="POINTER"/>
+    </loop>
+	  <loop count="10">
+	    <elt size="4" type="int"  id="SCORE" base="16"/>
+	    <elt size="3" type="text" id="NAME"/>
+	    <elt size="1" type="int"  id="GRADE"/>
+	  </loop>
+    <elt   size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="POINTER" format="hexadecimal_string" display="debug"/>
+      <column id="RANK"    src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="GRADE"   format="grade_mapping"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="grade_mapping">
+    <case src="0" dst="SECOND LIEUTENANT" default="1"/>
+    <case src="1" dst="FIRST LIEUTENANT"/>
+    <case src="2" dst="CAPTAIN"/>
+    <case src="3" dst="MAJOR"/>
+    <case src="4" dst="LIEUTENANT COLONEL"/>
+    <case src="5" dst="COLONEL"/>
+    <case src="6" dst="6"/>
+    <case src="7" dst="7"/>
+  </format>
+</hi2txt>

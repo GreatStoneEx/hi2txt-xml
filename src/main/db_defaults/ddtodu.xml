@@ -1,0 +1,37 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>60000</cell><cell>GYGAX   </cell><cell>10</cell><cell>Elf</cell></row>
+    <row><cell>2</cell><cell>58000</cell><cell>DIANA   </cell><cell>13</cell><cell>Elf</cell></row>
+    <row><cell>3</cell><cell>56000</cell><cell>WOLFGANG</cell><cell>13</cell><cell>Fighter</cell></row>
+    <row><cell>4</cell><cell>54000</cell><cell>HERBERT </cell><cell>13</cell><cell>Cleric</cell></row>
+    <row><cell>5</cell><cell>52000</cell><cell>MARK    </cell><cell>10</cell><cell>Fighter</cell></row>
+    <row><cell>6</cell><cell>50000</cell><cell>MARGARET</cell><cell>12</cell><cell>Elf</cell></row>
+    <row><cell>7</cell><cell>48000</cell><cell>THOMAS  </cell><cell>12</cell><cell>Dwarf</cell></row>
+    <row><cell>8</cell><cell>46000</cell><cell>WILLIAM </cell><cell>10</cell><cell>Cleric</cell></row>
+    <row><cell>9</cell><cell>44000</cell><cell>SHOKO   </cell><cell>11</cell><cell>Elf</cell></row>
+    <row><cell>10</cell><cell>42000</cell><cell>CLEMATYS</cell><cell>9</cell><cell>Elf</cell></row>
+    <row><cell>11</cell><cell>40000</cell><cell>ERLINGR </cell><cell>11</cell><cell>Fighter</cell></row>
+    <row><cell>12</cell><cell>38000</cell><cell>ANN     </cell><cell>9</cell><cell>Elf</cell></row>
+    <row><cell>13</cell><cell>36000</cell><cell>CALVERT </cell><cell>10</cell><cell>Fighter</cell></row>
+    <row><cell>14</cell><cell>34000</cell><cell>JULIA   </cell><cell>8</cell><cell>Elf</cell></row>
+    <row><cell>15</cell><cell>32000</cell><cell>ADAM    </cell><cell>9</cell><cell>Dwarf</cell></row>
+    <row><cell>16</cell><cell>30000</cell><cell>LANCELOT</cell><cell>7</cell><cell>Fighter</cell></row>
+    <row><cell>17</cell><cell>26000</cell><cell>ARENA   </cell><cell>8</cell><cell>Dwarf</cell></row>
+    <row><cell>18</cell><cell>23000</cell><cell>GILBERT </cell><cell>7</cell><cell>Fighter</cell></row>
+    <row><cell>19</cell><cell>20000</cell><cell>LOUIS   </cell><cell>7</cell><cell>Cleric</cell></row>
+    <row><cell>20</cell><cell>18000</cell><cell>LUDWIG  </cell><cell>6</cell><cell>Fighter</cell></row>
+    <row><cell>21</cell><cell>16000</cell><cell>GALANT  </cell><cell>6</cell><cell>Fighter</cell></row>
+    <row><cell>22</cell><cell>14000</cell><cell>ROBERT  </cell><cell>6</cell><cell>Cleric</cell></row>
+    <row><cell>23</cell><cell>12000</cell><cell>ALDO    </cell><cell>7</cell><cell>Dwarf</cell></row>
+    <row><cell>24</cell><cell>10000</cell><cell>JANE    </cell><cell>5</cell><cell>Elf</cell></row>
+    <row><cell>25</cell><cell>8000</cell><cell>MARY    </cell><cell>4</cell><cell>Elf</cell></row>
+    <row><cell>26</cell><cell>6000</cell><cell>HANS    </cell><cell>5</cell><cell>Dwarf</cell></row>
+    <row><cell>27</cell><cell>4000</cell><cell>DAVID   </cell><cell>4</cell><cell>Fighter</cell></row>
+    <row><cell>28</cell><cell>3000</cell><cell>LALVA   </cell><cell>3</cell><cell>Fighter</cell></row>
+    <row><cell>29</cell><cell>2000</cell><cell>REBECCA </cell><cell>2</cell><cell>Elf</cell></row>
+    <row><cell>30</cell><cell>1000</cell><cell>ANTONIOo</cell><cell>1</cell><cell>Fighter</cell></row>
+  </table>
+</hi2txt>
+
+

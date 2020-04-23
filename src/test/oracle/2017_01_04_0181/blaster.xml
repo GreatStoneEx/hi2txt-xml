@@ -1,0 +1,53 @@
+<hi2txt>
+  <field id="WILLIAMS TEXT">WILLIAMS ELECTRONICS INC=           PRESENTS?     ((M&#222;</field>
+  <table id="SUPREME BLASTERS">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>FULL NAME</col>
+    <row><cell>1</cell><cell>511110</cell><cell>WMS</cell><cell>BILLY BLAST         </cell></row>
+    <row><cell>2</cell><cell>223450</cell><cell>VID</cell><cell></cell></row>
+    <row><cell>3</cell><cell>223350</cell><cell>KID</cell><cell></cell></row>
+    <row><cell>4</cell><cell>222220</cell><cell>DRJ</cell><cell></cell></row>
+    <row><cell>5</cell><cell>218570</cell><cell>LED</cell><cell></cell></row>
+    <row><cell>6</cell><cell>217500</cell><cell>JRS</cell><cell></cell></row>
+    <row><cell>7</cell><cell>216100</cell><cell>KLR</cell><cell></cell></row>
+    <row><cell>8</cell><cell>212000</cell><cell>DJW</cell><cell></cell></row>
+    <row><cell>9</cell><cell>188900</cell><cell>PGD</cell><cell></cell></row>
+    <row><cell>10</cell><cell>127550</cell><cell>JER</cell><cell></cell></row>
+    <row><cell>11</cell><cell>102200</cell><cell>ALI</cell><cell></cell></row>
+    <row><cell>12</cell><cell>91960</cell><cell>MLG</cell><cell></cell></row>
+    <row><cell>13</cell><cell>91950</cell><cell>NHD</cell><cell></cell></row>
+    <row><cell>14</cell><cell>90990</cell><cell>KJF</cell><cell></cell></row>
+    <row><cell>15</cell><cell>86880</cell><cell>MRS</cell><cell></cell></row>
+    <row><cell>16</cell><cell>85770</cell><cell>SSR</cell><cell></cell></row>
+    <row><cell>17</cell><cell>84310</cell><cell>UNA</cell><cell></cell></row>
+    <row><cell>18</cell><cell>83550</cell><cell>W R</cell><cell></cell></row>
+    <row><cell>19</cell><cell>82800</cell><cell>DON</cell><cell></cell></row>
+    <row><cell>20</cell><cell>82800</cell><cell>VIV</cell><cell></cell></row>
+    <row><cell>21</cell><cell>81050</cell><cell>GWW</cell><cell></cell></row>
+    <row><cell>22</cell><cell>80550</cell><cell>CRB</cell><cell></cell></row>
+    <row><cell>23</cell><cell>75650</cell><cell>MDR</cell><cell></cell></row>
+    <row><cell>24</cell><cell>72560</cell><cell>BAC</cell><cell></cell></row>
+    <row><cell>25</cell><cell>70700</cell><cell>JFB</cell><cell></cell></row>
+    <row><cell>26</cell><cell>59600</cell><cell>MPT</cell><cell></cell></row>
+    <row><cell>27</cell><cell>55200</cell><cell>SUE</cell><cell></cell></row>
+    <row><cell>28</cell><cell>44800</cell><cell>MOM</cell><cell></cell></row>
+    <row><cell>29</cell><cell>44790</cell><cell>DAD</cell><cell></cell></row>
+    <row><cell>30</cell><cell>44780</cell><cell>SFD</cell><cell></cell></row>
+    <row><cell>31</cell><cell>44770</cell><cell>AKD</cell><cell></cell></row>
+    <row><cell>32</cell><cell>33300</cell><cell>RKM</cell><cell></cell></row>
+    <row><cell>33</cell><cell>32700</cell><cell>CNS</cell><cell></cell></row>
+    <row><cell>34</cell><cell>31200</cell><cell>TIM</cell><cell></cell></row>
+  </table>
+  <table id="MASTER BLASTERS">
+    <col>RANK</col><col>MASTER SCORE</col><col>MASTER NAME</col>
+    <row><cell>1</cell><cell>222220</cell><cell>DRJ</cell></row>
+    <row><cell>2</cell><cell>218570</cell><cell>LED</cell></row>
+    <row><cell>3</cell><cell>217500</cell><cell>JRS</cell></row>
+    <row><cell>4</cell><cell>216100</cell><cell>KLR</cell></row>
+    <row><cell>5</cell><cell>212000</cell><cell>DJW</cell></row>
+    <row><cell>6</cell><cell>188900</cell><cell>PGD</cell></row>
+    <row><cell>7</cell><cell>127550</cell><cell>JER</cell></row>
+    <row><cell>8</cell><cell>102200</cell><cell>ALI</cell></row>
+    <row><cell>9</cell><cell>91960</cell><cell>MLG</cell></row>
+    <row><cell>10</cell><cell>91950</cell><cell>NHD</cell></row>
+  </table>
+</hi2txt>

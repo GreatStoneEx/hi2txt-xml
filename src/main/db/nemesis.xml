@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history
+      2015-05-11: support nemsis from hiscore.dat 20150131 and hi2txt report
+    tested:
+      mame 0.148 and related hiscore.dat
+      mame 0.153 and hiscore.dat 20150131
+    source: HiToText, GreatStone (zodiac signs, gradius, nemesis 20150131)
+  //-->
+  
+  <structure file=".hi"> <!-- nemesis hiscore.dat < 20150131 //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:06509a:1:76:76
+                  0:065010:8c:00:00
+                  0:060099:1:05:05
+                  0:06009a:1:73:73</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>143</size>
+    </check>
+    <elt size="1" type="raw"  id="UNKNOWN"/> <!-- is it related to the last score? //-->
+    <loop count="10">
+      <elt size="1" type="int"  id="GENDER"/>
+      <elt size="1" type="int"  id="ZODIAC"/>
+      <elt size="3" type="text" id="NAME" charset="nemesis" ascii-offset="64"/>
+      <elt size="5" type="raw"  id="DOT"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="2" type="int"  id="TOP SCORE" base="16"/> <!-- hiscore.dat: 2 bytes missing //-->
+  </structure>
+  
+  <structure file=".hi"> <!-- nemesis > hiscore.dat 20150131 //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:06509a:1:76:76
+                  0:065010:8c:00:00
+                  0:060098:4:00:00
+                  0:06009a:1:73:73</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>146</size>
+    </check>
+    <elt size="1" type="raw"  id="UNKNOWN"/> <!-- is it related to the last score? //-->
+    <loop count="10">
+      <elt size="1" type="int"  id="GENDER"/>
+      <elt size="1" type="int"  id="ZODIAC"/>
+      <elt size="3" type="text" id="NAME" charset="nemesis" ascii-offset="64"/>
+      <elt size="5" type="raw"  id="DOT"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi"> <!-- gradius //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:195f0:8c:00:00
+                  0:70098:4:00:00
+                  0:7009a:1:73:73</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>145</size>
+    </check>
+    <!-- no unknown byte here //-->
+    <loop count="10">
+      <elt size="1" type="int"  id="GENDER"/>
+      <elt size="1" type="int"  id="ZODIAC"/>
+      <elt size="3" type="text" id="NAME" charset="nemesis" ascii-offset="64"/>
+      <elt size="5" type="raw"  id="DOT"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/> <!-- correctly dumped //-->
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="GENDER" format="gender"/>
+      <column id="ZODIAC" format="zodiac"/>
+      <column id="DOT"    format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE"             display="extra"/> <!-- broken for nemesis < hiscore.dat 20150131 //-->
+    <field id="UNKNOWN"   format="0x" display="debug"/> <!-- only for nemesis //-->
+    <field id="CHECK"     format="0x" display="debug"/> <!-- only for nemesis > hiscore.dat 20150131 //-->
+  </output>
+    
+  <format id="gender">
+    <case src="0" dst="MALE"/>
+    <case src="1" dst="FEMALE"/>
+  </format>
+  <format id="zodiac">
+    <case src="0"  dst="&aries; ARIES"/>
+    <case src="1"  dst="&taurus; TAURUS"/>
+    <case src="2"  dst="&gemini; GEMINI"/>
+    <case src="3"  dst="&cancer; CANCER"/>
+    <case src="4"  dst="&leo; LEO"/>
+    <case src="5"  dst="&virgo; VIRGO"/>
+    <case src="6"  dst="&libra; LIBRA"/>
+    <case src="7"  dst="&scorpio; SCORPIO"/>
+    <case src="8"  dst="&sagitarius; SAGITARIUS"/>
+    <case src="9"  dst="&capricorn; CAPRICORN"/>
+    <case src="10" dst="&aquarius; AQUARIUS"/>
+    <case src="11" dst="&pisces; PISCES"/>
+  </format>
+  <charset id="nemesis">
+    <char src="0x00" dst=" "/>
+    <char src="0x1B" dst="-"/>
+    <char src="0x1C" dst="."/>
+  </charset>
+</hi2txt>

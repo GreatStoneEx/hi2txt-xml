@@ -1,0 +1,55 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>SEPARATOR</col>
+    <row><cell>1</cell><cell>489600</cell><cell>?&amp; AZ</cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>369800</cell><cell>09.:!</cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>100000</cell><cell>KIYO </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>90000</cell><cell>FUJI </cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>80000</cell><cell>JUNSU</cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>6</cell><cell>70000</cell><cell>TUNA </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>7</cell><cell>60000</cell><cell>HERO </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>8</cell><cell>50000</cell><cell>HASSY</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>9</cell><cell>49000</cell><cell>HAMA </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>10</cell><cell>48000</cell><cell>BOUR </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>11</cell><cell>47000</cell><cell>YOCHA</cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>12</cell><cell>46000</cell><cell>KURA </cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>13</cell><cell>45000</cell><cell>SAWA </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>14</cell><cell>44000</cell><cell>MARU </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>15</cell><cell>43000</cell><cell>UME  </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>16</cell><cell>42000</cell><cell>YOSHI</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>17</cell><cell>41000</cell><cell>YOUTE</cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>18</cell><cell>40000</cell><cell>UFO  </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>19</cell><cell>39000</cell><cell>IGAMI</cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>20</cell><cell>38000</cell><cell>NEKO </cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>21</cell><cell>37000</cell><cell>FUKU </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>22</cell><cell>36000</cell><cell>BAKKY</cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>23</cell><cell>35000</cell><cell>MATU </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>24</cell><cell>34000</cell><cell>MARUY</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>25</cell><cell>33000</cell><cell>OSINO</cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>26</cell><cell>32000</cell><cell>MISI </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>27</cell><cell>31000</cell><cell>SARU </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>28</cell><cell>30000</cell><cell>AKIYA</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>29</cell><cell>29000</cell><cell>NISI </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>30</cell><cell>28000</cell><cell>SAKA </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>31</cell><cell>27000</cell><cell>INOUE</cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>32</cell><cell>26000</cell><cell>MIURA</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>33</cell><cell>25000</cell><cell>POO  </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>34</cell><cell>24000</cell><cell>SYO  </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>35</cell><cell>23000</cell><cell>MESHI</cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>36</cell><cell>22000</cell><cell>SAKNZ</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>37</cell><cell>21000</cell><cell>FURO </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>38</cell><cell>20000</cell><cell>MIKA </cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>39</cell><cell>19000</cell><cell>SHIN </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>40</cell><cell>18000</cell><cell>ONO  </cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>41</cell><cell>17000</cell><cell>TOM  </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>42</cell><cell>16000</cell><cell>SENSE</cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>43</cell><cell>15000</cell><cell>SAKOM</cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>44</cell><cell>14000</cell><cell>TAKAP</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>45</cell><cell>13000</cell><cell>TK NY</cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>46</cell><cell>12000</cell><cell>KIHAJ</cell><cell>SIREN</cell><cell>0x0000</cell></row>
+    <row><cell>47</cell><cell>11000</cell><cell>KEN  </cell><cell>RASH</cell><cell>0x0000</cell></row>
+    <row><cell>48</cell><cell>10000</cell><cell>MONKI</cell><cell>JUSTICE</cell><cell>0x0000</cell></row>
+    <row><cell>49</cell><cell>9000</cell><cell>TORA </cell><cell>GRAY</cell><cell>0x0000</cell></row>
+    <row><cell>50</cell><cell>8000</cell><cell>BASS </cell><cell>SIREN</cell><cell></cell></row>
+  </table>
+</hi2txt>

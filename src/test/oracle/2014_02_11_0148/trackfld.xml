@@ -1,0 +1,63 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>43130</cell><cell>AAA</cell></row>
+    <row><cell>2</cell><cell>38220</cell><cell>AXV</cell></row>
+    <row><cell>3</cell><cell>34610</cell><cell>ABC</cell></row>
+    <row><cell>4</cell><cell>32860</cell><cell>AAA</cell></row>
+    <row><cell>5</cell><cell>29780</cell><cell>XVT</cell></row>
+    <row><cell>6</cell><cell>27430</cell><cell>AAA</cell></row>
+    <row><cell>7</cell><cell>25260</cell><cell>LMN</cell></row>
+    <row><cell>8</cell><cell>23370</cell><cell>AAP</cell></row>
+    <row><cell>9</cell><cell>23350</cell><cell>BCD</cell></row>
+    <row><cell>10</cell><cell>22770</cell><cell>IJK</cell></row>
+    <row><cell>11</cell><cell>21060</cell><cell>EFG</cell></row>
+    <row><cell>12</cell><cell>10420</cell><cell>AAC</cell></row>
+    <row><cell>13</cell><cell>10340</cell><cell> YW</cell></row>
+    <row><cell>14</cell><cell>9700</cell><cell>WVU</cell></row>
+    <row><cell>15</cell><cell>5600</cell><cell>XPM</cell></row>
+    <row><cell>16</cell><cell>5400</cell><cell>DEF</cell></row>
+  </table>
+  <table id="100M TOP SCORES">
+    <col>RANK</col><col>100M SCORE</col><col>100M NAME</col>
+    <row><cell>1</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00sec</cell><cell>   </cell></row>
+  </table>
+  <table id="LONG JUMP TOP SCORES">
+    <col>RANK</col><col>LONG JUMP SCORE</col><col>LONG JUMP NAME</col>
+    <row><cell>1</cell><cell>8.41m</cell><cell>XVT</cell></row>
+    <row><cell>2</cell><cell>8.41m</cell><cell>LMN</cell></row>
+    <row><cell>3</cell><cell>8.03m</cell><cell>AAA</cell></row>
+    <row><cell>4</cell><cell>7.97m</cell><cell>LMN</cell></row>
+  </table>
+  <table id="JAVELIN TOP SCORES">
+    <col>RANK</col><col>JAVELIN SCORE</col><col>JAVELIN NAME</col>
+    <row><cell>1</cell><cell>81.53m</cell><cell>AXV</cell></row>
+    <row><cell>2</cell><cell>79.36m</cell><cell>AAA</cell></row>
+    <row><cell>3</cell><cell>79.23m</cell><cell>AXV</cell></row>
+    <row><cell>4</cell><cell>74.40m</cell><cell>XVT</cell></row>
+  </table>
+  <table id="100M HURDLES TOP SCORES">
+    <col>RANK</col><col>100M HURDLES SCORE</col><col>100M HURDLES NAME</col>
+    <row><cell>1</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00sec</cell><cell>   </cell></row>
+  </table>
+  <table id="HAMMER TOP SCORES">
+    <col>RANK</col><col>HAMMER SCORE</col><col>HAMMER NAME</col>
+    <row><cell>1</cell><cell>87.00m</cell><cell>AAA</cell></row>
+    <row><cell>2</cell><cell>84.81m</cell><cell>AAA</cell></row>
+    <row><cell>3</cell><cell>81.73m</cell><cell> YW</cell></row>
+    <row><cell>4</cell><cell>81.00m</cell><cell>AAA</cell></row>
+  </table>
+  <table id="HIGH JUMP TOP SCORES">
+    <col>RANK</col><col>HIGH JUMP SCORE</col><col>HIGH JUMP NAME</col>
+    <row><cell>1</cell><cell>2.35m</cell><cell>AAA</cell></row>
+    <row><cell>2</cell><cell>2.30m</cell><cell>AAA</cell></row>
+    <row><cell>3</cell><cell>2.25m</cell><cell>AAA</cell></row>
+    <row><cell>4</cell><cell>2.15m</cell><cell>AAA</cell></row>
+  </table>
+</hi2txt>

@@ -1,0 +1,16 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>RACERANK</col>
+    <row><cell>1</cell><cell>36500</cell><cell>IEO</cell><cell>1st</cell></row>
+    <row><cell>2</cell><cell>32700</cell><cell>RRT</cell><cell>3rd</cell></row>
+    <row><cell>3</cell><cell>29400</cell><cell>ESE</cell><cell>2nd</cell></row>
+    <row><cell>4</cell><cell>24800</cell><cell>MEM</cell><cell>10th</cell></row>
+    <row><cell>5</cell><cell>21900</cell><cell>NUO</cell><cell>Retire</cell></row>
+    <row><cell>6</cell><cell>16100</cell><cell>OSI</cell><cell>11st</cell></row>
+    <row><cell>7</cell><cell>13300</cell><cell>TAI</cell><cell>Retire</cell></row>
+    <row><cell>8</cell><cell>9600</cell><cell>RWI</cell><cell>Retire</cell></row>
+    <row><cell>9</cell><cell>7200</cell><cell>AAW</cell><cell>Retire</cell></row>
+    <row><cell>10</cell><cell>5000</cell><cell>VTA</cell><cell>Retire</cell></row>
+  </table>
+</hi2txt>
+

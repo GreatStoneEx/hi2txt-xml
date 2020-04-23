@@ -1,0 +1,82 @@
+<hi2txt>
+  <table id="GP">
+    <col>GP</col><col>RANK</col><col>NAME</col><col>TIME</col>
+    <row><cell>U.S.A</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;00&apos;&apos;000</cell></row>
+    <row><cell>U.S.A</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;05&apos;&apos;000</cell></row>
+    <row><cell>U.S.A</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Brazil</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Brazil</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Brazil</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>San Marino</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;00&apos;&apos;000</cell></row>
+    <row><cell>San Marino</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;05&apos;&apos;000</cell></row>
+    <row><cell>San Marino</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Monaco</cell><cell>1</cell><cell>KAK</cell><cell>04&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Monaco</cell><cell>2</cell><cell>OGI</cell><cell>04&apos;15&apos;&apos;000</cell></row>
+    <row><cell>Monaco</cell><cell>3</cell><cell>FNA</cell><cell>04&apos;20&apos;&apos;000</cell></row>
+    <row><cell>Canada</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Canada</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;15&apos;&apos;000</cell></row>
+    <row><cell>Canada</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;20&apos;&apos;000</cell></row>
+    <row><cell>Mexico</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;00&apos;&apos;000</cell></row>
+    <row><cell>Mexico</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;05&apos;&apos;000</cell></row>
+    <row><cell>Mexico</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>France</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>France</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>France</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>British</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;00&apos;&apos;000</cell></row>
+    <row><cell>British</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;05&apos;&apos;000</cell></row>
+    <row><cell>British</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Germany</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;00&apos;&apos;000</cell></row>
+    <row><cell>Germany</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;05&apos;&apos;000</cell></row>
+    <row><cell>Germany</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;10&apos;&apos;000</cell></row>
+    <row><cell>Hungary</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Hungary</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Hungary</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>Belgium</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Belgium</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Belgium</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>Italy</cell><cell>1</cell><cell>KAK</cell><cell>02&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Italy</cell><cell>2</cell><cell>OGI</cell><cell>02&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Italy</cell><cell>3</cell><cell>FNA</cell><cell>02&apos;40&apos;&apos;000</cell></row>
+    <row><cell>Portugal</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Portugal</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Portugal</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>Spain</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;20&apos;&apos;000</cell></row>
+    <row><cell>Spain</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;25&apos;&apos;000</cell></row>
+    <row><cell>Spain</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Japan</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+    <row><cell>Japan</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;35&apos;&apos;000</cell></row>
+    <row><cell>Japan</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;40&apos;&apos;000</cell></row>
+    <row><cell>Australia</cell><cell>1</cell><cell>KAK</cell><cell>03&apos;20&apos;&apos;000</cell></row>
+    <row><cell>Australia</cell><cell>2</cell><cell>OGI</cell><cell>03&apos;25&apos;&apos;000</cell></row>
+    <row><cell>Australia</cell><cell>3</cell><cell>FNA</cell><cell>03&apos;30&apos;&apos;000</cell></row>
+  </table>
+  <table id="COURSE">
+    <col>COURSE</col><col>RANK</col><col>NAME</col><col>TOTAL TIME</col><col>POINT</col>
+    <row><cell>A</cell><cell>1</cell><cell>PRO</cell><cell>07&apos;30&apos;&apos;000</cell><cell>20</cell></row>
+    <row><cell>A</cell><cell>2</cell><cell>SEN</cell><cell>07&apos;40&apos;&apos;000</cell><cell>16</cell></row>
+    <row><cell>A</cell><cell>3</cell><cell>MAN</cell><cell>07&apos;45&apos;&apos;000</cell><cell>12</cell></row>
+    <row><cell>A</cell><cell>4</cell><cell>MOR</cell><cell>07&apos;50&apos;&apos;000</cell><cell>09</cell></row>
+    <row><cell>A</cell><cell>5</cell><cell>NAK</cell><cell>07&apos;55&apos;&apos;000</cell><cell>06</cell></row>
+    <row><cell>A</cell><cell>6</cell><cell>BER</cell><cell>08&apos;00&apos;&apos;000</cell><cell>04</cell></row>
+    <row><cell>B</cell><cell>1</cell><cell>ALE</cell><cell>08&apos;35&apos;&apos;000</cell><cell>20</cell></row>
+    <row><cell>B</cell><cell>2</cell><cell>BER</cell><cell>08&apos;40&apos;&apos;000</cell><cell>16</cell></row>
+    <row><cell>B</cell><cell>3</cell><cell>PAT</cell><cell>08&apos;45&apos;&apos;000</cell><cell>12</cell></row>
+    <row><cell>B</cell><cell>4</cell><cell>PIQ</cell><cell>08&apos;50&apos;&apos;000</cell><cell>09</cell></row>
+    <row><cell>B</cell><cell>5</cell><cell>MOD</cell><cell>08&apos;55&apos;&apos;000</cell><cell>06</cell></row>
+    <row><cell>B</cell><cell>6</cell><cell>SUZ</cell><cell>09&apos;00&apos;&apos;000</cell><cell>04</cell></row>
+    <row><cell>C</cell><cell>1</cell><cell>ALA</cell><cell>08&apos;35&apos;&apos;000</cell><cell>20</cell></row>
+    <row><cell>C</cell><cell>2</cell><cell>AYR</cell><cell>08&apos;40&apos;&apos;000</cell><cell>16</cell></row>
+    <row><cell>C</cell><cell>3</cell><cell>NIG</cell><cell>08&apos;45&apos;&apos;000</cell><cell>12</cell></row>
+    <row><cell>C</cell><cell>4</cell><cell>ROB</cell><cell>08&apos;50&apos;&apos;000</cell><cell>09</cell></row>
+    <row><cell>C</cell><cell>5</cell><cell>SAT</cell><cell>08&apos;55&apos;&apos;000</cell><cell>06</cell></row>
+    <row><cell>C</cell><cell>6</cell><cell>ERI</cell><cell>09&apos;00&apos;&apos;000</cell><cell>04</cell></row>
+    <row><cell>D</cell><cell>1</cell><cell>JEA</cell><cell>09&apos;25&apos;&apos;000</cell><cell>20</cell></row>
+    <row><cell>D</cell><cell>2</cell><cell>GER</cell><cell>09&apos;30&apos;&apos;000</cell><cell>16</cell></row>
+    <row><cell>D</cell><cell>3</cell><cell>RIC</cell><cell>09&apos;35&apos;&apos;000</cell><cell>12</cell></row>
+    <row><cell>D</cell><cell>4</cell><cell>NEL</cell><cell>09&apos;40&apos;&apos;000</cell><cell>09</cell></row>
+    <row><cell>D</cell><cell>5</cell><cell>STE</cell><cell>09&apos;45&apos;&apos;000</cell><cell>06</cell></row>
+    <row><cell>D</cell><cell>6</cell><cell>AGU</cell><cell>09&apos;50&apos;&apos;000</cell><cell>04</cell></row>
+  </table>
+</hi2txt>
+
+

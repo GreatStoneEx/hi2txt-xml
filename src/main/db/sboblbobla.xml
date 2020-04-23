@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e654:23:00:48
+                  0:e67b:3:1f:13
+                  0:e64c:3:00:00
+				  0:cfc6:1:60:60
+                  0:d006:1:60:60
+                  0:d046:1:60:60
+                  0:d086:1:7e:7e
+                  0:d0c6:1:7b:7b
+                  0:d106:1:7b:7b
+                  0:d146:1:7b:7b
+                  0:d186:1:7b:7b
+                  0:e5df:1:00:00
+                  0:e5e0:1:00:00
+                  0:e5e4:1:00:00
+                  0:e5e6:1:00:00
+                  0:e5e1:1:00:00
+                  0:e5e2:1:00:00
+                  0:e5e3:1:00:00
+                  0:e5e7:1:00:00
+                  0:e5e8:1:00:00
+                  0:e5e9:1:00:00
+                  0:e5ea:1:00:00
+                  0:e5eb:1:00:00
+                  0:e5f6:1:00:00
+                  0:e5f7:1:00:00
+                  0:e5ee:1:00:00
+                  0:e5ef:1:00:00
+                  0:e5f0:1:00:00
+                  0:e5ec:1:00:00
+                  0:e5ed:1:00:00
+                  0:e5f3:1:00:00
+                  0:e5f4:1:00:00
+                  0:e5d9:1:00:00
+                  0:e5da:1:00:00
+                  0:f457:1:00:00
+                  0:f458:1:00:00
+                  0:e601:1:00:00
+                  0:e602:1:00:00
+                  0:e600:1:00:00
+                  0:e5ff:1:00:00
+                  0:e5fd:1:00:00
+                  0:e5fc:1:00:00
+                  0:e5fb:1:00:00
+                  0:e5fa:1:00:00
+                  0:e5f9:1:00:00
+                  0:e5f8:1:00:00
+                  0:e5fe:1:00:00
+                  0:e604:1:00:00
+                  0:e605:1:00:00
+                  0:e606:1:00:00
+                  0:e607:1:00:00
+                  0:e609:1:00:00
+                  0:e60a:1:00:00
+                  0:e611:1:00:00
+                  0:e60b:2:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>94</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="1" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME"  charset="bublbobl"/>
+    </loop>
+    <elt size="3" type="raw"  id="UNKNOWN"/>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="44">
+      <elt size="1" type="int"  id="SPECIAL ITEM COUNTERS" base="16"/>
+    </loop>
+    <elt size="2" type="int"  id="SPECIAL ITEM COUNTERS" base="16" table-index="44"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="+1"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <table id="SPECIAL ITEMS">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="SPECIAL ITEM COUNTERS" display="extra"/>
+    </table>
+    <field id="UNKNOWN"    format="0x" display="debug"/>
+  </output>
+  
+  <charset id="bublbobl">
+    <char src="0x20" dst=" "/>
+    <char src="0x2E" dst="."/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+	  mame 0.219: NOT SUPPORTED = only nvram remains now and the decoding algorithm is still unknown
+	  mame 0.148 and related hiscore.dat
+    source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:474:5dd:00:55
+                  0:d2:1:03:03</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>1502</size>
+    </check>
+    <elt size="1" type="raw" id="HEADER"/>
+    <loop count="250"><elt size="1" type="int"  id="SCORE3" table-index="loop_reverse_index" base="16"/></loop>
+    <loop count="250"><elt size="1" type="int"  id="SCORE2" table-index="loop_reverse_index" base="16"/></loop>
+    <loop count="250"><elt size="1" type="int"  id="SCORE1" table-index="loop_reverse_index" base="16"/></loop>
+    <loop count="250"><elt size="1" type="text" id="NAME1"  table-index="loop_reverse_index" ascii-offset="-9" charset="ccastles"/></loop>
+    <loop count="250"><elt size="1" type="text" id="NAME2"  table-index="loop_reverse_index" ascii-offset="-9" charset="ccastles"/></loop>
+    <loop count="250"><elt size="1" type="text" id="NAME3"  table-index="loop_reverse_index" ascii-offset="-9" charset="ccastles"/></loop>
+    <elt size="1" type="raw" id="FOOTER"/>
+  </structure>
+  
+  <output>
+    <field id="HEADER" format="hexadecimal_string" display="debug"/>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="score"/>
+      <column id="NAME"             format="name"/>
+    </table>
+    <field id="FOOTER" format="hexadecimal_string" display="debug"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*100"><multiply>100</multiply></format>
+  <format id="*10000"><multiply>10000</multiply></format>
+  <format id="score">
+    <sum>
+      <column id="SCORE1" format="*10000"/>
+      <column id="SCORE2" format="*100"/>
+      <column id="SCORE3"/>
+    </sum>
+  </format>
+  <format id="name">
+    <concat>
+      <column id="NAME1"/>
+      <column id="NAME2"/>
+      <column id="NAME3"/>
+    </concat>
+  </format>
+  
+  <charset id="ccastles">
+    <char src="0x64" dst=" "/>
+    <char src="0x65" dst="&black-smiley;"/>
+    <char src="0x66" dst="/"/>
+    <char src="0x67" dst="?"/>
+    <char src="0x68" dst=":"/>
+    <char src="0x69" dst="&right-double-arrow;"/>
+  </charset>
+</hi2txt>

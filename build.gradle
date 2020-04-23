@@ -1,0 +1,51 @@
+apply from: 'build.internal.gradle'
+
+// Step 1: Create empty oracle for new games, to trigger new integrationTests
+ext.needEmptyOracles = ["2020_02_01_0219/alpine", "2020_02_01_0219/pspikes", "2020_02_01_0219/sagaia", "2020_02_01_0219/zeroteam", "2020_02_01_0219/gdarius2"]
+task call_T1_CreateEmptyOracles() {
+    dependsOn "createEmptyOracles"
+    group "Test"
+    description "Create empty oracle for new games, to trigger new integrationTests"
+}
+
+// Step 2: Launch integrationTests, based on oracles (all oracles or restricted to a known faulty games list)
+// ...configure the paths of the hi2txt binaries to be tested
+ext.binaryLocations = [
+    System.getProperty("user.dir")+"/../hi2txt/bin_csharp/hi2txt.exe",
+    System.getProperty("user.dir")+"/../hi2txt/bin/hi2txt.bat"
+]
+// ...restrict games to be tested or let empty to have all
+ext.allowedForIntegrationTests = []
+//ext.allowedForIntegrationTests = ["alpine", "pspikes", "sagaia", "zeroteam", "alieninv", "gdarius2"]
+// ...launch task
+task call_T2_LaunchIntegrationTests {
+    dependsOn "launchIntegrationTests"
+    group "Test"
+    description "Launch integrationTests, based on oracles (all oracles or restricted to a known faulty games list)"
+}
+
+// Step 3: Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes
+//ext.forceOraclesFor = ["2020_02_01_0219/sagaia.txt"]
+ext.forceOraclesFor = ["2014_02_11_0148/searthie.txt", "2014_02_11_0148/searthie.xml"]
+task call_T3_ForceOracles {
+    dependsOn "forceOracles"
+    group "Test"
+    description "Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes"
+}
+
+// Step 4: Generate default hiscores xml for new games
+ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.219/prog/mame64.exe"
+//ext.generateDefaultHiscoresXMLFor = ["alpine", "pspikes", "sagaia", "zeroteam", "alieninv", "gdarius2"]
+ext.generateDefaultHiscoresXMLFor = ["searthie"]
+task call_P1_GenerateDefaultHiscoresXML {
+    dependsOn "generateDefaultHiscoresXML"
+    group "Package"
+    description "Generate default hiscores xml for new games"
+}
+
+// Step 5: Package all XMLs as a new "hi2txt.zip"
+task call_P2_PackageSolution {
+    dependsOn "packageSolution"
+    group "Package"
+    description "Package all XMLs as a new hi2txt.zip"
+}

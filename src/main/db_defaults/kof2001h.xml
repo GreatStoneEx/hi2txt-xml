@@ -1,0 +1,54 @@
+<hi2txt>
+  <table id="SCORE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER 1</col><col>CHARACTER 2</col><col>CHARACTER 3</col><col>CHARACTER 4</col>
+    <row><cell>1</cell><cell>100000</cell><cell>NOP</cell><cell>Takuma Sakazaki</cell><cell>Maxima</cell><cell>Whip</cell><cell>Athena Asamiya</cell></row>
+    <row><cell>2</cell><cell>80000</cell><cell>LEA</cell><cell>Blue Mary</cell><cell>Kyo Kusanagi</cell><cell>Benimaru Nikaido</cell><cell>Maxima</cell></row>
+    <row><cell>3</cell><cell>60000</cell><cell>NEG</cell><cell>Goro Daimon</cell><cell>Vanessa</cell><cell>Iori Yagami</cell><cell>King</cell></row>
+    <row><cell>4</cell><cell>40000</cell><cell>JSR</cell><cell>Mai Shiranui</cell><cell>Seth</cell><cell>Ramon</cell><cell>Maxima</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>RTS</cell><cell>Kula Diamond</cell><cell>Foxy</cell><cell>Clark Steel</cell><cell>Kim Kaphwan</cell></row>
+  </table>
+  <table id="WINS">
+    <col>CHARACTER</col><col>WIN %</col>
+    <row><cell>May Lee</cell><cell>0%</cell></row>
+    <row><cell>Choi Bounge</cell><cell>0%</cell></row>
+    <row><cell>Chang Koehan</cell><cell>0%</cell></row>
+    <row><cell>Kim Kaphwan</cell><cell>0%</cell></row>
+    <row><cell>Bao</cell><cell>0%</cell></row>
+    <row><cell>Chin Gentsai</cell><cell>0%</cell></row>
+    <row><cell>Sie Kensou</cell><cell>0%</cell></row>
+    <row><cell>Athena Asamiya</cell><cell>0%</cell></row>
+    <row><cell>Angel</cell><cell>0%</cell></row>
+    <row><cell>K9999</cell><cell>0%</cell></row>
+    <row><cell>Foxy</cell><cell>0%</cell></row>
+    <row><cell>Kula Diamond</cell><cell>0%</cell></row>
+    <row><cell>Li XiangFei</cell><cell>0%</cell></row>
+    <row><cell>Hinako Shijou</cell><cell>0%</cell></row>
+    <row><cell>Mai Shiranui</cell><cell>0%</cell></row>
+    <row><cell>King</cell><cell>0%</cell></row>
+    <row><cell>Takuma Sakazaki</cell><cell>0%</cell></row>
+    <row><cell>Yuri Sakazaki</cell><cell>0%</cell></row>
+    <row><cell>Robert Garcia</cell><cell>0%</cell></row>
+    <row><cell>Ryo Sakazaki</cell><cell>0%</cell></row>
+    <row><cell>Blue Mary</cell><cell>0%</cell></row>
+    <row><cell>Joe Higashi</cell><cell>0%</cell></row>
+    <row><cell>Andy Bogard</cell><cell>0%</cell></row>
+    <row><cell>Terry Bogard</cell><cell>0%</cell></row>
+    <row><cell>Heidern</cell><cell>0%</cell></row>
+    <row><cell>Clark Steel</cell><cell>0%</cell></row>
+    <row><cell>Ralf Jones</cell><cell>0%</cell></row>
+    <row><cell>Leona</cell><cell>0%</cell></row>
+    <row><cell>Ramon</cell><cell>0%</cell></row>
+    <row><cell>Seth</cell><cell>0%</cell></row>
+    <row><cell>Vanessa</cell><cell>0%</cell></row>
+    <row><cell>Iori Yagami</cell><cell>0%</cell></row>
+    <row><cell>Shingo Yabuki</cell><cell>0%</cell></row>
+    <row><cell>Goro Daimon</cell><cell>0%</cell></row>
+    <row><cell>Benimaru Nikaido</cell><cell>0%</cell></row>
+    <row><cell>Kyo Kusanagi</cell><cell>0%</cell></row>
+    <row><cell>Lin</cell><cell>0%</cell></row>
+    <row><cell>Whip</cell><cell>0%</cell></row>
+    <row><cell>Maxima</cell><cell>0%</cell></row>
+    <row><cell>K&apos;</cell><cell>0%</cell></row>
+  </table>
+</hi2txt>
+

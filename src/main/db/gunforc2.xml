@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:ea5ae:4b:00:a6</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>75</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="1" type="int"  id="GRADE"/>
+      <elt size="1" type="int"  id="RANK"/>
+      <elt size="8" type="text" id="NAME" src-unit-size="16" charset="gunforc2"/>
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="GRADE"   format="grade"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="grade">
+    <case src="1" dst="PRIVATE" default="yes"/>
+    <case src="2" dst="SERGENT"/>
+    <case src="3" dst="CAPTAIN"/>
+    <case src="4" dst="MAJOR"/>
+    <case src="5" dst="COLONEL"/>
+    <case src="6" dst="GENERAL"/>
+    <case src="7" dst="MARSHAL"/>
+  </format>
+  
+  <charset id="gunforc2">
+    <char src="0x0000" dst=""/>
+    <char src="0x0600" dst=""/>
+    
+    <char src="0x0003" dst="A"/>
+    <char src="0x0203" dst="B"/>
+    <char src="0x0403" dst="C"/>
+    <char src="0x0603" dst="D"/>
+    <char src="0x0803" dst="E"/>
+    <char src="0x0A03" dst="F"/>
+    <char src="0x0C03" dst="G"/>
+    <char src="0x0E03" dst="H"/>
+    
+    <char src="0x2003" dst="I"/>
+    <char src="0x2203" dst="J"/>
+    <char src="0x2403" dst="K"/>
+    <char src="0x2603" dst="L"/>
+    <char src="0x2803" dst="M"/>
+    <char src="0x2A03" dst="N"/>
+    <char src="0x2C03" dst="O"/>
+    <char src="0x2E03" dst="P"/>
+    
+    <char src="0x4003" dst="Q"/>
+    <char src="0x4203" dst="R"/>
+    <char src="0x4403" dst="S"/>
+    <char src="0x4603" dst="T"/>
+    <char src="0x4803" dst="U"/>
+    <char src="0x4A03" dst="V"/>
+    <char src="0x4C03" dst="W"/>
+    <char src="0x4E03" dst="X"/>
+    
+    <char src="0x6003" dst="Y"/>
+    <char src="0x6203" dst="Z"/>
+    
+    <char src="0x6403" dst="0"/>
+    <char src="0x6603" dst="1"/>
+    <char src="0x6803" dst="2"/>
+    <char src="0x6A03" dst="3"/>
+    <char src="0x6C03" dst="4"/>
+    <char src="0x6E03" dst="5"/>
+    
+    <char src="0x8003" dst="6"/>
+    <char src="0x8203" dst="7"/>
+    <char src="0x8403" dst="8"/>
+    <char src="0x8603" dst="9"/>
+    
+    <char src="0xA203" dst="."/>
+    <char src="0xA603" dst="!"/>
+    <char src="0xAA03" dst="?"/>
+    
+    <char src="0xC403" dst="-"/>
+    <char src="0xC603" dst="&amp;"/>
+    <char src="0xC803" dst="&heart;"/>
+    <char src="0xCA03" dst="&mid-dot;"/>
+    <char src="0xCE03" dst="Jr."/>
+    
+    <char src="0xE803" dst="&roman-numeral-1;"/>
+    <char src="0xEA03" dst="&roman-numeral-2;"/>
+    <char src="0xEC03" dst="&roman-numeral-3;"/>
+    <char src="0xEE03" dst="&roman-numeral-4;"/>
+    
+    <!-- only for the last character of the last name, truncated to 1 byte //-->
+    <char src="0x00" dst=""/>
+    <char src="0x06" dst=""/>
+    
+    <char src="0x00" dst="A"/>
+    <char src="0x02" dst="B"/>
+    <char src="0x04" dst="C"/>
+    <char src="0x06" dst="D"/>
+    <char src="0x08" dst="E"/>
+    <char src="0x0A" dst="F"/>
+    <char src="0x0C" dst="G"/>
+    <char src="0x0E" dst="H"/>
+    
+    <char src="0x20" dst="I"/>
+    <char src="0x22" dst="J"/>
+    <char src="0x24" dst="K"/>
+    <char src="0x26" dst="L"/>
+    <char src="0x28" dst="M"/>
+    <char src="0x2A" dst="N"/>
+    <char src="0x2C" dst="O"/>
+    <char src="0x2E" dst="P"/>
+    
+    <char src="0x40" dst="Q"/>
+    <char src="0x42" dst="R"/>
+    <char src="0x44" dst="S"/>
+    <char src="0x46" dst="T"/>
+    <char src="0x48" dst="U"/>
+    <char src="0x4A" dst="V"/>
+    <char src="0x4C" dst="W"/>
+    <char src="0x4E" dst="X"/>
+    
+    <char src="0x60" dst="Y"/>
+    <char src="0x62" dst="Z"/>
+    
+    <char src="0x64" dst="0"/>
+    <char src="0x66" dst="1"/>
+    <char src="0x68" dst="2"/>
+    <char src="0x6A" dst="3"/>
+    <char src="0x6C" dst="4"/>
+    <char src="0x6E" dst="5"/>
+    
+    <char src="0x80" dst="6"/>
+    <char src="0x82" dst="7"/>
+    <char src="0x84" dst="8"/>
+    <char src="0x86" dst="9"/>
+    
+    <char src="0xA2" dst="."/>
+    <char src="0xA6" dst="!"/>
+    <char src="0xAA" dst="?"/>
+    
+    <char src="0xC4" dst="-"/>
+    <char src="0xC6" dst="&amp;"/>
+    <char src="0xC8" dst="&heart;"/>
+    <char src="0xCA" dst="&mid-dot;"/>
+    <char src="0xCE" dst="Jr."/>
+    
+    <char src="0xE8" dst="&roman-numeral-1;"/>
+    <char src="0xEA" dst="&roman-numeral-2;"/>
+    <char src="0xEC" dst="&roman-numeral-3;"/>
+    <char src="0xEE" dst="&roman-numeral-4;"/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,24 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>HIT</col><col>ROUND</col><col>STAGE</col>
+    <row><cell>1</cell><cell>163200</cell><cell>T.K</cell><cell>58.0</cell><cell>1</cell><cell>5</cell></row>
+    <row><cell>2</cell><cell>150200</cell><cell>TOM</cell><cell>56.0</cell><cell>1</cell><cell>5</cell></row>
+    <row><cell>3</cell><cell>100900</cell><cell>T.I</cell><cell>43.0</cell><cell>1</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>59600</cell><cell>I.I</cell><cell>40.4</cell><cell>1</cell><cell>2</cell></row>
+    <row><cell>5</cell><cell>45050</cell><cell>K.S</cell><cell>40.0</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>38400</cell><cell>T.M</cell><cell>39.3</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>7</cell><cell>20200</cell><cell>E.K</cell><cell>38.1</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>8</cell><cell>18100</cell><cell>J.Y</cell><cell>37.0</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>9</cell><cell>13300</cell><cell>HHH</cell><cell>34.6</cell><cell>1</cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>11950</cell><cell>E_T</cell><cell>23.7</cell><cell></cell><cell></cell></row>
+  </table>
+  <table id="TOP SNIPERS">
+    <col>RANK</col><col>SNIPER HIT</col><col>SNIPER ROUND</col><col>SNIPER STAGE</col><col>SNIPER NAME</col>
+    <row><cell>1</cell><cell>58.0%</cell><cell>1</cell><cell>5</cell><cell>T.K</cell></row>
+    <row><cell>2</cell><cell>56.0%</cell><cell>1</cell><cell>5</cell><cell>TOM</cell></row>
+    <row><cell>3</cell><cell>43.0%</cell><cell>1</cell><cell>3</cell><cell>T.I</cell></row>
+    <row><cell>4</cell><cell>40.4%</cell><cell>1</cell><cell>2</cell><cell>I.I</cell></row>
+    <row><cell>5</cell><cell>40.0%</cell><cell>1</cell><cell>1</cell><cell>K.S</cell></row>
+  </table>
+</hi2txt>
+

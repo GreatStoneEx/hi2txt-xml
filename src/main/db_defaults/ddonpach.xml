@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>POWERUP</col><col>MAXHIT</col>
+    <row><cell>1</cell><cell>5908065</cell><cell>OSD</cell><cell>1</cell><cell>RED</cell><cell>SHOT</cell><cell>96</cell></row>
+    <row><cell>2</cell><cell>5544337</cell><cell>H.S</cell><cell>1</cell><cell>BLUE</cell><cell>LASER</cell><cell>96</cell></row>
+    <row><cell>3</cell><cell>5327080</cell><cell>OSS</cell><cell>1</cell><cell>GREEN</cell><cell>SHOT</cell><cell>96</cell></row>
+    <row><cell>4</cell><cell>4440155</cell><cell>NAI</cell><cell>1</cell><cell>4</cell><cell>LASER</cell><cell>95</cell></row>
+    <row><cell>5</cell><cell>3562765</cell><cell>OKS</cell><cell>1</cell><cell>5</cell><cell>SHOT</cell><cell>95</cell></row>
+  </table>
+</hi2txt>
+
+

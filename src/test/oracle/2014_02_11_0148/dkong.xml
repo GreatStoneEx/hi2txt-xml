@@ -1,0 +1,12 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SCORE LONG</col><col>NAME</col><col>UNKNOWN 1</col><col>UNKNOWN 2</col><col>UNKNOWN 3</col><col>UNKNOWN 4</col><col>UNKNOWN 5</col>
+    <row><cell>1</cell><cell>9100</cell><cell>9100</cell><cell>Z.-</cell><cell>0x9477</cell><cell>0x23241010</cell><cell>0x1010</cell><cell>0x1010101010101010103F00</cell><cell>0xF476</cell></row>
+    <row><cell>2</cell><cell>7650</cell><cell>7650</cell><cell>   </cell><cell>0x9677</cell><cell>0x1E141010</cell><cell>0x1010</cell><cell>0x1010101010101010103F00</cell><cell>0xF676</cell></row>
+    <row><cell>3</cell><cell>6100</cell><cell>6100</cell><cell>   </cell><cell>0x9877</cell><cell>0x22141010</cell><cell>0x1010</cell><cell>0x1010101010101010103F00</cell><cell>0xF876</cell></row>
+    <row><cell>4</cell><cell>5950</cell><cell>5950</cell><cell>   </cell><cell>0x9A77</cell><cell>0x24181010</cell><cell>0x1010</cell><cell>0x1010101010101010103F00</cell><cell>0xFA76</cell></row>
+    <row><cell>5</cell><cell>5050</cell><cell>5050</cell><cell>   </cell><cell>0x9C77</cell><cell>0x24181010</cell><cell>0x1010</cell><cell>0x1010101010101010103F00</cell><cell>0xFC76</cell></row>
+  </table>
+  <field id="TOP SCORE">9100</field>
+  <field id="TOP SCORE LONG">9100</field>
+</hi2txt>

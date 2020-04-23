@@ -1,0 +1,15 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>20000</cell><cell>IWATANI</cell></row>
+    <row><cell>2</cell><cell>19000</cell><cell>NARITA </cell></row>
+    <row><cell>3</cell><cell>18000</cell><cell>ABE    </cell></row>
+    <row><cell>4</cell><cell>17000</cell><cell>TSUNODA</cell></row>
+    <row><cell>5</cell><cell>16000</cell><cell>NIHEI  </cell></row>
+    <row><cell>6</cell><cell>15000</cell><cell>SHIGKSA</cell></row>
+    <row><cell>7</cell><cell>14000</cell><cell>T.T    </cell></row>
+    <row><cell>8</cell><cell>13000</cell><cell>OHNUMA </cell></row>
+  </table>
+</hi2txt>
+
+

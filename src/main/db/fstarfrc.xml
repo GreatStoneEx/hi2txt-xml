@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Final Star Force">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:101272:80:00:00
+                  0:1000a9:3:00:a0</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>131</size>
+    </check>
+    <loop count="16">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="3" type="text" id="NAME"  charset="fstarfrc"/>
+      <elt size="1" type="int"  id="STAGE"/>
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+  
+  <charset id="fstarfrc">
+  	<char src="0x2F" dst="."/>
+  	<char src="0x40" dst="&single-music-note;"/>
+  	<char src="0x3A" dst="&black-star;"/>
+  	<char src="0x3B" dst="&asterism;"/>
+  	<char src="0x3C" dst="&black-spade;"/>
+    <char src="0x3D" dst="&black-heart;"/>
+    <char src="0x3E" dst="&black-diamond;"/>
+    <char src="0x3F" dst="&black-club;"/>
+  </charset>
+</hi2txt>

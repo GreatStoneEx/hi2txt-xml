@@ -1,0 +1,42 @@
+RANK|LOCAL RANK|SCORE|NAME|STAGE|CHARACTER|MODE|UNKNOWN
+1|1|119680|[¥]|1|MEIDI & MIDI (A) P1|normal|0x00
+2|2|58690|zzz|1|KASUMI (B) P2|normal|0x00
+3|3|47620|@>>|1|KASUMI (Start) P2|normal|0x00
+4|4|45960|...|1|MEIDI & MIDI (B) P2|normal|0x00
+5|5|42830|<;;|1|LACE (A) P2|normal|0x00
+6|6|40510|888|1|KASUMI (A+B) P2|normal|0x00
+7|7|38840|@?>|1|LACE (Start) P2|normal|0x00
+8|8|36760|A<7|1|SHASTA (A) P2|normal|0x00
+9|9|24650|,-.|1|MEIDI & MIDI (A+B) P2|normal|0x00
+10|10|21000|)*+|1|KASUMI (A+B) P1|normal|0x00
+11|1|20000|CAV|-|-|harder|0x00
+12|2|18000|CAV|-|-|harder|0x00
+13|3|16000|CAV|-|-|harder|0x00
+14|4|14000|CAV|-|-|harder|0x00
+15|5|12000|CAV|-|-|harder|0x00
+16|6|10000|CAV|-|-|harder|0x00
+17|7|8000|CAV|-|-|harder|0x00
+18|8|6000|CAV|-|-|harder|0x00
+19|9|4000|CAV|-|-|harder|0x00
+20|10|2000|CAV|-|-|harder|0x00
+21|1|30000|CAV|-|-|extended|0x00
+22|2|27000|CAV|-|-|extended|0x00
+23|3|24000|CAV|-|-|extended|0x00
+24|4|21000|CAV|-|-|extended|0x00
+25|5|18000|CAV|-|-|extended|0x00
+26|6|15000|CAV|-|-|extended|0x00
+27|7|12000|CAV|-|-|extended|0x00
+28|8|9000|CAV|-|-|extended|0x00
+29|9|6000|CAV|-|-|extended|0x00
+30|10|3000|CAV|-|-|extended|0x00
+31|1|40000|CAV|-|-|score attack|0x00
+32|2|36000|CAV|-|-|score attack|0x00
+33|3|32000|CAV|-|-|score attack|0x00
+34|4|28000|CAV|-|-|score attack|0x00
+35|5|24000|CAV|-|-|score attack|0x00
+36|6|20000|CAV|-|-|score attack|0x00
+37|7|16000|CAV|-|-|score attack|0x00
+38|8|12000|CAV|-|-|score attack|0x00
+39|9|8000|CAV|-|-|score attack|0x00
+40|10|4000|CAV|-|-|score attack|0x00
+

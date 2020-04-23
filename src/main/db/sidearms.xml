@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Side Arms">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e682:4e:00:03
+                  0:e601:7:00:00
+                  0:e6ce:1:3b:3b</definition>
+      <definition>0:e682:4e:00:03
+                  0:e601:7:00:00
+                  0:e6ce:1:01:01</definition> <!-- sidearmsu -->
+      <definition>0:e682:4e:00:00
+                  0:e601:7:00:00
+                  0:e6ce:1:3b:3b</definition> <!-- sidearmsj -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>86</size>
+    </check>
+    <loop count="5" skip-last-bytes="2">
+      <elt size="6" type="int"  id="SCORE" decoding-profile="bcd"/>
+      <elt size="5" type="raw"  id="SEPARATOR"/>
+      <elt size="3" type="text" id="NAME"  charset="sidearms" ascii-offset="55"/>
+      <elt size="2" type="raw"  id="SEPARATOR2"/>
+    </loop>
+    <elt size="7" type="int" id="TOP SCORE" decoding-profile="bcd"/>
+    <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="SEPARATOR"  format="0x" display="debug"/>
+      <column id="SEPARATOR2" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+    <field id="CHECK"     format="0x"  display="debug"/>
+  </output>
+  
+  <charset id="sidearms">
+    <char src="0x80" dst="A"/>
+    <char src="0x81" dst="B"/>
+    <char src="0x82" dst="C"/>
+    <char src="0x83" dst="D"/>
+    <char src="0x84" dst="E"/>
+    <char src="0x85" dst="F"/>
+    <char src="0x86" dst="G"/>
+    <char src="0x87" dst="H"/>
+    <char src="0x88" dst="I"/>
+    <char src="0x89" dst="J"/>
+    <char src="0x8A" dst="K"/>
+    <char src="0x8B" dst="L"/>
+    <char src="0x8C" dst="M"/>
+    <char src="0x8D" dst="N"/>
+    <char src="0x8E" dst="O"/>
+    <char src="0x8F" dst="P"/>
+    <char src="0x90" dst="Q"/>
+    <char src="0x91" dst="R"/>
+    <char src="0x92" dst="S"/>
+    <char src="0x93" dst="T"/>
+    <char src="0x94" dst="U"/>
+    <char src="0x95" dst="V"/>
+    <char src="0x96" dst="W"/>
+    <char src="0x97" dst="X"/>
+    <char src="0x98" dst="Y"/>
+    <char src="0x99" dst="Z"/>
+    <char src="0x9A" dst=" "/>
+    <char src="0x9B" dst="_"/>
+  </charset>
+</hi2txt>

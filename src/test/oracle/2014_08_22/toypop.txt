@@ -1,0 +1,10 @@
+RANK|SCORE|NAME|CHARACTER
+1|1231694|ACG. |pino
+2|1290|Y.. B|pino+acha
+3|1000|♥♥♥♥♥|pino
+4|1000|♥♥♥♥ |pino
+5|1000|♥♥♥  |pino
+
+TOP SCORE
+1690
+

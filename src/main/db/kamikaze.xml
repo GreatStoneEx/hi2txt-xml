@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.149
+      mame 0.159 and hiscore.dat 20150701
+    source: Piergiorgio Ghezzo
+    
+  //-->
+  
+  <structure file=".hi">
+  	<check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:1fc5:14:00:00
+                  0:2f1d:1:3e:3e
+                  0:2f3d:1:41:41
+                  0:2f5d:1:41:41
+                  0:2f7d:1:41:41
+                  0:2f9d:1:3e:3e
+                  0:301d:1:3e:3e
+                  0:303d:1:41:41
+                  0:305d:1:41:41
+                  0:307d:1:41:41
+                  0:309d:1:3e:3e
+                  0:311d:1:3e:3e
+                  0:313d:1:41:41
+                  0:315d:1:41:41
+                  0:317d:1:41:41
+                  0:319d:1:3e:3e
+                  0:321d:1:3e:3e
+                  0:323d:1:41:41
+                  0:325d:1:41:41
+                  0:327d:1:41:41
+                  0:329d:1:3e:3e
+                  0:331d:1:3e:3e
+                  0:333d:1:41:41
+                  0:335d:1:41:41
+                  0:337d:1:41:41
+                  0:339d:1:3e:3e</definition> <!-- kamikaze //-->
+      <definition>0:1fc4:14:00:00
+                  0:2f1d:1:3e:3e
+                  0:2f3d:1:41:41
+                  0:2f5d:1:41:41
+                  0:2f7d:1:41:41
+                  0:2f9d:1:3e:3e
+                  0:301d:1:3e:3e
+                  0:303d:1:41:41
+                  0:305d:1:41:41
+                  0:307d:1:41:41
+                  0:309d:1:3e:3e
+                  0:311d:1:3e:3e
+                  0:313d:1:41:41
+                  0:315d:1:41:41
+                  0:317d:1:41:41
+                  0:319d:1:3e:3e
+                  0:321d:1:3e:3e
+                  0:323d:1:41:41
+                  0:325d:1:41:41
+                  0:327d:1:41:41
+                  0:329d:1:3e:3e
+                  0:331d:1:3e:3e
+                  0:333d:1:41:41
+                  0:335d:1:41:41
+                  0:337d:1:41:41
+                  0:339d:1:3e:3e</definition> <!-- kosmokil //-->
+      <definition>0:1fca:14:00:00
+                  0:2f1d:1:3e:3e
+                  0:2f3d:1:41:41
+                  0:2f5d:1:41:41
+                  0:2f7d:1:41:41
+                  0:2f9d:1:3e:3e
+                  0:301d:1:3e:3e
+                  0:303d:1:41:41
+                  0:305d:1:41:41
+                  0:307d:1:41:41
+                  0:309d:1:3e:3e
+                  0:311d:1:3e:3e
+                  0:313d:1:41:41
+                  0:315d:1:41:41
+                  0:317d:1:41:41
+                  0:319d:1:3e:3e
+                  0:321d:1:3e:3e
+                  0:323d:1:41:41
+                  0:325d:1:41:41
+                  0:327d:1:41:41
+                  0:329d:1:3e:3e
+                  0:331d:1:3e:3e
+                  0:333d:1:41:41
+                  0:335d:1:41:41
+                  0:337d:1:41:41
+                  0:339d:1:3e:3e</definition> <!-- astinvad //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>45</size>
+    </check>
+    <loop count="10">
+      <elt size="2" type="int" id="SCORE" endianness="little_endian" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+    </table>
+  </output>
+</hi2txt>

@@ -1,0 +1,55 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>ROUND</col>
+    <row><cell>1ST</cell><cell>300000</cell><cell>CHM</cell><cell>PREDATOR WARRIOR</cell><cell>5-R</cell></row>
+    <row><cell>2ND</cell><cell>250000</cell><cell>ARI</cell><cell>Maj. D. SCHAEFER</cell><cell>5-R</cell></row>
+    <row><cell>3RD</cell><cell>200000</cell><cell>KIM</cell><cell>PREDATOR HUNTER</cell><cell>5-R</cell></row>
+    <row><cell>4TH</cell><cell>150000</cell><cell>HRD</cell><cell>Lt. LINN KUROSAWA</cell><cell>5-R</cell></row>
+    <row><cell>5TH</cell><cell>100000</cell><cell>DEF</cell><cell>PREDATOR WARRIOR</cell><cell>5-R</cell></row>
+    <row><cell>6TH</cell><cell>90000</cell><cell>UDA</cell><cell>Maj. D. SCHAEFER</cell><cell>4-R</cell></row>
+    <row><cell>7TH</cell><cell>80000</cell><cell>UNI</cell><cell>PREDATOR HUNTER</cell><cell>4-R</cell></row>
+    <row><cell>8TH</cell><cell>70000</cell><cell>TET</cell><cell>Lt. LINN KUROSAWA</cell><cell>4-R</cell></row>
+    <row><cell>9TH</cell><cell>60000</cell><cell>HRD</cell><cell>PREDATOR WARRIOR</cell><cell>4-R</cell></row>
+    <row><cell>10TH</cell><cell>50000</cell><cell>BAD</cell><cell>Maj. D. SCHAEFER</cell><cell>4-R</cell></row>
+    <row><cell>11TH</cell><cell>49000</cell><cell>HAC</cell><cell>PREDATOR HUNTER</cell><cell>4-R</cell></row>
+    <row><cell>12TH</cell><cell>48000</cell><cell>NIX</cell><cell>Lt. LINN KUROSAWA</cell><cell>4-R</cell></row>
+    <row><cell>13TH</cell><cell>47000</cell><cell>PON</cell><cell>PREDATOR WARRIOR</cell><cell>4-R</cell></row>
+    <row><cell>14TH</cell><cell>46000</cell><cell>VAL</cell><cell>Maj. D. SCHAEFER</cell><cell>4-R</cell></row>
+    <row><cell>15TH</cell><cell>45000</cell><cell>ZAE</cell><cell>PREDATOR HUNTER</cell><cell>4-R</cell></row>
+    <row><cell>16TH</cell><cell>44000</cell><cell>OSD</cell><cell>Lt. LINN KUROSAWA</cell><cell>3-R</cell></row>
+    <row><cell>17TH</cell><cell>43000</cell><cell>WIN</cell><cell>PREDATOR WARRIOR</cell><cell>3-R</cell></row>
+    <row><cell>18TH</cell><cell>42000</cell><cell>QEN</cell><cell>Maj. D. SCHAEFER</cell><cell>3-R</cell></row>
+    <row><cell>19TH</cell><cell>41000</cell><cell>YAS</cell><cell>PREDATOR HUNTER</cell><cell>3-R</cell></row>
+    <row><cell>20TH</cell><cell>40000</cell><cell>FBI</cell><cell>Lt. LINN KUROSAWA</cell><cell>3-R</cell></row>
+    <row><cell>21TH</cell><cell>39000</cell><cell>NAE</cell><cell>PREDATOR WARRIOR</cell><cell>3-R</cell></row>
+    <row><cell>22TH</cell><cell>38000</cell><cell>DOW</cell><cell>Maj. D. SCHAEFER</cell><cell>3-R</cell></row>
+    <row><cell>23TH</cell><cell>37000</cell><cell>SMT</cell><cell>PREDATOR HUNTER</cell><cell>3-R</cell></row>
+    <row><cell>24TH</cell><cell>36000</cell><cell>ALV</cell><cell>Lt. LINN KUROSAWA</cell><cell>3-R</cell></row>
+    <row><cell>25TH</cell><cell>35000</cell><cell>TAK</cell><cell>PREDATOR WARRIOR</cell><cell>3-R</cell></row>
+    <row><cell>26TH</cell><cell>34000</cell><cell>AZS</cell><cell>Maj. D. SCHAEFER</cell><cell>2-R</cell></row>
+    <row><cell>27TH</cell><cell>33000</cell><cell>PAC</cell><cell>PREDATOR HUNTER</cell><cell>2-R</cell></row>
+    <row><cell>28TH</cell><cell>32000</cell><cell>EGG</cell><cell>Lt. LINN KUROSAWA</cell><cell>2-R</cell></row>
+    <row><cell>29TH</cell><cell>31000</cell><cell>B Z</cell><cell>PREDATOR WARRIOR</cell><cell>2-R</cell></row>
+    <row><cell>30TH</cell><cell>30000</cell><cell> X </cell><cell>Maj. D. SCHAEFER</cell><cell>2-R</cell></row>
+    <row><cell>31TH</cell><cell>29000</cell><cell>TKD</cell><cell>PREDATOR HUNTER</cell><cell>2-R</cell></row>
+    <row><cell>32TH</cell><cell>28000</cell><cell>HEW</cell><cell>Lt. LINN KUROSAWA</cell><cell>2-R</cell></row>
+    <row><cell>33TH</cell><cell>27000</cell><cell>REG</cell><cell>PREDATOR WARRIOR</cell><cell>2-R</cell></row>
+    <row><cell>34TH</cell><cell>26000</cell><cell>RUN</cell><cell>Maj. D. SCHAEFER</cell><cell>2-R</cell></row>
+    <row><cell>35TH</cell><cell>25000</cell><cell>HRO</cell><cell>PREDATOR HUNTER</cell><cell>2-R</cell></row>
+    <row><cell>36TH</cell><cell>24000</cell><cell>MRN</cell><cell>Lt. LINN KUROSAWA</cell><cell>1-R</cell></row>
+    <row><cell>37TH</cell><cell>23000</cell><cell>KAR</cell><cell>PREDATOR WARRIOR</cell><cell>1-R</cell></row>
+    <row><cell>38TH</cell><cell>22000</cell><cell>OPN</cell><cell>Maj. D. SCHAEFER</cell><cell>1-R</cell></row>
+    <row><cell>39TH</cell><cell>21000</cell><cell>JOJ</cell><cell>PREDATOR HUNTER</cell><cell>1-R</cell></row>
+    <row><cell>40TH</cell><cell>20000</cell><cell>YNZ</cell><cell>Lt. LINN KUROSAWA</cell><cell>1-R</cell></row>
+    <row><cell>41TH</cell><cell>19000</cell><cell>CHM</cell><cell>PREDATOR WARRIOR</cell><cell>1-R</cell></row>
+    <row><cell>42TH</cell><cell>18000</cell><cell>ZOM</cell><cell>Maj. D. SCHAEFER</cell><cell>1-R</cell></row>
+    <row><cell>43TH</cell><cell>17000</cell><cell>SEL</cell><cell>PREDATOR HUNTER</cell><cell>1-R</cell></row>
+    <row><cell>44TH</cell><cell>16000</cell><cell>DIO</cell><cell>Lt. LINN KUROSAWA</cell><cell>1-R</cell></row>
+    <row><cell>45TH</cell><cell>15000</cell><cell>GMO</cell><cell>PREDATOR WARRIOR</cell><cell>1-R</cell></row>
+    <row><cell>46TH</cell><cell>14000</cell><cell>PRE</cell><cell>Maj. D. SCHAEFER</cell><cell>1-R</cell></row>
+    <row><cell>47TH</cell><cell>13000</cell><cell>JAB</cell><cell>PREDATOR HUNTER</cell><cell>1-R</cell></row>
+    <row><cell>48TH</cell><cell>12000</cell><cell>XYZ</cell><cell>Lt. LINN KUROSAWA</cell><cell>1-R</cell></row>
+    <row><cell>49TH</cell><cell>11000</cell><cell>KIX</cell><cell>PREDATOR WARRIOR</cell><cell>1-R</cell></row>
+    <row><cell>50TH</cell><cell>10000</cell><cell>TLD</cell><cell>Maj. D. SCHAEFER</cell><cell>1-R</cell></row>
+  </table>
+</hi2txt>

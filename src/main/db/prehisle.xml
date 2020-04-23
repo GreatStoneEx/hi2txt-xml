@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Prehistoric Isle in 1930">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,700a0,4e,00,00
+                  @:maincpu,program,7003d,5,00,00
+                  @:maincpu,program,700ec,1,01,01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>84</size>
+    </check>
+    <loop count="10">
+      <elt size="2" type="text" id="NAME" decoding-profile="base-32" ascii-offset="64" charset="charconv"/>
+	  <elt size="1" type="int"  id="AREA"/>
+	  <elt size="3" type="int"  id="SCORE" base="16"/>
+	  <elt size="2" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="AREA" format="clear"/>
+    </table>
+  </output>
+  
+  <format id="clear">
+    <case src="6" dst="CLEAR"/>
+  </format>
+  
+  <charset id="charconv">
+	<char src="0x00" dst=" "/>
+	<char src="0x1B" dst="."/>
+	<char src="0x1C" dst="&black-heart;"/>
+	<char src="0x1D" dst="&two-exclamations;"/>
+  </charset>
+  
+</hi2txt>

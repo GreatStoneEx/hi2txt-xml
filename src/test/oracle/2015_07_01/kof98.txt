@@ -1,0 +1,8 @@
+RANK|SCORE|NAME|CHARACTER 1|CHARACTER 2|CHARACTER 3|UNKNOWN|SEPARATOR
+1|100000|S.I|Kyo Kusanagi|Benimaru Nikaido|Goro Daimon|1|0xFF
+2|80000|ICH|Terry Bogard|Andy Bogard|Joe Higashi|1|0xFF
+3|60000|BIN|Ryo Sakazaki|Robert Garcia|Yuri Sakazaki|0|0xFF
+4|40000|EIN|Leona|Ralf|Clark|1|0xFF
+5|20000|BOY|Athena Asamiya|Sie Kensou|Chin Gentsai|0|0xFF
+
+

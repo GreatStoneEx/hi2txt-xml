@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:c040:6c:02:01
+                  0:c0c0:3:02:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>111</size>
+    </check>
+    <loop count="6">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="int"  id="SCORE UNUSED" base="16"/>
+      <elt size="6" type="text" id="NAME" byte-skip="even" charset="kchamp" ascii-offset="55"/>
+      <elt size="4" type="text" id="NAME UNUSED" byte-skip="even" charset="kchamp" ascii-offset="55"/>
+      <elt size="2" type="int"  id="DAN"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="SCORE UNUSED" format="hexadecimal_string" display="debug"/>
+      <column id="NAME"/>
+      <column id="NAME UNUSED"                              display="debug"/>
+      <column id="DAN" format="+1"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="kchamp">
+    <char src="0x25" dst="."/>
+    <char src="0x26" dst="-"/>
+    <char src="0x27" dst="&left-foot;"/>
+    <char src="0x2D" dst="&right-foot;"/>
+    <char src="0x2F" dst="&black-heart;"/>
+    <char src="0x3C" dst=" "/>
+  </charset>
+</hi2txt>

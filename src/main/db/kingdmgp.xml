@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:1002d0:9e:00:4e
+                  0:1003c4:53:2a:39</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>241</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <elt size="20" type="raw"  id="UNKNOWN"/>
+    <loop count="5">
+      <elt size="2" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+    <elt size="30" type="raw"  id="UNKNOWN2"/>
+    <loop count="4">
+      <elt size="4" type="text" id="NAME1" byte-skip="0100" charset="kingdmgp"/>
+      <elt size="4" type="text" id="NAME2" byte-skip="0100" charset="kingdmgp"/>
+      <elt size="4" type="text" id="NAME3" byte-skip="0100" charset="kingdmgp"/>
+      <elt size="4" type="text" id="END"                    charset="kingdmgp"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="4" type="text" id="NAME1" byte-skip="0100" charset="kingdmgp"/>
+      <elt size="4" type="text" id="NAME2" byte-skip="0100" charset="kingdmgp"/>
+      <elt size="2" type="text" id="NAME3" byte-skip="odd"  charset="kingdmgp"/>
+      <!-- hiscore.dat: last 6 bytes of last name not dumped //-->
+    </loop>
+    <loop count="12">
+      <elt size="2" type="int"  id="LAP TIME"/>
+    </loop>
+    <loop count="12">
+      <elt size="1" type="int"  id="LAP UNKNOWN"/>
+    </loop>
+    <loop count="12">
+      <elt size="3" type="text" id="LAP NAME" charset="kingdmgp"/>
+      <elt size="1" type="raw"  id="LAP END"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"      format="name"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="END"       display="debug"/>
+    </table>
+    
+    <field id="UNKNOWN"   format="0x" display="debug"/>
+    <field id="UNKNOWN2"  format="0x" display="debug"/>
+    
+    <table id="TOP LAP TIMES" line-ignore="LAP TIME:18'12''25"> <!-- ignoring result of '0xFFFF' conversion as time //-->
+      <column id="LAP" src="index" format="lap"  display="extra"/>
+      <column id="LAP TIME"        format="time" display="extra"/>
+      <column id="LAP NAME"                      display="extra"/>
+      <column id="LAP END"         format="0x"   display="debug"/>
+      <column id="LAP UNKNOWN"     format="0x"   display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="name">
+    <concat>
+      <column id="NAME1"/>
+      <column id="NAME2"/>
+      <column id="NAME3"/>
+    </concat>
+  </format>
+  <format id="character">
+    <case src="0" dst="GAIN on VALHALLYZER"/>
+    <case src="1" dst="CHITTA on GUN-DALF"/>
+    <case src="2" dst="MIYAMOTO"/>
+    <case src="3" dst="BORNNAM on GOLGODIAN"/>
+    <case src="4" dst="NIRVANA"/>
+    <case src="5" dst="KICKLE &amp; LAYCLE on SORCER STRIKER"/>
+    <case src="6" dst="HONEST JOHN"/>
+    <case src="7" dst="BUL-GIN on GREAT GOBLIGAN-S"/>
+  </format>
+  <format id="lap">
+    <case src="0"  dst="STAGE 1"/>
+    <case src="1"  dst="STAGE 2A"/>
+    <case src="2"  dst="STAGE 2B"/>
+    <case src="3"  dst="STAGE 3A"/>
+    <case src="4"  dst="STAGE 3B"/>
+    <case src="5"  dst="STAGE 4A"/>
+    <case src="6"  dst="STAGE 4B"/>
+    <case src="7"  dst="STAGE 5A"/>
+    <case src="8"  dst="STAGE 5B"/>
+    <case src="9"  dst="STAGE 6A"/>
+    <case src="10" dst="STAGE 6B"/>
+    <case src="11" dst="STAGE 7"/>
+  </format>
+  <format id="time" input-as-subcolumns-input="yes"> <!-- XX'YY''ZZ //-->
+    <concat>
+      <column format="MN"/>
+      <txt>'</txt>
+      <column format="SEC"/>
+      <txt>''</txt>
+      <column format="CS"/>
+    </concat>
+  </format>
+  <format id="MN" formatter="%02d">
+    <divide_trunc>3600</divide_trunc>
+  </format>
+  <format id="SEC" formatter="%02d">
+    <remainder>3600</remainder>
+    <divide_trunc>60</divide_trunc>
+  </format>
+  <format id="CS" formatter="%02d"> <!-- not sure... //-->
+    <remainder>60</remainder>
+    <multiply>100</multiply>
+    <divide_trunc>60</divide_trunc>
+  </format>
+  
+  <charset id="kingdmgp">
+    <char src="0x00" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,5 @@
+RANK|SCORE
+1|0
+
+UNKNOWN
+0x12

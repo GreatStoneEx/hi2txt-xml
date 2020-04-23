@@ -1,0 +1,94 @@
+<hi2txt>
+  <table id="GALACTIC HALL OF FAME">
+    <col>RANK</col><col>UNKNOWN2</col><col>SCORE</col><col>UNKNOWN22</col><col>NAME</col><col>UNKNOWN23</col>
+    <row><cell>1</cell><cell>0x0206</cell><cell>9921</cell><cell>0xF9</cell><cell>KAN</cell><cell>0xFE</cell></row>
+    <row><cell>2</cell><cell>0x1006</cell><cell>9900</cell><cell>0xF9</cell><cell>NAB</cell><cell>0xFD</cell></row>
+    <row><cell>3</cell><cell>0x0208</cell><cell>8088</cell><cell>0xF9</cell><cell> ED</cell><cell>0xFD</cell></row>
+    <row><cell>4</cell><cell>0x1008</cell><cell>8086</cell><cell>0xF9</cell><cell>CBK</cell><cell>0xFD</cell></row>
+    <row><cell>5</cell><cell>0x020A</cell><cell>7513</cell><cell>0xF9</cell><cell>ZZZ</cell><cell>0xFD</cell></row>
+    <row><cell>6</cell><cell>0x100A</cell><cell>7182</cell><cell>0xF9</cell><cell>YAK</cell><cell>0xFD</cell></row>
+    <row><cell>7</cell><cell>0x020C</cell><cell>6439</cell><cell>0xF9</cell><cell>YUM</cell><cell>0xFD</cell></row>
+    <row><cell>8</cell><cell>0x100C</cell><cell>5184</cell><cell>0xF9</cell><cell>ANN</cell><cell>0xFD</cell></row>
+    <row><cell>9</cell><cell>0x020E</cell><cell>4792</cell><cell>0xF9</cell><cell>JCM</cell><cell>0xFD</cell></row>
+    <row><cell>10</cell><cell>0x100E</cell><cell>3285</cell><cell>0xF9</cell><cell>BOB</cell><cell>0xFD</cell></row>
+    <row><cell>11</cell><cell>0x0210</cell><cell>2001</cell><cell>0xF9</cell><cell>LEE</cell><cell>0xFD</cell></row>
+    <row><cell>12</cell><cell>0x1010</cell><cell>1984</cell><cell>0xF9</cell><cell>UMM</cell><cell>0xFD</cell></row>
+    <row><cell>13</cell><cell>0x0212</cell><cell>911</cell><cell>0xF9</cell><cell>LJS</cell><cell>0xFD</cell></row>
+    <row><cell>14</cell><cell>0x1012</cell><cell>810</cell><cell>0xF9</cell><cell>MAT</cell><cell>0xFD</cell></row>
+    <row><cell>15</cell><cell>0x0214</cell><cell>747</cell><cell>0xF9</cell><cell>DDT</cell><cell>0xFD</cell></row>
+    <row><cell>16</cell><cell>0x1014</cell><cell>612</cell><cell>0xF9</cell><cell>OOP</cell><cell>0xFD</cell></row>
+    <row><cell>17</cell><cell>0x0216</cell><cell>536</cell><cell>0xF9</cell><cell>ZAP</cell><cell>0xFD</cell></row>
+    <row><cell>18</cell><cell>0x1016</cell><cell>427</cell><cell>0xF9</cell><cell>TOM</cell><cell>0xFD</cell></row>
+    <row><cell>19</cell><cell>0x0218</cell><cell>381</cell><cell>0xF9</cell><cell>WBD</cell><cell>0xFD</cell></row>
+    <row><cell>20</cell><cell>0x1018</cell><cell>253</cell><cell>0xF9</cell><cell>OXT</cell><cell>0xFD</cell></row>
+  </table>
+  <table id="ULTRA SCORES">
+    <col>RANK</col><col>UNKNOWN1</col><col>DAILY SCORE</col><col>UNKNOWN12</col><col>DAILY NAME</col><col>UNKNOWN13</col>
+    <row><cell>1</cell><cell>0x0206</cell><cell>9921</cell><cell>0xF9</cell><cell>KAN</cell><cell>0xFE</cell></row>
+    <row><cell>2</cell><cell>0x1006</cell><cell>9900</cell><cell>0xF9</cell><cell>NAB</cell><cell>0xFD</cell></row>
+    <row><cell>3</cell><cell>0x0208</cell><cell>8088</cell><cell>0xF9</cell><cell> ED</cell><cell>0xFD</cell></row>
+    <row><cell>4</cell><cell>0x1008</cell><cell>8086</cell><cell>0xF9</cell><cell>CBK</cell><cell>0xFD</cell></row>
+    <row><cell>5</cell><cell>0x020A</cell><cell>7182</cell><cell>0xF9</cell><cell>YAK</cell><cell>0xFD</cell></row>
+    <row><cell>6</cell><cell>0x100A</cell><cell>6439</cell><cell>0xF9</cell><cell>YUM</cell><cell>0xFD</cell></row>
+    <row><cell>7</cell><cell>0x020C</cell><cell>5184</cell><cell>0xF9</cell><cell>ANN</cell><cell>0xFD</cell></row>
+    <row><cell>8</cell><cell>0x100C</cell><cell>4792</cell><cell>0xF9</cell><cell>JCM</cell><cell>0xFD</cell></row>
+    <row><cell>9</cell><cell>0x020E</cell><cell>3285</cell><cell>0xF9</cell><cell>BOB</cell><cell>0xFD</cell></row>
+    <row><cell>10</cell><cell>0x100E</cell><cell>2001</cell><cell>0xF9</cell><cell>LEE</cell><cell>0xFD</cell></row>
+    <row><cell>11</cell><cell>0x0210</cell><cell>1984</cell><cell>0xF9</cell><cell>UMM</cell><cell>0xFD</cell></row>
+    <row><cell>12</cell><cell>0x1010</cell><cell>911</cell><cell>0xF9</cell><cell>LJS</cell><cell>0xFD</cell></row>
+    <row><cell>13</cell><cell>0x0212</cell><cell>810</cell><cell>0xF9</cell><cell>MAT</cell><cell>0xFD</cell></row>
+    <row><cell>14</cell><cell>0x1012</cell><cell>747</cell><cell>0xF9</cell><cell>DDT</cell><cell>0xFD</cell></row>
+    <row><cell>15</cell><cell>0x0214</cell><cell>612</cell><cell>0xF9</cell><cell>OOP</cell><cell>0xFD</cell></row>
+    <row><cell>16</cell><cell>0x1014</cell><cell>536</cell><cell>0xF9</cell><cell>ZAP</cell><cell>0xFD</cell></row>
+    <row><cell>17</cell><cell>0x0216</cell><cell>427</cell><cell>0xF9</cell><cell>TOM</cell><cell>0xFD</cell></row>
+    <row><cell>18</cell><cell>0x1016</cell><cell>381</cell><cell>0xF9</cell><cell>WBD</cell><cell>0xFD</cell></row>
+    <row><cell>19</cell><cell>0x0218</cell><cell>253</cell><cell>0xF9</cell><cell>OXT</cell><cell>0xFD</cell></row>
+    <row><cell>20</cell><cell>0x1018</cell><cell>131</cell><cell>0xF9</cell><cell>FXS</cell><cell>0xFD</cell></row>
+  </table>
+  <table id="ULTRA SCORES 2">
+    <col>RANK</col><col>UNKNOWN3</col><col>SCORE3</col><col>UNKNOWN32</col><col>NAME3</col><col>UNKNOWN33</col>
+    <row><cell>1</cell><cell>0x0206</cell><cell>9921</cell><cell>0xF9</cell><cell>KAN</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>0x1006</cell><cell>9900</cell><cell>0xF9</cell><cell>NAB</cell><cell>0xFD</cell></row>
+    <row><cell>3</cell><cell>0x0208</cell><cell>8088</cell><cell>0xF9</cell><cell> ED</cell><cell>0xFD</cell></row>
+    <row><cell>4</cell><cell>0x1008</cell><cell>8086</cell><cell>0xF9</cell><cell>CBK</cell><cell>0xFD</cell></row>
+    <row><cell>5</cell><cell>0x020A</cell><cell>7513</cell><cell>0xF9</cell><cell>ZZZ</cell><cell>0xFD</cell></row>
+    <row><cell>6</cell><cell>0x100A</cell><cell>7182</cell><cell>0xF9</cell><cell>YAK</cell><cell>0xFD</cell></row>
+    <row><cell>7</cell><cell>0x020C</cell><cell>6439</cell><cell>0xF9</cell><cell>YUM</cell><cell>0xFD</cell></row>
+    <row><cell>8</cell><cell>0x100C</cell><cell>5184</cell><cell>0xF9</cell><cell>ANN</cell><cell>0xFD</cell></row>
+    <row><cell>9</cell><cell>0x020E</cell><cell>4792</cell><cell>0xF9</cell><cell>JCM</cell><cell>0xFD</cell></row>
+    <row><cell>10</cell><cell>0x100E</cell><cell>3285</cell><cell>0xF9</cell><cell>BOB</cell><cell>0xFD</cell></row>
+    <row><cell>11</cell><cell>0x0210</cell><cell>2001</cell><cell>0xF9</cell><cell>LEE</cell><cell>0xFD</cell></row>
+    <row><cell>12</cell><cell>0x1010</cell><cell>1984</cell><cell>0xF9</cell><cell>UMM</cell><cell>0xFD</cell></row>
+    <row><cell>13</cell><cell>0x0212</cell><cell>911</cell><cell>0xF9</cell><cell>LJS</cell><cell>0xFD</cell></row>
+    <row><cell>14</cell><cell>0x1012</cell><cell>810</cell><cell>0xF9</cell><cell>MAT</cell><cell>0xFD</cell></row>
+    <row><cell>15</cell><cell>0x0214</cell><cell>747</cell><cell>0xF9</cell><cell>DDT</cell><cell>0xFD</cell></row>
+    <row><cell>16</cell><cell>0x1014</cell><cell>612</cell><cell>0xF9</cell><cell>OOP</cell><cell>0xFD</cell></row>
+    <row><cell>17</cell><cell>0x0216</cell><cell>536</cell><cell>0xF9</cell><cell>ZAP</cell><cell>0xFD</cell></row>
+    <row><cell>18</cell><cell>0x1016</cell><cell>427</cell><cell>0xF9</cell><cell>TOM</cell><cell>0xFD</cell></row>
+    <row><cell>19</cell><cell>0x0218</cell><cell>381</cell><cell>0xF9</cell><cell>WBD</cell><cell>0xFD</cell></row>
+    <row><cell>20</cell><cell>0x1018</cell><cell>253</cell><cell>0xF9</cell><cell>OXT</cell><cell>0xFD</cell></row>
+  </table>
+  <table id="ULTRA SCORES 3">
+    <col>RANK</col><col>UNKNOWN4</col><col>SCORE4</col><col>UNKNOWN42</col><col>NAME4</col><col>UNKNOWN43</col>
+    <row><cell>1</cell><cell>0x0206</cell><cell>9921</cell><cell>0xF9</cell><cell>KAN</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>0x1006</cell><cell>9900</cell><cell>0xF9</cell><cell>NAB</cell><cell>0xFD</cell></row>
+    <row><cell>3</cell><cell>0x0208</cell><cell>8088</cell><cell>0xF9</cell><cell> ED</cell><cell>0xFD</cell></row>
+    <row><cell>4</cell><cell>0x1008</cell><cell>8086</cell><cell>0xF9</cell><cell>CBK</cell><cell>0xFD</cell></row>
+    <row><cell>5</cell><cell>0x020A</cell><cell>7513</cell><cell>0xF9</cell><cell>ZZZ</cell><cell>0xFD</cell></row>
+    <row><cell>6</cell><cell>0x100A</cell><cell>7182</cell><cell>0xF9</cell><cell>YAK</cell><cell>0xFD</cell></row>
+    <row><cell>7</cell><cell>0x020C</cell><cell>6439</cell><cell>0xF9</cell><cell>YUM</cell><cell>0xFD</cell></row>
+    <row><cell>8</cell><cell>0x100C</cell><cell>5184</cell><cell>0xF9</cell><cell>ANN</cell><cell>0xFD</cell></row>
+    <row><cell>9</cell><cell>0x020E</cell><cell>4792</cell><cell>0xF9</cell><cell>JCM</cell><cell>0xFD</cell></row>
+    <row><cell>10</cell><cell>0x100E</cell><cell>3285</cell><cell>0xF9</cell><cell>BOB</cell><cell>0xFD</cell></row>
+    <row><cell>11</cell><cell>0x0210</cell><cell>2001</cell><cell>0xF9</cell><cell>LEE</cell><cell>0xFD</cell></row>
+    <row><cell>12</cell><cell>0x1010</cell><cell>1984</cell><cell>0xF9</cell><cell>UMM</cell><cell>0xFD</cell></row>
+    <row><cell>13</cell><cell>0x0212</cell><cell>911</cell><cell>0xF9</cell><cell>LJS</cell><cell>0xFD</cell></row>
+    <row><cell>14</cell><cell>0x1012</cell><cell>810</cell><cell>0xF9</cell><cell>MAT</cell><cell>0xFD</cell></row>
+    <row><cell>15</cell><cell>0x0214</cell><cell>747</cell><cell>0xF9</cell><cell>DDT</cell><cell>0xFD</cell></row>
+    <row><cell>16</cell><cell>0x1014</cell><cell>612</cell><cell>0xF9</cell><cell>OOP</cell><cell>0xFD</cell></row>
+    <row><cell>17</cell><cell>0x0216</cell><cell>536</cell><cell>0xF9</cell><cell>ZAP</cell><cell>0xFD</cell></row>
+    <row><cell>18</cell><cell>0x1016</cell><cell>427</cell><cell>0xF9</cell><cell>TOM</cell><cell>0xFD</cell></row>
+    <row><cell>19</cell><cell>0x0218</cell><cell>381</cell><cell>0xF9</cell><cell>WBD</cell><cell>0xFD</cell></row>
+    <row><cell>20</cell><cell>0x1018</cell><cell>253</cell><cell>0xF9</cell><cell>OXT</cell><cell>0xFD</cell></row>
+  </table>
+</hi2txt>

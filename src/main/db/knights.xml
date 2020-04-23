@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:ffe53a:257:00:00
+                  0:ffe78f:1:05:05
+                  0:ffe7ca:1:02:02
+                  0:ffa4b6:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>605</size>
+    </check>
+    <loop count="50">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME" charset="knights" ascii-step="2" ascii-offset="65"/>
+      <elt size="1" type="int"  id="CHARACTER"/>
+      <elt size="1" type="int"  id="LEVEL"/>
+      <elt size="2" type="int"  id="RANK" base="16" nibble-skip="odd"/>
+      <elt size="1" type="raw"  id="UNUSED"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="LEVEL"     format="+1;L"/>
+      <column id="UNUSED"    format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="L"><prefix>L-</prefix></format>
+  <format id="character">
+    <case src="0" dst="LANCELOT"/>
+    <case src="1" dst="ARTHUR"/>
+    <case src="2" dst="PERCEVAL"/>
+  </format>
+  
+  <charset id="knights">
+    <char src="0x34" dst="!"/>
+    <char src="0x36" dst="·"/>
+    <char src="0x38" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with: mame 0.159 and hiscore.dat 20150701 (only ALPHA scores)
+	tested with: mame 0.186 and embedded hiscore.dat (adding BRAVO and CHARLIE scores)
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:a25a:ef:a0:2a</definition> <!-- only ALPHA scores -->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+	  <definition>@:maincpu,program,a25a,2cf,a0,2a</definition> <!-- from 0.186 BRAVO and CHARLIE scores added -->
+      <size>239</size>
+	  <size>719</size>
+    </check>
+    <loop count="10"> <!-- ALPHA solo //-->
+      <elt size="4" type="int"  id="ALPHA SCORE" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="ALPHA LEVEL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="ALPHA LOOP"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="ALPHA NAME"  charset="raiden2"/>
+    </loop>
+    <loop count="10"> <!-- ALPHA dual //-->
+      <elt size="4" type="int"  id="ALPHA SCORE DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="ALPHA LEVEL DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="ALPHA LOOP DUAL"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="ALPHA NAME DUAL"  charset="raiden2"/>
+    </loop>
+	<loop count="10"> <!-- BRAVO solo //-->
+      <elt size="4" type="int"  id="BRAVO SCORE" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="BRAVO LEVEL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="BRAVO LOOP"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="BRAVO NAME"  charset="raiden2"/>
+    </loop>
+    <loop count="10"> <!-- BRAVO dual //-->
+      <elt size="4" type="int"  id="BRAVO SCORE DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="BRAVO LEVEL DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="BRAVO LOOP DUAL"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="BRAVO NAME DUAL"  charset="raiden2"/>
+    </loop>
+	<loop count="10"> <!-- CHARLIE solo //-->
+      <elt size="4" type="int"  id="CHARLIE SCORE" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="CHARLIE LEVEL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="CHARLIE LOOP"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="CHARLIE NAME"  charset="raiden2"/>
+    </loop>
+    <loop count="10"> <!-- CHARLIE dual //-->
+      <elt size="4" type="int"  id="CHARLIE SCORE DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="CHARLIE LEVEL DUAL" endianness="little_endian" base="10"/>
+      <elt size="2" type="int"  id="CHARLIE LOOP DUAL"  endianness="little_endian" base="10"/>
+      <elt size="4" type="text" id="CHARLIE NAME DUAL"  charset="raiden2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="ALPHA 1 PLAYER TOP SCORES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="ALPHA SCORE"       format="score"/>
+      <column id="ALPHA NAME"/>
+      <column id="ALPHA STAGE"       format="alpha solo"/>
+    </table>
+	<table id="ALPHA 2 PLAYERS TOP SCORES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="ALPHA SCORE DUAL"  format="score"/>
+      <column id="ALPHA NAME DUAL"/>
+      <column id="ALPHA STAGE DUAL"  format="alpha dual"/>
+    </table>
+	<table id="BRAVO 1 PLAYER TOP SCORES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="BRAVO SCORE"       format="score"/>
+      <column id="BRAVO NAME"/>
+      <column id="BRAVO STAGE"       format="bravo solo"/>
+    </table>
+	<table id="BRAVO 2 PLAYERS TOP SCORES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="BRAVO SCORE DUAL"  format="score"/>
+      <column id="BRAVO NAME DUAL"/>
+      <column id="BRAVO STAGE DUAL"  format="bravo dual"/>
+    </table>
+	<table id="CHARLIE 1 PLAYER TOP SCORES">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="CHARLIE SCORE"      format="score"/>
+      <column id="CHARLIE NAME"/>
+      <column id="CHARLIE STAGE"      format="charlie solo"/>
+    </table>
+	<table id="2 PLAYERS TOP SCORES">
+      <column id="RANK"  src="index"  format="+1"/>
+      <column id="CHARLIE SCORE DUAL" format="score"/>
+      <column id="CHARLIE NAME DUAL"/>
+      <column id="CHARLIE STAGE DUAL" format="charlie dual"/>
+    </table>
+  </output>
+  
+  <format id="score">
+    <!-- last number of the score can be != 0 for user score, but is always displayed as a 0 //-->
+    <divide_trunc>10</divide_trunc>
+    <multiply>10</multiply>
+    <!-- it is possible to store a very high score, but not to display it entirely //-->
+    <!-- <remainder>100000000</remainder> //-->
+  </format>
+  
+  <format id="alpha solo">
+    <concat>
+      <column id="LOOP" format="+1"/><txt>-</txt><column id="ALPHA LEVEL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="alpha dual">
+    <concat>
+      <column id="LOOP DUAL" format="+1"/><txt>-</txt><column id="ALPHA LEVEL DUAL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="bravo solo">
+    <concat>
+      <column id="LOOP" format="+1"/><txt>-</txt><column id="BRAVO LEVEL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="bravo dual">
+    <concat>
+      <column id="LOOP DUAL" format="+1"/><txt>-</txt><column id="BRAVO LEVEL DUAL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="charlie solo">
+    <concat>
+      <column id="LOOP" format="+1"/><txt>-</txt><column id="CHARLIE LEVEL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="charlie dual">
+    <concat>
+      <column id="LOOP DUAL" format="+1"/><txt>-</txt><column id="CHARLIE LEVEL DUAL" format="stage minor"/>
+    </concat>
+  </format>
+  
+  <format id="stage minor">
+    <case src="0"  dst="0" default="yes"/>
+    <case src="1"  dst="1"/>
+    <case src="2"  dst="2"/>
+    <case src="3"  dst="3"/>
+    <case src="4"  dst="4"/>
+    <case src="5"  dst="5"/>
+    <case src="6"  dst="5"/>
+    <case src="7"  dst="6"/>
+    <case src="8"  dst="7"/>
+    <case src="9"  dst="8"/>
+    <case src="10" dst="8"/>
+  </format>
+  
+  <charset id="raiden2">
+  	<char src="0x00" dst=""/>
+    <char src="0x5B" dst="!"/>
+    <char src="0x5C" dst="?"/>
+    <char src="0x5D" dst="-"/>
+    <char src="0x5E" dst="."/>
+    <char src="0x5F" dst=" "/>
+  </charset>
+</hi2txt>

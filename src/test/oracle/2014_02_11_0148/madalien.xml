@@ -1,0 +1,22 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col>
+    <row><cell>1</cell><cell>5910</cell></row>
+    <row><cell>2</cell><cell>3800</cell></row>
+    <row><cell>3</cell><cell>1100</cell></row>
+    <row><cell>4</cell><cell>840</cell></row>
+    <row><cell>5</cell><cell>360</cell></row>
+    <row><cell>6</cell><cell>60</cell></row>
+  </table>
+  <table id="BEST FIVE SCORES">
+    <col>RANK</col><col>BEST FIVE SCORES</col>
+    <row><cell>1</cell><cell>5910</cell></row>
+    <row><cell>2</cell><cell>3800</cell></row>
+    <row><cell>3</cell><cell>1100</cell></row>
+    <row><cell>4</cell><cell>840</cell></row>
+    <row><cell>5</cell><cell>360</cell></row>
+  </table>
+  <field id="TOP SCORE">5910</field>
+  <field id="UNUSED">00000000000000000000000000000000</field>
+  <field id="UNKNOWN">361977945499238658</field>
+</hi2txt>

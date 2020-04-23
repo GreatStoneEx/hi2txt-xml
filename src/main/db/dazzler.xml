@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with:
+      mame 0.148 / hiscore.dat 2014-04-23
+      mame 0.153 / hiscore.dat 2014-08-22
+    source: HiToText, greatstone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:3cea:20:00:1b</definition> <!-- hiscore.dat v2014-04-23 //-->
+      <definition>0:3cea:20:00:1b
+                  0:3d11:2b:00:00</definition> <!-- hiscore.dat v2014-08-22 => add names extraction //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>32</size> <!-- hiscore.dat v2014-04-23//-->
+      <size>75</size> <!-- hiscore.dat v2014-08-22//-->
+    </check>
+    <loop count="5">
+      <elt size="2" type="int" id="SCORE" base="16"/>
+    </loop>
+    <elt size="2" type="int" id="LAST SCORE" base="16"/>
+    <loop count="5">
+      <elt size="4" type="text" id="SCORE STRING" endianness="little_endian" ascii-offset="21"/>
+    </loop>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME" endianness="little_endian" charset="dazzler" ascii-offset="64"/>
+      <elt size="7" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"        format="*100"/>
+      <column id="SCORE STRING" format="score_on_screen" display="debug"/>
+      <column id="NAME"/>
+    </table>
+    <field id="LAST SCORE" format="*100" display="extra"/>
+  </output>
+  
+  <format id="score_on_screen"><pad max="6" direction="right">0</pad></format>
+  
+  <charset id="dazzler">
+    <char src="0x00" dst=" "/>
+    <char src="0x28" dst="."/>
+  </charset>
+</hi2txt>

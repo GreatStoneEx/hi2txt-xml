@@ -1,0 +1,29 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>TIME</col>
+    <row><cell>1</cell><cell>278360</cell><cell>AWV</cell><cell>ALL</cell><cell>07&apos;42&apos;&apos;00</cell></row>
+    <row><cell>2</cell><cell>195260</cell><cell>AWV</cell><cell>2-A</cell><cell>04&apos;52&apos;&apos;00</cell></row>
+    <row><cell>3</cell><cell>69000</cell><cell>.-A</cell><cell>1-B</cell><cell>01&apos;46&apos;&apos;00</cell></row>
+    <row><cell>4</cell><cell>63810</cell><cell>OYB</cell><cell>1-B</cell><cell>01&apos;53&apos;&apos;00</cell></row>
+    <row><cell>5</cell><cell>62030</cell><cell>TAG</cell><cell>1-B</cell><cell>01&apos;50&apos;&apos;04</cell></row>
+    <row><cell>6</cell><cell>60140</cell><cell>HYA</cell><cell>1-B</cell><cell>02&apos;02&apos;&apos;42</cell></row>
+    <row><cell>7</cell><cell>59110</cell><cell>DOH</cell><cell>1-B</cell><cell>02&apos;11&apos;&apos;11</cell></row>
+    <row><cell>8</cell><cell>43030</cell><cell>MSG</cell><cell>1-B</cell><cell>02&apos;18&apos;&apos;21</cell></row>
+    <row><cell>9</cell><cell>34030</cell><cell>TZN</cell><cell>1-B</cell><cell>02&apos;45&apos;&apos;40</cell></row>
+    <row><cell>10</cell><cell>25200</cell><cell>MIZ</cell><cell>1-A</cell><cell>00&apos;00&apos;&apos;00</cell></row>
+  </table>
+  <table id="STAGE RECORDS">
+    <col>STAGE</col><col>RECORD NAME</col><col>RECORD TIME</col>
+    <row><cell>1-A</cell><cell>.-A</cell><cell>01&apos;46&apos;&apos;98</cell></row>
+    <row><cell>1-B</cell><cell>MSG</cell><cell>01&apos;50&apos;&apos;00</cell></row>
+    <row><cell>1-C</cell><cell>HYA</cell><cell>01&apos;50&apos;&apos;00</cell></row>
+    <row><cell>1-D</cell><cell>AWV</cell><cell>02&apos;13&apos;&apos;71</cell></row>
+    <row><cell>1-E</cell><cell>SMT</cell><cell>02&apos;20&apos;&apos;00</cell></row>
+    <row><cell>2-A</cell><cell>TAG</cell><cell>02&apos;00&apos;&apos;00</cell></row>
+    <row><cell>2-B</cell><cell>AWV</cell><cell>01&apos;58&apos;&apos;68</cell></row>
+    <row><cell>2-C</cell><cell>AWV</cell><cell>01&apos;31&apos;&apos;03</cell></row>
+    <row><cell>2-D</cell><cell>AWV</cell><cell>01&apos;42&apos;&apos;88</cell></row>
+    <row><cell>2-E</cell><cell>SMZ</cell><cell>02&apos;20&apos;&apos;00</cell></row>
+  </table>
+  <field id="TOP SCORE">278360</field>
+</hi2txt>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file="nvram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>2048</size>
+    </check>
+    
+    <elt size="1024" type="raw" id="UNKNOWN"/>
+    <loop count="4">
+      <elt size="4" type="int"  id="100M SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="100M NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="100M SEPARATOR"/>
+    </loop>
+    <loop count="4">
+      <elt size="4" type="int"  id="LONG JUMP SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="LONG JUMP NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="LONG JUMP SEPARATOR"/>
+    </loop>
+    <loop count="4">
+      <elt size="4" type="int"  id="JAVELIN SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="JAVELIN NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="JAVELIN SEPARATOR"/>
+    </loop>
+    <loop count="4">
+      <elt size="4" type="int"  id="100M HURDLES SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="100M HURDLES NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="100M HURDLES SEPARATOR"/>
+    </loop>
+    <loop count="4">
+      <elt size="4" type="int"  id="HAMMER SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="HAMMER NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="HAMMER SEPARATOR"/>
+    </loop>
+    <loop count="4">
+      <elt size="4" type="int"  id="HIGH JUMP SCORE" decoding-profile="bcd"/>
+      <elt size="3" type="text" id="HIGH JUMP NAME"  charset="trackfld2" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="HIGH JUMP SEPARATOR"/>
+    </loop>
+    <loop count="160">
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="2" type="text" id="NAME"  decoding-profile="base-32" charset="trackfld"/>
+    </loop>
+    <!-- 2016 //-->
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES" line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+    </table>
+    <table id="100M TOP SCORES">
+      <column id="RANK" src="index" format="+1" display="extra"/>
+      <column id="100M SCORE" format="time"     display="extra"/>
+      <column id="100M NAME"                    display="extra"/>
+    </table>
+    <table id="LONG JUMP TOP SCORES">
+      <column id="RANK" src="index" format="+1"      display="extra"/>
+      <column id="LONG JUMP SCORE" format="distance" display="extra"/>
+      <column id="LONG JUMP NAME"                    display="extra"/>
+    </table>
+    <table id="JAVELIN TOP SCORES">
+      <column id="RANK" src="index" format="+1"    display="extra"/>
+      <column id="JAVELIN SCORE" format="distance" display="extra"/>
+      <column id="JAVELIN NAME"                    display="extra"/>
+    </table>
+    <table id="100M HURDLES TOP SCORES">
+      <column id="RANK" src="index" format="+1"     display="extra"/>
+      <column id="100M HURDLES SCORE" format="time" display="extra"/>
+      <column id="100M HURDLES NAME"                display="extra"/>
+    </table>
+    <table id="HAMMER TOP SCORES">
+      <column id="RANK" src="index" format="+1"   display="extra"/>
+      <column id="HAMMER SCORE" format="distance" display="extra"/>
+      <column id="HAMMER NAME"                    display="extra"/>
+    </table>
+    <table id="HIGH JUMP TOP SCORES">
+      <column id="RANK" src="index" format="+1"      display="extra"/>
+      <column id="HIGH JUMP SCORE" format="distance" display="extra"/>
+      <column id="HIGH JUMP NAME"                    display="extra"/>
+    </table>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="distance" formatter="%.2fm">  <divide>100</divide></format>
+  <format id="time"     formatter="%.2fsec"><divide>100</divide></format>
+  
+  <charset id="trackfld">
+    <char src="0x00" dst=" "/> <!-- code before ascii-offset but after base-32 decoding //-->
+  </charset>
+  <charset id="trackfld2">
+    <char src="0x00" dst=" "/>
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+  </charset>
+</hi2txt>

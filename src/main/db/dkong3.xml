@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6b00:aa:f3:76
+                  0:6c20:40:00:00
+                  0:6c16:04:00:00
+                  0:68f3:03:01:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>241</size>
+    </check>
+    <loop count="7">
+      <elt size="2"  type="raw"  id="UNKNOWN 1"/> <!-- sort of address? //-->
+      <elt size="3"  type="text" id="RANK STRING" charset="dkong3"/>
+      <elt size="2"  type="text" id="SPACE 1" charset="dkong3"/>
+      <elt size="6"  type="int"  id="SCORE LONG" nibble-skip="odd" base="16"/>
+      <elt size="2"  type="text" id="SPACE 2" charset="dkong3"/>
+      <elt size="3"  type="text" id="NAME"  charset="dkong3"/>
+      <elt size="9"  type="text" id="SPACE 3" charset="dkong3"/>
+	  <elt size="2"  type="raw"  id="UNKNOWN 2"/> <!-- sort of address? //-->
+      <elt size="3"  type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="2"  type="raw"  id="UNKNOWN 3"/> <!-- sort of address? //-->
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table line-ignore="SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="RANK STRING"           display="debug"/>
+      <column id="SPACE 1"               display="debug"/>
+      <column id="SCORE"/>
+      <column id="SCORE LONG"            display="debug"/>
+      <column id="SPACE 2"               display="debug"/>
+      <column id="NAME"/>
+      <column id="SPACE 3"               display="debug"/>
+      <column id="UNKNOWN 1" format="0x" display="debug"/>
+      <column id="UNKNOWN 2" format="0x" display="debug"/>
+	  <column id="UNKNOWN 3" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <charset id="dkong3">
+    <char src="0x40" dst=" "/>
+    <char src="0x5F" dst="-"/>
+    <char src="0x66" dst="."/>
+  </charset>
+</hi2txt>

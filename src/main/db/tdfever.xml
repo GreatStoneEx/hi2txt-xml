@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Touch Down Fever">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:df28:28:c5:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>40</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="text" id="NAME1" charset="tdfever"/>
+      <elt size="3" type="text" id="NAME2" charset="tdfever"/>
+    </loop>
+    <loop count="5">
+      <elt size="1" type="int" id="SCORE1" base="16"/>
+      <elt size="1" type="int" id="SCORE2" base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="score"/>
+    </table>
+  </output>
+
+  <format id="score">
+    <concat>
+      <column id="NAME1"/>
+      <column id="SCORE1" format="PadL3 "/>
+      <txt> vs </txt>
+      <column id="NAME2"/>
+      <column id="SCORE2" format="PadL3 "/>
+    </concat>
+  </format>
+
+  <charset id="tdfever">
+    <char src="0xA0" dst="A"/>
+    <char src="0xA1" dst="B"/>
+    <char src="0xA4" dst="C"/>
+    <char src="0xA5" dst="D"/>
+    <char src="0xA8" dst="E"/>
+    <char src="0xA9" dst="F"/>
+    <char src="0xAC" dst="G"/>
+    <char src="0xAD" dst="H"/>
+    <char src="0xB0" dst="I"/>
+    <char src="0xB1" dst="J"/>
+    <char src="0xB4" dst="K"/>
+    <char src="0xB5" dst="L"/>
+    <char src="0xB8" dst="M"/>
+    <char src="0xB9" dst="N"/>
+    <char src="0xBC" dst="O"/>
+    <char src="0xBD" dst="P"/>
+    <char src="0xC0" dst="Q"/>
+    <char src="0xC1" dst="R"/>
+    <char src="0xC4" dst="S"/>
+    <char src="0xC5" dst="T"/>
+    <char src="0xC8" dst="U"/>
+    <char src="0xC9" dst="V"/>
+    <char src="0xCC" dst="W"/>
+    <char src="0xCD" dst="X"/>
+    <char src="0xD0" dst="Y"/>
+    <char src="0xD1" dst="Z"/>
+  </charset>
+</hi2txt>

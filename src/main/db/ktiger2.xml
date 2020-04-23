@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history: 2015-05-12 1st version
+    tested: mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4006e0:11e:00:00
+                  0:4007f9:1:01:01</definition> <!-- ktiger2 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>287</size>
+    </check>
+                     <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <loop count="20"><elt size="4" type="int"  id="SCORE"     base="16"/></loop>
+    <loop count="20"><elt size="6" type="text" id="NAME"      byte-skip="odd"/></loop>
+    <loop count="20"><elt size="2" type="int"  id="AREA"      base="16"/></loop>
+    <loop count="20"><elt size="2" type="int"  id="CHARACTER" base="16"/></loop>
+                     <elt size="2" type="raw"  id="UNKNOWN"/>
+                     <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:4006e0:11a:0:01
+                  0:4007d3:1:02:02</definition> <!-- tcobra2 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>283</size>
+    </check>
+                     <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+    <loop count="20"><elt size="4" type="int"  id="SCORE"     base="16"/></loop>
+    <loop count="20"><elt size="6" type="text" id="NAME"      byte-skip="odd"/></loop>
+    <loop count="20"><elt size="2" type="int"  id="AREA"      base="16"/></loop>
+    <loop count="20" skip-last-bytes="2"> <!-- the 20th character is not dumped. hiscore.dat can be fixed //-->
+                     <elt size="2" type="int"  id="CHARACTER" base="16"/></loop>
+                     <elt size="1" type="raw"  id="CHECK"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="AREA"      format="area"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="UNKNOWN" format="0x" display="debug"/>
+    <field id="CHECK"   format="0x" display="debug"/>
+  </output>
+  
+  <format id="character">
+    <case src="0" dst="BLUE"/>
+    <case src="1" dst="RED"/>
+  </format>
+  <format id="area">
+    <case src="100" dst="ALL"/>
+  </format>
+</hi2txt>

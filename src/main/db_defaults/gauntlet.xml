@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>WARRIOR SCORE</col><col>WARRIOR NAME</col><col>VALKYRIE SCORE</col><col>VALKYRIE NAME</col><col>WIZARD SCORE</col><col>WIZARD NAME</col><col>ELF SCORE</col><col>ELF NAME</col>
+    <row><cell>1</cell><cell>8000</cell><cell>HAL</cell><cell>8000</cell><cell>EDL</cell><cell>8000</cell><cell>B F</cell><cell>8000</cell><cell>ED </cell></row>
+    <row><cell>2</cell><cell>7600</cell><cell>ED </cell><cell>7600</cell><cell>EAR</cell><cell>7600</cell><cell>DAN</cell><cell>7600</cell><cell>BF </cell></row>
+    <row><cell>3</cell><cell>7200</cell><cell>D P</cell><cell>7200</cell><cell>KEN</cell><cell>7200</cell><cell>BAF</cell><cell>7200</cell><cell>LVR</cell></row>
+    <row><cell>4</cell><cell>6800</cell><cell>DUM</cell><cell>6800</cell><cell>MV </cell><cell>6800</cell><cell>WIZ</cell><cell>6800</cell><cell>ELF</cell></row>
+    <row><cell>5</cell><cell>6400</cell><cell>ED </cell><cell>6400</cell><cell>CAL</cell><cell>6400</cell><cell>EDL</cell><cell>6400</cell><cell>RJF</cell></row>
+    <row><cell>6</cell><cell>6000</cell><cell>BF </cell><cell>6000</cell><cell>MDN</cell><cell>6000</cell><cell>BOB</cell><cell>6000</cell><cell>GEL</cell></row>
+    <row><cell>7</cell><cell>5600</cell><cell>PMC</cell><cell>5600</cell><cell>AMA</cell><cell>5600</cell><cell>WIL</cell><cell>5600</cell><cell>SGM</cell></row>
+    <row><cell>8</cell><cell>5200</cell><cell>D H</cell><cell>5200</cell><cell>ZON</cell><cell>5200</cell><cell>MEA</cell><cell>5200</cell><cell>SMO</cell></row>
+    <row><cell>9</cell><cell>4800</cell><cell>DFT</cell><cell>4800</cell><cell>PCT</cell><cell>4800</cell><cell>SWC</cell><cell>4800</cell><cell>AJM</cell></row>
+    <row><cell>10</cell><cell>4400</cell><cell>GDS</cell><cell>4400</cell><cell>REZ</cell><cell>4400</cell><cell>CAD</cell><cell>4400</cell><cell>CJ </cell></row>
+  </table>
+  <field id="LAST LEVEL PLAYED">7</field>
+</hi2txt>
+

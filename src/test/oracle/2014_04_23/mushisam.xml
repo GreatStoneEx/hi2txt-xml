@@ -1,0 +1,38 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>MODE</col><col>CONTINUE</col><col>START SHOT</col><col>DEFAULT</col><col>EMPTY</col><col>EMPTY2</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>1</cell><cell>3000000</cell><cell>KTN</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>2500000</cell><cell>NMR</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>2000000</cell><cell>TNK</cell><cell>2</cell><cell>ORIGINAL</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>1500000</cell><cell>WKB</cell><cell>1</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>1000000</cell><cell>ICM</cell><cell>1</cell><cell>ORIGINAL</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>10000000</cell><cell>YUI</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>8000000</cell><cell>WHI</cell><cell>2</cell><cell>MANIAC</cell><cell>2</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>6000000</cell><cell>NKS</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>4000000</cell><cell>MTS</cell><cell>1</cell><cell>MANIAC</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>2013441</cell><cell>STU</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>10000000</cell><cell>SMS</cell><cell>3</cell><cell>ULTRA</cell><cell>6</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>9000000</cell><cell>NIY</cell><cell>2</cell><cell>ULTRA</cell><cell>7</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>8000000</cell><cell>FRT</cell><cell>2</cell><cell>ULTRA</cell><cell>8</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>7000000</cell><cell>MAO</cell><cell>1</cell><cell>ULTRA</cell><cell>9</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>6000000</cell><cell>FRM</cell><cell>1</cell><cell>ULTRA</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+  </table>
+  <table id="TODAYS TOP SCORES">
+    <col>TODAYS RANK</col><col>TODAYS LOCAL RANK</col><col>TODAYS SCORE</col><col>TODAYS NAME</col><col>TODAYS STAGE</col><col>TODAYS MODE</col><col>TODAYS CONTINUE</col><col>TODAYS START SHOT</col><col>TODAYS DEFAULT</col><col>TODAYS EMPTY</col><col>TODAYS EMPTY2</col><col>TODAYS EMPTY3</col>
+    <row><cell>1</cell><cell>1</cell><cell>3000000</cell><cell>KTN</cell><cell>3</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>2500000</cell><cell>NMR</cell><cell>2</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>2000000</cell><cell>TNK</cell><cell>2</cell><cell>ORIGINAL</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>1500000</cell><cell>WKB</cell><cell>1</cell><cell>ORIGINAL</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>346681</cell><cell>Z.</cell><cell>1</cell><cell>ORIGINAL</cell><cell>0</cell><cell>W-POWER</cell><cell>no</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>10000000</cell><cell>YUI</cell><cell>3</cell><cell>MANIAC</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>8000000</cell><cell>WHI</cell><cell>2</cell><cell>MANIAC</cell><cell>2</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>6000000</cell><cell>NKS</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>4000000</cell><cell>MTS</cell><cell>1</cell><cell>MANIAC</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>2013441</cell><cell>STU</cell><cell>2</cell><cell>MANIAC</cell><cell>0</cell><cell>S-POWER</cell><cell>no</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>10000000</cell><cell>SMS</cell><cell>3</cell><cell>ULTRA</cell><cell>6</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>9000000</cell><cell>NIY</cell><cell>2</cell><cell>ULTRA</cell><cell>7</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>8000000</cell><cell>FRT</cell><cell>2</cell><cell>ULTRA</cell><cell>8</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>7000000</cell><cell>MAO</cell><cell>1</cell><cell>ULTRA</cell><cell>9</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell>0x0000</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>128</cell><cell>FRM</cell><cell>1</cell><cell>ULTRA</cell><cell>1</cell><cell>M-POWER</cell><cell>yes</cell><cell>0x00</cell><cell>0x00</cell><cell></cell></row>
+  </table>
+</hi2txt>

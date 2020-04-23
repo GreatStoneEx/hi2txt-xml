@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Star Wars">
+  <!--
+    tested with mame 0.181 and related hiscore.dat
+    source: Thomas Busse
+  //-->
+  
+  <structure file="x2212">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>256</size>
+    </check>
+    <elt size="8" type="raw"  id="UNKNOWN 1"/>
+    <loop count="3">
+        <elt size="8" type="int"  id="SCORE" nibble-skip="odd" base="16"/>
+    </loop>
+    <loop count="3">
+        <elt size="6" type="text" id="NAME"  nibble-skip="odd" charset="charconv" ascii-offset="64"/>
+    </loop>
+  </structure>
+ 
+  <!--
+  <structure file=".hi">
+    <check>
+      <size>49</size>
+    </check>
+    <loop count="7" start="3"><elt size="4" type="int"  id="SCORE" base="16"/></loop>
+    <loop count="7" start="3"><elt size="3" type="text" id="NAME" charset="charconv" ascii-offset="64"/></loop>
+  </structure>
+  -->
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x00" dst=" "/>
+  </charset>
+
+</hi2txt>
+

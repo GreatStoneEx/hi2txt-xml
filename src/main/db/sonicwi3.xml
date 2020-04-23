@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Aero Fighters 3 / Sonic Wings 3">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:10000c:cf:4b:20</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>207</size>
+    </check>
+    <loop count="7"> <!-- 1 player -->
+	  <elt size="3" type="text" id="1P NAME"/>
+	  <elt size="1" type="int"  id="1P CHARACTER" base="16"/>
+      <elt size="4" type="int"  id="1P SCORE"     base="16"/>
+    </loop>
+	<loop count="7"> <!-- 2 players -->
+	  <elt size="3" type="text" id="2P NAME"/>
+	  <elt size="1" type="int"  id="2P CHARACTER" base="16"/>
+      <elt size="4" type="int"  id="2P SCORE"     base="16"/>
+    </loop>
+	<loop count="7"> <!-- 1 player (bis) -->
+	  <elt size="3" type="text" id="1P NAME 2"/>
+	  <elt size="1" type="int"  id="1P CHARACTER 2" base="16"/>
+      <elt size="4" type="int"  id="1P SCORE 2"     base="16"/>
+    </loop>
+	<loop count="5"> <!-- 2 players (bis) -->
+	  <elt size="3" type="text" id="2P NAME 2"/>
+	  <elt size="1" type="int"  id="2P CHARACTER 2" base="16"/>
+      <elt size="4" type="int"  id="2P SCORE 2"     base="16"/>
+    </loop>
+  </structure>
+  
+  <structure file="saveram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>65536</size>
+    </check>
+	<elt size="812" type="raw" id="UNKNOWN"/>
+    <loop count="7"> <!-- 1 player -->
+	  <elt size="3" type="text" id="1P NAME"/>
+	  <elt size="1" type="int"  id="1P CHARACTER" base="16"/>
+      <elt size="4" type="int"  id="1P SCORE"     base="16"/>
+    </loop>
+	<loop count="7"> <!-- 2 players -->
+	  <elt size="3" type="text" id="2P NAME"/>
+	  <elt size="1" type="int"  id="2P CHARACTER" base="16"/>
+      <elt size="4" type="int"  id="2P SCORE"     base="16"/>
+    </loop>
+	<loop count="7"> <!-- 1 player (bis) -->
+	  <elt size="3" type="text" id="1P NAME 2"/>
+	  <elt size="1" type="int"  id="1P CHARACTER 2" base="16"/>
+      <elt size="4" type="int"  id="1P SCORE 2"     base="16"/>
+    </loop>
+	<loop count="5"> <!-- 2 players (bis) -->
+	  <elt size="3" type="text" id="2P NAME 2"/>
+	  <elt size="1" type="int"  id="2P CHARACTER 2" base="16"/>
+      <elt size="4" type="int"  id="2P SCORE 2"     base="16"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="1 PLAYER" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"        format="+1"/>
+      <column id="SCORE"     src="1P SCORE"/>
+      <column id="NAME"      src="1P NAME"/>
+      <column id="CHARACTER" src="1P CHARACTER" format="character"/>
+    </table>
+	
+	<table id="2 PLAYERS" line-ignore="2P SCORE:0">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="2P SCORE"/>
+      <column id="2P NAME"/>
+      <column id="CHARACTER 1" src="2P CHARACTER" format="d10;character"/>
+	  <column id="CHARACTER 2" src="2P CHARACTER" format="%10;character"/>
+    </table>
+	
+	<table id="1 PLAYER BIS" line-ignore="SCORE:0">
+      <column id="RANK"      src="index"        format="+1"          display="debug"/>
+      <column id="SCORE"     src="1P SCORE 2"                        display="debug"/>
+      <column id="NAME"      src="1P NAME 2"                         display="debug"/>
+      <column id="CHARACTER" src="1P CHARACTER 2" format="character" display="debug"/>
+    </table>
+	
+	<table id="2 PLAYERS BIS" line-ignore="2P SCORE:0">
+      <column id="RANK" src="index" format="+1"                            display="debug"/>
+      <column id="2P SCORE 2"                                              display="debug"/>
+      <column id="2P NAME 2"                                               display="debug"/>
+      <column id="CHARACTER 1" src="2P CHARACTER 2" format="d10;character" display="debug"/>
+	  <column id="CHARACTER 2" src="2P CHARACTER 2" format="%10;character" display="debug"/>
+    </table>
+  </output>
+  
+  <format id="character">
+    <case src="0"  dst="Mecha Keaton US F4F Corsair"/>
+    <case src="1"  dst="Blazers US P-61 Black Widow"/>
+    <case src="2"  dst="Hien Japan Zero Fighter"/>
+    <case src="3"  dst="Mao Mao Japan Seiran"/>
+	<case src="4"  dst="Chaika and Pooshika Russia IL-2 Stormovik"/>
+	<case src="5"  dst="Spanky Russia Policarpov"/>
+	<case src="6"  dst="Malcolm Germany DO-335 Pfiel"/>
+	<case src="7"  dst="Lord River-n-White and Kowful Germany Ju87G Stuka"/>
+	<case src="8"  dst="Alex and Pictus England Whirlwind"/>
+	<case src="9"  dst="Ellen and Cindy England Sword Fish"/>
+	<case src="10" dst="Kotomi Aka Usagi"/> <!-- hidden -->
+	<case src="11" dst="The Man Diabloon"/> <!-- hidden -->
+  </format>
+</hi2txt>

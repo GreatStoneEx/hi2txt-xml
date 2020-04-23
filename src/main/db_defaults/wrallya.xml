@@ -1,0 +1,43 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>SAN REMO</col><col>MONTECARLO</col><col>ACROPOLIS</col><col>1000 LAKES</col><col>TOTAL</col>
+    <row><cell>1</cell><cell>37800</cell><cell>ZXP</cell><cell>--</cell><cell>--</cell><cell>20</cell><cell>20</cell><cell>40</cell></row>
+    <row><cell>2</cell><cell>37000</cell><cell>UHF</cell><cell>--</cell><cell>20</cell><cell>20</cell><cell>--</cell><cell>40</cell></row>
+    <row><cell>3</cell><cell>36720</cell><cell>WTT</cell><cell>20</cell><cell>20</cell><cell>--</cell><cell>--</cell><cell>40</cell></row>
+    <row><cell>4</cell><cell>36100</cell><cell>ADR</cell><cell>20</cell><cell>--</cell><cell>20</cell><cell>--</cell><cell>40</cell></row>
+    <row><cell>5</cell><cell>35900</cell><cell>LLS</cell><cell>15</cell><cell>20</cell><cell>--</cell><cell>--</cell><cell>35</cell></row>
+    <row><cell>6</cell><cell>35000</cell><cell>SAZ</cell><cell>--</cell><cell>20</cell><cell>--</cell><cell>15</cell><cell>35</cell></row>
+    <row><cell>7</cell><cell>34500</cell><cell>NZO</cell><cell>--</cell><cell>20</cell><cell>15</cell><cell>--</cell><cell>35</cell></row>
+    <row><cell>8</cell><cell>34400</cell><cell>TYY</cell><cell>--</cell><cell>--</cell><cell>20</cell><cell>15</cell><cell>35</cell></row>
+    <row><cell>9</cell><cell>34000</cell><cell>PTU</cell><cell>15</cell><cell>20</cell><cell>--</cell><cell>--</cell><cell>35</cell></row>
+    <row><cell>10</cell><cell>33520</cell><cell>CUL</cell><cell>15</cell><cell>15</cell><cell>--</cell><cell>--</cell><cell>30</cell></row>
+    <row><cell>11</cell><cell>33000</cell><cell>IEA</cell><cell>--</cell><cell>15</cell><cell>15</cell><cell>--</cell><cell>30</cell></row>
+    <row><cell>12</cell><cell>32300</cell><cell>BFR</cell><cell>--</cell><cell>--</cell><cell>15</cell><cell>15</cell><cell>30</cell></row>
+    <row><cell>13</cell><cell>31500</cell><cell>ELL</cell><cell>15</cell><cell>--</cell><cell>15</cell><cell>--</cell><cell>30</cell></row>
+    <row><cell>14</cell><cell>31000</cell><cell>FOE</cell><cell>--</cell><cell>15</cell><cell>--</cell><cell>12</cell><cell>27</cell></row>
+    <row><cell>15</cell><cell>30850</cell><cell>DOD</cell><cell>--</cell><cell>15</cell><cell>--</cell><cell>15</cell><cell>30</cell></row>
+    <row><cell>16</cell><cell>30000</cell><cell>EYE</cell><cell>15</cell><cell>12</cell><cell>--</cell><cell>--</cell><cell>27</cell></row>
+    <row><cell>17</cell><cell>29100</cell><cell>OBR</cell><cell>10</cell><cell>--</cell><cell>15</cell><cell>--</cell><cell>25</cell></row>
+    <row><cell>18</cell><cell>29000</cell><cell>GAG</cell><cell>15</cell><cell>15</cell><cell>--</cell><cell>--</cell><cell>30</cell></row>
+    <row><cell>19</cell><cell>28500</cell><cell>OCU</cell><cell>12</cell><cell>--</cell><cell>12</cell><cell>--</cell><cell>24</cell></row>
+    <row><cell>20</cell><cell>27860</cell><cell>MEE</cell><cell>--</cell><cell>8</cell><cell>--</cell><cell>15</cell><cell>23</cell></row>
+    <row><cell>21</cell><cell>26900</cell><cell>AIA</cell><cell>20</cell><cell>--</cell><cell>--</cell><cell>6</cell><cell>26</cell></row>
+    <row><cell>22</cell><cell>26000</cell><cell>AAB</cell><cell>--</cell><cell>--</cell><cell>12</cell><cell>12</cell><cell>24</cell></row>
+    <row><cell>23</cell><cell>25690</cell><cell>COP</cell><cell>10</cell><cell>--</cell><cell>--</cell><cell>15</cell><cell>25</cell></row>
+    <row><cell>24</cell><cell>25000</cell><cell>ONI</cell><cell>--</cell><cell>12</cell><cell>8</cell><cell>--</cell><cell>20</cell></row>
+    <row><cell>25</cell><cell>24500</cell><cell>AIT</cell><cell>15</cell><cell>--</cell><cell>6</cell><cell>--</cell><cell>21</cell></row>
+    <row><cell>26</cell><cell>24000</cell><cell>TFM</cell><cell>8</cell><cell>--</cell><cell>10</cell><cell>--</cell><cell>18</cell></row>
+    <row><cell>27</cell><cell>23450</cell><cell>AMR</cell><cell>6</cell><cell>--</cell><cell>--</cell><cell>8</cell><cell>14</cell></row>
+    <row><cell>28</cell><cell>21950</cell><cell>DAL</cell><cell>12</cell><cell>--</cell><cell>--</cell><cell>6</cell><cell>18</cell></row>
+    <row><cell>29</cell><cell>21100</cell><cell>ARG</cell><cell>--</cell><cell>15</cell><cell>--</cell><cell>3</cell><cell>18</cell></row>
+    <row><cell>30</cell><cell>20650</cell><cell>CUP</cell><cell>4</cell><cell>--</cell><cell>--</cell><cell>8</cell><cell>12</cell></row>
+    <row><cell>31</cell><cell>19100</cell><cell>TRI</cell><cell>4</cell><cell>--</cell><cell>4</cell><cell>--</cell><cell>8</cell></row>
+    <row><cell>32</cell><cell>18360</cell><cell>AMW</cell><cell>--</cell><cell>--</cell><cell>20</cell><cell>--</cell><cell>20</cell></row>
+    <row><cell>33</cell><cell>17440</cell><cell>GPS</cell><cell>--</cell><cell>--</cell><cell>--</cell><cell>15</cell><cell>15</cell></row>
+    <row><cell>34</cell><cell>15600</cell><cell>SHF</cell><cell>--</cell><cell>12</cell><cell>--</cell><cell>--</cell><cell>12</cell></row>
+    <row><cell>35</cell><cell>6000</cell><cell>TWW</cell><cell>--</cell><cell>--</cell><cell>--</cell><cell>--</cell><cell>--</cell></row>
+    <row><cell>36</cell><cell>5500</cell><cell>RIL</cell><cell>--</cell><cell>--</cell><cell>--</cell><cell>--</cell><cell>--</cell></row>
+  </table>
+</hi2txt>
+
+

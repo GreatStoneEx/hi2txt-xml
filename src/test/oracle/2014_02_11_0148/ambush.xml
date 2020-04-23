@@ -1,0 +1,9 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>EMPTY STRING</col>
+    <row><cell>1</cell><cell>100000</cell><cell>JVM</cell><cell>      </cell></row>
+    <row><cell>2</cell><cell>75000</cell><cell>LJF</cell><cell>      </cell></row>
+    <row><cell>3</cell><cell>50000</cell><cell>JQB</cell><cell>      </cell></row>
+  </table>
+  <field id="TOP SCORE">0</field>
+</hi2txt>

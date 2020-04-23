@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>16500</cell><cell>D, Y </cell></row>
+    <row><cell>2</cell><cell>12800</cell><cell>KITA </cell></row>
+    <row><cell>3</cell><cell>9700</cell><cell> Y.S </cell></row>
+    <row><cell>4</cell><cell>5200</cell><cell> S.N </cell></row>
+    <row><cell>5</cell><cell>4000</cell><cell> K.N </cell></row>
+  </table>
+  <field id="TOP SCORE">16500</field>
+</hi2txt>

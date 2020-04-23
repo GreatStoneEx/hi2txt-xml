@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:ff4dca:4:00:00
+                  0:ff0443:9f:14:70</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>163</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="11">
+      <elt size="5" type="text" id="NAME"  ascii-offset="65" charset="cs1944" byte-skip="even"/>
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="int"  id="PLANE"/>
+      <elt size="1" type="int"  id="LEVEL"/>
+      <elt size="1" type="raw"  id="UNUSED"/>
+    </loop>
+    <!-- cannot integrate last score in the previous loop as last unused byte is not dumped //-->
+    <elt size="5" type="text" id="NAME"  table-index="11" ascii-offset="65" charset="cs1944" byte-skip="even"/>
+    <elt size="4" type="int"  id="SCORE" table-index="11" base="16"/>
+    <elt size="1" type="int"  id="PLANE" table-index="11"/>
+    <elt size="1" type="int"  id="LEVEL" table-index="11"/>
+    <loop count="7">
+      <elt size="2" type="int"  id="TOP SCORE ACCURACY" base="16"/>
+    </loop>
+    <elt size="2" type="int"  id="TOP SCORE AVERAGE ACCURACY" base="16"/>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="PLANE" format="plane"/>
+      <column id="LEVEL" format="+1"/>
+      <column id="UNUSED" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+    <table id="TOP ACCURACIES">
+      <column id="STAGE" src="index" format="+1" display="extra"/>
+      <column id="TOP SCORE ACCURACY" format="%;accuracy" display="extra"/>
+    </table>
+    <field id="TOP SCORE AVERAGE ACCURACY" format="%;accuracy" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="%"><suffix>%</suffix></format>
+  <format id="accuracy">
+    <case src="0%"   dst="UNCLEARED"/>
+    <case src="100%" dst="PERFECT"/>
+  </format>
+  <format id="plane">
+    <case src="0"  dst="LIGHTNING(P1)" default="1"/>
+    <case src="1"  dst="SINDEN(P1)"/>
+    <case src="2"  dst="MOSQUITO(P1)"/>
+    <case src="16" dst="LIGHTNING(P2)"/>
+    <case src="17" dst="SINDEN(P2)"/>
+    <case src="18" dst="MOSQUITO(P2)"/>
+  </format>
+  
+  <charset id="cs1944">
+    <char src="0x34" dst="!"/>
+    <char src="0x35" dst="#"/>
+    <char src="0x36" dst="$"/>
+    <char src="0x37" dst="%"/>
+    <char src="0x38" dst="&amp;"/>
+    <char src="0x39" dst="("/>
+    <char src="0x3a" dst=")"/>
+    <char src="0x3b" dst=","/>
+    <char src="0x3c" dst="."/>
+    <char src="0x47" dst=" "/>
+    <char src="0xff" dst=" "/>
+  </charset>
+</hi2txt>

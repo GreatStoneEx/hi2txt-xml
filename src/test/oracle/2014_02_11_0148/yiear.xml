@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>38400</cell><cell>S.TSUDA   </cell><cell>3</cell></row>
+    <row><cell>2</cell><cell>31500</cell><cell>Y.SUGIMOTO</cell><cell>2</cell></row>
+    <row><cell>3</cell><cell>21300</cell><cell>A.INOUE   </cell><cell>2</cell></row>
+    <row><cell>4</cell><cell>13600</cell><cell>H.HORI    </cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>9400</cell><cell>M.TAKEMOTO</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>8200</cell><cell>NISHIMURA </cell><cell>1</cell></row>
+    <row><cell>7</cell><cell>7700</cell><cell>S.IWAMOTO </cell><cell>1</cell></row>
+    <row><cell>8</cell><cell>6300</cell><cell>SHIKAMA   </cell><cell>1</cell></row>
+    <row><cell>9</cell><cell>5100</cell><cell>HASEGAWA  </cell><cell>1</cell></row>
+    <row><cell>10</cell><cell>4800</cell><cell>HATANO    </cell><cell>1</cell></row>
+  </table>
+  <field id="TOP SCORE">38400</field>
+</hi2txt>

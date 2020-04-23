@@ -1,0 +1,48 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col>
+    <row><cell>1</cell><cell>14900</cell><cell>DAT</cell><cell>HARD WAY</cell></row>
+    <row><cell>2</cell><cell>14800</cell><cell>THE</cell><cell>HARD WAY</cell></row>
+    <row><cell>3</cell><cell>14700</cell><cell>BOY</cell><cell>HARD WAY</cell></row>
+    <row><cell>4</cell><cell>14600</cell><cell>BF </cell><cell>HARD WAY</cell></row>
+    <row><cell>5</cell><cell>14500</cell><cell>MEC</cell><cell>HARD WAY</cell></row>
+    <row><cell>6</cell><cell>14400</cell><cell>CJ </cell><cell>HARD WAY</cell></row>
+    <row><cell>7</cell><cell>14300</cell><cell>JES</cell><cell>HARD WAY</cell></row>
+    <row><cell>8</cell><cell>14200</cell><cell>PCT</cell><cell>HARD WAY</cell></row>
+    <row><cell>9</cell><cell>14100</cell><cell>MAA</cell><cell>HARD WAY</cell></row>
+    <row><cell>10</cell><cell>14000</cell><cell>BAF</cell><cell>HARD WAY</cell></row>
+  </table>
+  <table id="TOP SCORES PER DIFFICULTY">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col>
+    <row><cell>1</cell><cell>4900</cell><cell>PST</cell><cell>EASY STREET</cell></row>
+    <row><cell>2</cell><cell>4800</cell><cell>UCH</cell><cell>EASY STREET</cell></row>
+    <row><cell>3</cell><cell>4700</cell><cell>TOI</cell><cell>EASY STREET</cell></row>
+    <row><cell>4</cell><cell>4600</cell><cell> RS</cell><cell>EASY STREET</cell></row>
+    <row><cell>5</cell><cell>4425</cell><cell>YE </cell><cell>EASY STREET</cell></row>
+    <row><cell>6</cell><cell>4400</cell><cell>O T</cell><cell>EASY STREET</cell></row>
+    <row><cell>7</cell><cell>4300</cell><cell>UOA</cell><cell>EASY STREET</cell></row>
+    <row><cell>8</cell><cell>4200</cell><cell>RNB</cell><cell>EASY STREET</cell></row>
+    <row><cell>9</cell><cell>4100</cell><cell> TL</cell><cell>EASY STREET</cell></row>
+    <row><cell>10</cell><cell>4000</cell><cell> OE</cell><cell>EASY STREET</cell></row>
+    <row><cell>1</cell><cell>9900</cell><cell>PIG</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>2</cell><cell>9800</cell><cell>ASR</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>3</cell><cell>9700</cell><cell>P E</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>4</cell><cell>9600</cell><cell>ETA</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>5</cell><cell>9500</cell><cell>RHT</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>6</cell><cell>9400</cell><cell> EE</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>7</cell><cell>9300</cell><cell>B S</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>8</cell><cell>9200</cell><cell>O T</cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>9</cell><cell>9100</cell><cell>Y  </cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>10</cell><cell>9000</cell><cell>   </cell><cell>MIDDLE ROAD</cell></row>
+    <row><cell>1</cell><cell>14900</cell><cell>DAT</cell><cell>HARD WAY</cell></row>
+    <row><cell>2</cell><cell>14800</cell><cell>THE</cell><cell>HARD WAY</cell></row>
+    <row><cell>3</cell><cell>14700</cell><cell>BOY</cell><cell>HARD WAY</cell></row>
+    <row><cell>4</cell><cell>14600</cell><cell>BF </cell><cell>HARD WAY</cell></row>
+    <row><cell>5</cell><cell>14500</cell><cell>MEC</cell><cell>HARD WAY</cell></row>
+    <row><cell>6</cell><cell>14400</cell><cell>CJ </cell><cell>HARD WAY</cell></row>
+    <row><cell>7</cell><cell>14300</cell><cell>JES</cell><cell>HARD WAY</cell></row>
+    <row><cell>8</cell><cell>14200</cell><cell>PCT</cell><cell>HARD WAY</cell></row>
+    <row><cell>9</cell><cell>14100</cell><cell>MAA</cell><cell>HARD WAY</cell></row>
+    <row><cell>10</cell><cell>14000</cell><cell>BAF</cell><cell>HARD WAY</cell></row>
+  </table>
+</hi2txt>

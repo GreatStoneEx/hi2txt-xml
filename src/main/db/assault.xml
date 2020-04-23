@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:101800:4d:00:20
+                  0:100058:4:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>81</size>
+    </check>
+    <loop count="4">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="raw"  id="UNUSED 1"/>
+      <elt size="1" type="int"  id="STAGE" base="16"/>
+      <elt size="7" type="text" id="NAME"  charset="assault"/>
+      <elt size="3" type="raw"  id="UNUSED 2"/>
+    </loop>
+    <loop count="1" start="4">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+      <elt size="1" type="raw"  id="UNUSED 1"/>
+      <elt size="1" type="int"  id="STAGE" base="16"/>
+      <elt size="7" type="text" id="NAME"  charset="assault"/>
+      <!-- last 3 bytes are not extracted //-->
+    </loop>
+    <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="pad"/>
+      <column id="UNUSED 1" format="hexadecimal_string" display="debug"/>
+      <column id="UNUSED 2" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="pad"><pad direction="left" max="2">0</pad></format>
+  
+  <charset id="assault">
+    <char src="0x40" dst=" "/>
+  </charset>
+</hi2txt>

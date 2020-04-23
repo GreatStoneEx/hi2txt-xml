@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="STORY MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>100000</cell><cell>CAP</cell><cell>SHATTERAX</cell></row>
+    <row><cell>2</cell><cell>50000</cell><cell>STR</cell><cell>KORATH-THAK</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>CRY</cell><cell>MINERVA</cell></row>
+    <row><cell>4</cell><cell>10000</cell><cell>BLA</cell><cell>SUPREMOR</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>MAR</cell><cell>GALEN KOR</cell></row>
+  </table>
+  <table id="VS MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>100000</cell><cell>CAP</cell><cell>CAPTAIN AMERICA</cell></row>
+    <row><cell>2</cell><cell>50000</cell><cell>STR</cell><cell>THUNDERSTRIKE</cell></row>
+    <row><cell>3</cell><cell>30000</cell><cell>CRY</cell><cell>CRYSTAL</cell></row>
+    <row><cell>4</cell><cell>10000</cell><cell>BLA</cell><cell>BLACK KNIGHT</cell></row>
+    <row><cell>5</cell><cell>5000</cell><cell>MAR</cell><cell>CAPTAIN AMERICA</cell></row>
+  </table>
+</hi2txt>

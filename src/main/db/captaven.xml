@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, greatstone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>0:127040:A0:20:0</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>160</size>
+    </check>
+    
+    <loop count="5">
+      <elt size="4"  type="int"  id="SCORE" endianness="little_endian"/>
+      <elt size="12" type="text" id="NAME" bitmask="bm_captaven" charset="cs_captaven" src-unit-size="16"/>
+      <elt size="1"  type="int"  id="COIN"/>
+      <elt size="11" type="raw"  id="UNKNOWN"/>
+      <elt size="1"  type="int"  id="CHARACTER"/>
+      <elt size="3"  type="raw"  id="UNKNOWN2"/>
+    </loop>
+  </structure>
+    
+  <bitmask id="bm_captaven">
+    <character mask="11111111 11111111 00000000 00000000 11111111 11111111 00000000 00000000 11111111 11111111 00000000 00000000"/>
+  </bitmask>  
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER" format="character"/>
+      <column id="COIN"/>
+      <column id="UNKNOWN"   format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN2"  format="hexadecimal_string" display="debug"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  <format id="character">
+    <case src="0" dst="CAPTAIN AMERICA"/>
+    <case src="1" dst="IRONMAN"/>
+    <case src="2" dst="ANDROID"/>
+    <case src="3" dst="HAWKEYE"/>
+  </format>
+  
+  <charset id="cs_captaven">
+    <char src="0x0000" dst=" "/>
+    <!-- following char are not accepted ingame, only by hacking //-->
+    <char src="0xC8B2" dst="&mid-dot;"/>
+    <char src="0xDCB2" dst="&two-dots;"/>
+    <char src="0xE4B2" dst="&inverted-question;"/>
+    <char src="0xE8B2" dst="!"/>
+    <char src="0xECB2" dst="["/>
+    <char src="0xF0B2" dst="]"/>
+    <char src="0xF4B2" dst="&acute;"/>
+    <char src="0xF8B2" dst="&two-exclamations;"/>
+    <char src="0xFCB2" dst="`"/>
+    <char src="0xC0BE" dst="a"/>
+    <char src="0xC4BE" dst="b"/>
+    <char src="0xC8BE" dst="c"/>
+    <char src="0xCCBE" dst="d"/>
+    <char src="0xD0BE" dst="e"/>
+    <char src="0xD4BE" dst="f"/>
+    <char src="0xD8BE" dst="g"/>
+    <char src="0xDCBE" dst="h"/>
+    <char src="0xE0BE" dst="i"/>
+    <char src="0xE4BE" dst="j"/>
+    <char src="0xE8BE" dst="k"/>
+    <char src="0xECBE" dst="l"/>
+    <char src="0xF0BE" dst="m"/>
+    <char src="0xFCBE" dst="n"/>
+    <char src="0x00BF" dst="q"/>
+    <char src="0x04BF" dst="r"/>
+    <char src="0x08BF" dst="s"/>
+    <char src="0x0CBF" dst="t"/>
+    <char src="0x10BF" dst="u"/>
+    <char src="0x14BF" dst="v"/>
+    <char src="0x18BF" dst="w"/>
+    <char src="0x1CBF" dst="x"/>
+    <char src="0x20BF" dst="y"/>
+    <char src="0x24BF" dst="z"/>
+    <!-- end of hack //-->
+    <char src="0x28BF" dst="&big-dot;"/>
+    <char src="0x2CBF" dst=":"/>
+    <char src="0x30BF" dst="."/>
+    <char src="0x34BF" dst=","/>
+    <char src="0x38BF" dst="-"/>
+    <char src="0x3CBF" dst="_"/>
+    <char src="0x40BF" dst="("/>
+    <char src="0x44BF" dst=")"/>
+    <char src="0x48BF" dst="&big-exclamation;"/>
+    <char src="0x4CBF" dst="?"/>
+    <char src="0x50BF" dst="&amp;"/>
+    <char src="0x58BF" dst="A"/>
+    <char src="0x5CBF" dst="B"/>
+    <char src="0x60BF" dst="C"/>
+    <char src="0x64BF" dst="D"/>
+    <char src="0x68BF" dst="E"/>
+    <char src="0x6CBF" dst="F"/>
+    <char src="0x70BF" dst="G"/>
+    <char src="0x74BF" dst="H"/>
+    <char src="0x78BF" dst="I"/>
+    <char src="0x7CBF" dst="J"/>
+    <char src="0x80BF" dst="K"/>
+    <char src="0x84BF" dst="L"/>
+    <char src="0x88BF" dst="M"/>
+    <char src="0x8CBF" dst="N"/>
+    <char src="0x90BF" dst="O"/>
+    <char src="0x94BF" dst="P"/>
+    <char src="0x98BF" dst="Q"/>
+    <char src="0x9CBF" dst="R"/>
+    <char src="0xA0BF" dst="S"/>
+    <char src="0xA4BF" dst="T"/>
+    <char src="0xA8BF" dst="U"/>
+    <char src="0xACBF" dst="V"/>
+    <char src="0xB0BF" dst="W"/>
+    <char src="0xB4BF" dst="X"/>
+    <char src="0xB8BF" dst="Y"/>
+    <char src="0xBCBF" dst="Z"/>
+    <char src="0xC0BF" dst="&left-arrow;"/>
+  </charset>
+</hi2txt>

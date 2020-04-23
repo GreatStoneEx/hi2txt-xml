@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>SEPARATOR</col><col>NAME</col><col>SEPARATOR2</col>
+    <row><cell>1</cell><cell>71570</cell><cell>0xFF</cell><cell>.,&quot;; ACV;&quot;</cell><cell>0xFF</cell></row>
+    <row><cell>2</cell><cell>50000</cell><cell>0xFF</cell><cell>ICHIBAN</cell><cell>0xFF</cell></row>
+    <row><cell>3</cell><cell>50000</cell><cell>0xFF</cell><cell>NIBAN</cell><cell>0xFF</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>0xFF</cell><cell>SANBAN</cell><cell>0xFF</cell></row>
+    <row><cell>5</cell><cell>50000</cell><cell>0xFF</cell><cell>YONBAN</cell><cell>0xFF</cell></row>
+  </table>
+</hi2txt>

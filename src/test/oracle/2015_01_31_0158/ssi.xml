@@ -1,0 +1,11 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>98880</cell><cell> .!</cell><cell>8</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>63040</cell><cell>?&amp;@</cell><cell>6</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>57590</cell><cell>029</cell><cell>6</cell><cell>0x00</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>TAN</cell><cell>5</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>40000</cell><cell>WEP</cell><cell>4</cell><cell></cell></row>
+  </table>
+  <field id="TOP SCORE">98880</field>
+</hi2txt>

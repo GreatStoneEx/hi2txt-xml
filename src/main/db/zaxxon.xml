@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:6100:7e:90:81
+                  0:6038:3:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>129</size>
+    </check>
+    <loop count="6">
+      <elt size="2" type="raw"  id="UNKNOWN"/>
+      <elt size="1" type="int"  id="RANK"/>
+      <elt size="1" type="raw"  id="UNKNOWN_2"/>
+      <elt size="6" type="int"  id="SCORE STRING" nibble-skip="odd" base="16"/>
+      <elt size="1" type="raw"  id="UNKNOWN_3"/>
+      <elt size="3" type="text" id="NAME" charset="zaxxon" ascii-offset="48"/>
+      <elt size="1" type="raw"  id="UNKNOWN_4"/>
+      <elt size="1" type="raw"  id="UNKNOWN_5"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="2" type="raw"  id="UNKNOWN_6"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="SCORE STRING" display="debug"/>
+      <column id="UNKNOWN"   format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN_2" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN_3" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN_4" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN_5" format="hexadecimal_string" display="debug"/>
+      <column id="UNKNOWN_6" format="hexadecimal_string" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  
+  <charset id="zaxxon">
+    <char src="0x10" dst=" "/>
+    <char src="0x2B" dst="."/>
+    <char src="0x2C" dst="-"/>
+    <char src="0x60" dst=" "/>
+  </charset>
+</hi2txt>

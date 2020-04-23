@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:20db:1:0a:0a
+                  0:20cf:a:1b:1b
+                  0:20f4:2:00:05</definition>
+      <definition>0:20c0:1:0a:0a
+                  0:20cf:a:1b:1b
+                  0:20f4:2:00:05</definition> <!-- mlander //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>13</size>
+    </check>
+    <loop count="1">
+      <elt size="1"  type="int"  id="NAME LENGTH" base="16"/>
+      <elt size="10" type="text" id="NAME"        charset="lrescue" ascii-offset="65"/>
+      <elt size="2"  type="int"  id="SCORE"       base="16" endianness="little_endian"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"            format="*10"/>
+      <column id="NAME"/>
+      <column id="NAME LENGTH"      display="extra"/>
+    </table>
+  </output>
+    
+  <format id="+1"><add>1</add></format>
+  <format id="*10"><multiply>10</multiply></format>
+  
+  <charset id="lrescue">
+    <char src="0x1A" dst="."/>
+    <char src="0x1B" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-04-23
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:801ac:324:00:40
+                  0:8053d:1:17:17
+                  0:80555:1:04:04
+                  0:8056d:1:00:00
+                  0:80585:1:00:00
+                  0:8059d:1:00:00
+                  0:805b5:1:00:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>810</size>
+    </check>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+    <loop count="40">
+      <elt size="4" type="int"  id="SCORE" base="16"/>
+    </loop>
+    <loop count="40">
+      <elt size="6" type="text" id="NAME"        byte-skip="odd" charset="rallybik"/>
+      <elt size="6" type="text" id="NAME UNUSED" byte-skip="odd" charset="rallybik"/>
+    </loop>
+    <loop count="40">
+      <elt size="2" type="int" id="STAGE" base="16"/>
+    </loop>
+    <loop count="40">
+      <elt size="2" type="int" id="PLACE" base="16"/>
+    </loop>
+    <elt size="1" type="raw" id="CHECK"/>
+    <elt size="5" type="int" id="TOP SCORE ALT" decoding-profile="bcd"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="NAME UNUSED"    display="debug"/>
+      <column id="STAGE" format="stage"/>
+      <column id="PLACE"/>
+    </table>
+    <field id="TOP SCORE"         display="extra"/>
+    <field id="TOP SCORE ALT"     display="debug"/>
+    <field id="CHECK" format="0x" display="debug"/>
+  </output>
+  
+  <format id="stage">
+    <case src="0" dst="RETIRE"/>
+    <case src="1" dst="SFO"/>
+    <case src="2" dst="LAX"/>
+    <case src="3" dst="B.B"/>
+    <case src="4" dst="PHX"/>
+    <case src="5" dst="DEN"/>
+    <case src="6" dst="B.B"/>
+    <case src="7" dst="BOS"/>
+    <case src="8" dst="NY"/>
+  </format>
+  
+  <charset id="rallybik">
+    <char src="0x5B" dst="."/>
+  </charset>
+</hi2txt>

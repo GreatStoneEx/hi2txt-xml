@@ -1,0 +1,17 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>10000</cell><cell>HIE</cell><cell>Hi-en Japan FS-X</cell></row>
+    <row><cell>2</cell><cell>9000</cell><cell>MAO</cell><cell>Mao-Mao Japan F-15 Eagle</cell></row>
+    <row><cell>3</cell><cell>8000</cell><cell>SLV</cell><cell>Silver USA A-10 Thunderbolt</cell></row>
+    <row><cell>4</cell><cell>7000</cell><cell>WHT</cell><cell>Bobby Britain FRS.2</cell></row>
+    <row><cell>5</cell><cell>6000</cell><cell>CIN</cell><cell>Cindy UN F-14 Tomcat</cell></row>
+    <row><cell>6</cell><cell>5000</cell><cell>KTN</cell><cell>Robo Keaton USA F-117</cell></row>
+    <row><cell>7</cell><cell>4000</cell><cell>ANJ</cell><cell>Steve France RAFALE</cell></row>
+    <row><cell>8</cell><cell>3000</cell><cell>ARS</cell><cell>Spanky UN YF-23</cell></row>
+    <row><cell>9</cell><cell>2000</cell><cell>ELN</cell><cell>Cindy UN F-14 Tomcat</cell></row>
+    <row><cell>10</cell><cell>1000</cell><cell>SPN</cell><cell>Bobby Britain FRS.2</cell></row>
+  </table>
+</hi2txt>
+
+

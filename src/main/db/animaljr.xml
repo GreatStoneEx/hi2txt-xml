@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:67a3:a:00:22
+                  0:6b63:1:08:08</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>11</size>
+    </check>
+    <loop count="5">
+      <elt size="1" type="int" id="CHARACTER"/>
+      <elt size="1" type="int" id="SCORE" base="16"/>
+    </loop>
+    <elt size="1" type="int" id="UNKNOWN"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="CHARACTER" format="character"/>
+    </table>
+    <field id="UNKNOWN" format="hexadecimal_string" display="debug"/>
+  </output>
+  
+  <format id="+1"><add>1</add></format>
+  <format id="character">
+    <case src="0"   dst="Cat"/>
+    <case src="128" dst="Rat"/>
+  </format>
+</hi2txt>

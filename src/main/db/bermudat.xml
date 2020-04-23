@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:febe:50:00:4f
+                  0:e3ce:3:00:00</definition> <!-- bermudat //-->
+      <definition>0:ff2c:50:00:55
+                  0:fc5f:3:00:00</definition> <!-- victroad //-->
+      <definition>0:e4b9:50:00:52
+                  0:e3ae:3:00:00</definition> <!-- gwar //-->
+      <definition>0:fec2:50:00:20
+                  0:e3ce:3:00:00</definition> <!-- bermudata //-->
+      <definition>0:fec2:50:00:44
+                  0:e3ce:3:00:00</definition> <!-- worldwar //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>83</size>
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="5" type="text" id="NAME"/>
+    </loop>
+    <elt size="3" type="int" id="TOP SCORE" endianness="little_endian" base="16"/>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+    </table>
+    <field id="TOP SCORE" format="*10" display="extra"/>
+  </output>
+</hi2txt>

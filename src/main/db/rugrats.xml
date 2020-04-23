@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.153 and hiscore.dat 2014-08-22
+      source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:906f:82:10:54</definition>
+      <definition>0:906f:82:03:54</definition> <!-- wiping //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>130</size>
+    </check>
+    <elt size="3" type="int" id="TOP SCORE" base="16"/>
+    <elt size="1" type="raw" id="TOP EMPTY"/>
+    <loop count="10">
+      <elt size="3" type="int" id="SCORE" base="16"/>
+      <elt size="1" type="raw" id="EMPTY"/>
+    </loop>
+    <elt size="3" type="int"  id="LAST UNKNOWN"/>
+    <elt size="3" type="text" id="LAST NAME"/>
+    <elt size="2" type="raw"  id="LAST SEPARATOR"/>
+    <loop count="10">
+      <elt size="3" type="int"  id="UNKNOWN"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="SEPARATOR"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="EMPTY"       format="0x" display="debug"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN"     format="0x" display="debug"/>
+      <column id="SEPARATOR"   format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE"                  display="extra"/>
+    <field id="TOP EMPTY"      format="0x" display="debug"/>
+    <field id="LAST NAME"                  display="debug"/>
+    <field id="LAST UNKNOWN"   format="0x" display="debug"/>
+    <field id="LAST SEPARATOR" format="0x" display="debug"/>
+  </output>
+</hi2txt>

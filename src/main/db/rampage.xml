@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Rampage">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file="nvram">
+    <check>
+      <size>2048</size>
+    </check>
+    <elt size="1592" type="raw"  id="UNKNOWN"/>
+    <loop count="3">
+      <elt size="7" type="int" id="SCORE" nibble-skip="odd" base="16"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+	  <column id="NAME" src="index" format="+1;name"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+  
+  <format id="name">
+    <case src="1" dst="GEORGE"/>
+    <case src="2" dst="LIZZIE"/>
+    <case src="3" dst="RALPH!"/>
+  </format>
+</hi2txt>

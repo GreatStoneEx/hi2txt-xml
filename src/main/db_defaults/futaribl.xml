@@ -1,0 +1,37 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>LOCAL RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CONTINUE</col><col>CHARACTER</col><col>DEFAULT</col><col>TODAYS MODE</col>
+    <row><cell>1</cell><cell>1</cell><cell>53837836</cell><cell>ISO</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>no</cell><cell>original</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>40000000</cell><cell>NMR</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>3</cell><cell>3</cell><cell>30000000</cell><cell>TNK</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>4</cell><cell>4</cell><cell>20000000</cell><cell>KRW</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>5</cell><cell>5</cell><cell>10000000</cell><cell>ISG</cell><cell>2</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>6</cell><cell>1</cell><cell>104258096</cell><cell>TAC</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>no</cell><cell>maniac</cell></row>
+    <row><cell>7</cell><cell>2</cell><cell>90000000</cell><cell>INO</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>8</cell><cell>3</cell><cell>80000000</cell><cell>ICM</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>9</cell><cell>4</cell><cell>70000000</cell><cell>ODZ</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>10</cell><cell>5</cell><cell>60000000</cell><cell>IMI</cell><cell>2</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>11</cell><cell>1</cell><cell>360132178</cell><cell>SWY</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>no</cell><cell>god</cell></row>
+    <row><cell>12</cell><cell>2</cell><cell>200000000</cell><cell>ITT</cell><cell>4</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>13</cell><cell>3</cell><cell>100000000</cell><cell>FGH</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>14</cell><cell>4</cell><cell>90000000</cell><cell>U.V</cell><cell>3</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>15</cell><cell>5</cell><cell>80000000</cell><cell>TPB</cell><cell>2</cell><cell>0</cell><cell>RECO</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>16</cell><cell>1</cell><cell>53035866</cell><cell>ABI</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>no</cell><cell>original</cell></row>
+    <row><cell>17</cell><cell>2</cell><cell>40000000</cell><cell>YUI</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>18</cell><cell>3</cell><cell>30000000</cell><cell>NAI</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>19</cell><cell>4</cell><cell>20000000</cell><cell>SMR</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>20</cell><cell>5</cell><cell>10000000</cell><cell>UEK</cell><cell>2</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>original</cell></row>
+    <row><cell>21</cell><cell>1</cell><cell>97302006</cell><cell>NAL</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>no</cell><cell>maniac</cell></row>
+    <row><cell>22</cell><cell>2</cell><cell>80000000</cell><cell>ITM</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>23</cell><cell>3</cell><cell>70000000</cell><cell>FRH</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>24</cell><cell>4</cell><cell>60000000</cell><cell>TOM</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>25</cell><cell>5</cell><cell>50000000</cell><cell>SBH</cell><cell>2</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>maniac</cell></row>
+    <row><cell>26</cell><cell>1</cell><cell>399959136</cell><cell>K.K</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>no</cell><cell>god</cell></row>
+    <row><cell>27</cell><cell>2</cell><cell>200000000</cell><cell>ULT</cell><cell>4</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>28</cell><cell>3</cell><cell>100000000</cell><cell>UCA</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>29</cell><cell>4</cell><cell>90000000</cell><cell>U.A</cell><cell>3</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>god</cell></row>
+    <row><cell>30</cell><cell>5</cell><cell>80000000</cell><cell>SFD</cell><cell>2</cell><cell>0</cell><cell>PALM</cell><cell>yes</cell><cell>god</cell></row>
+  </table>
+</hi2txt>
+
+

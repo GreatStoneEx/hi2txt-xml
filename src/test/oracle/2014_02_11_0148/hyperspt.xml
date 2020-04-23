@@ -1,0 +1,80 @@
+<hi2txt>
+  <table id="TOP SCORES">
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>562</cell><cell>GHJ</cell></row>
+    <row><cell>2</cell><cell>755</cell><cell>HGG</cell></row>
+    <row><cell>3</cell><cell>386</cell><cell>KKU</cell></row>
+    <row><cell>4</cell><cell>241</cell><cell>HHK</cell></row>
+    <row><cell>5</cell><cell>75</cell><cell>HHK</cell></row>
+    <row><cell>6</cell><cell>13</cell><cell>AVV</cell></row>
+    <row><cell>7</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>8</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>9</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>10</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>11</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>12</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>13</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>14</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>15</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>16</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>17</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>18</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>19</cell><cell>0</cell><cell>   </cell></row>
+    <row><cell>20</cell><cell>0</cell><cell>   </cell></row>
+  </table>
+  <table id="TODAYS TOP SCORES">
+    <col>RANK</col><col>TODAYS SCORE</col><col>TODAYS NAME</col>
+    <row><cell>1</cell><cell>562</cell><cell>GHJ</cell></row>
+    <row><cell>2</cell><cell>75</cell><cell>HHK</cell></row>
+    <row><cell>3</cell><cell>0</cell><cell>   </cell></row>
+  </table>
+  <table id="TRIPLE JUMP TOP SCORES">
+    <col>RANK</col><col>TRIPLE JUMP SCORE</col><col>TRIPLE JUMP NAME</col>
+    <row><cell>1</cell><cell>12.56m</cell><cell>ABC</cell></row>
+    <row><cell>2</cell><cell>10.22m</cell><cell>ABC</cell></row>
+    <row><cell>3</cell><cell>10.00m</cell><cell>ABC</cell></row>
+    <row><cell>4</cell><cell>9.67m</cell><cell>ABC</cell></row>
+  </table>
+  <table id="SKEET SHOOTING TOP SCORES">
+    <col>RANK</col><col>SKEET SHOOTING SCORE</col><col>SKEET SHOOTING NAME</col>
+    <row><cell>1</cell><cell>34567</cell><cell>FFF</cell></row>
+    <row><cell>2</cell><cell>10021</cell><cell>FRT</cell></row>
+    <row><cell>3</cell><cell>3033</cell><cell>FGH</cell></row>
+    <row><cell>4</cell><cell>3000</cell><cell>AOL</cell></row>
+  </table>
+  <table id="POLE VAULT TOP SCORES">
+    <col>RANK</col><col>POLE VAULT SCORE</col><col>POLE VAULT NAME</col>
+    <row><cell>1</cell><cell>6.02m</cell><cell>ABC</cell></row>
+    <row><cell>2</cell><cell>5.61m</cell><cell>QSD</cell></row>
+    <row><cell>3</cell><cell>5.00m</cell><cell>RFG</cell></row>
+    <row><cell>4</cell><cell>0.58m</cell><cell>ZZZ</cell></row>
+  </table>
+  <table id="FREE STYLE TOP SCORES">
+    <col>RANK</col><col>FREE STYLE SCORE</col><col>FREE STYLE NAME</col>
+    <row><cell>1</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>2</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>3</cell><cell>0.00sec</cell><cell>   </cell></row>
+    <row><cell>4</cell><cell>0.00sec</cell><cell>   </cell></row>
+  </table>
+  <table id="WEIGHT LIFTING TOP SCORES">
+    <col>RANK</col><col>WEIGHT LIFTING SCORE</col><col>WEIGHT LIFTING NAME</col>
+    <row><cell>1</cell><cell>453.4kg</cell><cell>AZE</cell></row>
+    <row><cell>2</cell><cell>234.5kg</cell><cell>AZE</cell></row>
+    <row><cell>3</cell><cell>25.6kg</cell><cell>AZE</cell></row>
+    <row><cell>4</cell><cell>15.3kg</cell><cell>ABC</cell></row>
+  </table>
+  <table id="ARCHERY TOP SCORES">
+    <col>RANK</col><col>ARCHERY SCORE</col><col>ARCHERY NAME</col>
+    <row><cell>1</cell><cell>1256</cell><cell>ABC</cell></row>
+    <row><cell>2</cell><cell>1234</cell><cell>ABC</cell></row>
+    <row><cell>3</cell><cell>1234</cell><cell>HGF</cell></row>
+    <row><cell>4</cell><cell>1234</cell><cell>FRF</cell></row>
+  </table>
+  <table id="LONG HORSE TOP SCORES">
+    <col>RANK</col><col>LONG HORSE SCORE</col><col>LONG HORSE NAME</col>
+    <row><cell>1</cell><cell>114.03</cell><cell>TTR</cell></row>
+    <row><cell>2</cell><cell>12.56</cell><cell>ABC</cell></row>
+    <row><cell>3</cell><cell>12.00</cell><cell>ABC</cell></row>
+    <row><cell>4</cell><cell>11.03</cell><cell>ABC</cell></row>
+  </table>
+</hi2txt>

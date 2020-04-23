@@ -1,0 +1,13 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>NAME</col><col>BIRTHDATE</col><col>POINTS</col><col>FIELD GOAL</col><col>FREE THROW</col><col>REBOUNDS</col><col>ASSISTS</col><col>PERSONAL FOULS</col>
+    <row><cell>1</cell><cell>M.I</cell><cell>6/30</cell><cell>54</cell><cell>Perfect</cell><cell>.750</cell><cell>4</cell><cell>5</cell><cell>4</cell></row>
+    <row><cell>2</cell><cell>Y.H</cell><cell>2/28</cell><cell>42</cell><cell>.714</cell><cell>.666</cell><cell>5</cell><cell>1</cell><cell>6</cell></row>
+    <row><cell>3</cell><cell>CJM</cell><cell>2/28</cell><cell>36</cell><cell>.571</cell><cell>.800</cell><cell>2</cell><cell>6</cell><cell>3</cell></row>
+    <row><cell>4</cell><cell>USA</cell><cell>7/4</cell><cell>30</cell><cell>.548</cell><cell>.750</cell><cell>6</cell><cell>4</cell><cell>5</cell></row>
+    <row><cell>5</cell><cell>S.Y</cell><cell>11/27</cell><cell>24</cell><cell>.529</cell><cell>.600</cell><cell>3</cell><cell>7</cell><cell>3</cell></row>
+    <row><cell>6</cell><cell>JCS</cell><cell>12/25</cell><cell>18</cell><cell>.500</cell><cell>.636</cell><cell>1</cell><cell>2</cell><cell>2</cell></row>
+    <row><cell>7</cell><cell>S.T</cell><cell>4/4</cell><cell>12</cell><cell>.444</cell><cell>.650</cell><cell>1</cell><cell>1</cell><cell>4</cell></row>
+    <row><cell>8</cell><cell>HEH</cell><cell>5/12</cell><cell>6</cell><cell>.437</cell><cell>.548</cell><cell>2</cell><cell>3</cell><cell>3</cell></row>
+  </table>
+</hi2txt>

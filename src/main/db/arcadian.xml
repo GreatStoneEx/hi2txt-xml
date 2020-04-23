@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Arcadia">
+  <!--
+    tested with mame 0.212 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi"> <!-- arcadian, raphero //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,1fe601,5b,01,2a</definition>
+	  <definition>@:maincpu,program,1fe601,5b,01,70</definition> <!-- raphero //-->
+	  <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>91</size>
+    </check>
+    <loop count="3">
+      <elt size="3"  type="int"  id="SCORE" base="16"/>
+      <elt size="6"  type="text" id="NAME"  bitmask="name_first" src-unit-size="16" ascii-offset="-374" ascii-step="4" charset="charconv"/>
+      <elt size="23" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi"> <!-- rapheroa //-->
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+	  <definition>@:maincpu,program,1fe600,60,00,01</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+	  <size>96</size>
+    </check>
+    <loop count="3">
+      <elt size="4"  type="int"  id="SCORE" base="16"/>
+      <elt size="6"  type="text" id="NAME"  bitmask="name_first" src-unit-size="16" ascii-offset="-374" ascii-step="4" charset="charconv"/>
+      <elt size="22" type="raw"  id="UNKNOWN"/>
+    </loop>
+  </structure>
+  
+  <bitmask id="name_first">
+    <character mask="00001111 11111111 00000000 00000000 00000000 00000000"/>
+	<character mask="00000000 00000000 00001111 11111111 00000000 00000000"/>
+	<character mask="00000000 00000000 00000000 00000000 00001111 11111111"/>
+  </bitmask>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <charset id="charconv">
+    <char src="0x0164" dst=" "/>
+    <char src="0x06B4" dst="0"/>
+	<char src="0x06B8" dst="1"/>
+	<char src="0x06BC" dst="2"/>
+	<char src="0x06C0" dst="3"/>
+	<char src="0x06C4" dst="4"/>
+	<char src="0x06C8" dst="5"/>
+	<char src="0x06CC" dst="6"/>
+	<char src="0x06D0" dst="7"/>
+	<char src="0x06D4" dst="8"/>
+	<char src="0x06D8" dst="9"/>
+	<char src="0x074C" dst="."/>
+  </charset>
+  
+</hi2txt>

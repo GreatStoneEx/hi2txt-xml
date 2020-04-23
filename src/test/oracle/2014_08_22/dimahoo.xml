@@ -1,0 +1,10 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>UNKNOWN</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>ITEM</col><col>CHARACTER</col><col>CHAR CURSOR</col>
+    <row><cell>1</cell><cell>0x0</cell><cell>1000000</cell><cell>MDK</cell><cell>5</cell><cell>088/108</cell><cell>Solo-Bang</cell><cell>0x00</cell></row>
+    <row><cell>2</cell><cell>0x0</cell><cell>800000</cell><cell>AAU</cell><cell>4</cell><cell>077/108</cell><cell>Karte</cell><cell>0x00</cell></row>
+    <row><cell>3</cell><cell>0x0</cell><cell>785400</cell><cell>.:?</cell><cell>3</cell><cell>002/108</cell><cell>Solo-Bang</cell><cell>0x26</cell></row>
+    <row><cell>4</cell><cell>0x0</cell><cell>600000</cell><cell>HIS</cell><cell>3</cell><cell>066/108</cell><cell>Miyamoto</cell><cell>0x00</cell></row>
+    <row><cell>5</cell><cell>0x0</cell><cell>400000</cell><cell>OSE</cell><cell>2</cell><cell>055/108</cell><cell>Grimlen</cell><cell>0x00</cell></row>
+  </table>
+</hi2txt>

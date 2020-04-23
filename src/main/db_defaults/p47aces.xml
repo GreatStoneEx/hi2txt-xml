@@ -1,0 +1,15 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col>
+    <row><cell>1</cell><cell>3210</cell><cell>ABC</cell><cell>1</cell></row>
+    <row><cell>2</cell><cell>2970</cell><cell>QQQ</cell><cell>1</cell></row>
+    <row><cell>3</cell><cell>1994</cell><cell>SQN</cell><cell>1</cell></row>
+    <row><cell>4</cell><cell>1111</cell><cell>AXA</cell><cell>1</cell></row>
+    <row><cell>5</cell><cell>618</cell><cell>BPG</cell><cell>1</cell></row>
+    <row><cell>6</cell><cell>314</cell><cell>YTX</cell><cell>1</cell></row>
+    <row><cell>7</cell><cell>110</cell><cell>SPB</cell><cell>1</cell></row>
+    <row><cell>8</cell><cell>35</cell><cell>ERD</cell><cell>1</cell></row>
+  </table>
+</hi2txt>
+
+

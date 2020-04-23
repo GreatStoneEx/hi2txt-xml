@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="R2D Tank">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: T. Busse
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,43,3,00,00
+                  @:maincpu,program,48,1,a9,a9</definition> <!-- after mame 0.192 -->
+<!-- I changed the hiscore.dat for this game.
+The problem here was that it observed 4 values:
+@43: 3 bytes of score
+@48: 1 byte (value=a9) to wait for end of initialization.
+At 48h I could see that this variable was used as a loop index or something similar.
+So a9 was just a very temporary value.
+On my machine the match did not happen on startup, but at some random time during the game.
+So I changed it to wait for a more stable data at address 10b. It's 0 on startup and gets initialized to 50h after a few seconds.
+this uses the trick with 0 length: 0-length data is tested but not saved or loaded.
+-->
+      <definition>@:maincpu,program,43,3,00,00
+                  @:maincpu,program,10b,0,50,00</definition> <!-- up to mame 0.192 -->
+	  <size>4</size>
+      <size>3</size>
+    </check>
+	<elt size="3" type="int" base="16" id="SCORE"/>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+</hi2txt>
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    tested with mame 0.148 and related hiscore.dat
+      source: HiToText, GreatStone (stage decoding algorithm)
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:406cd4:39:00:59</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>57</size>
+    </check>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"/>
+      <elt size="2" type="int"  id="STAGE"/>
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="raw"  id="EMPTY"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE" format="stage"/>
+      <column id="EMPTY" format="0x" display="debug"/>
+    </table>
+  </output>
+  
+  <!-- possible paths of stages
+           A        +512  1x
+          C B       +128  2x
+         F E D       +64  4x
+        J I H G      +32  8x
+       O N M L K     +16 16x
+      U T S R Q P     +8 32x
+    V' Z Y X W V Z'   +4 64x, repeated each 256 bytes
+  //-->
+  <format id="stage">
+    <case src="512"  operator="&lt;" dst="A"/>      <!-- +512 //-->
+    
+    <case src="640"  operator="&lt;" dst="AB"/>     <!-- +128 //-->
+    <case src="768"  operator="&lt;" dst="AC"/>     <!-- +128 //-->
+    
+    <case src="832"  operator="&lt;" dst="ABD"/>    <!--  +64 //-->
+    <case src="896"  operator="&lt;" dst="ABE"/>    <!--  +64 //-->
+    <case src="960"  operator="&lt;" dst="ACE"/>    <!--  +64 //-->
+    <case src="1024" operator="&lt;" dst="ACF"/>    <!--  +64 //-->
+    
+    <case src="1056" operator="&lt;" dst="ABDG"/>   <!--  +32 //-->
+    <case src="1088" operator="&lt;" dst="ABDH"/>   <!--  +32 //-->
+    <case src="1120" operator="&lt;" dst="ABEH"/>   <!--  +32 //-->
+    <case src="1152" operator="&lt;" dst="ABEI"/>   <!--  +32 //-->
+    <case src="1184" operator="&lt;" dst="ACEH"/>   <!--  +32 //-->
+    <case src="1216" operator="&lt;" dst="ACEI"/>   <!--  +32 //-->
+    <case src="1248" operator="&lt;" dst="ACFI"/>   <!--  +32 //-->
+    <case src="1280" operator="&lt;" dst="ACFJ"/>   <!--  +32 //-->
+    
+    <case src="1296" operator="&lt;" dst="ABDGK"/>  <!--  +16 //-->
+    <case src="1312" operator="&lt;" dst="ABDGL"/>  <!--  +16 //-->
+    <case src="1328" operator="&lt;" dst="ABDHL"/>  <!--  +16 //-->
+    <case src="1344" operator="&lt;" dst="ABDHM"/>  <!--  +16 //-->
+    <case src="1360" operator="&lt;" dst="ABEHL"/>  <!--  +16 //-->
+    <case src="1376" operator="&lt;" dst="ABEHM"/>  <!--  +16 //-->
+    <case src="1392" operator="&lt;" dst="ABEIM"/>  <!--  +16 //-->
+    <case src="1408" operator="&lt;" dst="ABEIN"/>  <!--  +16 //-->
+    <case src="1424" operator="&lt;" dst="ACEHL"/>  <!--  +16 //-->
+    <case src="1440" operator="&lt;" dst="ACEHM"/>  <!--  +16 //-->
+    <case src="1456" operator="&lt;" dst="ACEIM"/>  <!--  +16 //-->
+    <case src="1472" operator="&lt;" dst="ACEIN"/>  <!--  +16 //-->
+    <case src="1488" operator="&lt;" dst="ACFIM"/>  <!--  +16 //-->
+    <case src="1504" operator="&lt;" dst="ACFIN"/>  <!--  +16 //-->
+    <case src="1520" operator="&lt;" dst="ACFJN"/>  <!--  +16 //-->
+    <case src="1536" operator="&lt;" dst="ACFJO"/>  <!--  +16 //-->
+     
+    <case src="1544" operator="&lt;" dst="ABDGKP"/> <!--   +8 //-->
+    <case src="1552" operator="&lt;" dst="ABDGKQ"/> <!--   +8 //-->
+    <case src="1560" operator="&lt;" dst="ABDGLQ"/> <!--   +8 //-->
+    <case src="1568" operator="&lt;" dst="ABDGLR"/> <!--   +8 //-->
+    <case src="1576" operator="&lt;" dst="ABDHLQ"/> <!--   +8 //-->
+    <case src="1584" operator="&lt;" dst="ABDHLR"/> <!--   +8 //-->
+    <case src="1592" operator="&lt;" dst="ABDHMR"/> <!--   +8 //-->
+    <case src="1600" operator="&lt;" dst="ABDHMS"/> <!--   +8 //-->
+    <case src="1608" operator="&lt;" dst="ABEHLQ"/> <!--   +8 //-->
+    <case src="1616" operator="&lt;" dst="ABEHLR"/> <!--   +8 //-->
+    <case src="1624" operator="&lt;" dst="ABEHMR"/> <!--   +8 //-->
+    <case src="1632" operator="&lt;" dst="ABEHMS"/> <!--   +8 //-->
+    <case src="1640" operator="&lt;" dst="ABEIMR"/> <!--   +8 //-->
+    <case src="1648" operator="&lt;" dst="ABEIMS"/> <!--   +8 //-->
+    <case src="1656" operator="&lt;" dst="ABEINS"/> <!--   +8 //-->
+    <case src="1664" operator="&lt;" dst="ABEINT"/> <!--   +8 //-->
+    <case src="1672" operator="&lt;" dst="ACEHLQ"/> <!--   +8 //-->
+    <case src="1680" operator="&lt;" dst="ACEHLR"/> <!--   +8 //-->
+    <case src="1688" operator="&lt;" dst="ACEHMR"/> <!--   +8 //-->
+    <case src="1696" operator="&lt;" dst="ACEHMS"/> <!--   +8 //-->
+    <case src="1704" operator="&lt;" dst="ACEIMR"/> <!--   +8 //-->
+    <case src="1712" operator="&lt;" dst="ACEIMS"/> <!--   +8 //-->
+    <case src="1720" operator="&lt;" dst="ACEINS"/> <!--   +8 //-->
+    <case src="1728" operator="&lt;" dst="ACEINT"/> <!--   +8 //-->
+    <case src="1736" operator="&lt;" dst="ACFIMR"/> <!--   +8 //-->
+    <case src="1744" operator="&lt;" dst="ACFIMS"/> <!--   +8 //-->
+    <case src="1752" operator="&lt;" dst="ACFINS"/> <!--   +8 //-->
+    <case src="1760" operator="&lt;" dst="ACFINT"/> <!--   +8 //-->
+    <case src="1768" operator="&lt;" dst="ACFJNS"/> <!--   +8 //-->
+    <case src="1776" operator="&lt;" dst="ACFJNT"/> <!--   +8 //-->
+    <case src="1784" operator="&lt;" dst="ACFJOT"/> <!--   +8 //-->
+    <case src="1792" operator="&lt;" dst="ACFJOU"/> <!--   +8 //-->
+    
+    <case src="4"   operator-format="-1792;%256" operator="&lt;" dst="ABDGKPZ'"/> <!-- +4, each section of 256 bytes //-->
+    <case src="8"   operator-format="-1792;%256" operator="&lt;" dst="ABDGKPV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="12"  operator-format="-1792;%256" operator="&lt;" dst="ABDGKQV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="16"  operator-format="-1792;%256" operator="&lt;" dst="ABDGKQW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="20"  operator-format="-1792;%256" operator="&lt;" dst="ABDGLQV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="24"  operator-format="-1792;%256" operator="&lt;" dst="ABDGLQW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="28"  operator-format="-1792;%256" operator="&lt;" dst="ABDGLRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="32"  operator-format="-1792;%256" operator="&lt;" dst="ABDGLRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="36"  operator-format="-1792;%256" operator="&lt;" dst="ABDHLQV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="40"  operator-format="-1792;%256" operator="&lt;" dst="ABDHLQW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="44"  operator-format="-1792;%256" operator="&lt;" dst="ABDHLRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="48"  operator-format="-1792;%256" operator="&lt;" dst="ABDHLRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="52"  operator-format="-1792;%256" operator="&lt;" dst="ABDHMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="56"  operator-format="-1792;%256" operator="&lt;" dst="ABDHMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="60"  operator-format="-1792;%256" operator="&lt;" dst="ABDHMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="64"  operator-format="-1792;%256" operator="&lt;" dst="ABDHMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="68"  operator-format="-1792;%256" operator="&lt;" dst="ABEHLQV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="72"  operator-format="-1792;%256" operator="&lt;" dst="ABEHLQW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="76"  operator-format="-1792;%256" operator="&lt;" dst="ABEHLRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="80"  operator-format="-1792;%256" operator="&lt;" dst="ABEHLRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="84"  operator-format="-1792;%256" operator="&lt;" dst="ABEHMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="88"  operator-format="-1792;%256" operator="&lt;" dst="ABEHMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="92"  operator-format="-1792;%256" operator="&lt;" dst="ABEHMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="96"  operator-format="-1792;%256" operator="&lt;" dst="ABEHMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="100" operator-format="-1792;%256" operator="&lt;" dst="ABEIMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="104" operator-format="-1792;%256" operator="&lt;" dst="ABEIMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="108" operator-format="-1792;%256" operator="&lt;" dst="ABEIMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="112" operator-format="-1792;%256" operator="&lt;" dst="ABEIMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="116" operator-format="-1792;%256" operator="&lt;" dst="ABEINSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="120" operator-format="-1792;%256" operator="&lt;" dst="ABEINSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="124" operator-format="-1792;%256" operator="&lt;" dst="ABEINTY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="128" operator-format="-1792;%256" operator="&lt;" dst="ABEINTZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="132" operator-format="-1792;%256" operator="&lt;" dst="ACEHLQV"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="136" operator-format="-1792;%256" operator="&lt;" dst="ACEHLQW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="140" operator-format="-1792;%256" operator="&lt;" dst="ACEHLRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="144" operator-format="-1792;%256" operator="&lt;" dst="ACEHLRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="148" operator-format="-1792;%256" operator="&lt;" dst="ACEHMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="152" operator-format="-1792;%256" operator="&lt;" dst="ACEHMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="156" operator-format="-1792;%256" operator="&lt;" dst="ACEHMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="160" operator-format="-1792;%256" operator="&lt;" dst="ACEHMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="164" operator-format="-1792;%256" operator="&lt;" dst="ACEIMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="168" operator-format="-1792;%256" operator="&lt;" dst="ACEIMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="172" operator-format="-1792;%256" operator="&lt;" dst="ACEIMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="176" operator-format="-1792;%256" operator="&lt;" dst="ACEIMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="180" operator-format="-1792;%256" operator="&lt;" dst="ACEINSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="184" operator-format="-1792;%256" operator="&lt;" dst="ACEINSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="188" operator-format="-1792;%256" operator="&lt;" dst="ACEINTY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="192" operator-format="-1792;%256" operator="&lt;" dst="ACEINTZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="196" operator-format="-1792;%256" operator="&lt;" dst="ACFIMRW"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="200" operator-format="-1792;%256" operator="&lt;" dst="ACFIMRX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="204" operator-format="-1792;%256" operator="&lt;" dst="ACFIMSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="208" operator-format="-1792;%256" operator="&lt;" dst="ACFIMSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="212" operator-format="-1792;%256" operator="&lt;" dst="ACFINSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="216" operator-format="-1792;%256" operator="&lt;" dst="ACFINSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="220" operator-format="-1792;%256" operator="&lt;" dst="ACFINTY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="224" operator-format="-1792;%256" operator="&lt;" dst="ACFINTZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="228" operator-format="-1792;%256" operator="&lt;" dst="ACFJNSX"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="232" operator-format="-1792;%256" operator="&lt;" dst="ACFJNSY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="236" operator-format="-1792;%256" operator="&lt;" dst="ACFJNTY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="240" operator-format="-1792;%256" operator="&lt;" dst="ACFJNTZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="244" operator-format="-1792;%256" operator="&lt;" dst="ACFJOTY"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="248" operator-format="-1792;%256" operator="&lt;" dst="ACFJOTZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="252" operator-format="-1792;%256" operator="&lt;" dst="ACFJOUZ"/>  <!-- +4, each section of 256 bytes //-->
+    <case src="256" operator-format="-1792;%256" operator="&lt;" dst="ACFJOUV'"/> <!-- +4, each section of 256 bytes //-->
+  </format>
+</hi2txt>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Pipe Dream">
+  <!--
+    tested with mame 0.159 and hiscore.dat 2015-07-01
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:8d80:59:0c:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>89</size>
+    </check>
+    <loop count="6">
+    	<elt size="3" type="text" id="NAME"  charset="pipedrm" ascii-offset="53"/>
+      <elt size="1" type="text" id="LEVEL1"                  ascii-offset="65"/>
+      <elt size="1" type="int"  id="LEVEL2"/>
+      <elt size="1" type="raw"  id="EMPTY"/>
+      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="7" type="raw"  id="EMPTY2"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*10"/>
+      <column id="NAME"/>
+      <column id="LEVEL"  format="level"/>
+      <column id="EMPTY"  format="0x" display="debug"/>
+      <column id="EMPTY2" format="0x" display="debug"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="level">
+    <concat>
+    	<column id="LEVEL1"/>
+    	<txt>-</txt>
+    	<column id="LEVEL2" format="PadL20;all"/>
+    </concat>
+  </format>
+  
+  <format id="all">
+    <case src="00" dst="All"/>
+  </format>
+  
+  <charset id="pipedrm">
+  	<char src="0x00" dst=" "/>
+  	<char src="0x01" dst="-"/>
+  	<char src="0x02" dst="0"/>
+  	<char src="0x03" dst="1"/>
+  	<char src="0x04" dst="2"/>
+  	<char src="0x05" dst="3"/>
+  	<char src="0x06" dst="4"/>
+  	<char src="0x07" dst="5"/>
+  	<char src="0x08" dst="6"/>
+  	<char src="0x09" dst="7"/>
+  	<char src="0x0A" dst="8"/>
+  	<char src="0x0B" dst="9"/>
+    <char src="0x26" dst="-"/>
+    <char src="0x27" dst="."/>
+    <char src="0x28" dst=","/>
+    <char src="0x29" dst=";"/>
+    <char src="0x2A" dst=":"/>
+    <char src="0x2B" dst="'"/>
+    <char src="0x2C" dst="?"/>
+    <char src="0x2D" dst="!"/>
+    <char src="0x2E" dst="("/>
+    <char src="0x2F" dst=")"/>
+    <char src="0x30" dst="="/>
+    <char src="0x31" dst="_"/>
+    <char src="0x32" dst="&amp;"/>
+    <char src="0x33" dst="/"/>
+    <char src="0x34" dst="\"/>
+    <char src="0x35" dst="@"/>
+    <char src="0x36" dst="%"/>    
+  </charset>
+</hi2txt>

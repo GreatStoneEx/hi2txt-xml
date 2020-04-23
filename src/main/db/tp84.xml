@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Time Pilot '84">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file=".hi">
+    <check>
+	  <definition>@:cpu1,program,57a0,1e,00,54
+                   @:cpu1,program,5736,03,00,00</definition>
+	  <definition>@:cpu1,program,17a0,1e,00,54
+                   @:cpu1,program,1736,3,00,00</definition> <!-- tp84b -->
+      <size>33</size>
+    </check>
+    <loop count="5">
+      <elt size="3" type="int" id="SCORE" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="*100"/>
+      <column id="NAME"/>
+    </table>
+  </output>
+</hi2txt>

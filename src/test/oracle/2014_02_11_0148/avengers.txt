@@ -1,0 +1,12 @@
+RANK|SCORE|NAME|SPACE
+1|25600|AAA|       
+2|20000|BBB|       
+3|18000|CCC|       
+4|16000|DDD|       
+5|12000|EEE|       
+6|10000|FFF|       
+7|8000|GGG|
+
+TOP SCORE
+25600
+

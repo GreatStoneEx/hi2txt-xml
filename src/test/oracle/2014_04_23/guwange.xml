@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>STAGE</col><col>CHARACTER</col><col>MAX CHAIN</col><col>RANK / CHAIN</col><col>UNKNOWN</col>
+    <row><cell>1</cell><cell>21191351</cell><cell>&#12356;&#12429;&#12399;&#12395; (Irohani)</cell><cell>All</cell><cell>Shishin (P2)</cell><cell>3440</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>2</cell><cell>2321183</cell><cell>&#12411;&#12408;&#12392;&#12381; (Hohetoso)</cell><cell>6</cell><cell>Kamono Gensuke (P2)</cell><cell>3375</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>3</cell><cell>539186</cell><cell>&#12444;&#12443;&#12444;&#12387;</cell><cell>5</cell><cell>Shishin (P1)</cell><cell>755</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>4</cell><cell>483576</cell><cell>&#12419;&#12421;&#12423;&#12423;&#12444;</cell><cell>11</cell><cell>Hiiragi Kosame (P1)</cell><cell>407</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>5</cell><cell>470133</cell><cell>&#12435;&#12435;&#12444;&#12435;&#12443;&#12375; (Nnnshi)</cell><cell>6</cell><cell>Shishin (P1)</cell><cell>327</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>6</cell><cell>236291</cell><cell>&#12356;&#12356;&#12443;&#12356;&#12444;&#12423;&#12444; (Iii)</cell><cell>2</cell><cell>Shishin (P1)</cell><cell>383</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>7</cell><cell>228204</cell><cell></cell><cell>2</cell><cell>Kamono Gensuke (P1)</cell><cell>251</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>8</cell><cell>200000</cell><cell>&#12365;&#12398;&#12360; (Kinoe)</cell><cell>4</cell><cell>Shishin (P1)</cell><cell>1000</cell><cell>1</cell><cell>0x0</cell></row>
+    <row><cell>9</cell><cell>180000</cell><cell>&#12365;&#12398;&#12392; (Kinoto)</cell><cell>3</cell><cell>Kamono Gensuke (P1)</cell><cell>900</cell><cell>2</cell><cell>0x0</cell></row>
+    <row><cell>10</cell><cell>160000</cell><cell>&#12402;&#12398;&#12360; (Hinoe)</cell><cell>3</cell><cell>Hiiragi Kosame (P1)</cell><cell>800</cell><cell>3</cell><cell>0x0</cell></row>
+  </table>
+  <field id="TOP SCORE">21191351</field>
+</hi2txt>

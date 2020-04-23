@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt>
+  <!--
+    history:
+      2015-05-10: support new definition for gallop (hiscore.dat 20150131), from hi2txt report
+    tested:
+      mame 0.153 and hiscore.dat 2014-08-22
+      mame 0.153 and hiscore.dat 2015-01-31
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>0:e3c5e:6e:10:41
+                  0:e3d72:03:10:06
+                  0:e3d18:3c:00:5a</definition>
+      <definition>0:a3d00:6e:10:41
+                  0:a3e14:03:10:06</definition> <!-- gallop //-->
+      <definition>0:a3d00:6e:10:41
+                  0:a3e14:03:10:06
+                  0:a3dba:3c:00:5a</definition> <!-- gallop hiscore.dat 20150131 //-->
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>173</size>
+      <size>113</size> <!-- gallop //-->
+    </check>
+    <loop count="10">
+      <elt size="3" type="int"  id="SCORE" endianness="little_endian" base="16"/>
+      <elt size="2" type="int"  id="STAGE"/>
+      <elt size="1" type="int"  id="TIME3" base="16"/>
+      <elt size="1" type="int"  id="TIME2" base="16"/>
+      <elt size="1" type="int"  id="TIME1" base="16"/>
+      <elt size="3" type="text" id="NAME"/>
+    </loop>
+    <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
+    <loop count="10">
+      <elt size="1" type="raw"  id="RECORD TIME3"/>
+      <elt size="1" type="raw"  id="RECORD TIME2"/>
+      <elt size="1" type="raw"  id="RECORD TIME1"/>
+      <elt size="3" type="text" id="RECORD NAME"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TOP SCORES">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"    format="stage"/>
+      <column id="TIME"     format="time"/>
+    </table>
+    <table id="STAGE RECORDS" line-ignore="RECORD NAME:">
+      <column id="STAGE" src="index" format="stage"/>
+      <column id="RECORD NAME"/>
+      <column id="RECORD TIME" format="record time"/>
+    </table>
+    <field id="TOP SCORE" display="extra"/>
+  </output>
+  
+  <format id="time">
+    <concat>
+      <column id="TIME1" format="PadL20"/>
+      <txt>'</txt>
+      <column id="TIME2" format="PadL20"/>
+      <txt>''</txt>
+      <column id="TIME3" format="PadL20"/>
+    </concat>
+  </format>
+  <format id="record time">
+    <concat>
+      <column id="RECORD TIME1" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RECORD TIME2" format="PadL20"/>
+      <txt>''</txt>
+      <column id="RECORD TIME3" format="PadL20"/>
+    </concat>
+  </format>
+  <format id="stage">
+    <case src="0"  dst="1-A"/>
+    <case src="1"  dst="1-B"/>
+    <case src="2"  dst="1-C"/>
+    <case src="3"  dst="1-D"/>
+    <case src="4"  dst="1-E"/>
+    <case src="5"  dst="2-A"/>
+    <case src="6"  dst="2-B"/>
+    <case src="7"  dst="2-C"/>
+    <case src="8"  dst="2-D"/>
+    <case src="9"  dst="2-E"/>
+    <case src="10" dst="ALL"/>
+  </format>
+</hi2txt>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Satan's Hollow">
+  <!--
+    tested with mame 0.181 and embedded hiscore.dat
+    source: GreatStone
+  //-->
+
+  <structure file="nvram">
+    <check>
+      <size>2048</size>
+    </check>
+    <elt size="1560" type="raw"  id="UNKNOWN"/>
+    <loop count="10">
+      <elt size="2" type="text" id="NAME"/>
+    </loop>
+    <elt size="10" type="raw"  id="UNKNOWN"/>
+    <loop count="10">
+      <elt size="3" type="int" id="SCORE" base="16"/>
+    </loop>
+  </structure>
+
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="NAME"/>
+      <column id="SCORE"/>
+    </table>
+  </output>
+</hi2txt>
