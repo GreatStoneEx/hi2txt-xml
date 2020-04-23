@@ -2,7 +2,14 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Ghouls'n Ghosts">
   <!--
-    tested with mame 0.159 and hiscore.dat 2015-07-01
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.159 and hiscore.dat 2015-07-01
+	history:
+	  2020-04-23 change the decoding algorithm to handle "ADDRESS" as pointer to the item to take at this loop index
+	    complex situation, where the position of the names and scores are described after them AND expressed using the current loop index
+		only similar known games is 'inthehunt', 'gng' as such pointers before the information which is much easier to handle
+		see hi2txt doc for format:loopindex
     source: GreatStone
   //-->
   
@@ -23,24 +30,24 @@
     	<elt size="8" type="text" id="NAME" charset="ghouls"/>
     </loop>
     <loop count="6">
-      <elt size="4" type="int"  id="NAME ADDRESS"/>	
+      <elt size="4" type="int"  id="NAME ADDRESS" table-index="itself" table-index-format="-16760652;/8" format="LoopIndex"/>	  
     </loop>
     <loop count="6">
       <elt size="4" type="int"  id="SCORE" base="16"/>	
     </loop>
     <loop count="6">
-      <elt size="4" type="int"  id="SCORE ADDRESS"/>	
+      <elt size="4" type="int"  id="SCORE ADDRESS" table-index="itself" table-index-format="-16760724;/4" format="LoopIndex"/>	  
     </loop>
     <elt size="4" type="int" id="TOP SCORE" base="16"/>
   </structure>
   
   <output>
-    <table sort="RANK" lines-max="5">
-      <column id="RANK" src="NAME ADDRESS" format="-16760652;/8;+1"/>
+    <table sort="NAME ADDRESS" lines-max="5">
+      <column id="RANK" src="index" format="+1"/>
       <column id="SCORE"/>
       <column id="NAME" format="TrimR "/>
-      <column id="SCORE ADDRESS" format="-16760724;/4" display="debug"/>
-      <column id="NAME ADDRESS"  format="-16760652;/8" display="debug"/>
+      <column id="SCORE ADDRESS" display="debug"/>
+      <column id="NAME ADDRESS" display="debug"/>
       <column id="SEPARATOR" display="debug"/>
     </table>
     <field id="TOP SCORE" display="extra"/>

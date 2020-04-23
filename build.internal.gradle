@@ -168,7 +168,10 @@ task versionFile() {
     group "Internal"
     doLast {
         printf "${getDate()}"
-        new File("$projectDir/dist", "hi2txt_xml.version").text = "${getDate()}"
+        def filename = "$projectDir/dist/hi2txt_xml.version"
+        file(filename).text = "${getDate()}"
+        file(filename).append("\n===================\n")
+        file(filename).append(file("$projectDir/CHANGELOG.md").getText())
     }
 }
 task packageSolution {

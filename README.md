@@ -4,6 +4,10 @@ mame hiscores files descriptions, to produce user or computer friendly output
 ![scores extraction](scores.png)
 
 ## Introduction
+Mame emulator is saving games hiscores, thanks to the "hiscore" embedded plugin (maintained by **borgar**) and the hiscore.dat file, describing what memory part to dump into .hi or nvram files (maintained by **Leezer**).
+
+This XML files are 'just' describing how to convert .hi or nvram files into XML or TEXT files. 
+
 These are the game specific files, written in XML, following the syntax described [here](http://greatstone.free.fr/hi2txt/doc/xml.html).
 Each file has:
 * a descriptive structure to specify how to extract binaries information from the hiscores binary file saved by mame software.
@@ -37,11 +41,14 @@ They can overwrite the existing files, as they will be surely more recent than t
  ## Contribution
  Every contribution is welcome. Please, join the project and propose new XML, fixed XML or submit issues.
  
+ Reported issues must be related to hi2txt and games XML only:
+ if the .hi or nvram files are not created, or corrupted, such issues should be reported to the maintainer of the hiscore.dat file (**Leezer**), enabling mame to save such hiscores files. 
+ 
  After filtering mame games to keep the working / non-mechanical / non-casino / ... games, nearly 30% are currently supported, letting a lot of job on the table :)  
  
  ## Inspiration
  This initiative took its roots from the defunct [hitotext](https://sourceforge.net/projects/hitotext/) software.
  It was no more actively maintained, as well as requiring hard-coding some game specific processing into the engine itself.
-     
+ 
  ![Twitter follow](https://img.shields.io/twitter/follow/hi2txt?label=Follow&style=social)
  ![License](https://img.shields.io/github/license/GreatStoneEx/hi2txt-xml)
