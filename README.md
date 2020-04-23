@@ -46,6 +46,14 @@ They can overwrite the existing files, as they will be surely more recent than t
  
  After filtering mame games to keep the working / non-mechanical / non-casino / ... games, nearly 30% are currently supported, letting a lot of job on the table :)  
  
+ ## Contributors
+ Some people helped by providing xml for new games:
+ * Thomas B.
+ * Samuli T.
+ * Jason P.
+ * Piergiorgio G.
+ * William L.
+ 
  ## Inspiration
  This initiative took its roots from the defunct [hitotext](https://sourceforge.net/projects/hitotext/) software.
  It was no more actively maintained, as well as requiring hard-coding some game specific processing into the engine itself.
