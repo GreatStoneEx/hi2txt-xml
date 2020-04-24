@@ -55,8 +55,12 @@ They can overwrite the existing files, as they will be surely more recent than t
  * William L.
  
  ## Inspiration
- This initiative took its roots from the defunct [hitotext](https://sourceforge.net/projects/hitotext/) software.
+ This initiative took its roots from the defunct [hitotext](https://sourceforge.net/projects/hitotext/) software (alternate [repo](https://github.com/Fyrecrypts/HiToText)).
  It was no more actively maintained, as well as requiring hard-coding some game specific processing into the engine itself.
+ Thanks, **Fyrecrypts**!
+ 
+ ##
+ Follow the project on twitter: https://twitter.com/hi2txt
  
  ![Twitter follow](https://img.shields.io/twitter/follow/hi2txt?label=Follow&style=social)
  ![License](https://img.shields.io/github/license/GreatStoneEx/hi2txt-xml)
