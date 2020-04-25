@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      meme 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-04-25 fix score using little_endian
+    source: HiToText
   //-->
   
   <structure file=".hi">
@@ -24,17 +28,17 @@
       <elt size="3" type="text" id="NAME" charset="zaxxon" ascii-offset="48"/>
       <elt size="1" type="raw"  id="UNKNOWN_4"/>
       <elt size="1" type="raw"  id="UNKNOWN_5"/>
-      <elt size="3" type="int"  id="SCORE" base="16"/>
+      <elt size="3" type="int"  id="SCORE" base="16" endianness="little_endian"/>
       <elt size="2" type="raw"  id="UNKNOWN_6"/>
     </loop>
-    <elt size="3" type="int"  id="TOP SCORE" base="16"/>
+    <elt size="3" type="int"  id="TOP SCORE" base="16" endianness="little_endian"/>
   </structure>
   
   <output>
     <table>
       <column id="RANK"/>
       <column id="SCORE"/>
-      <column id="NAME"/>
+      <column id="NAME" format="Trim "/>
       <column id="SCORE STRING" display="debug"/>
       <column id="UNKNOWN"   format="hexadecimal_string" display="debug"/>
       <column id="UNKNOWN_2" format="hexadecimal_string" display="debug"/>
@@ -45,8 +49,6 @@
     </table>
     <field id="TOP SCORE" display="extra"/>
   </output>
-  
-  <format id="+1"><add>1</add></format>
   
   <charset id="zaxxon">
     <char src="0x10" dst=" "/>
