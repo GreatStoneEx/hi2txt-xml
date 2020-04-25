@@ -1,4 +1,5 @@
-2020-04-23 [FIXED] "**Ghouls'n Ghosts**" and its clones: scores are now ordered correctly
+2020-04-23 [ADD]     "**Complex X**" (complexx)    
+2020-04-23 [FIXED]   "**Ghouls'n Ghosts**" (ghouls, ghoulsu, daimakai, daimakair): scores are now ordered correctly    
 2020-04-22 game: fix            "G-Darius Ver.2" (gdarius2) with a specific decoding different than gdarius, showing 5 different hiscores tables     
 2020-04-21 game: fix            "Sagaia" (sagaia) to add an additional padding at the start versus darius2     
 2020-04-20 game: fix            "Zero Team" (zeroteam) and "New Zero Team" (nzeroteam) to take only 4 bits for the score instead of 6     
