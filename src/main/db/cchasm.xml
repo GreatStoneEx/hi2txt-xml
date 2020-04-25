@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Cosmic Chasm">
+  <!--
+    tested with mame 0.219 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+      <definition>@:maincpu,program,fff4b8,78,72,10</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>120</size>
+    </check>
+    <loop count="15">
+      <elt size="3" type="text" id="NAME"/>
+      <elt size="2" type="raw"  id="EMPTY"/>
+      <elt size="3" type="int"  id="SCORE"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME" format="Uppercase"/>
+    </table>
+  </output>
+</hi2txt>
