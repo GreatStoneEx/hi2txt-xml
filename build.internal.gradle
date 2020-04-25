@@ -91,6 +91,9 @@ task forceOracles {
             def dateFolder = file(folder_name_ext).getParentFile().getName()
             def itemname = file(folder_name_ext).name.take(file(folder_name_ext).name.lastIndexOf('.'))
             def itemext = file(folder_name_ext).name.substring(file(folder_name_ext).name.lastIndexOf('.') + 1);
+            if (itemext == null || itemext.isEmpty()) {
+              throw new GradleException("forceOracles task needs file extension, which is missing for $folder_name_ext")
+            }
             println(itemname + " (" + itemext + ")")
             def stdout = new ByteArrayOutputStream()
             exec {
@@ -128,7 +131,7 @@ task generateDefaultHiscoresXML {
             // launch "mame_install/mame64.exe -bench 180 <game>"
             exec {
                 workingDir mameInstallationFolder
-                commandLine mameLocation, "-bench", "180", game
+                commandLine mameLocation, "-bench", "60", game
             }
             // launch hi2txt -xml
             def stdout = new ByteArrayOutputStream()
