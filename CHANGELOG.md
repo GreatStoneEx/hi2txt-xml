@@ -1,7 +1,8 @@
-2020-04-26 [ADD]     "**Cosmic Chasm**" (cchasm, cchasm1)
-2020-04-25 [FIXED]   "**Zaxxon**" (zaxxon, zaxxonb, zaxxon2, zaxxon3, zaxxonj, szaxxon): scores are fixed using little-endian
-2020-04-23 [ADD]     "**Complex X**" (complexx)    
-2020-04-23 [FIXED]   "**Ghouls'n Ghosts**" (ghouls, ghoulsu, daimakai, daimakair): scores are now ordered correctly    
+2020-04-26 [IMPROVED] "**Alien Sector**" (aliensec, baraduke): names are trimmed and alien face character replaced by smiley for more compatibility    
+2020-04-26 [ADD]      "**Cosmic Chasm**" (cchasm, cchasm1)    
+2020-04-25 [FIXED]    "**Zaxxon**" (zaxxon, zaxxonb, zaxxon2, zaxxon3, zaxxonj, szaxxon): scores are fixed using little-endian    
+2020-04-23 [ADD]      "**Complex X**" (complexx)    
+2020-04-23 [FIXED]    "**Ghouls'n Ghosts**" (ghouls, ghoulsu, daimakai, daimakair): scores are now ordered correctly    
 2020-04-22 game: fix            "G-Darius Ver.2" (gdarius2) with a specific decoding different than gdarius, showing 5 different hiscores tables     
 2020-04-21 game: fix            "Sagaia" (sagaia) to add an additional padding at the start versus darius2     
 2020-04-20 game: fix            "Zero Team" (zeroteam) and "New Zero Team" (nzeroteam) to take only 4 bits for the score instead of 6     

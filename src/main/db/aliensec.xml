@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.148 and related hiscore.dat
+	history:
+	  2020-04-27 use smiley for alien head for more compatible display, and trim name
+    source: HiToText
   //-->
   
   <structure file=".hi">
@@ -33,7 +37,7 @@
     <table>
       <column id="RANK" src="index" format="+1"/>
       <column id="SCORE" format="*10"/>
-      <column id="NAME"/>
+      <column id="NAME" format="TrimR "/>
       <column id="FLOOR"/>
       <column id="UNUSED" format="hexadecimal_string" display="debug"/>
     </table>
@@ -44,6 +48,6 @@
   <format id="*10"><multiply>10</multiply></format>
   
   <charset id="aliensec">
-    <char src="0x62" dst="&snowman;"/> <!-- alien head //-->
+    <char src="0x62" dst="&smiley;"/> <!-- alien head //-->
   </charset>
 </hi2txt>
