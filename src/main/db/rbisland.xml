@@ -3,8 +3,12 @@
 
 <hi2txt label="Rainbow Island">
   <!--
-    tested with mame 0.212 and embedded hiscore.dat
-    source: T. Busse
+    tested with:
+      mame 0.219 and embedded hiscore.dat
+      mame 0.212 and embedded hiscore.dat
+    history:
+      2020-04-27 fix scores, using 4 bytes instead of 3
+    source: T. Busse, GreatStone for last fix on score
   //-->
   
   <structure file=".hi">
@@ -21,8 +25,7 @@
       <size>54</size>
 	</check>
     <loop count="5" >
-	  <elt size="1" type="raw"  id="PADDING" />
-	  <elt size="3" type="int"  id="SCORE" base="16" />
+	  <elt size="4" type="int"  id="SCORE" base="16" />
 	  <elt size="2" type="int"  id="ROUND" />
 	  <elt size="1" type="raw"  id="PADDING" />
 	  <elt size="3" type="text" id="NAME" />

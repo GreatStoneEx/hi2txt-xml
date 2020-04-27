@@ -16,7 +16,7 @@ ext.binaryLocations = [
 ]
 // ...restrict games to be tested or let empty to have all
 //ext.allowedForIntegrationTests = []
-ext.allowedForIntegrationTests = ["3stooges", "3stoogesa"]
+ext.allowedForIntegrationTests = ["rbisland", "rbislande", "rbislando"]
 // ...launch task
 task call_T2_LaunchIntegrationTests {
     dependsOn "launchIntegrationTests"
@@ -36,7 +36,7 @@ task call_T3_ForceOracles {
 // Step 4: Generate default hiscores xml for new games
 ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.219/prog/mame64.exe"
 //ext.generateDefaultHiscoresXMLFor = []
-ext.generateDefaultHiscoresXMLFor = ["3stooges", "3stoogesa"]
+ext.generateDefaultHiscoresXMLFor = ["rbisland", "rbislande", "rbislando"]
 task call_P1_GenerateDefaultHiscoresXML {
     dependsOn "generateDefaultHiscoresXML"
     group "Package"
