@@ -1,3 +1,4 @@
+2020-04-28 [REMOVED]  "**Black Widow (prototype)**" (bwidowp): nvram content is not emulated correctly    
 2020-04-28 [FIXED]    "**The Three Stooges In Brides Is Brides (set 2)**" (3stoogesa): add more additional data at the start than 3stooges    
 2020-04-27 [FIXED]    "**Rainbow Island**" (rbisland, rbislande, rbislando): score is decoded from 4 bytes instead of only 3    
 2020-04-27 [FIXED]    "**The Three Stooges In Brides Is Brides**" (3stooges, 3stoogesa): decode only 21 entries instead of 22    
