@@ -1,26 +1,26 @@
 <hi2txt>
   <table>
     <col>RANK</col><col>SCORE</col><col>NAME</col>
-    <row><cell>1</cell><cell>1000</cell><cell>7A7</cell></row>
-    <row><cell>2</cell><cell>100000</cell><cell>A77</cell></row>
-    <row><cell>3</cell><cell>100000010</cell><cell>77A</cell></row>
-    <row><cell>4</cell><cell>1000</cell><cell>7A7</cell></row>
-    <row><cell>5</cell><cell>100000</cell><cell>A77</cell></row>
-    <row><cell>6</cell><cell>100000010</cell><cell>77A</cell></row>
-    <row><cell>7</cell><cell>1000</cell><cell>7A7</cell></row>
-    <row><cell>8</cell><cell>100000</cell><cell>A77</cell></row>
-    <row><cell>9</cell><cell>100000010</cell><cell>7bA</cell></row>
-    <row><cell>10</cell><cell>1515000250</cell><cell>7JO</cell></row>
-    <row><cell>11</cell><cell>14000190</cell><cell>7DE</cell></row>
-    <row><cell>12</cell><cell>111000180</cell><cell>7IT</cell></row>
-    <row><cell>13</cell><cell>10000170</cell><cell>7EM</cell></row>
-    <row><cell>14</cell><cell>12000160</cell><cell>7LS</cell></row>
-    <row><cell>15</cell><cell>12000150</cell><cell>7TK</cell></row>
-    <row><cell>16</cell><cell>10000140</cell><cell>7JO</cell></row>
-    <row><cell>17</cell><cell>14000130</cell><cell>7BE</cell></row>
-    <row><cell>18</cell><cell>112000120</cell><cell>7SE</cell></row>
-    <row><cell>19</cell><cell>111000110</cell><cell>7SH</cell></row>
-    <row><cell>20</cell><cell>14000090</cell><cell>7MP</cell></row>
-    <row><cell>21</cell><cell>11000080</cell><cell>7OW</cell></row>
+    <row><cell>1</cell><cell>25000</cell><cell>JOE</cell></row>
+    <row><cell>2</cell><cell>19000</cell><cell>DER</cell></row>
+    <row><cell>3</cell><cell>18000</cell><cell>ITA</cell></row>
+    <row><cell>4</cell><cell>17000</cell><cell>EMI</cell></row>
+    <row><cell>5</cell><cell>16000</cell><cell>LSI</cell></row>
+    <row><cell>6</cell><cell>15000</cell><cell>TKA</cell></row>
+    <row><cell>7</cell><cell>14000</cell><cell>JOE</cell></row>
+    <row><cell>8</cell><cell>13000</cell><cell>BES</cell></row>
+    <row><cell>9</cell><cell>12000</cell><cell>SER</cell></row>
+    <row><cell>10</cell><cell>11000</cell><cell>SHE</cell></row>
+    <row><cell>11</cell><cell>9000</cell><cell>MPH</cell></row>
+    <row><cell>12</cell><cell>8000</cell><cell>OWA</cell></row>
+    <row><cell>13</cell><cell>7000</cell><cell>RDA</cell></row>
+    <row><cell>14</cell><cell>6000</cell><cell>NDT</cell></row>
+    <row><cell>15</cell><cell>5000</cell><cell>HAN</cell></row>
+    <row><cell>16</cell><cell>4000</cell><cell>KYO</cell></row>
+    <row><cell>17</cell><cell>3000</cell><cell>UTE</cell></row>
+    <row><cell>18</cell><cell>2000</cell><cell>DHE</cell></row>
+    <row><cell>19</cell><cell>1000</cell><cell>ALY</cell></row>
+    <row><cell>20</cell><cell>900</cell><cell>SAM</cell></row>
+    <row><cell>21</cell><cell>800</cell><cell>LEE</cell></row>
   </table>
 </hi2txt>

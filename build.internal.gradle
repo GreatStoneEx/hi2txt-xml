@@ -135,15 +135,22 @@ task generateDefaultHiscoresXML {
             }
             // launch hi2txt -xml
             def stdout = new ByteArrayOutputStream()
-            exec {
+            def errout = new ByteArrayOutputStream()
+            def execStatus = exec {
                 ignoreExitValue true
                 standardOutput stdout
+                errorOutput errout
                 commandLine binaryLocation, "-xml", "-hiscoredat", "$mameInstallationFolder/plugins/hiscore/hiscore.dat", "-descr", "$projectDir/src/main/db", "-r", "$mameInstallationFolder/hi/$game"
             }
             // write hi2txt output into db_defaults/<game>.xml
-            def stdString = stdout.toString("UTF-8").trim()
-            println(stdString)
-            file("$projectDir/src/main/db_defaults/${game}.xml").setText(stdString, "UTF-8")
+            def errString = errout.toString("UTF-8").trim()
+            if (execStatus.exitValue == 0 && !errString.startsWith("ERROR")) {
+                def stdString = stdout.toString("UTF-8").trim()
+                println(stdString)
+                file("$projectDir/src/main/db_defaults/${game}.xml").setText(stdString, "UTF-8")
+            } else {
+                println(errString)
+            }
         })
     }
 }
