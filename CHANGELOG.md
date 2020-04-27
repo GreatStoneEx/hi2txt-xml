@@ -1,3 +1,4 @@
+2020-04-28 [FIXED]    "**Battle of Atlantis (bootleg)**" (atlantisb): keep only 1 score    
 2020-04-28 [FIXED]    "**Battle of Atlantis (set 2)**" (atlantis2): add a padding at the start versus atlantis    
 2020-04-28 [REMOVED]  "**Black Widow (prototype)**" (bwidowp): nvram content is not emulated correctly    
 2020-04-28 [FIXED]    "**The Three Stooges In Brides Is Brides (set 2)**" (3stoogesa): add more additional data at the start than 3stooges    
