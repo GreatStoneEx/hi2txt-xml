@@ -1,7 +1,7 @@
 apply from: 'build.internal.gradle'
 
 // Step 1: Create empty oracle for new games, to trigger new integrationTests
-ext.needEmptyOracles = ["2020_02_01_0219/alpine", "2020_02_01_0219/pspikes", "2020_02_01_0219/sagaia", "2020_02_01_0219/zeroteam", "2020_02_01_0219/gdarius2"]
+ext.needEmptyOracles = ["2020_02_01_0219/cchasm"]
 task call_T1_CreateEmptyOracles() {
     dependsOn "createEmptyOracles"
     group "Test"
@@ -15,8 +15,8 @@ ext.binaryLocations = [
     System.getProperty("user.dir")+"/../hi2txt/bin/hi2txt.bat"
 ]
 // ...restrict games to be tested or let empty to have all
-ext.allowedForIntegrationTests = []
-//ext.allowedForIntegrationTests = ["alpine", "pspikes", "sagaia", "zeroteam", "alieninv", "gdarius2"]
+//ext.allowedForIntegrationTests = []
+ext.allowedForIntegrationTests = ["3stooges", "3stoogesa"]
 // ...launch task
 task call_T2_LaunchIntegrationTests {
     dependsOn "launchIntegrationTests"
@@ -25,8 +25,8 @@ task call_T2_LaunchIntegrationTests {
 }
 
 // Step 3: Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes
-//ext.forceOraclesFor = ["2020_02_01_0219/sagaia.txt"]
-ext.forceOraclesFor = ["2014_02_11_0148/searthie.txt", "2014_02_11_0148/searthie.xml"]
+//ext.forceOraclesFor = []
+ext.forceOraclesFor = ["2017_01_04_0181/3stooges.xml", "2017_01_04_0181/3stooges.txt"]
 task call_T3_ForceOracles {
     dependsOn "forceOracles"
     group "Test"
@@ -35,8 +35,8 @@ task call_T3_ForceOracles {
 
 // Step 4: Generate default hiscores xml for new games
 ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.219/prog/mame64.exe"
-//ext.generateDefaultHiscoresXMLFor = ["alpine", "pspikes", "sagaia", "zeroteam", "alieninv", "gdarius2"]
-ext.generateDefaultHiscoresXMLFor = ["searthie"]
+//ext.generateDefaultHiscoresXMLFor = []
+ext.generateDefaultHiscoresXMLFor = ["3stooges", "3stoogesa"]
 task call_P1_GenerateDefaultHiscoresXML {
     dependsOn "generateDefaultHiscoresXML"
     group "Package"

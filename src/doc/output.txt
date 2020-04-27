@@ -1,0 +1,11 @@
+For easier reading by third-party program, extracted scores will be normalized:
+
+If ingames hiscores are spread on multiple tables, it will be the same on the extraction.
+In case of multiple hiscores tables, each table will have an id, representing the table criteria.
+
+table
+  id (optional, only if multiple tables are present)
+  1st column (mandatory) = RANK  = integer, starting at 1 (lower is better)
+  2nd column (mandatory) = SCORE = integer or float
+  3rd column (optional)  = NAME  = any printable ASCII character or any Unicode character in UTF-16 encoding (ex: &#9786;)
+

@@ -2,7 +2,11 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="The Three Stooges In Brides Is Brides">
   <!--
-    tested with mame 0.181 and embedded hiscore.dat
+    tested with:
+	  mame 0.219 and related hiscore.dat
+	  mame 0.181 and embedded hiscore.dat
+	history:
+	  2020-04-27 fix to display only 21 entries instead of 22
     source: GreatStone
   //-->
   
@@ -13,7 +17,7 @@
       <size>4096</size>
     </check>
 	<elt size="1157" type="raw" id="UNKNOWN"/>
-    <loop count="22">
+    <loop count="21">
       <elt size="4" type="int"  id="SCORE" base="16"/>
       <elt size="3" type="text" id="NAME"  ascii-offset="55"/>
     </loop>

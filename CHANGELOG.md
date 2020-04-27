@@ -1,3 +1,4 @@
+2020-04-27 [FIXED]    "**3 stooges**" (3stooges, 3stoogesa): decode only 21 entries instead of 22    
 2020-04-26 [IMPROVED] "**Alien Sector**" (aliensec, baraduke): names are trimmed and alien face character replaced by smiley for more compatibility    
 2020-04-26 [ADD]      "**Cosmic Chasm**" (cchasm, cchasm1)    
 2020-04-25 [FIXED]    "**Zaxxon**" (zaxxon, zaxxonb, zaxxon2, zaxxon3, zaxxonj, szaxxon): scores are fixed using little-endian    
