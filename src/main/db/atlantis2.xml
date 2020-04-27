@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
-<hi2txt><sameas id="atlantis"/></hi2txt>
+<hi2txt>
+    <!--
+      tested with:
+        mame 0.219 and related hiscore.dat
+        mame 0.148 and related hiscore.dat
+      history:
+        2020-04-28 specific score format, different than atlantis
+      source: HiToText, GreatStone
+    //-->
+
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>0:403d:2c:00:00</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                           useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>44</size>
+        </check>
+        <elt size="2" type="raw"  id="PADDING"/>
+        <elt size="4" type="int"  id="TOP SCORE" base="16"/>
+        <loop count="9">
+            <elt size="4" type="int"  id="SCORE" base="16"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table line-ignore="SCORE:0">
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE"/>
+        </table>
+        <field id="TOP SCORE" display="extra"/>
+    </output>
+</hi2txt>
