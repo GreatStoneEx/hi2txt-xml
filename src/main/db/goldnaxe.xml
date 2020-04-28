@@ -2,10 +2,35 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Golden Axe">
   <!--
-    tested with mame 0.159 and hiscore.dat 2015-07-01
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.159 and hiscore.dat 2015-07-01
+    history:
+      2020-04-28 add score for Tyris and Gilius and improve output in 3 tables
     source: GreatStone
   //-->
-  
+
+  <structure file="nvram" byte-swap="2">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>16384</size>
+    </check>
+    <elt size="15360" type="raw"  id="UNKNOWN"/>
+
+    <elt size="18" type="raw"  id="UNKNOWN11"/>
+    <elt size="2"  type="int"  id="AX_STRENGTH"/>
+    <elt size="2"  type="int"  id="TYRIS_STRENGTH"/>
+    <elt size="2"  type="int"  id="GILIUS_STRENGTH"/>
+    <elt size="4"  type="raw"  id="UNKNOWN12"/>
+
+    <elt size="18" type="raw"  id="UNKNOWN21"/>
+    <elt size="2"  type="int"  id="AX_STRENGTH2"/>
+    <elt size="2"  type="int"  id="TYRIS_STRENGTH2"/>
+    <elt size="2"  type="int"  id="GILIUS_STRENGTH2"/>
+    <elt size="4"  type="raw"  id="UNKNOWN22"/>
+  </structure>
+
   <structure file=".hi">
     <check>
       <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
@@ -15,22 +40,35 @@
       <size>56</size>
     </check>
     <elt size="18" type="raw"  id="UNKNOWN11"/>
-    <elt size="2"  type="int"  id="STRENGTH"/>
-    <elt size="8"  type="raw"  id="UNKNOWN12"/>
+    <elt size="2"  type="int"  id="AX_STRENGTH"/>
+    <elt size="2"  type="int"  id="TYRIS_STRENGTH"/>
+    <elt size="2"  type="int"  id="GILIUS_STRENGTH"/>
+    <elt size="4"  type="raw"  id="UNKNOWN12"/>
     
     <elt size="18" type="raw"  id="UNKNOWN21"/>
-    <elt size="2"  type="int"  id="STRENGTH2"/>
-    <elt size="8"  type="raw"  id="UNKNOWN22"/>
+    <elt size="2"  type="int"  id="AX_STRENGTH2"/>
+    <elt size="2"  type="int"  id="TYRIS_STRENGTH2"/>
+    <elt size="2"  type="int"  id="GILIUS_STRENGTH2"/>
+    <elt size="4"  type="raw"  id="UNKNOWN22"/>
   </structure>
   
   <output>
-    <table>
-      <column id="RANK" src="index" format="+1"/>
-      <column id="STRENGTH"  format="dot10"/>
-      <column id="STRENGTH2" format="dot10" display="debug"/>
+    <table id="AX BATTLER">
+      <column id="RANK"   src="index" format="+1"/>
+      <column id="SCORE"  src="AX_STRENGTH" format="dot10"/>
+      <column id="SCORE2" src="AX_STRENGTH2" format="dot10" display="debug"/>
+    </table>
+    <table id="TYRIS FLARE">
+      <column id="RANK"   src="index" format="+1"/>
+      <column id="SCORE"  src="TYRIS_STRENGTH" format="dot10"/>
+      <column id="SCORE2" src="TYRIS_STRENGTH2" format="dot10" display="debug"/>
+    </table>
+    <table id="GILIUS THUNDERHEAD">
+      <column id="RANK"   src="index" format="+1"/>
+      <column id="SCORE"  src="GILIUS_STRENGTH" format="dot10"/>
+      <column id="SCORE2" src="GILIUS_STRENGTH2" format="dot10" display="debug"/>
     </table>
   </output>
   
-   <format id="dot10" formatter="%.1f"> <divide>10</divide></format>
-   
+  <format id="dot10" formatter="%.1f"> <divide>10</divide></format>
 </hi2txt>

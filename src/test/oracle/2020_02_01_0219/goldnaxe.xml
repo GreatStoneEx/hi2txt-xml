@@ -1,14 +1,14 @@
 <hi2txt>
   <table id="AX BATTLER">
     <col>RANK</col><col>SCORE</col><col>SCORE2</col>
-    <row><cell>1</cell><cell>66.5</cell><cell>66.5</cell></row>
+    <row><cell>1</cell><cell>67.0</cell><cell>67.0</cell></row>
   </table>
   <table id="TYRIS FLARE">
     <col>RANK</col><col>SCORE</col><col>SCORE2</col>
-    <row><cell>1</cell><cell>50.0</cell><cell>50.0</cell></row>
+    <row><cell>1</cell><cell>63.5</cell><cell>63.5</cell></row>
   </table>
   <table id="GILIUS THUNDERHEAD">
     <col>RANK</col><col>SCORE</col><col>SCORE2</col>
-    <row><cell>1</cell><cell>50.0</cell><cell>50.0</cell></row>
+    <row><cell>1</cell><cell>232.0</cell><cell>232.0</cell></row>
   </table>
 </hi2txt>
