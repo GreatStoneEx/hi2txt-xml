@@ -1,4 +1,5 @@
-2020-04-28 [IMPROVED] "**Golden Axe**" (goldnaxe and clones): display scores for Tyris and Gilius also and convert strength  into score    
+2020-04-28 [FIXED]    "**Mad Planets (uk)**" (mplanetsuk): fix score by adding an initial padding different than its parent    
+2020-04-28 [IMPROVED] "**Golden Axe**" (goldnaxe and clones): display scores for Tyris and Gilius also and convert strength into score    
 2020-04-28 [IMPROVED] "**Rally X**" (dngrtrck, nrallyx, nrallyxb, rallyx, rallyxa, rallyxm, rallyxmr): improve output so that LaunchBox can get the top score    
 2020-04-28 [FIXED]    "**Battle of Atlantis (bootleg)**" (atlantisb): keep only 1 score    
 2020-04-28 [FIXED]    "**Battle of Atlantis (set 2)**" (atlantis2): add a padding at the start versus atlantis    
