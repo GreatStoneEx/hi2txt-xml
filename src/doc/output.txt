@@ -6,6 +6,6 @@ In case of multiple hiscores tables, each table will have an id, representing th
 table
   id (optional, only if multiple tables are present)
   1st column (mandatory) = RANK  = integer, starting at 1 (lower is better)
-  2nd column (mandatory) = SCORE = integer or float
+  2nd column (mandatory) = SCORE = integer or float (separator => .)
   3rd column (optional)  = NAME  = any printable ASCII character or any Unicode character in UTF-16 encoding (ex: &#9786;)
 
