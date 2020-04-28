@@ -1,3 +1,4 @@
+2020-04-28 [FIXED]    "**Crazy Kong**" (ckongs, ckongg, ckonggx, ckongmc): get score from the strin part, to avoid reading corrupted content    
 2020-04-28 [FIXED]    "**Mad Planets (uk)**" (mplanetsuk): fix score by adding an initial padding different than its parent    
 2020-04-28 [IMPROVED] "**Golden Axe**" (goldnaxe and clones): display scores for Tyris and Gilius also and convert strength into score    
 2020-04-28 [IMPROVED] "**Rally X**" (dngrtrck, nrallyx, nrallyxb, rallyx, rallyxa, rallyxm, rallyxmr): improve output so that LaunchBox can get the top score    
