@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.153 and hiscore.dat 2014-04-23
-      source: GreatStone
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.153 and hiscore.dat 2014-04-23
+    history:
+      2020-04-29 split table into 4, one per mode, for easier reading
+    source: GreatStone
   //-->
   
   <structure file=".hi">
@@ -14,52 +18,138 @@
                      useful if multiple structures are defined but hiscore.dat not provided //-->
       <size>784</size>
     </check>
-    <loop count="28">
-      <elt size="3" type="raw"  id="UNKNOWN"/>
-      <elt size="1" type="raw"  id="UNKNOWN2"/>
-      <elt size="4" type="int"  id="SCORE"/>
-      <elt size="7" type="text" id="SCORE ALT"/>
-      <elt size="1" type="raw"  id="EMPTY"/>
-      <elt size="3" type="text" id="NAME"/>
-      <elt size="1" type="raw"  id="EMPTY2"/>
-      <elt size="1" type="int"  id="CHARACTER1"/>
-      <elt size="1" type="int"  id="CHARACTER2"/>
-      <elt size="1" type="int"  id="CHARACTER3"/> 
-      <elt size="3" type="raw"  id="EMPTY3"/>
-      <elt size="2" type="text" id="STAGE"/>
+    <loop count="7">
+      <elt size="3" type="raw"  id="T_UNKNOWN"/>
+      <elt size="1" type="raw"  id="T_UNKNOWN2"/>
+      <elt size="4" type="int"  id="T_SCORE"/>
+      <elt size="7" type="text" id="T_SCORE ALT"/>
+      <elt size="1" type="raw"  id="T_EMPTY"/>
+      <elt size="3" type="text" id="T_NAME"/>
+      <elt size="1" type="raw"  id="T_EMPTY2"/>
+      <elt size="1" type="int"  id="T_CHARACTER1"/>
+      <elt size="1" type="int"  id="T_CHARACTER2"/>
+      <elt size="1" type="int"  id="T_CHARACTER3"/>
+      <elt size="3" type="raw"  id="T_EMPTY3"/>
+      <elt size="2" type="text" id="T_STAGE"/>
+    </loop>
+    <loop count="7">
+      <elt size="3" type="raw"  id="N_UNKNOWN"/>
+      <elt size="1" type="raw"  id="N_UNKNOWN2"/>
+      <elt size="4" type="int"  id="N_SCORE"/>
+      <elt size="7" type="text" id="N_SCORE ALT"/>
+      <elt size="1" type="raw"  id="N_EMPTY"/>
+      <elt size="3" type="text" id="N_NAME"/>
+      <elt size="1" type="raw"  id="N_EMPTY2"/>
+      <elt size="1" type="int"  id="N_CHARACTER1"/>
+      <elt size="1" type="int"  id="N_CHARACTER2"/>
+      <elt size="1" type="int"  id="N_CHARACTER3"/>
+      <elt size="3" type="raw"  id="N_EMPTY3"/>
+      <elt size="2" type="text" id="N_STAGE"/>
+    </loop>
+    <loop count="7">
+      <elt size="3" type="raw"  id="A_UNKNOWN"/>
+      <elt size="1" type="raw"  id="A_UNKNOWN2"/>
+      <elt size="4" type="int"  id="A_SCORE"/>
+      <elt size="7" type="text" id="A_SCORE ALT"/>
+      <elt size="1" type="raw"  id="A_EMPTY"/>
+      <elt size="3" type="text" id="A_NAME"/>
+      <elt size="1" type="raw"  id="A_EMPTY2"/>
+      <elt size="1" type="int"  id="A_CHARACTER1"/>
+      <elt size="1" type="int"  id="A_CHARACTER2"/>
+      <elt size="1" type="int"  id="A_CHARACTER3"/>
+      <elt size="3" type="raw"  id="A_EMPTY3"/>
+      <elt size="2" type="text" id="A_STAGE"/>
+    </loop>
+    <loop count="7">
+      <elt size="3" type="raw"  id="S_UNKNOWN"/>
+      <elt size="1" type="raw"  id="S_UNKNOWN2"/>
+      <elt size="4" type="int"  id="S_SCORE"/>
+      <elt size="7" type="text" id="S_SCORE ALT"/>
+      <elt size="1" type="raw"  id="S_EMPTY"/>
+      <elt size="3" type="text" id="S_NAME"/>
+      <elt size="1" type="raw"  id="S_EMPTY2"/>
+      <elt size="1" type="int"  id="S_CHARACTER1"/>
+      <elt size="1" type="int"  id="S_CHARACTER2"/>
+      <elt size="1" type="int"  id="S_CHARACTER3"/>
+      <elt size="3" type="raw"  id="S_EMPTY3"/>
+      <elt size="2" type="text" id="S_STAGE"/>
     </loop>
   </structure>
   
   <output>
-    <table line-ignore="RANK:5" line-ignore-operator="&gt;">
-      <column id="INDEX" src="index" format="+1"/>
-      <column id="RANK" src="index" format="%7;+1"/>
-      <column id="SCORE"/>
-      <column id="SCORE ALT" format="trim" display="debug"/>
-      <column id="NAME"  format="trim"/>
-      <column id="STAGE" format="trim"/>
-      <column id="MODE" src="index" format="mode"/>
-      <column id="CHARACTER1" format="character"/>
-      <column id="CHARACTER2" format="character"/>
-      <column id="CHARACTER3" format="character"/>
-      <column id="UNKNOWN"  format="0x" display="debug"/>
-      <column id="UNKNOWN2" format="0x" display="debug"/>
-      <column id="UNKNOWN3" format="0x" display="debug"/>
-      <column id="EMPTY"    format="0x" display="debug"/>
-      <column id="EMPTY2"   format="0x" display="debug"/>
-      <column id="EMPTY3"   format="0x" display="debug"/>
+    <table id="TRAINING" lines-max="5">
+      <column id="RANK"       src="index"        format="+1"/>
+      <column id="SCORE"      src="T_SCORE"/>
+      <column id="SCORE ALT"  src="T_SCORE ALT"  format="trim" display="debug"/>
+      <column id="NAME"       src="T_NAME"       format="trim"/>
+      <column id="STAGE"      src="T_STAGE"      format="trim"/>
+      <column id="CHARACTER1" src="T_CHARACTER1" format="character"/>
+      <column id="CHARACTER2" src="T_CHARACTER2" format="character"/>
+      <column id="CHARACTER3" src="T_CHARACTER3" format="character"/>
+      <column id="UNKNOWN"    src="T_UNKNOWN"    format="0x" display="debug"/>
+      <column id="UNKNOWN2"   src="T_UNKNOWN2"   format="0x" display="debug"/>
+      <column id="UNKNOWN3"   src="T_UNKNOWN3"   format="0x" display="debug"/>
+      <column id="EMPTY"      src="T_EMPTY"      format="0x" display="debug"/>
+      <column id="EMPTY2"     src="T_EMPTY2"     format="0x" display="debug"/>
+      <column id="EMPTY3"     src="T_EMPTY3"     format="0x" display="debug"/>
+    </table>
+
+    <table id="NORMAL" lines-max="5">
+      <column id="RANK"       src="index"        format="+1"/>
+      <column id="SCORE"      src="N_SCORE"/>
+      <column id="SCORE ALT"  src="N_SCORE ALT"  format="trim" display="debug"/>
+      <column id="NAME"       src="N_NAME"       format="trim"/>
+      <column id="STAGE"      src="N_STAGE"      format="trim"/>
+      <column id="CHARACTER1" src="N_CHARACTER1" format="character"/>
+      <column id="CHARACTER2" src="N_CHARACTER2" format="character"/>
+      <column id="CHARACTER3" src="N_CHARACTER3" format="character"/>
+      <column id="UNKNOWN"    src="N_UNKNOWN"    format="0x" display="debug"/>
+      <column id="UNKNOWN2"   src="N_UNKNOWN2"   format="0x" display="debug"/>
+      <column id="UNKNOWN3"   src="N_UNKNOWN3"   format="0x" display="debug"/>
+      <column id="EMPTY"      src="N_EMPTY"      format="0x" display="debug"/>
+      <column id="EMPTY2"     src="N_EMPTY2"     format="0x" display="debug"/>
+      <column id="EMPTY3"     src="N_EMPTY3"     format="0x" display="debug"/>
+    </table>
+
+    <table id="ADVANCE" lines-max="5">
+      <column id="RANK"       src="index"        format="+1"/>
+      <column id="SCORE"      src="A_SCORE"/>
+      <column id="SCORE ALT"  src="A_SCORE ALT"  format="trim" display="debug"/>
+      <column id="NAME"       src="A_NAME"       format="trim"/>
+      <column id="STAGE"      src="A_STAGE"      format="trim"/>
+      <column id="CHARACTER1" src="A_CHARACTER1" format="character"/>
+      <column id="CHARACTER2" src="A_CHARACTER2" format="character"/>
+      <column id="CHARACTER3" src="A_CHARACTER3" format="character"/>
+      <column id="UNKNOWN"    src="A_UNKNOWN"    format="0x" display="debug"/>
+      <column id="UNKNOWN2"   src="A_UNKNOWN2"   format="0x" display="debug"/>
+      <column id="UNKNOWN3"   src="A_UNKNOWN3"   format="0x" display="debug"/>
+      <column id="EMPTY"      src="A_EMPTY"      format="0x" display="debug"/>
+      <column id="EMPTY2"     src="A_EMPTY2"     format="0x" display="debug"/>
+      <column id="EMPTY3"     src="A_EMPTY3"     format="0x" display="debug"/>
+    </table>
+
+    <table id="SPECIAL" lines-max="5">
+      <column id="RANK"       src="index"        format="+1"/>
+      <column id="SCORE"      src="S_SCORE"/>
+      <column id="SCORE ALT"  src="S_SCORE ALT"  format="trim" display="debug"/>
+      <column id="NAME"       src="S_NAME"       format="trim"/>
+      <column id="STAGE"      src="S_STAGE"      format="trim"/>
+      <column id="CHARACTER1" src="S_CHARACTER1" format="character"/>
+      <column id="CHARACTER2" src="S_CHARACTER2" format="character"/>
+      <column id="CHARACTER3" src="S_CHARACTER3" format="character"/>
+      <column id="UNKNOWN"    src="S_UNKNOWN"    format="0x" display="debug"/>
+      <column id="UNKNOWN2"   src="S_UNKNOWN2"   format="0x" display="debug"/>
+      <column id="UNKNOWN3"   src="S_UNKNOWN3"   format="0x" display="debug"/>
+      <column id="EMPTY"      src="S_EMPTY"      format="0x" display="debug"/>
+      <column id="EMPTY2"     src="S_EMPTY2"     format="0x" display="debug"/>
+      <column id="EMPTY3"     src="S_EMPTY3"     format="0x" display="debug"/>
     </table>
   </output>
   
   <format id="trim">
     <trim direction="left"> </trim>
   </format>
-  <format id="mode">
-    <case src="7"  operator="&lt;" dst="training"/>
-    <case src="14" operator="&lt;" dst="normal"/>
-    <case src="21" operator="&lt;" dst="advanced"/>
-    <case src="28" operator="&lt;" dst="special"/>
-  </format>
+
   <format id="character">
     <case src="144" dst="D.D - Flying Killer (A)"/>
     <case src="145" dst="D.D - Flying Killer (B)"/>

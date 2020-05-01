@@ -3,23 +3,38 @@
 <hi2txt>
   <!--
     tested with:
+      mame 0.219 and related hiscore.dat
       mame 0.148 and related hiscore.dat
       mame 0.153 and hiscore.dat 20150131
+    history:
+      2020-04-28 add a table for the structure with only one score
     source: HiToText, GreatStone
   //-->
   
-  <structure file=".hi">
+  <structure file=".hi" output="8">
     <check>
       <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
       <definition>0:e029:3:53:4d
                   0:e018:5:01:00</definition>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>8</size>
+    </check>
+    <loop count="1">
+      <elt size="3" type="text" id="TOP NAME"  charset="appoooh"/>
+      <elt size="5" type="int"  id="TOP SCORE" decoding-profile="bcd"/>
+    </loop>
+  </structure>
+
+  <structure file=".hi" output="230">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
       <definition>0:e029:3:53:4d
                   0:e017:6:00:00
                   0:e018:1:01:01
                   0:e400:dc:53:00</definition> <!-- from hiscore.dat 2015-01-31, following report from hi2txt //-->
       <!-- optional: if defined, it allows to select the good structure versus the provided file
                      useful if multiple structures are defined but hiscore.dat not provided //-->
-      <size>8</size>
       <size>230</size>
     </check>
     <elt size="3" type="text" id="TOP NAME"  charset="appoooh"/>
@@ -32,10 +47,18 @@
     </loop>
   </structure>
   
-  <output>
-    <table line-ignore="SCORE:000000">
+  <output id="8">
+    <table>
       <column id="RANK" src="index" format="+1"/>
-      <column id="SCORE" format="PadL60"/>
+      <column id="SCORE" src="TOP SCORE" format="TrimL0"/>
+      <column id="NAME"  src="TOP NAME"/>
+    </table>
+  </output>
+
+  <output id="230">
+    <table line-ignore="SCORE:">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" format="TrimL0"/>
       <column id="NAME"/>
       <column id="STAGE"/>
     </table>
@@ -43,9 +66,7 @@
     <field id="TOP NAME"  display="extra"/>
     <field id="CHECK"     display="debug"/>
   </output>
-  
-  <format id="+1"><add>1</add></format>
-  
+
   <charset id="appoooh">
     <char src="0x3F" dst=" "/>
     <char src="0x40" dst=" "/>

@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText, GreatStone
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-04-28 split into 4 tables and normalize them (with a SCORE column) for easier reading
+    source: HiToText, GreatStone
   //-->
   
   <structure file=".hi">
@@ -22,40 +26,47 @@
          src-unit-size="16" base="40" dst-unit-size="3" ascii-offset="64"
      //-->
     <loop count="10">
-      <elt size="3" type="int"  id="WARRIOR SCORE"/>
-      <elt size="2" type="text" id="WARRIOR NAME" decoding-profile="base-40" charset="gauntlet"/>
+      <elt size="3" type="int"  id="WARRIORS SCORE"/>
+      <elt size="2" type="text" id="WARRIORS NAME" decoding-profile="base-40" charset="gauntlet"/>
     </loop>
     <loop count="10">
-      <elt size="3" type="int"  id="VALKYRIE SCORE"/>
-      <elt size="2" type="text" id="VALKYRIE NAME" decoding-profile="base-40" charset="gauntlet"/>
+      <elt size="3" type="int"  id="VALKYRIES SCORE"/>
+      <elt size="2" type="text" id="VALKYRIES NAME" decoding-profile="base-40" charset="gauntlet"/>
     </loop>
     <loop count="10">
-      <elt size="3" type="int"  id="WIZARD SCORE"/>
-      <elt size="2" type="text" id="WIZARD NAME" decoding-profile="base-40" charset="gauntlet"/>
+      <elt size="3" type="int"  id="WIZARDS SCORE"/>
+      <elt size="2" type="text" id="WIZARDS NAME" decoding-profile="base-40" charset="gauntlet"/>
     </loop>
     <loop count="10">
-      <elt size="3" type="int"  id="ELF SCORE"/>
-      <elt size="2" type="text" id="ELF NAME" decoding-profile="base-40" charset="gauntlet"/>
+      <elt size="3" type="int"  id="ELVES SCORE"/>
+      <elt size="2" type="text" id="ELVES NAME" decoding-profile="base-40" charset="gauntlet"/>
     </loop>
   </structure>
   
   <output>
-    <table>
-      <column id="RANK" src="index" format="+1"/>
-      <column id="WARRIOR SCORE"/>
-      <column id="WARRIOR NAME"/>
-      <column id="VALKYRIE SCORE"/>
-      <column id="VALKYRIE NAME"/>
-      <column id="WIZARD SCORE"/>
-      <column id="WIZARD NAME"/>
-      <column id="ELF SCORE"/>
-      <column id="ELF NAME"/>
+    <table id="WARRIORS">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="WARRIORS SCORE"/>
+      <column id="NAME"  src="WARRIORS NAME"/>
     </table>
-    <field id="LAST LEVEL PLAYED"/>
+    <table id="VALKYRIES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="VALKYRIES SCORE"/>
+      <column id="NAME"  src="VALKYRIES NAME"/>
+    </table>
+    <table id="WIZARDS">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="WIZARDS SCORE"/>
+      <column id="NAME"  src="WIZARDS NAME"/>
+    </table>
+    <table id="ELVES">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="ELVES SCORE"/>
+      <column id="NAME"  src="ELVES NAME"/>
+    </table>
+    <field id="LAST LEVEL PLAYED" display="extra"/>
   </output>
-    
-  <format id="+1"><add>1</add></format>
-  
+
   <charset id="gauntlet">
     <char src="0x00" dst=" "/>
   </charset>

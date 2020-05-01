@@ -1,3 +1,7 @@
+2020-04-29 [IMPROVED] "**Armed Police Batrider**" (batrider and clones): split into 4 tables, one per mode    
+2020-04-28 [IMPROVED] "**Gauntlet**" (gauntlet): split into 4 tables and normalize output (with a SCORE column)    
+2020-04-28 [IMPROVED] "**Double Dribble**" (ddribble, ddribblep): normalize output (renaming POINTS in SCORE)    
+2020-04-28 [IMPROVED] "**Appoooh**" (appoooh): trim scores and normalize output (table, SCORE column)    
 2020-04-28 [FIXED]    "**Crazy Kong**" (ckongs, ckongg, ckonggx, ckongmc): get score from the strin part, to avoid reading corrupted content    
 2020-04-28 [FIXED]    "**Mad Planets (uk)**" (mplanetsuk): fix score by adding an initial padding different than its parent    
 2020-04-28 [IMPROVED] "**Golden Axe**" (goldnaxe and clones): display scores for Tyris and Gilius also and convert strength into score    

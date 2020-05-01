@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-04-28 normalize output, renaming POINTS to SCORE
+    source: HiToText
   //-->
   
   <structure file=".hi">
@@ -44,9 +48,9 @@
   <output>
     <table>
       <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE" src="POINTS"/>
       <column id="NAME"/>
       <column id="BIRTHDATE" format="birthdate"/>
-      <column id="POINTS"/>
       <column id="FIELD GOAL" format="percent"/>
       <column id="FREE THROW" format="percent"/>
       <column id="REBOUNDS"/>
@@ -64,8 +68,8 @@
   </format>
   <format id="."><prefix>.</prefix></format>
   <format id="percent">
-    <case src="9999" operator="&gt;"  dst="Perfect"/>
-    <case src="9999" operator="&lt;=" format="."/>
+    <case src="1000" operator="&gt;="  dst="Perfect"/>
+    <case src="1000" operator="&lt;" format="."/>
   </format>
   
   <charset id="ddribble">

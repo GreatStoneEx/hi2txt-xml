@@ -1,4 +1,6 @@
 <hi2txt>
-  <field id="TOP SCORE">10000</field>
-  <field id="TOP NAME">SAM</field>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col>
+    <row><cell>1</cell><cell>10000</cell><cell>SAM</cell></row>
+  </table>
 </hi2txt>

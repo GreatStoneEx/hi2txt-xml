@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText,greatstone
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-04-28 split into 2 tables for easier reading
+    source: HiToText, GreatStone
   //-->
   
   <structure file=".hi">
@@ -14,20 +18,18 @@
                      useful if multiple structures are defined, but hiscore.dat not provided //-->
       <size>4</size>
     </check>
-  	<loop count="2"><elt size="2" type="int"  id="SCORE"/></loop>
+  	<loop count="1"><elt size="2" type="int"  id="TEAM SCORE"/></loop>
+    <loop count="1"><elt size="2" type="int"  id="SOLO SCORE"/></loop>
   </structure>
   
   <output>
-    <table>
-      <column id="MODE" src="index" format="mode"/>
-      <column id="SCORE" format="*10"/>
+    <table id="TEAM">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="TEAM SCORE" format="*10"/>
+    </table>
+    <table id="SOLO">
+      <column id="RANK"  src="index" format="+1"/>
+      <column id="SCORE" src="SOLO SCORE" format="*10"/>
     </table>
   </output>
-  
-  <format id="*10"><multiply>10</multiply></format>
-  <format id="mode">
-    <case src="0" dst="TEAM"/>
-    <case src="1" dst="SOLO"/>
-  </format>
-  
 </hi2txt>

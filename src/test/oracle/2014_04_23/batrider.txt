@@ -1,22 +1,31 @@
-INDEX|RANK|SCORE|SCORE ALT|NAME|STAGE|MODE|CHARACTER1|CHARACTER2|CHARACTER3|UNKNOWN|UNKNOWN2|UNKNOWN3|EMPTY|EMPTY2|EMPTY3
-1|1|995030|995030|:;?|2|training|Maria - Clitter IV (A)|Golden - Razer Back (A)|Strawman - Beyond 8570 (A)|0x001B00|0x00||0x00|0x00|0x000000
-2|2|594400|594400|@<>|2|training|Carpet - Magic Carpet (A)|D.D - Flying Killer (A)|Miyamoto - Miyamoto (A)|0x000100|0x00||0x00|0x00|0x000000
-3|3|500000|500000|***|1|training|D.D - Flying Killer (A)|Shorty - Carry Carry (A)|Jyuji - Sangerea 5280 (A)|0x000180|0x00||0x00|0x00|0x000000
-4|4|400000|400000|***|1|training|Maria - Clitter IV (A)|Golden - Razer Back (A)|Strawman - Beyond 8570 (A)|0x000082|0x00||0x00|0x00|0x000000
-5|5|300000|300000|***|1|training|Birthday - Mad Romero (A)|Tag-T - Grizzly Vse (A)|Adam - V-Twin Bogivman (A)|0x000082|0x00||0x00|0x00|0x000000
-8|1|530060|530060|@>;|2|normal|Birthday - Mad Romero (B)|Tag-T - Grizzly Vse (B)|Adam - V-Twin Bogivman (B)|0x000002|0x00||0x00|0x00|0x000000
-9|2|500000|500000|+++|1|normal|D.D - Flying Killer (B)|Shorty - Carry Carry (B)|Jyuji - Sangerea 5280 (B)|0x000180|0x00||0x00|0x00|0x000000
-10|3|400000|400000|+++|1|normal|Maria - Clitter IV (B)|Golden - Razer Back (B)|Strawman - Beyond 8570 (B)|0x000082|0x00||0x00|0x00|0x000000
-11|4|300000|300000|+++|1|normal|Birthday - Mad Romero (B)|Tag-T - Grizzly Vse (B)|Adam - V-Twin Bogivman (B)|0x000082|0x00||0x00|0x00|0x000000
-12|5|200000|200000|+++|1|normal|B. Wayne - Silversword (B)|J. Wayne - Grasshoper (B)|B. Wayne - Flying Baron (B)|0x000082|0x00||0x00|0x00|0x000000
-15|1|500000|500000|###|1|advanced|D.D - Flying Killer (C)|Shorty - Carry Carry (C)|Jyuji - Sangerea 5280 (C)|0x000100|0x00||0x00|0x00|0x000000
-16|2|400000|400000|###|1|advanced|Maria - Clitter IV (C)|Golden - Razer Back (C)|Strawman - Beyond 8570 (C)|0x000082|0x00||0x00|0x00|0x000000
-17|3|300000|300000|###|1|advanced|Birthday - Mad Romero (C)|Tag-T - Grizzly Vse (C)|Adam - V-Twin Bogivman (C)|0x000082|0x00||0x00|0x00|0x000000
-18|4|200000|200000|###|1|advanced|B. Wayne - Silversword (C)|J. Wayne - Grasshoper (C)|B. Wayne - Flying Baron (C)|0x000082|0x00||0x00|0x00|0x000000
-19|5|100000|100000|###|1|advanced|J. Wayne - Wild Snail (C)|Gain - Valhallyzer (C)|Chitta - Gun-Dalf (C)|0x000082|0x00||0x00|0x00|0x000000
-22|1|500000|500000|???|1|special|D.D - Flying Killer (Start)|Shorty - Carry Carry (Start)|Jyuji - Sangerea 5280 (Start)|0x000002|0x00||0x00|0x00|0x000000
-23|2|400000|400000|???|1|special|Maria - Clitter IV (Start)|Golden - Razer Back (Start)|Strawman - Beyond 8570 (Start)|0x000082|0x00||0x00|0x00|0x000000
-24|3|300000|300000|???|1|special|Birthday - Mad Romero (Start)|Tag-T - Grizzly Vse (Start)|Adam - V-Twin Bogivman (Start)|0x000082|0x00||0x00|0x00|0x000000
-25|4|296720|296720|A=9|2|special|D.D - Flying Killer (A)|Shorty - Carry Carry (A)|Jyuji - Sangerea 5280 (A)|0x000082|0x00||0x00|0x00|0x000000
-26|5|200000|200000|???|1|special|B. Wayne - Silversword (Start)|J. Wayne - Grasshoper (Start)|B. Wayne - Flying Baron (Start)|0x000201|0x00||0x00|0x00|0x000000
+# TRAINING
+RANK|SCORE|SCORE ALT|NAME|STAGE|CHARACTER1|CHARACTER2|CHARACTER3|UNKNOWN|UNKNOWN2|UNKNOWN3|EMPTY|EMPTY2|EMPTY3
+1|995030|995030|:;?|2|Maria - Clitter IV (A)|Golden - Razer Back (A)|Strawman - Beyond 8570 (A)|0x001B00|0x00||0x00|0x00|0x000000
+2|594400|594400|@<>|2|Carpet - Magic Carpet (A)|D.D - Flying Killer (A)|Miyamoto - Miyamoto (A)|0x000100|0x00||0x00|0x00|0x000000
+3|500000|500000|***|1|D.D - Flying Killer (A)|Shorty - Carry Carry (A)|Jyuji - Sangerea 5280 (A)|0x000180|0x00||0x00|0x00|0x000000
+4|400000|400000|***|1|Maria - Clitter IV (A)|Golden - Razer Back (A)|Strawman - Beyond 8570 (A)|0x000082|0x00||0x00|0x00|0x000000
+5|300000|300000|***|1|Birthday - Mad Romero (A)|Tag-T - Grizzly Vse (A)|Adam - V-Twin Bogivman (A)|0x000082|0x00||0x00|0x00|0x000000
 
+# NORMAL
+RANK|SCORE|SCORE ALT|NAME|STAGE|CHARACTER1|CHARACTER2|CHARACTER3|UNKNOWN|UNKNOWN2|UNKNOWN3|EMPTY|EMPTY2|EMPTY3
+1|530060|530060|@>;|2|Birthday - Mad Romero (B)|Tag-T - Grizzly Vse (B)|Adam - V-Twin Bogivman (B)|0x000002|0x00||0x00|0x00|0x000000
+2|500000|500000|+++|1|D.D - Flying Killer (B)|Shorty - Carry Carry (B)|Jyuji - Sangerea 5280 (B)|0x000180|0x00||0x00|0x00|0x000000
+3|400000|400000|+++|1|Maria - Clitter IV (B)|Golden - Razer Back (B)|Strawman - Beyond 8570 (B)|0x000082|0x00||0x00|0x00|0x000000
+4|300000|300000|+++|1|Birthday - Mad Romero (B)|Tag-T - Grizzly Vse (B)|Adam - V-Twin Bogivman (B)|0x000082|0x00||0x00|0x00|0x000000
+5|200000|200000|+++|1|B. Wayne - Silversword (B)|J. Wayne - Grasshoper (B)|B. Wayne - Flying Baron (B)|0x000082|0x00||0x00|0x00|0x000000
+
+# ADVANCE
+RANK|SCORE|SCORE ALT|NAME|STAGE|CHARACTER1|CHARACTER2|CHARACTER3|UNKNOWN|UNKNOWN2|UNKNOWN3|EMPTY|EMPTY2|EMPTY3
+1|500000|500000|###|1|D.D - Flying Killer (C)|Shorty - Carry Carry (C)|Jyuji - Sangerea 5280 (C)|0x000100|0x00||0x00|0x00|0x000000
+2|400000|400000|###|1|Maria - Clitter IV (C)|Golden - Razer Back (C)|Strawman - Beyond 8570 (C)|0x000082|0x00||0x00|0x00|0x000000
+3|300000|300000|###|1|Birthday - Mad Romero (C)|Tag-T - Grizzly Vse (C)|Adam - V-Twin Bogivman (C)|0x000082|0x00||0x00|0x00|0x000000
+4|200000|200000|###|1|B. Wayne - Silversword (C)|J. Wayne - Grasshoper (C)|B. Wayne - Flying Baron (C)|0x000082|0x00||0x00|0x00|0x000000
+5|100000|100000|###|1|J. Wayne - Wild Snail (C)|Gain - Valhallyzer (C)|Chitta - Gun-Dalf (C)|0x000082|0x00||0x00|0x00|0x000000
+
+# SPECIAL
+RANK|SCORE|SCORE ALT|NAME|STAGE|CHARACTER1|CHARACTER2|CHARACTER3|UNKNOWN|UNKNOWN2|UNKNOWN3|EMPTY|EMPTY2|EMPTY3
+1|500000|500000|???|1|D.D - Flying Killer (Start)|Shorty - Carry Carry (Start)|Jyuji - Sangerea 5280 (Start)|0x000002|0x00||0x00|0x00|0x000000
+2|400000|400000|???|1|Maria - Clitter IV (Start)|Golden - Razer Back (Start)|Strawman - Beyond 8570 (Start)|0x000082|0x00||0x00|0x00|0x000000
+3|300000|300000|???|1|Birthday - Mad Romero (Start)|Tag-T - Grizzly Vse (Start)|Adam - V-Twin Bogivman (Start)|0x000082|0x00||0x00|0x00|0x000000
+4|296720|296720|A=9|2|D.D - Flying Killer (A)|Shorty - Carry Carry (A)|Jyuji - Sangerea 5280 (A)|0x000082|0x00||0x00|0x00|0x000000
+5|200000|200000|???|1|B. Wayne - Silversword (Start)|J. Wayne - Grasshoper (Start)|B. Wayne - Flying Baron (Start)|0x000201|0x00||0x00|0x00|0x000000
