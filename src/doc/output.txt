@@ -8,4 +8,3 @@ main tables
   1 RANK  column (mandatory) = integer, starting at 1 (lower is better)
   1 SCORE column (mandatory) = integer or float (separator => .)
   1 NAME  column (optional)  = any printable ASCII character or any Unicode character in UTF-16 encoding (ex: &#9786;)
-

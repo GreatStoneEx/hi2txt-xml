@@ -1,0 +1,111 @@
+
+rework all xml to have a "SCORE" column (instead of only one "TOP SCORE" for some of them)
+  auto detect all xml without "SCORE"?
+	klax: split in 2/3 tables?
+	paperboy: split
+	ripoff: split
+	silkworm: top score per vehicule is false?
+	xmen: split
+	bbakraid: split
+	ddpdfk: split...
+	deathsml (2014): split
+	dsml: split
+	espgal2: split
+	feversos: split
+	futari10: split
+	futari15: split
+	futaribl (2015): split
+	ibara: split
+	ibarablk: split
+	mmpork: split
+	mushisam: split
+	mushisama: split
+	mushisamb: split
+	pinkswts: split
+	tgm2?? (time)
+	mmatrix: trim 0
+	mushitam: split
+	arabfgt: trim 0
+	deathsml (2015): split
+	futaribl (2015): split
+	headon2: trim 0
+	f1gp: split?
+	f1gp2: split?
+	r2dx_v33: normalize 2nd table headers
+	r2dx_v33_r2: normalize 2nd table headers
+	raiden2: normalize 2nd table headers
+	raidendx: normalize 2nd table headers
+	sharkatt: trim 0
+	shinobi: 2nd table?
+	sonicwi3: normalize
+	astrobg: trim 0
+	bubbles: normalize
+	bwidow: score pourri??
+	firetrk: add table
+	hyprolumba: ...
+	ironclad: add table
+	mplanets: normalize??
+	omegrace: normalize
+	rampage: split
+	reactor: normalize
+	solarfox: add table
+	sonson: normalize
+	spacduel: normalize
+	spacecr: normalize?
+	turtles: trim 0
+	twotigerc: split?
+	warlords: normalize?
+	wow: split
+	astrob: trim 0
+	avsp: normalize
+	cadash: normalize
+	cadashj: normalize
+
+TO SEE: score bizarre?
+	  fsoccer
+	  tdfever
+	  aceattac
+
+TO SEE: broken hiscore.dat entry?
+	  armora
+
+?detect "lower is better"
+  golf
+	fitegolf
+	turfmast
+
+compute all defaults to detected corrupted content
+    Répertoire : F:\_Utilisateurs\Pierre\Projects\hi2txt\MameDefaultHighScoresDumper v1.0.0.0\Results\Error
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       28/04/2020     16:53            122 bublboblp.txt
+-a----       28/04/2020     16:55            106 bwidow.txt
+-a----       28/04/2020     17:24            112 desterth.txt
+-a----       28/04/2020     17:36            112 escmars.txt
+-a----       28/04/2020     18:21            105 juju.txt
+-a----       28/04/2020     18:21            105 jujub.txt
+-a----       28/04/2020     18:21            105 jujuba.txt
+-a----       28/04/2020     18:38            112 lrescue.txt
+-a----       28/04/2020     18:38            110 lrescuem.txt
+-a----       28/04/2020     18:38            112 lrescuem2.txt
+-a----       28/04/2020     18:57            105 mslug.txt
+-a----       28/04/2020     19:04            109 narc.txt
+-a----       28/04/2020     19:04            109 narc3.txt
+-a----       28/04/2020     19:28            104 qbertqub.txt
+-a----       28/04/2020     19:38            106 redbaron.txt
+-a----       28/04/2020     19:38            106 redbarona.txt
+-a----       28/04/2020     19:46            106 samesame2.txt
+-a----       28/04/2020     19:47            122 sboblbobla.txt
+-a----       28/04/2020     19:47            122 sboblboblb.txt
+-a----       28/04/2020     19:48            122 sboblbobld.txt
+-a----       28/04/2020     19:48            122 sboblboble.txt
+-a----       28/04/2020     19:48            122 sboblboblf.txt
+-a----       28/04/2020     20:01            106 sisv1.txt
+-a----       28/04/2020     20:29            105 toki.txt
+-a----       28/04/2020     20:29            105 tokia.txt
+-a----       28/04/2020     20:29            105 tokib.txt
+-a----       28/04/2020     20:29            105 tokiu.txt
+-a----       28/04/2020     20:29            105 tokiua.txt
+-a----       28/04/2020     20:34            106 twotiger.txt
