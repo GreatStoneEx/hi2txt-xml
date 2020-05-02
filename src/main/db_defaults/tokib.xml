@@ -1,13 +1,13 @@
 <hi2txt>
   <table>
     <col>RANK</col><col>SCORE</col><col>NAME</col><col>AREA</col>
-    <row><cell>1</cell><cell>62000</cell><cell>DAT</cell><cell>2-G</cell></row>
-    <row><cell>2</cell><cell>59000</cell><cell>DAT</cell><cell>2-F</cell></row>
-    <row><cell>3</cell><cell>56000</cell><cell>DAT</cell><cell>2-E</cell></row>
-    <row><cell>4</cell><cell>53000</cell><cell>DAT</cell><cell>2-D</cell></row>
-    <row><cell>5</cell><cell>50000</cell><cell>DAT</cell><cell>2-C</cell></row>
-    <row><cell>6</cell><cell>47000</cell><cell>DAT</cell><cell>2-B</cell></row>
-    <row><cell>7</cell><cell>44000</cell><cell>DAT</cell><cell>2-A</cell></row>
+    <row><cell>1</cell><cell>62000</cell><cell>DAT</cell><cell>3-E</cell></row>
+    <row><cell>2</cell><cell>59000</cell><cell>DAT</cell><cell>3-D</cell></row>
+    <row><cell>3</cell><cell>56000</cell><cell>DAT</cell><cell>3-C</cell></row>
+    <row><cell>4</cell><cell>53000</cell><cell>DAT</cell><cell>3-B</cell></row>
+    <row><cell>5</cell><cell>50000</cell><cell>DAT</cell><cell>3-A</cell></row>
+    <row><cell>6</cell><cell>47000</cell><cell>DAT</cell><cell>2-H</cell></row>
+    <row><cell>7</cell><cell>44000</cell><cell>DAT</cell><cell>2-G</cell></row>
     <row><cell>8</cell><cell>41000</cell><cell>DAT</cell><cell>2-F</cell></row>
     <row><cell>9</cell><cell>38000</cell><cell>DAT</cell><cell>2-E</cell></row>
     <row><cell>10</cell><cell>35000</cell><cell>DAT</cell><cell>2-D</cell></row>
@@ -23,5 +23,3 @@
     <row><cell>20</cell><cell>5000</cell><cell>DAT</cell><cell>1-D</cell></row>
   </table>
 </hi2txt>
-
-

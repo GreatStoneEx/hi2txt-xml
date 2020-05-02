@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix AREA to be base 10
+    source: HiToText, GreatStone
   //-->
   
   <structure file=".hi">
@@ -27,7 +31,7 @@
       <elt size="3" type="text" id="NAME" charset="toki"/>
     </loop>
     <loop count="20">
-      <elt size="1" type="int"  id="AREA" base="16"/>
+      <elt size="1" type="int"  id="AREA" base="10"/>
     </loop>
     <elt size="4" type="int" id="TOP SCORE" base="16"/>
   </structure>

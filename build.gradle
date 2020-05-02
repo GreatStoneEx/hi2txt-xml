@@ -16,7 +16,7 @@ ext.binaryLocations = [
 ]
 // ...restrict games to be tested or let empty to have all
 //ext.allowedForIntegrationTests = []
-ext.allowedForIntegrationTests = ["batrider", "batriderc", "batriderj", "batriderja", "batriderk", "batridert", "batrideru"]
+ext.allowedForIntegrationTests = ["mmatrix"]
 // ...launch task
 task call_T2_LaunchIntegrationTests {
     dependsOn "launchIntegrationTests"
@@ -26,7 +26,7 @@ task call_T2_LaunchIntegrationTests {
 
 // Step 3: Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes
 //ext.forceOraclesFor = []
-ext.forceOraclesFor = ["2014_04_23/batrider.txt", "2014_04_23/batrider.xml"]
+ext.forceOraclesFor = ["2014_08_22/mmatrix.txt", "2014_08_22/mmatrix.xml"]
 task call_T3_ForceOracles {
     dependsOn "forceOracles"
     group "Test"
@@ -36,7 +36,7 @@ task call_T3_ForceOracles {
 // Step 4: Generate default hiscores xml for new games
 ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.219/prog/mame64.exe"
 //ext.generateDefaultHiscoresXMLFor = []
-ext.generateDefaultHiscoresXMLFor = ["batrider", "batriderc", "batriderj", "batriderja", "batriderk", "batridert", "batrideru"]
+ext.generateDefaultHiscoresXMLFor = ["mmatrix", "mmatrixj", "mmatrixd"]
 task call_P1_GenerateDefaultHiscoresXML {
     dependsOn "generateDefaultHiscoresXML"
     group "Package"

@@ -2,7 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.181 and related hiscore.dat
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.181 and related hiscore.dat
+    history:
+      2020-05-02 remove special counters as values are wrong
+    source: GreatStone
   //-->
   
   <structure file=".hi">
@@ -72,12 +77,14 @@
       <elt size="1" type="int"  id="STAGE"/>
       <elt size="3" type="text" id="NAME"  charset="bublbobl"/>
     </loop>
+    <!--
     <elt size="3" type="raw"  id="UNKNOWN"/>
     <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
     <loop count="44">
       <elt size="1" type="int"  id="SPECIAL ITEM COUNTERS" base="16"/>
     </loop>
     <elt size="2" type="int"  id="SPECIAL ITEM COUNTERS" base="16" table-index="44"/>
+    -->
   </structure>
   
   <output>
@@ -87,12 +94,14 @@
       <column id="NAME"/>
       <column id="STAGE" format="+1"/>
     </table>
+    <!--
     <field id="TOP SCORE" format="*10" display="extra"/>
     <table id="SPECIAL ITEMS">
       <column id="RANK" src="index" format="+1" display="extra"/>
       <column id="SPECIAL ITEM COUNTERS" display="extra"/>
     </table>
     <field id="UNKNOWN"    format="0x" display="debug"/>
+    -->
   </output>
   
   <charset id="bublbobl">

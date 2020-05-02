@@ -2,7 +2,11 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Age Of Heroes - Silkroad 2">
   <!--
-    tested with mame 0.204 and embedded hiscore.dat
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.204 and embedded hiscore.dat
+    history:
+      2020-05-02 fix LEVEL_1, LEVEL_2 to be base 10
     source: GreatStone
   //-->
   
@@ -19,8 +23,8 @@
 	  <elt size="4" type="raw"  id="EMPTY"/>
 	  <elt size="7" type="text" id="NAME"/>
 	  <elt size="1" type="raw"  id="UNKNOWN"/>
-	  <elt size="4" type="int"  id="LEVEL_1" base="16" byte-skip="0001"/>
-	  <elt size="4" type="int"  id="LEVEL_2" base="16" byte-skip="0001"/>
+	  <elt size="4" type="int"  id="LEVEL_1" base="10" byte-skip="0001"/>
+	  <elt size="4" type="int"  id="LEVEL_2" base="10" byte-skip="0001"/>
 	  <elt size="4" type="int"  id="SCORE"/>
 	  <elt size="4" type="int"  id="COIN" base="16"/>
     </loop>

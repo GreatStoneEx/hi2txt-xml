@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
-<hi2txt>
+<hi2txt label="Mars Matrix: Hyper Solid Shooting">
   <!--
-    tested with mame 0.153 and hiscore.dat 2014-08-22
-      source: GreatStone
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.153 and hiscore.dat 2014-08-22
+    history:
+      2020-05-02 remove padding on SCORE and EXP
+    source: GreatStone
   //-->
   
   <structure file=".hi">
@@ -29,10 +33,10 @@
   <output>
     <table>
       <column id="RANK" src="index" format="+1"/>
-      <column id="SCORE" format="PadL120"/>
+      <column id="SCORE"/>
       <column id="NAME"/>
       <column id="SEPARATOR" display="debug"/>
-      <column id="EXP" format="PadL80"/>
+      <column id="EXP"/>
       <column id="STAGE"/>
       <column id="CHARACTER" format="character"/>
     </table>

@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix 'NAME LENGTH' to be base 10 and add Trim to NAME
+    source: HiToText
   //-->
   
   <structure file=".hi">
@@ -20,7 +24,7 @@
       <size>13</size>
     </check>
     <loop count="1">
-      <elt size="1"  type="int"  id="NAME LENGTH" base="16"/>
+      <elt size="1"  type="int"  id="NAME LENGTH" base="10"/>
       <elt size="10" type="text" id="NAME"        charset="lrescue" ascii-offset="65"/>
       <elt size="2"  type="int"  id="SCORE"       base="16" endianness="little_endian"/>
     </loop>
@@ -30,14 +34,11 @@
     <table>
       <column id="RANK" src="index" format="+1"/>
       <column id="SCORE"            format="*10"/>
-      <column id="NAME"/>
+      <column id="NAME" format="Trim "/>
       <column id="NAME LENGTH"      display="extra"/>
     </table>
   </output>
-    
-  <format id="+1"><add>1</add></format>
-  <format id="*10"><multiply>10</multiply></format>
-  
+
   <charset id="lrescue">
     <char src="0x1A" dst="."/>
     <char src="0x1B" dst=" "/>

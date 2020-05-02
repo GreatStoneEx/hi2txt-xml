@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText, GreatStone (mode)
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix MODE to be base 10
+    source: HiToText, GreatStone (mode)
   //-->
   
   <structure file="nvram">
@@ -15,7 +19,7 @@
     <elt size="1284" type="raw" id="UNKNOWN"/>
     <loop count="10">
       <elt size="2" type="text" id="NAME"/>
-      <elt size="1" type="int"  id="MODE" base="16"/>
+      <elt size="1" type="int"  id="MODE" base="10"/>
     </loop>
     <elt size="3" type="int" id="TOP SCORE" base="16"/>
     <elt size="7" type="raw" id="UNKNOWN2"/>

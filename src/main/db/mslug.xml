@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix RANK to be base 10
+    source: HiToText, GreatStone
   //-->
   
   <structure file="saveram" byte-swap="2">
@@ -14,7 +18,7 @@
     </check>
     <elt size="802"  type="raw"  id="UNKNOWN"/>
     <loop count="10">
-      <elt size="2" type="int"  id="RANK"  base="16"/>
+      <elt size="2" type="int"  id="RANK"  base="10"/>
       <elt size="4" type="int"  id="SCORE" base="16"/>
       <elt size="6" type="text"  id="NAME" charset="mslug" src-unit-size="16"/>
     </loop>

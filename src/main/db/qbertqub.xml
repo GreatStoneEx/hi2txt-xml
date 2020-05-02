@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix 'coord' to be a RAW data
+    source: HiToText
   //-->
   
   <structure file="nvram">
@@ -17,7 +21,7 @@
          correctly saved in the nvram //-->
     <elt size="815" type="raw" id="UNKNOWN"/>
     <loop count="20">
-      <elt size="3" type="int"  id="COORD"     table-index="loop_reverse_index" base="16"/> <!-- what is this coord? //-->
+      <elt size="3" type="raw"  id="COORD"     table-index="loop_reverse_index"/> <!-- what is this coord? //-->
       <elt size="8" type="int"  id="SCORE"     table-index="loop_reverse_index" nibble-skip="odd" base="16"/>
       <elt size="1" type="raw"  id="SEPARATOR" table-index="loop_reverse_index" />
       <elt size="3" type="text" id="NAME"      table-index="loop_reverse_index" charset="qbertqub" ascii-offset="55"/>

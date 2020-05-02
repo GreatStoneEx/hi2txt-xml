@@ -19,14 +19,11 @@
       <elt size="1" type="raw"  id="CHECKSUM"/>
     </loop>
   </structure>
-  
+
   <structure file=".hi">
     <check>
-      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
       <definition>0:155:23:0:0
                   0:178:1:d4:d4</definition>
-      <!-- optional: if defined, it allows to select the good structure versus the provided file
-                     useful if multiple structures are defined but hiscore.dat not provided //-->
       <size>36</size>
     </check>
     <loop count="7">
@@ -34,7 +31,7 @@
       <elt size="3" type="text" id="NAME"  charset="redbaron" ascii-step="2" ascii-offset="54"/>
     </loop>
   </structure>
-  
+
   <output>
     <table line-ignore="SCORE:0">
       <column id="RANK" src="index" format="+1"/>
@@ -43,10 +40,7 @@
       <column id="CHECKSUM"         format="hexadecimal_string" display="debug"/>
     </table>
   </output>
-  
-  <format id="+1"><add>1</add></format>
-  <format id="*10"><multiply>10</multiply></format>
-  
+
   <charset id="redbaron">
     <char src="0x00" dst=" "/>
   </charset>

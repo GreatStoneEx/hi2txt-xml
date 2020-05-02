@@ -1,7 +1,10 @@
 <hi2txt>
-  <table>
-    <col>MODE</col><col>SCORE</col>
-    <row><cell>TEAM</cell><cell>0</cell></row>
-    <row><cell>SOLO</cell><cell>1940</cell></row>
+  <table id="TEAM">
+    <col>RANK</col><col>SCORE</col>
+    <row><cell>1</cell><cell>0</cell></row>
+  </table>
+  <table id="SOLO">
+    <col>RANK</col><col>SCORE</col>
+    <row><cell>1</cell><cell>1940</cell></row>
   </table>
 </hi2txt>

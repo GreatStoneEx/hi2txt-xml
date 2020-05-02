@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.148 and related hiscore.dat
+    history:
+      2020-05-02 fix checksum to be base 10
+    source: HiToText, GreatStone
   //-->
   
   <structure file="nvram">
@@ -16,7 +20,7 @@
     <loop count="20">
       <elt size="8"      type="int"  id="SCORE" byte-skip="even" base="16"/>
       <elt size="6"      type="text" id="NAME"  byte-skip="even"/>
-      <elt size="2"      type="int"  id="CHECKSUM" byte-skip="even" base="16"/>
+      <elt size="2"      type="int"  id="CHECKSUM" byte-skip="even" base="10"/>
     </loop>
   </structure>
       
@@ -28,6 +32,4 @@
       <column id="CHECKSUM" display="debug"/>
     </table>
   </output>
-  
-  <format id="+1"><add>1</add></format>
 </hi2txt>

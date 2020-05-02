@@ -2,10 +2,15 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Black Widow">
   <!--
-    tested with mame 0.181 and embedded hiscore.dat
+    tested with:
+      mame 0.219 and related hiscore.dat
+      mame 0.181 and embedded hiscore.dat
+    history:
+      2020-05-02 disable nvram reading due to corrupted data
     source: GreatStone
   //-->
-  
+
+  <!-- at the beginning nvram is filled with FFFF
   <structure file="earom">
     <check>
       <size>64</size>
@@ -17,7 +22,8 @@
       <elt size="1" type="int"  id="AREA"/>
     </loop>
   </structure>
-  
+  -->
+
   <structure file=".hi">
     <check>
       <definition>@:maincpu,program,302,24,20,db

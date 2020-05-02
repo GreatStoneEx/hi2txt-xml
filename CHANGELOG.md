@@ -1,3 +1,18 @@
+2020-05-02 [IMPROVED] "**Mars Matrix: Hyper Solid Shooting**" (mmatrix, mmatrixj, mmatrixd): trim SCORE and EXP for easier reading    
+2020-05-02 [FIXED]    "**Age Of Heroes - Silkroad 2**" (aoh): decode LEVEL as base 10    
+2020-05-02 [ADDED]    "**Tron (Germany)**" (tronger)    
+2020-05-02 [ADDED]    "**Tron (5/12)**" (tron5)    
+2020-05-02 [FIXED]    "**Tron**" (tron, tron2, tron3, tron4): decode MODE as base 10    
+2020-05-02 [FIXED]    "**Black Widow**" (bwidow): nvram content is not emulated correctly    
+2020-05-02 [FIXED]    "**Lunar Rescue**" (lrescue, lrescuem, mrescuem2, escmars, desterth): fix 'NAME LENGTH' to be base 10 and add Trim to NAME    
+2020-05-02 [FIXED]    "**Narc**" (narc, narc3): decode checksum as base 10    
+2020-05-02 [FIXED]    "**Qbert's Qubes**" (qbertqub): decode one data as a RAW intead of an INT      
+2020-05-02 [FIXED]    "**Same! Same! Same! (2P set)**" (samesame2): different decoding than samesame    
+2020-05-02 [REMOVED]  "**Space Invaders (SV Version rev 1)**": no good known dump      
+2020-05-02 [FIXED]    "**Toki**" (toki, tokia, tokib, tokiu, tokiua, juju, jujub, jujuba): fix AREA to be base 10    
+2020-05-02 [FIXED]    "**Metal Slug - Super Vehicle-001**" (mslug): fix RANK to be base 10    
+2020-05-02 [IMPROVED] "**Super Bobble Bobble (bootleg)**" (sboblbobla, sboblboblb, sboblbobld, sboblboble, sboblboblf): remove special items decoding as they contain wrong values    
+2020-05-02 [IMPROVED] "**Bubble Bobble (prototype on Tokio hardware)**" (bublboblp): remove special items decoding as they contain wrong values    
 2020-04-29 [IMPROVED] "**Armed Police Batrider**" (batrider and clones): split into 4 tables, one per mode    
 2020-04-28 [IMPROVED] "**Gauntlet**" (gauntlet): split into 4 tables and normalize output (with a SCORE column)    
 2020-04-28 [IMPROVED] "**Double Dribble**" (ddribble, ddribblep): normalize output (renaming POINTS in SCORE)    
@@ -13,9 +28,9 @@
 2020-04-27 [FIXED]    "**Rainbow Island**" (rbisland, rbislande, rbislando): score is decoded from 4 bytes instead of only 3    
 2020-04-27 [FIXED]    "**The Three Stooges In Brides Is Brides**" (3stooges, 3stoogesa): decode only 21 entries instead of 22    
 2020-04-26 [IMPROVED] "**Alien Sector**" (aliensec, baraduke): names are trimmed and alien face character replaced by smiley for more compatibility    
-2020-04-26 [ADD]      "**Cosmic Chasm**" (cchasm, cchasm1)    
+2020-04-26 [ADDED]    "**Cosmic Chasm**" (cchasm, cchasm1)    
 2020-04-25 [FIXED]    "**Zaxxon**" (zaxxon, zaxxonb, zaxxon2, zaxxon3, zaxxonj, szaxxon): scores are fixed using little-endian    
-2020-04-23 [ADD]      "**Complex X**" (complexx)    
+2020-04-23 [ADDED]    "**Complex X**" (complexx)    
 2020-04-23 [FIXED]    "**Ghouls'n Ghosts**" (ghouls, ghoulsu, daimakai, daimakair): scores are now ordered correctly    
 2020-04-22 game: fix            "G-Darius Ver.2" (gdarius2) with a specific decoding different than gdarius, showing 5 different hiscores tables     
 2020-04-21 game: fix            "Sagaia" (sagaia) to add an additional padding at the start versus darius2     
