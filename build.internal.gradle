@@ -184,9 +184,17 @@ task versionFile() {
         file(filename).append(file("$projectDir/CHANGELOG.md").getText())
     }
 }
+
 task packageSolution {
     group "Internal"
     dependsOn 'packageXML'
     dependsOn 'packageDefaultsXML'
     dependsOn 'versionFile'
+}
+
+task publishChangelogToDoc(type: Copy) {
+    from "$projectDir"
+    into "$projectDir/../hi2txt_doc/src/main/markdown"
+    include "CHANGELOG.md"
+    rename "CHANGELOG.md", "games.CHANGELOG.md"
 }

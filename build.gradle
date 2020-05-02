@@ -49,3 +49,10 @@ task call_P2_PackageSolution {
     group "Package"
     description "Package all XMLs as a new hi2txt.zip"
 }
+
+// Step 6
+task call_P3_PublishChangelogToDoc {
+    dependsOn "publishChangelogToDoc"
+    group "Package"
+    description "Publish Changelog"
+}
