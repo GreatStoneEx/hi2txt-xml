@@ -15,8 +15,8 @@ ext.binaryLocations = [
     System.getProperty("user.dir")+"/../hi2txt/bin/hi2txt.bat"
 ]
 // ...restrict games to be tested or let empty to have all
-//ext.allowedForIntegrationTests = []
-ext.allowedForIntegrationTests = ["mmatrix"]
+ext.allowedForIntegrationTests = []
+//ext.allowedForIntegrationTests = ["mmatrix"]
 // ...launch task
 task call_T2_LaunchIntegrationTests {
     dependsOn "launchIntegrationTests"
