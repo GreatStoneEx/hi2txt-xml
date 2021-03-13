@@ -2,9 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt>
   <!--
-    tested with mame 0.148 and related hiscore.dat
-      source: HiToText
-	2017-15-01: fixed 'SPECIAL ITEMS' table to display rank also in 'extra' mode (-ra)  
+    tested with:
+	  mame 0.148 and related hiscore.dat
+	  mame 0.229 and related hiscore.dat
+    source: HiToText, GreatStone
+	2021-03-13: fixed 'SPECIAL ITEMS' table to use another integer encoding format. mame 0.221+ seems to have changed the dumped data here.
+	2017-15-01: fixed 'SPECIAL ITEMS' table to display rank also in 'extra' mode (-ra)
   //-->
   
   <structure file=".hi">
@@ -163,9 +166,9 @@
     <elt size="3" type="raw"  id="UNKNOWN"/>
     <elt size="3" type="int"  id="TOP SCORE" endianness="little_endian" base="16"/>
     <loop count="36">
-      <elt size="1" type="int"  id="SPECIAL ITEM COUNTERS" base="16"/>
+      <elt size="1" type="int"  id="SPECIAL ITEM COUNTERS" base="10"/>
     </loop>
-    <elt size="2" type="int"  id="SPECIAL ITEM COUNTERS" base="16" table-index="36"/>
+    <elt size="2" type="int"  id="SPECIAL ITEM COUNTERS" base="10" table-index="36"/>
   </structure>
   
   <output>

@@ -1,3 +1,4 @@
+2021-03-13 [FIXED]    "**Bubble Bobble (US)**" (bublboblr, bublboblr1): fixed 'Wrong SPECIAL ITEM COUNTERS value encoding detected' issue seen with mame 0.221+
 2020-05-02 [IMPROVED] "**Mars Matrix: Hyper Solid Shooting**" (mmatrix, mmatrixj, mmatrixd): trim SCORE and EXP for easier reading    
 2020-05-02 [FIXED]    "**Age Of Heroes - Silkroad 2**" (aoh): decode LEVEL as base 10    
 2020-05-02 [ADDED]    "**Tron (Germany)**" (tronger)    
