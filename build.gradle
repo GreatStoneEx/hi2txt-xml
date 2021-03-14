@@ -1,7 +1,8 @@
 apply from: 'build.internal.gradle'
 
 // Step 1: Create empty oracle for new games, to trigger new integrationTests
-ext.needEmptyOracles = ["2021_03_13_0229/foodf"]
+//ext.needEmptyOracles = ["2021_03_13_0229/foodf", "2021_03_13_0229/fastlane"]
+ext.needEmptyOracles = []
 task call_T1_CreateEmptyOracles() {
     dependsOn "createEmptyOracles"
     group "Test"
@@ -16,7 +17,7 @@ ext.binaryLocations = [
 ]
 // ...restrict games to be tested or let empty to have all
 ext.allowedForIntegrationTests = []
-ext.allowedForIntegrationTests = ["foodf"]
+//ext.allowedForIntegrationTests = ["foodf", "fastlane"]
 // ...launch task
 task call_T2_LaunchIntegrationTests {
     dependsOn "launchIntegrationTests"
@@ -26,7 +27,7 @@ task call_T2_LaunchIntegrationTests {
 
 // Step 3: Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes
 ext.forceOraclesFor = []
-ext.forceOraclesFor = ["2021_03_13_0229/foodf.txt", "2021_03_13_0229/foodf.xml"]
+//ext.forceOraclesFor = ["2021_03_13_0229/foodf.txt", "2021_03_13_0229/foodf.xml", "2021_03_13_0229/fastlane.txt", "2021_03_13_0229/fastlane.xml"]
 task call_T3_ForceOracles {
     dependsOn "forceOracles"
     group "Test"
@@ -35,8 +36,8 @@ task call_T3_ForceOracles {
 
 // Step 4: Generate default hiscores xml for new games
 ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.229/prog/mame.exe"
-//ext.generateDefaultHiscoresXMLFor = []
-ext.generateDefaultHiscoresXMLFor = ["foodf"]
+ext.generateDefaultHiscoresXMLFor = []
+//ext.generateDefaultHiscoresXMLFor = ["foodf", "fastlane"]
 task call_P1_GenerateDefaultHiscoresXML {
     dependsOn "generateDefaultHiscoresXML"
     group "Package"
