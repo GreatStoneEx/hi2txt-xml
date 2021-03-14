@@ -1,3 +1,4 @@
+2021-03-14 [ADDED]    "**Lizard Wizard**" (lizwiz)
 2021-03-14 [ADDED]    "**Fast Lane**" (fastlane)
 2021-03-13 [ADDED]    "**Food Fight**" (foodf, foodf1, foodf2, foodfc) 
 2021-03-13 [FIXED]    "**Bubble Bobble (US)**" (bublboblr, bublboblr1): fixed 'Wrong SPECIAL ITEM COUNTERS value encoding detected' issue seen with mame 0.221+
