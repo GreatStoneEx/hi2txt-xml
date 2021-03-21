@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Challenger">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,cc,f,00,1f</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>15</size>
+        </check>
+        <loop count="3">
+            <elt size="2" type="int" id="SCORE" base="16" endianness="little_endian"/>
+        </loop>
+        <loop count="1" start="0"><elt size="1" type="text" id="NAME_1" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="1"><elt size="1" type="text" id="NAME_1" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="2"><elt size="1" type="text" id="NAME_1" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="0"><elt size="1" type="text" id="NAME_2" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="1"><elt size="1" type="text" id="NAME_2" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="2"><elt size="1" type="text" id="NAME_2" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="0"><elt size="1" type="text" id="NAME_3" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="1"><elt size="1" type="text" id="NAME_3" ascii-offset="45" charset="chars"/></loop>
+        <loop count="1" start="2"><elt size="1" type="text" id="NAME_3" ascii-offset="45" charset="chars"/></loop>
+    </structure>
+
+    <output>
+        <table>
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE" format="*100"/>
+            <column id="NAME" format="merge"/>
+        </table>
+    </output>
+
+    <format id="merge">
+        <concat>
+            <column id="NAME_1"/>
+            <column id="NAME_2"/>
+            <column id="NAME_3"/>
+        </concat>
+    </format>
+
+    <charset id="chars">
+        <char src="0x2E" dst=" "/>
+    </charset>
+</hi2txt>

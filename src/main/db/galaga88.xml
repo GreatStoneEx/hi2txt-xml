@@ -3,12 +3,17 @@
 <hi2txt label="Galaga 88">
     <!--
       tested with mame 0.229 and embedded hiscore.dat
-      source: GreatStone
+      source: GreatStone, https://github.com/stt
     //-->
 
     <structure file=".hi">
         <check>
-            <size>102</size>
+          <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+          <definition>@:maincpu,program,4a0d,6,00,00
+                      @:maincpu,program,4b75,60,00,01</definition>
+          <!-- optional: if defined, it allows to select the good structure versus the provided file
+                       useful if multiple structures are defined but hiscore.dat not provided //-->
+          <size>102</size>
         </check>
         <elt size="6" type="int"  id="TOP SCORE" base="256"/>
         <loop count="8">

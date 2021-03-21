@@ -1,3 +1,5 @@
+2021-03-17 [ADDED]    "**China Gate (US)**" (chinagat, saiyugou, saiyugoub1, saiyugoub2)
+2021-03-17 [ADDED]    "**Challenger**" (challeng)
 2021-03-16 [ADDED]    "**Galaga 88**" (galaga88, galaga88a, galaga88j)
 2021-03-14 [ADDED]    "**Lizard Wizard**" (lizwiz)
 2021-03-14 [ADDED]    "**Fast Lane**" (fastlane)
