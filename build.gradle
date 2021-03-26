@@ -27,7 +27,7 @@ task call_T2_LaunchIntegrationTests {
 
 // Step 3: Force oracles for some games, where the oracles are not good but it is expected because of XML or engine changes
 ext.forceOraclesFor = []
-ext.forceOraclesFor = ["2021_03_13_0229/hook.txt", "2021_03_13_0229/hook.xml"]
+ext.forceOraclesFor = ["2021_03_13_0229/hook.txt", "2021_03_13_0229/hook.xml", "2021_03_13_0229/msh.txt", "2021_03_13_0229/msh.xml"]
 task call_T3_ForceOracles {
     dependsOn "forceOracles"
     group "Test"
@@ -37,7 +37,7 @@ task call_T3_ForceOracles {
 // Step 4: Generate default hiscores xml for new games
 ext.mameLocation = System.getProperty("user.dir")+"/../hi2txt/mame/0.229/prog/mame.exe"
 //ext.generateDefaultHiscoresXMLFor = []
-ext.generateDefaultHiscoresXMLFor = ["hook"]
+ext.generateDefaultHiscoresXMLFor = ["hook", "msh"]
 task call_P1_GenerateDefaultHiscoresXML {
     dependsOn "generateDefaultHiscoresXML"
     group "Package"

@@ -1,3 +1,4 @@
+2021-03-26 [ADDED]    "**Marvel Super Heroes**" (msh, msha, mshb, mshbr1, mshh, mshj, mshjr1, mshu, mshud)
 2021-03-22 [ADDED]    "**Hook (World)**" (hook, hooku, hookj)
 2021-03-17 [ADDED]    "**China Gate (US)**" (chinagat, saiyugou, saiyugoub1, saiyugoub2)
 2021-03-17 [ADDED]    "**Challenger**" (challeng)

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Marvel Super Heroes">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,ff2720,9f,00,0b</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>159</size>
+        </check>
+        <loop count="5">
+            <elt id="SR_SCORE"     size="4" type="int" base="16"/>
+            <elt id="SR_CHARACTER" size="1" type="int"/>
+            <elt id="SR_MODE"      size="1" type="int"/>
+            <elt id="SR_NAME"      size="3" type="text" ascii-offset="65" charset="chars"/>
+            <elt id="SR_skip3"     size="1" type="raw"/>
+        </loop>
+        <loop count="5">
+            <elt id="VR_WINS"      size="2" type="int" base="16"/>
+            <elt id="VR_skip0"     size="2" type="int"/>
+            <elt id="VR_CHARACTER" size="1" type="int"/>
+            <elt id="VR_MODE"      size="1" type="int"/>
+            <elt id="VR_NAME"      size="3" type="text" ascii-offset="65" charset="chars"/>
+            <elt id="VR_skip3"     size="1" type="raw"/>
+        </loop>
+        <loop count="5">
+            <elt id="TR_TIME_M"    size="2" type="int" base="16"/>
+            <elt id="TR_TIME_S"    size="1" type="int" base="16"/>
+            <elt id="TR_TIME_C"    size="1" type="int" base="16"/>
+            <elt id="TR_CHARACTER" size="1" type="int"/>
+            <elt id="TR_MODE"      size="1" type="int"/>
+            <elt id="TR_NAME"      size="3" type="text" ascii-offset="65" charset="chars"/>
+            <elt id="TR_skip3"     size="1" type="raw"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table id="Score Ranking">
+            <column id="RANK"      src="index"        format="+1"/>
+            <column id="SCORE"     src="SR_SCORE"/>
+            <column id="NAME"      src="SR_NAME"/>
+            <column id="MODE"      src="SR_MODE"      format="mode"/>
+            <column id="CHARACTER" src="SR_CHARACTER" format="character"/>
+            <column id="skip3"     src="SR_skip3"     display="debug"/>
+        </table>
+        <table id="Time Ranking">
+            <column id="RANK"      src="index"        format="+1"/>
+            <column id="TIME"                         format="time"/>
+            <column id="NAME"      src="TR_NAME"/>
+            <column id="MODE"      src="TR_MODE"      format="mode"/>
+            <column id="CHARACTER" src="TR_CHARACTER" format="character"/>
+            <column id="skip3"     src="TR_skip3"     display="debug"/>
+        </table>
+        <table id="Versus Ranking">
+            <column id="RANK"      src="index"        format="+1"/>
+            <column id="WINS"      src="VR_WINS"/>
+            <column id="NAME"      src="VR_NAME"/>
+            <column id="MODE"      src="VR_MODE"      format="mode"/>
+            <column id="CHARACTER" src="VR_CHARACTER" format="character"/>
+            <column id="skip0"     src="VR_skip0"     display="debug"/>
+            <column id="skip3"     src="VR_skip3"     display="debug"/>
+        </table>
+    </output>
+
+    <format id="character">
+        <case src="0"  dst="SPIDER-MAN"/>
+        <case src="2"  dst="CAPTAIN AMERICA"/>
+        <case src="4"  dst="HULK"/>
+        <case src="6"  dst="IRON MAN"/>
+        <case src="8"  dst="WOLVERINE"/>
+        <case src="10" dst="PSYLOCKE"/>
+        <case src="12" dst="BLACKHEART"/>
+        <case src="14" dst="SHUMA-GORATH"/>
+        <case src="16" dst="JUGGERNAUT"/>
+        <case src="18" dst="MAGNETO"/>
+        <case src="20" dst="DOCTOR DOOM"/>
+        <case src="22" dst="THANOS"/>
+        <case src="24" dst="ANITA"/>
+    </format>
+    <format id="mode">
+        <case src="0" dst="NORMAL"/>
+        <case src="2" dst="TURBO"/>
+    </format>
+    <format id="time">
+        <concat>
+            <column id="TR_TIME_M"/>
+            <txt>'</txt>
+            <column id="TR_TIME_S" format="PadL20"/>
+            <txt>''</txt>
+            <column id="TR_TIME_C" format="PadL20"/>
+        </concat>
+    </format>
+    <charset id="chars">
+        <char src="0x1C" dst="-"/>
+        <char src="0x1B" dst=","/>
+        <char src="0x1A" dst="."/>
+    </charset>
+</hi2txt>
