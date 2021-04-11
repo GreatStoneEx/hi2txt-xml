@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Puzzle Bobble 4">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,40e85a,116,00,00
+                        @:maincpu,program,40e8ba,1,41,41</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>279</size>
+        </check>
+        <loop count="5">
+            <elt id="VS_SCORE"     size="4" type="int"/>
+            <elt id="VS_NAME"      size="3" type="text"/>
+            <elt id="VS_EMPTY"     size="1" type="raw"/>
+            <elt id="VS_UNKNOWN"   size="8" type="raw"/>
+            <elt id="VS_ROUND"     size="2" type="int"/>
+            <elt id="VS_RANK"      size="2" type="int"/>
+            <elt id="VS_CHARACTER" size="2" type="int"/>
+        </loop>
+        <loop count="5">
+            <elt id="PZ_SCORE"     size="4" type="int"/>
+            <elt id="PZ_NAME"      size="3" type="text"/>
+            <elt id="PZ_EMPTY"     size="1" type="raw"/>
+            <elt id="PZ_UNKNOWN"   size="8" type="raw"/>
+            <elt id="PZ_ROUND"     size="2" type="int"/>
+            <elt id="PZ_RANK"      size="2" type="int"/>
+            <elt id="PZ_CHARACTER" size="2" type="int"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table id="VS CPU MODE" sort="RANK">
+            <column id="RANK"      src="VS_RANK"/>
+            <column id="SCORE"     src="VS_SCORE"/>
+            <column id="NAME"      src="VS_NAME"/>
+            <column id="ROUND"     src="VS_ROUND"/>
+            <column id="UNKNOWN"   src="VS_UNKNOWN" display="debug"/>
+            <column id="CHARACTER" src="VS_CHARACTER" format="character"/>
+        </table>
+        <table id="PUZZLE MODE" sort="RANK">
+            <column id="RANK"      src="PZ_RANK"/>
+            <column id="SCORE"     src="PZ_SCORE"/>
+            <column id="NAME"      src="PZ_NAME"/>
+            <column id="ROUND"     src="PZ_ROUND"/>
+            <column id="UNKNOWN"   src="PZ_UNKNOWN" display="debug"/>
+            <column id="CHARACTER" src="PZ_CHARACTER" format="character"/>
+        </table>
+    </output>
+
+    <format id="character">
+        <case src="0"   dst="Bub"/>
+        <case src="1"   dst="Alkanet"/>
+        <case src="2"   dst="Marino"/>
+        <case src="3"   dst="Kurol"/>
+        <case src="4"   dst="Tamtam"/>
+        <case src="5"   dst="Cleon"/>
+        <case src="6"   dst="G"/>
+        <case src="7"   dst="Bramb"/>
+        <case src="8"   dst="Develon"/>
+        <case src="9"   dst="Gigant"/>
+        <case src="10"  dst="Madame Luna"/>
+        <case src="11"  dst="Drunk"/>
+    </format>
+</hi2txt>

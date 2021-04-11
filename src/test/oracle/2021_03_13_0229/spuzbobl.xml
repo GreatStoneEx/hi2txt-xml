@@ -1,0 +1,26 @@
+<hi2txt>
+  <table id="1P PUZZLE MODE">
+    <col>RANK</col><col>UNKNOWN3</col><col>SCORE</col><col>NAME</col><col>UNKNOWN4</col><col>UNKNOWN</col><col>UNKNOWN2</col><col>EMPTY</col><col>EMPTY2</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>08</cell><cell>2305430</cell><cell>AC </cell><cell>9</cell><cell>01</cell><cell>05</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>2</cell><cell>03</cell><cell>1058070</cell><cell>)(.</cell><cell>9</cell><cell>01</cell><cell>01</cell><cell>00</cell><cell>20</cell><cell>000000</cell></row>
+    <row><cell>3</cell><cell>02</cell><cell>803350</cell><cell>90Z</cell><cell>9</cell><cell>02</cell><cell>02</cell><cell>00</cell><cell>20</cell><cell>000000</cell></row>
+    <row><cell>4</cell><cell>04</cell><cell>500000</cell><cell>BUB</cell><cell>1</cell><cell>01</cell><cell>12</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>5</cell><cell>03</cell><cell>400000</cell><cell>ANJ</cell><cell>4</cell><cell>01</cell><cell>09</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+  </table>
+  <table id="VS CPU MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ROUND</col><col>CHARACTER</col><col>UNKNOWN</col><col>UNKNOWN2</col><col>EMPTY</col><col>EMPTY2</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>985960</cell><cell>?!,</cell><cell>4</cell><cell>Hebedon</cell><cell>01</cell><cell>00</cell><cell>00</cell><cell>20</cell><cell>000000</cell></row>
+    <row><cell>2</cell><cell>500000</cell><cell>BUB</cell><cell>4</cell><cell>Bob</cell><cell>01</cell><cell>12</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>ANJ</cell><cell>3</cell><cell>Anju</cell><cell>01</cell><cell>09</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>4</cell><cell>300000</cell><cell>PCY</cell><cell>2</cell><cell>Packy</cell><cell>01</cell><cell>05</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>5</cell><cell>274720</cell><cell>BDF</cell><cell>4</cell><cell>Anju</cell><cell>01</cell><cell>00</cell><cell>00</cell><cell>20</cell><cell>000000</cell></row>
+  </table>
+  <table id="M3 MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>ROUND</col><col>CHARACTER</col><col>UNKNOWN</col><col>UNKNOWN2</col><col>EMPTY</col><col>EMPTY2</col><col>EMPTY3</col>
+    <row><cell>1</cell><cell>200000</cell><cell>MAI</cell><cell>1</cell><cell>Maita</cell><cell>01</cell><cell>02</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>2</cell><cell>500000</cell><cell>BUB</cell><cell>4</cell><cell>Bob</cell><cell>01</cell><cell>12</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>ANJ</cell><cell>3</cell><cell>Anju</cell><cell>01</cell><cell>09</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>4</cell><cell>300000</cell><cell>PCY</cell><cell>2</cell><cell>Packy</cell><cell>01</cell><cell>05</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+    <row><cell>5</cell><cell>200000</cell><cell>MAI</cell><cell>1</cell><cell>Maita</cell><cell>01</cell><cell>02</cell><cell>00</cell><cell>00</cell><cell>000000</cell></row>
+  </table>
+</hi2txt>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Puzzle Bobble">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,907010,36,00,00</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>54</size>
+        </check>
+        <elt id="UNKNOWN" size="4" type="raw"/>
+        <loop count="5">
+            <elt id="SCORE" size="4" type="int" endianness="big_endian"/>
+            <elt id="ROUND" size="2" type="int" endianness="big_endian"/>
+            <elt id="NAME"  size="3" type="text"/>
+            <elt id="EMPTY" size="1" type="raw"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table>
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE"/>
+            <column id="NAME"/>
+            <column id="ROUND"/>
+        </table>
+    </output>
+</hi2txt>

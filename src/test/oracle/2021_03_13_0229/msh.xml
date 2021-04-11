@@ -1,0 +1,26 @@
+<hi2txt>
+  <table id="Score Ranking">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>MODE</col><col>CHARACTER</col><col>skip3</col>
+    <row><cell>1</cell><cell>77200</cell><cell>-,.</cell><cell>NORMAL</cell><cell>BLACKHEART</cell><cell>00</cell></row>
+    <row><cell>2</cell><cell>50000</cell><cell>PSY</cell><cell>NORMAL</cell><cell>PSYLOCKE</cell><cell>00</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>CAP</cell><cell>NORMAL</cell><cell>CAPTAIN AMERICA</cell><cell>00</cell></row>
+    <row><cell>4</cell><cell>30000</cell><cell>HUL</cell><cell>NORMAL</cell><cell>HULK</cell><cell>00</cell></row>
+    <row><cell>5</cell><cell>20000</cell><cell>IRO</cell><cell>NORMAL</cell><cell>IRON MAN</cell><cell>00</cell></row>
+  </table>
+  <table id="Time Ranking">
+    <col>RANK</col><col>TIME</col><col>NAME</col><col>MODE</col><col>CHARACTER</col><col>skip3</col>
+    <row><cell>1</cell><cell>1&apos;21&apos;&apos;50</cell><cell>-,.</cell><cell>NORMAL</cell><cell>BLACKHEART</cell><cell>00</cell></row>
+    <row><cell>2</cell><cell>5&apos;00&apos;&apos;00</cell><cell>PSY</cell><cell>NORMAL</cell><cell>PSYLOCKE</cell><cell>00</cell></row>
+    <row><cell>3</cell><cell>6&apos;00&apos;&apos;00</cell><cell>CAP</cell><cell>NORMAL</cell><cell>CAPTAIN AMERICA</cell><cell>00</cell></row>
+    <row><cell>4</cell><cell>7&apos;00&apos;&apos;00</cell><cell>HUL</cell><cell>NORMAL</cell><cell>HULK</cell><cell>00</cell></row>
+    <row><cell>5</cell><cell>8&apos;00&apos;&apos;00</cell><cell>IRO</cell><cell>NORMAL</cell><cell>IRON MAN</cell><cell>00</cell></row>
+  </table>
+  <table id="Versus Ranking">
+    <col>RANK</col><col>WINS</col><col>NAME</col><col>MODE</col><col>CHARACTER</col><col>skip0</col><col>skip3</col>
+    <row><cell>1</cell><cell>2</cell><cell>SPI</cell><cell>NORMAL</cell><cell>SPIDER-MAN</cell><cell>0</cell><cell>00</cell></row>
+    <row><cell>2</cell><cell>2</cell><cell>BLA</cell><cell>NORMAL</cell><cell>BLACKHEART</cell><cell>0</cell><cell>00</cell></row>
+    <row><cell>3</cell><cell>2</cell><cell>SHU</cell><cell>NORMAL</cell><cell>SHUMA-GORATH</cell><cell>0</cell><cell>00</cell></row>
+    <row><cell>4</cell><cell>2</cell><cell>JUG</cell><cell>NORMAL</cell><cell>JUGGERNAUT</cell><cell>0</cell><cell>00</cell></row>
+    <row><cell>5</cell><cell>2</cell><cell>MAG</cell><cell>NORMAL</cell><cell>MAGNETO</cell><cell>0</cell><cell>00</cell></row>
+  </table>
+</hi2txt>

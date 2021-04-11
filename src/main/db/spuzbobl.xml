@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Super Puzzle Bobble">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,28bf08,10d,20,01</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>269</size>
+        </check>
+        <loop count="5">
+            <elt id="1PP_SCORE"     size="3" type="int" endianness="little_endian"/>
+            <elt id="1PP_EMPTY"     size="1" type="raw"/>
+            <elt id="1PP_RANK"      size="1" type="int"/>
+            <elt id="1PP_UNKNOWN3"  size="1" type="raw"/>
+            <elt id="1PP_NAME"      size="3" type="text" charset="name"/>
+            <elt id="1PP_EMPTY2"    size="1" type="raw"/>
+            <elt id="1PP_UNKNOWN4"  size="1" type="int"/>
+            <elt id="1PP_UNKNOWN"   size="1" type="raw"/>
+            <elt id="1PP_UNKNOWN2"  size="1" type="raw"/>
+            <elt id="1PP_EMPTY3"    size="3" type="raw"/>
+        </loop>
+        <elt id="UNKNOWN_DATA"    size="16" type="raw"/>
+        <loop count="5">
+            <elt id="VSC_SCORE"     size="3" type="int" endianness="little_endian"/>
+            <elt id="VSC_EMPTY"     size="1" type="raw"/>
+            <elt id="VSC_RANK"      size="1" type="int"/>
+            <elt id="VSC_ROUND"     size="1" type="int"/>
+            <elt id="VSC_NAME"      size="3" type="text" charset="name"/>
+            <elt id="VSC_EMPTY2"    size="1" type="raw"/>
+            <elt id="VSC_CHARACTER" size="1" type="int"/>
+            <elt id="VSC_UNKNOWN"   size="1" type="raw"/>
+            <elt id="VSC_UNKNOWN2"  size="1" type="raw"/>
+            <elt id="VSC_EMPTY3"    size="3" type="raw"/>
+        </loop>
+        <loop count="5">
+            <elt id="M3_SCORE"     size="3" type="int" endianness="little_endian"/>
+            <elt id="M3_EMPTY"     size="1" type="raw"/>
+            <elt id="M3_RANK"      size="1" type="int"/>
+            <elt id="M3_ROUND"     size="1" type="int"/>
+            <elt id="M3_NAME"      size="3" type="text" charset="name"/>
+            <elt id="M3_EMPTY2"    size="1" type="raw"/>
+            <elt id="M3_CHARACTER" size="1" type="int"/>
+            <elt id="M3_UNKNOWN"   size="1" type="raw"/>
+            <elt id="M3_UNKNOWN2"  size="1" type="raw"/>
+            <elt id="M3_EMPTY3"    size="3" type="raw"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table id="1P PUZZLE MODE">
+            <column id="RANK"      src="index" format="+1"/>
+            <column id="UNKNOWN3"  src="1PP_UNKNOWN3" display="debug"/>
+            <column id="SCORE"     src="1PP_SCORE"/>
+            <column id="NAME"      src="1PP_NAME"/>
+            <column id="UNKNOWN4"  src="1PP_UNKNOWN4" display="debug"/>
+            <column id="UNKNOWN"   src="1PP_UNKNOWN"  display="debug"/>
+            <column id="UNKNOWN2"  src="1PP_UNKNOWN2" display="debug"/>
+            <column id="EMPTY"     src="1PP_EMPTY"    display="debug"/>
+            <column id="EMPTY2"    src="1PP_EMPTY2"   display="debug"/>
+            <column id="EMPTY3"    src="1PP_EMPTY3"   display="debug"/>
+        </table>
+        <table id="VS CPU MODE">
+            <column id="RANK"      src="index" format="+1"/>
+            <column id="SCORE"     src="VSC_SCORE"/>
+            <column id="NAME"      src="VSC_NAME"/>
+            <column id="ROUND"     src="VSC_ROUND"/>
+            <column id="CHARACTER" src="VSC_CHARACTER" format="character"/>
+            <column id="UNKNOWN"   src="VSC_UNKNOWN"  display="debug"/>
+            <column id="UNKNOWN2"  src="VSC_UNKNOWN2" display="debug"/>
+            <column id="EMPTY"     src="VSC_EMPTY"    display="debug"/>
+            <column id="EMPTY2"    src="VSC_EMPTY2"   display="debug"/>
+            <column id="EMPTY3"    src="VSC_EMPTY3"   display="debug"/>
+        </table>
+        <table id="M3 MODE">
+            <column id="RANK"      src="index" format="+1"/>
+            <column id="SCORE"     src="M3_SCORE"/>
+            <column id="NAME"      src="M3_NAME"/>
+            <column id="ROUND"     src="M3_ROUND"/>
+            <column id="CHARACTER" src="M3_CHARACTER" format="character"/>
+            <column id="UNKNOWN"   src="M3_UNKNOWN"  display="debug"/>
+            <column id="UNKNOWN2"  src="M3_UNKNOWN2" display="debug"/>
+            <column id="EMPTY"     src="M3_EMPTY"    display="debug"/>
+            <column id="EMPTY2"    src="M3_EMPTY2"   display="debug"/>
+            <column id="EMPTY3"    src="M3_EMPTY3"   display="debug"/>
+        </table>
+    </output>
+
+    <format id="character">
+        <case src="1"  dst="Bob"/>
+        <case src="2"  dst="Packy"/>
+        <case src="3"  dst="Maita"/>
+        <case src="4"  dst="Anju"/>
+        <case src="5"  dst="Woolen"/>
+        <case src="6"  dst="Envy"/>
+        <case src="7"  dst="Develon"/>
+        <case src="8"  dst="Hebedon"/>
+        <case src="9"  dst="Bob"/>
+    </format>
+
+    <charset id="name">
+        <char src="0x3A" dst=","/>
+        <char src="0x3B" dst="."/>
+        <char src="0x3C" dst="("/>
+        <char src="0x3D" dst=")"/>
+        <char src="0x3E" dst="!"/>
+        <char src="0x3F" dst="?"/>
+    </charset>
+</hi2txt>

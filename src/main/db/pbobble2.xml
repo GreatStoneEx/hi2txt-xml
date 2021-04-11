@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Puzzle Bobble 2">
+    <!--
+      tested with mame 0.229 and embedded hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,40a858,112,00,00
+                        @:maincpu,program,400152,2,01,a2</definition> <!-- pbobble2 -->
+            <definition>@:maincpu,program,40a854,112,00,00
+                        @:maincpu,program,400152,2,01,a2</definition> <!-- pbobble2j, pbobble2o, pbobble2u -->
+            <definition>@:maincpu,program,40db78,104,00,3e
+                        @:maincpu,program,40dbd8,1,41,41</definition> <!-- pbobble2x -->
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                         useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>276</size> <!-- pbobble2, pbobble2j, pbobble2o, pbobble2u -->
+            <size>261</size> <!-- pbobble2x -->
+        </check>
+        <loop count="5">
+            <elt id="VS_SCORE"    size="4" type="int"/>
+            <elt id="VS_NAME"     size="3" type="text"/>
+            <elt id="VS_EMPTY"    size="1" type="raw"/>
+            <elt id="VS_UNKNOWN"  size="8" type="raw"/>
+            <elt id="VS_ROUND"    size="2" type="int"/>
+            <elt id="VS_RANK"     size="2" type="int"/>
+            <elt id="VS_UNKNOWN2" size="2" type="int"/>
+        </loop>
+        <loop count="5">
+            <elt id="PZ_SCORE"    size="4" type="int"/>
+            <elt id="PZ_NAME"     size="3" type="text"/>
+            <elt id="PZ_EMPTY"    size="1" type="raw"/>
+            <elt id="PZ_UNKNOWN"  size="8" type="raw"/>
+            <elt id="PZ_ROUND"    size="2" type="int"/>
+            <elt id="PZ_RANK"     size="2" type="int"/>
+            <elt id="PZ_UNKNOWN2" size="2" type="raw"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table id="VS CPU MODE" sort="RANK">
+            <column id="RANK"     src="VS_RANK"/>
+            <column id="SCORE"    src="VS_SCORE"/>
+            <column id="NAME"     src="VS_NAME"/>
+            <column id="ROUND"    src="VS_ROUND"/>
+            <column id="UNKNOWN"  src="VS_UNKNOWN"  display="debug"/>
+            <column id="UNKNOWN2" src="VS_UNKNOWN2" display="debug"/>
+        </table>
+        <table id="PUZZLE MODE" sort="RANK">
+            <column id="RANK"     src="PZ_RANK"/>
+            <column id="SCORE"    src="PZ_SCORE"/>
+            <column id="NAME"     src="PZ_NAME"/>
+            <column id="ROUND"    src="PZ_ROUND"/>
+            <column id="UNKNOWN"  src="PZ_UNKNOWN"  display="debug"/>
+            <column id="UNKNOWN2" src="PZ_UNKNOWN2" display="debug"/>
+        </table>
+    </output>
+</hi2txt>
