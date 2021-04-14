@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="NORMAL MODE">
+    <col>RANK</col><col>ADDRESS</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>STAGE</col>
+    <row><cell>1</cell><cell>0</cell><cell>239800</cell><cell>.?3</cell><cell>DonTacos</cell><cell>8</cell></row>
+    <row><cell>2</cell><cell>1</cell><cell>170900</cell><cell>OK!</cell><cell>DonTacos</cell><cell>11</cell></row>
+    <row><cell>3</cell><cell>2</cell><cell>100000</cell><cell>PL1</cell><cell>DonTacos</cell><cell>50</cell></row>
+    <row><cell>4</cell><cell>3</cell><cell>50000</cell><cell>PL2</cell><cell>CaptainHog</cell><cell>40</cell></row>
+    <row><cell>5</cell><cell>4</cell><cell>30000</cell><cell>PL3</cell><cell>PinkLeopard</cell><cell>30</cell></row>
+  </table>
+  <table id="PANIC MODE">
+    <col>RANK</col><col>ADDRESS_2</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col><col>STAGE</col>
+    <row><cell>1</cell><cell>0</cell><cell>50000</cell><cell>PL1</cell><cell>DonTacos</cell><cell>50</cell></row>
+    <row><cell>2</cell><cell>1</cell><cell>40000</cell><cell>PL2</cell><cell>CaptainHog</cell><cell>40</cell></row>
+    <row><cell>3</cell><cell>2</cell><cell>30000</cell><cell>PL3</cell><cell>PinkLeopard</cell><cell>30</cell></row>
+    <row><cell>4</cell><cell>3</cell><cell>20000</cell><cell>PL4</cell><cell>ShielaTheThief</cell><cell>20</cell></row>
+    <row><cell>5</cell><cell>4</cell><cell>10000</cell><cell>PL5</cell><cell>DonTacos</cell><cell>10</cell></row>
+  </table>
+</hi2txt>

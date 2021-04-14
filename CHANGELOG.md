@@ -1,3 +1,9 @@
+2021-04-14 [ADDED]    "**Snow Bros.**" (snowbros, ballboy, snowbro3, snowbros, snowbrosa, snowbrosb, snowbrosc, snowbrosd, snowbrosj, snowbroswb, toto, wintbob)
+2021-04-14 [ADDED]    "**Super Pang**" (spang, spangbl, spangj, sbbros)
+2021-04-14 [ADDED]    "**Mighty Pang**" (mpang, mpanga, mpangj, mpangr1, mpangu)
+2021-04-14 [ADDED]    "**Pang 3!**" (pang3, pang3b, pang3b2, pang3b3, pang3, pang3r1)
+2021-04-13 [ADDED]    "**Star Trek (Head On hardware)**" (startrks)
+2021-04-13 [IMPROVED] "**Star Trek**" (startrek): handle empty name
 2021-04-12 [ADDED]    "**Super Puzzle Booble**" (spuzbobl)
 2021-04-12 [ADDED]    "**Puzzle Booble 4**" (pbobble4, pbobble4j, pbobble4u)
 2021-04-12 [ADDED]    "**Puzzle Booble 3**" (pbobble3)

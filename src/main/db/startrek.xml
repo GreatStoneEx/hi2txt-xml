@@ -2,8 +2,12 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Star Trek">
   <!--
-    tested with mame 0.181 and embedded hiscore.dat
+    tested with:
+      mame 0.181 and embedded hiscore.dat
+      mame 0.229 and embedded hiscore.dat
     source: GreatStone
+    history:
+      2021-04-13: fixed name if nothing is entered
   //-->
 
   <structure file=".hi">
@@ -17,7 +21,7 @@
     </loop>
     <elt size="2" type="raw"  id="LAST_BROKEN_SCORE"/>
     <loop count="9">
-      <elt size="3" type="text" id="NAME"/>
+      <elt size="3" type="text" id="NAME" charset="chars"/>
     </loop>
   </structure>
 
@@ -28,4 +32,8 @@
       <column id="NAME"/>
     </table>
   </output>
+
+  <charset id="chars">
+    <char src="0x5B" dst=" "/>
+  </charset>
 </hi2txt>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Super Pang">
+    <!--
+      tested with mame 0.229 and related hiscore.dat
+      source: GreatStone
+    //-->
+
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure versus the provided file //-->
+            <definition>@:maincpu,program,fc01,9e,00,07
+                        @:maincpu,program,e158,4,00,00</definition>
+            <!-- optional: if defined, it allows to select the good structure versus the provided file
+                           useful if multiple structures are defined but hiscore.dat not provided //-->
+            <size>162</size>
+        </check>
+
+        <loop count="5">
+            <elt size="4" type="int"  id="SCORE" base="16"/>
+            <elt size="1" type="raw"  id="EMPTY"/>
+            <elt size="6" type="text" id="NAME" src-unit-size="16" charset="chars"/>
+            <elt size="1" type="raw"  id="EMPTY2"/>
+            <elt size="1" type="int"  id="LEVEL1" base="16"/>
+            <elt size="1" type="int"  id="LEVEL2" base="16"/>
+            <elt size="2" type="raw"  id="UNKNOWN"/>
+        </loop>
+        <loop count="5">
+            <elt size="4" type="int"  id="SCORE_2" base="16"/>
+            <elt size="1" type="raw"  id="EMPTY_2"/>
+            <elt size="6" type="text" id="NAME_2" src-unit-size="16" charset="chars"/>
+            <elt size="1" type="raw"  id="EMPTY2_2"/>
+            <elt size="1" type="raw"  id="EMPTY3_2"/>
+            <elt size="1" type="int"  id="LEVEL_2" base="16"/>
+            <elt size="2" type="raw"  id="UNKNOWN"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table id="TOUR MODE">
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE"/>
+            <column id="NAME"/>
+            <column id="LEVEL" format="level"/>
+        </table>
+        <table id="PANIC MODE">
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE" src="SCORE_2"/>
+            <column id="NAME"  src="NAME_2"/>
+            <column id="LEVEL" src="LEVEL_2" format="PrefixL."/>
+        </table>
+    </output>
+
+    <format id="level">
+        <concat>
+          <column id="LEVEL1"/>
+            <txt>-</txt>
+          <column id="LEVEL2"/>
+        </concat>
+    </format>
+
+    <charset id="chars">
+        <char src="0x4003" dst="."/>
+        <char src="0xAA0A" dst="."/>
+
+        <char src="0x0E07" dst=" "/>
+
+        <char src="0x2A03" dst="?"/>
+        <char src="0x2803" dst="!"/>
+
+        <char src="0x8000" dst="A"/>
+        <char src="0x8200" dst="B"/>
+        <char src="0x8400" dst="C"/>
+        <char src="0x8600" dst="D"/>
+        <char src="0x8800" dst="E"/>
+        <char src="0x8A00" dst="F"/>
+        <char src="0x8C00" dst="G"/>
+        <char src="0x8E00" dst="H"/>
+
+        <char src="0xA000" dst="I"/>
+        <char src="0xA200" dst="J"/>
+        <char src="0xA400" dst="K"/>
+        <char src="0xA600" dst="L"/>
+        <char src="0xA800" dst="M"/>
+        <char src="0xAA00" dst="N"/>
+        <char src="0xAC00" dst="O"/>
+        <char src="0xAE00" dst="P"/>
+
+        <char src="0xC000" dst="Q"/>
+        <char src="0xC200" dst="R"/>
+        <char src="0xC400" dst="S"/>
+        <char src="0xC600" dst="T"/>
+        <char src="0xC800" dst="U"/>
+        <char src="0xCA00" dst="V"/>
+        <char src="0xCC00" dst="W"/>
+        <char src="0xCE00" dst="X"/>
+
+        <char src="0xE000" dst="Y"/>
+        <char src="0xE200" dst="Z"/>
+    </charset>
+
+</hi2txt>
