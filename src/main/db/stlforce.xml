@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Steel Force">
+    <!--
+      tested with mame 0.229 and related hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+            <definition>@:maincpu,program,105772,32,4e,00
+                        @:maincpu,program,105784,1,02,02</definition>
+            <!-- optional: if defined, it allows to select the good structure version the provided file
+                           useful if multiple structures are defined, but hiscore.dat not provided //-->
+            <size>51</size>
+        </check>
+        <loop count="5" >
+            <elt size="2" type="int" id="SCORE"/>
+            <elt size="2" type="raw"  id="UNKNOWN"/>
+            <elt size="3" type="text" id="NAME"/>
+            <elt size="1" type="raw"  id="EMPTY"/>
+            <elt size="1" type="int" id="LEVEL_1"/>
+            <elt size="1" type="int" id="LEVEL_2"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table>
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE" format="*10"/>
+            <column id="NAME"/>
+            <column id="LEVEL" format="level"/>
+        </table>
+    </output>
+
+    <format id="level">
+        <concat>
+            <column id="LEVEL_1" format="+1"/>
+            <txt>-</txt>
+            <column id="LEVEL_2" format="+1"/>
+        </concat>
+    </format>
+</hi2txt>
+

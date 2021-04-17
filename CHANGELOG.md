@@ -1,3 +1,5 @@
+2021-04-16 [ADDED]    "**Steel Force**" (stlforce)
+2021-04-16 [ADDED]    "**Gals Panic**" (galpanic, galpanicb, galsnew, galsnewj, galsnewk, galsnewt, galsnewu)
 2021-04-14 [ADDED]    "**Snow Bros.**" (snowbros, ballboy, snowbro3, snowbros, snowbrosa, snowbrosb, snowbrosc, snowbrosd, snowbrosj, snowbroswb, toto, wintbob)
 2021-04-14 [ADDED]    "**Super Pang**" (spang, spangbl, spangj, sbbros)
 2021-04-14 [ADDED]    "**Mighty Pang**" (mpang, mpanga, mpangj, mpangr1, mpangu)

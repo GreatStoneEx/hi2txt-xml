@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Outrun">
+    <!--
+      tested with mame 0.229 and related hiscore.dat
+      source: GreatStone
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+            <definition>@:maincpu,program,6046e,118,05,20</definition>
+            <!-- optional: if defined, it allows to select the good structure version the provided file
+                           useful if multiple structures are defined, but hiscore.dat not provided //-->
+            <size>280</size>
+        </check>
+        <loop count="20" >
+            <elt size="4" type="int"  id="SCORE" base="16"/>
+            <elt size="3" type="text" id="NAME" charset="chars"/>
+            <elt size="1" type="raw"  id="EMPTY"/>
+            <elt size="2" type="int"  id="TIME"/>
+            <elt size="4" type="raw"  id="ROUTE"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table>
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE"/>
+            <column id="NAME"/>
+            <column id="EMPTY" format="0x"/>
+            <column id="TIME"  format="time"/>
+            <column id="ROUTE" format="0x"/>
+        </table>
+    </output>
+
+    <format id="time" input-as-subcolumns-input="yes"> <!-- XX'YY''ZZ //-->
+        <concat>
+            <column format="MN"/>
+            <txt>'</txt>
+            <column format="SEC"/>
+            <txt>''</txt>
+            <column format="CS"/>
+        </concat>
+    </format>
+    <format id="MN" formatter="%02d">
+        <divide_trunc>3600</divide_trunc>
+    </format>
+    <format id="SEC" formatter="%02d">
+        <remainder>3600</remainder>
+        <divide_trunc>60</divide_trunc>
+    </format>
+    <format id="CS" formatter="%02d"> <!-- not sure... //-->
+        <remainder>60</remainder>
+        <multiply>100</multiply>
+        <divide_trunc>60</divide_trunc>
+    </format>
+
+    <charset id="chars">
+        <char src="0x5B" dst="."/>
+    </charset>
+</hi2txt>
+

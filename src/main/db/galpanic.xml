@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Gals Panic">
+    <!--
+      tested with mame 0.229 and related hiscore.dat
+      source: GreatStone
+      note: galpanica is not recording any hiscore
+    //-->
+    <structure file=".hi">
+        <check>
+            <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+            <definition>@:maincpu,program,53e728,50,30,31</definition> <!-- galpanic -->
+            <definition>@:maincpu,program,53e5b2,64,30,31</definition> <!-- galpanicb -->
+            <definition>@:maincpu,program,c825b6,64,30,31</definition> <!-- galsnew -->
+            <!-- optional: if defined, it allows to select the good structure version the provided file
+                           useful if multiple structures are defined, but hiscore.dat not provided //-->
+            <size>80</size>  <!-- galpanic -->
+            <size>100</size> <!-- galpanicb -->
+        </check>
+        <loop count="8" >
+            <elt size="5" type="text" id="SCORE"/>
+            <elt size="1" type="text" id="ROUND_1"/>
+            <elt size="3" type="text" id="NAME"/>
+            <elt size="1" type="text" id="ROUND_2"/>
+        </loop>
+    </structure>
+
+    <output>
+        <table>
+            <column id="RANK" src="index" format="+1"/>
+            <column id="SCORE" format="*100"/>
+            <column id="NAME"/>
+            <column id="ROUND" format="round"/>
+        </table>
+    </output>
+
+    <format id="round">
+      <concat>
+        <column id="ROUND_1"/>
+        <txt>-</txt>
+        <column id="ROUND_2"/>
+      </concat>
+    </format>
+</hi2txt>
+
