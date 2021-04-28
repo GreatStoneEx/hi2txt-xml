@@ -2,8 +2,13 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Cyber-Lip">
   <!--
-    tested with mame 0.181 and related hiscore.dat
-      source: GreatStone
+    tested with:
+	  mame 0.181 and related hiscore.dat
+	  mame 0.220 and related hiscore.dat
+	  mame 0.229 and related hiscore.dat
+	history:
+	  28-04-2021: adding .hi file decoding, as some users doesn't see any change in the saveram
+    source: GreatStone
   //-->
   
   <structure file="saveram" byte-swap="2">
@@ -13,6 +18,20 @@
       <size>65536</size>
     </check>
     <elt size="800" type="raw"  id="DATA"/>
+    <loop count="10">
+      <elt size="4"    type="int"  id="SCORE" base="16"/>
+	  <elt size="3"    type="text" id="NAME"/>
+	  <elt size="1"    type="raw"  id="END"/>
+    </loop>
+  </structure>
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+	  <definition>@:maincpu,program,100000,50,00,20</definition>
+      <size>80</size>
+    </check>
     <loop count="10">
       <elt size="4"    type="int"  id="SCORE" base="16"/>
 	  <elt size="3"    type="text" id="NAME"/>

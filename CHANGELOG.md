@@ -1,3 +1,4 @@
+2021-04-28 [IMPROVED] "**Cyber-Lip**" (cyberlip): some users doesn't see new scores in the saved ram, so .hi file decoding has been added also
 2021-04-16 [ADDED]    "**Steel Force**" (stlforce)
 2021-04-16 [ADDED]    "**Gals Panic**" (galpanic, galpanicb, galsnew, galsnewj, galsnewk, galsnewt, galsnewu)
 2021-04-14 [ADDED]    "**Snow Bros.**" (snowbros, ballboy, snowbro3, snowbros, snowbrosa, snowbrosb, snowbrosc, snowbrosd, snowbrosj, snowbroswb, toto, wintbob)
