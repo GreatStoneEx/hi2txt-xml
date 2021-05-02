@@ -1,0 +1,16 @@
+<hi2txt>
+  <table>
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>EMPTY</col><col>TIME</col><col>ROUTE</col>
+    <row><cell>1</cell><cell>99999999</cell><cell>MRS</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;98</cell><cell>0x000033DE</cell></row>
+    <row><cell>2</cell><cell>93583760</cell><cell>HOU</cell><cell>0x20</cell><cell>1&apos;27&apos;&apos;46</cell><cell>0xE5C8C6E0</cell></row>
+    <row><cell>3</cell><cell>8028904</cell><cell>ABC</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0xE5C8C6DF</cell></row>
+    <row><cell>4</cell><cell>5000000</cell><cell>YU.</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>5</cell><cell>4800000</cell><cell>BIN</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>6</cell><cell>4600000</cell><cell>KAG</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>7</cell><cell>4400000</cell><cell>MIY</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>8</cell><cell>4200000</cell><cell>MAT</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>9</cell><cell>4000000</cell><cell>IKA</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>10</cell><cell>3800000</cell><cell>A.O</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0x20202020</cell></row>
+    <row><cell>11</cell><cell>3750250</cell><cell>DLR</cell><cell>0x20</cell><cell>0&apos;00&apos;&apos;00</cell><cell>0xE5C8C6D3</cell></row>
+  </table>
+</hi2txt>

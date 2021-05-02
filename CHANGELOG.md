@@ -1,3 +1,4 @@
+2021-05-02 [ADDED]    "**Outrun**" (outrun, outrunb, outrunra, outrundx, outrundxa, outrundxj, toutrun, toutrun1, toutrun2, toutrun3, toutrunj, toutrunj1)
 2021-04-28 [IMPROVED] "**Cyber-Lip**" (cyberlip): some users doesn't see new scores in the saved ram, so .hi file decoding has been added also
 2021-04-16 [ADDED]    "**Steel Force**" (stlforce)
 2021-04-16 [ADDED]    "**Gals Panic**" (galpanic, galpanicb, galsnew, galsnewj, galsnewk, galsnewt, galsnewu)

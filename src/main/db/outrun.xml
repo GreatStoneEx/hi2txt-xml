@@ -11,7 +11,14 @@
             <definition>@:maincpu,program,6046e,118,05,20</definition>
             <!-- optional: if defined, it allows to select the good structure version the provided file
                            useful if multiple structures are defined, but hiscore.dat not provided //-->
+            <definition>@:maincpu,program,6046e,118,05,20
+                        @:maincpu,program,604c8,1,4f,4f</definition> <!-- outunra -->
+            <definition>@:maincpu,program,6046e,118,01,20
+                        @:maincpu,program,604c8,1,4f,4f</definition> <!-- outrundx -->
+            <definition>@:maincpu,program,6046e,118,05,20
+                        @delay=3</definition> <!-- toutrun -->
             <size>280</size>
+            <size>281</size> <!-- outunra, outrundx -->
         </check>
         <loop count="20" >
             <elt size="4" type="int"  id="SCORE" base="16"/>
@@ -23,17 +30,17 @@
     </structure>
 
     <output>
-        <table>
+        <table line-ignore="NAME:   "> <!-- outrundx, toutrun -->
             <column id="RANK" src="index" format="+1"/>
             <column id="SCORE"/>
             <column id="NAME"/>
-            <column id="EMPTY" format="0x"/>
+            <column id="EMPTY" format="0x" display="debug"/>
             <column id="TIME"  format="time"/>
-            <column id="ROUTE" format="0x"/>
+            <column id="ROUTE" format="0x" display="debug"/>
         </table>
     </output>
 
-    <format id="time" input-as-subcolumns-input="yes"> <!-- XX'YY''ZZ //-->
+    <format id="time" input-as-subcolumns-input="yes"> <!-- X'YY''ZZ //-->
         <concat>
             <column format="MN"/>
             <txt>'</txt>
@@ -42,17 +49,18 @@
             <column format="CS"/>
         </concat>
     </format>
-    <format id="MN" formatter="%02d">
+    <format id="MN">
         <divide_trunc>3600</divide_trunc>
     </format>
     <format id="SEC" formatter="%02d">
         <remainder>3600</remainder>
-        <divide_trunc>60</divide_trunc>
+        <divide_trunc>64</divide_trunc>
     </format>
-    <format id="CS" formatter="%02d"> <!-- not sure... //-->
-        <remainder>60</remainder>
+    <format id="CS" formatter="%02d">
+        <remainder>3600</remainder>
+        <remainder>64</remainder>
         <multiply>100</multiply>
-        <divide_trunc>60</divide_trunc>
+        <divide_trunc>64</divide_trunc>
     </format>
 
     <charset id="chars">
