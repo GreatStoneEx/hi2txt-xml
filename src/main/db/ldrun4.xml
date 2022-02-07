@@ -2,12 +2,16 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Lode Runner">
   <!--
-    tested with:
-	  mame 0.219 and embedded hiscore.dat
-	  mame 0.212 and embedded hiscore.dat
-	history:
+    history:
+      2022-02-07 fix 'ROUND' value: must be decoded using base16 instead of base10 (ckeech, GreatStone)
+        It is fixing the following error, when a player reach a ROUND >= 10
+        "ERROR: Wrong ROUND value (0x...) encoding detected: it can be due to a temporary corrupted .hi or nvram file"
       2020-04-11 adapt to new mame 0.219 hiscore.dat definition
-    source: T. Busse
+    tested:
+      mame 0.239 and embedded hiscore.dat
+      mame 0.219 and embedded hiscore.dat
+	  mame 0.212 and embedded hiscore.dat
+    initial version source: T. Busse
   //-->
   
   <structure file=".hi">

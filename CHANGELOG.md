@@ -1,3 +1,5 @@
+2022-02-07 [FIXED]    "**Lode Runner (set 1)**" (ldrun): fix error "Wrong ROUND value (0x...) encoding detected" (thanks to ckeech for the test case)
+2022-02-07 [FIXED]    "**Lode Runner IV - Teikoku Karano Dasshutsu (Japan)**" (ldrun4): fix error "Wrong ROUND value (0x...) encoding detected" (thanks to ckeech for the test case)
 2021-05-02 [ADDED]    "**Outrun**" (outrun, outrunb, outrunra, outrundx, outrundxa, outrundxj, toutrun, toutrun1, toutrun2, toutrun3, toutrunj, toutrunj1)
 2021-04-28 [IMPROVED] "**Cyber-Lip**" (cyberlip): some users doesn't see new scores in the saved ram, so .hi file decoding has been added also
 2021-04-16 [ADDED]    "**Steel Force**" (stlforce)
