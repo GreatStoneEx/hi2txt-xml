@@ -1,3 +1,5 @@
+2022-02-08 [ADDED]    "**Mega Man 2: The Power Battle**" (megaman2, megaman2a, megaman2h, megamn2d, rockman2j)
+2022-02-08 [ADDED]    "**Mega Man: The Power Battle**" (megaman, megamana, mmancp2u, mmancp2ur1, mmancp2ur2, rmancp2j, rockmanj)
 2022-02-07 [FIXED]    "**Lode Runner (set 1)**" (ldrun): fix error "Wrong ROUND value (0x...) encoding detected" (thanks to ckeech for the test case)
 2022-02-07 [FIXED]    "**Lode Runner IV - Teikoku Karano Dasshutsu (Japan)**" (ldrun4): fix error "Wrong ROUND value (0x...) encoding detected" (thanks to ckeech for the test case)
 2021-05-02 [ADDED]    "**Outrun**" (outrun, outrunb, outrunra, outrundx, outrundxa, outrundxj, toutrun, toutrun1, toutrun2, toutrun3, toutrunj, toutrunj1)

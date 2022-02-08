@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Mega Man: The Power Fighters">
+  <!--
+    tested with:
+      mame 0.239 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>@:maincpu,program,ffeed0,28,00,00
+                  @:maincpu,program,ffef10,28,00,02</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>80</size>
+    </check>
+    <loop count="5">
+      <elt size="2" type="int"  id="TIME_MN"        base="16"/>
+      <elt size="1" type="int"  id="TIME_SC"        base="16"/>
+      <elt size="1" type="int"  id="TIME_MS"        base="16"/>
+      <elt size="3" type="text" id="TIME_NAME"      charset="charset"/>
+      <elt size="1" type="int"  id="TIME_CHARACTER" base="16"/>
+    </loop>
+    <loop count="5">
+      <elt size="4" type="int"  id="SCORE"     base="16"/>
+      <elt size="3" type="text" id="NAME"      charset="charset"/>
+      <elt size="1" type="int"  id="CHARACTER" base="16"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table id="SCORE RANKING">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="CHARACTER"        format="characters"/>
+    </table>
+    <table id="TIME RANKING">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME"             format="time"/>
+      <column id="TIME_NAME"/>
+      <column id="TIME_CHARACTER"   format="characters"/>
+    </table>
+  </output>
+    
+  <format id="time">
+    <concat>
+      <column id="TIME_MN"/>
+      <txt>'</txt>
+      <column id="TIME_SC" format="PadL20"/>
+      <txt>"</txt>
+      <column id="TIME_MS" format="PadL20"/>
+    </concat>
+  </format>
+  <format id="characters">
+    <case src="0" dst="MEGAMAN"/>
+    <case src="1" dst="PROTOMAN"/>
+    <case src="2" dst="BASS"/>
+  </format>
+  <charset id="charset">
+    <char src="0x5B" dst="0"/>
+    <char src="0x5C" dst="1"/>
+    <char src="0x5D" dst="2"/>
+    <char src="0x5E" dst="3"/>
+    <char src="0x5F" dst="4"/>
+    <char src="0x60" dst="5"/>
+    <char src="0x61" dst="6"/>
+    <char src="0x62" dst="7"/>
+    <char src="0x63" dst="8"/>
+    <char src="0x64" dst="9"/>
+    <char src="0x65" dst="?"/>
+    <char src="0x66" dst="!"/>
+    <char src="0x67" dst="."/>
+    <char src="0x68" dst=" "/>
+  </charset>
+</hi2txt>

@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="SCORE RANKING">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>CHARACTER</col>
+    <row><cell>1</cell><cell>50000</cell><cell>OKO</cell><cell>BASS</cell></row>
+    <row><cell>2</cell><cell>45300</cell><cell>! .</cell><cell>MEGAMAN</cell></row>
+    <row><cell>3</cell><cell>40000</cell><cell>GIU</cell><cell>PROTOMAN</cell></row>
+    <row><cell>4</cell><cell>30000</cell><cell>HKD</cell><cell>MEGAMAN</cell></row>
+    <row><cell>5</cell><cell>21900</cell><cell>09?</cell><cell>MEGAMAN</cell></row>
+  </table>
+  <table id="TIME RANKING">
+    <col>RANK</col><col>TIME</col><col>TIME_NAME</col><col>TIME_CHARACTER</col>
+    <row><cell>1</cell><cell>10&apos;00&quot;00</cell><cell>OHI</cell><cell>PROTOMAN</cell></row>
+    <row><cell>2</cell><cell>11&apos;00&quot;00</cell><cell>GEN</cell><cell>BASS</cell></row>
+    <row><cell>3</cell><cell>12&apos;00&quot;00</cell><cell>OHN</cell><cell>MEGAMAN</cell></row>
+    <row><cell>4</cell><cell>13&apos;00&quot;00</cell><cell>ROM</cell><cell>PROTOMAN</cell></row>
+    <row><cell>5</cell><cell>14&apos;00&quot;00</cell><cell>EZO</cell><cell>MEGAMAN</cell></row>
+  </table>
+</hi2txt>
