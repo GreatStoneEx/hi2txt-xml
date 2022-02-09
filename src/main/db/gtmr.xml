@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="1000 Miglia: Great 1000 Miles Rally">
+  <!--
+    tested with:
+      mame 0.239 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>@:maincpu,program,102df2,19e,59,80</definition> <!-- gtmr, gtmra: definition missing last car of last race //-->
+      <definition>@:maincpu,program,102df2,1a0,59,01</definition> <!-- gtmr, gtmra: new definition proposal with last car //-->
+      <definition>@:maincpu,program,102dee,1a0,59,01</definition> <!-- gtmrb: new definition proposal with last car //-->
+      <definition>@:maincpu,program,1035fa,19e,59,80</definition> <!-- gtmre: definition missing last car of last race //-->
+      <definition>@:maincpu,program,1035fa,1a0,59,01</definition> <!-- gtmre: new definition proposal with last car //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>414</size> <!-- definition missing last car of last race //-->
+      <size>416</size> <!-- new definition proposal with last car //-->
+    </check>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE1_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE1_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE1_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE2_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE2_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE2_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE3_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE3_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE3_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE4_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE4_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE4_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE5_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE5_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE5_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE6_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE6_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE6_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE7_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE7_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE7_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE8_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE8_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE8_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE9_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE9_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE9_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE10_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE10_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE10_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE11_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE11_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE11_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE12_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE12_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE12_CAR" base="10"/>
+    </loop>
+    <loop count="8">
+      <elt size="1" type="int"  id="RACE13_SC"  base="16"/>
+      <elt size="1" type="int"  id="RACE13_MS"  base="16"/>
+      <elt size="2" type="int"  id="RACE13_CAR" base="10"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table id="Brescia &gt;&gt; Verona">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time2"/>
+      <column id="CAR"  src="RACE2_CAR"  format="car"/>
+    </table>
+    <table id="Verona &gt;&gt; Ferrara">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time3"/>
+      <column id="CAR"  src="RACE3_CAR"  format="car"/>
+    </table>
+    <table id="Ferrara &gt;&gt; Ravenna">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time4"/>
+      <column id="CAR"  src="RACE4_CAR"  format="car"/>
+    </table>
+    <table id="Ravenna &gt;&gt; Rimini">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time5"/>
+      <column id="CAR"  src="RACE5_CAR"  format="car"/>
+    </table>
+    <table id="Rimini &gt;&gt; San Marino">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time6"/>
+      <column id="CAR"  src="RACE6_CAR"  format="car"/>
+    </table>
+    <table id="San Marino &gt;&gt; Ancona">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time7"/>
+      <column id="CAR"  src="RACE7_CAR"  format="car"/>
+    </table>
+    <table id="Ancona &gt;&gt; Gubbio">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time8"/>
+      <column id="CAR"  src="RACE8_CAR"  format="car"/>
+    </table>
+    <table id="Gubbio &gt;&gt; Terni">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time9"/>
+      <column id="CAR"  src="RACE9_CAR"  format="car"/>
+    </table>
+    <table id="Terni &gt;&gt; Roma">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time10"/>
+      <column id="CAR"  src="RACE10_CAR"  format="car"/>
+    </table>
+    <table id="Roma &gt;&gt; Siena">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time11"/>
+      <column id="CAR"  src="RACE11_CAR"  format="car"/>
+    </table>
+    <table id="Siena &gt;&gt; Borogna">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time12"/>
+      <column id="CAR"  src="RACE12_CAR"  format="car"/>
+    </table>
+    <table id="Borogna &gt;&gt; Brescia">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time13"/>
+      <column id="CAR"  src="RACE13_CAR"  format="car"/>
+    </table>
+    <table id="All races">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="TIME" format="time1"/>
+      <column id="CAR"  src="RACE1_CAR"  format="car"/>
+    </table>
+  </output>
+    
+  <format id="time1">
+    <concat>
+      <column id="RACE1_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE1_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time2">
+    <concat>
+      <column id="RACE2_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE2_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time3">
+    <concat>
+      <column id="RACE3_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE3_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time4">
+    <concat>
+      <column id="RACE4_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE4_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time5">
+    <concat>
+      <column id="RACE5_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE5_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time6">
+    <concat>
+      <column id="RACE6_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE6_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time7">
+    <concat>
+      <column id="RACE7_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE7_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time8">
+    <concat>
+      <column id="RACE8_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE8_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time9">
+    <concat>
+      <column id="RACE9_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE9_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time10">
+    <concat>
+      <column id="RACE10_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE10_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time11">
+    <concat>
+      <column id="RACE11_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE11_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time12">
+    <concat>
+      <column id="RACE12_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE12_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="time13">
+    <concat>
+      <column id="RACE13_SC" format="PadL20"/>
+      <txt>'</txt>
+      <column id="RACE13_MS" format="PadL20"/>
+      <txt>"</txt>
+    </concat>
+  </format>
+  <format id="car">
+    <case src="0" dst="FERRARI 250 GTO"/>
+    <case src="1" dst="FERRARI 290 MM"/>
+    <case src="2" dst="JAGUAR D-type"/>
+    <case src="3" dst="PORSCHE 550A"/>
+    <case src="4" dst="ALFA ROMEO Giulietta SZ"/>
+    <case src="5" dst="ALFA ROMEO 8C 2300"/>
+    <case src="6" dst="BUGATTI T59"/>
+    <case src="7" dst="MERCEDES BENZ SSKL"/>
+    <case src="8" dst="MERCEDES BENZ 300SLR"/>
+    <case src="9" dst="FERRARI 250 Testa Rossa"/>
+    <case src="10" dst="AMERICAN SPECIAL CAR / RacerX"/>   <!-- gtmre //-->
+    <case src="11" dst="AMERICAN MONSTER CAR / FireBall"/> <!-- gtmre //-->
+  </format>
+</hi2txt>

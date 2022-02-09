@@ -1,0 +1,50 @@
+<hi2txt>
+  <table id="STORY 1 SCORE RANKING">
+    <col>RANK</col><col>STORY1_SCORE</col><col>STORY1_NAME</col><col>STORY1_CHARACTER</col>
+    <row><cell>1</cell><cell>20000</cell><cell>OKO</cell><cell>MEGAMAN</cell></row>
+    <row><cell>2</cell><cell>15000</cell><cell>HKD</cell><cell>PROTOMAN</cell></row>
+    <row><cell>3</cell><cell>10000</cell><cell>PON</cell><cell>BASS</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>YOU</cell><cell>DUO</cell></row>
+    <row><cell>5</cell><cell>2000</cell><cell>CPS</cell><cell>MEGAMAN</cell></row>
+  </table>
+  <table id="STORY 2 SCORE RANKING">
+    <col>RANK</col><col>STORY2_SCORE</col><col>STORY2_NAME</col><col>STORY2_CHARACTER</col>
+    <row><cell>1</cell><cell>20000</cell><cell>OKO</cell><cell>PROTOMAN</cell></row>
+    <row><cell>2</cell><cell>15000</cell><cell>HKD</cell><cell>BASS</cell></row>
+    <row><cell>3</cell><cell>10000</cell><cell>PON</cell><cell>DUO</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>YOU</cell><cell>MEGAMAN</cell></row>
+    <row><cell>5</cell><cell>2000</cell><cell>CPS</cell><cell>PROTOMAN</cell></row>
+  </table>
+  <table id="STORY 3 SCORE RANKING">
+    <col>RANK</col><col>STORY3_SCORE</col><col>STORY3_NAME</col><col>STORY3_CHARACTER</col>
+    <row><cell>1</cell><cell>20000</cell><cell>OKO</cell><cell>BASS</cell></row>
+    <row><cell>2</cell><cell>15000</cell><cell>HKD</cell><cell>DUO</cell></row>
+    <row><cell>3</cell><cell>10000</cell><cell>PON</cell><cell>MEGAMAN</cell></row>
+    <row><cell>4</cell><cell>5000</cell><cell>YOU</cell><cell>PROTOMAN</cell></row>
+    <row><cell>5</cell><cell>2000</cell><cell>CPS</cell><cell>BASS</cell></row>
+  </table>
+  <table id="STORY 1 TIME RANKING">
+    <col>RANK</col><col>STORY1_TIME</col><col>STORY1_TIME_NAME</col><col>STORY1_TIME_CHARACTER</col>
+    <row><cell>1</cell><cell>30&apos;00&quot;00</cell><cell>OKO</cell><cell>DUO</cell></row>
+    <row><cell>2</cell><cell>35&apos;00&quot;00</cell><cell>HKD</cell><cell>MEGAMAN</cell></row>
+    <row><cell>3</cell><cell>40&apos;00&quot;00</cell><cell>PON</cell><cell>PROTOMAN</cell></row>
+    <row><cell>4</cell><cell>45&apos;00&quot;00</cell><cell>YOU</cell><cell>BASS</cell></row>
+    <row><cell>5</cell><cell>50&apos;00&quot;00</cell><cell>CPS</cell><cell>DUO</cell></row>
+  </table>
+  <table id="STORY 2 TIME RANKING">
+    <col>RANK</col><col>STORY2_TIME</col><col>STORY2_TIME_NAME</col><col>STORY2_TIME_CHARACTER</col>
+    <row><cell>1</cell><cell>30&apos;00&quot;00</cell><cell>OKO</cell><cell>MEGAMAN</cell></row>
+    <row><cell>2</cell><cell>35&apos;00&quot;00</cell><cell>HKD</cell><cell>PROTOMAN</cell></row>
+    <row><cell>3</cell><cell>40&apos;00&quot;00</cell><cell>PON</cell><cell>BASS</cell></row>
+    <row><cell>4</cell><cell>45&apos;00&quot;00</cell><cell>YOU</cell><cell>DUO</cell></row>
+    <row><cell>5</cell><cell>50&apos;00&quot;00</cell><cell>CPS</cell><cell>MEGAMAN</cell></row>
+  </table>
+  <table id="STORY 3 TIME RANKING">
+    <col>RANK</col><col>STORY3_TIME</col><col>STORY3_TIME_NAME</col><col>STORY3_TIME_CHARACTER</col>
+    <row><cell>1</cell><cell>30&apos;00&quot;00</cell><cell>OKO</cell><cell>PROTOMAN</cell></row>
+    <row><cell>2</cell><cell>35&apos;00&quot;00</cell><cell>HKD</cell><cell>BASS</cell></row>
+    <row><cell>3</cell><cell>40&apos;00&quot;00</cell><cell>PON</cell><cell>DUO</cell></row>
+    <row><cell>4</cell><cell>45&apos;00&quot;00</cell><cell>YOU</cell><cell>MEGAMAN</cell></row>
+    <row><cell>5</cell><cell>50&apos;00&quot;00</cell><cell>CPS</cell><cell>PROTOMAN</cell></row>
+  </table>
+</hi2txt>

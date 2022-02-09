@@ -1,0 +1,18 @@
+<hi2txt>
+  <table id="TOUR MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>500000</cell><cell>M.S</cell><cell>1-12</cell></row>
+    <row><cell>2</cell><cell>400000</cell><cell>T.U</cell><cell>1-11</cell></row>
+    <row><cell>3</cell><cell>400000</cell><cell>K.N</cell><cell>1-10</cell></row>
+    <row><cell>4</cell><cell>300000</cell><cell>A.K</cell><cell>1-9</cell></row>
+    <row><cell>5</cell><cell>200000</cell><cell>K.F</cell><cell>1-8</cell></row>
+  </table>
+  <table id="PANIC MODE">
+    <col>RANK</col><col>SCORE</col><col>NAME</col><col>LEVEL</col>
+    <row><cell>1</cell><cell>100000</cell><cell>M.S</cell><cell>L.10</cell></row>
+    <row><cell>2</cell><cell>80000</cell><cell>T.U</cell><cell>L.9</cell></row>
+    <row><cell>3</cell><cell>60000</cell><cell>K.N</cell><cell>L.8</cell></row>
+    <row><cell>4</cell><cell>50000</cell><cell>A.K</cell><cell>L.7</cell></row>
+    <row><cell>5</cell><cell>50000</cell><cell>K.F</cell><cell>L.7</cell></row>
+  </table>
+</hi2txt>

@@ -1,3 +1,5 @@
+2022-02-09 [ADDED]    "**1000 Miglia: Great 1000 Miles Rally**" (gtmr, gtmra, gtmrb, gtmro, gtmre, gtmrusa)
+2022-02-09 [ADDED]    "**Mad Gear / Led Storm**" (madgear, madgearj, ledstorm)
 2022-02-08 [ADDED]    "**Mega Man 2: The Power Battle**" (megaman2, megaman2a, megaman2h, megamn2d, rockman2j)
 2022-02-08 [ADDED]    "**Mega Man: The Power Battle**" (megaman, megamana, mmancp2u, mmancp2ur1, mmancp2ur2, rmancp2j, rockmanj)
 2022-02-07 [FIXED]    "**Lode Runner (set 1)**" (ldrun): fix error "Wrong ROUND value (0x...) encoding detected" (thanks to ckeech for the test case)
@@ -6,7 +8,7 @@
 2021-04-28 [IMPROVED] "**Cyber-Lip**" (cyberlip): some users doesn't see new scores in the saved ram, so .hi file decoding has been added also
 2021-04-16 [ADDED]    "**Steel Force**" (stlforce)
 2021-04-16 [ADDED]    "**Gals Panic**" (galpanic, galpanicb, galsnew, galsnewj, galsnewk, galsnewt, galsnewu)
-2021-04-14 [ADDED]    "**Snow Bros.**" (snowbros, ballboy, snowbro3, snowbros, snowbrosa, snowbrosb, snowbrosc, snowbrosd, snowbrosj, snowbroswb, toto, wintbob)
+2021-04-14 [ADDED]    "**Snow Bros.**" (snowbros, ballboy, snowbro3, snowbros, snowbrosa, snowbrosb, snowbrosc, snowbrosd, snowbrosj, snowbroswb, wintbob)
 2021-04-14 [ADDED]    "**Super Pang**" (spang, spangbl, spangj, sbbros)
 2021-04-14 [ADDED]    "**Mighty Pang**" (mpang, mpanga, mpangj, mpangr1, mpangu)
 2021-04-14 [ADDED]    "**Pang 3!**" (pang3, pang3b, pang3b2, pang3b3, pang3, pang3r1)

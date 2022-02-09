@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Mad Gear">
+  <!--
+    tested with:
+      mame 0.239 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>@:maincpu,program,ff8890,78,00,00
+                  @:maincpu,program,ffcb76,23,02,00
+                  @:maincpu,program,ff87c9,1,d2,d2</definition>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>156</size>
+    </check>
+    <loop count="10">
+      <elt size="2" type="int"  id="RANKPOINTER" base="10" format="rp"/>
+    </loop>
+    <loop count="10">
+      <elt size="4" type="int"  id="SCORE" table-index="RANKPOINTER:index_from_value" base="16"/>
+      <elt size="3" type="text" id="NAME"  table-index="RANKPOINTER:index_from_value" charset="charset"/>
+      <elt size="1" type="int"  id="STAGE" table-index="RANKPOINTER:index_from_value" base="16"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="STAGE"/>
+    </table>
+  </output>
+
+  <format id="rp"><divide>8</divide></format>
+  
+  <charset id="charset">
+    <char src="0x3B" dst="&smiley;"/>
+    <char src="0x5F" dst="&black-heart;"/>
+    <char src="0x3C" dst="&black-star;"/>
+  </charset>
+</hi2txt>

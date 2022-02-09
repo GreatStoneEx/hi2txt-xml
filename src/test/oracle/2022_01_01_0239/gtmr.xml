@@ -1,0 +1,145 @@
+<hi2txt>
+  <table id="Brescia >> Verona">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Verona >> Ferrara">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Ferrara >> Ravenna">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Ravenna >> Rimini">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Rimini >> San Marino">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="San Marino >> Ancona">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Ancona >> Gubbio">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Gubbio >> Terni">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Terni >> Roma">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Roma >> Siena">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Siena >> Borogna">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="Borogna >> Brescia">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+  <table id="All races">
+    <col>RANK</col><col>TIME</col><col>CAR</col>
+    <row><cell>1</cell><cell>59&apos;10&quot;</cell><cell>MERCEDES BENZ 300SLR</cell></row>
+    <row><cell>2</cell><cell>59&apos;20&quot;</cell><cell>MERCEDES BENZ SSKL</cell></row>
+    <row><cell>3</cell><cell>59&apos;30&quot;</cell><cell>BUGATTI T59</cell></row>
+    <row><cell>4</cell><cell>59&apos;40&quot;</cell><cell>ALFA ROMEO 8C 2300</cell></row>
+    <row><cell>5</cell><cell>59&apos;50&quot;</cell><cell>ALFA ROMEO Giulietta SZ</cell></row>
+    <row><cell>6</cell><cell>59&apos;60&quot;</cell><cell>PORSCHE 550A</cell></row>
+    <row><cell>7</cell><cell>59&apos;70&quot;</cell><cell>JAGUAR D-type</cell></row>
+    <row><cell>8</cell><cell>59&apos;80&quot;</cell><cell>FERRARI 290 MM</cell></row>
+  </table>
+</hi2txt>

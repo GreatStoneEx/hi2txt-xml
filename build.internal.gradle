@@ -122,7 +122,11 @@ task generateDefaultHiscoresXML {
             def game = it
             println game
             def binaryLocation = binaryLocations.get(0)
-            def hiFile = file("$mameInstallationFolder/hi/${game}.hi")
+            def hiFolder = file("$mameInstallationFolder/hiscore")
+            if (!hiFolder.exists()) {
+                hiFolder = file("$mameInstallationFolder/hi")
+            }
+            def hiFile = file("$hiFolder/${game}.hi")
             // delete mame_install/hi/<game>.hi
             if (hiFile.exists()) { hiFile.delete() }
             def nvramFolder = file("$mameInstallationFolder/nvram/$game")
@@ -140,7 +144,7 @@ task generateDefaultHiscoresXML {
                 ignoreExitValue true
                 standardOutput stdout
                 errorOutput errout
-                commandLine binaryLocation, "-xml", "-hiscoredat", "$mameInstallationFolder/plugins/hiscore/hiscore.dat", "-descr", "$projectDir/src/main/db", "-r", "$mameInstallationFolder/hi/$game"
+                commandLine binaryLocation, "-xml", "-hiscoredat", "$mameInstallationFolder/plugins/hiscore/hiscore.dat", "-descr", "$projectDir/src/main/db", "-r", "$hiFolder/$game"
             }
             // write hi2txt output into db_defaults/<game>.xml
             def errString = errout.toString("UTF-8").trim()

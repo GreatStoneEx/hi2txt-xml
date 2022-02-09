@@ -2,7 +2,11 @@
 <!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
 <hi2txt label="Galaga 88">
     <!--
-      tested with mame 0.229 and embedded hiscore.dat
+      history:
+        2022-02-09: minor: fix top score
+      tested with:
+        mame 0.239 and embedded hiscore.dat
+        mame 0.229 and embedded hiscore.dat
       source: GreatStone, https://github.com/stt
     //-->
 
@@ -31,7 +35,7 @@
           <column id="NAME"/>
           <column id="STAGE" format="stage"/>
         </table>
-        <field id="TOP SCORE"/>
+        <field id="TOP SCORE" format="*10"/>
     </output>
 
     <format id="stage">
