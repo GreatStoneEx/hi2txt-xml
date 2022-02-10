@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Final Fight (USA, set 1)">
+  <!--
+    tested with:
+      mame 0.239 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file=".hi">
+    <check>
+      <!-- optional: if defined and hiscore.dat provided, it allows to select the good structure version the provided file //-->
+      <definition>@:maincpu,program,ff850e,39,85,50
+                  @:maincpu,program,ff80a0,4,00,00</definition> <!-- ffightu, ffightbla //-->
+      <definition>@:maincpu,program,ff850e,39,85,50
+                  @:maincpu,program,ff80a0,4,00,01</definition> <!-- ffightj1, ffightua //-->
+      <definition>@:maincpu,program,ff850e,39,85,50
+                  @:maincpu,program,ff80a0,4,00,02</definition> <!-- ffightj2 //-->
+      <definition>@:maincpu,program,ff850e,39,85,50
+                  @:maincpu,program,ff80a0,4,00,03</definition> <!-- ffightj4, ffightub, ffightuc //-->
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>61</size>
+    </check>
+    <loop count="5" skip-first-bytes="2">
+      <elt size="2" type="raw"  id="EMPTY"/>
+      <elt size="2" type="int"  id="RANKPOINTER" base="10" format="rp"/>
+    </loop>
+    <loop count="5" skip-last-bytes="1">
+      <elt size="4" type="int"  id="SCORE"   table-index="RANKPOINTER:index_from_value" base="16"/>
+      <elt size="3" type="text" id="NAME"    table-index="RANKPOINTER:index_from_value"/>
+      <elt size="1" type="int"  id="UNKNOWN" table-index="RANKPOINTER:index_from_value" base="16"/>
+    </loop>
+    <elt size="4" type="int" id="TOP SCORE" base="16"/>
+  </structure>
+    
+  <output>
+    <table>
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"/>
+      <column id="NAME"/>
+      <column id="UNKNOWN"     display="debug"/>
+      <column id="RANKPOINTER" display="debug"/>
+    </table>
+    <field id="TOP SCORE"      display="extra"/>
+  </output>
+
+  <format id="rp">
+    <substract>34080</substract>
+    <divide>8</divide>
+  </format>
+</hi2txt>
