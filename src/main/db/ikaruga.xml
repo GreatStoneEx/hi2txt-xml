@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="Ikaruga">
+  <!--
+    tested with:
+      mame 0.239 and related hiscore.dat
+    source: GreatStone
+  //-->
+  
+  <structure file="sram">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure version the provided file
+                     useful if multiple structures are defined, but hiscore.dat not provided //-->
+      <size>32768</size>
+    </check>
+    <elt size="564" type="raw"  id="UNKNOWN"/>
+    
+    <!-- EASY //-->
+    <loop count="20">
+      <elt size="4" type="int"  id="T1_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T1_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T1_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T1_CHAPTER"/>
+      <elt size="3" type="text" id="T1_NAME"/>
+      <elt size="1" type="int"  id="T1_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T1_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T1_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T1_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T2_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T2_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T2_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T2_EMPTY1"/>
+      <elt size="3" type="text" id="T2_NAME"/>
+      <elt size="1" type="int"  id="T2_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T2_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T2_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T2_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T3_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T3_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T3_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T3_EMPTY1"/>
+      <elt size="3" type="text" id="T3_NAME"/>
+      <elt size="1" type="int"  id="T3_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T3_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T3_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T3_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T4_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T4_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T4_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T4_EMPTY1"/>
+      <elt size="3" type="text" id="T4_NAME"/>
+      <elt size="1" type="int"  id="T4_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T4_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T4_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T4_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T5_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T5_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T5_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T5_EMPTY1"/>
+      <elt size="3" type="text" id="T5_NAME"/>
+      <elt size="1" type="int"  id="T5_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T5_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T5_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T5_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T6_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T6_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T6_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T6_EMPTY1"/>
+      <elt size="3" type="text" id="T6_NAME"/>
+      <elt size="1" type="int"  id="T6_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T6_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T6_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T6_EMPTY2"/>
+    </loop>
+
+    <loop count="20">
+      <elt size="4" type="int"  id="T7_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T7_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T7_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T7_CHAPTER"/>
+      <elt size="3" type="text" id="T7_NAME"/>
+      <elt size="1" type="int"  id="T7_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T7_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T7_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T7_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T8_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T8_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T8_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T8_EMPTY1"/>
+      <elt size="3" type="text" id="T8_NAME"/>
+      <elt size="1" type="int"  id="T8_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T8_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T8_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T8_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T9_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T9_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T9_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T9_EMPTY1"/>
+      <elt size="3" type="text" id="T9_NAME"/>
+      <elt size="1" type="int"  id="T9_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T9_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T9_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T9_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T10_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T10_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T10_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T10_EMPTY1"/>
+      <elt size="3" type="text" id="T10_NAME"/>
+      <elt size="1" type="int"  id="T10_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T10_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T10_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T10_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T11_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T11_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T11_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T11_EMPTY1"/>
+      <elt size="3" type="text" id="T11_NAME"/>
+      <elt size="1" type="int"  id="T11_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T11_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T11_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T11_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T12_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T12_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T12_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T12_EMPTY1"/>
+      <elt size="3" type="text" id="T12_NAME"/>
+      <elt size="1" type="int"  id="T12_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T12_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T12_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T12_EMPTY2"/>
+    </loop>
+    
+    <!-- NORMAL //-->
+    <loop count="20">
+      <elt size="4" type="int"  id="T13_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T13_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T13_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T13_CHAPTER"/>
+      <elt size="3" type="text" id="T13_NAME"/>
+      <elt size="1" type="int"  id="T13_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T13_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T13_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T13_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T14_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T14_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T14_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T14_EMPTY1"/>
+      <elt size="3" type="text" id="T14_NAME"/>
+      <elt size="1" type="int"  id="T14_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T14_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T14_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T14_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T15_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T15_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T15_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T15_EMPTY1"/>
+      <elt size="3" type="text" id="T15_NAME"/>
+      <elt size="1" type="int"  id="T15_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T15_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T15_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T15_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T16_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T16_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T16_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T16_EMPTY1"/>
+      <elt size="3" type="text" id="T16_NAME"/>
+      <elt size="1" type="int"  id="T16_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T16_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T16_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T16_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T17_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T17_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T17_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T17_EMPTY1"/>
+      <elt size="3" type="text" id="T17_NAME"/>
+      <elt size="1" type="int"  id="T17_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T17_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T17_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T17_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T18_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T18_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T18_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T18_EMPTY1"/>
+      <elt size="3" type="text" id="T18_NAME"/>
+      <elt size="1" type="int"  id="T18_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T18_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T18_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T18_EMPTY2"/>
+    </loop>
+
+    <loop count="20">
+      <elt size="4" type="int"  id="T19_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T19_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T19_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T19_CHAPTER"/>
+      <elt size="3" type="text" id="T19_NAME"/>
+      <elt size="1" type="int"  id="T19_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T19_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T19_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T19_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T20_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T20_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T20_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T20_EMPTY1"/>
+      <elt size="3" type="text" id="T20_NAME"/>
+      <elt size="1" type="int"  id="T20_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T20_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T20_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T20_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T21_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T21_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T21_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T21_EMPTY1"/>
+      <elt size="3" type="text" id="T21_NAME"/>
+      <elt size="1" type="int"  id="T21_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T21_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T21_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T21_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T22_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T22_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T22_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T22_EMPTY1"/>
+      <elt size="3" type="text" id="T22_NAME"/>
+      <elt size="1" type="int"  id="T22_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T22_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T22_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T22_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T23_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T23_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T23_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T23_EMPTY1"/>
+      <elt size="3" type="text" id="T23_NAME"/>
+      <elt size="1" type="int"  id="T23_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T23_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T23_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T23_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T24_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T24_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T24_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T24_EMPTY1"/>
+      <elt size="3" type="text" id="T24_NAME"/>
+      <elt size="1" type="int"  id="T24_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T24_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T24_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T24_EMPTY2"/>
+    </loop>
+
+    <!-- HARD //-->
+    <loop count="20">
+      <elt size="4" type="int"  id="T25_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T25_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T25_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T25_CHAPTER"/>
+      <elt size="3" type="text" id="T25_NAME"/>
+      <elt size="1" type="int"  id="T25_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T25_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T25_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T25_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T26_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T26_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T26_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T26_EMPTY1"/>
+      <elt size="3" type="text" id="T26_NAME"/>
+      <elt size="1" type="int"  id="T26_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T26_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T26_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T26_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T27_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T27_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T27_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T27_EMPTY1"/>
+      <elt size="3" type="text" id="T27_NAME"/>
+      <elt size="1" type="int"  id="T27_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T27_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T27_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T27_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T28_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T28_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T28_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T28_EMPTY1"/>
+      <elt size="3" type="text" id="T28_NAME"/>
+      <elt size="1" type="int"  id="T28_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T28_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T28_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T28_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T29_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T29_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T29_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T29_EMPTY1"/>
+      <elt size="3" type="text" id="T29_NAME"/>
+      <elt size="1" type="int"  id="T29_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T29_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T29_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T29_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T30_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T30_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T30_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T30_EMPTY1"/>
+      <elt size="3" type="text" id="T30_NAME"/>
+      <elt size="1" type="int"  id="T30_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T30_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T30_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T30_EMPTY2"/>
+    </loop>
+
+    <loop count="20">
+      <elt size="4" type="int"  id="T31_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T31_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T31_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T31_CHAPTER"/>
+      <elt size="3" type="text" id="T31_NAME"/>
+      <elt size="1" type="int"  id="T31_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T31_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T31_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T31_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T32_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T32_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T32_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T32_EMPTY1"/>
+      <elt size="3" type="text" id="T32_NAME"/>
+      <elt size="1" type="int"  id="T32_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T32_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T32_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T32_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T33_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T33_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T33_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T33_EMPTY1"/>
+      <elt size="3" type="text" id="T33_NAME"/>
+      <elt size="1" type="int"  id="T33_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T33_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T33_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T33_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T34_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T34_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T34_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T34_EMPTY1"/>
+      <elt size="3" type="text" id="T34_NAME"/>
+      <elt size="1" type="int"  id="T34_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T34_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T34_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T34_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T35_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T35_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T35_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T35_EMPTY1"/>
+      <elt size="3" type="text" id="T35_NAME"/>
+      <elt size="1" type="int"  id="T35_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T35_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T35_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T35_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T36_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T36_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T36_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T36_EMPTY1"/>
+      <elt size="3" type="text" id="T36_NAME"/>
+      <elt size="1" type="int"  id="T36_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T36_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T36_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T36_EMPTY2"/>
+    </loop>
+
+    <!-- ?? //-->
+    <loop count="20">
+      <elt size="4" type="int"  id="T37_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T37_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T37_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T37_CHAPTER"/>
+      <elt size="3" type="text" id="T37_NAME"/>
+      <elt size="1" type="int"  id="T37_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T37_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T37_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T37_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T38_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T38_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T38_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T38_EMPTY1"/>
+      <elt size="3" type="text" id="T38_NAME"/>
+      <elt size="1" type="int"  id="T38_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T38_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T38_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T38_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T39_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T39_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T39_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T39_EMPTY1"/>
+      <elt size="3" type="text" id="T39_NAME"/>
+      <elt size="1" type="int"  id="T39_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T39_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T39_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T39_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T40_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T40_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T40_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T40_EMPTY1"/>
+      <elt size="3" type="text" id="T40_NAME"/>
+      <elt size="1" type="int"  id="T40_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T40_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T40_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T40_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T41_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T41_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T41_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T41_EMPTY1"/>
+      <elt size="3" type="text" id="T41_NAME"/>
+      <elt size="1" type="int"  id="T41_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T41_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T41_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T41_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T42_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T42_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T42_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T42_EMPTY1"/>
+      <elt size="3" type="text" id="T42_NAME"/>
+      <elt size="1" type="int"  id="T42_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T42_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T42_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T42_EMPTY2"/>
+    </loop>
+
+    <loop count="20">
+      <elt size="4" type="int"  id="T43_SCORE"    base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T43_UNKNOWN1" base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T43_UNKNOWN2" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T43_CHAPTER"/>
+      <elt size="3" type="text" id="T43_NAME"/>
+      <elt size="1" type="int"  id="T43_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T43_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T43_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T43_EMPTY"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T44_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T44_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T44_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T44_EMPTY1"/>
+      <elt size="3" type="text" id="T44_NAME"/>
+      <elt size="1" type="int"  id="T44_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T44_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T44_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T44_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T45_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T45_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T45_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T45_EMPTY1"/>
+      <elt size="3" type="text" id="T45_NAME"/>
+      <elt size="1" type="int"  id="T45_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T45_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T45_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T45_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T46_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T46_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T46_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T46_EMPTY1"/>
+      <elt size="3" type="text" id="T46_NAME"/>
+      <elt size="1" type="int"  id="T46_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T46_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T46_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T46_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T47_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T47_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T47_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T47_EMPTY1"/>
+      <elt size="3" type="text" id="T47_NAME"/>
+      <elt size="1" type="int"  id="T47_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T47_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T47_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T47_EMPTY2"/>
+    </loop>
+    <loop count="20">
+      <elt size="4" type="int"  id="T48_SCORE"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T48_CHAIN"   base="10" endianness="little_endian"/>
+      <elt size="2" type="int"  id="T48_UNKNOWN" base="10" endianness="little_endian"/>
+      <elt size="1" type="int"  id="T48_EMPTY1"/>
+      <elt size="3" type="text" id="T48_NAME"/>
+      <elt size="1" type="int"  id="T48_DATE_YEAR"  base="10"/>
+      <elt size="1" type="int"  id="T48_DATE_MONTH" base="10"/>
+      <elt size="1" type="int"  id="T48_DATE_DAY"   base="10"/>
+      <elt size="1" type="int"  id="T48_EMPTY2"/>
+    </loop>
+  </structure>
+    
+  <output>
+    <!-- EASY //-->
+    <table id="EASY ALL/1-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T1_SCORE"/>
+      <column id="NAME"     src="T1_NAME"/>
+      <column id="CHAPTER"  src="T1_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date1"/>
+      <column id="UNKNOWN1" src="T1_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T1_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T1_EMPTY"    display="debug"/>
+    </table>
+    <table id="EASY Chapter 1/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T2_SCORE"/>
+      <column id="NAME"    src="T2_NAME"/>
+      <column id="CHAPTER" src="T2_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date2"/>
+      <column id="UNKNOWN" src="T2_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T2_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T2_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 2/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T3_SCORE"/>
+      <column id="NAME"    src="T3_NAME"/>
+      <column id="CHAPTER" src="T3_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date3"/>
+      <column id="UNKNOWN" src="T3_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T3_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T3_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 3/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T4_SCORE"/>
+      <column id="NAME"    src="T4_NAME"/>
+      <column id="CHAPTER" src="T4_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date4"/>
+      <column id="UNKNOWN" src="T4_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T4_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T4_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 4/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T5_SCORE"/>
+      <column id="NAME"    src="T5_NAME"/>
+      <column id="CHAPTER" src="T5_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date5"/>
+      <column id="UNKNOWN" src="T5_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T5_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T5_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Final Chapter/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T6_SCORE"/>
+      <column id="NAME"    src="T6_NAME"/>
+      <column id="CHAPTER" src="T6_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date6"/>
+      <column id="UNKNOWN" src="T6_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T6_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T6_EMPTY2"  display="debug"/>
+    </table>
+
+    <table id="EASY ALL/2-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T7_SCORE"/>
+      <column id="NAME"     src="T7_NAME"/>
+      <column id="CHAPTER"  src="T7_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date7"/>
+      <column id="UNKNOWN1" src="T7_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T7_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T7_EMPTY"    display="debug"/>
+    </table>
+    <table id="EASY Chapter 1/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T8_SCORE"/>
+      <column id="NAME"    src="T8_NAME"/>
+      <column id="CHAPTER" src="T8_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date8"/>
+      <column id="UNKNOWN" src="T8_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T8_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T8_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 2/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T9_SCORE"/>
+      <column id="NAME"    src="T9_NAME"/>
+      <column id="CHAPTER" src="T9_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date9"/>
+      <column id="UNKNOWN" src="T9_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T9_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T9_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 3/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T10_SCORE"/>
+      <column id="NAME"    src="T10_NAME"/>
+      <column id="CHAPTER" src="T10_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date10"/>
+      <column id="UNKNOWN" src="T10_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T10_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T10_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Chapter 4/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T11_SCORE"/>
+      <column id="NAME"    src="T11_NAME"/>
+      <column id="CHAPTER" src="T11_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date11"/>
+      <column id="UNKNOWN" src="T11_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T11_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T11_EMPTY2"  display="debug"/>
+    </table>
+    <table id="EASY Final Chapter/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T12_SCORE"/>
+      <column id="NAME"    src="T12_NAME"/>
+      <column id="CHAPTER" src="T12_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date12"/>
+      <column id="UNKNOWN" src="T12_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T12_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T12_EMPTY2"  display="debug"/>
+    </table>
+
+    <!-- NORMAL //-->
+    <table id="NORMAL ALL/1-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T13_SCORE"/>
+      <column id="NAME"     src="T13_NAME"/>
+      <column id="CHAPTER"  src="T13_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date13"/>
+      <column id="UNKNOWN1" src="T13_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T13_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T13_EMPTY"    display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 1/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T14_SCORE"/>
+      <column id="NAME"    src="T14_NAME"/>
+      <column id="CHAPTER" src="T14_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date14"/>
+      <column id="UNKNOWN" src="T14_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T14_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T14_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 2/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T15_SCORE"/>
+      <column id="NAME"    src="T15_NAME"/>
+      <column id="CHAPTER" src="T15_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date15"/>
+      <column id="UNKNOWN" src="T15_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T15_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T15_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 3/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T16_SCORE"/>
+      <column id="NAME"    src="T16_NAME"/>
+      <column id="CHAPTER" src="T16_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date16"/>
+      <column id="UNKNOWN" src="T16_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T16_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T16_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 4/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T17_SCORE"/>
+      <column id="NAME"    src="T17_NAME"/>
+      <column id="CHAPTER" src="T17_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date17"/>
+      <column id="UNKNOWN" src="T17_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T17_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T17_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Final Chapter/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T18_SCORE"/>
+      <column id="NAME"    src="T18_NAME"/>
+      <column id="CHAPTER" src="T18_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date18"/>
+      <column id="UNKNOWN" src="T18_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T18_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T18_EMPTY2"  display="debug"/>
+    </table>
+
+    <table id="NORMAL ALL/2-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T19_SCORE"/>
+      <column id="NAME"     src="T19_NAME"/>
+      <column id="CHAPTER"  src="T19_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date19"/>
+      <column id="UNKNOWN1" src="T19_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T19_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T19_EMPTY"    display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 1/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T20_SCORE"/>
+      <column id="NAME"    src="T20_NAME"/>
+      <column id="CHAPTER" src="T20_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date20"/>
+      <column id="UNKNOWN" src="T20_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T20_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T20_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 2/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T21_SCORE"/>
+      <column id="NAME"    src="T21_NAME"/>
+      <column id="CHAPTER" src="T21_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date21"/>
+      <column id="UNKNOWN" src="T21_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T21_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T21_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 3/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T22_SCORE"/>
+      <column id="NAME"    src="T22_NAME"/>
+      <column id="CHAPTER" src="T22_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date22"/>
+      <column id="UNKNOWN" src="T22_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T22_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T22_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Chapter 4/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T23_SCORE"/>
+      <column id="NAME"    src="T23_NAME"/>
+      <column id="CHAPTER" src="T23_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date23"/>
+      <column id="UNKNOWN" src="T23_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T23_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T23_EMPTY2"  display="debug"/>
+    </table>
+    <table id="NORMAL Final Chapter/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T24_SCORE"/>
+      <column id="NAME"    src="T24_NAME"/>
+      <column id="CHAPTER" src="T24_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date24"/>
+      <column id="UNKNOWN" src="T24_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T24_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T24_EMPTY2"  display="debug"/>
+    </table>
+
+    <!-- HARD //-->
+    <table id="HARD ALL/1-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T25_SCORE"/>
+      <column id="NAME"     src="T25_NAME"/>
+      <column id="CHAPTER"  src="T25_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date25"/>
+      <column id="UNKNOWN1" src="T25_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T25_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T25_EMPTY"    display="debug"/>
+    </table>
+    <table id="HARD Chapter 1/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T26_SCORE"/>
+      <column id="NAME"    src="T26_NAME"/>
+      <column id="CHAPTER" src="T26_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date26"/>
+      <column id="UNKNOWN" src="T26_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T26_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T26_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 2/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T27_SCORE"/>
+      <column id="NAME"    src="T27_NAME"/>
+      <column id="CHAPTER" src="T27_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date27"/>
+      <column id="UNKNOWN" src="T27_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T27_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T27_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 3/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T28_SCORE"/>
+      <column id="NAME"    src="T28"/>
+      <column id="CHAPTER" src="T28_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date28"/>
+      <column id="UNKNOWN" src="T28_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T28_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T28_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 4/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T29_SCORE"/>
+      <column id="NAME"    src="T29_NAME"/>
+      <column id="CHAPTER" src="T29_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date29"/>
+      <column id="UNKNOWN" src="T29_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T29_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T29_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Final Chapter/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T30_SCORE"/>
+      <column id="NAME"    src="T30_NAME"/>
+      <column id="CHAPTER" src="T30_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date30"/>
+      <column id="UNKNOWN" src="T30_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T30_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T30_EMPTY2"  display="debug"/>
+    </table>
+
+    <table id="HARD ALL/2-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T31_SCORE"/>
+      <column id="NAME"     src="T31_NAME"/>
+      <column id="CHAPTER"  src="T31_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date31"/>
+      <column id="UNKNOWN1" src="T31_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T31_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T31_EMPTY"    display="debug"/>
+    </table>
+    <table id="HARD Chapter 1/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T32_SCORE"/>
+      <column id="NAME"    src="T32_NAME"/>
+      <column id="CHAPTER" src="T32_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date32"/>
+      <column id="UNKNOWN" src="T32_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T32_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T32_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 2/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T33_SCORE"/>
+      <column id="NAME"    src="T33_NAME"/>
+      <column id="CHAPTER" src="T33_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date33"/>
+      <column id="UNKNOWN" src="T33_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T33_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T33_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 3/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T34_SCORE"/>
+      <column id="NAME"    src="T34_NAME"/>
+      <column id="CHAPTER" src="T34_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date34"/>
+      <column id="UNKNOWN" src="T34_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T34_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T34_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Chapter 4/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T35_SCORE"/>
+      <column id="NAME"    src="T35_NAME"/>
+      <column id="CHAPTER" src="T35_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date35"/>
+      <column id="UNKNOWN" src="T35_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T35_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T35_EMPTY2"  display="debug"/>
+    </table>
+    <table id="HARD Final Chapter/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T36_SCORE"/>
+      <column id="NAME"    src="T36_NAME"/>
+      <column id="CHAPTER" src="T36_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date36"/>
+      <column id="UNKNOWN" src="T36_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T36_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T36_EMPTY2"  display="debug"/>
+    </table>
+
+    <!-- ?? //-->
+    <table id="?? ALL/1-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T37_SCORE"/>
+      <column id="NAME"     src="T37_NAME"/>
+      <column id="CHAPTER"  src="T37_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date37"/>
+      <column id="UNKNOWN1" src="T37_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T37_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T37_EMPTY"    display="debug"/>
+    </table>
+    <table id="?? Chapter 1/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T38_SCORE"/>
+      <column id="NAME"    src="T38_NAME"/>
+      <column id="CHAPTER" src="T38_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date38"/>
+      <column id="UNKNOWN" src="T38_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T38_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T38_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 2/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T39_SCORE"/>
+      <column id="NAME"    src="T39_NAME"/>
+      <column id="CHAPTER" src="T39_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date39"/>
+      <column id="UNKNOWN" src="T39_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T39_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T39_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 3/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T40_SCORE"/>
+      <column id="NAME"    src="T40"/>
+      <column id="CHAPTER" src="T40_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date40"/>
+      <column id="UNKNOWN" src="T40_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T40_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T40_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 4/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T41_SCORE"/>
+      <column id="NAME"    src="T41_NAME"/>
+      <column id="CHAPTER" src="T41_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date41"/>
+      <column id="UNKNOWN" src="T41_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T41_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T41_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Final Chapter/1-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T42_SCORE"/>
+      <column id="NAME"    src="T42_NAME"/>
+      <column id="CHAPTER" src="T42_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date42"/>
+      <column id="UNKNOWN" src="T42_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T42_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T42_EMPTY2"  display="debug"/>
+    </table>
+
+    <table id="?? ALL/2-Player">
+      <column id="RANK"     src="index"       format="+1"/>
+      <column id="SCORE"    src="T43_SCORE"/>
+      <column id="NAME"     src="T43_NAME"/>
+      <column id="CHAPTER"  src="T43_CHAPTER"  format="+1"/>
+      <column id="DATE"                       format="date43"/>
+      <column id="UNKNOWN1" src="T43_UNKNOWN1" display="debug"/>
+      <column id="UNKNOWN2" src="T43_UNKNOWN2" display="debug"/>
+      <column id="EMPTY"    src="T43_EMPTY"    display="debug"/>
+    </table>
+    <table id="?? Chapter 1/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T44_SCORE"/>
+      <column id="NAME"    src="T44_NAME"/>
+      <column id="CHAPTER" src="T44_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date44"/>
+      <column id="UNKNOWN" src="T44_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T44_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T44_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 2/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T45_SCORE"/>
+      <column id="NAME"    src="T45_NAME"/>
+      <column id="CHAPTER" src="T45_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date45"/>
+      <column id="UNKNOWN" src="T45_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T45_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T45_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 3/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T46_SCORE"/>
+      <column id="NAME"    src="T46_NAME"/>
+      <column id="CHAPTER" src="T46_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date46"/>
+      <column id="UNKNOWN" src="T46_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T46_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T46_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Chapter 4/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T47_SCORE"/>
+      <column id="NAME"    src="T47_NAME"/>
+      <column id="CHAPTER" src="T47_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date47"/>
+      <column id="UNKNOWN" src="T47_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T47_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T47_EMPTY2"  display="debug"/>
+    </table>
+    <table id="?? Final Chapter/2-Player">
+      <column id="RANK"    src="index"      format="+1"/>
+      <column id="SCORE"   src="T48_SCORE"/>
+      <column id="NAME"    src="T48_NAME"/>
+      <column id="CHAPTER" src="T48_CHAPTER" format="+1"/>
+      <column id="DATE"                     format="date48"/>
+      <column id="UNKNOWN" src="T48_UNKNOWN" display="debug"/>
+      <column id="EMPTY1"  src="T48_EMPTY1"  display="debug"/>
+      <column id="EMPTY2"  src="T48_EMPTY2"  display="debug"/>
+    </table>
+  </output>
+
+  <format id="date1"> <concat><column id="T1_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T1_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T1_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date2"> <concat><column id="T2_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T2_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T2_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date3"> <concat><column id="T3_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T3_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T3_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date4"> <concat><column id="T4_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T4_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T4_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date5"> <concat><column id="T5_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T5_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T5_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date6"> <concat><column id="T6_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T6_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T6_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date7"> <concat><column id="T7_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T7_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T7_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date8"> <concat><column id="T8_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T8_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T8_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date9"> <concat><column id="T9_DATE_YEAR"  format="PadL20"/><txt>/</txt><column id="T9_DATE_MONTH"  format="PadL20"/><txt>/</txt><column id="T9_DATE_DAY"  format="PadL20"/></concat></format>
+  <format id="date10"><concat><column id="T10_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T10_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T10_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date11"><concat><column id="T11_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T11_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T11_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date12"><concat><column id="T12_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T12_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T12_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date13"><concat><column id="T13_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T13_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T13_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date14"><concat><column id="T14_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T14_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T14_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date15"><concat><column id="T15_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T15_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T15_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date16"><concat><column id="T16_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T16_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T16_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date17"><concat><column id="T17_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T17_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T17_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date18"><concat><column id="T18_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T18_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T18_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date19"><concat><column id="T19_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T19_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T19_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date20"><concat><column id="T20_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T20_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T20_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date21"><concat><column id="T21_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T21_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T21_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date22"><concat><column id="T22_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T22_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T22_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date23"><concat><column id="T23_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T23_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T23_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date24"><concat><column id="T24_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T24_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T24_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date25"><concat><column id="T25_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T25_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T25_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date26"><concat><column id="T26_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T26_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T26_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date27"><concat><column id="T27_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T27_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T27_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date28"><concat><column id="T28_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T28_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T28_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date29"><concat><column id="T29_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T29_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T29_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date30"><concat><column id="T30_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T30_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T30_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date31"><concat><column id="T31_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T31_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T31_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date32"><concat><column id="T32_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T32_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T32_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date33"><concat><column id="T33_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T33_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T33_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date34"><concat><column id="T34_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T34_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T34_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date35"><concat><column id="T35_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T35_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T35_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date36"><concat><column id="T36_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T36_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T36_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date37"><concat><column id="T37_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T37_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T37_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date38"><concat><column id="T38_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T38_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T38_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date39"><concat><column id="T39_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T39_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T39_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date40"><concat><column id="T40_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T40_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T40_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date41"><concat><column id="T41_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T41_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T41_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date42"><concat><column id="T42_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T42_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T42_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date43"><concat><column id="T43_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T43_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T43_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date44"><concat><column id="T44_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T44_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T44_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date45"><concat><column id="T45_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T45_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T45_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date46"><concat><column id="T46_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T46_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T46_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date47"><concat><column id="T47_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T47_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T47_DATE_DAY" format="PadL20"/></concat></format>
+  <format id="date48"><concat><column id="T48_DATE_YEAR" format="PadL20"/><txt>/</txt><column id="T48_DATE_MONTH" format="PadL20"/><txt>/</txt><column id="T48_DATE_DAY" format="PadL20"/></concat></format>
+</hi2txt>
