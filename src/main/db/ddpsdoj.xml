@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE hi2txt SYSTEM "hi2txt.dtd">
+<hi2txt label="DoDonpachi Saidaioujou">
+  <!--
+    tested with:
+      mame 0.239
+    source: GreatStone
+  //-->
+  
+  <structure file="game">
+    <check>
+      <!-- optional: if defined, it allows to select the good structure versus the provided file
+                     useful if multiple structures are defined but hiscore.dat not provided //-->
+      <size>8468</size>
+    </check>
+    <elt size="36" type="raw" id="DATA"/>
+    <loop count="10">
+      <elt size="14" type="int"  id="SHOTA_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="SHOTA_EMPTY1"/>
+      <elt size="2"  type="int"  id="SHOTA_PLAYER"/>
+      <elt size="2"  type="raw"  id="SHOTA_EMPTY12"/>
+      <elt size="2"  type="int"  id="SHOTA_SHIP"/>
+      <elt size="2"  type="raw"  id="SHOTA_EMPTY2"/>
+      <elt size="2"  type="int"  id="SHOTA_MODE"/>
+      <elt size="2"  type="raw"  id="SHOTA_EMPTY3"/>
+      <elt size="10" type="raw"  id="SHOTA_AREA"/>
+      <elt size="2"  type="int"  id="SHOTA_DATA1"/>
+      <elt size="4"  type="raw"  id="SHOTA_EMPTY5"/>
+      <elt size="2"  type="int"  id="SHOTA_CONTINUE"/>
+      <elt size="3"  type="text" id="SHOTA_NAME"/>
+      <elt size="1"  type="raw"  id="SHOTA_NAMEEND"/>
+      <elt size="2"  type="raw"  id="SHOTA_EMPTY6"/>
+      <elt size="2"  type="int"  id="SHOTA_AUTOBOMB"/>
+    </loop>
+    <loop count="10">
+      <elt size="14" type="int"  id="LASERA_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="LASERA_EMPTY1"/>
+      <elt size="2"  type="int"  id="LASERA_PLAYER"/>
+      <elt size="2"  type="raw"  id="LASERA_EMPTY12"/>
+      <elt size="2"  type="int"  id="LASERA_SHIP"/>
+      <elt size="2"  type="raw"  id="LASERA_EMPTY2"/>
+      <elt size="2"  type="int"  id="LASERA_MODE"/>
+      <elt size="2"  type="raw"  id="LASERA_EMPTY3"/>
+      <elt size="10" type="raw"  id="LASERA_AREA"/>
+      <elt size="2"  type="int"  id="LASERA_DATA1"/>
+      <elt size="4"  type="raw"  id="LASERA_EMPTY5"/>
+      <elt size="2"  type="int"  id="LASERA_CONTINUE"/>
+      <elt size="3"  type="text" id="LASERA_NAME"/>
+      <elt size="1"  type="raw"  id="LASERA_NAMEEND"/>
+      <elt size="2"  type="raw"  id="LASERA_EMPTY6"/>
+      <elt size="2"  type="int"  id="LASERA_AUTOBOMB"/>
+    </loop>
+    <loop count="8">
+      <elt size="14" type="int"  id="EXPERTA_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTA_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTA_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTA_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTA_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTA_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTA_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTA_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTA_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTA_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTA_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTA_AUTOBOMB"/>
+    </loop>
+    <loop count="1" start="8">
+      <elt size="14" type="int"  id="EXPERTA_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTA_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTA_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTA_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTA_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTA_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTA_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTA_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTA_CONTINUE"/>
+      <elt size="4"  type="raw"  id="DATA2"/>
+      <elt size="3"  type="text" id="EXPERTA_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTA_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTA_AUTOBOMB"/>
+    </loop>
+    <loop count="1" start="9">
+      <elt size="14" type="int"  id="EXPERTA_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTA_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTA_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTA_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTA_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTA_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTA_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTA_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTA_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTA_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTA_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTA_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTA_AUTOBOMB"/>
+    </loop>
+    <loop count="10">
+      <elt size="14" type="int"  id="SHOTB_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="SHOTB_EMPTY1"/>
+      <elt size="2"  type="int"  id="SHOTB_PLAYER"/>
+      <elt size="2"  type="raw"  id="SHOTB_EMPTY12"/>
+      <elt size="2"  type="int"  id="SHOTB_SHIP"/>
+      <elt size="2"  type="raw"  id="SHOTB_EMPTY2"/>
+      <elt size="2"  type="int"  id="SHOTB_MODE"/>
+      <elt size="2"  type="raw"  id="SHOTB_EMPTY3"/>
+      <elt size="10" type="raw"  id="SHOTB_AREA"/>
+      <elt size="2"  type="int"  id="SHOTB_DATA1"/>
+      <elt size="4"  type="raw"  id="SHOTB_EMPTY5"/>
+      <elt size="2"  type="int"  id="SHOTB_CONTINUE"/>
+      <elt size="3"  type="text" id="SHOTB_NAME"/>
+      <elt size="1"  type="raw"  id="SHOTB_NAMEEND"/>
+      <elt size="2"  type="raw"  id="SHOTB_EMPTY6"/>
+      <elt size="2"  type="int"  id="SHOTB_AUTOBOMB"/>
+    </loop>
+    <loop count="10">
+      <elt size="14" type="int"  id="LASERB_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="LASERB_EMPTY1"/>
+      <elt size="2"  type="int"  id="LASERB_PLAYER"/>
+      <elt size="2"  type="raw"  id="LASERB_EMPTY12"/>
+      <elt size="2"  type="int"  id="LASERB_SHIP"/>
+      <elt size="2"  type="raw"  id="LASERB_EMPTY2"/>
+      <elt size="2"  type="int"  id="LASERB_MODE"/>
+      <elt size="2"  type="raw"  id="LASERB_EMPTY3"/>
+      <elt size="10" type="raw"  id="LASERB_AREA"/>
+      <elt size="2"  type="int"  id="LASERB_DATA1"/>
+      <elt size="4"  type="raw"  id="LASERB_EMPTY5"/>
+      <elt size="2"  type="int"  id="LASERB_CONTINUE"/>
+      <elt size="3"  type="text" id="LASERB_NAME"/>
+      <elt size="1"  type="raw"  id="LASERB_NAMEEND"/>
+      <elt size="2"  type="raw"  id="LASERB_EMPTY6"/>
+      <elt size="2"  type="int"  id="LASERB_AUTOBOMB"/>
+    </loop>
+    <loop count="8">
+      <elt size="14" type="int"  id="EXPERTB_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTB_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTB_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTB_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTB_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTB_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTB_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTB_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTB_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTB_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTB_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTB_AUTOBOMB"/>
+    </loop>
+    <loop count="1" start="8">
+      <elt size="14" type="int"  id="EXPERTB_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTB_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTB_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTB_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTB_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTB_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTB_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTB_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTB_CONTINUE"/>
+      <elt size="4"  type="raw"  id="DATA3"/>
+      <elt size="3"  type="text" id="EXPERTB_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTB_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTB_AUTOBOMB"/>
+    </loop>
+    <loop count="1" start="9">
+      <elt size="14" type="int"  id="EXPERTB_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTB_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTB_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTB_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTB_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTB_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTB_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTB_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTB_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTB_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTB_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTB_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTB_AUTOBOMB"/>
+    </loop>
+    <loop count="10">
+      <elt size="14" type="int"  id="SHOTC_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="SHOTC_EMPTY1"/>
+      <elt size="2"  type="int"  id="SHOTC_PLAYER"/>
+      <elt size="2"  type="raw"  id="SHOTC_EMPTY12"/>
+      <elt size="2"  type="int"  id="SHOTC_SHIP"/>
+      <elt size="2"  type="raw"  id="SHOTC_EMPTY2"/>
+      <elt size="2"  type="int"  id="SHOTC_MODE"/>
+      <elt size="2"  type="raw"  id="SHOTC_EMPTY3"/>
+      <elt size="10" type="raw"  id="SHOTC_AREA"/>
+      <elt size="2"  type="int"  id="SHOTC_DATA1"/>
+      <elt size="4"  type="raw"  id="SHOTC_EMPTY5"/>
+      <elt size="2"  type="int"  id="SHOTC_CONTINUE"/>
+      <elt size="3"  type="text" id="SHOTC_NAME"/>
+      <elt size="1"  type="raw"  id="SHOTC_NAMEEND"/>
+      <elt size="2"  type="raw"  id="SHOTC_EMPTY6"/>
+      <elt size="2"  type="int"  id="SHOTC_AUTOBOMB"/>
+    </loop>
+    <loop count="10">
+      <elt size="14" type="int"  id="LASERC_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="LASERC_EMPTY1"/>
+      <elt size="2"  type="int"  id="LASERC_PLAYER"/>
+      <elt size="2"  type="raw"  id="LASERC_EMPTY12"/>
+      <elt size="2"  type="int"  id="LASERC_SHIP"/>
+      <elt size="2"  type="raw"  id="LASERC_EMPTY2"/>
+      <elt size="2"  type="int"  id="LASERC_MODE"/>
+      <elt size="2"  type="raw"  id="LASERC_EMPTY3"/>
+      <elt size="10" type="raw"  id="LASERC_AREA"/>
+      <elt size="2"  type="int"  id="LASERC_DATA1"/>
+      <elt size="4"  type="raw"  id="LASERC_EMPTY5"/>
+      <elt size="2"  type="int"  id="LASERC_CONTINUE"/>
+      <elt size="3"  type="text" id="LASERC_NAME"/>
+      <elt size="1"  type="raw"  id="LASERC_NAMEEND"/>
+      <elt size="2"  type="raw"  id="LASERC_EMPTY6"/>
+      <elt size="2"  type="int"  id="LASERC_AUTOBOMB"/>
+    </loop>
+    <loop count="7">
+      <elt size="14" type="int"  id="EXPERTC_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTC_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTC_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTC_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTC_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTC_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTC_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTC_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTC_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTC_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTC_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTC_AUTOBOMB"/>
+    </loop>
+    <loop count="1" start="7">
+      <elt size="14" type="int"  id="EXPERTC_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTC_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTC_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTC_SHIP"/>
+      <elt size="4"  type="raw"  id="DATA4"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTC_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTC_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTC_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTC_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTC_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTC_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTC_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTC_AUTOBOMB"/>
+    </loop>
+    <loop count="2" start="8">
+      <elt size="14" type="int"  id="EXPERTC_SCORE"    base="16" nibble-skip="odd" endianness="little_endian"/>
+      <elt size="20" type="raw"  id="EXPERTC_EMPTY1"/>
+      <elt size="2"  type="int"  id="EXPERTC_PLAYER"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY12"/>
+      <elt size="2"  type="int"  id="EXPERTC_SHIP"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY2"/>
+      <elt size="2"  type="int"  id="EXPERTC_MODE"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY3"/>
+      <elt size="10" type="raw"  id="EXPERTC_AREA"/>
+      <elt size="2"  type="int"  id="EXPERTC_DATA1"/>
+      <elt size="4"  type="raw"  id="EXPERTC_EMPTY5"/>
+      <elt size="2"  type="int"  id="EXPERTC_CONTINUE"/>
+      <elt size="3"  type="text" id="EXPERTC_NAME"/>
+      <elt size="1"  type="raw"  id="EXPERTC_NAMEEND"/>
+      <elt size="2"  type="raw"  id="EXPERTC_EMPTY6"/>
+      <elt size="2"  type="int"  id="EXPERTC_AUTOBOMB"/>
+    </loop>
+  </structure>
+  
+  <output>
+    <table id="TYPE-A SHOT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="SHOTA_SCORE"/>
+      <column id="NAME"     src="SHOTA_NAME"/>
+      <column id="NAME_END" src="SHOTA_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="SHOTA_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="SHOTA_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="SHOTA_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="SHOTA_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="SHOTA_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="SHOTA_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="SHOTA_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="SHOTA_AREA"     format="area"/>
+      <column id="DATA1"    src="SHOTA_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="SHOTA_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="SHOTA_CONTINUE"/>
+      <column id="EMPTY6"   src="SHOTA_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="SHOTA_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-A LASER">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="LASERA_SCORE"/>
+      <column id="NAME"     src="LASERA_NAME"/>
+      <column id="NAME_END" src="LASERA_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="LASERA_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="LASERA_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="LASERA_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="LASERA_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="LASERA_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="LASERA_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="LASERA_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="LASERA_AREA"     format="area"/>
+      <column id="DATA1"    src="LASERA_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="LASERA_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="LASERA_CONTINUE"/>
+      <column id="EMPTY6"   src="LASERA_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="LASERA_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-A EXPERT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="EXPERTA_SCORE"/>
+      <column id="NAME"     src="EXPERTA_NAME"/>
+      <column id="NAME_END" src="EXPERTA_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="EXPERTA_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="EXPERTA_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="EXPERTA_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="EXPERTA_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="EXPERTA_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="EXPERTA_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="EXPERTA_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="EXPERTA_AREA"     format="area"/>
+      <column id="DATA1"    src="EXPERTA_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="EXPERTA_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="EXPERTA_CONTINUE"/>
+      <column id="EMPTY6"   src="EXPERTA_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="EXPERTA_AUTOBOMB" format="autobomb"/>
+    </table>
+
+    <table id="TYPE-B SHOT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="SHOTB_SCORE"/>
+      <column id="NAME"     src="SHOTB_NAME"/>
+      <column id="NAME_END" src="SHOTB_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="SHOTB_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="SHOTB_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="SHOTB_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="SHOTB_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="SHOTB_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="SHOTB_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="SHOTB_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="SHOTB_AREA"     format="area"/>
+      <column id="DATA1"    src="SHOTB_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="SHOTB_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="SHOTB_CONTINUE"/>
+      <column id="EMPTY6"   src="SHOTB_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="SHOTB_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-B LASER">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="LASERB_SCORE"/>
+      <column id="NAME"     src="LASERB_NAME"/>
+      <column id="NAME_END" src="LASERB_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="LASERB_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="LASERB_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="LASERB_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="LASERB_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="LASERB_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="LASERB_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="LASERB_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="LASERB_AREA"     format="area"/>
+      <column id="DATA1"    src="LASERB_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="LASERB_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="LASERB_CONTINUE"/>
+      <column id="EMPTY6"   src="LASERB_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="LASERB_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-B EXPERT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="EXPERTB_SCORE"/>
+      <column id="NAME"     src="EXPERTB_NAME"/>
+      <column id="NAME_END" src="EXPERTB_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="EXPERTB_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="EXPERTB_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="EXPERTB_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="EXPERTB_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="EXPERTB_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="EXPERTB_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="EXPERTB_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="EXPERTB_AREA"     format="area"/>
+      <column id="DATA1"    src="EXPERTB_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="EXPERTB_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="EXPERTB_CONTINUE"/>
+      <column id="EMPTY6"   src="EXPERTB_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="EXPERTB_AUTOBOMB" format="autobomb"/>
+    </table>
+
+    <table id="TYPE-C SHOT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="SHOTC_SCORE"/>
+      <column id="NAME"     src="SHOTC_NAME"/>
+      <column id="NAME_END" src="SHOTC_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="SHOTC_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="SHOTC_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="SHOTC_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="SHOTC_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="SHOTC_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="SHOTC_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="SHOTC_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="SHOTC_AREA"     format="area"/>
+      <column id="DATA1"    src="SHOTC_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="SHOTC_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="SHOTC_CONTINUE"/>
+      <column id="EMPTY6"   src="SHOTC_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="SHOTC_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-C LASER">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="LASERC_SCORE"/>
+      <column id="NAME"     src="LASERC_NAME"/>
+      <column id="NAME_END" src="LASERC_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="LASERC_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="LASERC_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="LASERC_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="LASERC_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="LASERC_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="LASERC_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="LASERC_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="LASERC_AREA"     format="area"/>
+      <column id="DATA1"    src="LASERC_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="LASERC_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="LASERC_CONTINUE"/>
+      <column id="EMPTY6"   src="LASERC_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="LASERC_AUTOBOMB" format="autobomb"/>
+    </table>
+    <table id="TYPE-C EXPERT">
+      <column id="RANK" src="index" format="+1"/>
+      <column id="SCORE"    src="EXPERTC_SCORE"/>
+      <column id="NAME"     src="EXPERTC_NAME"/>
+      <column id="NAME_END" src="EXPERTC_NAMEEND"                display="debug"/>
+      <column id="EMPTY1"   src="EXPERTC_EMPTY1"   format="0x"   display="debug"/>
+      <column id="PLAYER"   src="EXPERTC_PLAYER"   format="player"/>
+      <column id="EMPTY12"  src="EXPERTC_EMPTY12"  format="0x"   display="debug"/>
+      <column id="SHIP"     src="EXPERTC_SHIP"     format="ship"/>
+      <column id="EMPTY2"   src="EXPERTC_EMPTY2"   format="0x"   display="debug"/>
+      <column id="MODE"     src="EXPERTC_MODE"     format="mode"/>
+      <column id="EMPTY3"   src="EXPERTC_EMPTY3"   format="0x"   display="debug"/>
+      <column id="AREA"     src="EXPERTC_AREA"     format="area"/>
+      <column id="DATA1"    src="EXPERTC_DATA1"                  display="debug"/>
+      <column id="EMPTY5"   src="EXPERTC_EMPTY5"   format="0x"   display="debug"/>
+      <column id="CONTINUE" src="EXPERTC_CONTINUE"/>
+      <column id="EMPTY6"   src="EXPERTC_EMPTY6"   format="0x"   display="debug"/>
+      <column id="AUTOBOMB" src="EXPERTC_AUTOBOMB" format="autobomb"/>
+    </table>
+  </output>
+  
+  <format id="ship">
+    <case src="0" dst="TYPE-A" default="yes"/>
+    <case src="1" dst="TYPE-B"/>
+    <case src="2" dst="TYPE-C"/>
+  </format>
+  <format id="player">
+    <case src="0" dst="1 Player"/>
+    <case src="1" dst="2 Player"/>
+  </format>
+  <format id="mode">
+    <case src="0" dst="SHOT"/>
+    <case src="1" dst="LASER"/>
+    <case src="2" dst="EXPERT"/>
+  </format>
+  <format id="autobomb">
+    <case src="0" dst="OFF"/>
+    <case src="1" dst="ON"/>
+  </format>
+  <format id="area">
+    <case src="00000000000000000000" dst="1"/>
+    <case src="00000000000000000001" dst="1"/>
+    <case src="00000000000000000005" dst="1-boss"/>
+    <case src="00010000000000000000" dst="2"/>
+    <case src="00010000000000000001" dst="2"/>
+    <case src="00010000000000000005" dst="2-boss"/>
+    <case src="00020000000000000000" dst="3"/>
+    <case src="00020000000000000001" dst="3"/>
+    <case src="00020000000000000005" dst="3-boss"/>
+    <case src="00030000000000000000" dst="4"/>
+    <case src="00030000000000000001" dst="4"/>
+    <case src="00030000000000000005" dst="4-boss"/>
+    <case src="00040000000000000000" dst="5"/>
+    <case src="00040000000000000001" dst="5"/>
+    <case src="00040000000000000005" dst="5-boss"/>
+    <case src="00050000000000000000" dst="6"/>
+    <case src="00050000000000000001" dst="6"/>
+    <case src="00050000000000000005" dst="ALL"/>
+  </format>
+  
+  <charset id="ddpdoj">
+    <char src="0x68" dst="."/>
+    <char src="0x70" dst=""/>
+  </charset>
+</hi2txt>
